@@ -1,0 +1,2104 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    
+    *{
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    a,
+    a:hover,
+    a:visited{
+        text-decoration: none;
+    }
+
+    h1{
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    
+    h2, h3, h4, p{
+        margin: 0;
+    }
+
+    .imagen-header{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media (max-width:992px){
+        .imagen-header{
+            height: 60vw;
+        }
+    }
+
+    .gradient-header{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width:332px){
+        .gradient-header{
+            padding: 0vw 4vw;
+        }
+    }
+
+    .white-text{
+        color: white;
+    }
+
+    .gradient-color-nexus{
+        background: #912978;
+    }
+
+    .container-things-header{
+        padding: 5px 26px 4px 25px;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    @media (max-width:992px){
+        .container-things-header{
+            padding: 1vw 5vw 1vw 5vw;
+            font-size: 4.2vw;
+            margin-bottom: 1vw;
+        }
+    }
+
+    .text-h1-style{
+        font-size: 58px;
+        font-weight: 900;
+        letter-spacing: -1.45px;
+        text-shadow: rgba(0, 0, 0, 0.23) 2px 5px;
+    }
+    @media (max-width:992px){
+        .text-h1-style{
+            font-size: 7vw;
+            letter-spacing: -.2vw;
+        }
+    }
+
+    .margin-bottom-46{
+        margin-bottom: 46px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-46{
+            margin-bottom: 6vw;
+        }
+    }
+
+    .style-titles{
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 8px;
+        margin-left: 0px;
+    }
+    @media (max-width:992px){
+        .style-titles{
+            margin-bottom: 2vw;
+        }
+    }
+
+    .title{
+        font-size: 40px !important;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: left !important;
+    }
+    @media (max-width:992px){
+        .title{
+            font-size: 5vw !important;
+            line-height: 121%;
+            font-weight: 700;
+            text-align: center !important;
+        }
+    }
+
+    .subtitle{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    @media (max-width:992px){
+        .subtitle{
+            font-size: 5vw;
+            font-weight: 700;
+            line-height: 121%;
+            text-align: center;
+        }
+    }
+
+    .margin-bottom-24{
+        margin-bottom: 24px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-24{
+            margin-bottom: 5vw;
+        }
+    }
+
+    .line-divider-1{
+        width: 232px;
+        height: 3px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width:992px){
+        .line-divider-1{
+            width: 232px;
+            height: 3px;
+        }
+    }
+
+    .container-text-80{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width:992px){
+        .container-text-80{
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    .gray-text{
+        color: #707070;
+    }
+
+    .text-parrafo{
+        font-size: 16px;
+        line-height: 150%;
+        text-align: left;
+    }
+    @media (max-width:992px){
+        .text-parrafo{
+            font-size: 4vw;
+        }
+    }
+
+    .card-slider-tour{
+        height: auto;
+        width: 345px;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: white;
+        border: 1px solid #EDEEEF;
+    }
+    @media (max-width:1200px){
+        .card-slider-tour{
+            width: 285px;
+        }
+    }
+    @media (max-width:992px){
+        .card-slider-tour{
+            width: 80vw;
+        }
+    }
+
+    .card-slider-tour:hover{
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, .2);
+    }
+
+    .container-img-card{
+        width: 100%;
+        height: 240px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+    @media (max-width:992px){
+        .container-img-card{
+            height: 52vw;
+        }
+    }
+
+    .etiqueta-card{
+        position: absolute;
+        padding: 7px 16px 7px 15px;
+        bottom: 0;
+        left: auto;
+        right: 10%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    @media (max-width:992px){
+        .etiqueta-card{
+            padding: 7px 16px 7px 15px;
+            gap: 6px;
+        }
+    }
+
+    .icon-maps{
+        width: 12px;
+        height: 16px;
+    }
+
+    .text-gradient{
+        font-size: 12px;
+        font-weight: 900;
+        color: #912978;
+        text-align: left;
+    }
+    @media (max-width:992px){
+        .text-gradient{
+            font-size: 3vw;
+            margin-bottom: 1vw;
+        }
+    }
+
+    .text-gradient-2{
+        font-size: 12px;
+        font-weight: 900;
+        color:rgba(255, 98, 29, 1);
+    }
+    @media (max-width:992px){
+        .text-gradient-2{
+            font-size: 3vw;
+        }
+    }
+
+    .container-text-card-upper{
+        padding: 17px 32px 0px 29px;
+        height: 155px;
+    }
+
+    @media(max-width:1200px){
+        .container-text-card-upper{
+            height: 180px;
+        }
+    }
+    @media (max-width:992px){
+        .container-text-card-upper{
+            padding: 4vw 5vw 0vw 5vw;
+            height: 39vw;
+        }
+    }
+
+    .container-text-card-bottom{
+        height: 74px;
+        border-top: 1px solid #DDE1E8;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 29px;
+        box-sizing: border-box;
+    }
+    @media (max-width:1200px){
+        .container-text-card-bottom{
+            padding: 0px 0px 0px 26px;
+        }
+    }
+    @media (max-width:992px){
+        .container-text-card-bottom{
+            height: 18vw;
+        }
+    }
+
+    .title-tour{
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        line-height: 120%;
+        text-align: left;
+    }
+    @media (max-width:1200px){
+        .title-tour{
+            margin-bottom: 10px;
+        }
+    }
+    @media (max-width:992px){
+        .title-tour{
+            font-size: 4.5vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .text-parrafo-card{
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    @media (max-width:992px){
+        .text-parrafo-card{
+            font-size: 3.8vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .black-nexus{
+        color: #333;
+    }
+
+    .gray-text-card{
+        color: #A1A1A1;
+    }
+
+    .container-text-card{
+        height: Auto;
+        width: 100%;
+    }
+
+    .icon-cards{
+        height: 20px;
+        width: 20px;
+    }
+    .container-icon-text-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-cards-icon{
+        color: #8F8F8F;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 120%;
+        text-align: left;
+    }
+    @media (max-width:992px){
+        .text-cards-icon{
+            font-size: 2.8vw;
+        }
+    }
+
+    .container-all-icon-text-card{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content-bottom-price{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: fit-content;
+        margin: auto 7% auto auto;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    @media (max-width:992px){
+        .content-bottom-price{
+            gap: 5px;
+        }
+    }
+
+    .cross-text{
+        text-decoration: line-through;
+    }
+
+    .precio{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+    @media (max-width:992px){
+        .precio{
+            font-size: 7vw;
+        }
+    }
+
+    .container-precio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper-product {
+        width: 95%;
+        height: 570px;
+    }
+
+    @media (max-width:1200px){
+        .swiper-product {
+            width: 95%;
+            height: 578px;
+        }
+    }
+
+    @media (max-width:992px){
+        .swiper-product {
+            width: 97.5vw;
+            height: 120vw;
+            margin-left: -7.15vw;
+        }
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: rgba(243, 111, 33, 1);
+        width: 20px;
+        height: 6px;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: rgba(204, 204, 204, 1);
+        width: 10px;
+        height: 6px;
+        opacity: 1;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 577px;
+        margin: 0;
+    }
+    
+
+    .container-slider-botones{
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .container-slider-botones-2{
+        position: relative;
+        overflow-x: hidden;
+        width: fit-content;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .button-swiper{
+        width: 40px; 
+        height: 40px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden; 
+        border-radius: 50px;
+    }
+
+    .imagen-button-swiper{
+        width: 40px; 
+        height: 40px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #FFFFFF !important;
+        padding-top: 22px !important;
+        width: 40px !important;
+        height: 20px !important;
+    }
+    
+
+    .orange-nexus{
+        color: #912978;
+    }
+
+    @media (max-width:992px){
+        .swiper-wrap-auto{
+            height: auto;
+        }
+    }
+
+    .swiper-card{
+        margin: auto;
+    }
+    @media (max-width:992px){
+        .swiper-card{
+            margin-top: 0vw;
+            height: auto;
+        }
+    }
+
+    .container-imagen-slider{
+        border-radius: 10px; 
+        overflow: hidden; 
+        width: 273px; 
+        height: 380px; 
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    @media (max-width: 1200px){
+        .container-imagen-slider{
+            overflow: hidden; 
+            width: 207px; 
+        }
+    }
+    @media (max-width: 992px){
+        .container-imagen-slider{
+            overflow: hidden; 
+            width: 60vw; 
+            height: 95vw;
+        }
+    }
+
+    .imagen-slider{
+        width: 205px; 
+        min-width: 205px;
+        height: 294px; 
+        position: relative; z-index: 1;
+    }
+
+    .gradient-imagen{
+        width: 100%; 
+        height: 100%; 
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%); 
+        z-index: 2; 
+        top: 0; 
+        left: 0; 
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .span-destination{
+        margin: auto; 
+        font-size: 26px; 
+        line-height: 120%; 
+        color: #FFFFFF; 
+        font-weight: 700;
+    }
+    @media (max-width:992px){
+        .span-destination{
+            font-size: 7vw; 
+            line-height: 150%; 
+        }
+    }
+
+    .activador{
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: 3;
+    }
+
+    .container-video-texto-section{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width:992px){
+        .container-video-texto-section{
+            flex-direction: column;
+            gap: 4vw;
+            width: 95%;
+            margin: auto;
+        }
+    }
+
+    .container-texto-parrafo-video{
+        padding: 30px 40px 40px 25px;
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media (max-width:992px){
+        .container-texto-parrafo-video{
+            padding: 0vw 1vw 1vw 5vw;
+        }
+    }
+
+    .container-video{
+        width: 50%;
+    }
+    @media (max-width:992px){
+        .container-video{
+            width: 100%;
+            height: 54vw;
+        }
+    }
+
+    .title-gradient{
+        color: #912978;
+    }
+
+    .title-video{
+        font-size: 43px;
+        font-weight: 900;
+        line-height: 117%;
+        letter-spacing: -.8px;
+        text-align: left;
+    }
+    @media (max-width: 1200px){
+        .title-video{
+            font-size: 37px;
+            font-weight: 900;
+            line-height: 117%;
+            letter-spacing: -.8px;
+        }
+    }
+    @media (max-width:992px){
+        .title-video{
+            font-size: 7vw;
+            line-height: 117%;
+            letter-spacing: -.1vw;
+        }
+    }
+
+    .line-divider-2{
+        width: 50px;
+        height: 5px;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+
+    .margin-bottom-13{
+        margin-bottom: 13px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-13{
+            margin-bottom: 2vw;
+        }
+    }
+
+    .container-pollo-video{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    @media (max-width:992px){
+        .container-pollo-video{
+            width: 100%;
+        }
+    }
+    
+    .container-pollo{
+        width: 34px;
+        min-width: 34px;
+        background-color: #F37021;
+        background: #912978;
+        border-radius: 25px;
+    }
+    @media (max-width:992px){
+        .container-pollo{
+            width: 4vw;
+            min-width: 4vw;
+        }
+    }
+
+    .imagen-pollo{
+        height: 100%;
+    }
+
+    .margin-bottom-68{
+        margin-bottom: 68px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-68{
+            margin-bottom: 10vw;
+        }
+    }
+
+    .card-transfer{
+        width: 367px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+        padding: 23px 18px 0px 18px;
+        border: 1px solid #EDEEEF;
+        background-color: white;
+    }
+    @media (max-width: 1200px){
+        .card-transfer{
+            width: 312px;
+            height: 305px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            padding: 23px 18px 0px 18px;
+        }
+    }
+    @media (max-width:992px){
+        .card-transfer{
+            width: 100%;
+            height: 85vw;
+            padding: 5vw 5vw 0vw 5vw;
+        }
+    }
+    
+    .card-transfer:hover{
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .border-color-gradient{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 13px;
+        background: linear-gradient(260deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+    }
+
+    .img-cars{
+        width: 100%;
+        height: 205px;
+    }
+    @media (max-width:1200px){
+        .img-cars{
+            width: 100%;
+            height: 160px;
+        }
+    }
+    @media (max-width:992px){
+        .img-cars{
+            height: 48vw;
+        }
+    }
+
+    .container-card-trans{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title-trans{
+        font-size: 27px;
+        font-weight: 700;
+        color: #333;
+        line-height: 100%;
+        margin-bottom: 13px;
+    }
+    @media (max-width:992px){
+        .title-trans{
+            font-size: 6vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .from-style{
+        color: #535353;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    @media (max-width:992px){
+        .from-style{
+            font-size: 3.1vw;
+        }
+    }
+
+    .container-maps-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+    @media (max-width:992px){
+        .container-maps-texto{
+            gap: 1.5vw;
+        }
+    }
+
+    .destination-trans{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -.5px;
+        line-height: 138.5%;
+    }
+    @media (max-width:1200px){
+        .destination-trans{
+            letter-spacing: -.8px;
+        }
+    }
+    @media (max-width:992px){
+        .destination-trans{
+            font-size: 3.4vw;
+            letter-spacing: -.1vw;
+        }
+    }
+
+    .icon-maps-trans{
+        height: 16px;
+    }
+    @media (max-width:992px){
+        .icon-maps-trans{
+            height: 3vw;
+        }
+    }
+
+    .container-left-card-trans{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-right-card-trans{
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        height: 93px;
+    }
+    @media (max-width:992px){
+        .container-right-card-trans{
+            height: 22vw;
+        }
+    }
+
+    .boton-transfer{
+        text-decoration: none;
+        color: #FF621D;
+        border: 0.949px solid #FF621D;
+        border-radius: 29.412px;
+        padding: 8px 25px;
+        font-size: 16px;
+        font-weight: 900;
+        width: 132px;
+        text-align: center;
+    }
+    @media (max-width: 1200px){
+        .boton-transfer{
+            padding: 8px 20px;
+            font-size: 13px;
+            font-weight: 900;
+            width: 107px;
+        }
+    }
+    @media (max-width:992px){
+        .boton-transfer{
+            padding: 2vw 3vw;
+            font-size: 3.5vw;
+            width: 28vw;
+        }
+    }
+
+    .boton-transfer:hover{
+        background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+        color: white;
+        border: 0.949px solid transparent;
+        text-decoration: none;
+    }
+
+    .container-row-transfer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (max-width:992px){
+        .container-row-transfer{
+            gap: 7vw;
+            flex-direction: column;
+            margin: auto;
+            width: 95%;
+        }
+    }
+
+    .swiper-destinations-style{
+        height: fit-content;
+        width: 915px;
+        margin-right: 0;
+    }
+    @media (max-width: 1200px){
+        .swiper-destinations-style{
+            height: fit-content;
+            width: 717px;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 992px){
+        .swiper-destinations-style{
+            height: fit-content;
+            width: 97.7vw;
+            margin-right: 0;
+            height: 108vw;
+            margin-left: -7.15vw;
+        }
+    }
+
+    .swiper-slider-destinations{
+        height: fit-content;
+    }
+
+    .swiper-button-block{
+        position: static;
+    }
+
+    .container-botones-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 18px;
+        margin-right: 11px;
+    }
+    .container-bottom-slider-destination{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .line-divider-3{
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+        margin-right: auto;
+        background-color: rgba(51, 51, 51, 0.14);
+        margin-left: 22px;
+    }
+
+    .text-card-swiper-destinations{
+        width: 228px;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 29px;
+        background-position: center;
+        overflow: hidden;
+        background-size: cover;
+        gap: 15px;
+        background-color: #912978;
+    }
+    @media (max-width:992px){
+        .text-card-swiper-destinations{
+            width: 95%;
+            margin: auto;
+            padding: 5vw 5vw;
+            text-align: center;
+        }
+    }
+
+    .container-swiper-destinations{
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width:992px){
+        .container-swiper-destinations{
+            flex-direction: column;
+            gap:4vw;
+        }
+    }
+
+    .imagen-gradient-texto{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .text-gradient-destinations{
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 117.2%;
+        letter-spacing: -.5px;
+        text-align: left !important;
+    }
+    @media (max-width:992px){
+        .text-gradient-destinations{
+            font-size: 6vw;
+            letter-spacing: -.15vw;
+            text-align: center !important;
+        }
+    }
+
+    .margin-bottom-100{
+        margin-bottom: 100px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-100{
+            margin-bottom: 15vw;
+        }
+    }
+
+    .body-media{
+        width: 1160px;
+        margin: auto;
+        background-color: #F8F9FA;
+        padding-bottom: 50px;
+        margin-left: -102px;
+    }
+    @media (max-width: 1200px){
+        .body-media{
+            width: 960px;
+            margin-left: -78px;
+        }
+    }
+    @media (max-width: 992px){
+        .body-media{
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+
+    .video{
+        align-items:center; 
+        margin-bottom: 30px; 
+        border-radius: 10px; 
+        overflow: hidden;
+        height: 100%;
+    }
+    @media (max-width: 992px){
+        .video{
+            align-items:center; 
+            border-radius: 10px; 
+            overflow: hidden;
+            height: 100%;
+        }
+    }
+
+    .text-etiqueta-imagen{
+        font-size: 12px;
+    }
+    @media (max-width: 992px){
+        .text-etiqueta-imagen{
+            font-size: 3.5vw;
+        }
+    }
+
+    .tag-desk{
+        display: block;
+    }
+    @media (max-width: 992px){
+        .tag-desk{
+            display: none;
+        }
+    }
+    .tag-mob{
+        display: none;
+    }
+    @media (max-width: 992px){
+        .tag-mob{
+            display: block;
+        }
+    }
+
+    .container-ofertas-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .oferta{
+        height: 273px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    @media (max-width: 1200px){
+        .oferta{
+            height: 225px;
+        }
+    }
+    @media (max-width: 992px){
+        .oferta{
+            height: 65vw;
+            width: 65vw;
+            display: block;
+        }
+    }
+
+    .oferta-1{
+        width: 49%;
+    }
+
+    .oferta-2{
+        width: 24%;
+    }
+    
+    .imagen-oferta{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-transfer-home{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-slider-transfer-home{
+        height: fit-content;
+        width: 24%;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: white;
+        border: 1px solid #EDEEEF;
+        text-decoration: none;
+    }
+    
+    @media (max-width:1200px){
+        .card-slider-transfer-home{
+            width: 228px;
+        }
+    }
+    @media (max-width:992px){
+        .card-slider-transfer-home{
+            width: 65vw;
+        }
+    }
+
+    .container-text-card-upper-transfer-home{
+        padding: 17px 20px 0px 20px;
+        height: 130px;
+    }
+
+    @media(max-width:1200px){
+        .container-text-card-upper-transfer-home{
+            padding: 8px 7px 0px 13px;
+            height: 140px;
+        }
+    }
+    @media (max-width:992px){
+        .container-text-card-upper-transfer-home{
+            padding: 4vw 5vw 0vw 5vw;
+            height: 38vw;
+        }
+    }
+
+    .container-text-card-bottom-transfer-home{
+        height: 65px;
+        border-top: 1px solid #DDE1E8;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    @media (max-width:992px){
+        .container-text-card-bottom-transfer-home{
+            height: 13vw;
+        }
+    }
+
+    .container-img-card-transfer-home{
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+    @media (max-width:1200px){
+        .container-img-card-transfer-home{
+            height: 149px;
+        }
+    }
+    @media (max-width:992px){
+        .container-img-card-transfer-home{
+            height: 42.5vw;
+        }
+    }
+
+    .gray-text-card-transfer-home{
+        color: #575756;
+    }
+
+    .text-parrafo-card-transfer-home{
+        font-size: 11px;
+        text-align: left;
+    }
+    @media (max-width:992px){
+        .text-parrafo-card-transfer-home{
+            font-size: 2.8vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .swiperOfertas-width{
+        width: 97.5vw;
+        height: 67vw;
+        margin-left: -7.15vw;
+    }
+
+    .swiperTransferHome-width{
+        width: 97.5vw;
+        height: 105vw;
+        margin-left: -7.15vw;
+    }
+
+    .text-booking{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        color: #494949;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    @media (max-width:992px){
+        .text-booking{
+            font-size: 4.5vw;
+            gap: 3vw;
+        }
+    }
+
+    .container-booking{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+    @media (max-width:992px){
+        .container-booking{
+            flex-direction: column;
+            align-items: center;
+            gap: 10vw;
+        }
+    }
+
+    .img-booking-1{
+        height: 144px;
+        width: 144px;
+        margin: auto;
+        margin-top: 0px;
+        display: block;
+    }
+    @media (max-width:992px){
+        .img-booking-1{
+            height: 42vw;
+            width: 42vw;
+        }
+    }
+
+    .img-booking-2{
+        height: 130px;
+        width: 176px;
+        margin: auto;
+        margin-top: 0px;
+        display: block;
+    }
+    @media (max-width:992px){
+        .img-booking-2{
+            height: 40vw;
+            width: 52vw;
+        }
+    }
+
+    .img-booking-3{
+        height: 145px;
+        width: 154px;
+        margin: auto;
+        margin-top: 0px;
+        display: block;
+    }
+    @media (max-width:992px){
+        .img-booking-3{
+            height: 44vw;
+            width: 47vw;
+        }
+    }
+
+    .img-booking-4{
+        height: 104px;
+        width: 136px;
+        margin: auto;
+        margin-top: 0px;
+        display: block;
+    }
+    @media (max-width:992px){
+        .img-booking-4{
+            height: 33vw;
+            width: 44vw;
+        }
+    }
+
+    .container-img-booking{
+        height: 145px;
+        width: 176px;
+        box-sizing: border-box;
+    }
+    @media (max-width:992px){
+        .container-img-booking{
+            height: 44vw;
+            width: 52vw;
+        }
+    }
+    .padding-top{
+        padding-top: 22px;
+    }
+    @media (max-width:992px){
+        .padding-top{
+            padding-top: 5vw;
+        }
+    }
+
+    .container-title-center{
+        text-align: center;
+    }
+
+    .subtext-gradient-destinations{
+        font-size: 16px;
+        text-align: left !important;
+        color: white;
+        line-height: normal;
+    }
+    @media (max-width:992px){
+        .subtext-gradient-destinations{
+            font-size: 4vw;
+        }
+    }
+
+    .title-2{
+        font-size: 40px !important;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center !important;
+    }
+    @media (max-width:992px){
+        .title-2{
+            font-size: 5vw !important;
+            line-height: 121%;
+            font-weight: 700;
+            text-align: center !important;
+        }
+    }
+
+    .bannerlogin {
+        width: 100%;
+        height: 104px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    @media (max-width:1200px){
+        .bannerlogin {
+            height: 85px;
+        }
+    }
+    @media (max-width:992px){
+        .bannerlogin {
+            height: 24vw;
+        }
+    }
+
+    .img-banner-login{
+        width: 100%;
+        height: 100%;
+    }
+
+    .boton-booking{
+        background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
+        padding: 5px 17px;
+        border-radius: 100px;
+        font-size: 14px;
+    }
+    @media (max-width:992px){
+        .boton-booking{
+            padding: 2vw 4vw;
+            font-size: 4vw;
+        }
+    }
+
+
+    .terminoscondiciones {
+        align-items: center;
+        margin-top: -25px;
+        align-content: center;
+    }
+    
+    .politics2 {
+        color: #9F9F9F;
+    }
+
+    .boton-tarifas{
+        width: fit-content;
+        border-radius: 100px;
+        padding: 10px 18px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    @media (max-width:1200px){
+        .boton-tarifas{
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width:992px){
+        .boton-tarifas{
+            padding: 2vw 4vw;
+            font-size: 3vw;
+        }
+    }
+
+    .bannerlogin2 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+    @media (max-width:1200px){
+      .bannerlogin2 {
+        width: 100%;
+        height: 100%;
+      }
+  }
+
+  @media (max-width:992px){
+      .bannerlogin2 {
+          width: 100%;
+          height: 100%;
+/*            margin-left: 3px;*/
+      }
+  }
+
+  </style>
+  <body style="background-color: #F8F9FA;">
+      <div class="body-media">
+
+        <!--
+                    <div class="bannerlogin2 margin-bottom-46">
+                                     <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/whls/diciembre2023/wsstarfishfr.gif" loading="lazy">
+                                     <img class="img-banner1-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/whls/diciembre2023/mobilestarfishfr.png">
+                                              </a>
+                                          </div>-->
+
+<h2 class="style-titles title">
+    Sainte-Lucie est un paradis tropical <span class="orange-nexus">qui attend d'être exploré </span>avec Starfish!
+    
+</h2>
+<div class="container-text-80 margin-bottom-24 tag-desk">
+    <p class="gray-text text-parrafo">
+      Découvrez Sainte-Lucie et son climat parfait pour profiter de plages de sable blanc et d'eaux cristallines. Explorez sa nature exotique en glissant sur une tyrolienne, chevauchez le long de la magnifique côte de St. Lucia ou prenez un bain thérapeutique dans les bains de boue minérale volcanique. Sainte-Lucie, un paradis des Caraïbes à ne pas manquer !
+    </p>
+</div>
+<div class="container-text-80 margin-bottom-46 tag-mob">
+    <p class="gray-text text-parrafo">
+      Découvrez Sainte-Lucie et son climat parfait pour profiter de plages de sable blanc et d'eaux cristallines. Explorez sa nature exotique en glissant sur une tyrolienne, chevauchez le long de la magnifique côte de St. Lucia ou prenez un bain thérapeutique dans les bains de boue minérale volcanique. Sainte-Lucie, un paradis des Caraïbes à ne pas manquer !
+        </p>
+</div>
+
+<div class="container-slider-botones margin-bottom-46 tag-desk">
+    <div class="swiper-button-next swiper1-button-next">
+        <div class="button-swiper">
+            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/B2star.png">
+        </div>
+    </div>
+    <div class="swiper-button-prev swiper1-button-prev">
+        <div class="button-swiper" style="transform: rotate(180deg);">
+            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/B2star.png">
+        </div>
+    </div>
+    <div class="swiper mySwiper swiper-product">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-card">
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3821&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Tout_Bagay_Tour.jpg);">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                            Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                              AVENTURE AQUATIQUE
+                            </p>
+                            <p class="title-tour black-nexus">
+                            Excursion Tout Bagay
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                              Préparez-vous à naviguer, marcher et faire de la plongée en apnée à travers les merveilles naturelles de Sainte-Lucie !
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide swiper-card">  
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3725&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/grosspiton.jpg);">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                              Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                                AVENTURE AQUATIQUE
+                            </p>
+                            <p class="title-tour black-nexus">
+                              Randonnée au Gros Piton
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                              La randonnée au Gros Piton commence lorsqu’on vient vous chercher à votre hôtel pour le transport dans un véhicule confortable.
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>                 
+            <div class="swiper-slide swiper-card">
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3702&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Explorer_Tour.jpg)">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                            Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                              AVENTURE AQUATIQUE
+                            </p>
+                            <p class="title-tour black-nexus">
+                              Explorer Tour
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                              L'aventure avec le Tour Explorer commence par un délicieux petit déjeuner léger tout en naviguant sur la passionnante côte ouest
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide swiper-card">
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=10525&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Helicopter_Transfer_Northbound.jpg);">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                            Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                                EXCURSION
+                            </p>
+                            <p class="title-tour black-nexus">
+                                Helicopter Transfer Northbound
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                                Au cours de cette aventure aérienne de 10 minutes, vous pourrez admirer, depuis les hauteurs, le majestueux mont Gimie
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide swiper-card">
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3784&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Horseback_Riding_2_Hours.jpg);">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                            Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                                EXCURSION
+                            </p>
+                            <p class="title-tour black-nexus">
+                                Équitation de 2 heures
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                            Promenez-vous à cheval le long de la magnifique plage de Sainte-Lucie! 
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide swiper-card">
+                <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3709&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Treetop_Canopy_Adventure.jpg);">
+                        <div class="etiqueta-card gradient-color-nexus">
+                            <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                            <p class="white-text text-etiqueta-imagen">
+                              Sainte-Lucie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-text-card">
+                        <div class="container-text-card-upper">
+                            <p class="text-gradient">
+                              EXCURSION
+                            </p>
+                            <p class="title-tour black-nexus">
+                            Aventure dans la Forêt Tropicale
+                            </p>
+                            <p class="gray-text-card text-parrafo-card">
+                              Take a wonderful guided stroll in the beautiful rainforest of St. Lucia
+                            </p>
+                        </div>
+                        <div class="container-text-card-bottom">
+                            <div class="container-all-icon-text-card">
+                                <div class="container-icon-text-card">
+                                    <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                    <p class="text-cards-icon">
+                                      Annulation   <br>
+                                        flexible
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-bottom-price">
+                                <div class="boton-tarifas gradient-color-nexus white-text">
+                                    Voir Les Tarifs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>        
+
+        </div>
+    </div>
+</div>
+<div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+    <div class="swiper-wrapper swiper-wrap-auto">
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3821&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Tout_Bagay_Tour.jpg);">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                        Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                            AVENTURE AQUATIQUE
+                        </p>
+                        <p class="title-tour black-nexus">
+                        Excursion Tout Bagay
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                        Préparez-vous à naviguer, marcher et faire de la plongée en apnée à travers les merveilles naturelles de Sainte-Lucie !
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3725&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/grosspiton.jpg);">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                        Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                          AVENTURE AQUATIQUE
+                        </p>
+                        <p class="title-tour black-nexus">
+                          Randonnée au Gros Piton
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                          La randonnée au Gros Piton commence lorsqu’on vient vous chercher à votre hôtel pour le transport dans un véhicule confortable.
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>                 
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3702&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Explorer_Tour.jpg)">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                          Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                            AVENTURE AQUATIQUE
+                        </p>
+                        <p class="title-tour black-nexus">
+                          Explorer Tour
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                          L'aventure avec le Tour Explorer commence par un délicieux petit déjeuner léger tout en naviguant sur la passionnante côte ouest
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=10525&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Helicopter_Transfer_Northbound.jpg);">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                        Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                            EXCURSION
+                        </p>
+                        <p class="title-tour black-nexus">
+                            Helicopter Transfer Northbound
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                            Au cours de cette aventure aérienne de 10 minutes, vous pourrez admirer, depuis les hauteurs, le majestueux mont Gimie
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3784&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Horseback_Riding_2_Hours.jpg);">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                        Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                          EXCURSION
+                        </p>
+                        <p class="title-tour black-nexus">
+                            Équitation de 2 heures
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                        Promenez-vous à cheval le long de la magnifique plage de Sainte-Lucie! 
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-card">
+            <a class="card-slider-tour" href="https://starfish.nexustours.com/services/details.aspx?productID=3709&paxs=10&productType=TKT&destinationID=108939&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Lucia/Treetop_Canopy_Adventure.jpg);">
+                    <div class="etiqueta-card gradient-color-nexus">
+                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                        <p class="white-text text-etiqueta-imagen">
+                          Sainte-Lucie
+                        </p>
+                    </div>
+                </div>
+                <div class="container-text-card">
+                    <div class="container-text-card-upper">
+                        <p class="text-gradient">
+                          EXCURSION
+                        </p>
+                        <p class="title-tour black-nexus">
+                      Aventure dans la Forêt Tropicale
+                        </p>
+                        <p class="gray-text-card text-parrafo-card">
+                        Faites une merveilleuse promenade guidée dans la magnifique forêt tropicale de Sainte-Lucie.
+                        </p>
+                    </div>
+                    <div class="container-text-card-bottom">
+                        <div class="container-all-icon-text-card">
+                            <div class="container-icon-text-card">
+                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                <p class="text-cards-icon">
+                                  Annulation   <br>
+                                    flexible
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-bottom-price">
+                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                Voir Les Tarifs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+      
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="bannerlogin2 margin-bottom-46">
+   <a href="https://www.simlocal.com/shop-landing/nexus" target="_blank">
+<img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/agosto2023/BannerSIMFrances2.jpg" loading="lazy">
+ <img class="img-banner1-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/agosto2023/BannerMobileSIMFrances2.jpg">
+ </a>
+ </div>
+
+        <div class="container-video-texto-section margin-bottom-68">
+            <div class="container-pollo-video">
+                <div class="container-pollo">
+                </div>
+                <div class="container-texto-parrafo-video">
+                    <h3 class="title-video margin-bottom-13">
+                      Obtenir des vacances inoubliables avec<span class="title-gradient"> Starfish!</span>
+                    </h3>
+                    <div class="line-divider-2 gradient-color-nexus margin-bottom-13 tag-desk"></div>
+                    <p class="gray-text text-parrafo">
+                      Immergez-vous dans sa culture en visitant les forts historiques, tels que le Fort Rodney, et le marché local de Castries, où vous pourrez acheter des artisanats et des souvenirs, ou profitez d'une fête privée à bord d'un imposant catamaran. Faites une promenade en Jeep dans des plantations de bananes, ou visitez les principaux points d'intérêt de l'île lors d'une visite privée. Vos vacances inoubliables vous attendent à Sainte-Lucie !
+                        </p>
+                </div>
+            </div>
+            <div class="container-video">
+                <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OOH92hLqwmx9zQDh5oF09vg&autoplay=1&mute=1&loop=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+              
+        </body>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper1-button-next",
+                    prevEl: ".swiper1-button-prev",
+                },
+            });
+    
+            var swiper2 = new Swiper(".swiperDestinations", {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper2-button-next",
+                    prevEl: ".swiper2-button-prev",
+                },
+            });
+
+            var swiper3 = new Swiper(".swiperTours-Mob", {
+                slidesPerView: 1.1,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+            var swiper4 = new Swiper(".swiperDestinations-Mob", {
+                slidesPerView: 1.5,
+                navigation: {
+                    nextEl: ".swiper4-button-next",
+                    prevEl: ".swiper4-button-prev",
+                },
+                pagination: {
+                    el: ".swiper4-pagination",
+                },
+            });
+
+            var swiper5 = new Swiper(".swiperOfertas", {
+                slidesPerView: 1.4,
+            });
+
+            var swiper6 = new Swiper(".swiperTransferHome", {
+                slidesPerView: 1.4,
+                pagination: {
+                    el: ".swiper5-pagination",
+                },
+            });
+        </script>
+    </div>

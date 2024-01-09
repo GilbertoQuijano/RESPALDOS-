@@ -1,0 +1,1260 @@
+<style>
+.content-body{margin: 0;
+    background: #f6f7fb; }
+.page-header-bar{display:none;}
+.row.margin-top {margin-top: 20px;}
+
+.hotel-listing-heading > h1 {
+margin-top: 0;
+color: #f37021;
+margin-bottom: 15px;
+font-size: 23px;
+text-align: middle;
+}
+.hotel-listing-heading > h2 {
+margin-top: 0;
+color: #565657;
+margin-bottom: 15px;
+font-size: 24px;
+}
+<!--------------------------------------------------------------->
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+/*
+.rls-nd-top-row {
+  display: -ms-flexbox; /* IE10 */
+  /*display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  /*flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+}*/
+/*
+.rls-nd-top-banner {
+  -ms-flex: 100%; /* IE10 */
+  /*flex: 100%;
+  max-width: 100%;
+  padding: 10px 0;
+}*/
+
+.rls-nd-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.rls-nd-row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.rls-nd-row img {
+  vertical-align: center;
+  padding: 10px;
+  max-width: 350px;
+  height: auto;
+  border-image: #000000;
+  justify-content: center;
+  display: block;
+  
+}
+/*
+.rls-nd-mid-banner {
+  -ms-flex: 100%; /* IE10 */
+  /*flex: 100%;
+  max-width: 100%;
+}*/
+
+.rls-nd-4-column {
+-ms-flex: 25%; /* IE10 */
+flex: 25%;
+  max-width: 25%;
+}
+
+.rls-nd-2-column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+}
+
+.rls-nd-titles {
+  text-align: center;
+  font-size: 26px;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.rls-nd-btn a {
+  display: table;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 30px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #f37021;
+}
+
+.rls-nd-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  padding: 20px;
+}
+.p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #565657;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+/*
+.rls-nd-text b {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f37021;
+}*/
+
+.copy {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: #565657;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.h2{
+  text-align: center;
+}
+
+.linea {
+  width: 40px;
+  height: 4px;
+  background-color: #f37021;  
+}
+
+/*----------Slider----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.slider {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider {
+    position: relative;
+  }
+
+  #carousel-slider .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider 
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider
+.carousel-control.left, 
+#carousel-slider
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider2 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider2 {
+    position: relative;
+  }
+
+  #carousel-slider2 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider2 .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider2 a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider2 a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider2
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider2 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider2 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider2
+.carousel-control.left, 
+#carousel-slider2
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 3 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider3 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider3 {
+    position: relative;
+  }
+
+  #carousel-slider3 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider3 .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider3 a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider3 a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider3
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider3 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider3 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider3
+.carousel-control.left, 
+#carousel-slider3
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider 3 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 4 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider4 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider4 {
+    position: relative;
+  }
+
+  #carousel-slider4 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider4 .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider4 a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider4 a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider4
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider4 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider4 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider4
+.carousel-control.left, 
+#carousel-slider4
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider 4 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 5 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider5 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider5 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider5 {
+    position: relative;
+  }
+
+  #carousel-slider5 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider5 .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider5 a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider5 a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider5
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider5 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider5 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider5
+.carousel-control.left, 
+#carousel-slider5
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider 5 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 6----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider6 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider6 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #carousel-slider6 {
+    position: relative;
+  }
+
+  #carousel-slider6 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider6 .carousel-indicators li {
+    border: 5px solid #9B9494;
+  }
+
+  #carousel-slider6 a i {
+
+    border: 0px solid #9B9494;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    width: 53px;
+    color: #9B9494;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider6 a i:hover {
+  color: #9B9494;
+  
+}
+
+#carousel-slider6
+.carousel-control {
+  width:inherit;
+}
+
+#carousel-slider6 .carousel-control.left i {
+  left:15px;
+}
+
+#carousel-slider6 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider6
+.carousel-control.left, 
+#carousel-slider6
+.carousel-control.right {
+  background: #9B9494;
+}
+/*----------Slider 6 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------Slider 7 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider7 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider7 img {
+    width: 100%; height: 100%;
+    display: flex;
+    margin: auto;
+  }
+
+  #carousel-slider7 {
+    position: relative;
+  }
+
+  #carousel-slider7 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider7 .carousel-indicators li {
+    border: 5px solid #ffffff;
+  }
+
+  #carousel-slider7 a i {
+
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 40%;
+    width: 53px;
+    color: #ffffff;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider7 a i:hover {
+  color:#ffffff;
+
+}
+
+#carousel-slider7 .carousel-control {
+  width:inherit;
+}
+
+#carousel-slider7 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider7 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider7
+.carousel-control.left, 
+#carousel-slider7
+.carousel-control.right {
+  background: #fff;
+}
+/*----------Slider 7 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------Slider 8 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.slider8 {
+    position: relative;
+    /*padding:50px;*/
+    background:#f8f8f8;
+    /*  padding-top:130px;*/
+    margin-bottom: 30px;
+  }
+
+  .slider8 img {
+    width: 100%; height: 100%;
+    display: flex;
+    margin: auto;
+  }
+
+  #carousel-slider8 {
+    position: relative;
+  }
+
+  #carousel-slider8 .carousel-indicators {
+    bottom: -35px;
+  }
+
+  #carousel-slider8 .carousel-indicators li {
+    border: 5px solid #ffffff;
+  }
+
+  #carousel-slider8 a i {
+
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    font-size: 48px;
+    height: 53px;
+    padding: 0px;
+    position: absolute;
+    top: 40%;
+    width: 53px;
+    color: #ffffff;
+   /*background:#d9ae6a;*/
+ }
+ #carousel-slider8 a i:hover {
+  color:#ffffff;
+
+}
+
+#carousel-slider8 .carousel-control {
+  width:inherit;
+}
+
+#carousel-slider8 .carousel-control.left i {
+  left:15px
+}
+
+#carousel-slider8 .carousel-control.right i {
+  right: 15px;
+}
+
+#carousel-slider8
+.carousel-control.left, 
+#carousel-slider8
+.carousel-control.right {
+  background: #fff;
+}
+/*----------Slider 8 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Carousel Header Styles */
+.header-text1 {
+    position: absolute;
+    top: 20%;
+    right: 55%;
+    width: 40%;
+    color: #f0f0f0;
+    font-family: muli;
+    line-height: 1.3;
+    font-size: 22px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.96);
+-webkit-transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+      transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+font-weight: bold; 
+    
+  }
+/*
+  .btn-min-block {
+    min-width: 180px;
+    line-height: 33px;
+  }
+
+  .btn-theme {
+    color: #fff;
+    background-color: #f37021;
+  
+    margin-right: 15px;
+    font-size: 20px;
+    margin: 150px;
+  }
+
+  .btn-theme:hover {
+    color: #f37021;
+  background-color: #f0f0f0;
+    border-color: #fff;
+  }
+*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 601px) {
+.rls-nd-4-column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  }
+ .rls-nd-2-column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rls-nd-4-column, .rls-nd-2-column {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+  }
+}
+</style>
+
+<div class="hotel-listing-heading hidden-md hidden-lg hidden-xl">
+  <h1 style="text-align: left;"><strong><bold>Take a trip through time in Varadero and leave the routine behind.</bold></strong></h1>
+<div class="linea"></div>
+</div>
+<br>
+
+<div class="slider7 hidden-xs hidden-sm hidden-md">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider7" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs hidden-sm hidden-md hidden-lg hidden-xl ">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+              <img src="/images/upload/Landing Pages/Mayo/vra/21.jpg" class="img-responsive" alt="">
+              <div class="header-text1 hidden-xs">
+              <div class="col-md-12 text-left" >
+            <div><span style="color: white;"><strong>Take a trip through time in <p style="font-size: 36px;">Varadero </p> and leave the routine behind.</strong></span></div>  
+            </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/images/upload/Landing Pages/Mayo/vra/22.jpg" class="img-responsive" alt="">
+            <div class="header-text1 hidden-xs">
+            <div class="col-md-12 text-left" >
+            <div><span style="color: white;"><strong>Take a trip through time in <p style="font-size: 36px;">Varadero </p> and leave the routine behind.</strong></span></div>  
+              <br>            
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/images/upload/Landing Pages/Mayo/vra/23.jpg" class="img-responsive" alt="">
+            <div class="header-text1 hidden-xs">
+            <div class="col-md-12 text-left" >
+          <div><span style="color: white;"><strong>Take a trip through time in <p style="font-size: 36px;">Varadero </p> and leave the routine behind.</strong></span></div>  
+              <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="/images/upload/Landing Pages/Mayo/vra/24.jpg" class="img-responsive" alt="">
+            <div class="header-text1 hidden-xs">
+            <div class="col-md-12 text-left" >
+            <div><span style="color: white;"><strong>Take a trip through time in <p style="font-size: 36px;">Varadero </p> and leave the routine behind.</strong></span></div>  
+              <br>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control hidden-xs" href="#carousel-slider7" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider7" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---slider-------->  
+
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Top Activities</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+
+<!---Mobile -------->
+<div class="slider hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=307&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/4topmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=6455&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+          <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/5topmobeng.jpg" alt="" /> </a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=289&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+            <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/havanaonedaymobeng.jpg" alt="" /> </a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>        
+        </div>        
+        <a class="left carousel-control visible-xs" href="#carousel-slider" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile----------------------------------------------->
+
+<!---Desktop ---------------------------------------------->
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=307&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+          <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/4topdeskeng.jpg" alt="" /></a>
+    </a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=6455&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+    <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/5topdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=289&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+  <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/havanaonedaydeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+<!---Desktop -------->
+
+<br>
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Our Selection</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+
+<!---Mobile -------->
+<div class="slider2 hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider2" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1821&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/1ourmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=351&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+          <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/2ourmobeng.jpg" alt="" /> </a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1815&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+            <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/3ourmobeng.jpg" alt="" /> </a>
+            <div class="header-text hidden-xs">             
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control visible-xs" href="#carousel-slider2" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider2" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile -------->
+
+<!---Desktop -------->
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1821&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+          <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/1ourdeskeng.jpg" alt="" /></a>
+    </a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=351&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+    <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/2ourdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1815&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+  <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/3ourdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+<!---Desktop -------->
+<br>
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Catamaran</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+<!---Mobile -------->
+<div class="slider3 hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider3" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=315&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/7catmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+          <div class="item">
+
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1817&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/8catmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1819&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/9catmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">            
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control visible-xs" href="#carousel-slider3" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider3" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile -------->
+
+<!---Desktop -------->
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=315&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/7catdeskeng.jpg" alt="" /></a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1817&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+    <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/8catdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1819&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/9catdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+
+<!---Desktop -------->
+<br>
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Water Sports</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+<!---Mobile -------->
+<div class="slider5 hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider5" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=6549&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+            <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/ND-USA.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=340&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/14aquamobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1820&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/15aquamobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">
+              </div>
+          </div>        
+        </div>        
+        <a class="left carousel-control visible-xs" href="#carousel-slider5" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider5" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile -------->
+
+<!---Desktop -------->
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=6549&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/ND-USA2.jpg" alt="" /></a>
+    </a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=340&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/14aquadeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1820&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/15aquadeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+<!---Desktop -------->
+<br>
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Outdoor Activities</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+<!---Mobile -------->
+<div class="slider6 hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider6" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=1818&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+            <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/16outmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=6485&paxs=10&productType=TKT&destinationID=109626&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/17outmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/services/details.aspx?productID=6463&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderomob/18outmobeng.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">
+            </div>
+          </div>        
+        </div>        
+        <a class="left carousel-control visible-xs" href="#carousel-slider6" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider6" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile -------->
+
+<!---Desktop -------->
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=1818&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/16oudeskeng.jpg" alt="" /></a>
+    </a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=6485&paxs=10&productType=TKT&destinationID=109626&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/17oudeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/services/details.aspx?productID=6463&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/varaderodesk/18oudeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+<!---Desktop >
+
+
+<br>
+<div class="hotel-listing-heading">
+<h2 style="text-align: left;"><strong><bold>Transfers</bold></strong></h2>
+<div class="linea"></div>
+</div>
+<br>
+
+<!---Mobile >
+<div class="slider8 hidden-md hidden-lg hidden-xl">
+  <div class="">
+    <div id="about-slider">
+      <div id="carousel-slider8" class="carousel slide" data-ride="carousel">
+        <!-- Indicators >
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+            <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/compartidoengmob.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/privadoengmob.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">              
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+              <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/delujoengmob.jpg" alt="" /></a>
+            <div class="header-text hidden-xs">
+            </div>
+          </div>        
+        </div>        
+        <a class="left carousel-control visible-xs" href="#carousel-slider8" data-slide="prev">
+          <i class="scroll-button scroll-left glyphicon glyphicon-menu-left"></i>
+        </a>
+        <a class=" right carousel-control visible-xs" href="#carousel-slider8" data-slide="next">
+          <i class="scroll-button scroll-right glyphicon glyphicon-menu-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Mobile -------->
+
+<!---Desktop >
+<div class="rls-nd-row">  
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/4sharedeskeng.jpg" alt="" /></a>
+    </a>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/5privatedeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="rls-nd-2-column  hidden-sm hidden-xs" align="center">
+    <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=110604&originID=118791&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+      <img src="https://www.nexustours.com/images/upload//Landing Pages/junio/traslados/6deluxdeskeng.jpg" alt="" /></a>
+  </div>
+  </div>
+</div>
+<!---Desktop -------->
+<!---Desktop -------->
+<br>
+<div><a href="https://www.nexustours.com/besafe">
+<div class="thumbnail"><img src="/images/upload/Newsletter - Landing Pages/BeSafe/Bannerweb_BE-SAFE_ENG 1120 x 189.png" border="0" alt="" width="1120" height="200" /></div>
+</a></div>
+<a href="https://www.nexustours.com/besafe">
+</a>

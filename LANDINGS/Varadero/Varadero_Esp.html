@@ -1,0 +1,2866 @@
+<!--Español-->
+
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+<style>
+    <!--------------------------------------------------------------->
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    .linea {
+      width: 40px;
+      height: 4px;
+      background-color: #f37021;  
+    }
+    
+    /*----------Slider Ruben----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .swiper {
+        width: 1120px !important;
+        margin-bottom: 40px !important;
+        height: auto !important;
+    }
+
+    .swiper-2 {
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    .swiper-banner-cont {
+        width: 1140px !important;
+        height: 300px !important;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px !important;
+    }
+    .a-slide-big, .a-slide-big:hover{
+        text-decoration: none !important;
+        color: #000;
+    }
+    .container-slide {
+        border: 1px solid rgb(0,0,0,.2);
+        width: 320px;
+        height: 471px;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .container-slide:hover{
+        box-shadow:0px 0px 10px 2px rgba(0,0,0,.4);
+    }
+    .img {
+        height: 50%;
+        width: 100%;
+        margin-top: -16.5px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .img img{
+        object-fit: cover;
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .destino{
+        height: 50%;
+        margin-top: -16px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ubicacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: #fff;
+        margin-top: 35px;
+        margin-bottom: -5px;
+        padding: 1px;
+        font-size: 12px;
+    }
+
+    .ubicacion-2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .color-texto{
+        padding: 4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: #333333 !important;
+        border-radius: 5px;
+    }
+    .logo-maps{
+        height: 14px;
+        width: 10px;
+    }
+    .lugar{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: left;
+        color: #333333 !important;
+    }
+    .p-left{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 13px;
+        color: gray !important;
+        margin-right: 10px;
+    }
+    .grid-precio{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .precio{
+        text-align: right;
+        margin-top: auto;
+        font-weight: 500;
+        color: #333333 !important;
+        font-size: 12px;
+    }
+    .color-precio{
+        color: #ff6c0c;
+        font-size: 20px !important;
+    }
+    .container-video{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-top: -50px !important;
+        width: 1100px;
+        height: 500px;
+        margin-left: 90px !important;
+    }
+    .texto{
+        text-align: left;
+        grid-column: 1;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: -80px !important;
+    }
+    .linea2 {
+        width: 73px;
+        height: 4px;
+        background-color: #f37021;  
+    }
+    .video{
+        margin: auto;
+    }
+
+    .Container-Banner{
+        width: 100% !important;
+        height: 300px;
+        background-size: cover;
+        background-image: url("/images/upload//Landing Pages/Febrero23/Punta-Cana-Banner-web.jpg");
+        margin-bottom: 50px !important;
+    }
+    .background-shadow{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .title-banner{
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 40px !important;
+    }
+
+    .See-More{
+        width: auto; 
+        background-color: #f37021; 
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 5px;
+        padding: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .See-More:hover{
+        background-color: #FFFFFF; 
+        color: #f37021 !important;
+        border: .5px solid #f37021;
+        margin-bottom: -1px;
+    }
+
+    .redirect-Punta-Cana,
+    .redirect-Punta-Cana:hover,
+    .redirect-Punta-Cana:visited,
+    .redirect-Punta-Cana::after{
+        text-decoration: none !important;
+        color: #FFFFFF;
+    }
+
+    .div-trans{
+        height: 100% !important;
+        width: 100%; 
+        border: 1px solid rgb(0,0,0,0.2);
+        background-color: #FFFFFF;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .div-trans:hover{
+        box-shadow:0px 0px 10px 2px rgba(0,0,0,.4);
+    }
+
+    .container-trans{
+        width: 1140px !important; 
+        height: 350px !important; 
+        display: flex; 
+        column-gap: 5% !important; 
+        justify-content: center;
+    }
+    
+    .image-trans{
+        height: 60% !important; 
+        width: 100%; 
+        object-fit: cover !important;
+    }
+
+    .a-trans,
+    .a-trans:hover,
+    .a-trans:visited,
+    .a-trans:after{
+        height: 100% !important;
+        width: 30%; 
+        text-decoration: none !important;
+    }
+    
+    .slide-countries{
+        width: 266px; 
+        height: 400px; 
+        display: flex; 
+        justify-content: right; 
+        align-items: flex-end; 
+        padding-right: 10px; 
+        padding-bottom: 10px;
+    }
+
+    .container-slide-countries{
+        width: 1140px !important; 
+        height: 400px !important; 
+        display: flex; 
+        column-gap: 2% !important; 
+        justify-content: center;
+        margin-bottom: 50px !important;
+    }
+
+    .div-countries{
+        width: 73%; 
+        height: 100%;
+    }
+
+    .div-orange{
+        width: 25%; 
+        height: 100%; 
+        background-color:#f37021; 
+        display: flex; 
+        align-items: flex-end; 
+        flex-direction: column; 
+        padding-left: 39px; 
+        padding-right: 39px;
+    }
+
+    .image-orange{
+        width: 100px; 
+        height: 100px;
+        margin-right: auto; 
+        margin-top: 90px;
+    }
+
+    .text-white-orange{
+        font-size: 28px !important; 
+        color: #FFFFFF; 
+        margin-top: 15.5px; 
+        line-height: 42px !important; 
+        font-weight: 800 !important;
+    }
+
+    .div-slider-banner{
+        width: 100% !important; 
+        height: 100% !important;
+        background-size: cover;
+    }
+
+    .div-gradient{
+        width: 100% !important; 
+        height: 100% !important; 
+        background: rgb(0,0,0); 
+        background: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%); 
+        display: flex; 
+        align-items: center; 
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .title-page{
+        text-align: center; 
+        margin-top:20px !important; 
+        margin-bottom: 30px !important;
+        color: #333333 !important;
+    }
+    .paragraph-title{
+        text-align: center; 
+        margin-top:50px !important;
+    }
+
+    .title{
+        color: #333333 !important;
+    }
+
+    .container-see-more{
+        width: auto;
+        height: 30px;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        margin-bottom: 4vw !important;
+    }
+
+    /* Carousel Header Styles */
+    .header-text1 {
+      position: absolute;
+      top: 20%;
+      right: 55%;
+      width: 40%;
+      color: #f0f0f0;
+      font-family: muli;
+      line-height: 1.3;
+      font-size: 24px;  
+      text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.96);
+      -webkit-transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+      transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+      font-weight: bold; 
+        }
+    
+    
+</style>
+    
+    
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!---slider-------->  
+    
+    <!-- Parte Desktop-->
+    <div class="title-page hidden-md hidden-sm hidden-xs">
+        <h2 class="title" style="font-size: 3.75rem; line-height: 6.438rem;">
+            <strong>
+                <bold>
+                    Increíbles Tours en Varadero
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    
+    <div class="div-slider-banner hidden-md hidden-sm hidden-xs" style="background-image: url('/images/upload/Landing Pages/Mayo/vra/21.jpg'); height: 300px!important;">
+        <div class="div-gradient">
+            <div>
+                <h1 class="title" style="color: #FFFFFF !important; font-size: 28px; line-height: 2.5rem; font-weight: 800;">
+                    Cosas para hacer en <br>
+                    <span class="title" style="color: #ff6c0c !important; font-size: 4.375rem; line-height: 4.375rem; font-weight: 800;">
+                        Varadero
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="paragraph-title hidden-md hidden-sm hidden-xs">
+        <h2 class="title" style="font-size: 3.125rem; line-height: 4.625rem;">
+            <strong>
+                <bold>
+                  Descubre los secretos de Cuba.
+                </bold>
+            </strong>
+        </h2>
+        <h2 class="title" style="font-size: 1.875rem;">
+            <strong>
+                <bold>
+                    Varadero te lleva a un viaje de historia, playas y naturaleza.
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <p class="subtitle hidden-md hidden-sm hidden-xs" style="text-align: justify; padding-left: 15% !important; padding-right: 15% !important; margin-top:20px !important; font-size: 16px !important; font-weight: 300 !important; color: #707070 !important;">
+      Varadero, situado en la hermosa isla de Cuba. Disfruta de un destino soñado en El Caribe. Recorre sus maravillosas playas en una extensa costa de arena blanca y aguas cristalinas. Disfruta de su clima tropical al tiempo que exploras la historia cubana y su naturaleza.
+    <div class="linea hidden-md hidden-sm hidden-xs" style="margin-right: auto !important; margin-left: auto !important;margin-bottom: 76px !important; margin-top:20px !important"></div>
+    <div class="swiper Swiper-1 hidden-md hidden-sm hidden-xs" style="margin-top:20px !important;">
+        <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide">      
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1821&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3SEATOUR.jpg" loading="lazy">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png" loading="lazy">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                            Seatour
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  ¡Relájate en cubierta y toma el sol sobre las aguas de Cuba! A bordo de un lujoso crucero en catamarán.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $101 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">       
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=315&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/catamrancrucerodelsol.jpg" loading="lazy">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png" loading="lazy">
+                                      Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                            Catamarán Crucero del Sol
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  ¡Pasa un día disfrutando de todas las bellezas que la costa cubana puede ofrecer! 
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $136 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide">      
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1815&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3SalaVIPdelAeropuerto.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                            Sala VIP del Aeropuerto
+                                        </bold>
+                                    </strong> 
+                                </p>
+                                <p class="p-left">
+                                Déjate mimar y disfruta de tus últimos minutos en esta hermosa isla en la Sala VIP del aeropuerto.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $40 CAD
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">        
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1817&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3AventuraenLanchaRaapida.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                          Aventura en Lancha Rápida
+                                        </bold>
+                                    </strong> 
+                                </p>
+                                <p class="p-left">
+                                  Una intrépida aventura al estilo James Bond recorriendo canales azules a toda velocidad en una lancha. 
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $55 CAD
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=289&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UniaenlaHabana.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Un Día en la Habana
+                                    </bold>
+                                </strong> 
+                            </p>
+                            <p class="p-left">
+                              Caminarás por las calles empedradas rodeadas de elegantes edificios coloniales y autos clásicos americanos.
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $101 CAD
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=366&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3TresCiudades.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Tres Ciudades
+                                    </bold>
+                                </strong> 
+                            </p>
+                            <p class="p-left">
+                              Experimenta la rica y fascinante historia de Cuba viajando a las ciudades de Trinidad, Santa Clara y Cienfuegos.
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $127 CAD
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=340&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/AventuraconDelfines.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Aventura con Delfines
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                              En Rancho Cangrejo vivirás una inolvidable aventura con delfines rodeado de un fascinante paisaje marino. 
+                             </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $130 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=330&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3HabanaHistoriaRitmo.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Habana: Historia y Ritmo
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                                ¡Necesitas experimentar el Luxury Sunset Sailing Varadero! ¿Qué es mejor que un atardecer en la Varadero?
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $171 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper Swiper-2 hidden-md hidden-sm hidden-xs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide"> 
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=351&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3HabanaEspecial.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                          Habana Especial
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                Habana Especial te llevará a visitar los lugares más representativos de la Habana Vieja.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $222 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">     
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=377&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UnanocheTopesCollantes.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                          Una noche en Topes de Collantes
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  ¡Ven y explora Sancti Spíritus para una increíble aventura de dos días!
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $247 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">      
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=415&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UnanocheenlaHabanaTropicana.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                        Una noche en la Habana y Tropicana
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  Pasa dos días explorando la encantadora ciudad de La Habana.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $399 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">       
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1818&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3CubaAzuucarTabacoRon.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                            Cuba: Azúcar, Tabaco y Ron
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  Explora los legendarios campos de caña de azúcar de Cuba: ¡¡¡AZÚCAR!!!
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong> 
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $114 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide">      
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6450&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3saborescubanos.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                          Sabores Cubanos
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  Disfruta de una experiencia verdaderamente sensorial de Varadero, a través de la gastronomia local.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $80 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">        
+                    <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6455&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3GuamaEspecial.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                            Guama Especial
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                    Este encantador recorrido te llevará a través del corazón de Cuba y sus tierras de cultivo.
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $92 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6465&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3habanapremium.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Cancún
+                                    </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Habana Premium
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                              ¡Experimenta la magia y el encanto de La Habana con este tour de un día completo! 
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $184 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6699&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3CATAMARANCRUCERODELSOL.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Cancún
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                        Crucero bajo el Sol en Catamarán
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                              Sube a un catamarán o yate que te llevará de paseo por las aguas del Caribe.
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $754 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="container-see-more hidden-sm hidden-md hidden-xs">
+      <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=307&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+            <div class="See-More">
+                <span style="font-size: 14px !important;">
+                    Ver más Tours
+                </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="container-video hidden-sm hidden-md hidden-xs">
+        <div class="texto">
+            <h2 class="title" style="font-size: 2.75rem !important; line-height: 2.5rem !important; margin-bottom: 20px !important;">
+                <strong>
+                    <bold>
+                        Descubre cosas para hacer con NexusTours en Varadero
+                    </bold>
+                </strong>
+            </h2>
+            <div class="linea2"></div>
+            <br>
+            <p style="color: #707070; font-weight: 300 !important; font-size:17px !important">
+              Prepárate para un día perfecto y toma las mejores fotografías de Varadero a bordo de un lujoso Catamarán. Practica emocionantes deportes náuticos, y disfruta de hermosos atardeceres. Da un giro a tu aventura pasando de las playas y la tierra agrícula de Cuba, visitando senderos rodeados de exuberante vegetación, y decenas de pueblos pequeños, llenos de carácter e historia. Varadero y Cuba, ¡Un viaje inolvidable que recordarás toda tu vida!
+            </p>
+        </div>
+        <div class="video">
+           <iframe width="670" height="350" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OOjyvP2n3d3b5-0nHkprhYP&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>                                
+    </div>
+
+    <div class="hidden-md hidden-sm hidden-xs" style="text-align: center; margin-top:20px !important;">
+        <h2 class="title" style="font-size: 2.5rem;">
+            <strong>
+                <bold>
+                    Traslados
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <div class="linea hidden-md hidden-sm hidden-xs" style="margin-right: auto !important; margin-left: auto !important; margin-bottom: 50px !important; margin-top:20px !important"></div>
+
+    <div class="container-trans hidden-md hidden-sm hidden-xs" style="margin-bottom: 2vw !important;">
+        <a class="a-trans" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+            <div class="div-trans">           
+                <img loading="lazy" class="image-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Private_Transfer.png">
+                <div class="ubicacion-2">
+                    <span class="color-texto">
+                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                        Varadero
+                    </span>
+                </div>
+                <div class="ubicacion-2" style="color: #333333;">
+                    <h3 style="font-size: 20px;">
+                        <bold>
+                            <strong>
+                                Traslados Privados
+                            </strong>
+                        </bold>
+                    </h3>
+                </div>
+            </div>
+        </a>
+        <a class="a-trans" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+            <div class="div-trans">
+                <img loading="lazy" class="image-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Deluxe_Trasnfer.png">
+                <div class="ubicacion-2">
+                    <span class="color-texto">
+                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                        Varadero
+                    </span>
+                </div>
+                <div class="ubicacion-2" style="color: #333333;">
+                    <h3 style="font-size: 20px;">
+                        <bold>
+                            <strong>
+                                Traslados de Lujo
+                            </strong>
+                        </bold>
+                    </h3>
+                </div>
+            </div>
+        </a>
+        <a class="a-trans" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+            <div class="div-trans">
+                <img loading="lazy" class="image-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Shared-Transfer.png">
+                <div class="ubicacion-2">
+                    <span class="color-texto">
+                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                        Varadero
+                    </span>
+                </div>
+                <div class="ubicacion-2" style="color: #333333;">
+                    <h3 style="font-size: 20px;">
+                        <bold>
+                            <strong>
+                                Traslados Compartidos
+                            </strong>
+                        </bold>
+                    </h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="paragraph-title hidden-md hidden-sm hidden-xs">
+        <h2 class="title" style="font-size: 3.125rem; line-height: 4.625rem;">
+            <strong>
+                <bold>
+                     Vive la experiencia de Cuba y Varadero: Un destino lleno de historia.
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <p class="subtitle hidden-md hidden-sm hidden-xs" style="text-align: justify; padding-left: 15% !important; padding-right: 15% !important; margin-top:20px !important; font-size: 16px !important; font-weight: 300 !important; color: #707070 !important;">
+      Visita La Habana y sus lugares más representativos. Recorre sus calles, admira sus iglesias barrocas, los museos y las casonas coloniales, y sorpréndete con autos antiguos que te transportarán en el tiempo. Disfruta de sus hermosos hoteles y deléitate con su exquisita comida local e internacional. Varadero y Cuba tienen el plan perfecto para tus vacaciones. En Nexus Tours lo hacemos posible.
+    </p>
+    <div class="linea hidden-md hidden-sm hidden-xs" style="margin-right: auto !important; margin-left: auto !important;margin-bottom: 76px !important; margin-top:20px !important"></div>
+    <div class="container-slide-countries hidden-md hidden-sm hidden-xs">
+        <div class="div-orange">    
+            <img loading="lazy" class="image-orange" src="https://www.nexustours.com/images/upload//Landing Pages/febrero2023/outline.png">
+            <div class="text-white-orange">
+                <stong>
+                    <bold>
+                        LOS MEJORES DESTINOS PARA VISITAR
+                    </bold>
+                </stong>
+            </div>
+        </div>
+        <div class="div-countries">
+            <div class="swiper2 Swiper-countries hidden-md hidden-sm hidden-xs" style="overflow: hidden !important;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/punta-cana" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Punta_Cana.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Punta Cana
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Jamaica.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style=" width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Jamaica
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Costa_rica.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Costa Rica
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_St._Lucia.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Santa Lucía
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Dominican_Republic.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                República Dominicana
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/saint-marteen" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_St._Maarten.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                San Martín
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/aruba" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Aruba.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Aruba
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                        <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/cabos" target="_blank">
+                            <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Los_Cabos.jpg'); background-size: cover;">
+                                <div class ="slide-countries" style="width: 100% !important;">
+                                    <h3 style="color:#FFFFFF; font-size: 20px;">
+                                        <bold>
+                                            <strong>
+                                                Los Cabos
+                                            </strong>
+                                        </bold>
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Parte Desktop-->
+
+    <!-- Parte Mobile -->
+
+    <div class="title-page hidden-lg hidden-xl">
+        <h2 class="title" style="font-size: 2.75rem; line-height: 8.1vw;">
+            <strong>
+                <bold>
+                    Increíbles Tours en Varadero
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <div class="div-slider-banner hidden-lg hidden-xl" style="background-image: url('/images/upload/Landing Pages/Mayo/14puntacancun.jpg'); background-position: center bottom !important; width: 100% !important; height: 200px !important;">
+        <div class="div-gradient" style="padding-left: 0vw !important; justify-content: center !important;">
+            <div>
+                <h1 class="title" style="color: #FFFFFF !important; font-size: 28px; line-height: 2.8rem; font-weight: 800; text-align: center !important;">
+                    Cosas para hacer en <br>
+                    <span class="title" style="color: #ff6c0c !important; font-size: 2.2rem; line-height: 2.2rem; font-weight: 800; text-align: center !important;">
+                        Varadero
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="swiper-banner-cont Swiper-banner hidden-lg hidden-xl" style="overflow: hidden !important; width: 100% !important; height: 200px !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="div-slider-banner" style="background-image: url('/images/upload//Landing Pages/febrero2023/Punta-Cana-Banner-web.jpg'); background-position: center bottom !important;">
+                    <div class="div-gradient" style="padding-left: 0vw !important; justify-content: center !important;">
+                        <div>
+                            <h3 class="title" style="color: #FFFFFF; font-size: 6.6vw; line-height: 6.08vw; font-weight: 800; text-align: center !important;">
+                                Cosas para hacer en
+                            </h3>
+                            <h3 class="title" style="color: #ff6c0c; font-size: 7.6vw; line-height: 7.3vw; font-weight: 800; text-align: center !important;">
+                                Cancún y Varadero
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="div-slider-banner" style="background-image: url('/images/upload//Landing Pages/febrero2023/Punta-Cana-Banner-web.jpg'); background-position: center bottom !important;">
+                    <div class="div-gradient" style="padding-left: 0vw !important; justify-content: center !important;">
+                        <div>
+                            <h3 class="title" style="color: #FFFFFF; font-size: 6.6vw; line-height: 6.08vw;; font-weight: 800; text-align: center !important;">
+                                Cosas para hacer en
+                            </h3>
+                            <h3 class="title" style="color: #ff6c0c; font-size: 7.6vw; line-height: 7.3vw; font-weight: 800; text-align: center !important;">
+                                Cancún y Varadero
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="div-slider-banner" style="background-image: url('/images/upload//Landing Pages/febrero2023/Punta-Cana-Banner-web.jpg'); background-position: center bottom !important;">
+                    <div class="div-gradient" style="padding-left: 0vw !important; justify-content: center !important;">
+                        <div>
+                            <h3 class="title" style="color: #FFFFFF; font-size: 6.6vw; line-height: 6.08vw; font-weight: 800; text-align: center !important;">
+                                Cosas para hacer en
+                            </h3>
+                            <h3 class="title" style="color: #ff6c0c; font-size: 7.6vw; line-height: 7.3vw; font-weight: 800; text-align: center !important;">
+                                Cancún y Varadero
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="paragraph-title hidden-lg hidden-xl">
+        <h2 class="title" style="font-size: 2.2rem; line-height: 2.8rem;">
+            <strong>
+                <bold>
+                    Explora la Varadero y Cancún.
+                </bold>
+            </strong>
+        </h2>
+        <h2 class="title" style="font-size: 1.2rem;">
+            <strong>
+                <bold>
+                    Uno de los destinos caribeños más fascinantes.
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <p class="subtitle hidden-lg hidden-xl" style="text-align:justify; padding-left: 10% !important; padding-right: 10% !important; margin-top: 4vw !important; margin-bottom: 3vw !important; font-size: 16px !important; font-weight: 300 !important; color: #707070 !important; text-align: justify !important;">
+        Disfruta un destino de ensueño en el Caribe mexicano con Cancún y Varadero, que te transportará a un verdadero paraíso. Camina por sus hermosas playas de arena blanca y aguas cristalinas para practicar deportes acuáticos, como el snorkel y el buceo. Un memorable viaje que te dejará anhelando regresar. Descubre fascinantes estructuras antiguas y templos, en la ciudad maya de Tulum. En Cancún y la Varadero encontrarás la mezcla perfecta de aventura, diversión e historia.
+    </p>
+    <div class="linea hidden-lg hidden-xl" style="margin-right: auto !important; margin-left: auto !important;"></div>
+    <div class="swiper Swiper-4 hidden-lg hidden-xl" style="margin-top:20px !important; width: 100% !important; margin-bottom: 0px !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide">      
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1821&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3SEATOUR.jpg" loading="lazy">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png" loading="lazy">
+                                    Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                        Seatour
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                              ¡Relájate en cubierta y toma el sol sobre las aguas de Cuba! A bordo de un lujoso crucero en catamarán.
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde
+                                            </bold>
+                                        </strong> 
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $101 CAD
+                                              </bold>
+                                          </strong>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">       
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=315&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">    
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/catamrancrucerodelsol.jpg" loading="lazy">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png" loading="lazy">
+                                  Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                        Catamarán Crucero del Sol
+                                    </bold>
+                                </strong>
+                            </p>
+                            <p class="p-left">
+                              ¡Pasa un día disfrutando de todas las bellezas que la costa cubana puede ofrecer! 
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $136 CAD
+                                              </bold>
+                                          </strong>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="swiper-slide">      
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1815&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3SalaVIPdelAeropuerto.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                  Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                        Sala VIP del Aeropuerto
+                                    </bold>
+                                </strong> 
+                            </p>
+                            <p class="p-left">
+                            Déjate mimar y disfruta de tus últimos minutos en esta hermosa isla en la Sala VIP del aeropuerto.
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $40 CAD
+                                              </bold>
+                                          </strong> 
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">        
+                <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1817&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                    <div class="container-slide">
+                        <div class="img">
+                            <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3AventuraenLanchaRaapida.jpg">
+                        </div>
+                        <div class="destino">
+                            <div class="ubicacion">
+                                <span class="color-texto">
+                                    <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                                </span>
+                            </div>
+                            <p class="lugar">
+                                <strong>
+                                    <bold>
+                                      Aventura en Lancha Rápida
+                                    </bold>
+                                </strong> 
+                            </p>
+                            <p class="p-left">
+                              Una intrépida aventura al estilo James Bond recorriendo canales azules a toda velocidad en una lancha. 
+                            </p>
+                            <div class="grid-precio">
+                                <div class="precio">
+                                    <div>
+                                        <strong>
+                                            <bold>
+                                                Por Persona | Desde 
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                    <div class="color-precio">
+                                        <strong>
+                                            <bold>
+                                                $55 CAD
+                                              </bold>
+                                          </strong> 
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+          <div class="swiper-slide">       
+            <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=289&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-slide">
+                    <div class="img">
+                        <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UniaenlaHabana.jpg">
+                    </div>
+                    <div class="destino">
+                        <div class="ubicacion">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Varadero
+                            </span>
+                        </div>
+                        <p class="lugar">
+                            <strong>
+                                <bold>
+                                  Un Día en la Habana
+                                </bold>
+                            </strong> 
+                        </p>
+                        <p class="p-left">
+                          Caminarás por las calles empedradas rodeadas de elegantes edificios coloniales y autos clásicos americanos.
+                        </p>
+                        <div class="grid-precio">
+                            <div class="precio">
+                                <div>
+                                    <strong>
+                                        <bold>
+                                            Por Persona | Desde 
+                                        </bold>
+                                    </strong>
+                                </div>
+                                <div class="color-precio">
+                                    <strong>
+                                        <bold>
+                                            $101 CAD
+                                          </bold>
+                                      </strong> 
+                                  </div>
+                              </div>
+                          </div>
+                          <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                      </div>
+                  </div>
+              </a>
+          </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide">       
+            <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=366&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-slide">
+                    <div class="img">
+                        <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3TresCiudades.jpg">
+                    </div>
+                    <div class="destino">
+                        <div class="ubicacion">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Varadero
+                            </span>
+                        </div>
+                        <p class="lugar">
+                            <strong>
+                                <bold>
+                                  Tres Ciudades
+                                </bold>
+                            </strong> 
+                        </p>
+                        <p class="p-left">
+                          Experimenta la rica y fascinante historia de Cuba viajando a las ciudades de Trinidad, Santa Clara y Cienfuegos.
+                        </p>
+                        <div class="grid-precio">
+                            <div class="precio">
+                                <div>
+                                    <strong>
+                                        <bold>
+                                            Por Persona | Desde 
+                                        </bold>
+                                    </strong>
+                                </div>
+                                <div class="color-precio">
+                                    <strong>
+                                        <bold>
+                                            $127 CAD
+                                          </bold>
+                                      </strong> 
+                                  </div>
+                              </div>
+                          </div>
+                          <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                      </div>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide">       
+            <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=340&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-slide">
+                    <div class="img">
+                        <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/AventuraconDelfines.jpg">
+                    </div>
+                    <div class="destino">
+                        <div class="ubicacion">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                            </span>
+                        </div>
+                        <p class="lugar">
+                            <strong>
+                                <bold>
+                                  Aventura con Delfines
+                                </bold>
+                            </strong>
+                        </p>
+                        <p class="p-left">
+                          En Rancho Cangrejo vivirás una inolvidable aventura con delfines rodeado de un fascinante paisaje marino. 
+                         </p>
+                        <div class="grid-precio">
+                            <div class="precio">
+                                <div>
+                                    <strong>
+                                        <bold>
+                                            Por Persona | Desde 
+                                        </bold>
+                                    </strong> 
+                                </div>
+                                <div class="color-precio">
+                                    <strong>
+                                        <bold>
+                                            $130 CAD
+                                          </bold>
+                                      </strong>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                      </div>
+                  </div>
+              </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide">       
+            <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=330&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                <div class="container-slide">
+                    <div class="img">
+                        <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3HabanaHistoriaRitmo.jpg">
+                    </div>
+                    <div class="destino">
+                        <div class="ubicacion">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Varadero
+                            </span>
+                        </div>
+                        <p class="lugar">
+                            <strong>
+                                <bold>
+                                  Habana: Historia y Ritmo
+                                </bold>
+                            </strong>
+                        </p>
+                        <p class="p-left">
+                            ¡Necesitas experimentar el Luxury Sunset Sailing Varadero! ¿Qué es mejor que un atardecer en la Varadero?
+                        </p>
+                        <div class="grid-precio">
+                            <div class="precio">
+                                <div>
+                                    <strong>
+                                        <bold>
+                                            Por Persona | Desde 
+                                        </bold>
+                                    </strong> 
+                                </div>
+                                <div class="color-precio">
+                                    <strong>
+                                        <bold>
+                                            $171 CAD
+                                          </bold>
+                                      </strong>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--
+                          <div class="horas">
+                              <p class="color-precio">
+                                  X Horas
+                              </p>
+                          </div>
+                          -->
+                      </div>
+                  </div>
+              </a>
+          </div>
+        </div>
+      </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper Swiper-3 hidden-lg hidden-xl" style="width: 100% !important; margin-bottom: 0px !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide"> 
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=351&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                      <div class="container-slide">
+                          <div class="img">
+                              <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3HabanaEspecial.jpg">
+                          </div>
+                          <div class="destino">
+                              <div class="ubicacion">
+                                  <span class="color-texto">
+                                      <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                  </span>
+                              </div>
+                              <p class="lugar">
+                                  <strong>
+                                      <bold>
+                                        Habana Especial
+                                      </bold>
+                                  </strong>
+                              </p>
+                              <p class="p-left">
+                              Habana Especial te llevará a visitar los lugares más representativos de la Habana Vieja.
+                              </p>
+                              <div class="grid-precio">
+                                  <div class="precio">
+                                      <div>
+                                          <strong>
+                                              <bold>
+                                                  Por Persona | Desde 
+                                              </bold>
+                                          </strong> 
+                                      </div>
+                                      <div class="color-precio">
+                                          <strong>
+                                              <bold>
+                                                  $222 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">     
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=377&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-slide">
+                            <div class="img">
+                                <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UnanocheTopesCollantes.jpg">
+                            </div>
+                            <div class="destino">
+                                <div class="ubicacion">
+                                    <span class="color-texto">
+                                        <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                        Varadero
+                                    </span>
+                                </div>
+                                <p class="lugar">
+                                    <strong>
+                                        <bold>
+                                          Una noche en Topes de Collantes
+                                        </bold>
+                                    </strong>
+                                </p>
+                                <p class="p-left">
+                                  ¡Ven y explora Sancti Spíritus para una increíble aventura de dos días!
+                                </p>
+                                <div class="grid-precio">
+                                    <div class="precio">
+                                        <div>
+                                            <strong>
+                                                <bold>
+                                                    Por Persona | Desde 
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                        <div class="color-precio">
+                                            <strong>
+                                                <bold>
+                                                    $247 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">      
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=415&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                      <div class="container-slide">
+                          <div class="img">
+                              <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3UnanocheenlaHabanaTropicana.jpg">
+                          </div>
+                          <div class="destino">
+                              <div class="ubicacion">
+                                  <span class="color-texto">
+                                      <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                  </span>
+                              </div>
+                              <p class="lugar">
+                                  <strong>
+                                      <bold>
+                                      Una noche en la Habana y Tropicana
+                                      </bold>
+                                  </strong>
+                              </p>
+                              <p class="p-left">
+                                Pasa dos días explorando la encantadora ciudad de La Habana.
+                              </p>
+                              <div class="grid-precio">
+                                  <div class="precio">
+                                      <div>
+                                          <strong>
+                                              <bold>
+                                                  Por Persona | Desde 
+                                              </bold>
+                                          </strong> 
+                                      </div>
+                                      <div class="color-precio">
+                                          <strong>
+                                              <bold>
+                                                  $399 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">       
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=1818&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                      <div class="container-slide">
+                          <div class="img">
+                              <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3CubaAzuucarTabacoRon.jpg">
+                          </div>
+                          <div class="destino">
+                              <div class="ubicacion">
+                                  <span class="color-texto">
+                                      <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                    Varadero
+                                  </span>
+                              </div>
+                              <p class="lugar">
+                                  <strong>
+                                      <bold>
+                                          Cuba: Azúcar, Tabaco y Ron
+                                      </bold>
+                                  </strong>
+                              </p>
+                              <p class="p-left">
+                                Explora los legendarios campos de caña de azúcar de Cuba: ¡¡¡AZÚCAR!!!
+                              </p>
+                              <div class="grid-precio">
+                                  <div class="precio">
+                                      <div>
+                                          <strong>
+                                              <bold>
+                                                  Por Persona | Desde 
+                                              </bold>
+                                          </strong> 
+                                      </div>
+                                      <div class="color-precio">
+                                          <strong>
+                                              <bold>
+                                                  $114 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide">      
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6450&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                      <div class="container-slide">
+                          <div class="img">
+                              <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3saborescubanos.jpg">
+                          </div>
+                          <div class="destino">
+                              <div class="ubicacion">
+                                  <span class="color-texto">
+                                      <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                  </span>
+                              </div>
+                              <p class="lugar">
+                                  <strong>
+                                      <bold>
+                                        Sabores Cubanos
+                                      </bold>
+                                  </strong>
+                              </p>
+                              <p class="p-left">
+                                Disfruta de una experiencia verdaderamente sensorial de Varadero, a través de la gastronomia local.
+                              </p>
+                              <div class="grid-precio">
+                                  <div class="precio">
+                                      <div>
+                                          <strong>
+                                              <bold>
+                                                  Por Persona | Desde 
+                                              </bold>
+                                          </strong>
+                                      </div>
+                                      <div class="color-precio">
+                                          <strong>
+                                              <bold>
+                                                  $80 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide">        
+                  <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6455&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                      <div class="container-slide">
+                          <div class="img">
+                              <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3GuamaEspecial.jpg">
+                          </div>
+                          <div class="destino">
+                              <div class="ubicacion">
+                                  <span class="color-texto">
+                                      <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Varadero
+                                  </span>
+                              </div>
+                              <p class="lugar">
+                                  <strong>
+                                      <bold>
+                                          Guama Especial
+                                      </bold>
+                                  </strong>
+                              </p>
+                              <p class="p-left">
+                                  Este encantador recorrido te llevará a través del corazón de Cuba y sus tierras de cultivo.
+                              </p>
+                              <div class="grid-precio">
+                                  <div class="precio">
+                                      <div>
+                                          <strong>
+                                              <bold>
+                                                  Por Persona | Desde 
+                                              </bold>
+                                          </strong>
+                                      </div>
+                                      <div class="color-precio">
+                                          <strong>
+                                              <bold>
+                                                  $92 CAD
+                                                </bold>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            <div class="swiper-slide">       
+              <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6465&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                  <div class="container-slide">
+                      <div class="img">
+                          <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3habanapremium.jpg">
+                      </div>
+                      <div class="destino">
+                          <div class="ubicacion">
+                              <span class="color-texto">
+                                  <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                      Cancún
+                                  </span>
+                          </div>
+                          <p class="lugar">
+                              <strong>
+                                  <bold>
+                                    Habana Premium
+                                  </bold>
+                              </strong>
+                          </p>
+                          <p class="p-left">
+                            ¡Experimenta la magia y el encanto de La Habana con este tour de un día completo! 
+                          </p>
+                          <div class="grid-precio">
+                              <div class="precio">
+                                  <div>
+                                      <strong>
+                                          <bold>
+                                              Por Persona | Desde 
+                                          </bold>
+                                      </strong> 
+                                  </div>
+                                  <div class="color-precio">
+                                      <strong>
+                                          <bold>
+                                              $184 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">       
+              <a class="a-slide-big" href="https://www.nexustours.com/services/details.aspx?productID=6699&paxs=10&productType=TKT&destinationID=110604&addDays=2&nights=10&prov=SGN&accion=searchservices" target="_blank">
+                  <div class="container-slide">
+                      <div class="img">
+                          <img loading="lazy" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero2023/V3CATAMARANCRUCERODELSOL.jpg">
+                      </div>
+                      <div class="destino">
+                          <div class="ubicacion">
+                              <span class="color-texto">
+                                  <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                  Cancún
+                              </span>
+                          </div>
+                          <p class="lugar">
+                              <strong>
+                                  <bold>
+                                      Crucero bajo el Sol en Catamarán
+                                  </bold>
+                              </strong>
+                          </p>
+                          <p class="p-left">
+                            Sube a un catamarán o yate que te llevará de paseo por las aguas del Caribe.
+                          </p>
+                          <div class="grid-precio">
+                              <div class="precio">
+                                  <div>
+                                      <strong>
+                                          <bold>
+                                              Por Persona | Desde 
+                                          </bold>
+                                      </strong>
+                                  </div>
+                                  <div class="color-precio">
+                                      <strong>
+                                          <bold>
+                                              $754 CAD
+                                            </bold>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="horas">
+                                <p class="color-precio">
+                                    X Horas
+                                </p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="container-see-more hidden-lg hidden-xl">
+        <a class="redirect-Punta-Cana" href="https://www.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110898&paxs=10" target="_blank">
+            <div class="See-More">
+                <span style="font-size: 14px !important;">
+                    Ver más Tours
+                </span>
+            </div>
+        </a>
+    </div>
+
+    <div class="paragraph-title hidden-lg hidden-xl" style="margin-top: 80px !important;">
+        <h2 class="title" style="font-size: 2.2rem; line-height: 2.8rem; margin-bottom: 4vw !important; margin-top: -50px !important;">
+            <strong>
+                <bold>
+                      Descubre cosas para hacer con NexusTours en Varadero
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <div class="linea hidden-lg hidden-xl" style="margin-right: auto !important; margin-left: auto !important;"></div>
+    <p class="subtitle hidden-lg hidden-xl" style="text-align: center; padding-left: 10% !important; padding-right: 10% !important; margin-top: 4vw !important; margin-bottom: 5vw !important; font-size: 16px !important; font-weight: 300 !important; color: #707070 !important; text-align: justify !important; font-size:17px !important">
+      Prepárate para un día perfecto y toma las mejores fotografías de Varadero a bordo de un lujoso Catamarán. Practica emocionantes deportes náuticos, y disfruta de hermosos atardeceres. Da un giro a tu aventura pasando de las playas y la tierra agrícula de Cuba, visitando senderos rodeados de exuberante vegetación, y decenas de pueblos pequeños, llenos de carácter e historia. Varadero y Cuba, ¡Un viaje inolvidable que recordarás toda tu vida!
+    </p>
+    <div class="video hidden-lg hidden-xl" style="display: flex; justify-content: center;">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OOjyvP2n3d3b5-0nHkprhYP&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> 
+
+    <div class="hidden-lg hidden-xl" style="text-align: center; margin-top: 6vw !important; ">
+        <h2 class="title" style="font-size: 2.2rem; line-height: 2.8rem;">
+            <strong>
+                <bold>
+                    Traslados
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <div class="linea hidden-lg hidden-xl" style="margin-right: auto !important; margin-left: auto !important; margin-bottom: 4vw !important;"></div>
+    <div class="swiper-2 Swiper-Trans hidden-lg hidden-xl" style="overflow: hidden !important; width: 100% !important; height: 300px !important; margin-bottom: 2vw !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="a-trans hidden-lg hidden-xl" style="width: 100% !important; height: 400px !important;" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+                    <div class="div-trans" style="margin-bottom: 5vw !important;">
+                        <div style="height: 200px !important; width: 100%; background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Private_Transfer.png'); background-size: cover;  background-position: center;" >
+                        </div>
+                        <div class="ubicacion-2">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Cancún y Varadero
+                            </span>
+                        </div>
+                        <div class="ubicacion-2" style="color: #333333; margin-bottom: 3vw; margin-top: -3px;">
+                            <h3 style="font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Traslados Privados
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="a-trans hidden-lg hidden-xl" style="width: 100% !important; height: 400px !important;" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+                    <div class="div-trans" style="margin-bottom: 5vw !important;">
+                        <div style="height: 200px !important; width: 100%; background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Deluxe_Trasnfer.png'); background-size: cover;  background-position: center;" >
+                        </div>
+                        <div class="ubicacion-2">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Varadero
+                            </span>
+                        </div>
+                        <div class="ubicacion-2" style="color: #333333; margin-bottom: 3vw; margin-top: -3px;">
+                            <h3 style="font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Traslados de Lujo
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="a-trans hidden-lg hidden-xl" style="width: 100% !important; height: 400px !important;" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1" target="_blank">
+                    <div class="div-trans" style="margin-bottom: 5vw !important;">
+                        <div style="height: 200px !important; width: 100%; background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/Shared-Transfer.png'); background-size: cover;  background-position: center;" >
+                        </div>
+                        <div class="ubicacion-2">
+                            <span class="color-texto">
+                                <img loading="lazy" class="logo-maps" src="https://www.nexustours.com/images/upload//Landing Pages/Home/logo_maps.png">
+                                Varadero
+                            </span>
+                        </div>
+                        <div class="ubicacion-2" style="color: #333333; margin-bottom: 3vw; margin-top: -3px;">
+                            <h3 style="font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Traslados Compartidos
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="paragraph-title hidden-lg hidden-xl">
+        <h2 class="title" style="font-size: 2.2rem; line-height: 2.8rem;">
+            <strong>
+                <bold>
+                     Vive la experiencia de Cuba y Varadero: Un destino lleno de historia.
+                </bold>
+            </strong>
+        </h2>
+    </div>
+    <p class="subtitle hidden-lg hidden-xl" style="text-align:justify; padding-left: 10% !important; padding-right: 10% !important; margin-top: 4vw !important; margin-bottom: 3vw !important; font-size: 16px !important; font-weight: 300 !important; color: #707070 !important; text-align: justify !important;">
+      Visita La Habana y sus lugares más representativos. Recorre sus calles, admira sus iglesias barrocas, los museos y las casonas coloniales, y sorpréndete con autos antiguos que te transportarán en el tiempo. Disfruta de sus hermosos hoteles y deléitate con su exquisita comida local e internacional. Varadero y Cuba tienen el plan perfecto para tus vacaciones. En Nexus Tours lo hacemos posible.
+    </p>
+    <div class="linea hidden-lg hidden-xl" style="margin-right: auto !important; margin-left: auto !important;"></div>
+    <div class="swiper2 Swiper-countries-mob hidden-lg hidden-xl" style="overflow: hidden !important; margin-top: 5vw !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/punta-cana" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Punta_Cana.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Punta Cana
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Jamaica.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style=" width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Jamaica
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Costa_rica.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Costa Rica
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_St._Lucia.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Santa Lucía
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Dominican_Republic.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        República Dominicana
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/saint-marteen" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_St._Maarten.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        San Martín
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/aruba" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Aruba.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Aruba
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 266px !important; height: 400px !important;">
+                <a class="a-trans" style="width: 100%;" href="https://www.nexustours.com/cabos" target="_blank">
+                    <div style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Carrousel-Destino/Destinos_Los_Cabos.jpg'); background-size: cover;">
+                        <div class ="slide-countries" style="width: 100% !important;">
+                            <h3 style="color:#FFFFFF; font-size: 20px;">
+                                <bold>
+                                    <strong>
+                                        Los Cabos
+                                    </strong>
+                                </bold>
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Parte Mobile -->
+
+      <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".Swiper-1", {
+            slidesPerView: 3.2,
+            spaceBetween: 30,
+            loop : true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+        });
+    var swiper2 = new Swiper(".Swiper-2", {
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+        loop : true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-2",
+            prevEl: ".swiper-button-prev-2",
+        },
+    });
+    var swiper3 = new Swiper(".Swiper-3", {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-3",
+            prevEl: ".swiper-button-prev-3",
+        },
+    });
+
+    var swiper4 = new Swiper(".Swiper-4", {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-4",
+            prevEl: ".swiper-button-prev-4",
+        },
+    });
+
+    var swiper5 = new Swiper(".Swiper-countries", {
+        slidesPerView: 3.2,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination-5",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-5",
+            prevEl: ".swiper-button-prev-5",
+        },
+    });
+
+    var swiper6 = new Swiper(".Swiper-banner", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        noSwiping:true,
+        noSwipingClass: 'swiper-banner',
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination-6",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-6",
+            prevEl: ".swiper-button-prev-6",
+        },
+    });
+    var swiper7 = new Swiper(".Swiper-countries-mob", {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination-7",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-7",
+            prevEl: ".swiper-button-prev-7",
+        },
+    });
+    var swiper8 = new Swiper(".Swiper-Trans", {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination-8",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-8",
+            prevEl: ".swiper-button-prev-8",
+        },
+    });
+    </script>
