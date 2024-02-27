@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*This Styles*/
+
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: #F4F4F4;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+            }
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .container-logo-nexus{
+            background-color: #F4F4F4;
+            width: 100%;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .line-gradient-image{
+            margin: auto; 
+            width: 80%; 
+            height: 5px; 
+            background-position: center;
+            background-size: cover;
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/Background-RR-Header-Line.png');
+        }
+
+        .border-bottom-line{
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+
+        .border-top-line{
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+        }
+
+        .card-email{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 25px 22px;
+            box-sizing: border-box;
+        }
+
+        .parrafo-card{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 134%;
+            margin: 0;
+        }
+
+        .bold-text{
+            font-weight: 700;
+        }
+
+        .orange-nexus{
+            color: #FF621D;
+        }
+
+        .background-flight{
+            width: 95%;
+            max-width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/Img-Banner-PB-NX.png");
+            height: 204.28px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        @media(max-width:800px){
+            .background-flight{
+                background-image: url("https://www.nexustours.com/images/upload//Email-content/Img-Banner-PB-NX-mob.png") !important;
+                background-size: contain !important;
+                height: 90vw !important;
+            }
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media(max-width:800px){
+            .tag-desk{
+                display: none !important;
+            }
+        }
+
+        .tag-mob{
+            display: none;
+        }
+        @media(max-width:800px){
+            .tag-mob{
+                display: block !important;
+            }
+        }
+
+        .container-flight-cta{
+            width: fit-content; 
+            margin-left: 8%; 
+            margin-top: 2.5%;
+        }
+
+        @media(max-width:800px){
+            .container-flight-cta{
+                margin-left: auto !important;
+                margin-right: auto !important; 
+                margin-top: 5vw !important;
+            }
+        }
+
+        .white-nexus{
+            color: #FFFFFF;
+        }
+
+        .banner-header{
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/banner-PB-Nexus.png");
+            background-position: center;
+            background-size: cover;
+            height: 213px;
+            background-position: center;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                height: 35vw !important;
+            }
+        }
+
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-10{
+                margin-bottom: 2vw !important;
+            }
+        }
+
+        .margin-bottom-10-special{
+            margin-bottom: 10px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-10-special{
+                margin-bottom: 3vw !important;
+            }
+        }
+
+        .text-flight{
+            text-align: center;
+            line-height: 117.30%; 
+            font-weight: 700; 
+            font-size: 28px; 
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        @media(max-width:800px){
+            .text-flight{
+                font-size: 5.5vw !important; 
+                letter-spacing: .3vw !important;
+            }
+        }
+
+        .subcontainer-flight-cta{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subtext-flight-banner{
+            text-align: center; 
+            font-size: 16px; 
+            font-weight: 400; 
+            line-height: 122%; 
+            margin-top: 0px; 
+            width: 224px;
+        }
+
+        @media(max-width:800px){
+            .subtext-flight-banner{
+                width: 89% !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                font-size: 4vw !important;
+            }
+        }
+
+        .flight-cta{
+            width: fit-content; 
+            background-color: white; 
+            border-radius: 30px; 
+            padding: 1px 15px 1px 15px;
+            box-sizing: border-box;
+        }
+
+        @media(max-width:800px){
+            .flight-cta{
+                padding: 1.2vw 6vw 1.2vw 5vw;
+            }
+        }
+
+        .text-flight-cta{
+            font-weight: 700; 
+            font-size: 18px; 
+            margin: 0;
+            color: #FF621D;
+        }
+
+        @media(max-width:800px){
+            .text-flight-cta{
+                font-size: 5vw !important; 
+            }
+        }
+
+        .container-blue-cards{
+            width: 95%; 
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .banner-bestchoice{
+            height: auto; 
+            background-size: cover; 
+            background-position: center; 
+            width: 100%; 
+            padding-top: 34px;
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/Banner-Background-BestChoice.png');
+            border-radius: 30px 30px 0 0;
+            overflow: hidden;
+        }
+        @media(max-width:800px){
+            .banner-bestchoice{
+                padding-top: 5vw;
+            }
+        }
+
+        .width-BannerChoice-40{
+            width: 40%; 
+            max-width: 40%; 
+            min-width: 40%;
+        }
+
+        .width-BannerChoice-20{
+            width: 20%; 
+            max-width: 20%; 
+            min-width: 20%;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-20{
+                padding-left: 2vw !important;
+            }
+        }
+
+        .img-bestchoice{
+            width: 108px;
+            height: auto;
+        }
+        @media(max-width:800px){
+            .img-bestchoice{
+                width: 21vw !important;
+            }
+        }
+
+        .width-BannerChoice-40-pad{
+            width: 40%; 
+            max-width: 40%; 
+            min-width: 40%;
+            padding: 0px 10px;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-40-pad{
+                padding: 0vw 0vw 0vw 2vw !important;
+            }
+        }
+
+        .text-bestchoice{
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+            line-height: 111.36%;
+            letter-spacing: -.44px;
+        }
+        @media(max-width:800px){
+            .text-bestchoice{
+                font-size: 4vw !important;
+            }
+        }
+
+        .stars-ofertas{
+            width: 174px;
+            height: auto;
+        }
+
+        @media(max-width:800px){
+            .stars-ofertas{
+                width: 40vw !important;
+            }
+        }
+
+        .cards-producto{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            min-height: 141px;
+            overflow: hidden;
+            height: auto;
+        }
+
+        .table-productos{
+            table-layout: fixed;
+        }
+
+        .espacios-cards-productos{
+            height: 100%;
+            table-layout: fixed;
+        }
+
+        .espacio-izquierda{
+            width: 40%;
+            min-width: 40%;
+            padding: 0;
+        }
+        @media(max-width: 800px){
+            .espacio-izquierda{
+                width: 100% !important;
+                min-width: 100% !important;
+                height: 50vw !important;
+            }
+        }
+
+        .container-imagen-card-producto{
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .espacio-derecha{
+            box-sizing: border-box;
+            width: 60%;
+            max-width: 60%;
+            padding: 13px 0px;
+        }
+        @media(max-width: 800px){
+            .espacio-derecha{
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0vw 2vw !important;
+            }
+        }
+
+        .container-text-card-producto{
+            padding: 0px 20px;
+            width: 100%;
+        }
+        
+        @media(max-width: 800px){
+            .container-text-card-producto{
+                padding: 2vw 3vw !important;
+            }
+        }
+
+        .type-text-card-producto{
+            font-size: 12px;
+            line-height: normal;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .title-text-card-producto{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+        }
+
+        @media(max-width: 800px){
+            .title-text-card-producto{
+                font-size: 5vw !important;
+            }
+        }
+
+        .background-destination{
+            background-color: #333;
+            border-radius: 0px 11.5px 11.5px 0px;
+            width: fit-content;
+            color: white;
+            overflow: hidden;
+            padding: 0px 8px;
+        }
+
+        .table-booknow{
+            vertical-align: middle;
+        }
+
+        .logo-maps{
+            height: 9px;
+            width: 8px;
+        }
+
+        .text-destination{
+            font-size: 10px;
+            color: #FFF;
+            line-height: 100%;
+            margin: 0;
+            margin-left: 3px;
+        }
+
+        .text-card-producto{
+            margin: 0;
+            font-size: 12px;
+            color: #6B6B6B;
+            line-height: normal;
+            font-weight: 400;
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .container-boton-cta{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FF621D;
+            border-radius: 30px;
+            padding: 6px 30px;
+        }
+
+        .boton-cta{
+            font-weight: 700;
+            color: #FFF;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        @media(max-width: 800px){
+            .boton-cta{
+                font-size: 3vw !important;
+                padding-right: 2vw !important;
+            }
+        }
+
+        .plus-cta{
+            width: 12px;
+            height: 12px;
+        }
+        @media(max-width:800px){
+            .plus-cta{
+                width: 3vw !important;
+                height: 3vw !important;
+            }
+        }
+
+        .container-img-banner-transfer{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .activador-img-banner-transfer{
+            width: 100%;
+        }
+
+        .img-banner-kat-container{
+            width: 100%;
+            border-radius: 16px;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/Background-NX-Kat.png");
+            background-size: cover;
+            padding: 13px 0px 13px 10px;
+        }
+        @media(max-width:800px){
+            .img-banner-kat-container{
+                padding: 3vw 2vw !important;
+            }
+        }
+
+        .container-kat-width{
+            width: 20%;
+            text-align: center;
+        }
+
+        @media(max-width:800px){
+            .container-kat-width{
+                width: 26% !important;
+                max-width: 26% !important;
+            }
+        }
+
+        .img-banner-kat{
+            height: auto;
+            width: 87px;
+            margin: auto;
+        }
+        @media(max-width:800px){
+            .img-banner-kat{
+                height: auto !important;
+                width: 20vw !important;
+                max-width: 100% !important;
+            }
+        }
+
+        .texto-banner-transfer{
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container-text-kat-width{
+                width: 50%;
+            }
+
+        @media(max-width:800px){
+            .container-text-kat-width{
+                width: 40% !important;
+                max-width: 40% !important;
+            }
+        }
+
+        .bold-texto-banner-kat{
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-bottom: 2px;
+            color: #FFF;
+            line-height: 120%;
+        }
+        @media(max-width:800px){
+            .bold-texto-banner-kat{
+                font-size: 3.7vw !important;
+            }
+        }
+
+        .unbold-texto-banner-kat{
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: #FFF;
+            line-height: 120%;
+        }
+        @media(max-width:800px){
+            .unbold-texto-banner-kat{
+                font-size: 2.8vw !important;
+            }
+        }
+
+        .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+            }
+
+        @media(max-width:800px){
+            .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+                min-width: 40% !important;
+            }
+        }
+
+        .toll{
+            color: #FFF;
+            font-weight: 900;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        @media(max-width:800px){
+            .toll{
+                font-size: 3vw !important;
+                margin-bottom: 1vw !important;
+            }
+        }
+
+        .telephone{
+            background-color: #FFF;
+            color: #00AFDD;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            margin: 0;
+            border-radius: 7px;
+            width: 113px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width:800px){
+            .telephone{
+                font-size: 3.5vw !important;
+                padding: 1vw !important;
+                width: 22vw !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+
+        .background-redes-table{
+            background-color: #333;
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .containerSekura{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-color: #FFFFFF; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-sizing: border-box; 
+            padding: 25px 22px;
+        }
+        @media(max-width:800px){
+            .containerSekura{
+                padding: 25px 22px !important;
+                text-align: center !important;
+            }
+        }
+
+        .titleSekura{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: #FF621D; 
+            font-size: 20px; 
+            line-height: 107.7%; 
+            font-weight: 700;
+        }
+        @media(max-width:800px){
+            .titleSekura{
+                text-align: center !important;
+            }
+        }
+
+        .textSekura{
+            line-height: 107.7%; 
+            font-size: 14px; 
+            color: #646464; 
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        @media(max-width:800px){
+            .textSekura{
+                text-align: left !important;
+            }
+        }
+
+        .padTextSekura{
+            padding-right: 10px;
+        }
+
+        .imgSekura{
+            width: 175px;
+        }
+        @media(max-width:800px){
+            .imgSekura{
+                width: 60% !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-logo-nexus">
+                            <div class="logo-nexus">
+                                <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/logo-nexus-revamp.png">
+                            </div>
+                        </div>
+                        <div class="container-logo-nexus">
+                            <div class="line-gradient-image border-top-line">
+                            </div>
+                        </div>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="line-gradient-image border-bottom-line">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card">
+                                <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
+                                <br>
+                                <br>
+                                We're thrilled to have you on board for your upcoming trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>, and we want to make sure you're fully prepared for an unforgettable experience.
+                                <br>
+                                <br>
+                                <span class="bold-text orange-nexus">Your Journey, Your Way:</span> We believe that every traveler should have the freedom to tailor their adventure to their preferences.
+                                <br>
+                                <br>
+                                To get started on this exciting journey, simply visit our <a href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank" class="bold-text orange-nexus"> website here</a> or get in touch with our dedicated team of travel experts. We're here to assist you in creating a <span class="bold-text orange-nexus">{{contact.Destination}}</span> experience that's perfectly tailored to your desires.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="Flight-Insertion" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="background-flight">
+                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="container-flight-cta">
+                                            <h4 class="white-nexus margin-bottom-10-special text-flight tag-desk">
+                                                Upgrade your <br> experience
+                                            </h4>
+                                            <h4 class="white-nexus margin-bottom-10-special text-flight tag-mob">
+                                                Upgrade your experience
+                                            </h4>
+                                            <h4 class="white-nexus margin-bottom-10-special subtext-flight-banner">
+                                                and go to your hotel fast and smoothly.
+                                            </h4>
+                                            <div class="subcontainer-flight-cta">
+                                                <a href="https://www.nexustours.com/transfers/?&utm_source=nexusB2C&utm_medium=mail&utm_campaign=PostBooking&contact_id={{contact.id}}" target="_blank">
+                                                    <div class="flight-cta">
+                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <h4 class="text-flight-cta">
+                                                                        Book Now
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="Ofertas" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-blue-cards">
+                            <div class="banner-bestchoice margin-bottom-22">
+                                <table class="margin-bottom-10" role="presentation" border="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td class="width-BannerChoice-40">
+                                        </td>
+                                        <td class="width-BannerChoice-20">
+                                            <img class="img-bestchoice" src="https://www.nexustours.com/images/upload//Email-content/BestChoice_2023_Nexus.png">
+                                        </td>
+                                        <td class="width-BannerChoice-40-pad">
+                                            <h4 class="text-bestchoice">
+                                                Our top 3 awarded experiences of {{contact.year}} <br> in <span class="orange-nexus">{{contact.Destination}}</span>:
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="width: fit-content; height: fit-content; margin: auto;">
+                                    <img class="stars-ofertas" src="https://www.nexustours.com/images/upload//Email-content/stars_Nexus.png">
+                                </div>
+                            </div>
+                            <table id="CardProducto1-desk" class="tag-desk margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_1}}');">
+                                                        </div>
+                                                    </td>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_1}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_1}}
+                                                            </p>
+                                                            <a>
+                                                                
+                                                            </a>
+                                                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="CardProducto1-mob" class="tag-mob margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_1}}');">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_1}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_1}}
+                                                            </p>
+                                                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="CardProducto2-desk" class="tag-desk margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_2}}');">
+                                                        </div>
+                                                    </td>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_2}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_2}}
+                                                            </p>
+                                                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="CardProducto2-mob" class="tag-mob margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_2}}');">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_2}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_2}}
+                                                            </p>
+                                                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="CardProducto3-desk" class="tag-desk margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_3}}');">
+                                                        </div>
+                                                    </td>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_3}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_3}}
+                                                            </p>
+                                                            <a href="{{contact.excursion_3}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="CardProducto3-mob" class="tag-mob margin-bottom-15" role="presentation" border="0" cellspacin="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="cards-producto">
+                                            <table class="table-productos" role="presentation" border="0" cellspacing="0" width="100%" height="100%">
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-izquierda">
+                                                        <div class="container-imagen-card-producto" style="background-image: url('{{contact.photo_excursion_3}}');">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="espacios-cards-productos espacio-derecha">
+                                                        <div class="container-text-card-producto">
+                                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h3 class="type-text-card-producto orange-nexus margin-bottom-5">
+                                                                            EXCURSION
+                                                                        </h3>
+                                                                        <h2 class="title-text-card-producto margin-bottom-5">
+                                                                            {{contact.name_excursion_3}}
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="container-imagen-best">
+                                                                            <img class="cta-banner-card" src="https://www.nexustours.com/images/upload//Email-content/best-choice-email.png">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="background-destination margin-bottom-10">
+                                                                <table class="table-booknow" role="presentation" border="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td style="vertical-align: middle;">
+                                                                            <img class="logo-maps" src="https://www.nexustours.com/images/upload//Email-content/Ofertas-Correo/logo_maps.png">
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="text-destination">
+                                                                                {{contact.Destination}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <p class="text-card-producto margin-bottom-15">
+                                                                {{contact.description_excursion_3}}
+                                                            </p>
+                                                            <a href="{{contact.excursion_3}}&contact_id={{contact.id}}" target="_blank">
+                                                                <div class="container-boton-cta margin-bottom-15">
+                                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="boton-cta">
+                                                                                Book now
+                                                                            </td>
+                                                                            <td>
+                                                                                <img class="plus-cta" src="https://www.nexustours.com/images/upload//Email-content/plus-cta.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="BannerKat" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-img-banner-transfer">
+                            <a class="activador-img-banner-transfer" href="tel:{{contact.ICC_Tel}}" target="_blank">
+                                <div class="img-banner-kat-container">
+                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td class="container-kat-width">
+                                                <img class="img-banner-kat" src="https://www.nexustours.com/images/upload//Email-content/Kat-question-email.png">
+                                            </td>
+                                            <td class="texto-banner-transfer container-text-kat-width">
+                                                <h4 class="bold-texto-banner-kat">
+                                                    Your Local Expert.<br>
+                                                    Just a Click Away.
+                                                </h4>
+                                                <h4 class="unbold-texto-banner-kat">
+                                                    Our experts ensures your perfect getaway.
+                                                </h4>
+                                            </td>
+                                            <td class="container-toll-width" style="text-align: center;">
+                                                <h4 class="toll">
+                                                    Call us
+                                                </h4>
+                                                <h4 class="telephone">
+                                                    {{contact.ICC_Tel}}
+                                                </h4>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="bannerSeguros" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="containerSekura">
+                            <table class="tag-desk" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="padTextSekura">
+                                        <h4 class="titleSekura">
+                                            Do you want to be protected <br>
+                                            during your trip?
+                                        </h4>
+                                        <p class="textSekura">
+                                            With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
+                                            <br>
+                                            <br>
+                                            We ensure your well-being in the event of any medical issues that may arise along the way.
+                                            <br>
+                                            <br>
+                                            Make sure to include it in your vacation plans.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob">
+                                <h4 class="titleSekura">
+                                    Do you want to be protected <br>
+                                    during your trip?
+                                </h4>
+                                <p class="textSekura">
+                                    With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
+                                    <br>
+                                    <br>
+                                    We ensure your well-being in the event of any medical issues that may arise along the way.
+                                    <br>
+                                    <br>
+                                    Make sure to include it in your vacation plans.
+                                    <br>
+                                    <br>
+                                </p>
+                                <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--
+            <table id="banner-publicidad" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <a href="" target="_blank">
+                            <div class="container-banner-publicidad">
+                                <img class="img-banner-publicidad" src="https://www.nexustours.com/images/upload//Email-content/esim-email-banner.png">
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            -->
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://www.nexustours.com/?&utm_source=nexusB2C&utm_medium=mail&utm_campaign=PostBooking&contact_id={{contact.id}}" target="_blank">
+                                <h3 class="dominio">
+                                    www.nexustours.com
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="container-redes">
+                            <table class="table-redes" role="presentation" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/facebook-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://twitter.com/nexustours" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/x-email.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.instagram.com/nexustours/" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/instagram-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.linkedin.com/company/nexustours" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/linkedin-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/trip-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/wa-email-orange.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
