@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #004A63;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: #F4F4F4;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+        }
+
+        /* Styles */
+
+        .banner-header{
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/Header-Banner-Trip.png");
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            background-position: center;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                border-bottom-left-radius: 7vw !important;
+                border-bottom-right-radius: 7vw !important;
+                height: 59vw !important;
+            }
+        }
+
+        .container-logo-nexus{
+            width: 100%;
+            background-color: #00425C;
+            border-radius: 0px 0px 40px 40px;
+        }
+
+        .logo-nexus{
+            padding: 21px 8%;
+            text-align: center;
+        }
+
+        @media(max-width:800px){
+            .logo-nexus{
+                padding: 3vw 8% !important;
+            }
+        }
+
+        .td-left{
+            text-align: left;
+        }
+
+        .td-right{
+            text-align: right;
+        }
+
+        @media(max-width:800px){
+            .img-logo-nexus{
+                width: 34vw !important;
+            }
+        }
+
+        .img-badges-nexus{
+            width: 180px;
+        }
+
+        @media(max-width:800px){
+            .img-badges-nexus{
+                width: 29vw !important;
+            }
+        }
+
+        .container-kat-rating{
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 56px;
+        }
+
+        .img-kat-rating{
+            margin-right: 10px;
+        }
+
+        .banner-kat-rating{
+            width: 95%; 
+            background-color: #00425C;
+            margin-left: auto; 
+            margin-right: auto; 
+            padding: 59px 2.5% 25px 2.5%; 
+            border-radius: 16px;
+        }
+
+        .text-banner-kat-rating{
+            font-size: 25px; 
+            margin-top: 0px; 
+            color: white; 
+            font-weight: 800; 
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .center-boton-kat-rating{
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .boton-kat-rating{
+            background-color: white; 
+            width: fit-content; 
+            padding: 8px 18px; 
+            border-radius: 15px;
+        }
+
+        .text-boton-kat-rating{
+            margin-top: 0px; 
+            margin-bottom: 0px; 
+            font-size: 18px; 
+            font-weight: 700; 
+            line-height: 110%;
+        }
+
+        .text-title-thanks{
+            margin-top: 0px; 
+            margin-bottom: 0px; 
+            font-size: 20px; 
+            line-height: 107%; 
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto;
+            max-width: 95%;
+            text-align: center;
+        }
+
+        .orange-nexus{
+            color: #F17121;
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .background-redes-table{
+            background-color: #00425C;
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .card-email{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 25px 22px;
+            box-sizing: border-box;
+        }
+
+        .parrafo-card{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 134%;
+            margin: 0;
+        }
+
+        .bold-text{
+            font-weight: 700;
+        }
+
+        .color-whl{
+            color: #00425C;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="container-logo-nexus">
+                                <div class="logo-nexus">
+                                    <img class="img-logo-nexus" alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-Starfish-Rebrand.png">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card">
+                                <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
+                                <br>
+                                <br>
+                                We hope you had an amazing time on your recent <span class="bold-text orange-nexus">{{contact.excursion_name}}</span> experience!
+                                <br>
+                                <br>
+                                We're constantly striving to provide our customers with the best, most unique experiences, and your feedback plays a crucial role in helping us achieve that goal. We'd truly appreciate it if you could take a few moments to complete this micro survey and share your thoughts and comments on what went well during the tour, areas of improvement, and best highlights.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspace="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-kat-rating">
+                            <img class="img-kat-rating" src="https://www.nexustours.com/images/upload//Email-content/Stars-Rating-Kat.png">
+                        </div>
+                        <div class="banner-kat-rating">
+                            <h4 class="margin-bottom-15 text-banner-kat-rating">
+                                Your opinion truly counts!
+                            </h4>
+                            <div class="center-boton-kat-rating">
+                                <a href="{{contact.yotpo}}" target="_blank">
+                                    <div class="boton-kat-rating">
+                                        <h4 class="text-boton-kat-rating">
+                                            Write a review here
+                                        </h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <h4 class="text-title-thanks">
+                            Thank you for choosing <span class="orange-nexus">NexusTours</span>
+                        </h4>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://royalton.nexustours.com/?&utm_source=starfish_rooming_list&utm_medium=mail&utm_campaign=HowWasYourTrip&contact_id={{contact.id}}" target="_blank">
+                                <h3 class="dominio">
+                                    starfish.nexustours.com
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="container-redes">
+                            <table class="table-redes" role="presentation" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <a href="https://wa.me/529982423584?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/waEmailBDR.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

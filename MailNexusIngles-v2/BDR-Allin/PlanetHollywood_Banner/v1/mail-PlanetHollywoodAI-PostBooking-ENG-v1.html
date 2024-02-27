@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #484A4D;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: #F4F4F4;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+        }
+
+        .banner-header{
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/Banner_PickUp_PH_Black.png");
+            background-position: center;
+            background-size: cover;
+            height: 286px;
+            background-position: center;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                border-bottom-left-radius: 12vw !important;
+                border-bottom-right-radius: 12vw !important;
+                height: 47vw !important;
+            }
+        }
+
+        .line-gradient-image{
+            margin: auto; 
+            width: 80%; 
+            height: 5px; 
+            background-color: white;
+        }
+
+        .border-bottom-line{
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+
+        .border-top-line{
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .card-email{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 25px 22px;
+            box-sizing: border-box;
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-22{
+                margin-bottom: 4vw !important;
+            }
+        }
+
+        .parrafo-card{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 134%;
+            margin: 0;
+        }
+        
+        .orange-nexus{
+            color: #48174A;
+        }
+
+        .bold-text{
+            font-weight: 700;
+        }
+
+        .text-card-producto{
+            margin: 0;
+            font-size: 12px;
+            color: #6B6B6B;
+            line-height: normal;
+            font-weight: 400;
+        }
+
+        .background-destination{
+            background-color: #004A63;
+            border-radius: 0px 11.5px 11.5px 0px;
+            width: fit-content;
+            color: white;
+            overflow: hidden;
+            padding: 0px 8px;
+        }
+
+        .text-destination{
+            font-size: 10px;
+            color: #FFF;
+            line-height: 100%;
+            margin: 0;
+            margin-left: 3px;
+        }
+
+        .logo-maps{
+            height: 9px;
+            width: 8px;
+        }
+
+        .boton-cta{
+            font-weight: 700;
+            color: #FFF;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        @media(max-width: 800px){
+            .boton-cta{
+                font-size: 3vw !important;
+                padding-right: 2vw !important;
+            }
+        }
+
+        .container-boton-cta{
+            width: fit-content;
+            margin: auto;
+            background-color: #004A63;
+            border-radius: 30px;
+            padding: 6px 30px;
+        }
+        @media(max-width: 800px){
+            .container-boton-cta{
+                padding: 2vw 6vw !important;
+            }
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-10{
+                margin-bottom: 2vw !important;
+            }
+        }
+
+        .margin-bottom-30{
+            margin-bottom: 30px;
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .background-redes-table{
+            background-color: #48174A;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .redes{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #FF621D;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .container-table-productos{
+            width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+
+        .product-title{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FF621D;
+            color: #FFF;
+            line-height: 190%;
+        }
+
+        .product-content{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FFF;
+            line-height: 190%;
+        }
+        @media(max-width:800px){
+            .product-content{
+                padding: 0 2vw !important;
+            }
+        }
+
+        .cta-banner{
+            width: 45px;
+            height: 45px;
+        }
+        @media(max-width:800px){
+            .cta-banner{
+                width: auto !important;
+                height: 9vw !important;
+            }
+        }
+
+        .cta-banner-card{
+            width: 45px;
+            height: 45px;
+        }
+        @media(max-width:800px){
+            .cta-banner-card{
+                width: 9vw !important;
+                height: 9vw !important;
+            }
+        }
+
+        .table-productos{
+            table-layout: fixed;
+        }
+
+        .container-imagen-best{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .text-titles{
+            font-size: 24px;
+            line-height: 130%;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .subtext-title-email{
+            margin: 0;
+            font-size: 16px;
+            line-height: 134%;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
+
+        .table-booknow{
+            vertical-align: middle;
+        }
+
+        .toll{
+            color: #FFF;
+            font-weight: 900;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        @media(max-width:800px){
+            .toll{
+                font-size: 3vw !important;
+                margin-bottom: 1vw !important;
+            }
+        }
+
+        .telephone{
+            background-color: #FFF;
+            color: #F17121;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            margin: 0;
+            border-radius: 7px;
+            width: 113px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width:800px){
+            .telephone{
+                font-size: 3.5vw !important;
+                padding: 1vw !important;
+                width: 22vw !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-logo-nexus{
+            background-color: #48174A;
+            width: 100%;
+        }
+
+        .background-nexus{
+            background-color: #48174A;
+        }
+
+        .plus-cta{
+            width: 12px;
+            height: 12px;
+        }
+        @media(max-width:800px){
+            .plus-cta{
+                width: 3vw !important;
+                height: 3vw !important;
+            }
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media(max-width:800px){
+            .tag-desk{
+                display: none !important;
+            }
+        }
+
+        .tag-mob{
+            display: none;
+        }
+        @media(max-width:800px){
+            .tag-mob{
+                display: block !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-car-width{
+                width: 35% !important;
+                max-width: 35% !important;
+                min-width: 35% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-text-car-width{
+                width: 45% !important;
+                max-width: 45% !important;
+                min-width: 45% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-plus-width{
+                width: 10% !important;
+            }
+        }
+        .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+            }
+
+        @media(max-width:800px){
+            .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+                min-width: 40% !important;
+            }
+        }
+
+        .vermas{
+            margin: 0; 
+            text-decoration: underline; 
+            font-size: 15px; 
+            color: #333;
+            text-align: center;
+        }
+
+        .container-blue-cards{
+            width: 95%; 
+            margin: auto; 
+            background-color: #004A63;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .text-bestchoice{
+            font-size: 18px;
+            color: white;
+            margin: 0;
+            line-height: 111.36%;
+            letter-spacing: -.44px;
+        }
+        @media(max-width:800px){
+            .text-bestchoice{
+                font-size: 4vw !important;
+            }
+        }
+
+        .img-bestchoice{
+            width: 108px;
+            height: auto;
+        }
+        @media(max-width:800px){
+            .img-bestchoice{
+                width: 21vw !important;
+            }
+        }
+
+        .width-BannerChoice-40{
+            width: 40%; 
+            max-width: 40%; 
+            min-width: 40%;
+        }
+
+        .width-BannerChoice-20{
+            width: 20%; 
+            max-width: 20%; 
+            min-width: 20%;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-20{
+                padding-left: 2vw !important;
+            }
+        }
+
+        .width-BannerChoice-40-pad{
+            width: 40%; 
+            max-width: 40%; 
+            min-width: 40%;
+            padding: 0px 10px;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-40-pad{
+                padding: 0vw 0vw 0vw 2vw !important;
+            }
+        }
+
+        .color-whl{
+            color: #004A63;
+        }
+
+        .width-tollWA{
+            width: 50%;
+            max-width: 50%;
+            min-width: 50%;
+        }
+
+        .img-tollWA{
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        .container-toll{
+            width: fit-content; 
+            border-radius: 50px; 
+            padding: 10px 60px 10px 60px; 
+            margin: auto;
+        }
+        @media(max-width:800px){
+            .container-toll{
+                padding: 2vw 11vw !important;
+            }
+        }
+
+        .container-wa{
+            width: fit-content; 
+            border-radius: 50px; 
+            padding: 10px 55px 10px 55px; 
+            margin: auto;
+        }
+        @media(max-width:800px){
+            .container-wa{
+                padding: 2vw 10.7vw !important; 
+            }
+        }
+
+        .text-tollWA{
+            color: #FFFFFF; 
+            margin: 0;
+            padding-left: 5px;
+            font-size: 18px;
+        }
+
+        .container-banner-publicidad{
+            width: 95%; 
+            margin: auto;
+        }
+
+        .img-banner-publicidad{
+            width: 100%;
+        }
+
+        .stars-ofertas{
+            width: 174px;
+            height: auto;
+        }
+
+        @media(max-width:800px){
+            .stars-ofertas{
+                width: 40vw !important;
+            }
+        }
+
+        .tag-desk-table{
+            display: table;
+        }
+        @media(max-width:800px){
+            .tag-desk-table{
+                display: none !important;
+            }
+        }
+
+        .img-redes{
+            width: 35px;
+            height: 35px;
+        }
+
+        .border-table-pickup{
+            border-radius: 15px;
+            overflow: hidden;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #B6B6B6;
+        }
+
+        .content-tabla-pickup{
+            border-collapse: collapse;
+        }
+
+        .left-column-color{
+            background-color: #004A63;
+            width: 50%;
+            max-width: 50%;
+            padding: 16px 30px;
+            border: 1px solid #B6B6B6;
+        }
+        @media(max-width:800px){
+            .left-column-color{
+                padding: 3vw 8vw !important;
+            }
+        }
+
+        .right-column-color{
+            width: 50%;
+            max-width: 50%;
+            padding: 16px 30px;
+            border: 1px solid #B6B6B6;
+        }
+        @media(max-width:800px){
+            .right-column-color{
+                padding: 4vw 8vw !important;
+            }
+        }
+
+        .text-column-left{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .text-column-right{
+            color: #467281;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .white-nexus{
+            color: #FFFFFF;
+        }
+
+        .container-padding-blue{
+            padding-top: 17px;
+            padding-bottom: 27px;
+        }
+
+        .transfer-text{
+            font-size: 20px;
+            line-height: normal;
+            font-weight: 700;
+            margin: 0;
+            color: #F37021;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        @media(max-width:800px){
+            .transfer-text{
+                text-align: center !important;
+            }
+        }
+
+        .transfer-text-type{
+            font-size: 36px;
+            line-height: 100%;
+            font-weight: 700;
+            color: #333;
+            margin-top: 0;
+        }
+
+        @media(max-width:800px){
+            .transfer-text-type{
+                text-align: center !important;
+            }
+        }
+
+        .ul-transfer-content{
+            padding: 0;
+            margin-top: 0;
+        }
+        
+        .bullets-description{
+            color: #004A63;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        .img-transfer{
+            height: auto;
+            width: 310px;
+            vertical-align: middle;
+        }
+
+        @media(max-width:800px){
+            .img-transfer{
+                width: 100% !important;
+            }
+        }
+
+        .card-email-2{
+            background-color: #FFF;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            padding: 0px 22px 14px 43px;
+            box-sizing: border-box;
+        }
+
+        @media(max-width:800px){
+            .card-email-2{
+                padding: 0px 0px 14px 0px !important;
+            }
+        }
+
+        .padding-top-text-transfer{
+            padding-top: 22px;
+        }
+
+        .align-img-transfer{
+            vertical-align: middle;
+        }
+        @media(max-width:800px){
+            .align-img-transfer{
+                margin: auto !important;
+                width: 100% !important;
+            }
+        }
+
+        .text-container-blue{
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            line-height: 134%;
+        }
+
+        .margin-text-container-blue{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .container-redes-esp{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container-redes-right{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .text-cta-transfer{
+            margin: 0; 
+            font-size: 20px; 
+            font-weight: 700; 
+            line-height: 110%;
+        }
+
+        .background-cta-transfer{
+            background-color: #F17121; 
+            width: fit-content; 
+            border-radius: 15px; 
+            padding: 7px 16px 7px 15px;
+            margin-bottom: 10px;
+        }
+
+        .background-flight{
+            width: 95%;
+            max-width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/background_flight_PH_desk.png");
+            height: 141.28px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        @media(max-width:800px){
+            .background-flight{
+                background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/background_flight_PH_mob.png") !important;
+                background-size: contain !important;
+                height: 75vw !important;
+            }
+        }
+
+        .text-flight{
+            text-align: center; 
+            width: fit-content; 
+            line-height: 117.30%; 
+            font-weight: 700; 
+            font-size: 22px; 
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        @media(max-width:800px){
+            .text-flight{
+                font-size: 6.5vw !important; 
+                letter-spacing: .3vw !important;
+            }
+        }
+
+        .container-flight-cta{
+            width: fit-content; 
+            margin-left: 16%; 
+            margin-top: 4%;
+        }
+
+        @media(max-width:800px){
+            .container-flight-cta{
+                margin-left: auto !important;
+                margin-right: auto !important; 
+                margin-top: 5vw !important;
+            }
+        }
+
+        .subcontainer-flight-cta{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flight-cta{
+            width: fit-content; 
+            background-color: #FBA62E; 
+            border-radius: 30px; 
+            padding: 1px 15px 1px 20px;
+        }
+
+        @media(max-width:800px){
+            .flight-cta{
+                padding: .2vw 6vw .2vw 5vw;
+            }
+        }
+
+        .text-flight-cta{
+            font-weight: 700; 
+            font-size: 18px; 
+            margin: 0;
+        }
+
+        @media(max-width:800px){
+            .text-flight-cta{
+                font-size: 5vw !important; 
+            }
+        }
+
+        .img-cross-flight{
+            padding-top: 5px; 
+            padding-left: 7px;
+        }
+        @media(max-width:800px){
+            .img-cross-flight{
+                padding-top: 1.5vw !important; 
+                padding-left: 1vw !important;
+                height: 5vw !important;
+            }
+        }
+
+        .banner-app{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: fit-content;
+        }
+
+        .img-banner-app{
+            width: 100%;
+        }
+
+        .container-npi{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 437px; 
+            border-radius: 6px; 
+            overflow: hidden; 
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/Banner-NPI-PH.png"); 
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
+        
+        @media(max-width:800px){
+            .container-npi{
+                height: 68vw !important; 
+                background-repeat: no-repeat !important; 
+                background-size: 100% !important;
+            }
+        }
+
+        .espacio-boton-npi{
+            height: 50%;
+            padding: 0;
+        }
+
+        .up{
+            padding: 0;
+            vertical-align: bottom;
+            text-align: center;
+            width: 100%;
+            padding-bottom: 4px;
+        }
+
+        @media(max-width:800px){
+            .up{
+                padding-bottom: .5vw;
+            }
+        }
+
+        .espacio-boton-npi-2{
+            height: 50%;
+            padding: 0;
+            vertical-align: bottom;
+            text-align: center;
+            width: 50%;
+            max-width: 50%;
+        }
+
+        .boton-npi{
+            background-color: #48174A; 
+            width: fit-content; 
+            border-radius: 15px; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            padding: 7px 24px; 
+            box-sizing: border-box;
+        }
+
+        @media(max-width:800px){
+            .boton-npi{
+                padding: 1vw 3vw !important; 
+            }
+        }
+
+        .text-boton-npi{
+            color: white; 
+            font-size: 20px; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+
+        @media(max-width:800px){
+            .text-boton-npi{
+                font-size: 3.5vw !important; 
+            }
+        }
+
+        .containerSekura{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-color: #FFFFFF; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-sizing: border-box; 
+            padding: 25px 22px;
+        }
+        @media(max-width:800px){
+            .containerSekura{
+                padding: 25px 22px !important;
+                text-align: center !important;
+            }
+        }
+
+        .titleSekura{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 20px; 
+            line-height: 107.7%; 
+            font-weight: 700;
+        }
+        @media(max-width:800px){
+            .titleSekura{
+                text-align: center !important;
+            }
+        }
+
+        .textSekura{
+            line-height: 107.7%; 
+            font-size: 14px; 
+            color: #646464; 
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        @media(max-width:800px){
+            .textSekura{
+                text-align: left !important;
+            }
+        }
+
+        .padTextSekura{
+            padding-right: 10px;
+        }
+
+        .imgSekura{
+            width: 175px;
+        }
+        @media(max-width:800px){
+            .imgSekura{
+                width: 60% !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-logo-nexus">
+                            <div class="logo-nexus">
+                                <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-PH-Rebrand.png">
+                            </div>
+                        </div>
+                        <div class="container-logo-nexus">
+                            <div class="line-gradient-image border-top-line">
+                            </div>
+                        </div>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="line-gradient-image border-bottom-line">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card">
+                                <span class="bold-text">Dear, <span class="orange-nexus">{{contact.firstname}}!</span>,</span>
+                                <br>
+                                <br>
+                                We're thrilled you've chosen <span class="orange-nexus bold-text"> {{contact.hotel_name}} </span> for your upcoming trip to {{contact.Destination}}. You've made an excellent choice!
+                                <br>
+                                <br>
+                                We want to remind you that your reservation includes a round-trip transfer to the hotel from the airport.
+                                <br>
+                                <br>
+                                <span class="bold-text"> Please enter your flight information by clicking <a class="orange-nexus" style="text-decoration: underline;" href="https://eh.nexustours.com/confirmTRFBooking" target="_blank">here</a>.</span> We will track your flight status to ensure the pickup transfer is updated.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="Flight-Insertion" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="background-flight tag-desk">
+                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="container-flight-cta">
+                                            <h4 class="white-nexus margin-bottom-10 text-flight">
+                                                Enter your flight<br>
+                                                Information
+                                            </h4>
+                                            <div class="subcontainer-flight-cta">
+                                                <a href="https://eh.nexustours.com/confirmTRFBooking" target="_blank">
+                                                    <div class="flight-cta">
+                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <h4 class="white-nexus text-flight-cta">
+                                                                        Click here
+                                                                    </h4>
+                                                                </td>
+                                                                <td>
+                                                                    <img class="img-cross-flight" src="https://www.nexustours.com/images/upload//Email-content/white-cross.png">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="background-flight tag-mob">
+                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="container-flight-cta">
+                                            <h4 class="white-nexus margin-bottom-10 text-flight">
+                                                Enter your flight<br>
+                                                Information
+                                            </h4>
+                                            <div class="subcontainer-flight-cta">
+                                                <a href="https://eh.nexustours.com/confirmTRFBooking" target="_blank">
+                                                    <div class="flight-cta">
+                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <h4 class="white-nexus text-flight-cta">
+                                                                        Click here
+                                                                    </h4>
+                                                                </td>
+                                                                <td>
+                                                                    <img class="img-cross-flight" src="https://www.nexustours.com/images/upload//Email-content/white-cross.png">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="BannerApp" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-npi">
+                            <table class="espacio-boton-npi up">
+                                <tr>
+                                    <td class="espacio-boton-npi-2">
+                                        <a class="boton-npi" target="_blank" href="https://qr.stay-app.com/static/done.html?sh=650c88124df2bd00180a52a4&utm_source=planet_all_in&utm_medium=mail&utm_campaign=PostBooking">
+                                            <h4 class="text-boton-npi"> Book Now</h4>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="espacio-boton-npi">
+                                <table style="height: 100%;" role="presentation" border="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td class="espacio-boton-npi-2">
+                                            <a class="boton-npi" target="_blank" href="https://qr.stay-app.com/static/done.html?sh=651e05234df2bd0018179d29&utm_source=planet_all_in&utm_medium=mail&utm_campaign=PostBooking">
+                                                <h4 class="text-boton-npi"> Book Now</h4>
+                                            </a>
+                                        </td>
+                                        <td class="espacio-boton-npi-2">
+                                            <a class="boton-npi" target="_blank" href="https://qr.stay-app.com/static/done.html?sh=651e05d64df2bd0018179d61&utm_source=planet_all_in&utm_medium=mail&utm_campaign=PostBooking">
+                                                <h4 class="text-boton-npi"> Book Now</h4>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextBlock2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card">
+                                You can also explore the best tours and activities to make the most of your stay by clicking <a class="orange-nexus bold-text" style="text-decoration: underline;" href="{{contact.deeplink_email}}">here</a>
+                                <br>
+                                <br>
+                                Let's get your journey started!
+                                <br>
+                                <br>
+                                Your <span class="orange-nexus bold-text">{{contact.hotel_name}}</span> Team
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextBlock3" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card margin-bottom-15" style="text-align: center;">
+                                Don't hesitate to let us know if we can assist you with any special preparations before your arrival.
+                            </p>
+                            <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="width-tollWA">
+                                        <div style="width: fit-content; margin: auto;">
+                                            <a href="tel:+{{contact.ICC_Tel}}" target="_blank">
+                                                <div class="background-nexus container-toll">
+                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email-yellow.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="text-tollWA">
+                                                                    Call us
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="width-tollWA">
+                                        <div style="width: fit-content; margin: auto;">
+                                            <a href="https://wa.me/9981472600?" target="_blank">
+                                                <div class="background-nexus container-wa">
+                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="text-tollWA">
+                                                                    Whatsapp
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob">
+                                <div class="margin-bottom-10">
+                                    <a href="tel:+{{contact.ICC_Tel}}" target="_blank">
+                                        <div class="background-nexus container-toll">
+                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email-yellow.png">
+                                                    </td>
+                                                    <td>
+                                                        <h4 class="text-tollWA">
+                                                            Call us
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="https://wa.me/9981472600?" target="_blank">
+                                    <div class="background-nexus container-wa">
+                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="text-tollWA">
+                                                        Whatsapp
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="bannerSeguros" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="containerSekura">
+                            <table class="tag-desk" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="padTextSekura">
+                                        <h4 class="titleSekura orange-nexus">
+                                            Do you want to be protected <br>
+                                            during your trip?
+                                        </h4>
+                                        <p class="textSekura">
+                                            With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
+                                            <br>
+                                            <br>
+                                            We ensure your well-being in the event of any medical issues that may arise along the way.
+                                            <br>
+                                            <br>
+                                            Make sure to include it in your vacation plans.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob">
+                                <h4 class="titleSekura">
+                                    Do you want to be protected <br>
+                                    during your trip?
+                                </h4>
+                                <p class="textSekura">
+                                    With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
+                                    <br>
+                                    <br>
+                                    We ensure your well-being in the event of any medical issues that may arise along the way.
+                                    <br>
+                                    <br>
+                                    Make sure to include it in your vacation plans.
+                                    <br>
+                                    <br>
+                                </p>
+                                <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://planet.nexustours.com/?&utm_source=planet_allin&utm_medium=mail&utm_campaign=PostBooking" target="_blank">
+                                <h3 class="dominio">
+                                    planet.nexustours.com
+                                </h3>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
