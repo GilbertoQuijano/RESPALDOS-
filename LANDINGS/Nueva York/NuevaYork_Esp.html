@@ -1007,7 +1007,7 @@
         }
         @media (max-width:992px){
             .text-card-swiper-destinations{
-                width: 95%;
+                width: 100%;
                 margin: auto;
                 padding: 5vw 7vw;
                 text-align: center;
@@ -1134,7 +1134,6 @@
                 font-size: 13px;
             }
         }
-    
         @media (max-width:992px){
             .boton-tarifas{
                 padding: 2vw 4vw;
@@ -1142,17 +1141,12 @@
                 margin-right: 5px;
             }
         }
-        .bannerlogin {
-            width: 100%;
-            height: 104px;
-            overflow: hidden;
-            border-radius: 10px;
-            cursor: pointer;
-        }
     
         .bannerlogin2 {
             width: 100%;
+            /*
             height: 150px;
+            */
             overflow: hidden;
             border-radius: 10px;
             cursor: pointer;
@@ -1160,217 +1154,221 @@
     
         /*Espacio para nuevas Cards Home*/
         .container-link-card{
-                background-color: transparent; 
-                width: 276px; 
-                display: flex; 
-                flex-direction: column; 
-                gap: 6px; 
-                border-radius: 15px 15px 0px 0px; 
-                overflow: hidden; 
-                margin-bottom: 6px;
-                text-decoration: none !important;
+            background-color: transparent; 
+            width: 276px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px; 
+            border-radius: 15px 15px 0px 0px; 
+            overflow: hidden; 
+            margin-bottom: 6px;
+            text-decoration: none !important;
+        }
+        @media (min-width:0px) and (max-width:1200px){
+            .container-link-card{
+                width: 94%;
             }
-            @media (min-width:0px) and (max-width:1200px){
-                .container-link-card{
-                    width: 94%;
-                }
-            }
-    
+        }
+
+        .container-slider-card{
+            width: 100%; 
+            height: 177px; 
+            border-radius: 15px; 
+            overflow: hidden;
+        }
+        @media (min-width:992px) and (max-width:1200px){
             .container-slider-card{
-                width: 100%; 
-                height: 177px; 
-                border-radius: 15px; 
-                overflow: hidden;
+                height: 206px;
             }
-            @media (min-width:992px) and (max-width:1200px){
-                .container-slider-card{
-                    height: 206px;
-                }
-            }
-    
-            .name-tour-card{
-                font-size: 20px; 
-                font-weight: 700; 
-                letter-spacing: -.4px; 
-                color: #333; 
-                margin: 0; 
-                line-height: normal;
-            }
-    
-            .container-destination-card{
-                display: flex; 
-                align-items: center; 
-                gap: 3px;
-            }
-    
-            .destination-card{
-                font-size: 12px; 
-                color: #555; 
-                font-weight: 500; 
-                line-height: normal; 
-                letter-spacing: -.5px;
-            }
-    
-            .text-card{
-                font-size: 12px; 
-                line-height: normal; 
-                font-weight: 500; 
-                letter-spacing: -.48px; 
-                color: #9D9D9D;
-            }
-    
-            .precio-card{
-                font-size: 20px; 
-                line-height: normal; 
-                font-weight: 700; 
-                letter-spacing: -.4px; 
-                color: #555; 
-                text-transform: uppercase;
-            }
-    
-            .container-discount-card{
-                background-color: #FF621D; 
-                width: fit-content; 
-                display: flex; 
-                flex-direction: row; 
-                align-items: center; 
-                box-sizing: border-box; 
-                padding: 4px 12px; 
-                border-radius: 10px; 
-                gap: 7px;
-                text-decoration: none !important;
-                cursor: pointer;
-            }
-    
-            .text-discount-card{
-                font-size: 12px; 
-                color: #FFF; 
-                line-height: normal; 
-                letter-spacing: -.36px; 
-                font-weight: 700;
-            }
-    
-            .container-exclusive-card{
-                display: block;
-                border: 1px solid #C7C7C7; 
-                width: fit-content; 
-                box-sizing: border-box; 
-                padding: 6px 10px; 
-                margin-left: 0; 
-                margin-right: auto; 
-                border-radius: 10px;
-            }
-    
-            .text-exclusive-card{
-                color: #FF621D; 
-                font-size: 12px; 
-                line-height: normal; 
-                font-weight: 700;
-            }
-    
+        }
+
+        .name-tour-card{
+            font-size: 20px; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #333; 
+            margin: 0; 
+            line-height: normal;
+        }
+
+        .container-destination-card{
+            display: flex; 
+            align-items: center; 
+            gap: 3px;
+        }
+
+        .destination-card{
+            font-size: 12px; 
+            color: #555; 
+            font-weight: 500; 
+            line-height: normal; 
+            letter-spacing: -.5px;
+        }
+
+        .text-card{
+            font-size: 12px; 
+            line-height: normal; 
+            font-weight: 500; 
+            letter-spacing: -.48px; 
+            color: #9D9D9D;
+        }
+
+        .precio-card{
+            font-size: 20px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555; 
+            text-transform: uppercase;
+        }
+
+        .container-discount-card{
+            background-color: #FF621D; 
+            width: fit-content; 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            box-sizing: border-box; 
+            padding: 4px 12px; 
+            border-radius: 10px; 
+            gap: 7px;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+        .text-discount-card{
+            font-size: 12px; 
+            color: #FFF; 
+            line-height: normal; 
+            letter-spacing: -.36px; 
+            font-weight: 700;
+        }
+
+        .container-exclusive-card{
+            display: block;
+            border: 1px solid #C7C7C7; 
+            width: fit-content; 
+            box-sizing: border-box; 
+            padding: 6px 10px; 
+            margin-left: 0; 
+            margin-right: auto; 
+            border-radius: 10px;
+        }
+
+        .text-exclusive-card{
+            color: #FF621D; 
+            font-size: 12px; 
+            line-height: normal; 
+            font-weight: 700;
+        }
+
+        .container-cards-width{
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width:0px) and (max-width:1200px){
             .container-cards-width{
-                width: 290px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                width: 100%;
             }
-            @media (min-width:0px) and (max-width:1200px){
-                .container-cards-width{
-                    width: 100%;
-                }
-            }
-    
+        }
+
+        .container-botones-tours{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            position: relative;
+            height: 45px;
+            align-items: center;
+        }
+
+        @media (max-width: 992px){
             .container-botones-tours{
-                display: flex;
-                flex-direction: row;
-                gap: 10px;
-                position: relative;
-                height: 45px;
-                align-items: center;
+                display: none;
             }
+        }
+
+        .swiper-button-block{
+            position: static;
+            user-select: none;
+        }
+
+        .swiper-tours {
+            width: 100%;
+            height: 360px;
+            overflow: hidden;
+        }
     
-            @media (max-width: 992px){
-                .container-botones-tours{
-                    display: none;
-                }
-            }
-    
-            .swiper-button-block{
-                position: static;
-                user-select: none;
-            }
-    
+        @media (max-width:1200px){
             .swiper-tours {
                 width: 100%;
-                height: 360px;
-                overflow: hidden;
+                height: 390px;
             }
-        
-            @media (max-width:1200px){
-                .swiper-tours {
-                    width: 100%;
-                    height: 390px;
-                }
+        }
+    
+        @media (max-width:992px){
+            .swiper-tours {
+                width: 100%;
+                height: fit-content;
+                /*
+                margin-left: -7.15vw;
+                */
             }
-        
-            @media (max-width:992px){
-                .swiper-tours {
-                    width: 100%;
-                    height: fit-content;
-                    /*
-                    margin-left: -7.15vw;
-                    */
-                }
-            }
+        }
+        .title{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 110%;
+            text-align: center;
+        }
+        @media (max-width:992px){
             .title{
-                font-size: 40px;
+                font-size: 7vw;
+                line-height: 121%;
                 font-weight: 700;
-                line-height: 110%;
                 text-align: center;
             }
-            @media (max-width:992px){
-                .title{
-                    font-size: 7vw;
-                    line-height: 121%;
-                    font-weight: 700;
-                    text-align: center;
-                }
-            }
-    
+        }
+
+        .container-title-swiper-tours{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+        @media (max-width:992px){
             .container-title-swiper-tours{
-                display: flex; 
-                flex-direction: row; 
-                justify-content: space-between;
+                justify-content: center;
             }
-            @media (max-width:992px){
-                .container-title-swiper-tours{
-                    justify-content: center;
-                }
-            }
+        }
 
-            @media (max-width:992px){
-                .container-max-width{
-                    width: 100%;
-                }
+        @media (max-width:992px){
+            .container-max-width{
+                width: 100%;
             }
+        }
 
-            .precio-card-through{
-                font-size: 16px; 
-                line-height: normal; 
-                font-weight: 700; 
-                letter-spacing: -.4px; 
-                color: #555555ab; 
-                text-transform: uppercase;
-                text-decoration: line-through;
-            }
+        .precio-card-through{
+            font-size: 16px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555555ab; 
+            text-transform: uppercase;
+            text-decoration: line-through;
+        }
 
-            .containerPriceCard{
-                display: flex; 
-                flex-direction: row; 
-                gap: 5px; 
-                align-items: flex-end;
-            }
-            /*Espacio para nuevas Cards Home*/
+        .containerPriceCard{
+            display: flex; 
+            flex-direction: row; 
+            gap: 5px; 
+            align-items: flex-end;
+        }
+
+        .img-banner-login{
+            width: 100%;
+        }
+        /*Espacio para nuevas Cards Home*/
         
     </style>
 </head>
@@ -1463,7 +1461,7 @@
             <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/banner/BannerBookEarly20espdownarrow.jpg" loading="lazy">
             <img class="img-banner-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/banner/BookEarlyEspanol20downarrowmobile.jpg">
         </div>
-        <div class="container-swiper-destinations">
+        <div class="container-swiper-destinations margin-bottom-13">
             <div class="text-card-swiper-destinations">
                 <p class="text-gradient-destinations">
                     Los mejores destinos para visitar con NexusTours
