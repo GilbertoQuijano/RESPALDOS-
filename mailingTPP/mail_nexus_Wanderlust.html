@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /**/
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: #F4F4F4;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+            }
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .container-logo-nexus{
+            background-color: #F4F4F4;
+            width: 100%;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .line-gradient-image{
+            margin: auto; 
+            width: 80%; 
+            height: 5px; 
+            background-position: center;
+            background-size: cover;
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/Background-RR-Header-Line.png');
+        }
+
+        .border-top-line{
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+        }
+
+        .banner-header{
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/Banner-header-collage-Royalton.png");
+            background-position: center;
+            background-size: cover;
+            height: 406px;
+            background-position: center;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                height: 69vw !important;
+            }
+        }
+
+        .border-bottom-line{
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+
+        .containerBotonRegister{
+            width: 95%; 
+            margin: auto; 
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/Mailchimp/background_gradient_blue_green.png); 
+            background-position: center; 
+            background-size: cover; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            padding: 4.5px 0 0.5px 0;
+        }
+
+        .alignRight{
+            text-align: right;
+        }
+
+        .textBotonRegister{
+            margin: 0; 
+            font-size: 20px; 
+            font-weight: 700; 
+            line-height: 129%; 
+            letter-spacing: -0.49px; 
+            color: white; 
+            padding-left: 5px;
+        }
+        @media(max-width:800px){
+            .textBotonRegister{
+                font-size: 5vw !important; 
+            }
+        }
+
+        .container-text-card-producto{
+            padding: 0px 20px;
+            width: 100%;
+        }
+        
+        @media(max-width:800px){
+            .container-text-card-producto{
+                padding: 2vw 3vw !important;
+            }
+        }
+
+        .text-titles{
+            font-size: 30px;
+            line-height: 114%;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+        }
+        @media(max-width:800px){
+            .text-titles{
+                font-size: 7vw;
+            }
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+
+        .orange-nexus{
+            color: #F17121;
+        }
+
+        .container95{
+            width: 95%;
+            margin: auto;
+        }
+
+        .width100{
+            width: 100%;
+        }
+
+        .padRight8{
+            padding-right: 8px;
+        }
+
+        .padLeft8{
+            padding-left: 8px
+        }
+
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .textDestinationOferta{
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-top: 0; 
+            font-size: 27px; 
+            line-height: 100%;
+            text-align: center;
+        }
+        @media(max-width:800px){
+            .textDestinationOferta{
+                font-size: 5vw !important; 
+            }
+        }
+
+        .containerBotonOferta{
+            background: #FF621D; 
+            border-radius: 5px; 
+            overflow: hidden; 
+            width: fit-content; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .textBotonOferta{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 20px; 
+            color: #FFF; 
+            line-height: 100%; 
+            padding: 6px 28px;
+        }
+        @media(max-width:800px){
+            .textBotonOferta{
+                font-size: 4.5vw !important; 
+            }
+        }
+
+        .margin-bottom-60{
+            margin-bottom: 60px;
+        }
+        @media(max-width:800px){
+            .margin-bottom-60{
+                margin-bottom: 30px !important;
+            }
+        }
+
+        .linksBottom{
+            color: white; 
+            text-decoration: underline;
+            font-size: 12px;
+        }
+        @media(max-width:800px){
+            .linksBottom{
+                font-size: 13px !important;
+            }
+        }
+
+        .textBottomRedes{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: #FFF; 
+            font-size: 12px; 
+            line-height: 179%; 
+            text-align: center;
+        }
+        @media(max-width:800px){
+            .textBottomRedes{
+                font-size: 9px !important; 
+            }
+        }
+
+        .background-redes-table{
+            background-color: #333;
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-logo-nexus">
+                            <div class="logo-nexus">
+                                <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/logo-nexus-revamp.png">
+                            </div>
+                        </div>
+                        <div class="container-logo-nexus">
+                            <div class="line-gradient-image border-top-line">
+                            </div>
+                        </div>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="line-gradient-image border-bottom-line">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="containerBotonRegister">
+                            <a href="#" target="_blank">
+                                <table role="presentation" border="0" cellspacing="0" width="fit-content" style="margin: auto;">
+                                    <tr>
+                                        <td class="alignRight">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/Mailchimp/tag_discount.png">
+                                        </td>
+                                        <td>
+                                            <h4 class="textBotonRegister">
+                                                Register to unlock discounts
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="TextTitle2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <h3 class="margin-bottom-5 text-titles">
+                                <span class="orange-nexus">Top destinations</span> <br>
+                                with offers this week!
+                            </h3>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container95">
+                            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="width100 padRight8">
+                                            <div class="margin-bottom-15 containerImg">
+                                                <img class="imgOferta" src="https://www.nexustours.com/images/upload//Email-content/Mailchimp/Riviera_Maya_Mail.png">
+                                            </div>
+                                            <h4 class="margin-bottom-15 textDestinationOferta">
+                                                Riviera Maya
+                                            </h4>
+                                            <div class="containerBotonOferta">
+                                                <a href="#" target="_blank">
+                                                    <h4 class="textBotonOferta">
+                                                        Book Now
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="width100 padLeft8">
+                                            <div class="margin-bottom-15 containerImg">
+                                                <img class="imgOferta" src="https://www.nexustours.com/images/upload//Email-content/Mailchimp/Riviera_Maya_Mail.png">
+                                            </div>
+                                            <h4 class="margin-bottom-15 textDestinationOferta">
+                                                Riviera Maya
+                                            </h4>
+                                            <div class="containerBotonOferta">
+                                                <a href="#" target="_blank">
+                                                    <h4 class="textBotonOferta">
+                                                        Book Now
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="margin-bottom-60" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <div class="width100 padRight8">
+                                            <div class="margin-bottom-15 containerImg">
+                                                <img class="imgOferta" src="https://www.nexustours.com/images/upload//Email-content/Mailchimp/Riviera_Maya_Mail.png">
+                                            </div>
+                                            <h4 class="margin-bottom-15 textDestinationOferta">
+                                                Riviera Maya
+                                            </h4>
+                                            <div class="containerBotonOferta">
+                                                <a href="#" target="_blank">
+                                                    <h4 class="textBotonOferta">
+                                                        Book Now
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="width100 padLeft8">
+                                            <div class="margin-bottom-15 containerImg">
+                                                <img class="imgOferta" src="https://www.nexustours.com/images/upload//Email-content/Mailchimp/Riviera_Maya_Mail.png">
+                                            </div>
+                                            <h4 class="margin-bottom-15 textDestinationOferta">
+                                                Riviera Maya
+                                            </h4>
+                                            <div class="containerBotonOferta">
+                                                <a href="#" target="_blank">
+                                                    <h4 class="textBotonOferta">
+                                                        Book Now
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://www.nexustours.com/?&utm_source=nexusB2C&utm_medium=mail&utm_campaign=pre-arrival" target="_blank">
+                                <h3 class="dominio">
+                                    www.nexustours.com
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="container-redes">
+                            <table class="table-redes" role="presentation" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/facebook-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://twitter.com/nexustours" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/x-email.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.instagram.com/nexustours/" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/instagram-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.linkedin.com/company/nexustours" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/linkedin-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/trip-email-orange.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://wa.me/9981472600" target="_blank">
+                                            <img src="https://www.nexustours.com/images/upload//Email-content/wa-email-orange.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 90%; margin-left: auto; margin-right: auto; margin-bottom: 20px;">
+                            <table role="presentation" border="0" cellspacion="0" width="100%">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <a class="linksBottom" href="https://www.nexustours.com/terms-and-conditions" target="_blank">
+                                            Términos y Condiciones
+                                        </a>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <a class="linksBottom" href="https://www.nexustours.com/user-agreement" target="_blank" >
+                                            Aviso sobre la protección de datos
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 90%; margin: auto; padding-bottom: 28px;">
+                            <p class="textBottomRedes">
+                                © 1999-2023 NexusTours Los Olivos 66 Boulevard Colosio mza 66, sm 310, lote 24, 77560 Cancún, Q.R. Add customer.service@nexustours.com to your address book to ensure you receive the NexusTours newsletter. This email was sent with love from NexusTours to %correo% Rates and discounts were correct at time of production and are subject to availability.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

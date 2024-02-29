@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /**/
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: #F4F4F4;
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .container-logo-nexus{
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/Background_orange_midstay.png);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .banner-header{
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/TPP/tppBannerHeaderImg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 276px;
+            border-radius: 36px 36px 0 0;
+            overflow: hidden;
+        }
+
+        .linksBottom{
+            color: white; 
+            text-decoration: underline;
+            font-size: 12px;
+        }
+
+        .textBottomRedes{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: #FFF; 
+            font-size: 12px; 
+            line-height: 179%; 
+            text-align: center;
+        }
+
+        .background-redes-table{
+            background-color: #333;
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .containerTitle{
+            width: 100%; 
+            text-align: center;
+        }
+
+        .titleHeader{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 40px; 
+            font-weight: 400; 
+            line-height: 98%; 
+            letter-spacing: -1px;
+        }
+
+        .orangeTitleHeader{
+            font-size: 45px; 
+            color: #FF621D; 
+            line-height: 98%; 
+            letter-spacing: -1px; 
+            font-weight: 700;
+        }
+
+        .pseudoOverlap{
+            width: 100%; 
+            height: 38px; 
+            background-color: white; 
+            margin-top: 40%; 
+            border-radius: 40px 40px 0px 0px;
+        }
+
+        .parrafoCard{
+            width: 100%; 
+            background-color: white; 
+            padding: 50px 50px 55px 50px;
+            border-radius: 0px 0px 40px 40px;
+            text-align: justify;
+        }
+
+        .boldText{
+            font-weight: 700;
+        }
+
+        .orangeNexus{
+            color: #FF621D;
+        }
+
+        .cornerBase{
+            width: 100%; 
+            height: 160px; 
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .aCorner{
+            display: block; 
+            width: 100%; 
+            height: 100%;
+            padding-top: 65px; 
+        }
+
+        .textCorner{
+            margin-bottom: 0; 
+            margin-top: 0;
+            color: white; 
+            text-align: center; 
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 100%;
+        }
+
+        .cornerTopLeft{
+            border-radius: 40px 40px 0 40px; 
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/TPP/tppMailRivieraMaya.png);
+        }
+
+        .cornerTopRight{
+            border-radius: 40px 40px 40px 0px; 
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/TPP/tppMailPuntaCana.png);
+        }
+
+        .cornerBottomLeft{
+            border-radius: 40px 0px 40px 40px; 
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/TPP/tppMailJamaica.png);
+        }
+
+        .cornerBottomRight{
+            border-radius: 0px 40px 40px 40px; 
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/TPP/tppMailCostaRica.png);
+        }
+
+        .tdCornerTopLeft{
+            padding-right: 10px; 
+            width: 50%;
+        }
+
+        .tdCornerTopRight{
+            padding-left: 10px; 
+            width: 50%;
+        }
+
+        .tdCornerBottomLeft{
+            padding-right: 10px; 
+            padding-top: 20px; 
+            width: 50%;
+        }
+
+        .tdCornerBottomRight{
+            padding-left: 10px; 
+            padding-top: 20px; 
+            width: 50%;
+        }
+
+        .textParrafoCard{
+            margin-top: 0; 
+            font-weight: 400; 
+            font-size: 15.5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-logo-nexus">
+                            <div class="logo-nexus">
+                                <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/Logo-Nexus-White.png">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="containerTitle">
+                            <h4 class="titleHeader">
+                                <span class="orangeTitleHeader">
+                                    Welcome to a world
+                                </span><br>
+                                filled with unmatched <br>
+                                experiences!
+                            </h4>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="pseudoOverlap">
+
+                            </div>
+                        </div>
+                        <div class="parrafoCard">
+                            <p class="textParrafoCard">
+                                <span class="boldText">Good Day,</span> <br> <br>
+                                I represent NexusTours, the leading provider of tours and transfers in 42 exquisite destinations. I'm reaching out to introduce you to our exclusive <span class="boldText">Travel Partner Portal</span> tailored for travel agents.
+                                <br> <br>
+                                With commissions starting at 10%, our program offers a lucrative opportunity for you to increase your earnings as you expand your sales.
+                                <br> <br>
+                                <span class="boldText orangeNexus">Key Points:</span> 
+                                <br>
+                                <ul class="textParrafoCard">
+                                    <li>
+                                        Centralized Management.
+                                    </li>
+                                    <li>
+                                        One User-friendly Platform.
+                                    </li>
+                                    <li>
+                                        Wide portfolio.
+                                    </li>
+                                    <li>
+                                        Access a comprehensive range of services, with more than 2,500 excursions spanning 42 destinations across 16 countries.
+                                    </li>
+                                    <li>
+                                        Personalized support: Receive dedicated assistance from our experienced team.
+                                    </li>
+                                    <li>
+                                        Live availability: Real-time information empowers you to provide quotes.
+                                    </li>
+                                    <li>
+                                        Profitability: Incremental Commission program, wired monthly directly to your main office account.
+                                    </li>
+                                </ul>
+                                <br>
+                                <span class="boldText orangeNexus">Getting Started:</span>
+                                <br><br>
+                                To embark on this exciting journey and start earning, register as our affiliate by visiting <a href="https://tpp.nexustours.com/" style="text-decoration: underline;" target="_blank">https://tpp.nexustours.com/</a> and filling out the registration form. Your gateway to mark up your bookings and provide your clients with exceptional travel experiences awaits.
+                                <br>
+                                For any inquiries or assistance, feel free to contact us.
+                                <br>
+                                We appreciate your interest in partnering with NexusTours.
+                                <br> <br>
+                                <span class="boldText">Best Regards</span>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td>
+                        <a style="width: 100%; display: block;" href="https://tpp.nexustours.com/" target="_blank">
+                            <img style="width: 100%; display: block;" src="https://www.nexustours.com/images/upload//Email-content/TPP/tppImgLink.png">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div style="width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 20px; margin-top: 30px;">
+                            <table role="presentation" border="0" cellspacion="0" width="100%">
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <a class="linksBottom" href="https://www.nexustours.com/terms-and-conditions" target="_blank">
+                                            Términos y Condiciones
+                                        </a>
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <a class="linksBottom" href="https://www.nexustours.com/user-agreement" target="_blank" >
+                                            Aviso sobre la protección de datos
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 90%; margin: auto; padding-bottom: 28px;">
+                            <p class="textBottomRedes">
+                                © 1999-2023 NexusTours Los Olivos 66 Boulevard Colosio mza 66, sm 310, lote 24, 77560 Cancún, Q.R. Add customer.service@nexustours.com to your address book to ensure you receive the NexusTours newsletter. This email was sent with love from NexusTours to %correo% Rates and discounts were correct at time of production and are subject to availability.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

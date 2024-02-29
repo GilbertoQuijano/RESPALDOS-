@@ -1,0 +1,271 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Voucher</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800display=swap" rel="stylesheet" />
+    <style>
+        .voucher{
+        width: 60%;
+        margin: auto;
+        }
+        .contenedor-naranja{
+        width: 60%;
+        width: auto;
+        height: 30px;
+        background-color: #f36f21;
+        }
+        .titulo{
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-size: 32px;
+        color: #5b5b5b;
+        margin: auto;
+        }
+        .localizador-centro{
+        width:30%;
+        background-color: #f36f21;
+        border-radius: 10px;
+        margin: auto;
+        }
+        .loc{
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-size: 47px;
+        font-weight: 500;
+        color: #ffffff;
+        }
+        .linea-gris{
+        width: 60%;
+        margin-top: 30px;
+        width: auto;
+        height: 2px;
+        background-color: #d6d6d6;
+        }
+        .legal{
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-weight: 500;
+        font-size: 20px;
+        color: #686868;
+        margin: auto;
+        }
+        .table, td{
+        border: 1px solid #d6d6d6;
+        border-collapse: collapse;
+        width: 400px;
+        }
+        .titulos{
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-weight: 500;
+        font-size: 18px;
+        color: #686868;
+        }
+        .texto-general{
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-weight: 300;
+        font-size: 18px;
+        color: #686868;
+        }
+        .contenedor-naranja-titulo{
+        height: 50px;
+        background-color: #f36f21;
+        }
+        .titulos-contenedor{
+        padding-top: 8px;
+        text-align: center;
+        font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+        font-size: 27px;
+        font-weight: 500;
+        color: #ffffff;
+        }
+        .banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+        }
+        .banner-1{
+        width: 49%;
+        }
+        .banner-2{
+        width: 49%;
+        margin-left: auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="voucher">
+        <div class="contenedor-naranja">
+        </div>
+        <br />
+        <div class="titulo">
+        <h1><span text-align="center">Confirmaci&#243;n de reserva</span></h1>
+        </div>
+        <div class="localizador-centro">
+        <h2><span text-align="center"><span class="loc">%loc%</span></span></h2>
+        </div>
+        <div class="linea-gris">
+        </div>
+        <div class="legal">
+        <p><span text-align="center">Gracias por reservar con <strong>NexusTours</strong></span></p>
+        <p><span text-align="center">Verifica que los datos de tu reserva sean correctos, de lo contrario, no podremos darte el servicio</span></p>
+        </div>
+        <table style="margin: auto;">
+            <tbody>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Reserva:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%loc%<br />
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Nombre:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%nombre%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Apellidos:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%apellidos%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Fecha de Reserva:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%diaReserva%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Total de la Reserva:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%precioTotalCompleto%</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor-naranja-titulo">
+        <h2 class="titulos-contenedor"><span text-align="center">Informaci&#243;n del Tour</span></h2>
+        </div>
+        <table style="margin: auto;">
+            <tbody>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Excursi&#243;n:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%nombreSrv%<br />
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Pasajero:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%pasajerosSaludo%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Estado de Reserva:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%lre_estado%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Zona:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%zona%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Origen:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%hotelestancia%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Destino:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%infoDestino%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Fecha:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%fIni%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Vuelo:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%tablaVuelos%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="datos-cliente">
+                    <p class="titulos">Observaciones:</p>
+                    </td>
+                    <td colspan="2">
+                    <p class="texto-general">%observaciones%</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor-naranja-titulo">
+            <h2 class="titulos-contenedor">
+                <span text-align="center">
+                    Precio Total %precioTotalCompleto%
+                </span>
+            </h2>
+        </div>
+        <div class="legal">
+            <p>
+                <span text-align="center">
+                    En caso de requerir algun cambio en su reserva, favor de comunicarse con nuestro equipo de atencion a cliente.
+                    Telefono
+                    <a href="tel:5529982516527">
+                        <span style="color: #f36f21;"> 
+                            +52 998 251 6527
+                        </span>
+                    </a>
+                    ó Whatsapp
+                    <a href="tel:5529985774175">
+                        <span style="color: #f36f21;"> 
+                            +52 998 577 4175
+                        </span>
+                    </a>
+                </span>
+            </p>
+            <p>
+        </div>
+        </div>
+        </div>
+</body>
