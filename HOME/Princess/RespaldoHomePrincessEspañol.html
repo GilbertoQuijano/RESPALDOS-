@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
-
+            
+            *{
+                font-family: 'DM Sans', sans-serif;
+            }
+            
             a,
             a:hover,
             a:visited{
@@ -62,7 +67,7 @@
             }
 
             .gradient-color-nexus{
-                background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
+                background: #fc9f34;
             }
 
             .container-things-header{
@@ -116,17 +121,17 @@
             }
 
             .title{
-                font-size: 40px;
+                font-size: 40px !important;
                 font-weight: 700;
                 line-height: 120%;
-                text-align: left;
+                text-align: left !important;
             }
             @media (max-width:992px){
                 .title{
-                    font-size: 6vw;
+                    font-size: 5vw !important;
                     line-height: 121%;
                     font-weight: 700;
-                    text-align: center ;
+                    text-align: center !important;
                 }
             }
 
@@ -259,7 +264,7 @@
             .text-gradient{
                 font-size: 12px;
                 font-weight: 900;
-                color:rgba(255, 98, 29, 1);
+                color: #fc9f34;
                 text-align: left;
             }
             @media (max-width:992px){
@@ -453,7 +458,7 @@
             }
 
             .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                background-color: rgba(243, 111, 33, 1);
+                background-color: #fc9f34;
                 width: 20px;
                 height: 6px;
                 opacity: 1;
@@ -518,7 +523,7 @@
             
 
             .orange-nexus{
-                color: #FF621D;
+                color: #fc9f34;
             }
 
             @media (max-width:992px){
@@ -615,7 +620,7 @@
                 .container-video-texto-section{
                     flex-direction: column;
                     gap: 4vw;
-                    width: 100%;
+                    width: 95%;
                     margin: auto;
                 }
             }
@@ -644,7 +649,7 @@
             }
 
             .title-gradient{
-                color:rgba(255, 98, 29, 1);
+                color: #fc9f34;
             }
 
             .title-video{
@@ -664,7 +669,7 @@
             }
             @media (max-width:992px){
                 .title-video{
-                    font-size: 6.5vw;
+                    font-size: 7vw;
                     line-height: 117%;
                     letter-spacing: -.1vw;
                 }
@@ -700,8 +705,8 @@
             .container-pollo{
                 width: 34px;
                 min-width: 34px;
-                background-color: #F37021;
-                background: linear-gradient(180deg, #FD921E 0%, #FF621D 48.96%, #E73A4E 100%);
+                background-color: #fc9f34;
+                background: #fc9f34;
                 border-radius: 25px;
             }
             @media (max-width:992px){
@@ -937,6 +942,7 @@
                     width: 97.7vw;
                     margin-right: 0;
                     height: 108vw;
+                    margin-left: -7.15vw;
                 }
             }
 
@@ -984,11 +990,11 @@
                 overflow: hidden;
                 background-size: cover;
                 gap: 15px;
-                background-image: url("https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/background-gradient-destinations.png");
+                background-color: #fc9f34;
             }
             @media (max-width:992px){
                 .text-card-swiper-destinations{
-                    width: 100%;
+                    width: 95%;
                     margin: auto;
                     padding: 5vw 5vw;
                     text-align: center;
@@ -1042,7 +1048,6 @@
                 width: 1160px;
                 margin: auto;
                 background-color: #F8F9FA;
-                padding-bottom: 50px;
             }
             @media (max-width: 1200px){
                 .body-media{
@@ -1051,8 +1056,8 @@
             }
             @media (max-width: 992px){
                 .body-media{
-                    width: 95%;
-                    margin: auto;
+                    width: 100%;
+                    margin-left: 0px;
                 }
             }
 
@@ -1359,26 +1364,28 @@
 
             .subtext-gradient-destinations{
                 font-size: 16px;
-                text-align: left;
+                text-align: left !important;
                 color: white;
                 line-height: normal;
             }
             @media (max-width:992px){
                 .subtext-gradient-destinations{
                     font-size: 4vw;
-                    text-align: center;
                 }
             }
 
             .title-2{
-                font-size: 40px ;
+                font-size: 40px !important;
                 font-weight: 700;
                 line-height: 120%;
-                text-align: center ;
+                text-align: center !important;
             }
             @media (max-width:992px){
                 .title-2{
-                    font-size: 6vw;
+                    font-size: 5vw !important;
+                    line-height: 121%;
+                    font-weight: 700;
+                    text-align: center !important;
                 }
             }
 
@@ -1441,6 +1448,7 @@
                     font-size: 13px;
                 }
             }
+
             @media (max-width:992px){
                 .boton-tarifas{
                     padding: 2vw 4vw;
@@ -1448,6 +1456,7 @@
                 }
             }
 
+            /*Clases section Carrousel*/
             .margin-bottom-13{
                 margin-bottom: 13px;
             }
@@ -1746,7 +1755,7 @@
                 font-size: 17px; 
                 font-weight: 700; 
                 line-height: normal; 
-                color: #FF621D; 
+                color: #fc9f34; 
                 user-select: none;
             }
             @media (max-width: 1200px) and (min-width: 993px){
@@ -1863,7 +1872,7 @@
                 width: 100%; 
                 height: 100%; 
                 border-radius: 13px 13px 0 0; 
-                background: linear-gradient(280deg, #FE631D 1.13%, #FF621D 43.24%, #E73A4E 89.5%); 
+                background-color: #fc9f34; 
                 top: 0;
                 transition: all ease .5s;
             }
@@ -2047,7 +2056,7 @@
     </head>
     <body style="background-color: #F8F9FA;">
         <div class="body-media">
-            <section name="Carrousel" class="margin-bottom-46">
+            <section name="Carrousel" class="margin-bottom-13">
                 <div class="containerCarrousel">
                     <div class="containerCarrouselLeft">
                         <div class="imgCarrousel absoluteImgCarrousel" style="z-index: 1; width: 100%;">
@@ -2086,9 +2095,9 @@
                                             Reservar ahora
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#fc9f34"/>
                                             <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
                                             </mask>
                                             <g mask="url(#mask0_6_4543)">
                                             </g>
@@ -2122,9 +2131,9 @@
                                             Conseguir ahora
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#fc9f34"/>
                                             <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
                                             </mask>
                                             <g mask="url(#mask0_6_4543)">
                                             </g>
@@ -2196,44 +2205,40 @@
                 </div>
             </section>
             <h2 class="style-titles title">
-                ¡Elige tu destino favorito con <span class="orange-nexus"> NexusTours!</span>
+                ¡Descubre los lugares <span class="orange-nexus">más impresionantes del Caribe</span> con Princess!
             </h2>
             <div class="container-text-80 margin-bottom-24 tag-desk">
                 <p class="gray-text text-parrafo">
-                    Descubre los maravillosos paisajes de Cancún, toma el sol en las playas de Punta Cana, 
-                    pasea por la belleza colonial neerlandesa de Aruba, empápate de la cultura sin igual de Jamaica o 
-                    explora el distintivo paisaje de Costa Rica. Vayas a donde vayas, descubrirás lo mejor del Caribe con NexusTours. 
+                    Descubre los maravillosos paisajes de Punta Cana, toma el sol en las playas y pasea por la belleza del Caribe, empápate de la cultura y explora el distintivo paisaje de Republica Dominicana. Vayas a donde vayas, descubrirás lo mejor del Caribe con Princess. 
                     Planifica las vacaciones perfectas con un traslado seguro y cómodo desde el aeropuerto.
                 </p>
             </div>
             <div class="container-text-80 margin-bottom-46 tag-mob">
                 <p class="gray-text text-parrafo">
-                    Descubre los maravillosos paisajes de Cancún, toma el sol en las playas de Punta Cana, 
-                    pasea por la belleza colonial neerlandesa de Aruba, empápate de la cultura sin igual de Jamaica o 
-                    explora el distintivo paisaje de Costa Rica. Vayas a donde vayas, descubrirás lo mejor del Caribe con NexusTours. 
-                    Planifique las vacaciones perfectas con un traslado seguro y cómodo desde el aeropuerto.
+                    Descubre los maravillosos paisajes de Punta Cana, toma el sol en las playas y pasea por la belleza del Caribe, empápate de la cultura y explora el distintivo paisaje de Republica Dominicana. Vayas a donde vayas, descubrirás lo mejor del Caribe con Princess. 
+                    Planifica las vacaciones perfectas con un traslado seguro y cómodo desde el aeropuerto.
                 </p>
             </div>
             <div class="container-slider-botones margin-bottom-46 tag-desk">
                 <div class="swiper-button-next swiper1-button-next">
                     <div class="button-swiper">
-                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/BOTON4.png">
                     </div>
                 </div>
                 <div class="swiper-button-prev swiper1-button-prev">
                     <div class="button-swiper" style="transform: rotate(180deg);">
-                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/BOTON4.png">
                     </div>
                 </div>
                 <div class="swiper mySwiper swiper-product">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
+                        <div class="swiper-slide swiper-card"> 
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Saona_by_Catamaran.jpg);">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
-                                            Riviera Maya
+                                            Punta Cana
                                         </p>
                                     </div>
                                 </div>
@@ -2243,10 +2248,10 @@
                                             AVENTURA ACUÁTICA
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Isla Mujeres Full Experience
+                                          Saona en Catamarán
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Admira el hermoso paisaje durante el recorrido sobre las tranquilas aguas del mar Caribe con destino a un bellísimo Parque Marino.  
+                                          Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2270,8 +2275,8 @@
                             </a>
                         </div>
                         <div class="swiper-slide swiper-card">  
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=559&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Platinum_VIP_Catamaran_3.jpg)">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
@@ -2285,10 +2290,10 @@
                                             AVENTURA ACUÁTICA
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Platinum VIP Catamarán
+                                          Platinum VIP Catamaran
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
+                                            ¡Experimenta un lujoso paseo en catamarán por la impresionante costa de Bávaro!...
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2312,90 +2317,8 @@
                             </a>
                         </div>                 
                         <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Jamaica
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            AVENTURA ACUÁTICA
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Falmouth Mystic Lagoon
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            ¡Vive un paseo nocturno sin igual! Sé testigo de las maravillosas aguas luminiscentes y diviértete en grande con el tour ¡Laguna Luminosa y Fiesta Limbo!
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br>
-                                                    flexible
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Riviera Maya
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            EXCURSIÓN
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Tour Xcaret Plus
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br>
-                                                    flexible
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=5042&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Monkeyland.jpg)">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
@@ -2406,13 +2329,13 @@
                                 <div class="container-text-card">
                                     <div class="container-text-card-upper">
                                         <p class="text-gradient">
-                                            ATV
+                                            EXCURSIÓN
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Punta Cana Buggies Doble
+                                          Monkeyland
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Maneja un buggy junto con un acompañante por rutas poco exploradas que te mostrarán las bellezas naturales de Punta Cana. Diviértete en este tour en el que recorrerás senderos rurales, cuevas, ríos y pueblos que te permitirán conocer la vida en el campo al estilo dominicano.
+                                            Interactúa con los divertidos monos ardilla de Monkeyland.
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2434,54 +2357,13 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
+                        <div class="swiper-slide swiper-card">  
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=5499&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_coco_bongo_2.jpg);">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
-                                            Jamaica
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            AVENTURA ACUÁTICA
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Cool Running Cruise
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                        Flota por el Caribe en un catamarán y sube las cataratas del río Dunn en Jamaica.
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br>
-                                                    flexible
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Riviera Maya
+                                            Punta Cana
                                         </p>
                                     </div>
                                 </div>
@@ -2491,10 +2373,92 @@
                                             EXCURSIÓN
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Chichén Itzá Tour
+                                            Coco Bongo Primera Fila
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            ¡Te sorprenderás de todo lo que puedes hacer en Chichén Itzá! Una aventura llena de magia con fascinantes historias del lugar más explorado de México: Chichén Itzá, la antigua ciudad Maya abandonada en el siglo XV, ahora parque arqueológico parte del Patrimonio Mundial de la UNESCO. 
+                                            Obtén los mejores lugares para el mundialmente famoso show del Coco Bongo. 
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Cancelación <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                Ver tarifas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Marinarium_2.jpg)">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                          Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            EXCURSIÓN
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                          Marinarium
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            ¡Navega por la majestuosa costa de Bávaro en este hermoso catamarán y vive una experiencia relajante e inolvidable!
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Cancelación <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                Ver tarifas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=4807&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Scape_Park_3.jpg)">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            EXCURSIÓN
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                          Scape Park Full Admission
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                          El Scape Park en Cap Cana te ofrece desde aventuras emocionantes.
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2517,8 +2481,8 @@
                             </a>
                         </div>
                         <!--div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5042¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/5042_Monkeyland.jpg);">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=9778&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/TourLuxurySailingIslaMujeres326.jpg);">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
@@ -2532,10 +2496,10 @@
                                             EXCURSIÓN
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Monkeyland
+                                            Tour Luxury Sailing Isla Mujeres
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Interactúa con una de las especies más amigables de esta isla caribeña, ¡los divertidos monos ardilla de Monkeyland! Conoce de cerca estas traviesas creaturas, en medio de un espectacular paisaje entre montañas al que han llamado desde siempre su hogar.
+                                              Las playas más hermosas del mundo están en Isla Mujeres. Almuerzo y barra libre a bordo.
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2557,26 +2521,27 @@
                                 </div>
                             </a>
                         </div-->
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
+            
+                        <!--div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=1082&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Costa-Rica/v2_Adventure_Pass_2.jpg);">
                                     <div class="etiqueta-card gradient-color-nexus">
                                         <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
-                                            Jamaica
+                                          Punta Cana
                                         </p>
                                     </div>
                                 </div>
                                 <div class="container-text-card">
                                     <div class="container-text-card-upper">
                                         <p class="text-gradient">
-                                            ATV
+                                            AVENTURA ACUATICA
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Jamwest Súper Oferta
+                                          Adventure Pass
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Lleva tus vacaciones a nuevas alturas mientras liberas la emoción en un recorrido en vehículos todo terreno por Jamaica. Prepárate para momentos emocionantes mientras navegas por extensos bosques y conquistas un impresionante sendero en la playa, disfrutando la costa de Negril. 
+                                            Embárcate en esta emocionante aventura en Diamante Eco Adventure Park.
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
@@ -2597,19 +2562,19 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div!-->
                     </div>
                 </div>
             </div>
             <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
                 <div class="swiper-wrapper swiper-wrap-auto">
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Saona_by_Catamaran.jpg);">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Riviera Maya
+                                        Punta Cana
                                     </p>
                                 </div>
                             </div>
@@ -2619,10 +2584,10 @@
                                         AVENTURA ACUÁTICA
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Isla Mujeres Plus
+                                      Saona en Catamarán
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Admira el hermoso paisaje durante el recorrido sobre las tranquilas aguas del mar Caribe con destino a un bellísimo Parque Marino.  
+                                      Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2646,8 +2611,8 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=559&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Platinum_VIP_Catamaran_3.jpg)">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
@@ -2661,10 +2626,10 @@
                                         AVENTURA ACUÁTICA
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Platinum VIP Catamarán
+                                      Platinum VIP Catamaran
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
+                                        ¡Experimenta un lujoso paseo en catamarán por la impresionante costa de Bávaro!...
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2688,53 +2653,12 @@
                         </a>
                     </div>                 
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=5042&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Monkeyland.jpg)">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Jamaica
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-text-card">
-                                <div class="container-text-card-upper">
-                                    <p class="text-gradient">
-                                        AVENTURA ACUÁTICA
-                                    </p>
-                                    <p class="title-tour black-nexus">
-                                        Falmouth Mystic Lagoon
-                                    </p>
-                                    <p class="gray-text-card text-parrafo-card">
-                                        ¡Vive un paseo nocturno sin igual! Sé testigo de las maravillosas aguas luminiscentes y diviértete en grande con el tour ¡Laguna Luminosa y Fiesta Limbo!
-                                    </p>
-                                </div>
-                                <div class="container-text-card-bottom">
-                                    <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
-                                            <p class="text-cards-icon">
-                                                Cancelación <br>
-                                                flexible
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
-                                            Ver tarifas
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
-                                    <p class="white-text text-etiqueta-imagen">
-                                        Riviera Maya
+                                          Punta Cana
                                     </p>
                                 </div>
                             </div>
@@ -2744,10 +2668,10 @@
                                         EXCURSIÓN
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Tour Xcaret Plus
+                                      Monkeyland
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
+                                        Interactúa con los divertidos monos ardilla de Monkeyland.
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2770,8 +2694,8 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=5499&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_coco_bongo_2.jpg);">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
@@ -2782,13 +2706,13 @@
                             <div class="container-text-card">
                                 <div class="container-text-card-upper">
                                     <p class="text-gradient">
-                                        ATV
+                                        EXCURSIÓN
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Punta Cana Buggies Doble
+                                        Coco Bongo Primera Fila
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Maneja un buggy junto con un acompañante por rutas poco exploradas que te mostrarán las bellezas naturales de Punta Cana. Diviértete en este tour en el que recorrerás senderos rurales, cuevas, ríos y pueblos que te permitirán conocer la vida en el campo al estilo dominicano.
+                                        Obtén los mejores lugares para el mundialmente famoso show del Coco Bongo. 
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2811,53 +2735,12 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Marinarium_2.jpg)">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Jamaica
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-text-card">
-                                <div class="container-text-card-upper">
-                                    <p class="text-gradient">
-                                    AVENTURA ACUÁTICA
-                                    </p>
-                                    <p class="title-tour black-nexus">
-                                    Cool Running Cruise
-                                    </p>
-                                    <p class="gray-text-card text-parrafo-card">
-                                        Flota por el Caribe en un catamarán y sube las cataratas del río Dunn en Jamaica.
-                                    </p>
-                                </div>
-                                <div class="container-text-card-bottom">
-                                    <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
-                                            <p class="text-cards-icon">
-                                                Cancelación <br>
-                                                flexible
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
-                                            Ver tarifas
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
-                                    <p class="white-text text-etiqueta-imagen">
-                                        Riviera Maya
+                                        Punta Cana
                                     </p>
                                 </div>
                             </div>
@@ -2867,10 +2750,10 @@
                                         EXCURSIÓN
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Chichén Itzá Tour
+                                      Marinarium
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        ¡Te sorprenderás de todo lo que puedes hacer en Chichén Itzá! Una aventura llena de magia con fascinantes historias del lugar más explorado de México: Chichén Itzá, la antigua ciudad Maya abandonada en el siglo XV, ahora parque arqueológico parte del Patrimonio Mundial de la UNESCO. 
+                                        ¡Navega por la majestuosa costa de Bávaro en este hermoso catamarán y vive una experiencia relajante e inolvidable!
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2893,25 +2776,25 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://sunwingexperiences.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=4807&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Punta-Cana/v2_Scape_Park_3.jpg)">
                                 <div class="etiqueta-card gradient-color-nexus">
                                     <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Jamaica
+                                        Punta Cana
                                     </p>
                                 </div>
                             </div>
                             <div class="container-text-card">
                                 <div class="container-text-card-upper">
                                     <p class="text-gradient">
-                                        ATV
+                                      EXCURSIÓN
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Jamwest ATV
+                                    Scape Park Full Admission
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Lleva tus vacaciones a nuevas alturas mientras liberas la emoción en un recorrido en vehículos todo terreno por Jamaica. Prepárate para momentos emocionantes mientras navegas por extensos bosques y conquistas un impresionante sendero en la playa, disfrutando la costa de Negril. 
+                                    El Scape Park en Cap Cana te ofrece desde aventuras emocionantes.
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
@@ -2933,20 +2816,105 @@
                             </div>
                         </a>
                     </div>
+                    <!--div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=9778&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/TourLuxurySailingIslaMujeres326.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSIÓN
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                      Tour Luxury Sailing Isla Mujeres
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                          Las playas más hermosas del mundo están en Isla Mujeres. Almuerzo y barra libre a bordo.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div-->
+                  
+                    <!--div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://princess.nexustours.com/services/details.aspx?productID=1082&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Costa-Rica/v2_Adventure_Pass_2.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                      Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AVENTURA ACUATICA
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Adventure Pass
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Embárcate en esta emocionante aventura en Diamante Eco Adventure Park.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div-->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="container-video-texto-section margin-bottom-68">
+            <div class="container-video-texto-section">
                 <div class="container-pollo-video">
                     <div class="container-pollo">
                     </div>
                     <div class="container-texto-parrafo-video">
                         <h3 class="title-video margin-bottom-13">
-                            Colecciona momentos extraordinarios con <span class="title-gradient"> NexusTours</span>
+                            Pasa unas vacaciones innolvidables con <span class="title-gradient"> Princess!</span>
                         </h3>
                         <div class="line-divider-2 gradient-color-nexus margin-bottom-13 tag-desk"></div>
                         <p class="gray-text text-parrafo">
-                        En el Caribe Mexicano te esperan aguas turquesas y playas de arena blanca que harán realidad tus vacaciones soñadas. Descubrir este paraíso te sorprenderá, ya sea tu primera vez o no. Sus paisajes cautivadores y misteriosos sitios arqueológicos mayas son solo el inicio de una aventura sin igual. ¡Pero eso no es todo! Ven y descubre las actividades emocionantes que te están esperando en Cancún y la Riviera Maya
+                        Disfruta un destino de ensueño en el Caribe, que te transportará a un verdadero paraíso. 
+                        Camina por sus hermosas playas de arena blanca y aguas cristalinas para practicar deportes acuáticos, como el snorkel y el buceo. 
+                        
                         </p>
                     </div>
                 </div>
@@ -2954,291 +2922,13 @@
                     <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OPyVHZ_g9rgu3xEOiZG3ro3&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="container-swiper-destinations margin-bottom-68">
-                <div class="text-card-swiper-destinations">
-                    <p class="text-gradient-destinations">
-                        Viaja a los mejores destinos turísticos
-                    </p>
-                    <p class="subtext-gradient-destinations">
-                        Encuentra el lugar perfecto para vivir tu próxima aventura
-                    </p>
-                </div>
-                <div class="container-slider-botones-2 tag-desk">
-                    <div class="swiper swiperDestinations swiper-destinations-style">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Riviera Maya
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
-                                                            
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Punta Cana
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Jamaica
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Los Cabos
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=125355&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Aruba
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108876&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Costa Rica
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108888&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            República <br>
-                                            Dominicana
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Santa Lucía
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            San Martín
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=123407&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-bottom-slider-destination">
-                        <div class="line-divider-3">
-                        </div>
-                        <div class="container-botones-flex">
-                            <div class="swiper-button-prev swiper2-button-prev swiper-button-block">
-                                <div class="button-swiper" style="transform: rotate(180deg);">
-                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
-                                </div>
-                            </div>
-                            <div class="swiper-button-next swiper2-button-next swiper-button-block">
-                                <div class="button-swiper">
-                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
-                    <div class="swiper-wrapper swiper-wrap-auto">
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Riviera Maya
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Punta Cana
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Jamaica
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Los Cabos
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=125355&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Aruba
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108876&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Costa Rica
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108888&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        República <br>
-                                        Dominicana
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Santa Lucía
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        San MartÍn
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://sunwingexperiences.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=123407&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination swiper4-pagination"></div>
-                </div>
-            </div>
-            <div class="container-title-center margin-bottom-68">
-                <h2 class="title-2 tag-desk">
-                    ¿Por qué reservar con <span class="orange-nexus">NexusTours</span>?
-                </h2>
-                <h2 class="title-2 tag-mob">
-                    ¿Por qué reservar<br> con <span class="orange-nexus">NexusTours</span>?
-                </h2>
-            </div>
-            <div class="container-booking">
-                <div class="text-booking">
-                    <div class="container-img-booking">
-                        <img class="img-booking-1" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/callCenter_6.png">
-                    </div>
-                    <p>Servicio al cliente <br>dedicado en destino y línea </p>
-                    <a class="boton-booking" href="https://sunwingexperiences.nexustours.com/content/content.aspx?id=2013">
-                        <span class="white-text">Contacto</span>
-                    </a>
-                </div>
-                <div class="text-booking">
-                    <div class="container-img-booking">
-                        <img class="img-booking-2" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/LargeSelection-new-branding-2.png">
-                    </div>
-                    <p>La mayor selección <br>de productos</p>
-                    <a class="boton-booking" href="https://sunwingexperiences.nexustours.com/services/">
-                        <span class="white-text">Ver más</span>
-                    </a>
-                </div>
-                <div class="text-booking">
-                    <div class="container-img-booking">
-                        <img class="img-booking-3" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/discount-new-branding-2.png">
-                    </div>
-                    <p>Las mejores <br>ofertas</p>
-                </div>
-                <div class="text-booking">
-                    <div class="container-img-booking padding-top">
-                        <img class="img-booking-4" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/book-new-branding-2.png">
-                    </div>
-                    <p>Reservar ahora y<br> paga después</p>
-                </div>
-            </div>
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        var prueba = document.getElementsByClassName("offer-title")
-        prueba[0].style.width = "100%"
-        prueba[0].style.margin = "0"
+        var offer = document.getElementsByClassName("offer-title")
+        offer[0].style.width = "100%"
+        offer[0].style.margin = "0"
     </script>
     <script>
         var botonCarrouselHoverHome = document.getElementsByName("botonCarrouselHoverHome")
@@ -3376,11 +3066,12 @@
                 prevEl: ".swiper1-button-prev",
             },
         });
+
         var swiper2 = new Swiper(".swiperDestinations", {
             slidesPerView: 3,
             navigation: {
-            nextEl: ".swiper2-button-next",
-            prevEl: ".swiper2-button-prev",
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
             },
         });
 
