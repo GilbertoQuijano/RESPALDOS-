@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +67,7 @@
             }
 
             .gradient-color-nexus{
-            background: #003d52;
+                background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
             }
 
             .container-things-header{
@@ -184,7 +184,7 @@
             }
 
             .gray-text{
-                color: #707070;
+                color: #473d35;
             }
 
             .text-parrafo{
@@ -264,7 +264,7 @@
             .text-gradient{
                 font-size: 12px;
                 font-weight: 900;
-                color: #003d52;
+                color: #003399;
                 text-align: left;
             }
             @media (max-width:992px){
@@ -364,7 +364,7 @@
             }
 
             .gray-text-card{
-                color: #A1A1A1;
+                color: #473d35;
             }
 
             .container-text-card{
@@ -458,7 +458,7 @@
             }
 
             .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                background-color: #003d52;
+                background-color: #003399;
                 width: 20px;
                 height: 6px;
                 opacity: 1;
@@ -523,7 +523,7 @@
             
 
             .orange-nexus{
-                color: #003d52;
+                color: #003399;
             }
 
             @media (max-width:992px){
@@ -649,7 +649,7 @@
             }
 
             .title-gradient{
-                color: #003d52;
+                color: #003399;
             }
 
             .title-video{
@@ -705,8 +705,7 @@
             .container-pollo{
                 width: 34px;
                 min-width: 34px;
-                background-color: #F37021;
-                background: #003d52;
+                background: #003399;
                 border-radius: 25px;
             }
             @media (max-width:992px){
@@ -989,7 +988,7 @@
                 overflow: hidden;
                 background-size: cover;
                 gap: 15px;
-                background-color: #003d52;
+                background-color: #003399;
             }
             @media (max-width:992px){
                 .text-card-swiper-destinations{
@@ -1493,7 +1492,6 @@
                 }
             }
 
-            
             .bannerlogin2 {
                 width: 100%;
                 height: 100%;
@@ -1516,7 +1514,16 @@
                 }
             }
 
+            .colorWHL{
+                background-color: #003399;
+            }
+
+            .colorBotonWHL{
+                background: #0099ff;
+            }
+
             /*Clases section Carrousel*/
+    
             .margin-bottom-13{
                 margin-bottom: 13px;
             }
@@ -1601,7 +1608,6 @@
             @media (max-width: 450px) and (min-width: 0px){
                 .imgCarrouselOverflow{
                     width: 95vw;
-                    height: 100%;
                 }
             }
 
@@ -1648,10 +1654,18 @@
                 position: absolute;
                 top: 0;
                 transition: all .5s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+            @media (max-width: 1200px) and (min-width: 993px){
+                .containerSliderCarrousel{
+                    padding: 0px 0px 15px 37px; 
+                }
             }
             @media (max-width: 992px) and (min-width: 768px){
                 .containerSliderCarrousel{
-                    padding: 8vw 0vw 2vw 4vw; 
+                    padding: 20px 0px 15px 37px; 
                 }
             }
             @media (max-width: 768px) and (min-width: 550px){
@@ -1746,13 +1760,25 @@
             .titleSliderCarrousel{
                 margin-top: 0; 
                 margin-bottom: 5px; 
-                font-size: 40px; 
+                font-size: 32px; 
                 color: #FFFFFF; 
-                line-height: 120%; 
+                line-height: 100%; 
                 font-weight: 600; 
                 letter-spacing: -0.4px;
                 width: fit-content;
                 text-align: left;
+            }
+            @media (max-width: 1200px) and (min-width: 993px){
+                .titleSliderCarrousel{
+                    font-size: 26px;
+                    line-height: 110%;
+                }
+            }
+            @media (max-width: 992px) and (min-width: 769px){
+                .titleSliderCarrousel{
+                    font-size: 25px;
+                    line-height: 110%;
+                }
             }
             @media (max-width: 768px) and (min-width: 550px){
                 .titleSliderCarrousel{
@@ -1796,7 +1822,7 @@
                 font-size: 17px; 
                 font-weight: 700; 
                 line-height: normal; 
-                color: #003d52; 
+                color: #003399; 
                 user-select: none;
             }
             @media (max-width: 1200px) and (min-width: 993px){
@@ -1913,7 +1939,7 @@
                 width: 100%; 
                 height: 100%; 
                 border-radius: 13px 13px 0 0; 
-                background-color: #003d52; 
+                background-color: #003399; 
                 top: 0;
                 transition: all ease .5s;
             }
@@ -2017,7 +2043,7 @@
                 line-height: 114%; 
                 letter-spacing: -0.24px; 
                 margin-top: 0;
-                margin-bottom: 26px;
+                margin-bottom: 15px;
                 width: fit-content;
                 text-align: left;
             }
@@ -2108,19 +2134,17 @@
                         <div name="imgCarrousel" class="containerImgCarrouselOverflow tagDesk" style="z-index: 2;">
                             <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeDesk.png" alt="Slider_Home_Carrousel_Auto">
                         </div>
-                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow  tagMob" style="z-index: 2;">
+                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow tagMob" style="z-index: 2;">
                             <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeMob.png" alt="Slider_Home_Carrousel_Auto_Mob">
                         </div>
     
     
-    
                         <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
-                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_fr.jpg" alt="Slider_Home_Carrousel_Promo">
+                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SP1_esp.jpg" alt="Slider_Home_Carrousel_Promo">
                         </div>
                         <div name="imgCarrouselMob" class="imgCarrousel absoluteImgCarrousel tagMob" style="z-index: 1;">
-                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_fr.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
+                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPmob1_esp.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
                         </div>
-    
     
     
                         <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
@@ -2136,16 +2160,16 @@
                                 <div class="containerCenterCarrouselNexusApp">
                                     <img class="imgNexusApp" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/logoNexusApp.png">
                                     <h2 class="titleSliderCarrouselNexusApp">
-                                        Prêt pour un
-                                        <br>
                                         <span style="font-weight: 700;">
-                                            voyage sans souci?
+                                            ¡Prepárate para viajar
                                         </span>
+                                        <br>
+                                        sin preocupaciones!
                                     </h2>
                                     <div class="containerBotonCTACarrousel">
-                                        <a class="botonCTACarrouselMob" href="https://www.nexustours.com/cars/" target="_blank">
+                                        <a class="botonCTACarrouselMob" href="https://uqr.to/XHUB.NT" target="_blank">
                                             <div class="textBotonCTACarrousel textBotonCTACarrouselMob" style="color: #FF621D;">
-                                                Telecharge l'application Nexus
+                                                Descarga la nueva Nexus App
                                             </div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
@@ -2161,19 +2185,19 @@
                             </div>
                             <div name="containerSliderCarrousel" class="containerSliderCarrousel sliderPromoCarrousel" style="z-index: 1; opacity: 0;">
                                 <div class="textTerms tagDesk">
-                                    *Consultez les conditions générales sur : <br>
+                                    *Consulta términos y condiciones en <br>
                                     www.nexustours.com/discounts
                                 </div>
                                 <div class="textTerms tagMob">
-                                    *Consultez les conditions générales sur : www.nexustours.com/discounts
+                                    *Consulta términos y condiciones en www.nexustours.com/discounts
                                 </div>
                                 <div class="containerBotonCTACarrousel">
                                     <a class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
                                         <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
-                                            Réservez maintenant
+                                            Reservar ahora
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003d52"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003399"/>
                                             <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
                                             </mask>
@@ -2197,18 +2221,19 @@
                                     </span>
                                 </div>
                                 <h2 class="titleSliderCarrousel">
-                                    Restez connecté <br> en déplacement !
+                                    Conéctate en todo <br>
+                                    momento, estés <br> donde estés
                                 </h2>
                                 <h3 class="subtitleSliderCarrousel">
-                                    Obtenez votre carte SIM <br> dès aujourd'hui
+                                    Consigue tu tarjeta eSIM <br> hoy mismo
                                 </h3>
                                 <div class="containerBotonCTACarrousel">
                                     <a class="botonCTACarrouselMob" href="https://www.simlocal.com/shop-landing/nexus" target="_blank">
                                         <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
-                                            Acheter maintenant
+                                            Conseguir ahora
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003d52"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003399"/>
                                             <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
                                             </mask>
@@ -2223,7 +2248,7 @@
                                     <div id="botonArrowSliderCarrouselLeft" class="botonArrowSliderCarrousel">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                                             <path d="M25 50C38.7897 50 50 38.7897 50 25C50 11.2103 38.7897 -2.62652e-06 25 -1.16497e-06C11.2103 2.96588e-07 1.01763e-06 11.2103 2.01198e-06 25C3.00633e-06 38.7897 11.2116 50 25 50ZM17.8689 23.1324L25.7636 15.2378C26.801 14.2202 28.4625 14.2202 29.4999 15.2378C30.5262 16.2715 30.5262 17.9405 29.4999 18.9742L23.447 25L29.4999 31.0258C30.5312 32.0583 30.5312 33.7309 29.4999 34.7622C28.4687 35.7934 26.7948 35.7934 25.7636 34.7622L17.8689 26.8676C16.8426 25.8339 16.8426 24.1649 17.8689 23.1312L17.8689 23.1324Z" fill="white"/>
-                                        </svg> 
+                                        </svg>
                                     </div>
                                     <div id="botonArrowSliderCarrouselRight" class="botonArrowSliderCarrousel">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
@@ -2237,7 +2262,7 @@
                                         </div>
                                         <div class="containerTextBotonesCarrouselHover">
                                             <div class="flexTextBotonesCarrouselHover">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 15" fill="none">
                                                     <g clip-path="url(#clip0_604_268)">
                                                         <path d="M18.4686 6.27776L18.3912 6.21054C18.35 6.17434 18.3087 6.14331 18.2623 6.11229L18.5305 5.8589C18.8296 5.57449 18.9947 5.18665 18.9998 4.76779C18.9998 4.34893 18.8451 3.95075 18.5563 3.64565L18.4841 3.56809C18.087 3.14922 17.5145 2.97858 16.973 3.10268V1.90815C16.973 0.853238 16.122 0 15.0699 0H7.6483C6.59619 0 5.74521 0.853238 5.74521 1.90815V5.68825C5.38935 5.82787 5.116 6.11229 5.0077 6.46392C4.75498 7.27062 4.57447 7.87048 4.42491 8.37208C4.15672 9.27185 4.00715 9.76828 3.72865 10.4922C3.40373 11.3403 3.37795 12.328 3.35732 13.1295C3.35216 13.3571 3.34184 13.7397 3.32121 13.9414C3.31606 14.0086 3.29027 14.0707 3.25933 14.1276C3.21807 14.2 3.14586 14.3137 3.05303 14.4637C2.89315 14.7274 2.52697 14.7688 2.31036 14.5464C2.12469 14.3551 1.8204 14.3551 1.63473 14.5464L0.737338 15.4462C-0.247732 16.4339 -0.247732 18.0421 0.737338 19.0298L2.53728 20.8345C2.72811 21.0259 3.08397 21.0776 3.30574 20.9224C3.50688 20.7828 3.60487 20.5398 3.54814 20.2967C3.52235 20.183 3.45531 20.0795 3.37279 19.9968L1.96481 18.5851C1.22214 17.8404 1.22214 16.6407 1.96481 15.8961L6.22485 20.2916C6.83343 20.9173 7.82881 20.9276 8.44771 20.3174C8.55086 20.214 8.64885 20.1157 8.73652 20.0382C11.9806 20.1674 13.5123 18.1404 14.0487 17.4009H15.0595C16.1117 17.4009 16.9626 16.5476 16.9626 15.4927V15.2238C17.2669 15.2135 17.5351 15.0894 17.7156 14.8825L18.5924 13.869C19.1236 13.2536 19.0462 12.3073 18.417 11.7643L18.3448 11.7023C18.2984 11.6609 18.252 11.6247 18.2004 11.5937L18.6285 11.1024C18.9637 10.7146 19.0669 10.182 18.9121 9.6752C18.8296 9.41147 18.6646 9.16843 18.4325 8.96676L18.4016 8.9409C18.3603 8.9047 18.3139 8.8685 18.2675 8.83748L18.6233 8.42379C19.1597 7.79808 19.0823 6.84659 18.448 6.30362L18.4686 6.27776ZM15.7867 2.18739H6.93142V1.90815C6.93142 1.50997 7.25118 1.18936 7.6483 1.18936H15.0699C15.467 1.18936 15.7867 1.50997 15.7867 1.90815V2.18739ZM17.7053 13.0675L16.8956 14.0086C16.8389 13.9983 16.7306 13.9621 16.6119 13.8587L16.5397 13.7914C16.4263 13.6932 16.3695 13.5949 16.3437 13.5432L17.1638 12.5969C17.2102 12.54 17.2772 12.509 17.3649 12.5038C17.4629 12.4935 17.5403 12.54 17.5918 12.5866L17.664 12.6486C17.793 12.7624 17.8188 12.9485 17.7156 13.0675H17.7053ZM8.88093 17.3802H12.5272C11.5061 18.4506 10.1755 18.9315 8.56633 18.8178L8.3033 18.7971L8.11247 18.9781C8.05058 19.035 7.98354 19.1022 7.91133 19.1694C7.60189 19.4745 7.10162 19.4693 6.79733 19.1539L3.58424 15.8444C4.22377 14.8205 4.33723 14.6188 4.36302 14.5671C4.51774 14.2361 4.52806 13.7759 4.54353 13.1399C4.559 12.4366 4.57963 11.5678 4.83234 10.9059C5.12632 10.1406 5.29136 9.59246 5.5647 8.67717C5.70911 8.19626 5.88446 7.60158 6.13202 6.81039C6.13718 6.80005 6.16812 6.77936 6.21969 6.77419C6.28158 6.76385 6.35379 6.77419 6.38473 6.81556C6.73028 7.30165 6.885 7.77739 6.84374 8.22728C6.72512 9.48904 6.84374 9.53041 6.51367 10.544L6.19906 11.33C6.13718 11.5213 6.21969 11.6247 6.34347 11.785L6.66839 12.1212C7.96291 14.9601 7.51937 16.6252 7.21508 17.2819C7.13256 17.4629 7.22539 17.675 7.41622 17.7422C7.41622 17.7422 7.93196 18.2179 8.87062 17.375L8.88093 17.3802ZM15.1524 13.5639H9.33479C8.81904 13.5639 8.37035 13.2381 8.19499 12.752C8.01964 12.2659 7.83913 11.9143 7.67409 11.6299C7.55031 11.4179 7.52453 11.1645 7.59157 10.9318C7.81334 10.1406 7.93712 9.42699 8.03511 8.34105C8.10732 7.5964 7.88039 6.84659 7.36465 6.12263C7.25634 5.9675 7.11193 5.84339 6.94174 5.75031V3.37158H15.7919V3.93007L15.2349 4.45752C14.9667 4.71608 14.8636 5.10392 14.9461 5.52278C15.0131 5.84856 15.1936 6.17434 15.4464 6.44324L15.5186 6.52081C15.6269 6.63457 15.7403 6.73282 15.8641 6.81556L15.3845 7.36887C15.1472 7.64294 15.0802 8.02561 15.204 8.41862C15.2968 8.72371 15.4979 9.01847 15.7661 9.25117L15.8383 9.31322C15.8744 9.34425 15.9105 9.37011 15.9466 9.40113L15.3845 10.0475C15.1472 10.3216 15.0802 10.7043 15.204 11.0973C15.2968 11.4024 15.4979 11.6971 15.7661 11.9298L15.8383 11.9919C15.8899 12.0332 15.9415 12.0746 15.993 12.1108L15.3845 12.8089C15.2143 13.0106 15.1317 13.264 15.1472 13.5432L15.1524 13.5639ZM16.9162 11.2627C16.8595 11.2524 16.7409 11.2162 16.6171 11.1024L16.5449 11.0352C16.4263 10.937 16.3695 10.8284 16.3437 10.7663L17.1793 9.79931C17.2308 9.74243 17.303 9.70623 17.3804 9.70106C17.4474 9.70106 17.5454 9.7114 17.6228 9.7838L17.7002 9.85102C17.7672 9.9079 17.8085 9.99064 17.8188 10.0786C17.8239 10.1613 17.8033 10.2389 17.7517 10.2957L16.9214 11.2576L16.9162 11.2627ZM16.9162 8.58409C16.8595 8.57375 16.746 8.53755 16.6171 8.42379L16.5449 8.36173C16.4263 8.26348 16.3695 8.15489 16.3437 8.09283L17.1793 7.12583C17.2824 7.00172 17.4939 6.99655 17.6228 7.11032L17.695 7.17237C17.8291 7.29131 17.8549 7.48781 17.7466 7.61709L16.9162 8.57892V8.58409ZM17.7156 4.99532L16.7254 5.9313C16.6635 5.91578 16.5243 5.86407 16.3798 5.70894L16.3076 5.63137C16.1735 5.48658 16.1168 5.34696 16.1013 5.27973L17.0916 4.34376C17.2308 4.20931 17.4732 4.22999 17.6228 4.3903L17.695 4.46786C17.8446 4.62817 17.8549 4.86604 17.7156 5.00049V4.99532ZM9.41215 14.7533H15.7867V15.4721C15.7867 15.8702 15.467 16.1908 15.0699 16.1908H9.29353C8.92735 16.1908 8.63338 15.8909 8.64369 15.5238C8.64369 15.5238 8.64369 15.5134 8.64369 15.5082C8.65401 15.0894 8.9944 14.7533 9.41215 14.7533Z" fill="white"/>
                                                         <path d="M13.2752 6.9446L12.7904 6.8722L12.5738 6.42748C12.3572 5.98794 11.9136 5.71387 11.4237 5.71387C10.9337 5.71387 10.4902 5.98794 10.2736 6.43266L10.057 6.87737L9.57215 6.94977C9.08735 7.02217 8.69023 7.35829 8.53551 7.82369C8.38594 8.29427 8.50972 8.79587 8.86043 9.14233L9.21113 9.4888L9.12861 9.97489C9.0461 10.461 9.24208 10.9419 9.6392 11.2315C9.86613 11.3969 10.1292 11.4797 10.3922 11.4797C10.5933 11.4797 10.7996 11.428 10.9904 11.3297L11.4288 11.1022L11.8672 11.3297C12.3004 11.5573 12.8213 11.5211 13.2185 11.2315C13.6156 10.9419 13.8116 10.461 13.729 9.97489L13.6465 9.4888L13.9972 9.14233C14.3479 8.79587 14.4717 8.29427 14.3222 7.82369C14.1726 7.35312 13.7755 7.02217 13.2855 6.94977L13.2752 6.9446ZM12.7388 8.56316C12.4345 8.85792 12.3004 9.28195 12.3726 9.70082L12.4552 10.1869L12.0168 9.95937C11.6454 9.76287 11.1967 9.76287 10.8254 9.95937L10.3922 10.1869L10.4747 9.70082C10.5469 9.28195 10.4077 8.85792 10.1085 8.56316L9.75782 8.2167L10.2426 8.1443C10.6604 8.08225 11.0214 7.81852 11.2071 7.44103L11.4237 6.99631L11.6403 7.44103C11.826 7.81852 12.187 8.08225 12.6047 8.1443L13.0947 8.2167L12.7388 8.56316Z" fill="white"/>
@@ -2264,7 +2289,7 @@
                                                     <path d="M6.99757 0.00485942C3.13918 0.00485942 0 3.14405 0 7.00243C0 8.66435 0.583129 10.1902 1.55501 11.3905V16.2451C1.55501 17.421 2.39083 18.4464 3.50364 18.631C3.63485 18.6505 3.76119 18.6602 3.88754 18.6602C4.58244 18.6602 5.23846 18.3589 5.68552 17.8195C5.9042 17.5522 6.36584 17.1052 7.00729 17.1052C7.64873 17.1052 8.09094 17.5522 8.31448 17.8195C8.84415 18.461 9.66054 18.7622 10.5012 18.6262C11.6092 18.4464 12.445 17.421 12.445 16.2402V11.3856C13.4169 10.1854 14 8.65949 14 6.99757C14 3.13919 10.8608 0 7.00243 0L6.99757 0.00485942ZM10.8851 16.2451C10.8851 16.663 10.6033 17.0371 10.2485 17.0955C9.95696 17.144 9.68483 17.0469 9.50503 16.833C8.82471 16.0118 7.93544 15.555 6.98785 15.555C6.04027 15.555 5.16557 16.0069 4.48525 16.833C4.30545 17.0469 4.03332 17.144 3.74661 17.1003C3.38701 17.042 3.11003 16.6678 3.11003 16.2499V12.8192C4.22284 13.5675 5.55918 14.0049 6.99757 14.0049C8.43596 14.0049 9.7723 13.5675 10.8851 12.8192V16.2499V16.2451ZM6.99757 12.445C3.99444 12.445 1.55501 10.0056 1.55501 7.00243C1.55501 3.99931 3.99444 1.55988 6.99757 1.55988C10.0007 1.55988 12.4401 3.99931 12.4401 7.00243C12.4401 10.0056 10.0007 12.445 6.99757 12.445Z" fill="white"/>
                                                 </svg>
                                                 <span class="textBotonesCarrouselHover">
-                                                    Réductions
+                                                    Descuentos
                                                 </span>
                                             </div>
                                         </div>
@@ -2274,12 +2299,12 @@
                                         </div>
                                         <div class="containerTextBotonesCarrouselHover">
                                             <div class="flexTextBotonesCarrouselHover">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-                                                    <path d="M20.6998 4.1015C17.9343 1.45779 14.3109 0 10.5 0C6.68912 0 3.06574 1.45779 0.300163 4.1015C0.112666 4.27962 0.00485496 4.52337 0.000167535 4.78586C-0.00451989 5.04836 0.0892286 5.29679 0.272038 5.48429C0.647032 5.87334 1.26577 5.88741 1.65483 5.5171C4.05479 3.22495 7.19536 1.95934 10.5 1.95934C13.8046 1.95934 16.9452 3.22495 19.3452 5.5171C19.528 5.69053 19.767 5.78897 20.0202 5.78897C20.2873 5.78897 20.5452 5.68116 20.728 5.48898C20.9108 5.30148 21.0045 5.05304 20.9998 4.79055C20.9951 4.52805 20.8873 4.28431 20.6998 4.10618V4.1015Z" fill="white"/>
-                                                    <path d="M10.5 2.92493C7.43911 2.92493 4.53291 4.0921 2.32044 6.21081C2.13294 6.39362 2.02513 6.63268 2.02045 6.89518C2.01576 7.15767 2.10951 7.40611 2.29232 7.5936C2.47513 7.7811 2.71419 7.88891 2.97668 7.8936C2.98606 7.8936 2.99074 7.8936 3.00012 7.8936C3.25324 7.8936 3.4923 7.79985 3.67511 7.62173C5.52195 5.85457 7.95004 4.87958 10.5047 4.87958C13.0593 4.87958 15.4827 5.85457 17.3343 7.62173C17.7093 7.98266 18.3608 7.96391 18.7171 7.5936C18.8999 7.40611 18.9936 7.15767 18.9889 6.89518C18.9842 6.63268 18.8764 6.38893 18.6889 6.21081C16.4765 4.0921 13.5703 2.92493 10.5094 2.92493H10.5Z" fill="white"/>
-                                                    <path d="M10.5 5.84521C8.19377 5.84521 6.00474 6.72645 4.34071 8.32018C4.15321 8.50299 4.0454 8.74204 4.04071 9.00454C4.03602 9.26704 4.12977 9.51078 4.31258 9.70297C4.49539 9.89046 4.73445 9.99827 4.99694 10.003C5.00632 10.003 5.01101 10.003 5.02038 10.003C5.2735 10.003 5.51256 9.90921 5.69537 9.73109C6.99848 8.48424 8.7047 7.79987 10.5047 7.79987C12.3046 7.79987 14.0109 8.48424 15.314 9.73109C15.4968 9.90453 15.7358 10.003 15.989 10.003C16.2561 10.003 16.5093 9.89515 16.6968 9.70297C16.8796 9.51547 16.9733 9.26704 16.9686 9.00454C16.9639 8.74204 16.8561 8.4983 16.6686 8.32018C14.9999 6.72176 12.8156 5.84521 10.5094 5.84521H10.5Z" fill="white"/>
-                                                    <path d="M10.5 8.77014C8.94846 8.77014 7.47661 9.36076 6.35631 10.4342C5.96725 10.8092 5.95319 11.4279 6.32819 11.817C6.70318 12.206 7.32192 12.2201 7.71098 11.8451C8.46565 11.1232 9.4547 10.7248 10.5 10.7248C11.5453 10.7248 12.5343 11.1232 13.289 11.8451C13.4718 12.0185 13.7109 12.117 13.964 12.117C14.2171 12.117 14.4843 12.0092 14.6671 11.817C15.0421 11.4279 15.028 10.8092 14.639 10.4342C13.5187 9.36076 12.0468 8.77014 10.4953 8.77014H10.5Z" fill="white"/>
-                                                    <path d="M8.46098 14.4514C8.46098 15.5764 9.37503 16.4904 10.5 16.4904C11.625 16.4904 12.539 15.5764 12.539 14.4514C12.539 13.3264 11.625 12.4124 10.5 12.4124C9.37503 12.4124 8.46098 13.3264 8.46098 14.4514Z" fill="white"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 21" fill="none">
+                                                    <path d="M18.7284 3.71088C16.2262 1.31895 12.9479 0 9.5 0C6.05206 0 2.77377 1.31895 0.271576 3.71088C0.101936 3.87204 0.00439258 4.09257 0.000151579 4.33006C-0.00408942 4.56756 0.0807306 4.79233 0.24613 4.96197C0.58541 5.31398 1.14522 5.3267 1.49723 4.99166C3.66862 2.91781 6.51009 1.77274 9.5 1.77274C12.4899 1.77274 15.3314 2.91781 17.5028 4.99166C17.6682 5.14858 17.8845 5.23764 18.1135 5.23764C18.3552 5.23764 18.5885 5.1401 18.7539 4.96622C18.9193 4.79658 19.0041 4.5718 18.9998 4.33431C18.9956 4.09681 18.8981 3.87628 18.7284 3.71512V3.71088Z" fill="white"/>
+                                                    <path d="M9.50001 2.64636C6.73063 2.64636 4.10121 3.70237 2.09946 5.61931C1.92982 5.78471 1.83227 6.001 1.82803 6.23849C1.82379 6.47599 1.90861 6.70076 2.07401 6.8704C2.23941 7.04004 2.4557 7.13759 2.6932 7.14183C2.70168 7.14183 2.70592 7.14183 2.7144 7.14183C2.94342 7.14183 3.15971 7.05701 3.32511 6.89585C4.99606 5.29699 7.1929 4.41486 9.50425 4.41486C11.8156 4.41486 14.0082 5.29699 15.6834 6.89585C16.0227 7.22241 16.6122 7.20544 16.9345 6.8704C17.0999 6.70076 17.1847 6.47599 17.1805 6.23849C17.1762 6.001 17.0787 5.78046 16.909 5.61931C14.9073 3.70237 12.2779 2.64636 9.50849 2.64636H9.50001Z" fill="white"/>
+                                                    <path d="M9.49999 5.28845C7.41341 5.28845 5.43286 6.08576 3.92731 7.5277C3.75767 7.6931 3.66012 7.90939 3.65588 8.14689C3.65164 8.38439 3.73646 8.60492 3.90186 8.7788C4.06726 8.94844 4.28355 9.04598 4.52105 9.05022C4.52953 9.05022 4.53377 9.05022 4.54225 9.05022C4.77127 9.05022 4.98756 8.9654 5.15296 8.80424C6.33196 7.67614 7.87568 7.05695 9.50423 7.05695C11.1328 7.05695 12.6765 7.67614 13.8555 8.80424C14.0209 8.96116 14.2372 9.05022 14.4662 9.05022C14.7079 9.05022 14.937 8.95268 15.1066 8.7788C15.272 8.60916 15.3568 8.38439 15.3526 8.14689C15.3483 7.90939 15.2508 7.68886 15.0811 7.5277C13.5714 6.08152 11.595 5.28845 9.50847 5.28845H9.49999Z" fill="white"/>
+                                                    <path d="M9.49999 7.93481C8.09622 7.93481 6.76454 8.46918 5.75094 9.44037C5.39894 9.77965 5.38622 10.3395 5.7255 10.6915C6.06478 11.0435 6.62459 11.0562 6.97659 10.7169C7.65939 10.0638 8.55425 9.70331 9.49999 9.70331C10.4457 9.70331 11.3406 10.0638 12.0234 10.7169C12.1888 10.8738 12.4051 10.9629 12.6341 10.9629C12.8631 10.9629 13.1048 10.8653 13.2702 10.6915C13.6095 10.3395 13.5968 9.77965 13.2448 9.44037C12.2312 8.46918 10.8995 7.93481 9.49575 7.93481H9.49999Z" fill="white"/>
+                                                    <path d="M7.65518 13.0751C7.65518 14.0929 8.48218 14.9199 9.50002 14.9199C10.5179 14.9199 11.3449 14.0929 11.3449 13.0751C11.3449 12.0572 10.5179 11.2302 9.50002 11.2302C8.48218 11.2302 7.65518 12.0572 7.65518 13.0751Z" fill="white"/>
                                                 </svg>
                                                 <span class="textBotonesCarrouselHover">
                                                     Sim Local
@@ -2295,215 +2320,67 @@
                         <img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel_Opaco_Desk.png" alt="Login_Home_Carrousel">
                         <div class="containerAbsoluteLogin"> 
                             <h3 class="titleLoginOpaco"> 
-                                <span>Inclus laide en voyage et profite sans soucis</span>
+                                <span>
+                                    Incluye asistencia en tu viaje y disfruta sin preocupaciones
+                                </span>
                             </h3>
                         </div>
                     </div>
                 </div>
             </section>
             <h2 class="style-titles title">
-                ¡Descubre los lugares <span class="orange-nexus">más impresionantes del Caribe</span> con Royalton!
+                ¡Elige tu destino favorito con <span class="orange-nexus"> Vista Sol Punta Cana! </span>
             </h2>
             <div class="container-text-80 margin-bottom-24 tag-desk">
                 <p class="gray-text text-parrafo">
-                    Descubre los maravillosos paisajes de Cancún, toma el sol en las playas de Punta Cana, 
-                    pasea por la belleza colonial neerlandesa de Aruba, empápate de la cultura sin igual de Jamaica o 
-                    explora el distintivo paisaje de Costa Rica. Vayas a donde vayas, descubrirás lo mejor del Caribe. 
+                    Descubre los maravillosos paisajes y toma el sol en las playas de Punta Cana, 
+                    Vayas a donde vayas, descubrirás lo mejor del Caribe. 
                     Planifica las vacaciones perfectas con un traslado seguro y cómodo desde el aeropuerto.
                 </p>
             </div>
             <div class="container-text-80 margin-bottom-46 tag-mob">
                 <p class="gray-text text-parrafo">
-                    Descubre los maravillosos paisajes de Cancún, toma el sol en las playas de Punta Cana, 
-                    pasea por la belleza colonial neerlandesa de Aruba, empápate de la cultura sin igual de Jamaica o 
-                    explora el distintivo paisaje de Costa Rica. Vayas a donde vayas, descubrirás lo mejor del Caribe. 
+                    Descubre los maravillosos paisajes y toma el sol en las playas de Punta Cana, 
+                    Vayas a donde vayas, descubrirás lo mejor del Caribe. 
                     Planifique las vacaciones perfectas con un traslado seguro y cómodo desde el aeropuerto.
                 </p>
             </div>
             <div class="container-slider-botones margin-bottom-46 tag-desk">
                 <div class="swiper-button-next swiper1-button-next">
                     <div class="button-swiper">
-                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Flecha.png" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <g clip-path="url(#clip0_73_2)">
+                                <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#0099ff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_73_2">
+                                    <rect width="52" height="52" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
                 <div class="swiper-button-prev swiper1-button-prev">
                     <div class="button-swiper" style="transform: rotate(180deg);">
-                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Flecha.png" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <g clip-path="url(#clip0_73_2)">
+                                <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#0099ff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_73_2">
+                                    <rect width="52" height="52" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
                 <div class="swiper mySwiper swiper-product">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Riviera Maya
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            AVENTURA ACUÁTICA
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Isla Mujeres Full Experience
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            Admira el hermoso paisaje durante el recorrido sobre las tranquilas aguas del mar Caribe con destino a un bellísimo Parque Marino.  
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br />
-                                                    flexible
-                                                </p>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                         <div class="swiper-slide swiper-card">  
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Punta Cana
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            AVENTURA ACUÁTICA
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Platinum VIP Catamaran
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br />
-                                                    flexible
-                                                </p>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                 
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Jamaica
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            AVENTURA ACUÁTICA
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Falmouth Mystic Lagoon
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            ¡Vive un paseo nocturno sin igual! Sé testigo de las maravillosas aguas luminiscentes y diviértete en grande con el tour ¡Laguna Luminosa y Fiesta Limbo!
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br />
-                                                    flexible
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
-                                        <p class="white-text text-etiqueta-imagen">
-                                            Riviera maya
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="container-text-card">
-                                    <div class="container-text-card-upper">
-                                        <p class="text-gradient">
-                                            EXCURSIÓN
-                                        </p>
-                                        <p class="title-tour black-nexus">
-                                            Tour Xcaret Plus
-                                        </p>
-                                        <p class="gray-text-card text-parrafo-card">
-                                            Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
-                                        </p>
-                                    </div>
-                                    <div class="container-text-card-bottom">
-                                        <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
-                                                <p class="text-cards-icon">
-                                                    Cancelación <br />
-                                                    flexible
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
-                                                Ver tarifas
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=1370&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/VIP_Buggies.png);">
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
                                             Punta Cana
                                         </p>
@@ -2515,24 +2392,66 @@
                                             ATV
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Punta Cana Buggies Doble
+                                            VIP Punta Cana Buggies
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
-                                            Maneja un buggy junto con un acompañante por rutas poco exploradas que te mostrarán las bellezas naturales de Punta Cana. Diviértete en este tour en el que recorrerás senderos rurales, cuevas, ríos y pueblos que te permitirán conocer la vida en el campo al estilo dominicano.
+                                            ¡Adrenalina en Punta Cana! Explora el campo dominicano en un emocionante buggy. 
                                         </p>
                                     </div>
                                     <div class="container-text-card-bottom">
                                         <div class="container-all-icon-text-card">
-                                            <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                            <!--<div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                                 <p class="text-cards-icon">
-                                                    Cancelación <br />
+                                                    Cancelación <br>
                                                     flexible
                                                 </p>
-                                            </div>
+                                            </div>-->
+                                            
                                         </div>
                                         <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
+                                                Ver tarifas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                 
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=4737&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//B2C/Carrusel/Fun_Park_Tour.jpg)">
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            EXCURSION
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Fun Park Tour
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            ¡Vive un día de multiaventura en Fun Park! Una combinación única de emocionantes atracciones
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <!--<div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Cancelación <br>
+                                                    flexible
+                                                </p>
+                                            </div>-->
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
                                                 Ver tarifas
                                             </div>
                                         </div>
@@ -2541,10 +2460,92 @@
                             </a>
                         </div>
                         <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/Saona.jpg);">
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            AVENTURA ACUATICA
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Saona by Catamaran
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Imagina navegar en un lujoso catamarán, explorando aguas cristalinas y arenas blancas.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <!--<div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Cancelación <br>
+                                                    flexible
+                                                </p>
+                                            </div>-->
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
+                                                Ver tarifas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/Marinarium.jpg);">
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            AVENTURA ACUATICA
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Marinarium
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Explora las profundidades de Punta Cana como nunca antes: bucea con tiburones nodriza y mantarrayas.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <!--<div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Cancelación <br>
+                                                    flexible
+                                                </p>
+                                            </div>-->
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
+                                                Ver tarifas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
                                 <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
                                             Jamaica
                                         </p>
@@ -2553,7 +2554,7 @@
                                 <div class="container-text-card">
                                     <div class="container-text-card-upper">
                                         <p class="text-gradient">
-                                            AVENTURA ACUATICA
+                                            AVENTURA ACUÁTICA
                                         </p>
                                         <p class="title-tour black-nexus">
                                             Cool Running Cruise
@@ -2565,15 +2566,15 @@
                                     <div class="container-text-card-bottom">
                                         <div class="container-all-icon-text-card">
                                             <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                                 <p class="text-cards-icon">
-                                                    Cancelación <br />
+                                                    Cancelación <br>
                                                     flexible
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
                                                 Ver tarifas
                                             </div>
                                         </div>
@@ -2582,10 +2583,10 @@
                             </a>
                         </div>
                         <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
                                 <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
                                             Riviera Maya
                                         </p>
@@ -2597,7 +2598,7 @@
                                             EXCURSIÓN
                                         </p>
                                         <p class="title-tour black-nexus">
-                                            Chichen Itza Tour
+                                            Chichén Itzá Tour
                                         </p>
                                         <p class="gray-text-card text-parrafo-card">
                                             ¡Te sorprenderás de todo lo que puedes hacer en Chichén Itzá! Una aventura llena de magia con fascinantes historias del lugar más explorado de México: Chichén Itzá, la antigua ciudad maya abandonada en el siglo XV, ahora parque arqueológico parte del Patrimonio Mundial de la UNESCO. 
@@ -2606,15 +2607,15 @@
                                     <div class="container-text-card-bottom">
                                         <div class="container-all-icon-text-card">
                                             <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                                 <p class="text-cards-icon">
-                                                    Cancelación <br />
+                                                    Cancelación <br>
                                                     flexible
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
                                                 Ver tarifas
                                             </div>
                                         </div>
@@ -2624,10 +2625,10 @@
                         </div>
             
                         <div class="swiper-slide swiper-card">
-                            <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
                                 <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
-                                    <div class="etiqueta-card gradient-color-nexus">
-                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                    <div class="etiqueta-card colorWHL">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                         <p class="white-text text-etiqueta-imagen">
                                             Jamaica
                                         </p>
@@ -2648,62 +2649,62 @@
                                     <div class="container-text-card-bottom">
                                         <div class="container-all-icon-text-card">
                                             <div class="container-icon-text-card">
-                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                                 <p class="text-cards-icon">
-                                                    Cancelación <br />
+                                                    Cancelación <br>
                                                     flexible
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="content-bottom-price">
-                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                            <div class="boton-tarifas colorBotonWHL white-text">
                                                 Ver tarifas
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
             <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
                 <div class="swiper-wrapper swiper-wrap-auto">
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=1370&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/VIP_Buggies.png);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Riviera Maya
+                                        Punta Cana
                                     </p>
                                 </div>
                             </div>
                             <div class="container-text-card">
                                 <div class="container-text-card-upper">
                                     <p class="text-gradient">
-                                        AVENTURA ACUÁTICA
+                                       ATV
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Isla Mujeres Plus
+                                        VIP Punta Cana Buggies
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Admira el hermoso paisaje durante el recorrido sobre las tranquilas aguas del mar Caribe con destino a un bellísimo Parque Marino.  
+                                        ¡Adrenalina en Punta Cana! Explora el campo dominicano en un emocionante buggy.  
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                        <!-- <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
-                                        </div>
+                                        </div>-->
                                         
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
@@ -2712,10 +2713,52 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=4737&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/Fun_Park_Tour.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSION
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Fun Park Tour
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Vive un día de multiaventura en Fun Park! Una combinación única de emocionantes atracciones.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <!--<div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>-->
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>                 
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//B2C/Carrusel/Saona.jpg)">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
                                         Punta Cana
                                     </p>
@@ -2727,39 +2770,38 @@
                                         AVENTURA ACUÁTICA
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Platinum VIP Catamaran
+                                        Saona by Catamaran
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        Visita la maravillosa Isla Saona para degustar un almuerzo a la sombra de las palmeras justo enfrente de la playa. 
+                                        Imagina navegar en un lujoso catamarán, explorando aguas cristalinas y arenas blancas.
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                       <!-- <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
-                                        </div>
-                                        
+                                        </div>-->
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                    </div>                 
+                    </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationHotel=JP199902&destinationID=146637&addDays=02&prov=SGN&nights=06&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//B2C/Carrusel/Marinarium.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
-                                        Jamaica
+                                        Punta Cana
                                     </p>
                                 </div>
                             </div>
@@ -2769,24 +2811,24 @@
                                         AVENTURA ACUÁTICA
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Falmouth Mystic Lagoon
+                                        Marinarium
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
-                                        ¡Vive un paseo nocturno sin igual! Sé testigo de las maravillosas aguas luminiscentes y diviértete en grande con el tour ¡Laguna Luminosa y Fiesta Limbo!
+                                        Explora las profundidades de Punta Cana como nunca antes: bucea con tiburones nodriza y mantarrayas.
                                     </p>
                                 </div>
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                        <!--<div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
@@ -2794,52 +2836,11 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
-                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
-                                    <p class="white-text text-etiqueta-imagen">
-                                        Riviera maya
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-text-card">
-                                <div class="container-text-card-upper">
-                                    <p class="text-gradient">
-                                        EXCURSIÓN
-                                    </p>
-                                    <p class="title-tour black-nexus">
-                                        Tour Xcaret Plus
-                                    </p>
-                                    <p class="gray-text-card text-parrafo-card">
-                                        Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
-                                    </p>
-                                </div>
-                                <div class="container-text-card-bottom">
-                                    <div class="container-all-icon-text-card">
-                                        <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
-                                            <p class="text-cards-icon">
-                                                Cancelación <br />
-                                                flexible
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
-                                            Ver tarifas
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                   <!-- <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
                             <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
                                         Punta Cana
                                     </p>
@@ -2860,15 +2861,15 @@
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
                                         <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
                                         </div>
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
@@ -2877,10 +2878,10 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
                             <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
                                         Jamaica
                                     </p>
@@ -2889,7 +2890,7 @@
                             <div class="container-text-card">
                                 <div class="container-text-card-upper">
                                     <p class="text-gradient">
-                                      AVENTURA ACUATICA
+                                      AVENTURA ACUÁTICA
                                     </p>
                                     <p class="title-tour black-nexus">
                                       Cool Running Cruise
@@ -2901,15 +2902,15 @@
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
                                         <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
                                         </div>
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
@@ -2918,10 +2919,10 @@
                         </a>
                     </div>
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
                             <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
                                         Riviera Maya
                                     </p>
@@ -2933,7 +2934,7 @@
                                         EXCURSIÓN
                                     </p>
                                     <p class="title-tour black-nexus">
-                                        Chichen Itza Tour
+                                        Chichén Itzá Tour
                                     </p>
                                     <p class="gray-text-card text-parrafo-card">
                                         ¡Te sorprenderás de todo lo que puedes hacer en Chichén Itzá! Una aventura llena de magia con fascinantes historias del lugar más explorado de México: Chichén Itzá, la antigua ciudad maya abandonada en el siglo XV, ahora parque arqueológico parte del Patrimonio Mundial de la UNESCO. 
@@ -2942,15 +2943,15 @@
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
                                         <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
                                         </div>
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
@@ -2960,10 +2961,10 @@
                     </div>
                   
                     <div class="swiper-slide swiper-card">
-                        <a class="card-slider-tour" href="https://royalton-groups.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <a class="card-slider-tour" href="https://vistasol.nexustours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
                             <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
-                                <div class="etiqueta-card gradient-color-nexus">
-                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png" alt="" />
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
                                     <p class="white-text text-etiqueta-imagen">
                                         Jamaica
                                     </p>
@@ -2984,22 +2985,22 @@
                                 <div class="container-text-card-bottom">
                                     <div class="container-all-icon-text-card">
                                         <div class="container-icon-text-card">
-                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png" alt="" />
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
                                             <p class="text-cards-icon">
-                                                Cancelación <br />
+                                                Cancelación <br>
                                                 flexible
                                             </p>
                                         </div>
                                     </div>
                                     <div class="content-bottom-price">
-                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
                                             Ver tarifas
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -3009,170 +3010,16 @@
                     </div>
                     <div class="container-texto-parrafo-video">
                         <h3 class="title-video margin-bottom-13">
-                            Pasa unas vacaciones innolvidables con <span class="title-gradient">Royalton!</span>
+                            ¡Colecciona momentos únicos con <span class="title-gradient"> Vista Sol Punta Cana!</span>
                         </h3>
-                        <div class="line-divider-2 gradient-color-nexus margin-bottom-13 tag-desk"></div>
-                        <p class="gray-text text-parrafo">
-                        Disfruta un destino de ensueño en el Caribe mexicano con Cancún y Riviera Maya, que te transportará a un verdadero paraíso. Camina por sus hermosas playas de arena blanca y aguas cristalinas para practicar deportes acuáticos, como el snorkel y el buceo. Un memorable viaje que te dejará anhelando regresar. Descubre fascinantes estructuras antiguas y templos, en la ciudad maya de Tulum. En Cancún y la Riviera Maya encontrarás la mezcla perfecta de aventura, diversión e historia.
+                        <div class="line-divider-2 colorWHL margin-bottom-13 tag-desk"></div>
+                        <p class="gray-text text-parrafo" style="text-align: justify;">
+                            En el Caribe Mexicano te esperan aguas turquesas y playas de arena blanca que harán realidad tus vacaciones soñadas. Descubrir este paraíso te sorprenderá, ya sea tu primera vez o no. Sus paisajes cautivadores y misteriosos sitios arqueológicos mayas son solo el inicio de una aventura sin igual. ¡Pero eso no es todo! Ven y descubre las actividades emocionantes que te están esperando en Cancún y la Riviera Maya.
                         </p>
                     </div>
                 </div>
                 <div class="container-video">              
-                    <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&list=PL-jkxtLMY7ON4YDnfx9Q4LJj09oG3XLpS&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="container-swiper-destinations margin-bottom-68">
-                <div class="text-card-swiper-destinations">
-                    <p class="text-gradient-destinations">
-                        Los mejores destinos turísticos
-                    </p>
-                    <p class="subtext-gradient-destinations">
-                        Sumérgete en los pintorescos paisajes y sonidos de Cancún, disfruta del sol en las playas doradas de Punta Cana, y pasea por la belleza de Aruba.
-                    </p>
-                </div>
-                <div class="container-slider-botones-2 tag-desk">
-                    <div class="swiper swiperDestinations swiper-destinations-style">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Riviera Maya
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
-                                                                
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Punta Cana
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Jamaica
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            República <br />
-                                            Dominicana
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slider-destinations">
-                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                                    <div class="gradient-imagen">
-                                        <span class="span-destination">
-                                            Santa Lucía
-                                        </span>
-                                    </div>
-                                    <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="container-bottom-slider-destination">
-                        <div class="line-divider-3">
-                        </div>
-                        <div class="container-botones-flex">
-                            <div class="swiper-button-prev swiper2-button-prev swiper-button-block">
-                                <div class="button-swiper" style="transform: rotate(180deg);">
-                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Flecha.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="swiper-button-next swiper2-button-next swiper-button-block">
-                                <div class="button-swiper">
-                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Flecha.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
-                    <div class="swiper-wrapper swiper-wrap-auto">
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Riviera Maya
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Punta Cana
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Jamaica
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        República <br />
-                                        Dominicana
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Santa Lucía
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://royalton-groups.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-pagination swiper4-pagination"></div>
+                    <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7ON4YDnfx9Q4LJj09oG3XLpS&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

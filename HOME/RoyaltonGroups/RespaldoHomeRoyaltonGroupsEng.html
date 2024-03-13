@@ -1494,14 +1494,14 @@
             }
 
             
-                .bannerlogin2 {
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    border-radius: 10px;
-                    
-                }
-                @media (max-width:1200px){
+            .bannerlogin2 {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+                
+            }
+            @media (max-width:1200px){
                 .bannerlogin2 {
                     width: 100%;
                     height: 100%;
@@ -1512,11 +1512,20 @@
                 .bannerlogin2 {
                     width: 100%;
                     height: 100%;
-            /*            margin-left: 3px;*/
+                    /*margin-left: 3px;*/
                 }
             }
 
-            /**/
+            /*Clases section Carrousel*/
+    
+            .margin-bottom-13{
+                margin-bottom: 13px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-13{
+                    margin-bottom: 2vw;
+                }
+            }
 
             .containerCarrousel{
                 display: flex; 
@@ -1525,7 +1534,7 @@
             }
 
             .containerCarrouselLeft{
-                width: 100%;
+                width: 73%;
                 border-radius: 20px;
                 overflow: hidden;
                 position: relative;
@@ -1536,9 +1545,22 @@
                 }
             }
 
+            .containerCarrouselRight{
+                width: 25%;
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+            }
+            @media (max-width: 992px) and (min-width: 0px){
+                .containerCarrouselRight{
+                    display: none;
+                }
+            }
+
             .imgCarrousel{
                 width: 100%; 
                 max-width: 100%; 
+                display: block;
                 position: relative;
                 transition: width .5s ease;
             }
@@ -1554,22 +1576,59 @@
 
             .imgCarrouselOverflow{
                 display: block; 
-                width: 1160px;
+                width: 846px;
                 max-width: none !important;
             }
             @media (max-width: 1200px) and (min-width: 992px){
                 .imgCarrouselOverflow{
-                    width: 960px;
+                    width: 700px;
                 }
             }
             @media (max-width: 992px) and (min-width: 769px){
                 .imgCarrouselOverflow{
-                    width: 720px;
+                    width: 98vw;
                 }
             }
-            @media (max-width: 768px) and (min-width: 0px){
+            @media (max-width: 768px) and (min-width: 551px){
                 .imgCarrouselOverflow{
-                    width: 95.3vw;
+                    width: 97vw;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 451px){
+                .imgCarrouselOverflow{
+                    width: 96vw;
+                }
+            }
+            @media (max-width: 450px) and (min-width: 0px){
+                .imgCarrouselOverflow{
+                    width: 95vw;
+                    height: 100%;
+                }
+            }
+
+            .containerImgCarrouselOverflow{
+                width: 100%; 
+                max-width: 100%; 
+                position: relative;
+                transition: width .5s ease;
+                overflow: hidden;
+            }
+
+            .tagDesk{
+                display: block;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .tagDesk{
+                    display: none;
+                }
+            }
+
+            .tagMob{
+                display: none;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .tagMob{
+                    display: block;
                 }
             }
 
@@ -1583,26 +1642,17 @@
             }
 
             .containerSliderCarrousel{
-                padding: 49px 0px 10px 77px; 
+                padding: 49px 0px 10px 37px; 
                 box-sizing: border-box;
                 height: 80%;
                 width: 100%;
                 position: absolute;
                 top: 0;
                 transition: all .5s ease;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-            }
-            @media (max-width: 1200px) and (min-width: 993px){
-                .containerSliderCarrousel{
-                    padding: 0px 0px 15px 77px;
-                    justify-content: center; 
-                }
             }
             @media (max-width: 992px) and (min-width: 768px){
                 .containerSliderCarrousel{
-                    padding: 20px 0px 15px 37px; 
+                    padding: 8vw 0vw 2vw 4vw; 
                 }
             }
             @media (max-width: 768px) and (min-width: 550px){
@@ -1611,7 +1661,6 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    height: 90%;
                 }
             }
             @media (max-width: 550px) and (min-width: 0px){
@@ -1624,103 +1673,96 @@
                 }
             }
 
-            .containerTagSlideCarrousel{
-                background: linear-gradient(125deg, #00AFDD 11.72%, #8CE972 122.8%); 
-                width: fit-content; 
-                box-sizing: border-box; 
-                padding: 7px 15px 7px 15px; 
-                display: flex; 
-                align-items: center; 
-                gap: 7px; 
-                border-radius: 27px; 
-                overflow: hidden;
-                margin-bottom: 20px;
-            }
             @media (max-width: 550px) and (min-width: 0px){
-                .containerTagSlideCarrousel{
-                    margin-bottom: 3vw;
+                .containerSliderCarrouselNexusApp{
+                    padding: 0 0 3vw 0;
                 }
             }
 
-            .textTagSlideCarrousel{
-                font-size: 16px; 
-                font-weight: 500; 
-                color: #FFFFFF; 
-                line-height: 87%;
+            .containerCenterCarrouselNexusApp{
+                width: fit-content; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                margin-right: auto;
             }
             @media (max-width: 550px) and (min-width: 0px){
-                .textTagSlideCarrousel{
-                    font-size: 3vw;
+                .containerCenterCarrouselNexusApp{
+                    align-items: flex-start;
+                    padding-left: 4vw;
+                }
+            }
+
+            .imgNexusApp{
+                width: auto; 
+                margin-bottom: 10px;
+            }
+            @media (max-width: 768px) and (min-width: 551px){
+                .imgNexusApp{
+                    width: 12vw; 
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .imgNexusApp{
+                    width: 18vw; 
+                }
+            }
+
+            .titleSliderCarrouselNexusApp{
+                margin-top: 0; 
+                margin-bottom: 20px; 
+                font-size: 36px; 
+                color: #FFFFFF; 
+                line-height: 120%; 
+                font-weight: 400; 
+                letter-spacing: -0.4px;
+                width: fit-content;
+                text-align: center;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .titleSliderCarrouselNexusApp{
+                    font-size: 30px;
+                }
+            }
+            @media (max-width: 993px) and (min-width: 769px){
+                .titleSliderCarrouselNexusApp{
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 551px){
+                .titleSliderCarrouselNexusApp{
+                    font-size: 3.5vw;
+                    margin-bottom: 2vw;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .titleSliderCarrouselNexusApp{
+                    font-size: 7vw;
+                    margin-bottom: 2vw;
+                    text-align: left;
                 }
             }
 
             .titleSliderCarrousel{
                 margin-top: 0; 
                 margin-bottom: 5px; 
-                font-size: 35px; 
+                font-size: 40px; 
                 color: #FFFFFF; 
-                line-height: 100%; 
+                line-height: 120%; 
                 font-weight: 600; 
                 letter-spacing: -0.4px;
                 width: fit-content;
                 text-align: left;
             }
-            @media (max-width: 1200px) and (min-width: 993px){
-                .titleSliderCarrousel{
-                    font-size: 26px;
-                    line-height: 110%;
-                }
-            }
-            @media (max-width: 992px) and (min-width: 769px){
-                .titleSliderCarrousel{
-                    font-size: 25px;
-                    line-height: 110%;
-                }
-            }
             @media (max-width: 768px) and (min-width: 550px){
                 .titleSliderCarrousel{
-                    font-size: 5.5vw;
+                    font-size: 3.5vw;
                 }
             }
             @media (max-width: 550px) and (min-width: 0px){
                 .titleSliderCarrousel{
                     font-size: 6vw;
-                }
-            }
-
-            .subtitleSliderCarrousel{
-                color: #FFFFFF; 
-                font-size: 22px; 
-                font-weight: 400; 
-                line-height: 114%; 
-                letter-spacing: -0.24px; 
-                margin-top: 0;
-                margin-bottom: 35px;
-                width: fit-content;
-                text-align: left;
-            }
-            @media (max-width: 1200px) and (min-width: 993px){
-                .subtitleSliderCarrousel{
-                    font-size: 17px; 
-                    margin-bottom: 10px;
-                }
-            }
-            @media (max-width: 993px) and (min-width: 769px){
-                .subtitleSliderCarrousel{
-                    font-size: 17px; 
-                    margin-bottom: 10px;
-                }
-            }
-            @media (max-width: 768px) and (min-width: 550px){
-                .subtitleSliderCarrousel{
-                    font-size: 3.5vw;
-                    margin-bottom: 2vw;
-                }
-            }
-            @media (max-width: 550px) and (min-width: 0px){
-                .subtitleSliderCarrousel{
-                    font-size: 4vw;
-                    margin-bottom: 4vw;
                 }
             }
 
@@ -1770,15 +1812,15 @@
             }
             @media (max-width: 768px) and (min-width: 551px){
                 .textBotonCTACarrousel{
-                    font-size: 3vw;
+                    font-size: 2vw;
                 }
             }
+
             @media (max-width: 550px) and (min-width: 0px){
-                .textBotonCTACarrousel{
+                .textBotonCTACarrouselMob{
                     font-size: 3.5vw;
                 }
             }
-            
 
             .sliderPromoCarrousel{
                 display: flex;
@@ -1786,49 +1828,65 @@
                 justify-content: flex-end;
             }
 
-            .containerBotonesCarrouselInferior{
-                position: absolute; 
-                bottom: 0; 
-                height: 20%; 
-                width: 100%; 
-                box-sizing: border-box; 
-                padding: 0 77px 0 77px; 
-                display: flex; 
-                align-items: flex-end; 
-                justify-content: space-between;
-            }
-            @media (max-width: 1200px) and (min-width: 992px){
-                .containerBotonesCarrouselInferior{
-                    justify-content: space-between;
-                }
-            }
-            @media (max-width: 768px) and (min-width: 550px){
-                .containerBotonesCarrouselInferior{
-                    justify-content: center;
-                    height: 10%; 
-                }
+            .textTerms{
+                font-size: 12px; 
+                font-weight: 400; 
+                line-height: 114%; 
+                color: #FFF; 
+                margin-bottom: 11px;
+                width: fit-content;
+                text-align: left;
             }
             @media (max-width: 550px) and (min-width: 0px){
-                .containerBotonesCarrouselInferior{
-                    justify-content: center;
-                    padding: 0 2vw 0 2vw;
-                    height: 17%; 
+                .textTerms{
+                    font-size: 2.5vw;
                 }
             }
 
-            .containerBotonesCarrouselArrow{
-                display: flex; 
-                gap: 15px; 
-                margin-bottom: 15px;
+            .textBotonesCarrouselHover{
+                font-size: 15px; 
+                color: #FFFFFF; 
+                font-style: normal; 
+                font-weight: 600;
             }
-            @media (max-width: 1200px) and (min-width: 992px){
-                .containerBotonesCarrouselArrow{
-                    margin-bottom: 10px;
+            @media (max-width: 768px) and (min-width: 550px){
+                .textBotonesCarrouselHover{
+                    font-size: 2.4vw;
                 }
             }
-            @media (max-width: 768px) and (min-width: 0px){
-                .containerBotonesCarrouselArrow{
-                    display: none;
+            @media (max-width: 550px) and (min-width: 0px){
+                .textBotonesCarrouselHover{
+                    font-size: 2.8vw;
+                }
+            }
+
+            .titleLoginOpaco{
+                font-size: 22px;
+                color: white;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                line-height: 118%;
+                text-align: center;
+                font-weight: 500;
+                margin-top: 22px; 
+                margin-bottom: 0; 
+            }
+
+            .titleLoginOpaco > span{
+                font-weight: 700;
+            }
+
+            .textTerms{
+                font-size: 12px; 
+                font-weight: 400; 
+                line-height: 114%; 
+                color: #FFF; 
+                margin-bottom: 11px;
+                width: fit-content;
+                text-align: left;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .textTerms{
+                    font-size: 2.5vw;
                 }
             }
 
@@ -1838,13 +1896,40 @@
                 overflow: hidden;
             }
 
-            .containerBotonesCarrouselHoverRow{
+            .flexTextBotonesCarrouselHover{
                 display: flex; 
-                gap: 33px;
+                gap: 5px; 
+                justify-content: center;
+                align-items: center;
+            }
+            @media (max-width: 992px) and (min-width: 0px){
+                .flexTextBotonesCarrouselHover{
+                    flex-direction: column;
+                    gap: 2px;
+                }
+            }
+
+            .backgroundBotonesCarrouselHover{
+                position: absolute; 
+                width: 100%; 
+                height: 100%; 
+                border-radius: 13px 13px 0 0; 
+                background-color: #003d52; 
+                top: 0;
+                transition: all ease .5s;
+            }
+
+            .containerTextBotonesCarrouselHover{
+                position: absolute; 
+                width: 100%; 
+                height: 100%; 
+                top: 0; 
+                box-sizing: border-box; 
+                padding: 7px 12px 0 12px;
             }
             @media (max-width: 550px) and (min-width: 0px){
-                .containerBotonesCarrouselHoverRow{
-                    gap: 3vw;
+                .containerTextBotonesCarrouselHover{
+                    padding: 7px 1vw 0 1vw;
                 }
             }
 
@@ -1871,67 +1956,143 @@
                     height: 15vw;
                 }
             }
-
-            .backgroundBotonesCarrouselHover{
-                position: absolute; 
-                width: 100%; 
-                height: 100%; 
-                border-radius: 13px 13px 0 0; 
-                background-color: #003d52;
-                top: 0;
-                transition: all ease .5s;
-            }
-
-            .containerTextBotonesCarrouselHover{
-                position: absolute; 
-                width: 100%; 
-                height: 100%; 
-                top: 0; 
-                box-sizing: border-box; 
-                padding: 7px 12px 0 12px;
+            .containerBotonesCarrouselHoverRow{
+                display: flex; 
+                gap: 33px;
             }
             @media (max-width: 550px) and (min-width: 0px){
-                .containerTextBotonesCarrouselHover{
-                    padding: 7px 1vw 0 1vw;
+                .containerBotonesCarrouselHoverRow{
+                    gap: 3vw;
                 }
             }
 
-            .flexTextBotonesCarrouselHover{
+            .containerBotonesCarrouselArrow{
                 display: flex; 
-                gap: 5px; 
-                justify-content: center;
-                align-items: center;
+                gap: 15px; 
+                margin-bottom: 15px;
             }
-            @media (max-width: 992px) and (min-width: 0px){
-                .flexTextBotonesCarrouselHover{
-                    flex-direction: column;
-                    gap: 2px;
+            @media (max-width: 1200px) and (min-width: 992px){
+                .containerBotonesCarrouselArrow{
+                    display: none;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 0px){
+                .containerBotonesCarrouselArrow{
+                    display: none;
                 }
             }
 
-            .textBotonesCarrouselHover{
-                font-size: 15px; 
-                color: #FFFFFF; 
-                font-style: normal; 
-                font-weight: 600;
+            .containerBotonesCarrouselInferior{
+                position: absolute; 
+                bottom: 0; 
+                height: 20%; 
+                width: 100%; 
+                box-sizing: border-box; 
+                padding: 0 45px 0 39px; 
+                display: flex; 
+                align-items: flex-end; 
+                justify-content: space-between;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .containerBotonesCarrouselInferior{
+                    justify-content: center;
+                }
             }
             @media (max-width: 768px) and (min-width: 550px){
-                .textBotonesCarrouselHover{
-                    font-size: 2.4vw;
+                .containerBotonesCarrouselInferior{
+                    justify-content: center;
                 }
             }
             @media (max-width: 550px) and (min-width: 0px){
-                .textBotonesCarrouselHover{
-                    font-size: 2.8vw;
+                .containerBotonesCarrouselInferior{
+                    justify-content: center;
+                    padding: 0 2vw 0 2vw;
+                    height: 17%; 
                 }
             }
 
-            .containerImgCarrouselOverflow{
-                width: 100%; 
-                max-width: 100%; 
-                position: relative;
-                transition: width .5s ease;
+            .subtitleSliderCarrousel{
+                color: #FFFFFF; 
+                font-size: 24px; 
+                font-weight: 400; 
+                line-height: 114%; 
+                letter-spacing: -0.24px; 
+                margin-top: 0;
+                margin-bottom: 26px;
+                width: fit-content;
+                text-align: left;
+            }
+            @media (max-width: 1200px) and (min-width: 993px){
+                .subtitleSliderCarrousel{
+                    font-size: 17px; 
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width: 993px) and (min-width: 769px){
+                .subtitleSliderCarrousel{
+                    font-size: 17px; 
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 550px){
+                .subtitleSliderCarrousel{
+                    font-size: 2.5vw;
+                    margin-bottom: 2vw;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .subtitleSliderCarrousel{
+                    font-size: 4vw;
+                    margin-bottom: 4vw;
+                }
+            }
+
+            .textTagSlideCarrousel{
+                font-size: 16px; 
+                font-weight: 500; 
+                color: #FFFFFF; 
+                line-height: 87%;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .textTagSlideCarrousel{
+                    font-size: 4vw;
+                }
+            }
+
+            .containerTagSlideCarrousel{
+                background: linear-gradient(125deg, #00AFDD 11.72%, #8CE972 122.8%); 
+                width: fit-content; 
+                box-sizing: border-box; 
+                padding: 7px 15px 7px 15px; 
+                display: flex; 
+                align-items: center; 
+                gap: 7px; 
+                border-radius: 27px; 
                 overflow: hidden;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .containerTagSlideCarrousel{
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .containerAbsoluteLogin{
+                position: absolute; 
+                width: 100%; 
+                height: 100%; 
+                box-sizing: border-box; 
+                top: 0; 
+                left: 0; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                padding: 25px;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .containerAbsoluteLogin{
+                    padding: 17px;
+                }
             }
         </style>
     </head>
@@ -1943,20 +2104,85 @@
                         <div class="imgCarrousel absoluteImgCarrousel" style="z-index: 1; width: 100%;">
                             <img id="backgroundChangeSlider" class="imgCarrouselOverflow">
                         </div>
-                        <div name="imgCarrousel" class="containerImgCarrouselOverflow tag-desk" style="z-index: 2;">
-                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/bannerSliderHomeSimLocalWHL.png" alt="Slider_Home_Carrousel_Telefono">
+    
+    
+                        <div name="imgCarrousel" class="containerImgCarrouselOverflow tagDesk" style="z-index: 2;">
+                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeDesk.png" alt="Slider_Home_Carrousel_Auto">
                         </div>
-                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow tag-mob" style="z-index: 2;">
+                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow tagMob" style="z-index: 2;">
+                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeMob.png" alt="Slider_Home_Carrousel_Auto_Mob">
+                        </div>
+    
+    
+                        <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
+                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SP2_eng.jpg" alt="Slider_Home_Carrousel_Promo">
+                        </div>
+                        <div name="imgCarrouselMob" class="imgCarrousel absoluteImgCarrousel tagMob" style="z-index: 1;">
+                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPmob2_eng.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
+                        </div>
+    
+    
+                        <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
+                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Slider_Home_Carrousel_Telefono.png" alt="Slider_Home_Carrousel_Telefono">
+                        </div>
+                        <div name="imgCarrouselMob" class="imgCarrousel absoluteImgCarrousel tagMob" style="z-index: 1;">
                             <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Slider_Home_Carrousel_Telefono_Mob.png" alt="Slider_Home_Carrousel_Telefono_Mob">
                         </div>
-                        <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tag-desk" style="z-index: 1;">
-                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/bannerSliderHomeDiscountsUpWHLEn.png" alt="Slider_Home_Carrousel_Promo">
-                        </div>
-                        <div name="imgCarrouselMob" class="imgCarrousel absoluteImgCarrousel tag-mob" style="z-index: 1;">
-                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/bannerSliderHomeDiscountsWHLMobEn.png" alt="Slider_Home_Carrousel_Promo_Mob">
-                        </div>
+    
+    
                         <div class="containerAbsoluteSliderCarrousel" style="z-index: 3;">
-                            <div name="containerSliderCarrousel" class="containerSliderCarrousel" style="z-index: 2;">
+                            <div name="containerSliderCarrousel" class="containerSliderCarrousel containerSliderCarrouselNexusApp" style="z-index: 2;">
+                                <div class="containerCenterCarrouselNexusApp">
+                                    <img class="imgNexusApp" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/logoNexusApp.png">
+                                    <h2 class="titleSliderCarrouselNexusApp">
+                                        Ready for a
+                                        <br>
+                                        <span style="font-weight: 700;">
+                                            seamless travel?
+                                        </span>
+                                    </h2>
+                                    <div class="containerBotonCTACarrousel">
+                                        <a class="botonCTACarrouselMob" href="https://uqr.to/XHUB.NT" target="_blank">
+                                            <div class="textBotonCTACarrousel textBotonCTACarrouselMob" style="color: #FF621D;">
+                                                Download the Nexus App
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
+                                                <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                                </mask>
+                                                <g mask="url(#mask0_6_4543)">
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div name="containerSliderCarrousel" class="containerSliderCarrousel sliderPromoCarrousel" style="z-index: 1; opacity: 0;">
+                                <div class="textTerms tagDesk">
+                                    *Consult Terms and Conditions at: <br>
+                                    www.nexustours.com/discounts
+                                </div>
+                                <div class="textTerms tagMob">
+                                    *Consult Terms and Conditions at: www.nexustours.com/discounts
+                                </div>
+                                <div class="containerBotonCTACarrousel">
+                                    <a class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
+                                        <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
+                                            Book now
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003d52"/>
+                                            <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0_6_4543)">
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div name="containerSliderCarrousel" class="containerSliderCarrousel" style="z-index: 1; opacity: 0;">
                                 <div class="containerTagSlideCarrousel">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
                                         <path d="M18.7284 3.71088C16.2262 1.31895 12.9479 0 9.5 0C6.05206 0 2.77377 1.31895 0.271576 3.71088C0.101936 3.87204 0.00439258 4.09257 0.000151579 4.33006C-0.00408942 4.56756 0.0807306 4.79233 0.24613 4.96197C0.58541 5.31398 1.14522 5.3267 1.49723 4.99166C3.66862 2.91781 6.51009 1.77274 9.5 1.77274C12.4899 1.77274 15.3314 2.91781 17.5028 4.99166C17.6682 5.14858 17.8845 5.23764 18.1135 5.23764C18.3552 5.23764 18.5885 5.1401 18.7539 4.96622C18.9193 4.79658 19.0041 4.5718 18.9998 4.33431C18.9956 4.09681 18.8981 3.87628 18.7284 3.71512V3.71088Z" fill="white"/>
@@ -1979,20 +2205,18 @@
                                 <div class="containerBotonCTACarrousel">
                                     <a class="botonCTACarrouselMob" href="https://www.simlocal.com/shop-landing/nexus" target="_blank">
                                         <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
-                                            Buy Now
+                                            Buy now
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#003d52"/>
                                             <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
                                             </mask>
                                             <g mask="url(#mask0_6_4543)">
                                             </g>
                                         </svg>
                                     </a>
                                 </div>
-                            </div>
-                            <div name="containerSliderCarrousel" class="containerSliderCarrousel sliderPromoCarrousel" style="z-index: 1; opacity: 0;">
                             </div>
                             <div class="containerBotonesCarrouselInferior">
                                 <div class="containerBotonesCarrouselArrow">
@@ -2013,15 +2237,19 @@
                                         </div>
                                         <div class="containerTextBotonesCarrouselHover">
                                             <div class="flexTextBotonesCarrouselHover">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-                                                    <path d="M20.6998 4.1015C17.9343 1.45779 14.3109 0 10.5 0C6.68912 0 3.06574 1.45779 0.300163 4.1015C0.112666 4.27962 0.00485496 4.52337 0.000167535 4.78586C-0.00451989 5.04836 0.0892286 5.29679 0.272038 5.48429C0.647032 5.87334 1.26577 5.88741 1.65483 5.5171C4.05479 3.22495 7.19536 1.95934 10.5 1.95934C13.8046 1.95934 16.9452 3.22495 19.3452 5.5171C19.528 5.69053 19.767 5.78897 20.0202 5.78897C20.2873 5.78897 20.5452 5.68116 20.728 5.48898C20.9108 5.30148 21.0045 5.05304 20.9998 4.79055C20.9951 4.52805 20.8873 4.28431 20.6998 4.10618V4.1015Z" fill="white"/>
-                                                    <path d="M10.5 2.92493C7.43911 2.92493 4.53291 4.0921 2.32044 6.21081C2.13294 6.39362 2.02513 6.63268 2.02045 6.89518C2.01576 7.15767 2.10951 7.40611 2.29232 7.5936C2.47513 7.7811 2.71419 7.88891 2.97668 7.8936C2.98606 7.8936 2.99074 7.8936 3.00012 7.8936C3.25324 7.8936 3.4923 7.79985 3.67511 7.62173C5.52195 5.85457 7.95004 4.87958 10.5047 4.87958C13.0593 4.87958 15.4827 5.85457 17.3343 7.62173C17.7093 7.98266 18.3608 7.96391 18.7171 7.5936C18.8999 7.40611 18.9936 7.15767 18.9889 6.89518C18.9842 6.63268 18.8764 6.38893 18.6889 6.21081C16.4765 4.0921 13.5703 2.92493 10.5094 2.92493H10.5Z" fill="white"/>
-                                                    <path d="M10.5 5.84521C8.19377 5.84521 6.00474 6.72645 4.34071 8.32018C4.15321 8.50299 4.0454 8.74204 4.04071 9.00454C4.03602 9.26704 4.12977 9.51078 4.31258 9.70297C4.49539 9.89046 4.73445 9.99827 4.99694 10.003C5.00632 10.003 5.01101 10.003 5.02038 10.003C5.2735 10.003 5.51256 9.90921 5.69537 9.73109C6.99848 8.48424 8.7047 7.79987 10.5047 7.79987C12.3046 7.79987 14.0109 8.48424 15.314 9.73109C15.4968 9.90453 15.7358 10.003 15.989 10.003C16.2561 10.003 16.5093 9.89515 16.6968 9.70297C16.8796 9.51547 16.9733 9.26704 16.9686 9.00454C16.9639 8.74204 16.8561 8.4983 16.6686 8.32018C14.9999 6.72176 12.8156 5.84521 10.5094 5.84521H10.5Z" fill="white"/>
-                                                    <path d="M10.5 8.77014C8.94846 8.77014 7.47661 9.36076 6.35631 10.4342C5.96725 10.8092 5.95319 11.4279 6.32819 11.817C6.70318 12.206 7.32192 12.2201 7.71098 11.8451C8.46565 11.1232 9.4547 10.7248 10.5 10.7248C11.5453 10.7248 12.5343 11.1232 13.289 11.8451C13.4718 12.0185 13.7109 12.117 13.964 12.117C14.2171 12.117 14.4843 12.0092 14.6671 11.817C15.0421 11.4279 15.028 10.8092 14.639 10.4342C13.5187 9.36076 12.0468 8.77014 10.4953 8.77014H10.5Z" fill="white"/>
-                                                    <path d="M8.46098 14.4514C8.46098 15.5764 9.37503 16.4904 10.5 16.4904C11.625 16.4904 12.539 15.5764 12.539 14.4514C12.539 13.3264 11.625 12.4124 10.5 12.4124C9.37503 12.4124 8.46098 13.3264 8.46098 14.4514Z" fill="white"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none">
+                                                    <g clip-path="url(#clip0_604_268)">
+                                                        <path d="M18.4686 6.27776L18.3912 6.21054C18.35 6.17434 18.3087 6.14331 18.2623 6.11229L18.5305 5.8589C18.8296 5.57449 18.9947 5.18665 18.9998 4.76779C18.9998 4.34893 18.8451 3.95075 18.5563 3.64565L18.4841 3.56809C18.087 3.14922 17.5145 2.97858 16.973 3.10268V1.90815C16.973 0.853238 16.122 0 15.0699 0H7.6483C6.59619 0 5.74521 0.853238 5.74521 1.90815V5.68825C5.38935 5.82787 5.116 6.11229 5.0077 6.46392C4.75498 7.27062 4.57447 7.87048 4.42491 8.37208C4.15672 9.27185 4.00715 9.76828 3.72865 10.4922C3.40373 11.3403 3.37795 12.328 3.35732 13.1295C3.35216 13.3571 3.34184 13.7397 3.32121 13.9414C3.31606 14.0086 3.29027 14.0707 3.25933 14.1276C3.21807 14.2 3.14586 14.3137 3.05303 14.4637C2.89315 14.7274 2.52697 14.7688 2.31036 14.5464C2.12469 14.3551 1.8204 14.3551 1.63473 14.5464L0.737338 15.4462C-0.247732 16.4339 -0.247732 18.0421 0.737338 19.0298L2.53728 20.8345C2.72811 21.0259 3.08397 21.0776 3.30574 20.9224C3.50688 20.7828 3.60487 20.5398 3.54814 20.2967C3.52235 20.183 3.45531 20.0795 3.37279 19.9968L1.96481 18.5851C1.22214 17.8404 1.22214 16.6407 1.96481 15.8961L6.22485 20.2916C6.83343 20.9173 7.82881 20.9276 8.44771 20.3174C8.55086 20.214 8.64885 20.1157 8.73652 20.0382C11.9806 20.1674 13.5123 18.1404 14.0487 17.4009H15.0595C16.1117 17.4009 16.9626 16.5476 16.9626 15.4927V15.2238C17.2669 15.2135 17.5351 15.0894 17.7156 14.8825L18.5924 13.869C19.1236 13.2536 19.0462 12.3073 18.417 11.7643L18.3448 11.7023C18.2984 11.6609 18.252 11.6247 18.2004 11.5937L18.6285 11.1024C18.9637 10.7146 19.0669 10.182 18.9121 9.6752C18.8296 9.41147 18.6646 9.16843 18.4325 8.96676L18.4016 8.9409C18.3603 8.9047 18.3139 8.8685 18.2675 8.83748L18.6233 8.42379C19.1597 7.79808 19.0823 6.84659 18.448 6.30362L18.4686 6.27776ZM15.7867 2.18739H6.93142V1.90815C6.93142 1.50997 7.25118 1.18936 7.6483 1.18936H15.0699C15.467 1.18936 15.7867 1.50997 15.7867 1.90815V2.18739ZM17.7053 13.0675L16.8956 14.0086C16.8389 13.9983 16.7306 13.9621 16.6119 13.8587L16.5397 13.7914C16.4263 13.6932 16.3695 13.5949 16.3437 13.5432L17.1638 12.5969C17.2102 12.54 17.2772 12.509 17.3649 12.5038C17.4629 12.4935 17.5403 12.54 17.5918 12.5866L17.664 12.6486C17.793 12.7624 17.8188 12.9485 17.7156 13.0675H17.7053ZM8.88093 17.3802H12.5272C11.5061 18.4506 10.1755 18.9315 8.56633 18.8178L8.3033 18.7971L8.11247 18.9781C8.05058 19.035 7.98354 19.1022 7.91133 19.1694C7.60189 19.4745 7.10162 19.4693 6.79733 19.1539L3.58424 15.8444C4.22377 14.8205 4.33723 14.6188 4.36302 14.5671C4.51774 14.2361 4.52806 13.7759 4.54353 13.1399C4.559 12.4366 4.57963 11.5678 4.83234 10.9059C5.12632 10.1406 5.29136 9.59246 5.5647 8.67717C5.70911 8.19626 5.88446 7.60158 6.13202 6.81039C6.13718 6.80005 6.16812 6.77936 6.21969 6.77419C6.28158 6.76385 6.35379 6.77419 6.38473 6.81556C6.73028 7.30165 6.885 7.77739 6.84374 8.22728C6.72512 9.48904 6.84374 9.53041 6.51367 10.544L6.19906 11.33C6.13718 11.5213 6.21969 11.6247 6.34347 11.785L6.66839 12.1212C7.96291 14.9601 7.51937 16.6252 7.21508 17.2819C7.13256 17.4629 7.22539 17.675 7.41622 17.7422C7.41622 17.7422 7.93196 18.2179 8.87062 17.375L8.88093 17.3802ZM15.1524 13.5639H9.33479C8.81904 13.5639 8.37035 13.2381 8.19499 12.752C8.01964 12.2659 7.83913 11.9143 7.67409 11.6299C7.55031 11.4179 7.52453 11.1645 7.59157 10.9318C7.81334 10.1406 7.93712 9.42699 8.03511 8.34105C8.10732 7.5964 7.88039 6.84659 7.36465 6.12263C7.25634 5.9675 7.11193 5.84339 6.94174 5.75031V3.37158H15.7919V3.93007L15.2349 4.45752C14.9667 4.71608 14.8636 5.10392 14.9461 5.52278C15.0131 5.84856 15.1936 6.17434 15.4464 6.44324L15.5186 6.52081C15.6269 6.63457 15.7403 6.73282 15.8641 6.81556L15.3845 7.36887C15.1472 7.64294 15.0802 8.02561 15.204 8.41862C15.2968 8.72371 15.4979 9.01847 15.7661 9.25117L15.8383 9.31322C15.8744 9.34425 15.9105 9.37011 15.9466 9.40113L15.3845 10.0475C15.1472 10.3216 15.0802 10.7043 15.204 11.0973C15.2968 11.4024 15.4979 11.6971 15.7661 11.9298L15.8383 11.9919C15.8899 12.0332 15.9415 12.0746 15.993 12.1108L15.3845 12.8089C15.2143 13.0106 15.1317 13.264 15.1472 13.5432L15.1524 13.5639ZM16.9162 11.2627C16.8595 11.2524 16.7409 11.2162 16.6171 11.1024L16.5449 11.0352C16.4263 10.937 16.3695 10.8284 16.3437 10.7663L17.1793 9.79931C17.2308 9.74243 17.303 9.70623 17.3804 9.70106C17.4474 9.70106 17.5454 9.7114 17.6228 9.7838L17.7002 9.85102C17.7672 9.9079 17.8085 9.99064 17.8188 10.0786C17.8239 10.1613 17.8033 10.2389 17.7517 10.2957L16.9214 11.2576L16.9162 11.2627ZM16.9162 8.58409C16.8595 8.57375 16.746 8.53755 16.6171 8.42379L16.5449 8.36173C16.4263 8.26348 16.3695 8.15489 16.3437 8.09283L17.1793 7.12583C17.2824 7.00172 17.4939 6.99655 17.6228 7.11032L17.695 7.17237C17.8291 7.29131 17.8549 7.48781 17.7466 7.61709L16.9162 8.57892V8.58409ZM17.7156 4.99532L16.7254 5.9313C16.6635 5.91578 16.5243 5.86407 16.3798 5.70894L16.3076 5.63137C16.1735 5.48658 16.1168 5.34696 16.1013 5.27973L17.0916 4.34376C17.2308 4.20931 17.4732 4.22999 17.6228 4.3903L17.695 4.46786C17.8446 4.62817 17.8549 4.86604 17.7156 5.00049V4.99532ZM9.41215 14.7533H15.7867V15.4721C15.7867 15.8702 15.467 16.1908 15.0699 16.1908H9.29353C8.92735 16.1908 8.63338 15.8909 8.64369 15.5238C8.64369 15.5238 8.64369 15.5134 8.64369 15.5082C8.65401 15.0894 8.9944 14.7533 9.41215 14.7533Z" fill="white"/>
+                                                        <path d="M13.2752 6.9446L12.7904 6.8722L12.5738 6.42748C12.3572 5.98794 11.9136 5.71387 11.4237 5.71387C10.9337 5.71387 10.4902 5.98794 10.2736 6.43266L10.057 6.87737L9.57215 6.94977C9.08735 7.02217 8.69023 7.35829 8.53551 7.82369C8.38594 8.29427 8.50972 8.79587 8.86043 9.14233L9.21113 9.4888L9.12861 9.97489C9.0461 10.461 9.24208 10.9419 9.6392 11.2315C9.86613 11.3969 10.1292 11.4797 10.3922 11.4797C10.5933 11.4797 10.7996 11.428 10.9904 11.3297L11.4288 11.1022L11.8672 11.3297C12.3004 11.5573 12.8213 11.5211 13.2185 11.2315C13.6156 10.9419 13.8116 10.461 13.729 9.97489L13.6465 9.4888L13.9972 9.14233C14.3479 8.79587 14.4717 8.29427 14.3222 7.82369C14.1726 7.35312 13.7755 7.02217 13.2855 6.94977L13.2752 6.9446ZM12.7388 8.56316C12.4345 8.85792 12.3004 9.28195 12.3726 9.70082L12.4552 10.1869L12.0168 9.95937C11.6454 9.76287 11.1967 9.76287 10.8254 9.95937L10.3922 10.1869L10.4747 9.70082C10.5469 9.28195 10.4077 8.85792 10.1085 8.56316L9.75782 8.2167L10.2426 8.1443C10.6604 8.08225 11.0214 7.81852 11.2071 7.44103L11.4237 6.99631L11.6403 7.44103C11.826 7.81852 12.187 8.08225 12.6047 8.1443L13.0947 8.2167L12.7388 8.56316Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_604_268">
+                                                            <rect width="19" height="21" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
                                                 </svg>
                                                 <span class="textBotonesCarrouselHover">
-                                                    Sim local
+                                                    Nexus App
                                                 </span>
                                             </div>
                                         </div>
@@ -2041,8 +2269,34 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div name="botonCarrouselHoverHome" activo="0" class="botonCarrouselHover">
+                                        <div name="backgroundBotonesCarrouselHoverHome" class="backgroundBotonesCarrouselHover">
+                                        </div>
+                                        <div class="containerTextBotonesCarrouselHover">
+                                            <div class="flexTextBotonesCarrouselHover">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
+                                                    <path d="M20.6998 4.1015C17.9343 1.45779 14.3109 0 10.5 0C6.68912 0 3.06574 1.45779 0.300163 4.1015C0.112666 4.27962 0.00485496 4.52337 0.000167535 4.78586C-0.00451989 5.04836 0.0892286 5.29679 0.272038 5.48429C0.647032 5.87334 1.26577 5.88741 1.65483 5.5171C4.05479 3.22495 7.19536 1.95934 10.5 1.95934C13.8046 1.95934 16.9452 3.22495 19.3452 5.5171C19.528 5.69053 19.767 5.78897 20.0202 5.78897C20.2873 5.78897 20.5452 5.68116 20.728 5.48898C20.9108 5.30148 21.0045 5.05304 20.9998 4.79055C20.9951 4.52805 20.8873 4.28431 20.6998 4.10618V4.1015Z" fill="white"/>
+                                                    <path d="M10.5 2.92493C7.43911 2.92493 4.53291 4.0921 2.32044 6.21081C2.13294 6.39362 2.02513 6.63268 2.02045 6.89518C2.01576 7.15767 2.10951 7.40611 2.29232 7.5936C2.47513 7.7811 2.71419 7.88891 2.97668 7.8936C2.98606 7.8936 2.99074 7.8936 3.00012 7.8936C3.25324 7.8936 3.4923 7.79985 3.67511 7.62173C5.52195 5.85457 7.95004 4.87958 10.5047 4.87958C13.0593 4.87958 15.4827 5.85457 17.3343 7.62173C17.7093 7.98266 18.3608 7.96391 18.7171 7.5936C18.8999 7.40611 18.9936 7.15767 18.9889 6.89518C18.9842 6.63268 18.8764 6.38893 18.6889 6.21081C16.4765 4.0921 13.5703 2.92493 10.5094 2.92493H10.5Z" fill="white"/>
+                                                    <path d="M10.5 5.84521C8.19377 5.84521 6.00474 6.72645 4.34071 8.32018C4.15321 8.50299 4.0454 8.74204 4.04071 9.00454C4.03602 9.26704 4.12977 9.51078 4.31258 9.70297C4.49539 9.89046 4.73445 9.99827 4.99694 10.003C5.00632 10.003 5.01101 10.003 5.02038 10.003C5.2735 10.003 5.51256 9.90921 5.69537 9.73109C6.99848 8.48424 8.7047 7.79987 10.5047 7.79987C12.3046 7.79987 14.0109 8.48424 15.314 9.73109C15.4968 9.90453 15.7358 10.003 15.989 10.003C16.2561 10.003 16.5093 9.89515 16.6968 9.70297C16.8796 9.51547 16.9733 9.26704 16.9686 9.00454C16.9639 8.74204 16.8561 8.4983 16.6686 8.32018C14.9999 6.72176 12.8156 5.84521 10.5094 5.84521H10.5Z" fill="white"/>
+                                                    <path d="M10.5 8.77014C8.94846 8.77014 7.47661 9.36076 6.35631 10.4342C5.96725 10.8092 5.95319 11.4279 6.32819 11.817C6.70318 12.206 7.32192 12.2201 7.71098 11.8451C8.46565 11.1232 9.4547 10.7248 10.5 10.7248C11.5453 10.7248 12.5343 11.1232 13.289 11.8451C13.4718 12.0185 13.7109 12.117 13.964 12.117C14.2171 12.117 14.4843 12.0092 14.6671 11.817C15.0421 11.4279 15.028 10.8092 14.639 10.4342C13.5187 9.36076 12.0468 8.77014 10.4953 8.77014H10.5Z" fill="white"/>
+                                                    <path d="M8.46098 14.4514C8.46098 15.5764 9.37503 16.4904 10.5 16.4904C11.625 16.4904 12.539 15.5764 12.539 14.4514C12.539 13.3264 11.625 12.4124 10.5 12.4124C9.37503 12.4124 8.46098 13.3264 8.46098 14.4514Z" fill="white"/>
+                                                </svg>
+                                                <span class="textBotonesCarrouselHover">
+                                                    Sim Local
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div id="carrouselRight" class="containerCarrouselRight">
+                        <img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel_Opaco_Desk.png" alt="Login_Home_Carrousel">
+                        <div class="containerAbsoluteLogin"> 
+                            <h3 class="titleLoginOpaco"> 
+                                <span>Add travel assistance</span> we got you covered.
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -2942,64 +3196,6 @@
         offer[0].style.margin = "0"
     </script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            navigation: {
-                nextEl: ".swiper1-button-next",
-                prevEl: ".swiper1-button-prev",
-            },
-        });
-
-        var swiper2 = new Swiper(".swiperDestinations", {
-            slidesPerView: 3,
-            navigation: {
-                nextEl: ".swiper2-button-next",
-                prevEl: ".swiper2-button-prev",
-            },
-        });
-
-        var swiper3 = new Swiper(".swiperTours-Mob", {
-            slidesPerView: 1.1,
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-
-        var swiper4 = new Swiper(".swiperDestinations-Mob", {
-            slidesPerView: 1.5,
-            navigation: {
-                nextEl: ".swiper4-button-next",
-                prevEl: ".swiper4-button-prev",
-            },
-            pagination: {
-                el: ".swiper4-pagination",
-            },
-        });
-
-        var swiper5 = new Swiper(".swiperOfertas", {
-            slidesPerView: 1.4,
-        });
-
-        var swiper6 = new Swiper(".swiperTransferHome", {
-            slidesPerView: 1.4,
-            pagination: {
-                el: ".swiper5-pagination",
-            },
-        });
-
-        var swiper7 = new Swiper(".swiperPromocion-slide", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            pagination: {
-                el: ".swiper6-pagination",
-            },
-            loop: true,
-            autoplay: {
-                delay: 2500,
-            },
-        });
-    </script>
-    <script>
         var botonCarrouselHoverHome = document.getElementsByName("botonCarrouselHoverHome")
         var backgroundBotonesCarrouselHoverHome = document.getElementsByName("backgroundBotonesCarrouselHoverHome")
         var imgCarrousel = document.getElementsByName("imgCarrousel")
@@ -3013,6 +3209,7 @@
         var anchoDocumento = window.innerWidth - (window.scrollBarWidth || window.innerWidth - document.documentElement.clientWidth);
 
         var carrouselRight = document.getElementById("carrouselRight")
+
         let contSlide = 0
 
         for(var i = 1; i < backgroundBotonesCarrouselHoverHome.length; i++){
@@ -3125,5 +3322,63 @@
             containerSliderCarrousel[contSlide].style.opacity = "1"
         })
 
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper1-button-next",
+                prevEl: ".swiper1-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".swiperDestinations", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
+            },
+        });
+
+        var swiper3 = new Swiper(".swiperTours-Mob", {
+            slidesPerView: 1.1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var swiper4 = new Swiper(".swiperDestinations-Mob", {
+            slidesPerView: 1.5,
+            navigation: {
+                nextEl: ".swiper4-button-next",
+                prevEl: ".swiper4-button-prev",
+            },
+            pagination: {
+                el: ".swiper4-pagination",
+            },
+        });
+
+        var swiper5 = new Swiper(".swiperOfertas", {
+            slidesPerView: 1.4,
+        });
+
+        var swiper6 = new Swiper(".swiperTransferHome", {
+            slidesPerView: 1.4,
+            pagination: {
+                el: ".swiper5-pagination",
+            },
+        });
+
+        var swiper7 = new Swiper(".swiperPromocion-slide", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper6-pagination",
+            },
+            loop: true,
+            autoplay: {
+                delay: 2500,
+            },
+        });
     </script>
 </html>
