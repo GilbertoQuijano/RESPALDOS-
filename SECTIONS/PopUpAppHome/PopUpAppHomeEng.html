@@ -1,0 +1,123 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus{
+        text-decoration: none;
+    }
+    
+    h2, h3, h4, p{
+        margin: 0;
+    }
+
+    figure{
+        margin: 0;
+    }
+
+    img{
+        display: block;
+        width: 100%;
+    }
+
+    .bold-text{
+        font-weight: 700;
+    }
+
+    .containerNaranjaPopUp{
+        background: linear-gradient(267deg, #FD921E 2.86%, #FF621D 51.38%, #E73A4E 101.96%); 
+        box-sizing: border-box; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .containerBottom{
+        border-radius: 35px; 
+        padding: 8vw 10vw 12vw; 
+        width: 90%; 
+    }
+
+    .textPopUp{
+        color: white; 
+        text-align: center; 
+        font-size: 7vw; 
+        font-family: 'Urbanist', sans-serif; 
+        line-height: 110%;
+    }
+
+    .imgTelefonoPopUp{
+        width: 60vw; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: -6vw;
+        margin-bottom: 6vw;
+    }
+
+    .botonDownApp{
+        border-radius: 20px; 
+        width: 60vw; 
+        display: block; 
+        overflow: hidden; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .textBotonPopUp{
+        text-align: center; 
+        color: white; 
+        font-family: 'DM Sans', sans-serif; 
+        font-weight: 700; 
+        font-size: 5vw;
+    }
+
+    .closeButtonApp{
+        width: 10vw; 
+        margin-bottom: 4vw;
+    }
+
+    .imgNexusStamp{
+        width: 18vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-bottom: 4vw;
+    }
+
+</style>
+<body style="margin: 0;">
+    <main>
+        <section class="containerNaranjaPopUp containerBottom">
+            <figure>
+                <img id="closeapp" class="closeButtonApp" onclick="closeapp()" src="https://www.nexustours.com/images/upload//Landing%20Pages/popup/closeAppPopUp.png" loading="lazy">
+            </figure>
+            <figure>
+                <img class="imgNexusStamp" src="https://www.nexustours.com/images/upload//Landing%20Pages/popup/nexusStampPopUp.png" loading="lazy">
+            </figure>
+            <p class="textPopUp">
+                <span class="bold-text">Save even <br>
+                    more on the app: <br>
+                    get up to 20% off*<br>
+                </span> 
+                select excursions <br>
+                and transfers
+            </p>
+        </section>
+        <section>
+            <figure>
+                <img class="imgTelefonoPopUp" src="https://www.nexustours.com/images/upload//Landing%20Pages/popup/telefonoPopUpNexusApp.png" loading="lazy">
+            </figure>
+        </section>
+        <section>
+            <a id="downapp" class="botonDownApp" href="https://uqr.to/XHUB.NT">
+                <div class="containerNaranjaPopUp" style="padding: 2vw 0vw;">
+                    <p class="textBotonPopUp">
+                        Download Now
+                    </p>
+                </div>
+            </a>
+        </section>
+    </main>
+</body>

@@ -1,4 +1,4 @@
-<!--Inglés-->
+<!--Francés-->
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -254,6 +254,11 @@
                 height: 206px;
             }
         }
+        @media (min-width:0) and (max-width:464px){
+            .container-slider-card{
+                height: 54vw;
+            }
+        }
 
         .name-tour-card{
             font-size: 20px; 
@@ -262,6 +267,11 @@
             color: #333; 
             margin: 0; 
             line-height: normal;
+        }
+        @media (min-width:0px) and (max-width:464px){
+            .name-tour-card{
+                font-size: 6vw;
+            }
         }
 
         .container-destination-card{
@@ -277,6 +287,11 @@
             line-height: normal; 
             letter-spacing: -.5px;
         }
+        @media (min-width:0px) and (max-width:464px){
+            .destination-card{
+                font-size: 4vw;
+            }
+        }
 
         .text-card{
             font-size: 12px; 
@@ -284,6 +299,11 @@
             font-weight: 500; 
             letter-spacing: -.48px; 
             color: #9D9D9D;
+        }
+        @media (min-width:0px) and (max-width:464px){
+            .text-card{
+                font-size: 3vw;
+            }
         }
 
         .containerPriceCard{
@@ -301,6 +321,11 @@
             color: #555; 
             text-transform: uppercase;
         }
+        @media (min-width:0px) and (max-width:464px){
+            .precio-card{
+                font-size: 6vw; 
+            }
+        }
 
         .precio-card-through{
             font-size: 16px; 
@@ -311,9 +336,14 @@
             text-transform: uppercase;
             text-decoration: line-through;
         }
+        @media (min-width:0) and (max-width:464px){
+            .precio-card-through{
+                font-size: 5vw;
+            }
+        }
 
         .container-discount-card{
-            background-color: #FF621D; 
+            background-color: #531750; 
             width: fit-content; 
             display: flex; 
             flex-direction: row; 
@@ -331,6 +361,11 @@
             line-height: normal; 
             letter-spacing: -.36px; 
             font-weight: 700;
+        }
+        @media (min-width:0px) and (max-width:464px){
+            .text-discount-card{
+                font-size: 3.5vw; 
+            }
         }
 
         .swiper-button-prev:after,
@@ -524,7 +559,7 @@
         }
 
         .orange-nexus-bg{
-            background-color: #F37021;
+            background-color: #531750;
         }
 
         .etiqueta-abajo-mob{
@@ -592,7 +627,7 @@
 
         .containerRecomendado{
             padding: 5px 5px; 
-            background-color: #333; 
+            background-color: #531750; 
             width: fit-content;
             border-radius: 10px;
         }
@@ -603,7 +638,7 @@
         }
 
         .backgroundGradientLeft{
-            background: linear-gradient(95deg, #FD921E -3.06%, #FF621D 47.11%, #E73A4E 98.35%);
+            background-color: #531750;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -635,7 +670,7 @@
         }
 
         .containerTitleRectangle{
-            width: 370px;
+            width: 314px;
         }
 
         .titleRectangle{
@@ -650,7 +685,7 @@
         }
 
         .titleGradientLeft{
-            font-size: 60px; 
+            font-size: 46px; 
             font-weight: 700; 
             line-height: 100%;
         }
@@ -683,15 +718,18 @@
             }
         }
 
-        @media (max-width: 992px){
-            .container5{
-                width: 308vw;
-            }
-        }
+        /*Para calcular el containerRow:
+            ns = numero de cardDestinoBottom
+            as = ancho de cardDestinoBottom en vw
+            g = gap en vw de containerDestinosBottom
 
+            width = (ns)(as) + (ns-1)(g)
+
+            En caso de tener mas de 1 row, duplicar esta clase, reformular el width (de ser necesario) y asignar la clase.
+        */
         @media (max-width: 992px){
-            .container4{
-                width: 248vw;
+            .containerRow{
+                width: 246vw;
             }
         }
 
@@ -708,8 +746,8 @@
 </head>
 <body>
     <div class="margin-bottom-24">
-        <img style="display: block; width: 100%;" class="banner-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/BookEarlyBannerEng.jpg">
-        <img style="width: 100%;" class="tag-mob" src="https://www.nexustours.com/images/upload//landings/book_early/banner-mobil-eng.jpg">
+        <img style="display: block; width: 100%;" class="banner-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/BookEarlyBannerFr.jpg">
+        <img style="width: 100%;" class="tag-mob" src="https://www.nexustours.com/images/upload//landings/book_early/Rectangle_399_(1).png">
     </div>
     <div class="body-media">
         <div class="margin-bottom-48" style="display: flex; justify-content: space-between;">
@@ -717,10 +755,10 @@
                 <div class="containerLeftRectangle backgroundGradientLeft">
                     <div>
                         <span class="white-text subtitleGradientLeft">
-                            Book early and save on
+                            Réservez tôt et économisez sur les
                         </span>
                         <h1 class="white-text titleGradientLeft">
-                            Top Excursions
+                            Excursions principales
                         </h1>
                     </div>
                 </div>
@@ -729,7 +767,7 @@
                         <div class="containerTitleRectangle">
                             <div class="margin-bottom-5 containerRecomendado">
                                 <p class="white-text">
-                                    Our selection in Aruba
+                                    Notre sélection à Aruba
                                 </p>
                             </div>
                             <p class="white-text titleRectangle">
@@ -737,7 +775,7 @@
                             </p>
                         </div>
                         <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
-                            Book Now
+                            Réservez Maintenant
                         </div>
                     </div>
                 </a>
@@ -753,14 +791,14 @@
                                     <div class="container-etiqueta-header">
                                         <div class="margin-bottom-5 containerRecomendado tag-desk">
                                             <p class="white-text">
-                                                Recommended Tour in Dominican Republic:
+                                                Excursion recommandée à République Dominicaine:
                                             </p>
                                         </div>
                                         <p class="etiqueta-arriba white-text margin-bottom-5"> 
                                             Punta Cana Buggies Double
                                         </p>
                                         <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
-                                            Book Now
+                                            Réservez Maintenant
                                         </div>
                                     </div>
                                 </div>
@@ -775,14 +813,13 @@
                                     <div class="container-etiqueta-header">
                                         <div class="margin-bottom-5 containerRecomendado tag-desk">
                                             <p class="white-text">
-                                                Recommended Tour in Jamaica:
-                                            </p>
+                                                Excursion recommandée à Jamaíque:
                                         </div>
                                         <p class="etiqueta-arriba white-text margin-bottom-5"> 
                                             Tropical Dreamer Cruise
                                         </p>
                                         <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
-                                            Book Now
+                                            Réservez Maintenant
                                         </div>
                                     </div>
                                 </div>
@@ -797,7 +834,7 @@
                                     <div class="container-etiqueta-header">
                                         <div class="margin-bottom-5 containerRecomendado tag-desk">
                                             <p class="white-text">
-                                                Recommended Tour in St. Lucia:
+                                                Excursion recommandée à Sainte-Lucie:
                                             </p>
                                         </div>
                                         <p class="etiqueta-arriba white-text margin-bottom-5"> 
@@ -805,7 +842,7 @@
                                             Adventure
                                         </p>
                                         <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
-                                            Book Now
+                                            Réservez Maintenant
                                         </div>
                                     </div>
                                 </div>
@@ -838,32 +875,11 @@
                     </h3>
                     <div class="container-textDestination scroll-container">
                         <div>
-                            <span class="textDestination" name="textDestination" id="DO Dominican Republic">
-                                Dominican Republic
-                            </span>
-                            <span class="textDestination" name="textDestination" id="AG Antigua">
-                                Antigua
-                            </span>
-                            <span class="textDestination" name="textDestination" id="AW Aruba">
-                                Aruba
-                            </span>
                             <span class="textDestination" name="textDestination" id="MX Cancun & Riviera Maya">
-                                Cancun & Riviera Maya
+                                Cancun et Riviera Maya
                             </span>
                             <span class="textDestination" name="textDestination" id="CR Costa Rica">
                                 Costa Rica
-                            </span>
-                            <span class="textDestination" name="textDestination" id="JM Jamaica">
-                                Jamaica
-                            </span>
-                            <span class="textDestination" name="textDestination" id="MX Los Cabos">
-                                Los Cabos
-                            </span>
-                            <span class="textDestination" name="textDestination" id="MX Mazatlán">
-                                Mazatlan
-                            </span>
-                            <span class="textDestination" name="textDestination" id="LC St. Lucia">
-                                Santa Lucia
                             </span>
                         </div>
                     </div>
@@ -873,21 +889,21 @@
         <div class="container-slider-botones margin-bottom-48">
             <div class="container-title-swiper-tours margin-bottom-24">
                 <h2 class="title">
-                    Top Excursions
+                    Excursions principales
                 </h2>
                 <div class="container-botones-tours tag-deskFlex">
                     <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" id="filtro">
-                        <circle cx="20" cy="20" r="20" fill="#646464"/>
+                        <circle cx="20" cy="20" r="20" fill="#531750"/>
                         <path d="M9.0887 26.1376H21.3851C21.7242 24.7804 22.9639 23.7711 24.4377 23.7711C25.9114 23.7711 27.1511 24.7804 27.4903 26.1376H31.745C32.162 26.1376 32.5002 26.4725 32.5002 26.8855C32.5002 27.2986 32.162 27.6334 31.745 27.6334H27.4902C27.1511 28.9906 25.9114 30 24.4376 30C22.9638 30 21.7241 28.9906 21.385 27.6334H9.0887C8.67164 27.6334 8.3335 27.2986 8.3335 26.8855C8.3335 26.4725 8.67164 26.1376 9.0887 26.1376ZM24.4377 28.5042C25.3389 28.5042 26.0721 27.7781 26.0721 26.8856C26.0721 25.993 25.3389 25.2669 24.4377 25.2669C23.5364 25.2669 22.8032 25.993 22.8032 26.8856C22.8032 27.7781 23.5364 28.5042 24.4377 28.5042ZM9.0887 19.6688H13.3435C13.6826 18.3116 14.9223 17.3022 16.3961 17.3022C17.8698 17.3022 19.1095 18.3116 19.4487 19.6688H31.745C32.162 19.6688 32.5002 20.0036 32.5002 20.4167C32.5002 20.8297 32.162 21.1646 31.745 21.1646H19.4486C19.1094 22.5218 17.8698 23.5311 16.396 23.5311C14.9222 23.5311 13.6826 22.5218 13.3434 21.1646H9.0887C8.67164 21.1646 8.3335 20.8297 8.3335 20.4167C8.3335 20.0036 8.67159 19.6688 9.0887 19.6688ZM16.396 22.0353C17.2973 22.0353 18.0305 21.3092 18.0305 20.4167C18.0305 19.5242 17.2973 18.7981 16.396 18.7981C15.4948 18.7981 14.7615 19.5242 14.7615 20.4167C14.7615 21.3092 15.4948 22.0353 16.396 22.0353ZM31.745 14.6957H27.4902C27.151 16.0529 25.9114 17.0623 24.4376 17.0623C22.9638 17.0623 21.7242 16.0529 21.385 14.6957H9.0887C8.67164 14.6957 8.3335 14.3608 8.3335 13.9478C8.3335 13.5348 8.67164 13.1999 9.0887 13.1999H21.3851C21.7242 11.8427 22.9639 10.8333 24.4377 10.8333C25.9114 10.8333 27.1511 11.8427 27.4903 13.1999H31.745C32.162 13.1999 32.5002 13.5348 32.5002 13.9478C32.5002 14.3608 32.1621 14.6957 31.745 14.6957ZM24.4377 12.3292C23.5364 12.3292 22.8032 13.0553 22.8032 13.9478C22.8032 14.8403 23.5364 15.5665 24.4377 15.5665C25.3389 15.5665 26.0721 14.8403 26.0721 13.9478C26.0721 13.0553 25.3389 12.3292 24.4377 12.3292Z" fill="white"/>
                     </svg>
                     <div class="swiper-button-prev swiperProductsAuto-button-prev swiper-button-block">
                         <div class="button-swiper" style="transform: rotate(180deg);">
-                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/BOTON2.png">
                         </div>
                     </div>
                     <div class="swiper-button-next swiperProductsAuto-button-next swiper-button-block">
                         <div class="button-swiper">
-                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/BOTON2.png">
                         </div>
                     </div>
                 </div>
@@ -898,67 +914,28 @@
             </div>
         </div>
         <h2 class="title margin-bottom-24">
-            Selected destinations
+            Destinations choisies
         </h2>
-        <div style="width: 100%; overflow-x: auto;">
+        <section name="sectionDestinationRow" class="margin-bottom-46" style="width: 100%; overflow-x: auto;">
             <div class="containerRowDestinosBottom">
-                <div class="containerDestinosBottom container5">
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/dominican-republic" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/DominicanaEB.png);" target="_blank">
+                <div class="containerDestinosBottom containerRow">
+                    <a class="cardDestinoBottom" href="https://planet.nexustours.com/services/results.aspx?searchSessionID=1203002" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CostaRicaEB.png);" target="_blank">
                         <h3 class="textCardDestinoBottom">
-                            Dominican<br>
-                            Republic
+                            Costa Rica
                         </h3>
                     </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/santa-lucia" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/SantaLuciaEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            St. Lucia
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/jamaica-excursions" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/JamaicaEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Jamaica
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/aruba" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/ArubaEB.jpg);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Aruba
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/cancun" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CancunEB.png);" target="_blank">
+                    <a class="cardDestinoBottom" href="https://planet.nexustours.com/Costa-Mujeres" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CancunEB.png);" target="_blank">
                         <h3 class="textCardDestinoBottom">
                             Cancun
                         </h3>
                     </a>
                 </div>
-                <div class="containerDestinosBottom container4">
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/mazatlan" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/MazatlanEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Mazatlan
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/cabos" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CabosEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Los Cabos
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/costa-rica" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CostaRicaEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Costa Rica
-                        </h3>
-                    </a>
-                    <a class="cardDestinoBottom" href="https://www.nexustours.com/antigua" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/AntiguaEB.png);" target="_blank">
-                        <h3 class="textCardDestinoBottom">
-                            Antigua
-                        </h3>
-                    </a>
-                </div>
             </div>
-        </div>
+        </section>
         <div class="terminos">
             <p>
-                *The discount only applies on excursions and will automatically applied to the final rate. Does not apply with other promotions or discount coupons. <br>
-                Valid For reservations with a minimum of 16 days before purchase in participating destinations (Dominican Republic up to 20% discount on excursions, Jamaica, Antigua, and Saint Lucia up to 15% discount on excursions). <br>
-                **Price per person for single shared transfer. Prices and discounts valid on selected products and subject to availability at the time of purchase.
+                *La réduction ne s'applique qu'aux circuits et sera automatiquement appliquée au tarif final. Ne s'applique pas à d'autres promotions ou coupons de réduction. Valable pour les réservations effectuées au moins 30 jours avant l'achat dans les destinations participantes (République dominicaine jusqu'à 20 % de réduction sur les circuits, Jamaïque, Antigua et Sainte-Lucie jusqu'à 15 % de réduction sur les circuits). <br>
+                **Prix valables sur des produits sélectionnés et sous réserve de disponibilité au moment de l'achat.
             </p>
         </div>
     </div>
@@ -967,6 +944,7 @@
         var container = document.getElementsByClassName("container")
         var pageHeaderBar = document.getElementsByClassName("page-header-bar")
         var contentBody = document.getElementsByClassName("content-body")
+        console.log(contentBody)
         container[1].style.width = "100%"
         container[1].style.padding = "0"
         pageHeaderBar[0].style.padding = "0"
