@@ -305,6 +305,11 @@
             gap: 7px;
             cursor: pointer;
         }
+        @media (min-width:0) and (max-width:464px){
+            .container-discount-card{
+                padding: 4px 2vw; 
+            }
+        }
 
         .text-discount-card{
             font-size: 12px; 
@@ -338,6 +343,12 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        @media (max-width: 550px) and (min-width: 0px){
+            .tagDeskButton{
+                display: none;
+            }
+        }
     
     </style>
 </head>
@@ -350,12 +361,12 @@
                     Top Excursions
                 </h2>
                 <div class="container-botones-tours">
-                    <div class="swiper-button-prev swiperProductsAuto-button-prev swiper-button-block">
+                    <div class="swiper-button-prev swiperProductsAuto-button-prev swiper-button-block tagDeskButton">
                         <div class="button-swiper" style="transform: rotate(180deg);">
                             <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
                         </div>
                     </div>
-                    <div class="swiper-button-next swiperProductsAuto-button-next swiper-button-block">
+                    <div class="swiper-button-next swiperProductsAuto-button-next swiper-button-block tagDeskButton">
                         <div class="button-swiper">
                             <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
                         </div>
