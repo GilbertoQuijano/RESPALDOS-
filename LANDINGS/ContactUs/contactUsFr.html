@@ -1,0 +1,315 @@
+<!--Frances-->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        a,
+        a:hover,
+        a:visited{
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, p{
+            margin: 0;
+        }
+
+        .body-media{
+            width: 1160px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+        @media (max-width: 1200px){
+            .body-media{
+                width: 960px;
+            }
+        }
+        @media (max-width: 992px){
+            .body-media{
+                width: 100%;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        .margin-bottom-24{
+            margin-bottom: 24px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-24{
+                margin-bottom: 5vw;
+            }
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-24{
+                margin-bottom: 4.7vw;
+            }
+        }
+
+        .margin-bottom-45{
+            margin-bottom: 45px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-45{
+                margin-bottom: 10vw;
+            }
+        }
+
+        .tagDesk{
+            display: block;
+        }
+        @media (max-width: 992px){
+            .tagDesk{
+                display: none;
+            }
+        }
+
+        .tagMob{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tagMob{
+                display: block;
+            }
+        }
+
+        .containerBanner{
+            position: relative;
+        }
+
+        .orange-nexus{
+            color: #F17121;
+        }
+
+        .containerFlexFormulario{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        @media (max-width: 992px){
+            .containerFlexFormulario{
+                flex-direction: column;
+            }
+        }
+
+        .left{
+            width: 40%;
+        }
+        @media (max-width: 992px){
+            .left{
+                width: 100%;
+            }
+        }
+
+        .right{
+            width: 50%;
+        }
+        @media (max-width: 992px){
+            .right{
+                width: 100%;
+            }
+        }
+
+        .titleTextFormulario{
+            font-size: 52px; 
+            line-height: 112%; 
+            font-weight: 800;
+        }
+        @media (max-width: 992px){
+            .titleTextFormulario{
+                font-size: 7vw;
+                text-align: center;
+            }
+        }
+
+        .subtextTextFormulario{
+            font-size: 16px; 
+            font-weight: 400; 
+            line-height: normal; 
+            margin-bottom: 42px;
+        }
+        @media (max-width: 992px){
+            .subtextTextFormulario{
+                font-size: 4vw; 
+                margin-bottom: 7vw;
+                text-align: center;
+            }
+        }
+
+        .titleLinkSection{
+            font-size: 18px; 
+            font-weight: 700; 
+            line-height: 112%;
+        }
+        @media (max-width: 992px){
+            .titleLinkSection{
+                font-size: 4.5vw; 
+                text-align: center;
+            }
+        }
+
+        .titleLink{
+            color: #9E9E9E; 
+            font-size: 12px; 
+            font-weight: 700; 
+            line-height: normal; 
+            margin-bottom: 6px;
+        }
+        @media (max-width: 992px){
+            .titleLink{
+                font-size: 1.5vw;
+            }
+        }
+
+        .containerLink{
+            display: flex; 
+            padding: 6px 12px; 
+            align-items: center; 
+            gap: 5px; 
+            background-color: white; 
+            border: 1px solid #E1E1E1; 
+            border-radius: 6PX;
+        }
+
+        .titleBanner{
+            font-size: 70px; 
+            font-weight: 800; 
+            color: white; 
+            line-height: normal; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+        @media (max-width: 992px){
+            .titleBanner{
+                font-size: 7vw;
+            }
+        }
+
+        .containerTitleBanner{
+            position: absolute; 
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+
+        .textInnerLink{
+            color: #6A6A6A; 
+            font-size: 12px; 
+            font-weight: 700;
+        }
+
+        .containerFlexLink{
+            display: flex; 
+            gap: 15px;
+        }
+        @media (max-width: 992px){
+            .containerFlexLink{
+                display: flex; 
+                gap: 5vw;
+                justify-content: center;
+            }
+        }
+
+        .bold-text{
+            font-weight: 800;
+        }
+
+        .textOperation{
+            font-size: 14px; 
+            font-weight: 400; 
+            color: #7B7B7B;
+        }
+        @media (max-width: 992px){
+            .textOperation{
+                font-size: 3.7vw;
+                text-align: center;
+                margin-bottom: 6vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin-bottom-24 containerBanner">
+        <img style="width: 100%;" class="tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/banner/bannerContactUs.png">
+        <img style="width: 100%;" class="tagMob" src="https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/banner/bannerContactUs.png">
+        <div class="containerTitleBanner">
+            <h1 class="titleBanner">
+                Comment pouvons-nous vous aider ? 
+            </h1>
+        </div>
+    </div>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="body-media">
+        <div class="containerFlexFormulario">
+            <div class="left">
+                <h2 class="margin-bottom-22 titleTextFormulario">
+                    Contact pour les <br>
+                    <soan class="orange-nexus">partenaires de voyage</soan>
+                </h2>
+                <p class="subtextTextFormulario">
+                    Remplissez ce formulaire et entrez en contact un spécialiste de notre équipe.
+                </p>
+                <h3 class="margin-bottom-24 titleLinkSection">
+                    Centre d'assistance aux agents
+                </h3>
+                <div class="containerFlexLink margin-bottom-45">
+                    <div>
+                        <p class="titleLink">
+                            Whatsapp
+                        </p>
+                        <a class="containerLink" href="tel:+529981831689" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Landing%20Pages/ContactUs/whatsappContactUs.png">
+                            <p class="textInnerLink">
+                                +52 998 183 1689
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="titleLink">
+                            USA & Canada
+                        </p>
+                        <a class="containerLink" href="tel:++18882031279" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Landing%20Pages/ContactUs/callContactUs.png">
+                            <p class="textInnerLink">
+                                +1 888 203 1279
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <p class="textOperation">
+                    Horaire d'ouverture : Du lundi au vendredi de<br>
+                    <span class="bold-text">07:00 hrs. à 00:00 hrs.</span>  (heure CUN GMT-5).
+                </p>
+            </div>
+            <div class="right">
+                <div class="elfsight-app-c88d4b64-8e87-436d-af7a-74c02545fc87" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+    </script>
+</body>
