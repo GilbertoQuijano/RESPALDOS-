@@ -1,0 +1,1432 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+        .body-media{
+            width: 1160px;
+            margin: auto;
+            font-family: 'DM Sans', sans-serif;
+            padding-bottom: 64px;
+        }
+        @media (max-width: 1200px){
+            .body-media{
+                width: 960px;
+            }
+        }
+        @media (max-width: 992px){
+            .body-media{
+                width: 100%;
+                padding-bottom: 10vw;
+            }
+        }
+
+        .containerFlexRow{
+            width: 100%; 
+        }
+        @media (max-width: 992px){
+            .containerFlexRow{
+                overflow-x: auto;
+                overflow-y: visible;
+                height: 244px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .subContainerFlexRow{
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: stretch; 
+            gap: 10px;
+        }
+        @media (max-width: 992px){
+            .subContainerFlexRow{
+                width: 1158px;
+                min-width: 1158px;
+                height: 203px;
+            }
+        }
+
+        .containerCardServicesGW{
+            box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1); 
+            border-radius: 15px; 
+            width: 25%; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+        @media (max-width: 992px){
+            .containerCardServicesGW{
+                width: 282px; 
+                padding: 20px; 
+                box-sizing: border-box;
+            }
+        }
+
+        .iconCardServicesGW{
+            width: 55px; 
+            margin-bottom: 10px; 
+            display: block;
+        }
+
+        .titleCardServicesGW{
+            margin-top: 0; 
+            margin-bottom: 10px; 
+            font-size: 19px; 
+            color: #333;
+        }
+
+        .textCardServicesGW{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 15px; 
+            color: #666; 
+            line-height: 140%;
+        }
+
+        .hoverCardApart{
+            border-radius: 10px; 
+            overflow: hidden; 
+            width: 305px; 
+            height: 305px; 
+            transition: transform 0.5s ease; 
+            position: relative;
+        }
+
+        .cardApart{
+            position: relative; 
+            z-index: 1;
+        }
+
+        .bgImgCardApart{
+            display: block; 
+            width: 305px; 
+            height: 305px; 
+            position: relative; 
+            z-index: 1;
+        }
+
+        .bgGradientCardApart{
+            position: absolute; 
+            z-index: 2; 
+            width: 100%; 
+            height: 100%; 
+            left: 0; 
+            top: 0; 
+            background: linear-gradient(180deg, rgba(0, 13, 31, 0.00) 62.46%, rgba(9, 23, 73, 0.92) 100%), linear-gradient(180deg, rgba(0, 13, 31, 0.00) 62.46%, rgba(9, 23, 73, 0.92) 100%);
+        }
+
+        .textGradientCardApart{
+            position: absolute; 
+            width: 100%; 
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: white; 
+            text-align: center; 
+            bottom: 10%; 
+            font-size: 19px;
+            line-height: 118%;
+        }
+        
+        .containerGradientColorCardApart{
+            position: absolute; 
+            width: 100%; 
+            height: 100%; 
+            z-index: 2; 
+            left: 0; 
+            top: 0; 
+            opacity: 0%; 
+            padding: 0px 20px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            box-sizing: border-box;
+            transition: opacity .5s ease;
+        }
+
+        .containerCardsApart{
+            display: flex; 
+            width: 1930px; 
+            min-width: 1930px; 
+            gap: 20px; 
+            padding-left: 40px; 
+            padding-right: 40px;
+        }
+
+        .containerScrollApart{
+            width: 100%; 
+            overflow-x: auto; 
+            height: 385px; 
+            display: flex; 
+            align-items: center;
+        }
+
+        .containerScrollApart::-webkit-scrollbar {
+            width:2px;
+        }
+
+        /*track*/
+        .containerScrollApart::-webkit-scrollbar-track {
+            background:rgba(0, 0, 0, 0);
+        }
+
+        /*thumb*/
+        .containerScrollApart::-webkit-scrollbar-thumb {
+            background:#001432;
+            border-style:solid;
+            border-radius:10px;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+        }
+
+        .orangeGradient{
+            background: linear-gradient(269deg, #F7AD1C 3.32%, #FF621D 99.03%); 
+        }
+
+        .blueGradient{
+            background: linear-gradient(180deg, #00AFDD 0%, #006FBA 100%); 
+        }
+
+        .greenGradient{
+            background: linear-gradient(180deg, #00AFDD 0.06%, #8CE972 114.21%);
+        }
+
+        .purpleGradient{
+            background: linear-gradient(180deg, #006FBA 0%, #FC3AC1 100%);
+        }
+
+        .redGradient{
+            background: linear-gradient(180deg, #FF621D 0%, #E73A4E 100%);
+        }
+
+        .titleGradientColorCardApart{
+            margin-top: 0; 
+            margin-bottom: 10px; 
+            color: white; 
+            line-height: 100%; 
+            font-size: 20px; 
+            font-weight: 700; 
+            text-align: center;
+        }
+
+        .textGradientColorCardApart{
+            font-size: 15px; 
+            line-height: 138%; 
+            color: white; 
+            font-weight: 500; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+
+        .GWAnimation{
+            transition: all 1s ease;
+            position: relative;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .small{
+            width: 90px; 
+            height: 580px;
+            border-radius: 50px;
+        }
+        @media (max-width: 1200px){
+            .small{
+                width: 60px; 
+                height: 540px;
+            }
+        }
+        @media (max-width: 992px){
+            .small{
+                width: 100%; 
+                height: 15vw;
+            }
+        }
+
+        .large{
+            width: 600px; 
+            height: 630px;
+            border-radius: 30px;
+        }
+        @media (max-width: 1200px){
+            .large{
+                width: 600px; 
+                height: 590px;
+            }
+        }
+        @media (max-width: 992px){
+            .large{
+                width: 100%; 
+                height: 77vw;
+            }
+        }
+
+        .containerGradientFullGW{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%);
+            opacity: 100%;
+            transition: opacity 1s ease;
+        }
+
+        .containerGradientHalfGW{
+            position: absolute; 
+            z-index: 2; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 56.1%, rgba(0, 0, 0, 0.69) 90.59%);
+            opacity: 0%;
+            transition: opacity 1s ease;
+        }
+
+        .containerTextCardGWAnimation{
+            position: absolute; 
+            z-index: 3;  
+            bottom: 17px; 
+            left: 17px;
+            transition: all 1s ease;
+            display: flex;
+            align-items: end;
+            gap: 20px;
+        }
+        @media (max-width: 1200px){
+            .containerTextCardGWAnimation{
+                bottom: 9.5px; 
+                left: 9.5px;
+            }
+        }
+        @media (max-width: 992px){
+            .containerTextCardGWAnimation{
+                bottom: 2.2vw; 
+                left: 2.5vw;
+                gap: 3vw;
+            }
+        }
+
+        .iconGWAnimation{
+            width: 60px; 
+            height: 60px; 
+            display: block;
+            transition: all 1s ease;
+        }
+        @media (max-width: 1200px){
+            .iconGWAnimation{
+                width: 45px; 
+                height: 45px;
+            }
+        }
+        @media (max-width: 992px){
+            .iconGWAnimation{
+                width: 10vw; 
+                height: 10vw;
+            }
+        }
+
+        .startPositionText{
+            left: 40px; 
+            bottom: 40px;
+        }
+        @media (max-width: 992px){
+            .startPositionText{
+                bottom: 2.2vw; 
+                left: 2.5vw;
+            }
+        }
+
+        .startSizeIcon{
+            width: 70px;
+            height: 70px;
+        }
+        @media (max-width: 992px){
+            .startSizeIcon{
+                width: 10vw; 
+                height: 10vw;
+            }
+        }
+
+        .titleTextCardGWAnimation{
+            margin-top: 0; 
+            margin-bottom: 10px; 
+            color: white; 
+            font-size: 22px; 
+            font-weight: 700; 
+            line-height: 104%;
+        }
+        @media (max-width: 992px){
+            .titleTextCardGWAnimation{
+                margin-bottom: 1vw; 
+                font-size: 5vw; 
+            }
+        }
+
+        .paragraphTextCardGWAnimation{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 16px; 
+            color: white; 
+            font-weight: 400; 
+            line-height: 144.9%;
+        }
+        @media (max-width: 992px){
+            .paragraphTextCardGWAnimation{
+                font-size: 3.5vw; 
+            }
+        }
+
+        .textCardGWAnimation{
+            padding-right: 25px;
+            width: 445px;
+            min-width: 445px;
+            opacity: 0%;
+            transition: all 1s ease;
+        }
+        @media (max-width: 992px){
+            .textCardGWAnimation{
+                padding-right: 0px;
+                width: 100%;
+                min-width: auto;
+            }
+        }
+
+        .ImgTextFloatHoverGWAnimation{
+            display: block; 
+            position: absolute; 
+            z-index: 4; 
+            bottom: 87px; 
+            left: 36px;
+            opacity: 100%;
+            transition: all 1s ease;
+        }
+        @media (max-width: 1200px){
+            .ImgTextFloatHoverGWAnimation{
+                bottom: 62px; 
+                left: 22px;
+            }
+        }
+        @media (max-width: 992px){
+            .ImgTextFloatHoverGWAnimation{
+                bottom: 3.2vw; 
+                left: 16vw;
+                opacity: 100%;
+            }
+        }
+
+        @media (max-width: 992px){
+            .ImgTextFloatHoverGWAnimation2{
+                display: block; 
+                position: absolute; 
+                z-index: 4; 
+                bottom: 3.2vw; 
+                left: 16vw;
+                opacity: 100%;
+                transition: all 1s ease;
+            }
+        }
+
+        .startPositionimgText{
+            bottom: 123px; 
+            left: 66px;
+            opacity: 0%;
+        }
+
+        .containerGWAnimationRow{
+            display: flex; 
+            width: 100%; 
+            height: 670px; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        @media (max-width:992px){
+            .containerGWAnimationRow{
+                flex-direction: column;
+                width: 97%; 
+                height: auto;
+                margin: auto;
+                gap: 3vw;
+            }
+        }
+
+        .margin-bottom-46{
+            margin-bottom: 46px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-46{
+                margin-bottom: 6vw;
+            }
+        }
+
+        .margin-bottom-64{
+            margin-bottom: 64px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-64{
+                margin-bottom: 8vw;
+            }
+        }
+
+        .margin-bottom-24{
+            margin-bottom: 24px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-24{
+                margin-bottom: 5vw;
+            }
+        }
+
+        .titleGW{
+            margin-top: 0; 
+            color: #333; 
+            font-size: 45px; 
+            text-align: center; 
+            line-height: 100%;
+            font-weight: 700;
+        }
+        @media (max-width:992px){
+            .titleGW{
+                font-size: 8vw; 
+            }
+        }
+
+        .bgImgHeaderGW{
+            width: 100%; 
+            height: 100vh; 
+            position: relative; 
+            z-index: 1; 
+            background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/bgHeaderGW.jpg'); 
+            background-position: center; 
+            background-size: cover;
+        }
+
+        .subTitleHeaderGW{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: white; 
+            text-shadow: 0px 4px 7.7px rgba(0, 0, 0, 0.37); 
+            font-size: 24px; 
+            font-weight: 500; 
+            letter-spacing: 6.24px;
+        }
+        @media (max-width:992px){
+            .subTitleHeaderGW{
+                font-size: 3.5vw; 
+                text-align: center;
+            }
+        }
+
+        .titleHeaderGW{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 64px; 
+            font-weight: 800; 
+            color: white; 
+            letter-spacing: -1.92px; 
+            line-height: 110%; 
+            text-shadow: 0px 4px 7.7px rgba(0, 0, 0, 0.37);
+        }
+        @media (max-width:992px){
+            .titleHeaderGW{
+                font-size: 13vw; 
+                text-align: center;
+            }
+        }
+
+        .containerTitleHeaderGW{
+            position: absolute; 
+            z-index: 2; 
+            left: 10%; 
+            top: 50%; 
+            transform: translate(0,-50%);
+        }
+        @media (max-width:992px){
+            .containerTitleHeaderGW{
+                left: 50%; 
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        .titleBgNexusGW{
+            background: linear-gradient(268deg, #FF621D 26.48%, #E73A4E 84.52%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .separadorOrange{
+            width: 20%; 
+            height: 5px; 
+            background: #FF621D; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .textExperiences{
+            color: #666; 
+            font-size: 16px; 
+            text-align: center; 
+            line-height: 173%;
+            width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width:992px){
+            .textExperiences{
+                width: auto;
+            }
+        }
+
+        .imgFloatEnhance{
+            border-radius: 19px;
+            display: block;
+        }
+
+        .sectionEnhanced{
+            width: 100%; 
+            height: 600px; 
+            overflow: hidden; 
+            font-family: 'DM Sans', sans-serif; 
+            position: relative;
+        }
+        @media (max-width: 992px){
+            .sectionEnhanced{
+                height: auto;
+                width: 97%;
+                margin-left: auto;
+                margin-right: auto; 
+            }
+        }
+
+        .containerAbsoluteEnhanced{
+            position: absolute; 
+            width: 1920px; 
+            margin-left: auto; 
+            display: flex; 
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%,-50%);
+        }
+        @media (max-width: 1200px){
+            .containerAbsoluteEnhanced{
+                width: 1640px; 
+            }
+        }
+        @media (max-width: 992px){
+            .containerAbsoluteEnhanced{
+                width: 100%; 
+                position: static;
+                transform: translate(0%,0%);
+                flex-direction: column;
+            }
+        }
+
+        .absoluteTextContainerEnhanced{
+            position: absolute; 
+            width: 50%; 
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%,-50%); 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        @media (max-width: 992px){
+            .absoluteTextContainerEnhanced{
+                width: 100%; 
+                position: static;
+                transform: translate(0%,0%);
+            }
+        }
+
+        .absoluteImgContainerEnhancedLeft{
+            position: absolute; 
+            top: 50%; 
+            left: 0; 
+            transform: translate(0%,-50%); 
+            display: flex; 
+            flex-direction: column; 
+            gap: 22px;
+        }
+
+        .absoluteImgContainerEnhancedRight{
+            position: absolute; 
+            top: 50%; 
+            right: -3%; 
+            transform: translate(0%,-50%); 
+            display: flex; 
+            flex-direction: column; 
+            gap: 22px;
+        }
+
+        .containerFlexImgEnhanced{
+            display: flex; 
+            align-items: end; 
+            gap: 24px;
+        }
+
+        .img1Enhanced{
+            width: 250px;
+        }
+
+        .img2Enhanced{
+            width: 220px;
+        }
+
+        .img3Enhanced{
+            width: 250px; 
+            margin-left: -150px;
+        }
+
+        .img4Enhanced{
+            width: 200px;
+        }
+
+        .img5Enhanced{
+            width: 180px;
+        }
+
+        .img6Enhanced{
+            width: 150px;
+        }
+        
+        .img7Enhanced{
+            width: 220px;
+        }
+
+        .img8Enhanced{
+            width: 150px;
+        }
+
+        .img9Enhanced{
+            width: 200px;
+        }
+
+        .img10Enhanced{
+            width: 160px;
+        }
+
+        .containerImgForm{
+            position: relative; 
+            width: 40%; 
+            height: 725px;
+        }
+
+        .imgGroupsForm{
+            display: block; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            border-radius: 15px;
+        }
+
+        .imgWeddingsForm{
+            display: block; 
+            position: absolute; 
+            right: 0; 
+            bottom: 0; 
+            border-radius: 15px;
+        }
+
+        .textGroupsForm{
+            display: block; 
+            position: absolute; 
+            right: 35px; 
+            top: 55px;
+        }
+
+        .textWeddingsForm{
+            display: block; 
+            position: absolute; 
+            left: 45px; 
+            bottom: 25px;
+        }
+
+        .containerContactoGW{
+            width: 100%; 
+            display: flex; 
+            justify-content: right;
+        }
+        @media (max-width: 992px){
+            .containerContactoGW{
+                display: block;
+            }
+        }
+
+        .titleContactoGW{
+            font-size: 16px; 
+            color: #6a6a6a; 
+            font-weight: 700; 
+            line-height: 140%; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+        @media (max-width: 992px){
+            .titleContactoGW{
+                font-size: 3vw;
+            }
+        }
+
+        .containerFlexContactoGW{
+            display: flex; 
+            align-items: center; 
+            gap: 10px;
+        }
+        @media (max-width: 992px){
+            .containerFlexContactoGW{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .tagContactoBoton{
+            font-size: 16px; 
+            color: #9E9E9E; 
+            font-weight: 700; 
+            line-height: 140%; 
+            margin-top: 0; 
+            margin-bottom: 0; 
+            text-align: center;
+        }
+        @media (max-width: 992px){
+            .tagContactoBoton{
+                font-size: 3.5vw;
+            }
+        }
+
+        .botonContactoGW{
+            display: flex; 
+            background-color: white; 
+            border-radius: 6px; 
+            padding: 8px 16px; 
+            gap: 8px; 
+            align-items: center;
+        }
+
+        .textBotonContactoGW{
+            font-size: 16px; 
+            color: #6a6a6a; 
+            font-weight: 700; 
+            line-height: 140%; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+        @media (max-width: 992px){
+            .textBotonContactoGW{
+                font-size: 3vw;
+            }
+        }
+
+        .tagDesk{
+            display: block;
+        }
+        @media (max-width: 992px){
+            .tagDesk{
+                display: none;
+            }
+        }
+
+        .tagDeskFlex{
+            display: flex;
+        }
+        @media (max-width: 992px){
+            .tagDeskFlex{
+                display: none;
+            }
+        }
+
+        .tagMob{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tagMob{
+                display: block;
+            }
+        }
+
+        .containerFormFlex{
+            display: flex; 
+            justify-content: space-between;
+        }
+
+        .containerForm{
+            width: 50%;
+            overflow: hidden;
+        }
+        @media (max-width: 992px){
+            .containerForm{
+                width: 97%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .imgEnhancedMob{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin-bottom-64" style="width: 100%; position: relative;">
+        <div class="bgImgHeaderGW">
+        </div>
+        <div class="containerTitleHeaderGW">
+            <p class="subTitleHeaderGW">
+                GROUPS & WEDDINGS
+            </p>
+            <h1 class="titleHeaderGW">
+                Crafting <br>
+                unforgettable <br>
+                moments
+            </h1>
+        </div>
+    </div>
+    <section class="sectionEnhanced margin-bottom-46">
+        <div class="containerAbsoluteEnhanced">
+            <div class="absoluteTextContainerEnhanced">
+                <h2 class="titleGW margin-bottom-24">
+                    Enhace your Groups <br>
+                    Experiences with <br>
+                    <span class="titleBgNexusGW">NexusTours</span>
+                </h2>
+                <div class="margin-bottom-24 separadorOrange"></div>
+                <p class="textExperiences">
+                    Groups vacations extend beyond 9 to 5 routine, and so does our service. With expertise spanning 19 countries and 52 destinations worldwide, we offer expert planning, management, and assistance for yout groups, 24 hours a day and 7 days a week:
+                </p>
+            </div>
+            <div class="absoluteImgContainerEnhancedLeft tagDeskFlex">
+                <div class="containerFlexImgEnhanced" style="align-items: end;">
+                    <img alt="" class="imgFloatEnhance img1Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion1.jpg">
+                    <img alt="" class="imgFloatEnhance img2Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion2.jpg">
+                </div>
+                <div class="containerFlexImgEnhanced" style="align-items: start;">
+                    <img alt="" class="imgFloatEnhance img3Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion3.jpg">
+                    <img alt="" class="imgFloatEnhance img4Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion7.jpg">
+                    <img alt="" class="imgFloatEnhance img5Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion8.jpg">
+                </div>
+            </div>
+            <div class="absoluteImgContainerEnhancedRight tagDeskFlex">
+                <div class="containerFlexImgEnhanced" style="align-items: end;">
+                    <img alt="" class="imgFloatEnhance img6Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion3.jpg">
+                    <img alt="" class="imgFloatEnhance img7Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion4.jpg">
+                </div>
+                <div class="containerFlexImgEnhanced" style="align-items: start;">
+                    <img alt="" class="imgFloatEnhance img8Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion9.jpg">
+                    <img alt="" class="imgFloatEnhance img9Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion10.jpg">
+                    <img alt="" class="imgFloatEnhance img10Enhanced" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/G_and_WAnimacion5.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="imgEnhancedMob tagMob margin-bottom-64" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/GridImgEnhancedGroups_and_Weddings.png">
+    <div class="body-media">
+        <section name="SectionBoxRow" class="margin-bottom-64">
+            <h2 class="margin-bottom-46 titleGW">
+                Our services
+            </h2>
+            <div class="containerFlexRow">
+                <div class="subContainerFlexRow">
+                    <div class="containerCardServicesGW">
+                        <img alt="" class="iconCardServicesGW" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/mobilitySolutionsIcon.jpg">
+                        <h3 class="titleCardServicesGW">
+                            Mobility Solutions
+                        </h3>
+                        <p class="textCardServicesGW">
+                            Each of our destinations provides transportation services.
+                        </p>
+                    </div>
+                    <div class="containerCardServicesGW">
+                        <img alt="" class="iconCardServicesGW" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/experiencesIcon.jpg">
+                        <h3 class="titleCardServicesGW">
+                            Experiences
+                        </h3>
+                        <p class="textCardServicesGW">
+                            A curated portfolio that unveils a world of unique excursions & activities.
+                        </p>
+                    </div>
+                    <div class="containerCardServicesGW">
+                        <img alt="" class="iconCardServicesGW" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/customizedCoordinationIcon.jpg">
+                        <h3 class="titleCardServicesGW">
+                            Customized Coordination
+                        </h3>
+                        <p class="textCardServicesGW">
+                            Tours, transfers and activities tailored for the group.
+                        </p>
+                    </div>
+                    <div class="containerCardServicesGW">
+                        <img alt="" class="iconCardServicesGW" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/itineraryMonitoringIcon.jpg">
+                        <h3 class="titleCardServicesGW">
+                            24/7 Itinerary Monitoring
+                        </h3>
+                        <p class="textCardServicesGW">
+                            At Destination and assistance with any specific needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section name="SectionGWAnimationRow" class="margin-bottom-64">
+            <h2 class="margin-bottom-46 titleGW">
+                Prepare to be amazed!
+            </h2>
+            <div class="containerGWAnimationRow">
+                <div class="GWAnimation small" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/IncentivesGW.jpg');">
+                    <div class="containerGradientFullGW"></div>
+                    <div class="containerGradientHalfGW"></div>
+                    <div class="containerTextCardGWAnimation">
+                        <img alt="" class="iconGWAnimation" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/IncentivesIcon.png">
+                        <div class="textCardGWAnimation">
+                            <h3 class="titleTextCardGWAnimation">
+                                Incentives
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Whether for customers, partners, or staff, our expertise ensures the complete success of every event.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/IncentivesText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob">
+                        Incentives
+                    </h3>
+                </div>
+                <div class="GWAnimation small" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/ConferenceCorporateGW.jpg');">
+                    <div class="containerGradientFullGW"></div>
+                    <div class="containerGradientHalfGW"></div>
+                    <div class="containerTextCardGWAnimation">
+                        <img alt="" class="iconGWAnimation" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/ConferencesIcon.png">
+                        <div class="textCardGWAnimation">
+                            <h3 class="titleTextCardGWAnimation">
+                                Conferences & Corporate Meetings
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Meticulously planning and executing seamless conferences and corporate meetings tailored to you organization's unique needs.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/Conferences_and_CorporateMeetingsText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob" style="bottom: 1.2vw;">
+                        Conferences & Corporate Meetings
+                    </h3>
+                </div>
+                <div class="GWAnimation large" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/CongressesGW.jpg');">
+                    <div class="containerGradientFullGW" style="opacity: 0%;"></div>
+                    <div class="containerGradientHalfGW" style="opacity: 100%;"></div>
+                    <div class="containerTextCardGWAnimation startPositionText">
+                        <img alt="" class="iconGWAnimation startSizeIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/CongressesIcon.png">
+                        <div class="textCardGWAnimation" style="opacity: 100%;">
+                            <h3 class="titleTextCardGWAnimation">
+                                Congresses
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Meticulously planning and executing sealess conferences and corporate meetings tailored to you organization's unique needs.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation startPositionimgText tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/CongressesText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob" style="opacity: 0%; z-index: 1;">
+                        Congresses
+                    </h3>
+                </div>
+                <div class="GWAnimation small" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/EventsGW.jpg');">
+                    <div class="containerGradientFullGW"></div>
+                    <div class="containerGradientHalfGW"></div>
+                    <div class="containerTextCardGWAnimation">
+                        <img alt="" class="iconGWAnimation" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/EventsIcon.png">
+                        <div class="textCardGWAnimation">
+                            <h3 class="titleTextCardGWAnimation">
+                                Events & Exhibitions
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Specializing in planning trips and exclusive events for groups of any size.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/Events_and_ExhibitionsText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob">
+                        Events & Exhibitions
+                    </h3>
+                </div>
+                <div class="GWAnimation small" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/LeisureGW.jpg');">
+                    <div class="containerGradientFullGW"></div>
+                    <div class="containerGradientHalfGW"></div>
+                    <div class="containerTextCardGWAnimation">
+                        <img alt="" class="iconGWAnimation" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/LeisureIcon.png">
+                        <div class="textCardGWAnimation">
+                            <h3 class="titleTextCardGWAnimation">
+                                Leisure
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Crafting unforgettable adventures for groups of friends, colleagues, or family on special occasions.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/LeisureText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob">
+                        Leisure
+                    </h3>
+                </div>
+                <div class="GWAnimation small" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/WeddingsGW.jpg');">
+                    <div class="containerGradientFullGW"></div>
+                    <div class="containerGradientHalfGW"></div>
+                    <div class="containerTextCardGWAnimation">
+                        <img alt="" class="iconGWAnimation" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/WeddingsIcon.png">
+                        <div class="textCardGWAnimation">
+                            <h3 class="titleTextCardGWAnimation">
+                                Weddings
+                            </h3>
+                            <p class="paragraphTextCardGWAnimation">
+                                Our wedding experts go beyond traditional planning, ensuring a seamless and magical celebration for you and your guests.
+                            </p>
+                        </div>
+                    </div>
+                    <img alt="" class="ImgTextFloatHoverGWAnimation tagDesk" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/WeddingsText.png">
+                    <h3 class="titleTextCardGWAnimation ImgTextFloatHoverGWAnimation2 tagMob">
+                        Weddings
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section name="SectionSetUsApart" class="margin-bottom-64">
+            <h2 class="margin-bottom-46 titleGW">
+                What sets us apart?
+            </h2>
+            <div class="containerScrollApart">
+                <div class="containerCardsApart">
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="NexusTours App" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/NexusAppGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    NexusTours App
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart orangeGradient">
+                            <p class="titleGradientColorCardApart">
+                                NexusTours App
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                Our NexusTours App, a cutting-edge  companion aligning seamlessly with your journey. Your on- the -go adventure ally, downloadable, on  IOS  and Android.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="Elevated and Empowered Team" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/ElevatedAndEmpoweredTeamGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    Elevated and <br>
+                                    Empowered Team
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart blueGradient">
+                            <p class="titleGradientColorCardApart">
+                                Elevated and <br>
+                                Empowered Team
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                A collective of seasoned specialists in the tourism industry. Committed to delivering unparalleled customer experiences and optimizing sales through a fusion of ingenuity, cutting-edge technology, and adept understanding of group dynamics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="Easy to work with and flexible!" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/EasyFlexibleGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    Easy to work <br>
+                                    with and flexible!
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart greenGradient">
+                            <p class="titleGradientColorCardApart">
+                                Easy to work <br>
+                                with and flexible!
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                Experience effortless collaboration with our Groups Experts: Infinite possibilities await- anytime, anything, anywhere. Our service transcends boundaries, offering 24/7 omnichannel support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="Automated Notifications & Centralized Communication" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/AutomatedNotificationsGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    Automated Notifications & <br>
+                                    Centralized Communication
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart purpleGradient">
+                            <p class="titleGradientColorCardApart">
+                                Automated Notifications & <br>
+                                Centralized Communication
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                Automated notifications and centralized communications streamlined to cater to your experience. Personalized messages at key touch-points: pre-arrival, welcome, follow-up, and departure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="24/7 Omnichannel Service" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/OmnichannerlServiceGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    24/7 Omnichannel <br>
+                                    Service
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart redGradient">
+                            <p class="titleGradientColorCardApart">
+                                24/7 Omnichannel <br>
+                                Service
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                Unveiling our Groups Virtual Concierge available around the clock , surpassing traditional rep services with personalized assistance and guidance from our face to face Groups Concierge.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hoverCardApart">
+                        <div class="CardApart">
+                            <img alt="Robust Service Leave Agreement" class="bgImgCardApart" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/RobustServiceGW.jpg">
+                            <div class="bgGradientCardApart">
+                                <h3 class="textGradientCardApart">
+                                    Robust Service <br>
+                                    Leave Agreement
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="containerGradientColorCardApart redGradient">
+                            <p class="titleGradientColorCardApart">
+                                Robust Service <br>
+                                Leave Agreement
+                            </p>
+                            <p class="textGradientColorCardApart">
+                                First response time to messages and request: 6 hours 
+                                <br><br>
+                                Full response time to groups quotes: 24 hours 
+                                <br><br>
+                                Full resolution time of incident &complaints from  groups: 12-24 hours
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section name="SectionForm">
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="containerFormFlex margin-bottom-46">
+                <div class="containerImgForm tagDesk">
+                    <img alt="GroupsFormGW" class="imgGroupsForm" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/GroupsFormGW.jpg">
+                    <img alt="WeddingsFormGW" class="imgWeddingsForm" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/WeddingsFormGW.jpg">
+                    <img alt="GroupsTextForm.png" class="textGroupsForm" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/GroupsTextForm.png">
+                    <img alt="WeddingsTextForm.png" class="textWeddingsForm" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/WeddingsTextForm.png">
+                </div>
+                <div class="containerForm">
+                    <h2 class="titleGW margin-bottom-46">
+                        Start <span style="color: #FF621D;">planning</span>
+                    </h2>
+                    <div class="elfsight-app-08ff81c4-a09d-46cb-a968-ef296ed1fb2a" data-elfsight-app-lazy></div>
+                </div>
+            </div>
+            <div class="containerContactoGW">
+                <p class="titleGW tagMob">
+                    Contact Us
+                </p>
+                <div class="containerFlexContactoGW">
+                    <p class="titleContactoGW tagDesk">
+                        Contact Us
+                    </p>
+                    <div>
+                        <p class="tagContactoBoton">
+                            Whatsapp
+                        </p>
+                        <a style="text-decoration: none; display: block;" href="https://wa.me/5219981805405?text=Welcome%20to%20Groups%20and%20Weddings!%20Need%20assistance?%20Let's%20create%20magic%20together!" target="_blank">
+                            <div class="botonContactoGW">
+                                <img style="display: block;" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/waGW.png">
+                                <p class="textBotonContactoGW">
+                                    +52 1 998 180 5405
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="tagContactoBoton">
+                            USA & Canada
+                        </p>
+                        <a style="text-decoration: none;" href="tel:18882031279" target="_blank">
+                            <div class="botonContactoGW">
+                                <img style="display: block;" src="https://www.nexustours.com/images/upload//Landing%20Pages/Groups&Weddings/tollGW.png">
+                                <p class="textBotonContactoGW">
+                                    +1 888 203 1279
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<!--Script para eliminar el contenedor pequeño de la plantilla-->
+<script>
+    var container = document.getElementsByClassName("container")
+    var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+    var contentBody = document.getElementsByClassName("content-body")
+    container[1].style.width = "100%"
+    container[1].style.padding = "0"
+    pageHeaderBar[0].style.padding = "0"
+    contentBody[0].style.margin = "0"
+</script>
+<!--Sección Set us Apart-->
+<script>
+    var hoverCardApart = document.querySelectorAll('.hoverCardApart')
+    var containerGradientColorCardApart = document.querySelectorAll('.containerGradientColorCardApart')
+    var GWAnimation = document.querySelectorAll('.GWAnimation')
+    var containerGradientFullGW = document.querySelectorAll('.containerGradientFullGW')
+    var containerGradientHalfGW = document.querySelectorAll('.containerGradientHalfGW')
+    var containerTextCardGWAnimation = document.querySelectorAll('.containerTextCardGWAnimation')
+    var iconGWAnimation = document.querySelectorAll('.iconGWAnimation')
+    var textCardGWAnimation = document.querySelectorAll('.textCardGWAnimation')
+    var ImgTextFloatHoverGWAnimation = document.querySelectorAll('.ImgTextFloatHoverGWAnimation')
+    var ImgTextFloatHoverGWAnimation2 = document.querySelectorAll('.ImgTextFloatHoverGWAnimation2')
+
+    let anchoPantalla = document.documentElement.clientWidth;
+
+    for(let i = 0; i < hoverCardApart.length; i++){
+        hoverCardApart[i].addEventListener("mouseover", function(){
+            hoverCardApart[i].style.transform = "scale(1.2)"
+            for(var j = 0; j < hoverCardApart.length; j++){
+                if(j != i){
+                    hoverCardApart[j].style.zIndex= "1"
+                    containerGradientColorCardApart[j].style.opacity = "0%"
+                }
+                else{
+                    hoverCardApart[i].style.zIndex= "2"
+                    containerGradientColorCardApart[i].style.opacity = "100%"
+                }
+            }
+        })
+        hoverCardApart[i].addEventListener("mouseout", function(){
+            hoverCardApart[i].style.transform = "scale(1)"
+            for(var j = 0; j < hoverCardApart.length; j++){
+                hoverCardApart[j].style.zIndex= "1"
+                containerGradientColorCardApart[j].style.opacity = "0%"
+            }
+        })
+    }
+
+    delete i
+
+    for(let i = 0; i < GWAnimation.length; i++){
+        GWAnimation[i].addEventListener("mouseover", function(){
+
+            if(anchoPantalla > 1200){
+                for(var j = 0; j < GWAnimation.length; j++){
+                    switch(j){
+                        case i:
+                            GWAnimation[i].style.width = "600px"
+                            GWAnimation[i].style.height = "630px"
+                            GWAnimation[i].style.borderRadius = "30px"
+                            containerGradientFullGW[i].style.opacity = "0%"
+                            containerGradientHalfGW[i].style.opacity = "100%"
+                            containerTextCardGWAnimation[i].style.left = "40px"
+                            containerTextCardGWAnimation[i].style.bottom = "40px"
+                            iconGWAnimation[i].style.width = "70px"
+                            iconGWAnimation[i].style.height = "70px"
+                            textCardGWAnimation[i].style.opacity = "100%"
+                            ImgTextFloatHoverGWAnimation[i].style.left = "66px"
+                            ImgTextFloatHoverGWAnimation[i].style.bottom = "123px"
+                            ImgTextFloatHoverGWAnimation[i].style.opacity = "0%"
+                            break;
+                        default:
+                            GWAnimation[j].style.width = "90px"
+                            GWAnimation[j].style.height = "580px"
+                            GWAnimation[j].style.borderRadius = "50px"
+                            containerGradientFullGW[j].style.opacity = "100%"
+                            containerGradientHalfGW[j].style.opacity = "0%"
+                            containerTextCardGWAnimation[j].style.left = "15px"
+                            containerTextCardGWAnimation[j].style.bottom = "15px"
+                            iconGWAnimation[j].style.width = "60px"
+                            iconGWAnimation[j].style.height = "60px"
+                            textCardGWAnimation[j].style.opacity = "0%"
+                            ImgTextFloatHoverGWAnimation[j].style.left = "38px"
+                            ImgTextFloatHoverGWAnimation[j].style.bottom = "87px"
+                            ImgTextFloatHoverGWAnimation[j].style.opacity = "100%"
+                            break;
+                    }
+                }
+            }
+
+            else if((anchoPantalla <= 1200) && (anchoPantalla > 992)){
+                for(var j = 0; j < GWAnimation.length; j++){
+                    switch(j){
+                        case i:
+                            GWAnimation[i].style.width = "600px"
+                            GWAnimation[i].style.height = "590px"
+                            GWAnimation[i].style.borderRadius = "30px"
+                            containerGradientFullGW[i].style.opacity = "0%"
+                            containerGradientHalfGW[i].style.opacity = "100%"
+                            containerTextCardGWAnimation[i].style.left = "40px"
+                            containerTextCardGWAnimation[i].style.bottom = "40px"
+                            iconGWAnimation[i].style.width = "70px"
+                            iconGWAnimation[i].style.height = "70px"
+                            textCardGWAnimation[i].style.opacity = "100%"
+                            ImgTextFloatHoverGWAnimation[i].style.left = "66px"
+                            ImgTextFloatHoverGWAnimation[i].style.bottom = "123px"
+                            ImgTextFloatHoverGWAnimation[i].style.opacity = "0%"
+                            break;
+                        default:
+                            GWAnimation[j].style.width = "60px"
+                            GWAnimation[j].style.height = "540px"
+                            GWAnimation[j].style.borderRadius = "50px"
+                            containerGradientFullGW[j].style.opacity = "100%"
+                            containerGradientHalfGW[j].style.opacity = "0%"
+                            containerTextCardGWAnimation[j].style.left = "9.5px"
+                            containerTextCardGWAnimation[j].style.bottom = "9.5px"
+                            iconGWAnimation[j].style.width = "45px"
+                            iconGWAnimation[j].style.height = "45px"
+                            textCardGWAnimation[j].style.opacity = "0%"
+                            ImgTextFloatHoverGWAnimation[j].style.left = "22px"
+                            ImgTextFloatHoverGWAnimation[j].style.bottom = "62px"
+                            ImgTextFloatHoverGWAnimation[j].style.opacity = "100%"
+                            break;
+                    }
+                }
+            }
+            else{
+                for(var j = 0; j < GWAnimation.length; j++){
+                    switch(j){
+                        case i:
+                            GWAnimation[i].style.height = "77vw"
+                            GWAnimation[i].style.borderRadius = "30px"
+                            containerGradientFullGW[i].style.opacity = "0%"
+                            containerGradientHalfGW[i].style.opacity = "100%"
+                            textCardGWAnimation[i].style.opacity = "100%"
+                            ImgTextFloatHoverGWAnimation2[i].style.opacity = "0%"
+                            break;
+                        default:
+                            GWAnimation[j].style.height = "15vw"
+                            GWAnimation[j].style.borderRadius = "50px"
+                            containerGradientFullGW[j].style.opacity = "100%"
+                            containerGradientHalfGW[j].style.opacity = "0%"
+                            textCardGWAnimation[j].style.opacity = "0%"
+                            ImgTextFloatHoverGWAnimation2[j].style.opacity = "100%"
+                            break;
+                    }
+                }
+            }
+
+        })
+    }
+</script>

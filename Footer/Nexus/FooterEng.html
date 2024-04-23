@@ -1,0 +1,1344 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+
+    .footer{
+        /*background-color: #EBEBEB;*/
+        padding-top: 63px; 
+        padding-bottom: 50px; 
+        width: 1160px; 
+    }
+    @media (max-width:1200px){
+        .footer{
+            width: 960px; 
+        }
+    }
+    @media (max-width:992px){
+        .footer{
+            width: 100%; 
+        }
+    }
+
+    .container-content-footer{
+        width: 100%;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 21px;
+    }
+
+    .container-content-footer-low{
+        width: 1160px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .container-content-footer-md{
+        width: 960px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 21px;
+    }
+
+    .container-content-footer-low-md{
+        width: 960px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .container-listas{
+        width: 60%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .subcontainer-listas{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .listas{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .orange-text{
+        font-size: 16px; 
+        font-weight: 700; 
+        line-height: normal; 
+        color: #F36F21;
+        width: fit-content;
+    }
+
+    .a-text-listas,
+    .a-text-listas:hover,
+    .a-text-listas:visited{
+        text-decoration: none !important;
+        color: #E4E4E4;
+        display: inline-block;
+    }
+
+    .text-listas{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #565657;
+    }
+
+    .text-listas-mob{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        background-color: #F2F2F2;
+        padding: 1rem;
+        margin: 0 0 1rem; 
+        font-weight: 600;
+    }
+
+    .gap-text-listas{
+        display: flex; 
+        flex-direction: column;
+        gap:4px;
+    }
+
+
+    .ul-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-elements{
+        margin-bottom: 2px;
+    }
+
+    .collapsible {
+        background-color: #EBEBEB;
+        color: #F36F21;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 17px;
+        font-weight: 600; 
+        line-height: 16.32px; 
+        border-bottom: 1.5px solid #bbbbbb;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        transition: all ease .5s;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #EBEBEB;
+    }
+
+    .content {
+        padding: 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #EBEBEB;
+    }
+
+    .icon-rot{
+        width: 30px; 
+        height: 15px; 
+        margin-left: auto; 
+        rotate: 0deg;
+        transition: all .5s;
+    }
+
+    .container-logo{
+        width: 40%; 
+        padding-left: 50px;
+    }
+    
+
+    .content-logo{
+        width: fit-content; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .logo{
+        width: 202px; 
+        height: 83px; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .text-logo{
+        font-size: 22px; 
+        font-weight: 600; 
+        color: #565657; 
+        line-height: normal; 
+        text-align: center;
+        letter-spacing: .2px;
+    }
+
+    .container-social{
+        display: flex; 
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        width: 34px; 
+        height: 34px;
+    }
+    
+    .payment-style{
+        font-size: 10px; 
+        line-height: 12.55px; 
+        color: #565657; 
+        margin-right: auto; 
+        margin-left: 5%;
+    }
+
+    .cards{
+        margin-right: auto;
+    }
+    
+    .reserved-rights{
+        font-size: 10px; 
+        line-height: 12.55px; 
+        color: #F36F21; 
+        margin-right: 5%;
+    }
+
+    .a-text-listas-mob,
+    .a-text-listas-mob:visited{
+        text-decoration: none !important;
+    }
+
+    .complete-footer-body{
+        width: 100%;
+        /*background-color: #EBEBEB;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-header-right{
+        margin-left: auto;
+        margin-right: 8.6%;
+        width: fit-content;
+    }
+
+    .text-header-right-md{
+        margin-left: auto;
+        margin-right: 5%;
+        width: fit-content;
+    }
+
+    .header-titles{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .margin-bottom-13{
+        margin-bottom: 13px;
+    }
+
+    .margin-bottom-26{
+        margin-bottom: 26px;
+    }
+
+    .margin-bottom-8{
+        margin-bottom: 8px;
+    }
+
+    .tag-hidden{
+        display:none;
+    }
+
+    .container-getSocial-mobile{
+        width: 202px;
+        margin: auto;
+    }
+
+    .logo-mob{
+        width: 210px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-trip{
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+
+<body>
+    <div class="complete-footer-body">
+        <div class="footer">
+            <div class="container-content-footer hidden-md hidden-sm hidden-xs">
+                <div class="container-logo">
+                    <div class="content-logo">
+                        <img alt="Logo NexusTours" loading="lazy" class="logo" src="https://www.nexustours.com/images/upload//footer/logo-nexus-rebranding.png">
+                        <div class="text-logo">
+                            Get social with us!
+                        </div>
+                        <div class="container-social margin-bottom-13">
+                            <a title="Facebook Link Desktop" href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                            </a>
+                            <a title="Twitter Link Desktop" href="https://twitter.com/NexusTours" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                            </a>
+                            <a title="Linkedin Link Desktop" href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                            </a>
+                            <a title="Instagram Link Desktop" href="https://www.instagram.com/nexustours/" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                            </a>
+                            <a title="TripAdvisor Link Desktop" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                            </a>
+                        </div>
+                        <div class="logo-trip">
+                            <img alt="Traveler's Choice Award 2023" loading="lazy" src="https://www.nexustours.com/images/upload//footer/Logo_TripAdvisor_2023.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-listas">
+                    <div class="subcontainer-listas margin-bottom-13">
+                        <div class="listas">
+                            <div class="orange-text">
+                                Company
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://corporate.nexustours.com/corporate/" target="_blank">
+                                            <div class="text-listas">
+                                                Who we are
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Newsroom
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Partnership
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements tag-hidden">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Advertising
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://tpp.nexustours.com/login/" target="_blank">
+                                            <div class="text-listas">
+                                                Agency Access
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/groups-and-weddings" target="_blank">
+                                            <div class="text-listas">
+                                                Groups
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Explore
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://corporate.nexustours.com/groups/destinations/" target="_blank">
+                                            <div class="text-listas">
+                                                Our Destinations
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/besafe" target="_blank">
+                                            <div class="text-listas">
+                                                Be safe with Nexus
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/travel-blog" target="_blank">
+                                            <div class="text-listas">
+                                                Travel Blog
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Sitemap
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Policies
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/privacy-policy" target="_blank">
+                                            <div class="text-listas">
+                                                Privacy policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/terms-and-conditions" target="_blank">
+                                            <div class="text-listas">
+                                                Terms and conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/user-agreement" target="_blank">
+                                            <div class="text-listas">
+                                                User agreement
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Help
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/booking/check.aspx" target="_blank">
+                                            <div class="text-listas">
+                                                Check your booking
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://gxsurvey.questionpro.com/a/TakeSurvey?tt=whHEIMLYlTIECHrPeIW9eQ%3D%3D" target="_blank">
+                                            <div class="text-listas">
+                                                Quality Survey
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/contact-us" target="_blank">
+                                            <div class="text-listas">
+                                                Contact
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/faq" target="_blank">
+                                            <div class="text-listas">
+                                                FAQ
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="header-titles margin-bottom-8">
+                            <div class="orange-text">
+                                Top Destination
+                            </div>
+                            <div class="orange-text text-header-right">
+                                Top Excursions
+                            </div>
+                        </div>
+                        <div class="subcontainer-listas">
+                            <div class="listas">
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/punta-cana" target="_blank">
+                                                <div class="text-listas">
+                                                    Punta Cana
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                                                <div class="text-listas">
+                                                    Dominican
+                                                    Republic
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                                                <div class="text-listas">
+                                                    Jamaica
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/aruba" target="_blank">
+                                                <div class="text-listas">
+                                                    Aruba
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas">
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                                                <div class="text-listas">
+                                                    Costa Rica
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/saint-marteen" target="_blank">
+                                                <div class="text-listas">
+                                                    St. Maarten
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/cabos" target="_blank">
+                                                <div class="text-listas">
+                                                    Los Cabos
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                                <div class="text-listas">
+                                                    Varadero
+                                                </div>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas">
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                                                <div class="text-listas">
+                                                    St. Lucia
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                                                <div class="text-listas">
+                                                    Riviera Maya
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                                <div class="text-listas">
+                                                    Xcaret
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                                <div class="text-listas">
+                                                    Chichen Itza
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas">
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN%C2%A5TKT%C2%A51275%C2%A5109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Isla Mujeres Plus
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN%C2%A5TKT%C2%A55042%C2%A5110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Monkeyland
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57265%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Jamwest ATV
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57301%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Falmouth Mystic Lagoon
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content-footer-md hidden-xl hidden-lg hidden-sm hidden-xs">
+                <div class="container-logo">
+                    <div class="content-logo">
+                        <img alt="Logo NexusTours" loading="lazy" class="logo" src="https://www.nexustours.com/images/upload//footer/logo-nexus-rebranding.png">
+                        <div class="text-logo">
+                            Get social with us!
+                        </div>
+                        <div class="container-social margin-bottom-13">
+                            <a title="Facebook Link Tablet" href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                            </a>
+                            <a title="Twitter Link Tablet" href="https://twitter.com/NexusTours" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                            </a>
+                            <a title="Linkedin Link Tablet" href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                            </a>
+                            <a title="Instagram Link Tablet" href="https://www.instagram.com/nexustours/" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                            </a>
+                            <a title="TripAdvisor Link Tablet" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                            </a>
+                        </div>
+                        <div class="logo-trip">
+                            <img alt="Traveler's Choice Award 2023" loading="lazy" src="https://www.nexustours.com/images/upload//footer/Logo_TripAdvisor_2023.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-listas">
+                    <div class="subcontainer-listas margin-bottom-13">
+                        <div class="listas">
+                            <div class="orange-text">
+                                Company
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://corporate.nexustours.com/corporate/" target="_blank">
+                                            <div class="text-listas">
+                                                Who we are
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Newsroom
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Partnership
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Advertising
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://tpp.nexustours.com/login/" target="_blank">
+                                            <div class="text-listas">
+                                                Agency Access
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/groups-and-weddings" target="_blank">
+                                            <div class="text-listas">
+                                                Groups
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Explore
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://corporate.nexustours.com/groups/destinations/" target="_blank">
+                                            <div class="text-listas">
+                                                Our Destinations
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/besafe" target="_blank">
+                                            <div class="text-listas">
+                                                Be safe with Nexus
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/travel-blog" target="_blank">
+                                            <div class="text-listas">
+                                                Travel Blog
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Sitemap
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Policies
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/privacy-policy" target="_blank">
+                                            <div class="text-listas">
+                                                Privacy policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/terms-and-conditions" target="_blank">
+                                            <div class="text-listas">
+                                                Terms and conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/user-agreement" target="_blank">
+                                            <div class="text-listas">
+                                                User agreement
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Help
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/booking/check.aspx" target="_blank">
+                                            <div class="text-listas">
+                                                Check your booking
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://gxsurvey.questionpro.com/a/TakeSurvey?tt=whHEIMLYlTIECHrPeIW9eQ%3D%3D" target="_blank">
+                                            <div class="text-listas">
+                                                Quality Survey
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/contact-us" target="_blank">
+                                            <div class="text-listas">
+                                                Contact
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/faq" target="_blank">
+                                            <div class="text-listas">
+                                                FAQ
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-titles margin-bottom-8">
+                        <div class="orange-text">
+                            Top Destination
+                        </div>
+                        <div class="orange-text text-header-right-md">
+                            Top Excursions
+                        </div>
+                    </div>
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/punta-cana" target="_blank">
+                                            <div class="text-listas">
+                                                Punta Cana
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                                            <div class="text-listas">
+                                               Dominican <br>
+                                               Republic
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                                            <div class="text-listas">
+                                                Jamaica
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/aruba" target="_blank">
+                                            <div class="text-listas">
+                                                Aruba
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                                            <div class="text-listas">
+                                                Costa Rica
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/saint-marteen" target="_blank">
+                                            <div class="text-listas">
+                                                St. Maarten
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/cabos" target="_blank">
+                                            <div class="text-listas">
+                                                Los Cabos
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Varadero
+                                            </div>
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                                            <div class="text-listas">
+                                                St. Lucia
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                                            <div class="text-listas">
+                                                Riviera Maya
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Xcaret
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas">
+                                                Chichen Itza
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN%C2%A5TKT%C2%A51275%C2%A5109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Isla Mujeres Plus
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN%C2%A5TKT%C2%A55042%C2%A5110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Monkeyland
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57265%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Jamwest ATV
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57301%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Falmouth Mystic Lagoon
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content-footer-mb hidden-xl hidden-lg hidden-md margin-bottom-26" style="width: 100%;">
+                <div class="container-logo" style="padding: 0px; width: auto; margin-bottom: 20px;">
+                    <div class="content-logo" style="margin: auto; gap: 10px;">
+                        <img alt="Logo NexusTours" loading="lazy" class="logo-mob" src="https://www.nexustours.com/images/upload//footer/logo-nexus-horizontal.png">
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Company
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://corporate.nexustours.com/corporate/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Who we are
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Newsroom
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Partnership
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Advertising
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://tpp.nexustours.com/login/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Agency Access
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/groups-and-weddings" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Groups
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Explore
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://corporate.nexustours.com/groups/destinations/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Our Destinations
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/besafe" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Be safe with Nexus
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/travel-blog" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Travel Blog
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Sitemap
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Policies
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/privacy-policy" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Privacy policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/terms-and-conditions" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Terms and conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/user-agreement" target="_blank">
+                                            <div class="text-listas-mob">
+                                                User agreement
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Help
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/booking/check.aspx" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Check your booking
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://gxsurvey.questionpro.com/a/TakeSurvey?tt=whHEIMLYlTIECHrPeIW9eQ%3D%3D" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Quality Survey
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/contact-us" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Contact
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/faq" target="_blank">
+                                            <div class="text-listas-mob">
+                                                FAQ
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Top Destinations
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/punta-cana" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Punta Cana
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Dominican Republic
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Jamaica
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/aruba" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Aruba
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Costa Rica
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/saint-marteen" target="_blank">
+                                            <div class="text-listas-mob">
+                                                St. Maarten
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/cabos" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Los Cabos
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Varadero
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                                            <div class="text-listas-mob">
+                                               St. Lucia
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Riviera Maya
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Xcaret
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob tag-hidden" href="https://www.nexustours.com/" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Chichen Itza
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Top Excursions
+                    <img alt="" loading="lazy" class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN%C2%A5TKT%C2%A51275%C2%A5109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Isla Mujeres Plus
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN%C2%A5TKT%C2%A55042%C2%A5110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Monkeyland
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57265%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Jamwest ATV
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.nexustours.com/services/jamaica/SGN%C2%A5TKT%C2%A57301%C2%A5108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Falmouth Mystic Lagoon
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-getSocial-mobile hidden-xl hidden-lg hidden-md">
+                <div class="logo-trip margin-bottom-13">
+                    <img alt="Traveler's Choice Award 2023" loading="lazy" src="https://www.nexustours.com/images/upload//footer/Logo_TripAdvisor_2023.png">
+                </div>
+                <div class="text-logo">
+                    Get social with us!
+                </div>
+                <div class="container-social">
+                    <a title="Facebook Link Mobile" href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                        <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                    </a>
+                    <a title="Twitter Link Mobile" href="https://twitter.com/NexusTours" target="_blank">
+                        <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                    </a>
+                    <a title="Linkedin Link Mobile" href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                        <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                    </a>
+                    <a title="Instagram Link Mobile" href="https://www.instagram.com/nexustours/" target="_blank">
+                        <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                    </a>
+                    <a title="TripAdvisor Link Mobile" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                        <img alt="" loading="lazy" class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                var icon = this.getElementsByClassName("icon-rot")[0];
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    icon.style.rotate = "0deg";
+                } else {
+                    content.style.display = "block";
+                    icon.style.rotate = "180deg";
+                }
+            });
+        }
+    </script>
+</body>
