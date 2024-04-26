@@ -814,82 +814,103 @@
                     <td>
                         <div class="card-email">
                             <p class="parrafo-card">
-                                <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
+                                <span class="bold-text">Hello <span class="orange-nexus">{{contact.firstname}}</span>,</span>
                                 <br>
                                 <br>
-                                We hope you're having a great time and enjoying every minute under the sun at <span class="orange-nexus bold-text"> {{contact.Destination}}</span>!
-                                We truly enjoy making your vacation dreams come true.<br><br>
-                                To ensure a smooth trip back home, we aim to provide you with all the necessary details for your pickup transfer to the airport.
+                                Mark your calendars for <span class="bold-text orange-nexus">{{contact.PickupDate}}</span> at <span class="bold-text orange-nexus">{{contact.PickupTime}}</span> for your upcoming <span class="bold-text orange-nexus">{{contact.ServiceType}}</span> transfer with Nexus Tours. Please confirm the following information: 
+                                Your flight number is <span class="bold-text orange-nexus">{{contact.NumberFlight}}</span>.
                             </p>
                         </div>
                     </td>
                 </tr>
             </table>
-            <table id="TextTitle2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+            <table id="NeedHelp" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
                 <tr>
                     <td>
-                        <div class="container-text">
-                            <h3 class="margin-bottom-5 text-titles orange-nexus">
-                                Please find below your transfer pick-up details
-                            </h3>
+                        <div class="margin-text-container-blue margin-bottom-22">
+                            <h4 class="text-container-blue">
+                                If there are any schedule changes or if you need to adjust your transfer time, please <span class="bold-text orange-nexus">"contact us"</span> below 👇
+                            </h4>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <table id="tabla" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <td>
-                        <div class="border-table-pickup">
-                            <table id="content-tabla" class="content-tabla-pickup" role="presentation" border="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td class="left-column-color">
-                                        <h4 class="text-column-left">
-                                            Transfer type
-                                        </h4>
-                                    </td>
-                                    <td class="right-column-color">
-                                        <h4 class="text-column-right">
-                                            {{contact.ServiceType}}
-                                        </h4>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left-column-color">
-                                        <h4 class="text-column-left">
-                                            Guests
-                                        </h4>
-                                    </td>
-                                    <td class="right-column-color">
-                                        <h4 class="text-column-right">
-                                            {{contact.PAX_Total}}
-                                        </h4>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left-column-color">
-                                        <h4 class="text-column-left">
-                                            Date
-                                        </h4>
-                                    </td>
-                                    <td class="right-column-color">
-                                        <h4 class="text-column-right">
-                                            {{contact.PickupDate}}
-                                        </h4>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left-column-color">
-                                        <h4 class="text-column-left">
-                                            Time
-                                        </h4>
-                                    </td>
-                                    <td class="right-column-color">
-                                        <h4 class="text-column-right">
-                                            {{contact.PickupTime}}
-                                        </h4>
-                                    </td>
-                                </tr>
-                            </table>
+                        <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="width-tollWA">
+                                    <div style="width: fit-content; margin: auto;">
+                                        <a href="tel:{{contact.ICC_Tel}}" target="_blank">
+                                            <div class="background-nexus container-toll">
+                                                <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                        </td>
+                                                        <td>
+                                                            <h4 class="text-tollWA">
+                                                                Call us
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="width-tollWA">
+                                    <div style="width: fit-content; margin: auto;">
+                                        <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                            <div class="background-nexus container-wa">
+                                                <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                        </td>
+                                                        <td>
+                                                            <h4 class="text-tollWA">
+                                                                Whatsapp
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="tag-mob">
+                            <div class="margin-bottom-10">
+                                <a href="tel:{{contact.ICC_Tel}}" target="_blank">
+                                    <div class="background-nexus container-toll">
+                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="text-tollWA">
+                                                        Call us
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                <div class="background-nexus container-wa">
+                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                            </td>
+                                            <td>
+                                                <h4 class="text-tollWA">
+                                                    Whatsapp
+                                                </h4>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </a>
                         </div>
                     </td>
                 </tr>
@@ -903,7 +924,7 @@
                                     Upgrade your experience                                
                                 </h3>
                             </div>
-                            <div class="card-email-2 margin-bottom-30 tag-desk-table">
+                            <div class="card-email-2 tag-desk-table">
                                 <table role="presentation" border="0" cellspacing="0" width="100%">
                                     <tr>
                                         <td>
@@ -944,7 +965,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="tag-mob margin-bottom-22">
+                            <div class="tag-mob">
                                 <div class="card-email-2">
                                     <div class="padding-top-text-transfer">
                                         <h4 class="transfer-text">
@@ -985,239 +1006,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-email-2 margin-bottom-30 tag-desk-table">
-                                <table role="presentation" border="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td>
-                                            <div class="padding-top-text-transfer">
-                                                <h4 class="transfer-text">
-                                                    TRANSFER
-                                                </h4>
-                                                <h4 class="transfer-text-type margin-bottom-10">
-                                                    Private
-                                                </h4>
-                                                <ul class="ul-transfer-content">
-                                                    <li>
-                                                        <h4 class="bullets-description">
-                                                            Comfort & style
-                                                        </h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="bullets-description">
-                                                            Non-stop transfer
-                                                        </h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="bullets-description">
-                                                            Personalized assistance
-                                                        </h4>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td class="align-img-transfer">
-                                            <img class="img-transfer" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusPrivate2024.png">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="tag-mob margin-bottom-22">
-                                <div class="card-email-2">
-                                    <div class="padding-top-text-transfer">
-                                        <h4 class="transfer-text">
-                                            TRANSFER
-                                        </h4>
-                                        <h4 class="transfer-text-type margin-bottom-10">
-                                            Private
-                                        </h4>
-                                        <div class="container-redes">
-                                            <ul class="ul-transfer-content">
-                                                <li>
-                                                    <h4 class="bullets-description">
-                                                        Comfort & style
-                                                    </h4>
-                                                </li>
-                                                <li>
-                                                    <h4 class="bullets-description">
-                                                        Non-stop transfer
-                                                    </h4>
-                                                </li>
-                                                <li>
-                                                    <h4 class="bullets-description">
-                                                        Personalized assistance
-                                                    </h4>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="align-img-transfer">
-                                        <div class="container-redes-esp">
-                                            <img class="img-transfer" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusPrivate2024.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="margin-text-container-blue margin-bottom-22">
-                                <h4 class="text-container-blue">
-                                    <span class="bold-text white-nexus">UPGRADE YOUR TRANSFER SERVICE</span> via our virtual concierge for a direct, more comfortable non-stop ride to the airport. Contact us here:
-                                </h4>
-                            </div>
-                            <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td class="width-tollWA">
-                                        <div style="width: fit-content; margin: auto;">
-                                            <a href="tel:{{contact.ICC_Tel}}" target="_blank">
-                                                <div class="background-nexus container-toll">
-                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td>
-                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
-                                                            </td>
-                                                            <td>
-                                                                <h4 class="text-tollWA">
-                                                                    Call us
-                                                                </h4>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </td>
-                                    <td class="width-tollWA">
-                                        <div style="width: fit-content; margin: auto;">
-                                            <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                                <div class="background-nexus container-wa">
-                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td>
-                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
-                                                            </td>
-                                                            <td>
-                                                                <h4 class="text-tollWA">
-                                                                    Whatsapp
-                                                                </h4>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="tag-mob">
-                                <div class="margin-bottom-10">
-                                    <a href="tel:{{contact.ICC_Tel}}" target="_blank">
-                                        <div class="background-nexus container-toll">
-                                            <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="text-tollWA">
-                                                            Call us
-                                                        </h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                    <div class="background-nexus container-wa">
-                                        <table role="presentation" border="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td>
-                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
-                                                </td>
-                                                <td>
-                                                    <h4 class="text-tollWA">
-                                                        Whatsapp
-                                                    </h4>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </div>
                         </div>
                     </td>
                 </tr>
             </table>
-            <table id="banner-publicidad" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <td>
-                        <a href="https://uqr.to/XHUB.NT" target="_blank">
-                            <div class="container-banner-publicidad">
-                                <img class="img-banner-publicidad" src="https://www.nexustours.com/images/upload/Email-content/home_app_web.jpg">
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-            <table id="bannerSeguros" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <td>
-                        <div class="containerSekura">
-                            <table class="tag-desk" role="presentation" border="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td class="padTextSekura">
-                                        <h4 class="titleSekura">
-                                            Do you want to be protected <br>
-                                            during your trip?
-                                        </h4>
-                                        <p class="textSekura">
-                                            With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
-                                            <br>
-                                            <br>
-                                            We ensure your well-being in the event of any medical issues that may arise along the way.
-                                            <br>
-                                            <br>
-                                            Make sure to include it in your vacation plans.
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="tag-mob">
-                                <h4 class="titleSekura">
-                                    Do you want to be protected <br>
-                                    during your trip?
-                                </h4>
-                                <p class="textSekura">
-                                    With NexusTours, you can travel with peace of mind thanks to this specially designed coverage.
-                                    <br>
-                                    <br>
-                                    We ensure your well-being in the event of any medical issues that may arise along the way.
-                                    <br>
-                                    <br>
-                                    Make sure to include it in your vacation plans.
-                                    <br>
-                                    <br>
-                                </p>
-                                <img class="imgSekura" src="https://www.nexustours.com/images/upload//Email-content/img-Seguros-Banner-Correo.png">
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <!--
-            <table id="banner-publicidad" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <td>
-                        <a href="" target="_blank">
-                            <div class="container-banner-publicidad">
-                                <img class="img-banner-publicidad" src="https://www.nexustours.com/images/upload//Email-content/esim-email-banner.png">
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-            -->
             <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
                 <tr>
                     <td>

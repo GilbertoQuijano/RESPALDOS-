@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>
+            parametro 1 : <span id="orderId"></span> <br>
+            parametro 2 : <span id="lastName"></span>
+        </p>
+    </body>
+    <script>
+        // Obtener la URL actual
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // Leer parámetros específicos
+        var parametro1 = urlParams.get('orderId');
+        var parametro2 = urlParams.get('lastName');
+
+        let spanOrderId = document.querySelector('#orderId')
+        let spanLastName = document.querySelector('#lastName')
+
+        spanOrderId.textContent = parametro1
+        spanLastName.textContent = parametro2
+        // Hacer algo con los parámetros
+    </script>
+</html>
