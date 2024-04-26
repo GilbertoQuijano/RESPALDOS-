@@ -143,6 +143,12 @@
           }
       }
       @media(max-width:800px){
+          .text-tollWA{
+              padding-left: 5px !important;
+              font-size: 3vw !important;
+          }
+      }
+      @media(max-width:800px){
           .stars-ofertas{
               width: 40vw !important;
           }
@@ -209,6 +215,11 @@
               width: 60% !important;
           }
       }
+      @media(max-width:800px){
+          .textBotonConfirmed{
+              font-size: 4vw !important;
+          }
+      }
     </style>
   </head>
   <body style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
@@ -219,7 +230,7 @@
             <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
               <div class="container-logo-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:100%;">
                 <div class="logo-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:fit-content;margin:auto;padding:21px 0px;">
-                  <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/logo-nexus-revamp.png" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
+                  <img style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width: 100%; max-width: 80%; margin-left: auto; margin-right: auto; display: block;" alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/logoNexusTourCom.png">
                 </div>
               </div>
               <div class="container-logo-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:100%;">
@@ -236,15 +247,22 @@
         <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;margin-bottom:22px;">
           <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
             <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-              <div class="card-email" style="font-family:'DM Sans', sans-serif;color:#333;background-color:#FFF;width:95%;margin:auto;border-radius:15px;padding:25px 22px;box-sizing:border-box;">
+              <div class="card-email margin-bottom-22" style="font-family:'DM Sans', sans-serif;color:#333;width:90%;margin:auto;box-sizing:border-box;margin-bottom:22px;">
                 <p class="parrafo-card" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-size:16px;font-weight:500;line-height:134%;margin:0;">
-                  <span class="bold-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-weight:700;">Hello <span class="orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;">{{contact.firstname}}</span>,</span>
+                  <span class="bold-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-weight:700;">Hi <span class="orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;">{{contact.firstname}}</span>,</span>
                   <br style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
                   <br style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                  Mark your calendars for <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.PickupDate}}</span> at <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.PickupTime}}</span> for your upcoming <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.ServiceType}}</span> transfer with Nexus Tours. Please confirm the following information: 
-                  Your flight number is <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.NumberFlight}}</span>.
+                  We're just <span class="bold-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-weight:700;"> 2 days</span> away from your trip back home. Your pickup transfer is scheduled on <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.PickupDate}} at {{contact.PickupTime}}</span>. Your flight is <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">{{contact.NumberFlight}}.</span>
+                  <br style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
+                  <br style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
+                  Click <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">"confirmed"</span> if your information is correct.
                 </p>
               </div>
+              <a class="botonConfirmed" href="https://www.nexustours.com/Transfer_Confirmation_SP?serviceType={{contact.ServiceType}}&ICC_Tel={{contact.ICC_Tel}}&utm_source=nexusB2C&utm_medium=mail&utm_campaign=pickup_transfer&contact_id={{contact.id}}" target="_blank" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;text-decoration:none;width:40%;margin-left:auto;margin-right:auto;display:block;">
+                <div class="textBotonConfirmed" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:white;padding:10px 0;border-radius:69px;font-size:20px;font-weight:600;line-height:110%;text-align:center;background-position:center;background-size:cover;background-image:url('https://www.nexustours.com/images/upload//Email-content/Background_orange_midstay.png');">
+                  Confirmed
+                </div>
+              </a>
             </td>
           </tr>
         </table>
@@ -256,7 +274,7 @@
                   If there are any schedule changes or if you need to adjust your transfer time, please <span class="bold-text orange-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#FF621D;font-weight:700;">"contact us"</span> below 👇
                 </h4>
               </div>
-              <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;display:table;">
+              <table role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
                 <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
                   <td class="width-tollWA" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:50%;max-width:50%;min-width:50%;">
                     <div style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width: fit-content; margin: auto;">
@@ -300,137 +318,6 @@
                   </td>
                 </tr>
               </table>
-              <div class="tag-mob" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;display:none;">
-                <div class="margin-bottom-10" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;margin-bottom:10px;">
-                  <a href="tel:{{contact.ICC_Tel}}" target="_blank" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;text-decoration:none;">
-                    <div class="background-nexus container-toll" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;background-color:#FFFF;width:fit-content;border-radius:50px;padding:10px 60px 10px 60px;margin:auto;">
-                      <table role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                        <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                          <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:25px;height:25px;vertical-align:middle;">
-                          </td>
-                          <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <h4 class="text-tollWA" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#333333;margin:0;padding-left:5px;font-size:18px;">
-                              Call us
-                            </h4>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </a>
-                </div>
-                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;text-decoration:none;">
-                  <div class="background-nexus container-wa" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;background-color:#FFFF;width:fit-content;border-radius:50px;padding:10px 55px 10px 55px;margin:auto;">
-                    <table role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                      <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                        <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                          <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:25px;height:25px;vertical-align:middle;">
-                        </td>
-                        <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                          <h4 class="text-tollWA" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;color:#333333;margin:0;padding-left:5px;font-size:18px;">
-                            Whatsapp
-                          </h4>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <table id="Ofertas" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;margin-bottom:22px;">
-          <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-            <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-              <div class="container-blue-cards" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:95%;margin:auto;border-radius:16px;overflow:hidden;">
-                <div class="container-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:fit-content;margin-left:auto;margin-right:auto;padding:0 2.5%;">
-                  <h3 class="margin-bottom-22 text-titles white-nexus" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;margin-bottom:22px;font-size:24px;line-height:130%;font-weight:700;margin-top:0;text-align:center;color:#FF621D;">
-                    Upgrade your experience                                
-                  </h3>
-                </div>
-                <div class="card-email-2 tag-desk-table" style="font-family:'DM Sans', sans-serif;color:#333;display:table;background-color:#FFF;width:95%;margin-left:auto;margin-right:auto;border-radius:15px;padding:0px 22px 14px 43px;box-sizing:border-box;">
-                  <table role="presentation" border="0" cellspacing="0" width="100%" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                    <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                      <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                        <div class="padding-top-text-transfer" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;padding-top:22px;">
-                          <h4 class="transfer-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-size:20px;line-height:normal;font-weight:700;margin:0;color:#F37021;margin-top:0;margin-bottom:0;">
-                            TRANSFER
-                          </h4>
-                          <h4 class="transfer-text-type margin-bottom-10" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;margin-bottom:10px;font-size:36px;line-height:100%;font-weight:700;color:#333;margin-top:0;">
-                            Deluxe
-                          </h4>
-                          <ul class="ul-transfer-content" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;padding:0;margin-top:0;">
-                            <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                              <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                                More comfort and style
-                              </h4>
-                            </li>
-                            <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                              <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                                High-end vehicles
-                              </h4>
-                            </li>
-                            <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                              <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                                Direct transfer
-                              </h4>
-                            </li>
-                            <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                              <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                                Additional amenities
-                              </h4>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                      <td class="align-img-transfer" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;vertical-align:middle;">
-                        <img class="img-transfer" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusDeluxe2024.png" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;height:auto;width:310px;vertical-align:middle;">
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="tag-mob" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;display:none;">
-                  <div class="card-email-2" style="font-family:'DM Sans', sans-serif;color:#333;background-color:#FFF;width:95%;margin-left:auto;margin-right:auto;border-radius:15px;padding:0px 22px 14px 43px;box-sizing:border-box;">
-                    <div class="padding-top-text-transfer" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;padding-top:22px;">
-                      <h4 class="transfer-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-size:20px;line-height:normal;font-weight:700;margin:0;color:#F37021;margin-top:0;margin-bottom:0;">
-                        TRANSFER
-                      </h4>
-                      <h4 class="transfer-text-type margin-bottom-10" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;margin-bottom:10px;font-size:36px;line-height:100%;font-weight:700;color:#333;margin-top:0;">
-                        Deluxe
-                      </h4>
-                      <div class="container-redes" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:fit-content;margin-left:auto;margin-right:auto;">
-                        <ul class="ul-transfer-content" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;padding:0;margin-top:0;">
-                          <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                              More comfort and style
-                            </h4>
-                          </li>
-                          <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                              High-end vehicles
-                            </h4>
-                          </li>
-                          <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                              Direct transfer
-                            </h4>
-                          </li>
-                          <li style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
-                            <h4 class="bullets-description" style="font-family:'DM Sans', sans-serif;box-sizing:border-box;color:#333;font-weight:500;margin-top:0;margin-bottom:0;font-size:16px;">
-                              Additional amenities
-                            </h4>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="align-img-transfer" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;vertical-align:middle;">
-                      <div class="container-redes-esp" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:90%;margin-left:auto;margin-right:auto;">
-                        <img class="img-transfer" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusDeluxe2024.png" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;height:auto;width:310px;vertical-align:middle;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </td>
           </tr>
         </table>
@@ -438,7 +325,7 @@
           <tr style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
             <td style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;">
               <div class="container-text" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;width:fit-content;margin-left:auto;margin-right:auto;padding:0 2.5%;">
-                <a href="https://www.nexustours.com/?&utm_source=nexusB2C&utm_medium=mail&utm_campaign=pickup_transfer&contact_id={{contact.id}}" target="_blank" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;text-decoration:none;">
+                <a href="https://www.nexustours.com/?utm_source=nexusB2C&utm_medium=mail&utm_campaign=pickup_transfer&contact_id={{contact.id}}" target="_blank" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;text-decoration:none;">
                   <h3 class="dominio" style="font-family:'DM Sans', sans-serif;color:#333;box-sizing:border-box;font-size:16px;color:#FFF;margin-top:20px;margin-bottom:5px;">
                     www.nexustours.com
                   </h3>
