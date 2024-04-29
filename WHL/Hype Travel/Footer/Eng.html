@@ -1,0 +1,813 @@
+<!-- Guia Footer Eng -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+    *{
+        transition: all ease .5s;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active{
+        color: #0097A1;
+    }
+    .footer{
+        background-color: #0097A1;
+        padding-top: 63px; 
+        padding-bottom: 50px; 
+        width: 1160px; 
+    }
+    @media (max-width:1200px){
+        .footer{
+            width: 960px; 
+        }
+    }
+    @media (max-width:992px){
+        .footer{
+            width: 100%; 
+        }
+    }
+
+    .container-content-footer{
+        width: 100%;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 21px;
+    }
+
+    .container-content-footer-low{
+        width: 1160px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .container-content-footer-md{
+        width: 960px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 21px;
+    }
+
+    .container-content-footer-low-md{
+        width: 960px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .container-listas{
+        width: 90%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .subcontainer-listas{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .listas{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .orange-text{
+        font-size: 16px; 
+        font-weight: 700; 
+        line-height: 100%; 
+        color: #fff !important;
+        width: fit-content;
+    }
+
+    .a-text-listas,
+    .a-text-listas:hover,
+    .a-text-listas:visited{
+        text-decoration: none !important;
+        color: #fff !important;
+        display: inline-block;
+    }
+
+    .text-listas{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #fff !important;
+    }
+
+    .text-listas-mob{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        background-color: #fff !important;
+        padding: 1rem;
+        margin: 0 0 1rem; 
+        font-weight: 600;
+    }
+
+    .gap-text-listas{
+        display: flex; 
+        flex-direction: column;
+        gap:4px;
+    }
+
+
+    .ul-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-elements{
+        margin-bottom: 2px;
+    }
+
+    .collapsible {
+        background-color: #0097A1;
+        color: #fff !important;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 17px;
+        font-weight: 600; 
+        line-height: 16.32px; 
+        border-bottom: 1.5px solid #bbbbbb;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #0097A1;
+    }
+
+    .content {
+        padding: 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #0097A1;
+    }
+
+    .icon-rot{
+        width: 30px; 
+        height: 15px; 
+        margin-left: auto; 
+        rotate: 0deg;
+        transition: all .5s;
+    }
+
+    .container-logo{
+        width: 40%; 
+        padding-left: 50px;
+    }
+    
+
+    .content-logo{
+        width: fit-content; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .text-logo{
+        font-size: 22px; 
+        font-weight: 600; 
+        color: #565657; 
+        line-height: normal; 
+        text-align: center;
+        letter-spacing: .2px;
+    }
+
+    .container-social{
+        display: flex; 
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        width: 34px; 
+        height: 34px;
+    }
+    
+    .payment-style{
+        font-size: 10px; 
+        line-height: 12.55px; 
+        color: #565657; 
+        margin-right: auto; 
+        margin-left: 5%;
+    }
+
+    .cards{
+        margin-right: auto;
+    }
+    
+    .reserved-rights{
+        font-size: 10px; 
+        line-height: 12.55px; 
+        color: #F36F21; 
+        margin-right: 5%;
+    }
+
+    .a-text-listas-mob,
+    .a-text-listas-mob:visited{
+        text-decoration: none !important;
+    }
+
+    .complete-footer-body{
+        width: 100%;
+        /*background-color: #0097A1;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-header-right{
+        margin-left: auto;
+        margin-right: 8.6%;
+        width: fit-content;
+    }
+
+    .text-header-right-md{
+        margin-left: auto;
+        margin-right: 5%;
+        width: fit-content;
+    }
+
+    .header-titles{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .margin-bottom-13{
+        margin-bottom: 13px;
+    }
+
+    .margin-bottom-26{
+        margin-bottom: 26px;
+    }
+
+    .margin-bottom-8{
+        margin-bottom: 8px;
+    }
+
+    .tag-hidden{
+        display:none;
+    }
+
+    .container-getSocial-mobile{
+        width: 202px;
+        margin: auto;
+    }
+
+    .full-top{
+        margin-top: 29px;
+    }
+
+</style>
+
+<body>
+    <div class="complete-footer-body">
+        <div class="footer">
+            <div class="container-content-footer hidden-md hidden-sm hidden-xs">
+                <!--div class="container-logo">
+                    <div class="content-logo">
+                        <img class="logo" src="https://www.nexustours.com/images/upload//footer/logo-nexus-rebranding.png">
+                        <div class="text-logo">
+                            Get social with us!
+                        </div>
+                        <div class="container-social">
+                            <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                            </a>
+                            <a href="https://twitter.com/NexusTours" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                            </a>
+                            <a href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                            </a>
+                            <a href="https://www.instagram.com/nexustours/" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                            </a>
+                            <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                            </a>
+                        </div>
+                    </div>
+                </div-->
+                <div class="container-listas">
+                    <div>
+                        <div class="subcontainer-listas">
+                            <div class="listas">
+                                <div class="orange-text">
+                                    Policies
+                                </div>
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/privacy-policy" target="_blank">
+                                                <div class="text-listas">
+                                                    Privacy policy
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/terms-and-conditions" target="_blank">
+                                                <div class="text-listas">
+                                                    Terms and conditions
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/user-agreement" target="_blank">
+                                                <div class="text-listas">
+                                                    User agreement
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas">
+                                <div class="orange-text">
+                                    Top Destination
+                                </div>
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements"> 
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/grenada/109101?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Antigua
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/jamaica/108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Jamaica
+                                                </div>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/dominican-republic/puerto-plata-province/puerto-plata/180657?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Puerto Plata
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas full-top">
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                    Punta Cana
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">   
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/jamaica/110034?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                  Montego Bay
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/cancun/109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                                <div class="text-listas">
+                                                  Cancún
+                                                </div>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listas">
+                                <div class="orange-text">
+                                  Top Excursions
+                                </div>
+                                <div class="gap-text-listas">
+                                    <ul class="ul-list">
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                                <div class="text-listas">
+                                                    Marinarium
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=2259&paxs=10&productType=TKT&destinationID=109303&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                                <div class="text-listas">
+                                                    Chichen Itzá Tour
+                                                </div>
+                                            </a>
+                                        </li>
+                                      
+                                        <li class="list-elements">
+                                            <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=7301&paxs=10&productType=TKT&destinationID=110034&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                                <div class="text-listas">
+                                                    Falmouth Laguna Luminosa
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content-footer-low hidden-md hidden-sm hidden-xs tag-hidden">
+                <div class="payment-style">
+                    Payments accepted include:
+                </div>
+                <img class="cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Footer/tarjetas_2.png">
+                <div class="reserved-rights">
+                    2023 © Nexus Powered by Juniper
+                </div>
+            </div>
+            <div class="container-content-footer-md hidden-xl hidden-lg hidden-sm hidden-xs">
+                <!--div class="container-logo">
+                    <div class="content-logo">
+                        <img class="logo" src="https://www.nexustours.com/images/upload//footer/logo-nexus-rebranding.png">
+                        <div class="text-logo">
+                            Get social with us!
+                        </div>
+                        <div class="container-social">
+                            <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                            </a>
+                            <a href="https://twitter.com/NexusTours" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                            </a>
+                            <a href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                            </a>
+                            <a href="https://www.instagram.com/nexustours/" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                            </a>
+                            <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                            </a>
+                        </div>
+                    </div>
+                </div-->
+                <div class="container-listas">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="orange-text">
+                                Policies
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/privacy-policy" target="_blank">
+                                            <div class="text-listas">
+                                                Privacy policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/terms-and-conditions" target="_blank">
+                                            <div class="text-listas">
+                                                Terms and conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/user-agreement" target="_blank">
+                                            <div class="text-listas">
+                                                User agreement
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                                Top Destination
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/grenada/109101?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Antigua
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/jamaica/108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Jamaica
+                                            </div>
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/dominican-republic/puerto-plata-province/puerto-plata/180657?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Puerto Plata
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas full-top">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/mexico/jalisco/puerto-vallarta-city/149348?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Puerto Vallarta
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                                Punta Cana
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/jamaica/195436?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                              Montego Bay
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements"> 
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/cancun/109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas">
+                                              Cancún
+                                            </div>
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listas">
+                            <div class="orange-text">
+                              Top Excursions
+                            </div>
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                            <div class="text-listas">
+                                                Marinarium
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=2259&paxs=10&productType=TKT&destinationID=109303&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                            <div class="text-listas">
+                                                Chichen Itzá Tour
+                                            </div>
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="list-elements">
+                                        <a class="a-text-listas" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=7301&paxs=10&productType=TKT&destinationID=110034&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                            <div class="text-listas">
+                                                Falmouth Laguna Luminosa
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content-footer-low-md hidden-xl hidden-lg hidden-sm hidden-xs tag-hidden">
+                <div class="payment-style">
+                    Payments accepted include:
+                </div>
+                <img class="cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Footer/tarjetas_2.png">
+                <div class="reserved-rights">
+                    2023 © Nexus Powered by Juniper
+                </div>
+            </div>
+            <div class="container-content-footer-mb hidden-xl hidden-lg hidden-md margin-bottom-26" style="width: 100%;">
+                <div class="container-logo" style="padding: 0px; width: auto; margin-bottom: 20px;">
+                    <div class="content-logo" style="margin: auto; gap: 10px;">
+                        <!--img class="logo-mob" src="https://www.nexustours.com/images/upload//footer/logo-nexus-horizontal.png"-->
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Policies
+                    <img class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/privacy-policy" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Privacy policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/terms-and-conditions" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Terms and conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/user-agreement" target="_blank">
+                                            <div class="text-listas-mob">
+                                                User agreement
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Top Destination
+                    <img class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/grenada/109101?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Antigua
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/jamaica/108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Jamaica
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/dominican-republic/puerto-plata-province/puerto-plata/180657?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Puerto Plata
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Punta Cana
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">  
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/jamaica/110034?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Montego Bay
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/cancun/109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                              Cancún
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    Top Excursions
+                    <img class="icon-rot" src="https://www.nexustours.com/images/upload//footer/arrow-down-black.png">
+                </div>
+                <div class="content">
+                    <div class="subcontainer-listas">
+                        <div class="listas">
+                            <div class="gap-text-listas">
+                                <ul class="ul-list">
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=554&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Marinarium
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/SGN%C2%A5TKT%C2%A55042%C2%A5110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Chichen Itzá Tour
+                                            </div>
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="list-elements">
+                                        <a class="a-text-listas-mob" href="https://www.cancuntransfersandtours.com/services/details.aspx?productID=7301&paxs=10&productType=TKT&destinationID=110034&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                                            <div class="text-listas-mob">
+                                                Falmouth Laguna Luminosa
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--div class="container-getSocial-mobile hidden-xl hidden-lg hidden-md">
+                <div class="text-logo">
+                    Get social with us!
+                </div>
+                <div class="container-social">
+                    <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                        <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_facebook.png">
+                    </a>
+                    <a href="https://twitter.com/NexusTours" target="_blank">
+                        <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_twitter.png">
+                    </a>
+                    <a href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                        <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_linkedin.png">
+                    </a>
+                    <a href="https://www.instagram.com/nexustours/" target="_blank">
+                        <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_ig.png">
+                    </a>
+                    <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                        <img class="social-media" src="https://www.nexustours.com/images/upload//footer/rebranding_tripadvisor.png">
+                    </a>
+                </div>
+            </div-->
+            <div class="container-content-footer-low-md hidden-xl hidden-lg hidden-md tag-hidden" style="width: 100%; flex-direction: column; gap: 13px;">
+                <div class="payment-style" style="margin: auto;">
+                    Payments accepted include:
+                </div>
+                <img class="cards" style="margin-left: auto;" src="https://www.nexustours.com/images/upload//Landing%20Pages/Footer/tarjetas_2.png">
+                <div class="reserved-rights" style="margin: auto;">
+                    2023 © Nexus Powered by Juniper
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                var icon = this.getElementsByClassName("icon-rot")[0];
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    icon.style.rotate = "0deg";
+                } else {
+                    content.style.display = "block";
+                    icon.style.rotate = "180deg";
+                }
+            });
+        }
+    </script>
+</body>

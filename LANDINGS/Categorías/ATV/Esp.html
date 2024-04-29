@@ -1,0 +1,3280 @@
+<!--Español-->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        a,
+        a:hover,
+        a:visited{
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, p{
+            margin: 0;
+        }
+
+        .body-media{
+            width: 1160px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+        @media (max-width: 1200px){
+            .body-media{
+                width: 960px;
+            }
+        }
+        @media (max-width: 992px){
+            .body-media{
+                width: 100%;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media (max-width: 992px){
+            .tag-desk{
+                display: none;
+            }
+        }
+        .tag-mob{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tag-mob{
+                display: block;
+            }
+        }
+
+        .arrayFiltros{
+            position: absolute; 
+            right: 0; 
+            top: 58px; 
+            width: 25%; 
+            height: 360px; 
+            z-index: 10; 
+            background-color: white; 
+            border-radius: 19px; 
+            overflow: hidden; 
+            padding: 35px 39px 42px 49px; 
+            box-sizing: border-box;
+            display: none;
+        }
+        @media (min-width:993px) and (max-width:1200px){
+            .arrayFiltros{
+                width: 30%; 
+            }
+        }
+
+        @media (max-width:993px){
+            .arrayFiltros{
+                width: 260px; 
+                height: 660px;
+            }
+        }
+
+        .content-arrayFiltros{
+            width: 100%; 
+            height: 100%;
+        }
+
+        .styleTitleFiltros{
+            color: #57A958; 
+            font-weight: 700; 
+            font-size: 24px; 
+            line-height: 137%; 
+            margin-bottom: 7px;
+            text-align: left;
+        }
+
+        .container-textDestination{
+            height: 85%; 
+            max-height: 85%; 
+            overflow-y: auto;
+        }
+        @media (max-width:993px){
+            .container-textDestination{
+                height: fit-content; 
+                max-height: none; 
+                overflow-y: none;
+            }
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 4px;
+            opacity: 0;
+        }
+
+        /* Track */
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            transition: all 3s ease;
+        }
+        
+        /* Handle */
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+
+        /* Handle on hover */
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+
+        .textDestination{
+            color: #7E7E7E;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 137%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            user-select: none;
+            display: block;
+            text-align: left;
+        }
+
+        .container-slider-botones{
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .margin-bottom-24{
+            margin-bottom: 24px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-24{
+                margin-bottom: 5vw;
+            }
+        }
+
+        .margin-bottom-48{
+            margin-bottom: 48px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-48{
+                margin-bottom: 7vw;
+            }
+        }
+
+        .title{
+            font-size: 40px !important;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: left !important;
+        }
+        @media (max-width:992px){
+            .title{
+                font-size: 8vw !important;
+                line-height: 121%;
+                font-weight: 700;
+            }
+        }
+
+        .container-botones-tours{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            position: relative;
+            height: 45px;
+            align-items: center;
+        }
+
+        .swiper-button-block{
+            position: static;
+        }
+
+        .button-swiper{
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden; 
+            border-radius: 50px;
+        }
+
+        .imagen-button-swiper{
+            width: 40px; 
+            height: 40px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .imagen-button-swiper{
+                width: 12vw; 
+                height: 12vw;
+            }
+        }
+
+        .container-cards-width{
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width:0px) and (max-width:1200px){
+            .container-cards-width{
+                width: 100%;
+                align-items: flex-start;
+            }
+        }
+
+        .container-link-card{
+            background-color: transparent; 
+            width: 270px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px; 
+            border-radius: 15px 15px 0px 0px; 
+            overflow: hidden; 
+            margin-bottom: 6px;
+            text-align: left;
+        }
+        @media (min-width:0px) and (max-width:1200px){
+            .container-link-card{
+                width: 94%;
+            }
+        }
+
+        .container-slider-card{
+            width: 100%; 
+            height: 177px; 
+            border-radius: 15px; 
+            overflow: hidden;
+        }
+        @media (min-width:992px) and (max-width:1200px){
+            .container-slider-card{
+                height: 206px;
+            }
+        }
+
+        .name-tour-card{
+            font-size: 20px; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #333; 
+            margin: 0; 
+            line-height: normal;
+        }
+
+        .container-destination-card{
+            display: flex; 
+            align-items: center; 
+            gap: 3px;
+        }
+
+        .destination-card{
+            font-size: 12px; 
+            color: #555; 
+            font-weight: 500; 
+            line-height: normal; 
+            letter-spacing: -.5px;
+        }
+
+        .text-card{
+            font-size: 12px; 
+            line-height: normal; 
+            font-weight: 500; 
+            letter-spacing: -.48px; 
+            color: #9D9D9D;
+        }
+
+        .containerPriceCard{
+            display: flex; 
+            flex-direction: row; 
+            gap: 5px; 
+            align-items: flex-end;
+        }
+
+        .precio-card{
+            font-size: 20px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555; 
+            text-transform: uppercase;
+        }
+
+        .precio-card-through{
+            font-size: 16px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555555ab; 
+            text-transform: uppercase;
+            text-decoration: line-through;
+        }
+
+        .container-discount-card{
+            background-color: #FF621D; 
+            width: fit-content; 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            box-sizing: border-box; 
+            padding: 4px 12px; 
+            border-radius: 10px; 
+            gap: 7px;
+            cursor: pointer;
+        }
+
+        .text-discount-card{
+            font-size: 12px; 
+            color: #FFF; 
+            line-height: normal; 
+            letter-spacing: -.36px; 
+            font-weight: 700;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+    
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #FFFFFF !important;
+            padding-top: 22px !important;
+            width: auto !important;
+            height: 20px !important;
+        }
+
+        .container-title-swiper-tours{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /*Card Bottom*/
+
+        .cardDestinoBottom{
+            height: 110px; 
+            border-radius: 12px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+
+        @media (min-width:0px) and (max-width:992px){
+            .cardDestinoBottom{
+                width: 60vw;
+                height: 160px;
+            }
+        }
+
+        .textCardDestinoBottom{
+            text-align: center; 
+            color: white; 
+            font-weight: 500; 
+            line-height: 120%; 
+            font-size: 21px;
+        }
+
+        .containerRowDestinosBottom{
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .containerRowDestinosBottom{
+                flex-direction: row;
+                gap: 2vw;
+            }
+        }
+
+        .containerDestinosBottom{
+            display: flex; 
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .containerDestinosBottom{
+                width: 100%;
+                gap: 2vw;
+            }
+        }
+
+        /*Header Selector*/
+        .grid-slider-header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom: 85px;
+        }
+        @media (max-width: 767px) {
+            .grid-slider-header{
+                display: block;
+                margin-bottom: 12vw;
+            }
+        }
+
+        .slider-left-header {
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        .container-slider-header{
+            position: relative;
+            display: flex;
+            width: 50%;
+        }
+        @media (max-width: 992px) {
+            .container-slider-header{
+                height: fit-content;
+                position: relative;
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        .container-blogs-header{
+            border-radius: 10px;
+            overflow: hidden;
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            margin-left: auto;
+        }
+        @media (max-width: 992px) {
+            .container-blogs-header{
+                margin-left: 0;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .imagen-slider-header{
+            width: 561px; 
+            height: 590px;
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 767px) {
+            .imagen-slider-header{
+                width: 100%; 
+                height: 147vw;
+            }
+        }
+
+        .gradient-blogs-header{
+            position: absolute; 
+            z-index: 2; 
+            width: 100%; 
+            height: 100%; 
+            top: 0; 
+            background:  linear-gradient(0deg, rgba(0, 0, 0, 0.73) 0.08%, rgba(0, 0, 0, 0.00) 55.42%);
+        }
+
+        .container-etiqueta-header{
+            position: absolute;
+            bottom: 36px; 
+            left: 36px;
+        }
+        @media (max-width: 767px) {
+            .container-etiqueta-header{
+                position: absolute;
+                bottom: 8vw; 
+                left: 8vw;
+            }
+        }
+
+        .etiqueta-arriba{
+            font-size: 40px; 
+            line-height: 130%; 
+            font-weight: 700; 
+        }
+        @media (max-width: 767px) {
+            .etiqueta-arriba{
+                font-size: 7vw; 
+                font-weight: 700; 
+            }
+        }
+
+        .white-text{
+            color: #FFFFFF;
+        }
+        
+        .etiqueta-abajo{
+            font-size: 16px; 
+            line-height: 16px; 
+            font-weight: 400; 
+        }
+        @media (max-width: 767px) {
+            .etiqueta-abajo{
+                font-size: 4vw; 
+                line-height: 4vw; 
+                font-weight: 400; 
+            }
+        }
+
+        .orange-nexus-bg{
+            background-color: #F37021;
+        }
+
+        .etiqueta-abajo-mob{
+            padding: 8px 17px; 
+            width: fit-content; 
+            margin-left: 0; 
+            font-size: 16px; 
+            border-radius: 50px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .etiqueta-abajo-mob{
+                padding: 2vw 5vw; 
+                font-size: 4vw; 
+            }
+        }
+
+        .activador{
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            z-index: 3;
+        }
+
+        .imagen-right-header{
+            width: 565px; 
+            height: 290px; 
+        }
+
+        .container-bottom-slider{
+            display: flex; 
+            flex-direction: row;
+            margin-bottom: 69px;
+        }
+
+        .container-botones-2{
+            position: absolute; 
+            display: flex;  
+            gap: 10px;
+            bottom: 35px;
+            height: 40px;
+            right: 41px;
+            width: 122px;
+        }
+        @media (max-width: 767px) {
+            .container-botones-2{
+                position: absolute; 
+                display: flex;  
+                gap: 2vw;
+                bottom: 8vw;
+                right: 8vw;
+                width: 32vw;
+            }
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        @media (max-width: 992px){
+            .margin-bottom-5{
+                margin-bottom: 15px;
+            }
+        }
+
+        .containerRecomendado{
+            padding: 5px 5px; 
+            background-color: #333; 
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .containerLeftRectangle{
+            height: 280px; 
+            border-radius: 10px;
+        }
+
+        .backgroundGradientLeft{
+            background: linear-gradient(95deg, #FD921E -3.06%, #FF621D 47.11%, #E73A4E 98.35%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .backgroundImgLeft{
+            background-image: url('https://www.nexustours.com/images/upload/services/ATV_Express_Canc_n_/ATVImg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 0 25px 21px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .containerLeft{
+            width: 50%; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+        }
+
+        .containerTextRectangle{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: end; 
+            gap: 20px;
+        }
+
+        .containerTitleRectangle{
+            width: 370px;
+        }
+
+        .titleRectangle{
+            font-size: 25px; 
+            font-weight: 500; 
+            line-height: 130%;
+        }
+
+        .subtitleGradientLeft{
+            font-size: 18px; 
+            line-height: 130%;
+        }
+
+        .titleGradientLeft{
+            font-size: 60px; 
+            font-weight: 700; 
+            line-height: 100%;
+        }
+
+        .terminos {
+            margin-top: 20px;
+            & p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 144.9%;
+            }
+        }
+
+
+        .tag-deskFlex{
+            display: flex;
+        }
+        @media (max-width: 992px){
+            .tag-deskFlex{
+                display: none;
+            }
+        }
+
+        .tag-mobFlex{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tag-mobFlex{
+                display: flex;
+            }
+        }
+
+        @media (max-width: 992px){
+            .container5{
+                width: 308vw;
+            }
+        }
+
+        @media (max-width: 992px){
+            .container4{
+                width: 248vw;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .banner-mob {
+                display: block;
+            }
+            .banner-desk {
+                display: none !important;
+            }
+        }
+
+        .margin-bottom-46{
+            margin-bottom: 46px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-46{
+                margin-bottom: 6vw;
+            }
+        }
+        
+        .swiper-product {
+            width: 95%;
+            height: 570px;
+        }
+
+        @media (max-width:1200px){
+            .swiper-product {
+                width: 95%;
+                height: 578px;
+            }
+        }
+
+        @media (max-width:992px){
+            .swiper-product {
+                width: 97.5vw;
+                height: 120vw;
+            }
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 577px;
+            margin: 0;
+        }
+
+        .swiper-card{
+            margin: auto;
+        }
+        @media (max-width:992px){
+            .swiper-card{
+                margin-top: 0vw;
+                height: auto;
+            }
+        }
+
+        .card-slider-tour{
+            height: auto;
+            width: 345px;
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid #EDEEEF;
+        }
+        @media (max-width:1200px){
+            .card-slider-tour{
+                width: 285px;
+            }
+        }
+        @media (max-width:992px){
+            .card-slider-tour{
+                width: 80vw;
+            }
+        }
+
+        .card-slider-tour:hover{
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, .2);
+        }
+
+        .container-img-card{
+            width: 100%;
+            height: 240px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        @media (max-width:992px){
+            .container-img-card{
+                height: 52vw;
+            }
+        }
+
+        .etiqueta-card{
+            position: absolute;
+            padding: 7px 16px 7px 15px;
+            bottom: 0;
+            left: auto;
+            right: 10%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        @media (max-width:992px){
+            .etiqueta-card{
+                padding: 7px 16px 7px 15px;
+                gap: 6px;
+            }
+        }
+
+        .icon-maps{
+            width: 12px;
+            height: 16px;
+        }
+
+        .icon-maps-trans{
+            height: 16px;
+        }
+        @media (max-width:992px){
+            .icon-maps-trans{
+                height: 3vw;
+            }
+        }
+
+        .text-etiqueta-imagen{
+            font-size: 12px;
+        }
+        @media (max-width: 992px){
+            .text-etiqueta-imagen{
+                font-size: 3.5vw;
+            }
+        }
+
+        .container-text-card{
+            height: Auto;
+            width: 100%;
+        }
+
+        .container-text-card-upper-transfer-home{
+                padding: 17px 20px 0px 20px;
+                height: 130px;
+            }
+
+        @media(max-width:1200px){
+            .container-text-card-upper-transfer-home{
+                padding: 8px 7px 0px 13px;
+                height: 140px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-upper-transfer-home{
+                padding: 4vw 5vw 0vw 5vw;
+                height: 38vw;
+            }
+        }
+
+        .container-text-card-upper{
+            padding: 17px 32px 0px 29px;
+            height: 155px;
+        }
+
+        @media(max-width:1200px){
+            .container-text-card-upper{
+                height: 180px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-upper{
+                padding: 4vw 5vw 0vw 5vw;
+                height: 39vw;
+            }
+        }
+
+        .container-text-card-bottom-transfer-home{
+            height: 65px;
+            border-top: 1px solid #DDE1E8;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        @media (max-width:992px){
+            .container-text-card-bottom-transfer-home{
+                height: 13vw;
+            }
+        }
+
+        .container-text-card-bottom{
+            height: 74px;
+            border-top: 1px solid #DDE1E8;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 0 29px;
+            box-sizing: border-box;
+        }
+        @media (max-width:1200px){
+            .container-text-card-bottom{
+                padding: 0px 0px 0px 26px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-bottom{
+                height: 18vw;
+            }
+        }
+
+        .text-gradient{
+            font-size: 12px;
+            font-weight: 900;
+            color: #F37021;
+            text-align: left;
+        }
+        @media (max-width:992px){
+            .text-gradient{
+                font-size: 3vw;
+                margin-bottom: 1vw;
+            }
+        }
+
+        .text-gradient-2{
+            font-size: 12px;
+            font-weight: 900;
+            color:rgba(255, 98, 29, 1);
+        }
+        @media (max-width:992px){
+            .text-gradient-2{
+                font-size: 3vw;
+            }
+        }
+
+        .title-tour{
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            line-height: 120%;
+            text-align: left;
+        }
+        @media (max-width:1200px){
+            .title-tour{
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width:992px){
+            .title-tour{
+                font-size: 4.5vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .text-parrafo-card{
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: left;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        @media (max-width:992px){
+            .text-parrafo-card{
+                font-size: 3.8vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .container-all-icon-text-card{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .container-icon-text-card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .text-cards-icon{
+            color: #8F8F8F;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 120%;
+            text-align: left;
+        }
+        @media (max-width:992px){
+            .text-cards-icon{
+                font-size: 2.8vw;
+            }
+        }
+
+        .content-bottom-price{
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            width: fit-content;
+            margin: auto 7% auto auto;
+            align-items: flex-end;
+            gap: 5px;
+        }
+        @media (max-width:992px){
+            .content-bottom-price{
+                gap: 5px;
+            }
+        }
+
+        .boton-tarifas{
+            width: fit-content;
+            border-radius: 100px;
+            padding: 10px 18px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        @media (max-width:1200px){
+            .boton-tarifas{
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width:992px){
+            .boton-tarifas{
+                padding: 2vw 4vw;
+                font-size: 3vw;
+            }
+        }
+
+        .icon-cards{
+            height: 20px;
+            width: 20px;
+        }
+
+        .black-nexus{
+            color: #333;
+        }
+
+        .gray-text-card{
+            color: #473d35;
+        }
+
+        .colorWHL{
+            background-color: #F37021;
+        }
+
+        .colorBotonWHL{
+            background: #F37021;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin-bottom-24">
+        <img style="display: block; width: 100%;" class="banner-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/landing/ATV_esp.jpg">
+        <img style="width: 100%;" class="tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/landing/ATVmob_esp.jpg">
+    </div>
+    <div class="body-media">
+        <div class="margin-bottom-48" style="display: flex; justify-content: space-between;">
+            <div class="containerLeft tag-deskFlex">
+                <div class="containerLeftRectangle backgroundGradientLeft">
+                    <div>
+                        <span class="white-text subtitleGradientLeft">
+                            Reserva Ahora
+                        </span>
+                        <h1 class="white-text titleGradientLeft">
+                            Top Excursiones
+                        </h1>
+                    </div>
+                </div>
+                <a href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥10790¥109303?addDays=2&nights=6&paxs=10" class="containerLeftRectangle backgroundImgLeft" target="_blank">
+                    <div class="containerTextRectangle">
+                        <div class="containerTitleRectangle">
+                            <div class="margin-bottom-5 containerRecomendado">
+                                <p class="white-text">
+                                    Nuestra selección en Cancún
+                                </p>
+                            </div>
+                            <p class="white-text titleRectangle">
+                                ATV Express Cancún
+                            </p>
+                        </div>
+                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                            Reserva Ahora
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container-slider-header">
+                <div class="swiper swiperBlogsHeader" style="width: 100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/1370/VIP_Buggies.jpg">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/1370/VIP_Buggies.jpg');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Tour Recomendado en Punta Cana:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5"> 
+                                            VIP Punta Cana Buggies
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Reserva Ahora
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥1370¥110282?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/Jamwest_ATV.jpg">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/Jamwest_ATV.jpg');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Tour Recomendado en Jamaica:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5">
+                                            Jamwest ATV
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Reserva Ahora
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥7265¥108913?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/ATV_Tour_2_Hours/Double_ATV.jpg">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/ATV_Tour_2_Hours/Double_ATV.jpg');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Tour Recomendado en Costa Rica:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5"> 
+                                            ATV Tour 2 Hours
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Reserva Ahora
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7892¥108888?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bottom-slider">
+                    <div class="container-botones-2">
+                        <div class="swiper-button-next swiper-header-button-next">
+                            <div class="button-swiper">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/botonGris.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-header-button-prev">
+                            <div class="button-swiper" style="transform: rotate(180deg);">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/botonGris.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Cancun">
+            <h2 class="title">
+                Cancún & Riviera Maya
+            </h2>
+            <div class="swiper-button-next swiper1-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper1-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="swiper mySwiper swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥597¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Xtreme_y_Tulum/MAIN-597-ATV-Xtreme---Tulum-soxceu.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Xtreme y Tulum
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        La excursión ATV Xtreme & Tulum cuenta con un increíble e idílico entorno natural.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2052¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Xtreme_y_Tirolesas/MAIN_Web_single_MEXPDC08748.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Xtreme y Tirolesas
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Experimenta la emoción de volar sobre la selva maya en un circuito rápido de tirolesas.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥10800¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Express_Canc_n_Doble/V2Copia-de-ATVs-1-cd8oh0-3-ehdizb.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Express Cancún Doble
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Explora los senderos llenos de adrenalina de la selva maya acompañado de un guía experto en ATV Can - Am 450 cc
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥10790¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Express_Canc_n_/ATVImg.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Express Cancún
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Los viajeros pueden conducir un vehículo todo terreno en la jungla maya y experimentar la emoción de la exploración todoterreno.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥597¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Xtreme_y_Tulum/MAIN-597-ATV-Xtreme---Tulum-soxceu.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancún & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Xtreme y Tulum
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    La excursión ATV Xtreme & Tulum cuenta con un increíble e idílico entorno natural.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2052¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Xtreme_y_Tirolesas/MAIN_Web_single_MEXPDC08748.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancún & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Xtreme y Tirolesas
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Experimenta la emoción de volar sobre la selva maya en un circuito rápido de tirolesas.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥10800¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Express_Canc_n_Doble/V2Copia-de-ATVs-1-cd8oh0-3-ehdizb.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancún & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Express Cancún Doble
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Explora los senderos llenos de adrenalina de la selva maya acompañado de un guía experto en ATV Can - Am 450 cc
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥10790¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Express_Canc_n_/ATVImg.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancún & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Express Cancún
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Los viajeros pueden conducir un vehículo todo terreno en la jungla maya y experimentar la emoción de la exploración todoterreno.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Punta-Cana">
+            <h2 class="title">
+                Punta Cana
+            </h2>
+            <div class="swiper-button-next swiper2-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper2-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper2 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥1355¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Punta_Cana_Buggies/V2punta-cana-buggies-double-08-3-c3kesh.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Buggies Individual Regular
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Descubre cuevas escondidas, playas vírgenes y saborea los productos más famosos de República Dominicana.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Punta_Cana_Buggies_Doble/v2-Punta-Cana-Buggies-Doble--8--kopff1.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Buggies Doble Regular
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Emoción todoterreno en Punta Cana! Elige ser el conductor o pasajero en este recorrido en buggy.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥4737¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/Excursions/4737_Fun_Park_Punta_Cana/Images/v2_fun-park-double-familiar-punta-cana-11_gwtrze.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Fun Park Tour - Doble y Familiar
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡En Fun Park, la emoción está garantizada! Experimenta toda la adrenalina que puedas.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥1370¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/1370/Buggies_VIP_%282%29.png);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        VIP Punta Cana Buggies
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Explora a todo terreno la belleza natural de Punta Cana en tu buggy VIP.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥1355¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Punta_Cana_Buggies/V2punta-cana-buggies-double-08-3-c3kesh.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Buggies Individual Regular
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Descubre cuevas escondidas, playas vírgenes y saborea los productos más famosos de República Dominicana.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Punta_Cana_Buggies_Doble/v2-Punta-Cana-Buggies-Doble--8--kopff1.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Buggies Doble Regular
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Emoción todoterreno en Punta Cana! Elige ser el conductor o pasajero en este recorrido en buggy.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥4737¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/Excursions/4737_Fun_Park_Punta_Cana/Images/v2_fun-park-double-familiar-punta-cana-11_gwtrze.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Fun Park Tour - Doble y Familiar
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡En Fun Park, la emoción está garantizada! Experimenta toda la adrenalina que puedas.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥1370¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/1370/Buggies_VIP_%282%29.png);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    VIP Punta Cana Buggies
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Explora a todo terreno la belleza natural de Punta Cana en tu buggy VIP.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Jamaica">
+            <h2 class="title">
+                Jamaica
+            </h2>
+            <div class="swiper-button-next swiper3-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper3-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper3 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥7417¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Yaaman_Combo_ATV_Dune_Buggy___Blue_Hole/yaaman-combo-atv-dunne-buggy-blue-hole--15-.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Yaaman Buggy - Aventura en ATV
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Explora desafiantes caminos en una aventura en un vehículo todo terreno con Yaaman Dune Buggy en Jamaica!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥7290¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Chukka_ATV___Horseback_Ride__N__Swim/chukka-atv-horse-ride-negril-01-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Island Double Motorized
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Una aventura a la medida para aquellos que quieren ir más allá del turismo tradicional para sumergirte en experiencias auténticas y fuera de lo común.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥7267¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Jamwest_Combo/MAIN-7267-Jamwest-Combo-czzvie.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Jamwest Combo
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Vuela a nuevas alturas y sumérgete en impresionantes vistas panorámicas mientras te deslizas por el dosel en la emocionante tirolesa en Jamwest Motorsports and Adventure Park.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥8425¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Ocean_Triple_SBY_Non_motorized/V2chukka-atv-horse-ride-negril-01-uakojp.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Ocean Triple SBY Non motorized
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Prepárate para dejarte cautivar por las impresionantes vistas panorámicas de Jamaica con Ocean Triple SBY.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥7417¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Yaaman_Combo_ATV_Dune_Buggy___Blue_Hole/yaaman-combo-atv-dunne-buggy-blue-hole--15-.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Yaaman Buggy - Aventura en ATV
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Explora desafiantes caminos en una aventura en un vehículo todo terreno con Yaaman Dune Buggy en Jamaica!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥7290¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Chukka_ATV___Horseback_Ride__N__Swim/chukka-atv-horse-ride-negril-01-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Island Double Motorized
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Una aventura a la medida para aquellos que quieren ir más allá del turismo tradicional para sumergirte en experiencias auténticas y fuera de lo común.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥7267¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Jamwest_Combo/MAIN-7267-Jamwest-Combo-czzvie.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Jamwest Combo
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Vuela a nuevas alturas y sumérgete en impresionantes vistas panorámicas mientras te deslizas por el dosel en la emocionante tirolesa en Jamwest Motorsports and Adventure Park.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥8425¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Ocean_Triple_SBY_Non_motorized/V2chukka-atv-horse-ride-negril-01-uakojp.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Ocean Triple SBY Non motorized
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Prepárate para dejarte cautivar por las impresionantes vistas panorámicas de Jamaica con Ocean Triple SBY.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Costa Rica">
+            <h2 class="title">
+                Costa Rica
+            </h2>
+            <div class="swiper-button-next swiper4-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper4-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper4 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7983¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_2_Horas/ATV--2-Hours--RIU--6-.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV 2 Horas RIU
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Prepárate para una aventura en vehículos todoterreno en Costa Rica llena de adrenalina como ninguna otra!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7985¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Individual_4_Horas_RIU/MAIN-7985-ATV-Single-4-Hours-RIU-iovmjh.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Individual 4 Horas RIU
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Prepárate para presenciar sus travesuras y conectarse con la increíble vida salvaje de Costa Rica.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7939¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Sencillo_2_Horas/ATV-Single-Tour-5.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Sencillo 2 Horas
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡El recorrido de 2 horas en vehículo todoterreno muestra la belleza única de Costa Rica!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7876¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tirolesa___ATV/Canopy-and-ATV--2--web.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Tirolesa & ATV
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Cruza de montaña en montaña, pasa a través de un bosque seco de encantadores árboles, mientras disfrutas de la vista de sus tierras bajas desde arriba!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7892¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Tour_2_Hours/MAIN_ATV__Double__Tour__2__Hours.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        ATV Tour 2 Horas
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Escucha el rugido del motor mientras atraviesas senderos entre los árboles y sorprendete con las maravillas que esconde Finca El Roble. ¡No te lo pierdas!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7983¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_2_Horas/ATV--2-Hours--RIU--6-.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV 2 Horas RIU
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Prepárate para una aventura en vehículos todoterreno en Costa Rica llena de adrenalina como ninguna otra!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7985¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Individual_4_Horas_RIU/MAIN-7985-ATV-Single-4-Hours-RIU-iovmjh.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Individual 4 Horas RIU
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Prepárate para presenciar sus travesuras y conectarse con la increíble vida salvaje de Costa Rica.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7939¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Sencillo_2_Horas/ATV-Single-Tour-5.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Sencillo 2 Horas
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡El recorrido de 2 horas en vehículo todoterreno muestra la belleza única de Costa Rica!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7876¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tirolesa___ATV/Canopy-and-ATV--2--web.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Tirolesa & ATV
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Cruza de montaña en montaña, pasa a través de un bosque seco de encantadores árboles, mientras disfrutas de la vista de sus tierras bajas desde arriba!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥7892¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/ATV_Tour_2_Hours/MAIN_ATV__Double__Tour__2__Hours.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    ATV Tour 2 Horas
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Escucha el rugido del motor mientras atraviesas senderos entre los árboles y sorprendete con las maravillas que esconde Finca El Roble. ¡No te lo pierdas!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Aruba">
+            <h2 class="title">
+                Aruba
+            </h2>
+            <div class="swiper-button-next swiper5-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper5-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper5 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥5428¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_ATV_Individual/MAIN_atv-tour-aruba-01-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Tour Privado en ATV Individual
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Abróchate el cinturón y atrévete a dar un paseo por el lado salvaje de Aruba en este Tour Privado en ATV Individual!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥5421¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_UTV_de_Medio_D_a/MAIN_HalfDayPrivateUTV001web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Tour Privado en UTV de Medio Día
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Embárcate en una aventura única en su tipo a lo largo de la costa de Aruba!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥3471¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_UTV_por_la_Tarde/v2-UTV-afternoon-013-bamjyo.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Aventura Aruba UTV por la Tarde
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Conduce tu propio UTV por los caminos intrincados de Parque Nacional Arikok  y descubre el paisaje que te rodea.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥3592¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_en_UTV_por_la_Mana_a___Excursi_n_para_Cruceros/UTV-morning-14.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Aventura Aruba en UTV por la Manaña
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Embárcate en una emocionante aventura por los paisajes más cautivadores de Aruba a bordo de un UTV todoterreno!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Cancelación <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥5428¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_ATV_Individual/MAIN_atv-tour-aruba-01-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Tour Privado en ATV Individual
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Abróchate el cinturón y atrévete a dar un paseo por el lado salvaje de Aruba en este Tour Privado en ATV Individual!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥5421¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_UTV_de_Medio_D_a/MAIN_HalfDayPrivateUTV001web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Tour Privado en UTV de Medio Día
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Embárcate en una aventura única en su tipo a lo largo de la costa de Aruba!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥3471¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_UTV_por_la_Tarde/v2-UTV-afternoon-013-bamjyo.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Aventura Aruba UTV por la Tarde
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Conduce tu propio UTV por los caminos intrincados de Parque Nacional Arikok  y descubre el paisaje que te rodea.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/aruba/SGN¥TKT¥3592¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_en_UTV_por_la_Mana_a___Excursi_n_para_Cruceros/UTV-morning-14.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ATV
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Aventura Aruba en UTV por la Manaña
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Embárcate en una emocionante aventura por los paisajes más cautivadores de Aruba a bordo de un UTV todoterreno!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Cancelación <br>
+                                            flexible
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <h2 class="title margin-bottom-24">
+            Destinos seleccionados
+        </h2>
+        <div style="width: 100%; overflow-x: auto;">
+            <div class="containerRowDestinosBottom">
+                <div class="containerDestinosBottom container5">
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/dominican-republic" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/DominicanaEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Punta Cana
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/jamaica-excursions" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/JamaicaEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Jamaica
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/aruba" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/ArubaEB.jpg);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Aruba
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/cancun" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CancunEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Cancún
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/costa-rica" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CostaRicaEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Costa Rica
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="terminos">
+            <p>
+                *El descuento solo aplica en tours y se verá aplicado automáticamente en  la tarifa final. No aplica con otras promociones o cupones de descuento. <br>
+                **Para acceder al descuento debes iniciar sesión **Precios válidos en productos seleccionados y sujetos a disponibilidad al momento de la compra. <br>
+                *Para acceder al descuento debes iniciar sesión. El descuento se reflejará automáticamente al final de la compra.
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper1-button-next",
+                prevEl: ".swiper1-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
+            },
+        });
+
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper3-button-next",
+                prevEl: ".swiper3-button-prev",
+            },
+        });
+
+        var swiper4 = new Swiper(".mySwiper4", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper4-button-next",
+                prevEl: ".swiper4-button-prev",
+            },
+        });
+
+        var swiper5 = new Swiper(".mySwiper5", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper5-button-next",
+                prevEl: ".swiper5-button-prev",
+            },
+        });
+
+        var swiper5 = new Swiper(".swiperTours-Mob", {
+            slidesPerView: 1.1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var swiper = new Swiper(".swiperBlogsHeader", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-header-pagination",
+                clickable: true,
+            },
+            /*
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            */
+            navigation: {
+                nextEl: ".swiper-header-button-next",
+                prevEl: ".swiper-header-button-prev",
+            },
+            allowTouchMove: false
+        });
+    </script>
+</body>

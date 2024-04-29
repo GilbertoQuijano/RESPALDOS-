@@ -570,6 +570,18 @@
         .gradient-imagen{
             width: 100%; 
             height: 100%; 
+            z-index: 2; 
+            top: 0; 
+            left: 0; 
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gradient-imagen-2{
+            width: 100%; 
+            height: 100%; 
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%); 
             z-index: 2; 
             top: 0; 
@@ -2450,10 +2462,10 @@
 
 
                     <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
-                        <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_fr.jpg" alt="Slider_Home_Carrousel_Promo">
+                        <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BE_fr.jpg" alt="Slider_Home_Carrousel_Promo">
                     </div>
                     <div name="imgCarrouselMob" class="imgCarrousel absoluteImgCarrousel tagMob" style="z-index: 1;">
-                        <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_fr.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
+                        <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BEmob_fr.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
                     </div>
 
 
@@ -2497,13 +2509,13 @@
                         <div name="containerSliderCarrousel" class="containerSliderCarrousel sliderPromoCarrousel" style="z-index: 1; opacity: 0;">
                             <div class="textTerms tagDesk">
                                 *Consultez les conditions générales sur : <br>
-                                www.nexustours.com/discounts
+                                www.nexustours.com/book-early
                             </div>
                             <div class="textTerms tagMob">
-                                *Consultez les conditions générales sur : www.nexustours.com/discounts
+                                *Consultez les conditions générales sur : www.nexustours.com/book-early
                             </div>
                             <div class="containerBotonCTACarrousel">
-                                <a class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
+                                <a class="botonCTACarrouselMob" href="https://www.nexustours.com/book-early" target="_blank">
                                     <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
                                         Réservez maintenant
                                     </div>
@@ -4063,8 +4075,41 @@
                 <div class="swiper swiperDestinations swiper-destinations-style">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Theme_Park/card.jpg);">
+                                <div class="gradient-imagen-2">
+                                    <span class="span-destination">
+                                        Parc d'attractions
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/theme-park" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-york-eng.jpg);">
                                 <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/new-york" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-orlando.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/Orlando" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Riviera Maya
                                     </span>
@@ -4075,7 +4120,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Punta Cana
                                     </span>
@@ -4086,7 +4131,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Jamaïque
                                     </span>
@@ -4097,7 +4142,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Los Cabos
                                     </span>
@@ -4108,7 +4153,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Aruba
                                     </span>
@@ -4119,7 +4164,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Costa Rica
                                     </span>
@@ -4130,7 +4175,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         République <br>
                                         Dominicaine
@@ -4142,7 +4187,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Sainte-Lucie
                                     </span>
@@ -4153,7 +4198,7 @@
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
-                                <div class="gradient-imagen">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
                                         Saint-Martin
                                     </span>
@@ -4185,8 +4230,41 @@
             <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
                 <div class="swiper-wrapper swiper-wrap-auto">
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Theme_Park/card.jpg);">
+                            <div class="gradient-imagen-2">
+                                <span class="span-destination">
+                                    Parc d'attractions
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/theme-park" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-york-eng.jpg);">
                             <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/new-york" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-orlando.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/Orlando" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Riviera Maya
                                 </span>
@@ -4197,7 +4275,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Punta Cana
                                 </span>
@@ -4208,7 +4286,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Jamaïque
                                 </span>
@@ -4219,7 +4297,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Los Cabos
                                 </span>
@@ -4230,7 +4308,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Aruba
                                 </span>
@@ -4241,7 +4319,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Costa Rica
                                 </span>
@@ -4252,7 +4330,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                   République <br>
                                   Dominicaine
@@ -4264,7 +4342,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Sainte Lucía
                                 </span>
@@ -4275,7 +4353,7 @@
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
-                            <div class="gradient-imagen">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Saint-Martin
                                 </span>
