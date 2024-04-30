@@ -1,0 +1,56 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var imgSliderModel = document.querySelectorAll('.imgslidermodel')
+        var activadorIzquierda = document.querySelector('#activadorIzquierda')
+        var activadorDerecha = document.querySelector('#activadorDerecha')
+        var containerSlideModel = document.querySelector('#containerSlideModel')
+
+        for(var i = 0; i < imgSliderModel.length; i++){
+            imgSliderModel[i].setAttribute('position', i)
+        }
+
+        let position = 0
+
+        activadorIzquierda.addEventListener('click', function(){
+            position -= 1
+
+            if(position < 0){
+                position = 2
+            }
+
+            for(var i = 0; i < imgSliderModel.length; i++){
+                if (i == position){
+                    imgSliderModel[i].style.opacity = "100%"
+                }
+                else{
+                    imgSliderModel[i].style.opacity = "0%"
+                }
+            }
+        })
+
+        activadorDerecha.addEventListener('click', function(){
+            position += 1
+
+            if(position > 2){
+                position = 0
+            }
+
+            for(var i = 0; i < imgSliderModel.length; i++){
+                if (i == position){
+                    imgSliderModel[i].style.opacity = "100%"
+                }
+                else{
+                    imgSliderModel[i].style.opacity = "0%"
+                }
+            }
+        })
+
+        containerSlideModel.addEventListener('mouseover', function(){
+            /*
+            containerSlideModel.style.cursor = "none"
+            */
+            containerSlideModel.style.cursor = "url('https://uploads-ssl.webflow.com/66195148790c4d26550e285f/663010935b836b4883a26ae0_cursorSian.svg') hotspot(x, y)"
+        })
+    });
+</script>
