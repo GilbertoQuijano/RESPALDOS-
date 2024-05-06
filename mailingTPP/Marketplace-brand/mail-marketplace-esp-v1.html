@@ -17,11 +17,6 @@
             box-sizing: border-box;
         }
 
-        img{
-            width: 100%;
-            max-width: 100%;
-        }
-
         a{
             text-decoration: none;
         }
@@ -46,9 +41,10 @@
         }
 
         .banner-header{
-            background-image: url('https://www.nexustours.com/images/upload//Email-content/TPP/bannerWelcomeFull.png');
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/3da3e3d9120f5937ab542ebd44488dae.jpg');
+            background-position: center;
             background-size: cover;
-            height: 410px;
+            height: 378px;
             background-position: center;
             border-radius: 0 0 50px 50px;
         }
@@ -89,8 +85,8 @@
             }
         }
 
-        .container90{
-            width: 90%;
+        .container80{
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -191,6 +187,29 @@
             margin-right: auto;
         }
 
+        .titleNY{
+            color: #515151; 
+            text-align: center;
+            margin-top: 0; 
+            margin-bottom: 20px; 
+            font-size: 30px;
+        }
+        @media(max-width:800px){
+            .titleNY{
+                font-size: 6vw !important;
+            }
+        }
+
+        .textNY{
+            font-size: 19px; 
+            font-weight: 500; 
+            margin-top: 0; 
+            margin-bottom: 20px; 
+            color: #333; 
+            line-height: 130%; 
+            letter-spacing: -0.2px;
+        }
+
         .bannerNY{
             border-radius: 10px; 
             overflow: hidden;
@@ -221,16 +240,15 @@
 
         .botonContactUs{
             display: block; 
-            width: 100%; 
+            width: fit-content; 
             margin-left: auto; 
             margin-right: auto; 
             color: white; 
             background-color: #FF621D; 
             border-radius: 32px; 
-            padding: 10px; 
+            padding: 5px 40px; 
             font-size: 16px; 
             font-weight: 700;
-            text-align: center;
         }
 
         .headerSupportCenter{
@@ -283,15 +301,6 @@
             color:#333;
         }
 
-        @media(max-width:800px){
-            .textInnerBotonCorreo{
-                margin-top: 0 !important; 
-                margin-bottom: 0 !important; 
-                font-size: 3.5vw !important; 
-                color:#333 !important;
-            }
-        }
-
         .marginLeft{
             margin-right: 0;
             margin-left: auto;
@@ -305,165 +314,125 @@
                 display: none !important;
             }
         }
-
-        .parrafoCard{
-            width: 100%; 
-            background-color: white; 
-            padding: 20px 25px;
+        /* sd */
+        .mb-22 {
+            margin-bottom: 22px;
+        }
+        .container90 {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-sd{
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            letter-spacing: -0.2px;
+            line-height: 140%;
+            margin: auto 3%;
+        }
+        .stitle-ds {
+            color: #515151;
+            text-align: center;
+        }
+        .card-sd {
+            width: 100%;
             border-radius: 15px;
+            background: #FFF;
+            box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+        }
+        .card-body-sd{
+            padding: 10px;
+        }
+        .card-text-sd {
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            letter-spacing: -0.2px;
+            line-height: 150%;
+            border-bottom: 1px solid #C9C9C9;
+            padding: 0px 40px 10px 40px;
+        }
+        .card-text-l {
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            letter-spacing: -0.2px;
+            line-height: 140%;
+        }
+        
+        .desk-sd-mob {
+            display: none;
+        }
+        .desk-sd {
+            display: block;
         }
 
-        .textParrafoCard{
-            margin-top: 0;
-            margin-bottom: 0; 
-            font-weight: 500; 
-            font-size: 15.5px;
-            text-align: justify;
-        }
-
-        .supportTitle{
-            text-align: center; 
-            font-size: 16px; 
-            font-weight: 500; 
-            line-height: 143%; 
-            color: #979797; 
-            margin-bottom: 28px;
-            margin-top: 5px;
-        }
-        @media(max-width:800px){
-            .supportTitle{
+        @media (max-width: 520px) {
+            .desk-sd-mob {
+                display: block !important;
+            }
+            .desk-sd {
+                display: none !important;
+            }
+            .card-text-sd {
+                padding: 0px 0px 10px 0px!important;
+                font-size: 3vw !important;
+            }
+            .title-sd {
+                font-size: 3vw;
+            }
+            .card-text-l{
+                font-size: 3vw;
+            }
+            .desk-l {
+                padding: 0% !important;
+            }
+            .textInnerBoton {
                 font-size: 4vw !important;
             }
         }
-
-        .titleSection{
-            font-size: 36px; 
-            line-height: normal; 
-            text-align: center; 
-            margin-top: 0; 
-            font-weight: 500;
-        }
-        @media(max-width:800px){
-            .titleSection{
-                font-size: 7vw !important;
+        
+        @media (min-width: 500px) and (max-width: 800px) {
+            .desk-sd {
+                display: block !important;
+            }
+            .desk-sd-mob {
+                display: none !important;
+            }
+            .textInnerBoton {
+                font-size: 4vw !important;
             }
         }
-
-        .botonLogin{
-            display: block; 
-            width: 100%; 
-            margin-left: auto; 
-            margin-right: auto; 
-            color: white; 
-            background-color: #FF621D; 
-            border-radius: 32px; 
-            padding: 5px; 
-            font-size: 16px; 
-            font-weight: 700;
+        
+        .table-sd{
+            list-style: none;
+            display: table;
+            margin: auto;
+            padding: 0px;
+            list-style: none;
+            & li {
+                display: table-row;
+                & div {
+                    display: table-cell;
+                }
+            } 
+        }
+        .btn-sd {
+            display: block;
+            width: 100%;
+            border-radius: 26px;
+            border: 1px solid #DEDEDE;
+            background: #FF621D;
+            color: #FFF;
             text-align: center;
-        }
-        @media(max-width:800px){
-            .botonLogin{
-                width: 80% !important;
-            }
-        }
-
-        .cardLeft{
-            display: block; 
-            padding-right: 7.5px;
-        }
-
-        .cardRight{
-            display: block; 
-            padding-left: 7.5px;
-        }
-
-        .containerCardGuide{
-            width: 100%; 
-            background-color: white; 
-            padding: 25px; 
-            border-radius: 16px;
-        }
-        @media(max-width:800px){
-            .containerCardGuide{
-                padding: 6vw 12vw !important; 
-            }
-        }
-
-        .tamanoGuiaArriba{
-            height: 300px;
-        }
-
-        .containerTitleGuide{
-            margin-top: 0;
+            font-size: 18px;
+            line-height: 123%;
+            padding: 10px 10px;
+            margin-bottom: 20px;
             font-weight: 700;
         }
-
-        .margin-bottom-20{
-            margin-bottom: 20px;
-        }
-
-        .margin-bottom-25{
-            margin-bottom: 25px;
-        }
-
-        .margin-bottom-30{
-            margin-bottom: 30px;
-        }
-
-        .textGuide{
-            margin-top: 0; 
-            margin-bottom: 0; 
-            font-weight: 500; 
-            font-size: 15px; 
-            line-height: 107.7%;
-        }
-        @media(max-width:800px){
-            .textGuide{
-                font-size: 4.1vw !important;
-            }
-        }
-
-        .textSupport{
-            text-align: center; 
-            color: #4A4A4A; 
-            font-size: 22px; 
-            margin-top: 0; 
-            margin-bottom: 10px;
-            line-height: 104%;
-        }
-        @media(max-width:800px){
-            .textSupport{
-                font-size: 5vw !important;
-            }
-        }
-
-        .imgTriangle{
-            width: 10px;
-        }
-
-        .imgCarrito{
-            width: 130px;
-        }
-
-        @media(max-width:800px){
-            .imgCardsMob{
-                width: 80% !important;
-                display: block !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-        }
-
-        @media(max-width:800px){
-            .imgCardCompraMob{
-                width: 60% !important;
-                display: block !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-        }
-
         .countryButtonTitle{
             text-align: left; 
             margin-top: 0; 
@@ -476,7 +445,7 @@
             .countryButtonTitle {
                 font-size: 4.5vw;
             }
-            .textInnerBoton {
+            .textInnerBoton, .textInnerBotonCorreo {
                 font-size: 4.5vw !important;
             }
         }
@@ -499,129 +468,23 @@
                     </td>
                 </tr>
             </table>
-            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+            <table role="presentation" border="0" cellspacing="0" width="100%">
                 <tr>
                     <td>
                         <div class="container90">
-                            <div class="parrafoCard">
-                                <p class="textParrafoCard">
-                                    <span class="bold-text">Estimado Agente,</span>
-                                    <br><br>
-                                    Bienvenido a nuestro Travel Partner Portal. Nos emociona 
-                                    tenerte como nuevo miembro de NexusTours. Como muestra 
-                                    de agradecimiento, te otorgamos hasta un 
-                                    <span class="bold-text orange-nexus">30% de descuento</span> en todas las reservas creadas a través de tu portal
-                                    <a class="bold-text orange-nexus" href="https://tpp.nexustours.com" target="_blank">https://tpp.nexustours.com</a> durante los próximos 60 días 
-                                    a partir de la recepción de este correo.
-                                    <br><br>
-                                    Queremos que aproveches al máximo esta oferta especial para 
-                                    descubrir todas las ventajas y beneficios que te ofrecemos.
-                                </p>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <table id="Instructions" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <td>
-                        <div class="container90">
-                            <h4 class="margin-bottom-15 titleSection">
-                                <span class="orange-nexus bold-text">Instrucciones</span> para canjear tu <span class="orange-nexus bold-text">descuento</span>:
+                            <p class="subtextNY stitle-ds">Bienvenido a NexusTours</p>
+                            <h4 class="titleNY">
+                                Tu puerta de entrada a<br> un <span class="orange-nexus">comercio</span> especializado.
                             </h4>
-                            <table style="table-layout: fixed;" class="margin-bottom-15 tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td>
-                                        <div class="cardLeft">
-                                            <div class="containerCardGuide tamanoGuiaArriba">
-                                                <p class="containerTitleGuide margin-bottom-20">
-                                                    <span>
-                                                        <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                                    </span>
-                                                    PASO 1
-                                                </p>
-                                                <img class="img100 margin-bottom-25" src="https://www.nexustours.com/images/upload//Email-content/TPP/computadoraGuide.png">
-                                                <a class="botonLogin" href="https://tpp.nexustours.com/" target="_blank">
-                                                    Iniciar sesión
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="cardRight">
-                                            <div class="containerCardGuide tamanoGuiaArriba">
-                                                <p class="containerTitleGuide margin-bottom-30">
-                                                    <span>
-                                                        <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                                    </span>
-                                                    PASO 2
-                                                </p>
-                                                <img class="img100 margin-bottom-30" src="https://www.nexustours.com/images/upload//Email-content/TPP/carroGuide.png">
-                                                <p class="textGuide">
-                                                    Explora nuestra amplia gama de servicios y productos.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="containerCardGuide tag-desk">
-                                <table role="presentation" border="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td>
-                                            <p class="containerTitleGuide">
-                                                <span>
-                                                    <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                                </span>
-                                                PASO 3
-                                            </p>
-                                            <p class="textGuide">
-                                                Selecciona los que mejor se adapten a tus necesidades y agrégales al carrito.
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <img class="imgCarrito" src="https://www.nexustours.com/images/upload//Email-content/TPP/compraGuide.png">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="tag-mob">
-                                <div class="containerCardGuide margin-bottom-22">
-                                    <p class="containerTitleGuide margin-bottom-20">
-                                        <span>
-                                            <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                        </span>
-                                        PASO 1
-                                    </p>
-                                    <img class="margin-bottom-25 imgCardsMob" src="https://www.nexustours.com/images/upload//Email-content/TPP/computadoraGuide.png">
-                                    <a class="botonLogin" href="https://tpp.nexustours.com/" target="_blank">
-                                        Iniciar sesión
-                                    </a>
-                                </div>
-                                <div class="containerCardGuide margin-bottom-22">
-                                    <p class="containerTitleGuide margin-bottom-30">
-                                        <span>
-                                            <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                        </span>
-                                        PASO 2
-                                    </p>
-                                    <img class="margin-bottom-30 imgCardsMob" src="https://www.nexustours.com/images/upload//Email-content/TPP/carroGuide.png">
-                                    <p class="textGuide">
-                                        Explora nuestra amplia gama de servicios y productos.
-                                    </p>
-                                </div>
-                                <div class="containerCardGuide">
-                                    <p class="containerTitleGuide margin-bottom-30">
-                                        <span>
-                                            <img class="imgTriangle" src="https://www.nexustours.com/images/upload//Email-content/TPP/triangleOrange.png">
-                                        </span>
-                                        STEP 3
-                                    </p>
-                                    <img class="margin-bottom-30 imgCardCompraMob" src="https://www.nexustours.com/images/upload//Email-content/TPP/compraGuideMob.png">
-                                    <p class="textGuide">
-                                        Selecciona los que mejor se adapten a tus necesidades y agrégales al carrito.
-                                    </p>
-                                </div>
+                            <div class="card-sd mb-22">
+
+                                <p class="title-sd ">
+                                    <span class="bold-text ">Estimado Agente,</span></br></br>
+                                    Para nosotros es un placer invitarte a convertirte en nuestro socio, lo que te permitirá acceder a una serie de beneficios destinados a mejorar  tu negocio.
+                                  </p>
+                            </div>   
+                            <div class="bannerNY margin-bottom-22">
+                                <img class="img100" src="https://www.nexustours.com/images/upload//Email-content/shutterstock_1970092183_1.png">
                             </div>
                         </div>
                     </td>
@@ -631,21 +494,44 @@
                 <tr>
                     <td>
                         <div class="container90">
-                            <p class="textSupport">
-                                Si tienes alguna pregunta o necesitas asistencia, nuestro
-                                <span class="bold-text orange-nexus">Agent Support Center</span> está para atenderte.
-                            </p>
-                            <p class="supportTitle">
-                                NexusTours Team
-                            </p>
-                            <a class="botonContactUs" href="https://tpp.nexustours.com/" target="_blank">
-                                Reserva ahora
-                            </a>
+                            <div class="card-sd">
+                                <div class="card-body-sd desk-sd">
+                                    <p class=" card-text-sd" style="margin-top: auto;"><span><img src="https://www.nexustours.com/images/upload//Email-content/discount.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span> Programa incremental de comisiones</p>
+                        
+                                    <p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/person.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Ofertas exclusivas</p>
+                                    
+                                    <p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/graf.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Procesos de reserva simplificado</p>
+                                    
+                                    <p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/eng.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Soporte personalizado</p>
+                                    
+                                    <p class="card-text-l desk-l" style="padding: 0px 40px 0px 40px; margin-bottom: auto;"><span><img src="https://www.nexustours.com/images/upload//Email-content/calendar.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>tecnología de punta</p>
+                                </div>
+                                <div class="card-body-sd desk-sd-mob">
+                                    <ul class="table-sd">
+                                        <li>
+                                            <div><p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/discount.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span> Incremental commission program</p></div>
+                                        </li>
+                                        <li>
+                                            <div><p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/person.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Exclusive offers</p></div>
+                                        </li>
+                                        <li>
+                                            <div><p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/graf.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Streamlined Booking Process</p></div>
+                                        </li>
+                                        <li>
+                                            <div><p class=" card-text-sd"><span><img src="https://www.nexustours.com/images/upload//Email-content/eng.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Personalized Support</p></div>
+                                        </li>
+                                        <li>
+                                            <div><p class="card-text-l" style="padding: 0px 0px 10px 0px;"><span><img src="https://www.nexustours.com/images/upload//Email-content/calendar.png" style="width: 35px;vertical-align: middle;margin-right: 15px;"></span>Cutting edge technology</p></div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                               
+                            </div>
                         </div>
                     </td>
                 </tr>
             </table>
-            
+
             <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
                 <tr>
                     <td>
