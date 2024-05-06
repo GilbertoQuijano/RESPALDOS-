@@ -5,6 +5,8 @@
         var activadorIzquierda = document.querySelector('#activadorIzquierda')
         var activadorDerecha = document.querySelector('#activadorDerecha')
         var containerSlideModel = document.querySelector('#containerSlideModel')
+        var cursorIzquierda = document.querySelector('#cursorIzquierda')
+        var cursorDerecha = document.querySelector('#cursorDerecha')
 
         for(var i = 0; i < imgSliderModel.length; i++){
             imgSliderModel[i].setAttribute('position', i)
@@ -28,6 +30,11 @@
                 }
             }
         })
+        
+        activadorIzquierda.addEventListener("mouseover",function(){
+            cursorDerecha.style.opacity = "0%"
+            cursorIzquierda.style.opacity = "100%"
+        })
 
         activadorDerecha.addEventListener('click', function(){
             position += 1
@@ -46,11 +53,15 @@
             }
         })
 
-        containerSlideModel.addEventListener('mouseover', function(){
-            /*
-            containerSlideModel.style.cursor = "none"
-            */
-            containerSlideModel.style.cursor = "url('https://uploads-ssl.webflow.com/66195148790c4d26550e285f/663010935b836b4883a26ae0_cursorSian.svg') hotspot(x, y)"
+        activadorDerecha.addEventListener("mouseover",function(){
+            cursorDerecha.style.opacity = "100%"
+            cursorIzquierda.style.opacity = "0%"
         })
+        
+        
+        containerSlideModel.addEventListener('mouseover', function(){
+            containerSlideModel.style.cursor = "none"
+        })
+
     });
 </script>

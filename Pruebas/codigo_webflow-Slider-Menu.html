@@ -1,0 +1,45 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var subTitleMenuSlide = document.querySelectorAll('.subtitlemenuslide')
+        var botonRightMenu = document.querySelector('#botonRightMenu')
+        var botonLeftMenu = document.querySelector('#botonLeftMenu')
+
+        var contadorSlideMenu = 0
+
+        botonLeftMenu.addEventListener("click", function(){
+            contadorSlideMenu -= 1
+            if(contadorSlideMenu < 0){
+                contadorSlideMenu = subTitleMenuSlide.length
+            }
+            for(var i = 0; i < subTitleMenuSlide.length; i++){
+                switch(contadorSlideMenu){
+                    case i:
+                        subTitleMenuSlide[i].style.opacity = "100%"
+                        break;
+                    default:
+                        subTitleMenuSlide[i].style.opacity = "0%"
+                        break;
+                }
+            }
+        })
+
+        botonRightMenu.addEventListener("click", function(){
+            contadorSlideMenu += 1
+            if(contadorSlideMenu >= subTitleMenuSlide.length){
+                contadorSlideMenu = 0
+            }
+            for(var i = 0; i < subTitleMenuSlide.length; i++){
+                switch(contadorSlideMenu){
+                    case i:
+                        subTitleMenuSlide[i].style.opacity = "100%"
+                        break;
+                    default:
+                        subTitleMenuSlide[i].style.opacity = "0%"
+                        break;
+                }
+            }
+        })
+
+    });
+</script>

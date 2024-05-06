@@ -1,0 +1,579 @@
+<html>
+    <head>
+        <style>
+            @charset "utf-8";
+            /* @import "font-awesome.min.css"; */
+            @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
+
+
+            /*Insertado*/
+            .section {
+                margin-bottom:2em;
+                width:100%;
+            }
+
+            @media only screen and (min-width: 421px) {
+                .tiles {
+                    display:-ms-grid;
+                    display:grid;
+                    -ms-grid-columns:1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 23px;
+                    grid-row-gap: 40px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .tiles {
+                    display:-ms-grid;
+                    display:grid;
+                    -ms-grid-columns:1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap: 23px;
+                    grid-row-gap: 40px;
+                }
+                .tiles > div:nth-of-type(1){
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(2){
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(3){
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(4){
+                    -ms-grid-row: 2;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(5){
+                    -ms-grid-row: 2;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(6){
+                    -ms-grid-row: 2;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(7){
+                    -ms-grid-row: 3;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(8){
+                    -ms-grid-row: 3;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(9){
+                    -ms-grid-row: 3;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(10){
+                    -ms-grid-row: 4;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(11){
+                    -ms-grid-row: 4;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(12){
+                    -ms-grid-row: 4;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(13){
+                    -ms-grid-row: 5;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(14){
+                    -ms-grid-row: 5;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(15){
+                    -ms-grid-row: 5;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(16){
+                    -ms-grid-row: 6;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(17){
+                    -ms-grid-row: 6;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(18){
+                    -ms-grid-row: 6;
+                    -ms-grid-column: 3;
+                }
+                .tiles > div:nth-of-type(19){
+                    -ms-grid-row: 7;
+                    -ms-grid-column: 1;
+                }
+                .tiles > div:nth-of-type(20){
+                    -ms-grid-row: 7;
+                    -ms-grid-column: 2;
+                }
+                .tiles > div:nth-of-type(21){
+                    -ms-grid-row: 7;
+                    -ms-grid-column: 3;
+                }
+
+                .section-links > ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap:10px;
+                }
+            }
+
+            .section-grey .tile > h3 {
+                color: white;
+            }
+
+            .section-grey .tile > p {
+                font-size: 1.2em;
+            }
+
+            .section-grey .tile > div > a {
+                color:white;
+            }
+
+            .section-grey .tile > div > a:hover {
+                border: 1px solid white;
+                color:white;
+            }
+
+            /*Añadidos*/
+            @media(min-width:0px){
+                .imgTile{
+                    position: relative; 
+                    width: 100%; 
+                    height: 50vw; 
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 10px; 
+                    z-index: 2;
+                }
+            }
+            @media(min-width:420px){
+                .imgTile{
+                    position: relative; 
+                    width: 100%; 
+                    height: 34vw; 
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 10px; 
+                    z-index: 2;
+                }
+            }
+            @media(min-width:600px){
+                .imgTile{
+                    position: relative; 
+                    width: 100%; 
+                    height: 34vw; 
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 10px; 
+                    z-index: 2;
+                }
+            }
+            @media(min-width:768px){
+                .imgTile{
+                    position: relative; 
+                    width: 100%; 
+                    height: 157px; 
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 10px; 
+                    z-index: 2;
+                }
+            }
+            @media(min-width:1200px){
+                .imgTile{
+                    position: relative; 
+                    width: 100%; 
+                    height: 187px; 
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 10px; 
+                    z-index: 2;
+                }
+            }
+
+            .sectionNexusTours {
+                background: linear-gradient(258deg, #FD921E 0.97%, #FF621D 42.31%, #E73A4E 85.41%);;
+                padding: 46px 20px;
+                width: 100%;
+                border-radius: 25px;
+            }
+            
+            .sectionNexusTours > p {
+                color: white !important;
+                font-family: 'Oswald', sans-serif;
+                font-size: 18px;
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+
+            .imgSectionNexusTours{
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-bottom: 40px;
+            }
+
+            @media(min-width:0px) and (max-width:419px){
+                .containerTile{
+                    position: relative; 
+                    display: block;
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: white; 
+                    box-sizing: border-box; 
+                    padding: 13px 10px 32px; 
+                    border-radius: 16px; 
+                    text-decoration: none;
+                    margin-bottom: 5vw;
+                }
+            }
+            
+            @media(min-width:420px){
+                .containerTile{
+                    position: relative; 
+                    display: block;
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: white; 
+                    box-sizing: border-box; 
+                    padding: 13px 10px 32px; 
+                    border-radius: 16px; 
+                    text-decoration: none;
+                }
+            }
+
+            .containerTile:hover{
+                position: relative; 
+                display: block;
+                width: 100%; 
+                height: 100%; 
+                background-color: white; 
+                box-sizing: border-box; 
+                padding: 13px 10px 32px; 
+                border-radius: 16px; 
+                text-decoration: none;
+            }
+
+            .containerImgTile{
+                position: relative; 
+                width: 100%; 
+                margin-bottom: 13px;
+            }
+
+            .shadowImgTile{
+                position: absolute; 
+                width: 80%; 
+                height: 30px; 
+                border-radius: 8.333px; 
+                background: rgba(22, 36, 56, 0.30); 
+                filter: blur(8px); 
+                bottom: 0; 
+                left: 50%; 
+                transform: translate(-50%, 20%); z-index: 1;
+            }
+
+            .nameTour{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 18px; 
+                line-height: 100%; 
+                font-family: 'Oswald', sans-serif; 
+                color: #414141; 
+                font-weight: 700; 
+                text-transform: uppercase;
+            }
+
+            .nameCollection{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                font-family: 'Oswald', sans-serif; 
+                color: #838383; 
+                font-weight: 500;
+            }
+
+            .floatBook{
+                position: absolute; 
+                right: 10px; 
+                bottom: 13px; 
+                display: flex; 
+                align-items: baseline; 
+                gap: 4px;
+            }
+
+            .textBook{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-family: 'Oswald', sans-serif; 
+                font-weight: 500;
+                background: linear-gradient(270deg, #FD921E 0%, #FF621D 50%, #E73A4E 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .iconTextBook{
+                padding-bottom: 1px;
+            }
+
+            .floatHeart{
+                width: 35px; 
+                height: 35px; 
+                border-radius: 50%; 
+                background: rgba(255, 255, 255, 0.20); 
+                backdrop-filter: blur(89px); 
+                position: absolute; 
+                top: 8px; 
+                right: 10px; 
+                z-index: 3; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+            }
+
+        </style>
+    </head>
+    <body style="width: 1170px; margin-left: auto; margin-right: auto;">
+        <div style="width: 75%; margin-left: auto;">
+            <div class="section sectionNexusTours">
+                <img class="imgSectionNexusTours" src="https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/logoNexusToursComWhite.png" alt="Nexus Tours">
+                <p>
+                    Hike, horseback, snorkel or zip line: any mode of transportation will do. Nexus Tours will heighten your Punta Cana vacation with excursions for any adventure seeker.
+                </p>
+                <div class="tiles">
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥9669¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/SaonaByCatamaranVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Saona by Catamaran
+                            </p>
+                            <p class="nameCollection">
+                                Insta Friendly
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5336¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/SamanaExperienceVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Samana Experience
+                            </p>
+                            <p class="nameCollection">
+                                Great for Couples
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥9667¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/SaonaTourVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Saona Tour
+                            </p>
+                            <p class="nameCollection">
+                                Perfect for Groups
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5499¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/FrontRowCocoBongoVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Front Row at Coco Bongo
+                            </p>
+                            <p class="nameCollection">
+                                YOLO
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥530¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/DolphinSwimAdventureVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Dolphin Swim Adventure
+                            </p>
+                            <p class="nameCollection">
+                                Kids Friendly
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="containerTile" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5246¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="containerImgTile">
+                            <div class="imgTile" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/VacationExpress/PuntaCana/HappyHourSailingCruiseVE.jpg');">
+                            </div>
+                            <div class="shadowImgTile">
+                            </div>
+                            <div class="floatHeart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path d="M18.5557 4.26552C18.1241 3.83367 17.6116 3.49109 17.0475 3.25735C16.4835 3.02362 15.8789 2.90332 15.2683 2.90332C14.6578 2.90332 14.0532 3.02362 13.4891 3.25735C12.925 3.49109 12.4126 3.83367 11.9809 4.26552L11.0851 5.16136L10.1893 4.26552C9.31747 3.39361 8.13496 2.90377 6.90194 2.90377C5.66893 2.90377 4.48642 3.39361 3.61455 4.26552C2.74268 5.13744 2.25287 6.32001 2.25287 7.55308C2.25287 8.78616 2.74268 9.96873 3.61455 10.8406L4.51034 11.7365L11.0851 18.3116L17.6599 11.7365L18.5557 10.8406C18.9875 10.409 19.3301 9.89648 19.5638 9.33239C19.7975 8.7683 19.9178 8.16368 19.9178 7.55308C19.9178 6.94249 19.7975 6.33787 19.5638 5.77378C19.3301 5.20969 18.9875 4.69718 18.5557 4.26552V4.26552Z" stroke="white" stroke-width="1.17613" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameTour">
+                                Happy Hour Sailing Tour
+                            </p>
+                            <p class="nameCollection">
+                                Luxury
+                            </p>
+                        </div>
+                        <div class="floatBook">
+                            <p class="textBook">
+                                Book Now
+                            </p>
+                            <svg class="iconTextBook" xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="#D9D9D9"/>
+                                <path d="M7 4.5L0.25 8.39711L0.25 0.602885L7 4.5Z" fill="url(#paint0_linear_7_567)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7_567" x1="6.11436" y1="9.08015" x2="-12.2193" y2="4.20544" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD921E"/>
+                                        <stop offset="0.489583" stop-color="#FF621D"/>
+                                        <stop offset="1" stop-color="#E73A4E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>

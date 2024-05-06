@@ -1,0 +1,63 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var slideOurTeam = document.querySelectorAll('.slideourteam')
+        var activadorIzquierda = document.querySelector('#activadorIzquierda')
+        var activadorDerecha = document.querySelector('#activadorDerecha')
+        var MarcadorSlideTeamMember = document.querySelectorAll('.marcadorslideteammember')
+        var sectionOurTeam = document.querySelector('#SectionOurTeam')
+        var cursorIzquierda = document.querySelector('#cursorIzquierda')
+        var cursorDerecha = document.querySelector('#cursorDerecha')
+        
+        sectionOurTeam.style.overflowX = "hidden"
+        let contadorSlide = 0
+
+        activadorIzquierda.addEventListener("click", function(){
+            contadorSlide -= 1
+            if(contadorSlide < 0){
+                contadorSlide = 2
+            }
+            for(var i = 0; i < slideOurTeam.length; i++){
+                if(contadorSlide == i){
+                    slideOurTeam[i].style.opacity = "1"
+                    MarcadorSlideTeamMember[i].style.width = "50%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#987232"
+                }
+                else{
+                    slideOurTeam[i].style.opacity = "0"
+                    MarcadorSlideTeamMember[i].style.width = "20%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#141d18"
+                }
+            }
+        })
+
+        activadorIzquierda.addEventListener("mouseover",function(){
+            cursorDerecha.style.opacity = "0%"
+            cursorIzquierda.style.opacity = "100%"
+        })
+
+        activadorDerecha.addEventListener("click", function(){
+            contadorSlide += 1
+            if(contadorSlide > 2){
+                contadorSlide = 0
+            }
+            for(var i = 0; i < slideOurTeam.length; i++){
+                if(contadorSlide == i){
+                    slideOurTeam[i].style.opacity = "1"
+                    MarcadorSlideTeamMember[i].style.width = "50%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#987232"
+                }
+                else{
+                    slideOurTeam[i].style.opacity = "0"
+                    MarcadorSlideTeamMember[i].style.width = "20%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#141d18"
+                }
+            }
+        })
+
+        activadorDerecha.addEventListener("mouseover",function(){
+            cursorDerecha.style.opacity = "100%"
+            cursorIzquierda.style.opacity = "0%"
+        })
+    });
+</script>
