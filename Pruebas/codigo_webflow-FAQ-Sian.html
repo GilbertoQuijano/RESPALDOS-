@@ -1,0 +1,108 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var listDeployFaq = document.querySelectorAll('.deployfaq')
+        var listTitleFAQDeploy = document.querySelectorAll('.titlefaqdeploy')
+        var listImgBotonMenosFAQMob = document.querySelectorAll('.imgbotonmenosfaqmob')
+        var listContainerBotonesFAQMob = document.querySelectorAll('.containerbotonesfaqmob')
+        var listImgBotonMenosFAQ = document.querySelectorAll('.imgbotonmenosfaq')
+        var arrayDeployFaqHeight = []
+        var arrayTitleFAQDeploy =[]
+        var listDeployed= []
+
+        var windowWidth = window.innerWidth
+
+        if(windowWidth > 479){
+            for(var i = 0; i < listDeployFaq.length; i++){
+                listDeployFaq[i].setAttribute('nPosition', i)
+                arrayDeployFaqHeight.push(listDeployFaq[i].offsetHeight)
+                listDeployFaq[i].style.height = "4vw"
+                listDeployed.push('0')
+            }
+
+            for(var j = 0; j < listDeployFaq.length; j++){
+                var cont = j
+                listDeployFaq[j].addEventListener('click', function(){
+                    switch(listDeployed[this.getAttribute('nPosition')]){
+                        case '0':
+                            listDeployed[this.getAttribute('nPosition')] = '1'
+                            this.style.height = arrayDeployFaqHeight[this.getAttribute('nPosition')] + 'px'
+                            listImgBotonMenosFAQ[this.getAttribute('nPosition')].style.opacity = "100%"
+                            break;
+                        case '1':
+                            listDeployed[this.getAttribute('nPosition')] = '0'
+                            this.style.height = '4vw'
+                            listImgBotonMenosFAQ[this.getAttribute('nPosition')].style.opacity = "0%"
+                            break;
+                    }
+                })
+            }
+        }
+
+        else{
+            for(var i = 0; i < listTitleFAQDeploy.length; i++){
+                if(!listTitleFAQDeploy[i].classList.contains('gold')){
+                    arrayTitleFAQDeploy.push(listTitleFAQDeploy[i])
+                }
+            }
+            for(var i = 0; i < listDeployFaq.length; i++){
+                listDeployFaq[i].setAttribute('nPosition', i)
+                listContainerBotonesFAQMob[i].setAttribute('nPosition', i)
+                arrayDeployFaqHeight.push(listDeployFaq[i].offsetHeight)
+                if(arrayTitleFAQDeploy[i].classList.contains('doble')){
+                    listDeployFaq[i].style.height = "17vw"
+                    listDeployFaq[i].setAttribute('doble', 1)
+                }
+                else{
+                    listDeployFaq[i].style.height = "12vw"
+                    listDeployFaq[i].setAttribute('doble', 0)
+                }
+                listDeployed.push('0')
+            }
+            for(var j = 0; j < listDeployFaq.length; j++){
+                var cont = j
+                listDeployFaq[j].addEventListener('click', function(){
+                    switch(listDeployed[this.getAttribute('nPosition')]){
+                        case '0':
+                            listDeployed[this.getAttribute('nPosition')] = '1'
+                            this.style.height = arrayDeployFaqHeight[this.getAttribute('nPosition')] + 'px'
+                            listImgBotonMenosFAQMob[this.getAttribute('nPosition')].style.opacity = "100%"
+                            break;
+                        case '1':
+                            listDeployed[this.getAttribute('nPosition')] = '0'
+                            if(arrayTitleFAQDeploy[this.getAttribute('nPosition')].classList.contains('doble')){
+                                this.style.height = '17vw'
+                            }
+                            else{
+                                this.style.height = '12vw'
+                            }
+                            listImgBotonMenosFAQMob[this.getAttribute('nPosition')].style.opacity = "0%"
+                            break;
+                    }
+                })
+
+                listContainerBotonesFAQMob[j].addEventListener('click', function(){
+                    switch(listDeployed[this.getAttribute('nPosition')]){
+                        case '0':
+                            listDeployed[this.getAttribute('nPosition')] = '1'
+                            listDeployFaq[this.getAttribute('nPosition')].style.height = arrayDeployFaqHeight[this.getAttribute('nPosition')] + 'px'
+                            listImgBotonMenosFAQMob[this.getAttribute('nPosition')].style.opacity = "100%"
+                            break;
+                        case '1':
+                            listDeployed[this.getAttribute('nPosition')] = '0'
+                            if(arrayTitleFAQDeploy[this.getAttribute('nPosition')].classList.contains('doble')){
+                                listDeployFaq[this.getAttribute('nPosition')].style.height = '17vw'
+                            }
+                            else{
+                                listDeployFaq[this.getAttribute('nPosition')].style.height = '12vw'
+                            }
+                            listImgBotonMenosFAQMob[this.getAttribute('nPosition')].style.opacity = "0%"
+                            break;
+                    }
+                })
+            }
+        }
+
+
+    });
+</script>

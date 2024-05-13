@@ -4,42 +4,69 @@
         var subTitleMenuSlide = document.querySelectorAll('.subtitlemenuslide')
         var botonRightMenu = document.querySelector('#botonRightMenu')
         var botonLeftMenu = document.querySelector('#botonLeftMenu')
-
-        var contadorSlideMenu = 0
+        var botonRightMenuMob = document.querySelector('#botonRightMenuMob')
+        var botonLeftMenuMob = document.querySelector('#botonLeftMenuMob')
+        var bodySticky = document.querySelector('.body-sticky')
+        
+        bodySticky.style.overflowX = "hidden"
 
         botonLeftMenu.addEventListener("click", function(){
-            contadorSlideMenu -= 1
-            if(contadorSlideMenu < 0){
-                contadorSlideMenu = subTitleMenuSlide.length
-            }
-            for(var i = 0; i < subTitleMenuSlide.length; i++){
-                switch(contadorSlideMenu){
-                    case i:
-                        subTitleMenuSlide[i].style.opacity = "100%"
-                        break;
-                    default:
-                        subTitleMenuSlide[i].style.opacity = "0%"
-                        break;
-                }
-            }
+            titleOpacityMenu()
         })
 
         botonRightMenu.addEventListener("click", function(){
-            contadorSlideMenu += 1
-            if(contadorSlideMenu >= subTitleMenuSlide.length){
-                contadorSlideMenu = 0
-            }
-            for(var i = 0; i < subTitleMenuSlide.length; i++){
-                switch(contadorSlideMenu){
-                    case i:
-                        subTitleMenuSlide[i].style.opacity = "100%"
-                        break;
-                    default:
-                        subTitleMenuSlide[i].style.opacity = "0%"
-                        break;
-                }
-            }
+            titleOpacityMenu()
         })
 
+        botonLeftMenuMob.addEventListener("click", function(){
+            titleOpacityMenu()
+        })
+
+        botonRightMenuMob.addEventListener("click", function(){
+            titleOpacityMenu()
+        })
+
+        function titleOpacityMenu(){
+            var slideAboutUs = document.querySelectorAll('[slide="AboutUs"]')
+            var slideSianStudio = document.querySelectorAll('[slide="SianStudio"]')
+            var slideModels = document.querySelectorAll('[slide="Models"]')
+            var slideSustainability = document.querySelectorAll('[slide="Sustainability"]')
+            var slideExperiences = document.querySelectorAll('[slide="Experiences"]')
+
+            var activoAboutUs = false
+            var activoSianStudio = false
+            var activoModels = false
+            var activoSustainability = false
+            var activoExperiences = false
+
+            var arraySlides = [slideAboutUs, slideSianStudio, slideModels, slideSustainability, slideExperiences]
+            var arrayActivo = [activoAboutUs, activoSianStudio, activoModels, activoSustainability, activoExperiences]
+
+            var subTitleMenuSlide = document.querySelectorAll('.subtitlemenuslide')
+
+            var cont = 0
+
+            for(var i = 0; i < arraySlides.length; i++){
+                var compSlide = arraySlides[i]
+                for(var j = 0; j < compSlide.length; j++){
+                    if(compSlide[j].classList.contains('swiper-slide-active')){
+                        arrayActivo[i] = true
+                    }
+                }
+            }
+
+            for(var i = 0; i < arrayActivo.length; i++){
+                if(arrayActivo[i]){
+                    subTitleMenuSlide[i].style.opacity = "100%"
+                    cont = i
+                }
+            }
+
+            for(var i = 0; i < subTitleMenuSlide.length; i++){
+                if(i != cont){
+                    subTitleMenuSlide[i].style.opacity = "0%"
+                }
+            }
+        }
     });
 </script>

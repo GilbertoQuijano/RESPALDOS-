@@ -2,8 +2,11 @@
 	var Webflow = Webflow || [];
     Webflow.push(function() {
         var slideOurTeam = document.querySelectorAll('.slideourteam')
+        var containerSlideOurTeam = document.querySelector('.containerslideourteam')
         var activadorIzquierda = document.querySelector('#activadorIzquierda')
         var activadorDerecha = document.querySelector('#activadorDerecha')
+        var activadorIzquierdaMob = document.querySelector('#activadorIzquierdaMob')
+        var activadorDerechaMob = document.querySelector('#activadorDerechaMob')
         var MarcadorSlideTeamMember = document.querySelectorAll('.marcadorslideteammember')
         var sectionOurTeam = document.querySelector('#SectionOurTeam')
         var cursorIzquierda = document.querySelector('#cursorIzquierda')
@@ -15,7 +18,7 @@
         activadorIzquierda.addEventListener("click", function(){
             contadorSlide -= 1
             if(contadorSlide < 0){
-                contadorSlide = 2
+                contadorSlide = slideOurTeam.length - 1
             }
             for(var i = 0; i < slideOurTeam.length; i++){
                 if(contadorSlide == i){
@@ -38,7 +41,7 @@
 
         activadorDerecha.addEventListener("click", function(){
             contadorSlide += 1
-            if(contadorSlide > 2){
+            if(contadorSlide > (slideOurTeam.length - 1)){
                 contadorSlide = 0
             }
             for(var i = 0; i < slideOurTeam.length; i++){
@@ -58,6 +61,48 @@
         activadorDerecha.addEventListener("mouseover",function(){
             cursorDerecha.style.opacity = "100%"
             cursorIzquierda.style.opacity = "0%"
+        })
+
+        containerSlideOurTeam.addEventListener('mouseover', function(){
+            containerSlideOurTeam.style.cursor = "none"
+        })
+
+        activadorIzquierdaMob.addEventListener("click", function(){
+            contadorSlide -= 1
+            if(contadorSlide < 0){
+                contadorSlide = slideOurTeam.length - 1
+            }
+            for(var i = 0; i < slideOurTeam.length; i++){
+                if(contadorSlide == i){
+                    slideOurTeam[i].style.opacity = "1"
+                    MarcadorSlideTeamMember[i].style.width = "70%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#987232"
+                }
+                else{
+                    slideOurTeam[i].style.opacity = "0"
+                    MarcadorSlideTeamMember[i].style.width = "20%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#141d18"
+                }
+            }
+        })
+
+        activadorDerechaMob.addEventListener("click", function(){
+            contadorSlide += 1
+            if(contadorSlide > (slideOurTeam.length - 1)){
+                contadorSlide = 0
+            }
+            for(var i = 0; i < slideOurTeam.length; i++){
+                if(contadorSlide == i){
+                    slideOurTeam[i].style.opacity = "1"
+                    MarcadorSlideTeamMember[i].style.width = "70%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#987232"
+                }
+                else{
+                    slideOurTeam[i].style.opacity = "0"
+                    MarcadorSlideTeamMember[i].style.width = "20%"
+                    MarcadorSlideTeamMember[i].style.backgroundColor = "#141d18"
+                }
+            }
         })
     });
 </script>
