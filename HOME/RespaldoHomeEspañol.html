@@ -5175,141 +5175,141 @@
         </script>
 
         <script>
-        var botonCarrouselHoverHome = document.getElementsByName("botonCarrouselHoverHome")
-        var backgroundBotonesCarrouselHoverHome = document.getElementsByName("backgroundBotonesCarrouselHoverHome")
-        var imgCarrousel = document.getElementsByName("imgCarrousel")
-        var containerSliderCarrousel = document.getElementsByName("containerSliderCarrousel")
-        var botonArrowSliderCarrouselLeft = document.getElementById("botonArrowSliderCarrouselLeft")
-        var botonArrowSliderCarrouselRight = document.getElementById("botonArrowSliderCarrouselRight")
-        var imgCarrouselMob = document.getElementsByName("imgCarrouselMob")
-        var backgroundChangeSlider = document.getElementById("backgroundChangeSlider")
-        var imgCarrouselOverflowDesk = document.getElementsByName("imgCarrouselOverflowDesk")
-        var imgCarrouselOverflowMob = document.getElementsByName("imgCarrouselOverflowMob")
-        var anchoDocumento = window.innerWidth - (window.scrollBarWidth || window.innerWidth - document.documentElement.clientWidth);
+            var botonCarrouselHoverHome = document.getElementsByName("botonCarrouselHoverHome")
+            var backgroundBotonesCarrouselHoverHome = document.getElementsByName("backgroundBotonesCarrouselHoverHome")
+            var imgCarrousel = document.getElementsByName("imgCarrousel")
+            var containerSliderCarrousel = document.getElementsByName("containerSliderCarrousel")
+            var botonArrowSliderCarrouselLeft = document.getElementById("botonArrowSliderCarrouselLeft")
+            var botonArrowSliderCarrouselRight = document.getElementById("botonArrowSliderCarrouselRight")
+            var imgCarrouselMob = document.getElementsByName("imgCarrouselMob")
+            var backgroundChangeSlider = document.getElementById("backgroundChangeSlider")
+            var imgCarrouselOverflowDesk = document.getElementsByName("imgCarrouselOverflowDesk")
+            var imgCarrouselOverflowMob = document.getElementsByName("imgCarrouselOverflowMob")
+            var anchoDocumento = window.innerWidth - (window.scrollBarWidth || window.innerWidth - document.documentElement.clientWidth);
 
-        var carrouselRight = document.getElementById("carrouselRight")
-        var containerLoginContent = document.getElementById("containerLoginContent")
+            var carrouselRight = document.getElementById("carrouselRight")
+            var containerLoginContent = document.getElementById("containerLoginContent")
 
-        let contSlide = 0
+            let contSlide = 0
 
-        if(login == null){
-            containerLoginContent.innerHTML= '<section class="containerLoginMob"> <div class="containerTextRegisterMob"> <h2 class="textRegisterMob"> ¡<span style="font-weight: 800;">Regístrate ahora</span> para obtener descuentos en tu próximo tour o traslado!</span> </h2> <div class="containerBotonCTACarrousel"> <div class="js-login-box-modal botonCTACarrousel"> <div class="textBotonCTACarrousel"> Registrarme </div> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/> <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/> </mask> <g mask="url(#mask0_6_4543)"> </g> </svg> </div> </div> </div> </section>'
-            carrouselRight.innerHTML='<img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel.png" alt="Login_Home_Carrousel"> <div class="containerAbsoluteLogin"> <h3 class="titleLogin"> ¡<span style="font-weight: 800;">Regístrate ahora</span> para obtener descuentos en tu próximo tour o traslado! </h3> <div class="containerBotonCTACarrousel"> <div class="js-login-box-modal botonCTACarrousel"> <div class="textBotonCTACarrousel"> Registrarme </div> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/> <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/> </mask> <g mask="url(#mask0_6_4543)"> </g> </svg> </div> </div> </div>'
-        }
-        else{
-            carrouselRight.innerHTML='<img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel_Opaco_Desk.png" alt="Login_Home_Carrousel"><div class="containerAbsoluteLogin"> <h3 class="titleLoginOpaco"> <span>Incluye asistencia en tu viaje y disfruta sin preocupaciones</span></h3></div>'
-        }
+            if(login == null){
+                containerLoginContent.innerHTML= '<section class="containerLoginMob"> <div class="containerTextRegisterMob"> <h2 class="textRegisterMob"> ¡<span style="font-weight: 800;">Regístrate ahora</span> para obtener descuentos en tu próximo tour o traslado!</span> </h2> <div class="containerBotonCTACarrousel"> <div class="js-login-box-modal botonCTACarrousel"> <div class="textBotonCTACarrousel"> Registrarme </div> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/> <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/> </mask> <g mask="url(#mask0_6_4543)"> </g> </svg> </div> </div> </div> </section>'
+                carrouselRight.innerHTML='<img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel.png" alt="Login_Home_Carrousel"> <div class="containerAbsoluteLogin"> <h3 class="titleLogin"> ¡<span style="font-weight: 800;">Regístrate ahora</span> para obtener descuentos en tu próximo tour o traslado! </h3> <div class="containerBotonCTACarrousel"> <div class="js-login-box-modal botonCTACarrousel"> <div class="textBotonCTACarrousel"> Registrarme </div> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/> <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/> </mask> <g mask="url(#mask0_6_4543)"> </g> </svg> </div> </div> </div>'
+            }
+            else{
+                carrouselRight.innerHTML='<img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel_Opaco_Desk.png" alt="Login_Home_Carrousel"><div class="containerAbsoluteLogin"> <h3 class="titleLoginOpaco"> <span>Incluye asistencia en tu viaje y disfruta sin preocupaciones</span></h3></div>'
+            }
 
-        for(var i = 1; i < backgroundBotonesCarrouselHoverHome.length; i++){
-            backgroundBotonesCarrouselHoverHome[i].style.top = "85%"
-        }
+            for(var i = 1; i < backgroundBotonesCarrouselHoverHome.length; i++){
+                backgroundBotonesCarrouselHoverHome[i].style.top = "85%"
+            }
 
-        for(var i = 0; i < botonCarrouselHoverHome.length; i++){
-            let cont = i
+            for(var i = 0; i < botonCarrouselHoverHome.length; i++){
+                let cont = i
 
-            botonCarrouselHoverHome[cont].addEventListener("click", function(){
-                if(anchoDocumento > 550){
-                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide].src)
+                botonCarrouselHoverHome[cont].addEventListener("click", function(){
+                    if(anchoDocumento > 550){
+                        backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide].src)
+                    }
+                    else{
+                        backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowMob[contSlide].src)
+                    }
+                    for(var j = 0; j < botonCarrouselHoverHome.length; j++){
+                        botonCarrouselHoverHome[j].setAttribute("activo", 0)
+                        backgroundBotonesCarrouselHoverHome[j].style.top = "85%"
+                        imgCarrousel[j].style.zIndex = "1"
+                        imgCarrousel[j].style.width = "0%"
+                        imgCarrousel[j].style.opacity = "0"
+                        imgCarrouselMob[j].style.zIndex = "1"
+                        imgCarrouselMob[j].style.width = "0%"
+                        imgCarrouselMob[j].style.opacity = "0"
+                        containerSliderCarrousel[j].style.zIndex = "1"
+                        containerSliderCarrousel[j].style.opacity = "0"
+                    }
+                    botonCarrouselHoverHome[cont].setAttribute("activo", 1)
+                    backgroundBotonesCarrouselHoverHome[cont].style.top = "0%"
+                    imgCarrousel[cont].style.zIndex = "2"
+                    imgCarrousel[cont].style.opacity = "1"
+                    imgCarrousel[cont].style.width = "100%"
+                    imgCarrouselMob[cont].style.zIndex = "2"
+                    imgCarrouselMob[cont].style.zIndex = "2"
+                    imgCarrouselMob[cont].style.opacity = "1"
+                    imgCarrouselMob[cont].style.width = "100%"
+                    containerSliderCarrousel[cont].style.zIndex = "2"
+                    containerSliderCarrousel[cont].style.opacity = "1"
+                    contSlide = cont
+                })
+
+                botonCarrouselHoverHome[cont].addEventListener("mouseover", function(){
+                    backgroundBotonesCarrouselHoverHome[cont].style.top = "0%"
+                })
+
+                botonCarrouselHoverHome[cont].addEventListener("mouseout", function(){
+                    var activo = botonCarrouselHoverHome[cont].getAttribute("activo")
+                    if(activo == 0){
+                        backgroundBotonesCarrouselHoverHome[cont].style.top = "85%"
+                    }
+                })
+            }
+
+            botonArrowSliderCarrouselRight.addEventListener("click", function(){
+                contSlide++
+                if(contSlide > botonCarrouselHoverHome.length-1){
+                    contSlide = 0
+                }
+                if(contSlide == 0){
+                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[botonCarrouselHoverHome.length-1].src)
                 }
                 else{
-                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowMob[contSlide].src)
+                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide-1].src)
                 }
                 for(var j = 0; j < botonCarrouselHoverHome.length; j++){
                     botonCarrouselHoverHome[j].setAttribute("activo", 0)
                     backgroundBotonesCarrouselHoverHome[j].style.top = "85%"
                     imgCarrousel[j].style.zIndex = "1"
-                    imgCarrousel[j].style.width = "0%"
                     imgCarrousel[j].style.opacity = "0"
-                    imgCarrouselMob[j].style.zIndex = "1"
-                    imgCarrouselMob[j].style.width = "0%"
-                    imgCarrouselMob[j].style.opacity = "0"
+                    imgCarrousel[j].style.width = "0%"
                     containerSliderCarrousel[j].style.zIndex = "1"
                     containerSliderCarrousel[j].style.opacity = "0"
                 }
-                botonCarrouselHoverHome[cont].setAttribute("activo", 1)
-                backgroundBotonesCarrouselHoverHome[cont].style.top = "0%"
-                imgCarrousel[cont].style.zIndex = "2"
-                imgCarrousel[cont].style.opacity = "1"
-                imgCarrousel[cont].style.width = "100%"
-                imgCarrouselMob[cont].style.zIndex = "2"
-                imgCarrouselMob[cont].style.zIndex = "2"
-                imgCarrouselMob[cont].style.opacity = "1"
-                imgCarrouselMob[cont].style.width = "100%"
-                containerSliderCarrousel[cont].style.zIndex = "2"
-                containerSliderCarrousel[cont].style.opacity = "1"
-                contSlide = cont
+                botonCarrouselHoverHome[contSlide].setAttribute("activo", 1)
+                backgroundBotonesCarrouselHoverHome[contSlide].style.top = "0%"
+                imgCarrousel[contSlide].style.zIndex = "2"
+                imgCarrousel[contSlide].style.opacity = "1"
+                imgCarrousel[contSlide].style.width = "100%"
+                containerSliderCarrousel[contSlide].style.zIndex = "2"
+                containerSliderCarrousel[contSlide].style.opacity = "1"
             })
 
-            botonCarrouselHoverHome[cont].addEventListener("mouseover", function(){
-                backgroundBotonesCarrouselHoverHome[cont].style.top = "0%"
-            })
-
-            botonCarrouselHoverHome[cont].addEventListener("mouseout", function(){
-                var activo = botonCarrouselHoverHome[cont].getAttribute("activo")
-                if(activo == 0){
-                    backgroundBotonesCarrouselHoverHome[cont].style.top = "85%"
+            botonArrowSliderCarrouselLeft.addEventListener("click", function(){
+                contSlide--
+                if(contSlide < 0){
+                    contSlide = botonCarrouselHoverHome.length-1
                 }
+                if(contSlide == botonCarrouselHoverHome.length-1){
+                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[0].src)
+                }
+                else{
+                    backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide+1].src)
+                }
+                for(var j = 0; j < botonCarrouselHoverHome.length; j++){
+                    botonCarrouselHoverHome[j].setAttribute("activo", 0)
+                    backgroundBotonesCarrouselHoverHome[j].style.top = "85%"
+                    imgCarrousel[j].style.zIndex = "1"
+                    imgCarrousel[j].style.opacity = "0"
+                    imgCarrousel[j].style.width = "0%"
+                    containerSliderCarrousel[j].style.zIndex = "1"
+                    containerSliderCarrousel[j].style.opacity = "0"
+                }
+                botonCarrouselHoverHome[contSlide].setAttribute("activo", 1)
+                backgroundBotonesCarrouselHoverHome[contSlide].style.top = "0%"
+                imgCarrousel[contSlide].style.zIndex = "2"
+                imgCarrousel[contSlide].style.opacity = "1"
+                imgCarrousel[contSlide].style.width = "100%"
+                containerSliderCarrousel[contSlide].style.zIndex = "2"
+                containerSliderCarrousel[contSlide].style.opacity = "1"
             })
-        }
 
-        botonArrowSliderCarrouselRight.addEventListener("click", function(){
-            contSlide++
-            if(contSlide > botonCarrouselHoverHome.length-1){
-                contSlide = 0
-            }
-            if(contSlide == 0){
-                backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[botonCarrouselHoverHome.length-1].src)
-            }
-            else{
-                backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide-1].src)
-            }
-            for(var j = 0; j < botonCarrouselHoverHome.length; j++){
-                botonCarrouselHoverHome[j].setAttribute("activo", 0)
-                backgroundBotonesCarrouselHoverHome[j].style.top = "85%"
-                imgCarrousel[j].style.zIndex = "1"
-                imgCarrousel[j].style.opacity = "0"
-                imgCarrousel[j].style.width = "0%"
-                containerSliderCarrousel[j].style.zIndex = "1"
-                containerSliderCarrousel[j].style.opacity = "0"
-            }
-            botonCarrouselHoverHome[contSlide].setAttribute("activo", 1)
-            backgroundBotonesCarrouselHoverHome[contSlide].style.top = "0%"
-            imgCarrousel[contSlide].style.zIndex = "2"
-            imgCarrousel[contSlide].style.opacity = "1"
-            imgCarrousel[contSlide].style.width = "100%"
-            containerSliderCarrousel[contSlide].style.zIndex = "2"
-            containerSliderCarrousel[contSlide].style.opacity = "1"
-        })
-
-        botonArrowSliderCarrouselLeft.addEventListener("click", function(){
-            contSlide--
-            if(contSlide < 0){
-                contSlide = botonCarrouselHoverHome.length-1
-            }
-            if(contSlide == botonCarrouselHoverHome.length-1){
-                backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[0].src)
-            }
-            else{
-                backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide+1].src)
-            }
-            for(var j = 0; j < botonCarrouselHoverHome.length; j++){
-                botonCarrouselHoverHome[j].setAttribute("activo", 0)
-                backgroundBotonesCarrouselHoverHome[j].style.top = "85%"
-                imgCarrousel[j].style.zIndex = "1"
-                imgCarrousel[j].style.opacity = "0"
-                imgCarrousel[j].style.width = "0%"
-                containerSliderCarrousel[j].style.zIndex = "1"
-                containerSliderCarrousel[j].style.opacity = "0"
-            }
-            botonCarrouselHoverHome[contSlide].setAttribute("activo", 1)
-            backgroundBotonesCarrouselHoverHome[contSlide].style.top = "0%"
-            imgCarrousel[contSlide].style.zIndex = "2"
-            imgCarrousel[contSlide].style.opacity = "1"
-            imgCarrousel[contSlide].style.width = "100%"
-            containerSliderCarrousel[contSlide].style.zIndex = "2"
-            containerSliderCarrousel[contSlide].style.opacity = "1"
-        })
-
-    </script>
+        </script>
     </div>
 </body>
