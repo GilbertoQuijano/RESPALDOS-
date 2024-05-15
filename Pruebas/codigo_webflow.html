@@ -1,67 +1,25 @@
 <script type="text/javascript">
 	var Webflow = Webflow || [];
     Webflow.push(function() {
-        var imgSliderModel = document.querySelectorAll('.imgslidermodel')
-        var activadorIzquierda = document.querySelector('#activadorIzquierda')
-        var activadorDerecha = document.querySelector('#activadorDerecha')
-        var containerSlideModel = document.querySelector('#containerSlideModel')
-        var cursorIzquierda = document.querySelector('#cursorIzquierda')
-        var cursorDerecha = document.querySelector('#cursorDerecha')
-
-        for(var i = 0; i < imgSliderModel.length; i++){
-            imgSliderModel[i].setAttribute('position', i)
+        var containerbotonoverflow = document.querySelector('.containerbotonoverflow')
+        var containerFullWidthHome = document.querySelector('.containerfullwidthhome')
+        var windowWidth = window.innerWidth
+        if(windowWidth > 479){
+            conp = (containerFullWidthHome.offsetHeight - 220)
+            conp = conp + "px"
+            containerbotonoverflow.style.top = conp
         }
 
-        let position = 0
+        else if((windowWidth < 479) && (windowWidth > 355)){
+            conp = (containerFullWidthHome.offsetHeight - 341)
+            conp = conp + "px"
+            containerbotonoverflow.style.top = conp
+        }
 
-        activadorIzquierda.addEventListener('click', function(){
-            position -= 1
-
-            if(position < 0){
-                position = 2
-            }
-
-            for(var i = 0; i < imgSliderModel.length; i++){
-                if (i == position){
-                    imgSliderModel[i].style.opacity = "100%"
-                }
-                else{
-                    imgSliderModel[i].style.opacity = "0%"
-                }
-            }
-        })
-        
-        activadorIzquierda.addEventListener("mouseover",function(){
-            cursorDerecha.style.opacity = "0%"
-            cursorIzquierda.style.opacity = "100%"
-        })
-
-        activadorDerecha.addEventListener('click', function(){
-            position += 1
-
-            if(position > 2){
-                position = 0
-            }
-
-            for(var i = 0; i < imgSliderModel.length; i++){
-                if (i == position){
-                    imgSliderModel[i].style.opacity = "100%"
-                }
-                else{
-                    imgSliderModel[i].style.opacity = "0%"
-                }
-            }
-        })
-
-        activadorDerecha.addEventListener("mouseover",function(){
-            cursorDerecha.style.opacity = "100%"
-            cursorIzquierda.style.opacity = "0%"
-        })
-        
-        
-        containerSlideModel.addEventListener('mouseover', function(){
-            containerSlideModel.style.cursor = "none"
-        })
-
+        else if( windowWidth <= 355){
+            conp = (containerFullWidthHome.offsetHeight - 424)
+            conp = conp + "px"
+            containerbotonoverflow.style.top = conp
+        }
     });
 </script>
