@@ -756,7 +756,7 @@
                                 *Consulta términos y condiciones en www.nexustours.com/discounts
                             </div>
                             <div class="containerBotonCTACarrousel">
-                                <a class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
+                                <a id="botonCampaña" class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
                                     <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
                                         Reservar ahora
                                     </div>
@@ -1034,83 +1034,196 @@
         var idiomaLanding = document.querySelector('.text-capitalize.hidden-xs')
         var BannerCampañaDesk = document.querySelector('#BannerCampañaDesk')
         var BannerCampañaMob = document.querySelector('#BannerCampañaMob')
-        var anchoDocumento = window.innerWidth - (window.scrollBarWidth || window.innerWidth - document.documentElement.clientWidth);
-        var comp = idiomaLanding.textContent
+        var botonCampaña = document.querySelector('#botonCampaña')
 
+        /*Obtener el lenguaje de la landing*/
+        var comp = idiomaLanding.textContent
+        comp = comp.replace(/\s/g, "")
+
+        /*
         var dicCampaign={
             nombreCamp : ["Nexus Week","Special offers","Night Sale","San Valentin","Presidents Day","Ofertas en el Caribe","Last Minute Sale","Early Book","Flash Sale","Saint Patricks Day","Ofertas en el Caribe","Spring Sale","Night Sale","Nexus Day","Early Book","Last Minute Sale","Flash Sale","Caribbean Offers","Night Sale","Early Book","5 de Mayo","Last Minute Sale","Nexus Week MX","Nexus Week","Victoria Day","Memorial Day","Flash Sale"],
             mesCamp : ["Febrero","Febrero","Febrero","Febrero","Febrero","Febrero","Febrero","Marzo","Marzo","Marzo","Marzo","Marzo","Marzo","Abril","Abril","Abril","Abril","Abril","Abril","Mayo","Mayo","Mayo","Mayo","Mayo","Mayo","Mayo","Mayo"],
             añoCamp : ["2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024","2024"],
-            fechaInicioCamp : ["02-01-2024","02-05-2024","02-07-2024","02-12-2024","02-19-2024","02-19-2024","02-26-2024","03-01-2024","03-05-2024","03-13-2024","03-13-2024","03-18-2024","03-27-2024","04-01-2024","04-04-2024","04-08-2024","04-15-2024","04-22-2024","04-29-2024","05-01-2024","05-03-2024","05-06-2024","05-13-2024","05-13-2024","05-20-2024","05-23-2024","05-28-2024"],
-            fechaFinCamp : ["02-04-2024","02-29-2024","02-08-2024","02-16-2024","02-22-2024","02-22-2024","02-29-2024","03-31-2024","03-07-2024","03-17-2024","03-17-2024","03-22-2024","03-28-2024","04-03-2024","04-28-2024","04-11-2024","04-17-2024","04-25-2024","04-30-2024","05-31-2024","05-05-2024","05-09-2024","05-23-2024","05-19-2024","05-23-2024","05-27-2024","05-30-2024"],
+            fechaInicioCamp : ["2024-02-01","2024-02-05","2024-02-07","2024-02-12","2024-02-19","2024-02-19","2024-02-26","2024-03-01","2024-03-05","2024-03-13","2024-03-13","2024-03-18","2024-03-27","2024-04-01","2024-04-04","2024-04-08","2024-04-15","2024-04-22","2024-04-29","2024-05-01","2024-05-03","2024-05-06","2024-05-13","2024-05-13","2024-05-20","2024-05-23","2024-05-28"],
+            fechaFinCamp : ["2024-02-04","2024-02-29","2024-02-08","2024-02-16","2024-02-22","2024-02-22","2024-02-29","2024-03-31","2024-03-07","2024-03-17","2024-03-17","2024-03-22","2024-03-28","2024-04-03","2024-04-28","2024-04-11","2024-04-17","2024-04-25","2024-04-30","2024-05-31","2024-05-05","2024-05-09","2024-05-23","2024-05-19","2024-05-23","2024-05-27","2024-05-30"],
             linkImgEspDeskCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nw_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SP_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SV_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/PS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FS_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/OC_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/ND_esp.png","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LM_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/CB_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BE_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LM_es.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_esp.jpg","-","-","-","-"],
-            linkImgEngDeskCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nw_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SP_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SV_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/PS_eng.jpg",
-"-",
-"https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPC_eng.jpg",
-"-",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/ND_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LM_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/CB_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NS_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BE_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/CM_eng.jpg",
-"https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LM_eng.jpg",
-"-",
-"https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_eng.jpg",
-"-",
-"-",
-"-"],
+            linkImgEngDeskCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nw_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SP_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SV_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/PS_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPC_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/ND_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LM_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/CB_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NS_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BE_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/CM_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LM_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_eng.jpg","-","-","-"],
+            linkImgFrDeskCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nw_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SP_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SV_fr.jpg","-","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPC_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/ND_fr.png","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BE_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LM_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/CB_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NS_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BE_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LM_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_fr.jpg","-","-","-"],
+            linkImgEspMobCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nwmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SPmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SVmob_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/PS_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FSmob_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/OCmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NDmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LMmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NSmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BEmob_esp.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LMmob_esp.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_esp.jpg","-","-","-","-"],
+            linkImgEngMobCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nwmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SPmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SVmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/PSmob_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPCmob_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NDmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LMmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NSmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BEmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/CMmob_eng.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LMmob_eng.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_eng.jpg","-","-","-"],
+            linkImgFrMobCamp : ["https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/nwmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SPmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/NSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/SVmob_fr.jpg","-","-","https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/FSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SPCmob_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/SSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/NSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NDmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/BEmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/LMmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/FSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/NSmob_fr.jpg","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/BEmob_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/LMmob_fr.jpg","-","https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_fr.jpg","-","-","-"],
+            LinkBotonLanding : ["https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/book-early","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/book-early","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/book-early","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts","https://www.nexustours.com/discounts"],
+            prioridadCamp : [1,1,2,2,2,2,2,1,2,2,2,2,2,1,1,2,2,2,1,1,2,2,2,2,2,2,2],
+            dispEspCamp : [1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,1],
+            dispEngCamp : [1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1],
+            dispFrCamp : [1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1],
+        }
+        */
+
+        var dicCampaign={
+            nombreCamp : [],
+            mesCamp : [],
+            yearCamp : [],
+            fechaInicioCamp : [],
+            fechaFinCamp : [],
+            linkImgEspDeskCamp : [],
+            linkImgEngDeskCamp : [],
             linkImgFrDeskCamp : [],
             linkImgEspMobCamp : [],
             linkImgEngMobCamp : [],
             linkImgFrMobCamp : [],
+            linkBotonLanding : [],
             prioridadCamp : [],
             dispEspCamp : [],
             dispEngCamp : [],
             dispFrCamp : [],
         }
 
+        // Realizar una solicitud GET al JSON
+        var urlCamp = 'https://davidgrhub.github.io/JsonRepositoryNexus/banners_campanas.json';
+
+        ejecutorCampHome(dicCampaign)
+
+        function cargarXMLCampHome(dicCampaign){
+            return new Promise ((resolve, reject) =>{
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', urlCamp, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        for (var i = 0; i < data.length; i++) {
+                            dicCampaign.nombreCamp.push(data[i].Nombre_de_la_Campana);
+                            dicCampaign.mesCamp.push(data[i].Mes_Campana);
+                            dicCampaign.yearCamp.push(data[i].Year);
+                            dicCampaign.fechaInicioCamp.push(data[i].Fecha_Inicio_Campana);
+                            dicCampaign.fechaFinCamp.push(data[i].Fecha_Fin_Campana);
+                            dicCampaign.linkImgEspDeskCamp.push(data[i].Link_Esp_Img_Desk_Campana);
+                            dicCampaign.linkImgEngDeskCamp.push(data[i].Link_Eng_Img_Desk_Campana);
+                            dicCampaign.linkImgFrDeskCamp.push(data[i].Link_Fr_Img_Desk_Campana);
+                            dicCampaign.linkBotonLanding.push(data[i].Link_Boton_Landing);
+                            dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana);
+                            dicCampaign.dispEspCamp.push(data[i].Disponible_MX);
+                            dicCampaign.dispEngCamp.push(data[i].Disponible_USA);
+                            dicCampaign.dispFrCamp.push(data[i].Disponible_CA);
+                        }
+
+                        /*Obtener la fecha del dia*/
+                        const dateToday = new Date()
+
+                        /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
+                        var arrayMonth = []
+                        var campActiva = []
 
 
-        /*
+                        /*Obtener el mes de la fecha actual*/
+                        switch((dateToday.getMonth() + 1)){
+                            case 1:
+                                var monthToday = "Enero"
+                                break;
+                            case 2:
+                                var monthToday = "Febrero"
+                                break;
+                            case 3:
+                                var monthToday = "Marzo"
+                                break;
+                            case 4:
+                                var monthToday = "Abril"
+                                break;
+                            case 5:
+                                var monthToday = "Mayo"
+                                break;
+                            case 6:
+                                var monthToday = "Junio"
+                                break;
+                            case 7:
+                                var monthToday = "Julio"
+                                break;
+                            case 8:
+                                var monthToday = "Agosto"
+                                break;
+                            case 9:
+                                var monthToday = "Septiembre"
+                                break;
+                            case 10:
+                                var monthToday = "Octubre"
+                                break;
+                            case 11:
+                                var monthToday = "Noviembre"
+                                break;
+                            case 12:
+                                var monthToday = "Diciembre"
+                                break;
+                        }
 
-        comp = comp.replace(/\s/g, "")
 
-        const dateToday = new Date()
+                        /*Obtener las campañas del mes*/
+                        for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
+                            if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
+                                arrayMonth.push(i)
+                            }
+                        }
 
-        const fecha2String = "05-15-2024"
+                        /*Obtener las campañas que se encuentran activas*/
+                        arrayMonth.forEach(function(indice){
+                            var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice])
+                            var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice])
+                            if((dateToday > fechaIni) && (dateToday < fechaFin)){
+                                campActiva.push(indice)
+                            }
+                        })
 
-        const fecha2 = new Date(Date.parse(fecha2String))
+                        var prio = campActiva[0]
 
-        const prueba = dateToday < fecha2
+                        /*Obtener la campaña con mayor prioridad y que debe estar disponible*/
+                        campActiva.forEach(function(indice){
+                            if(dicCampaign["prioridadCamp"][indice] > dicCampaign["prioridadCamp"][prio]){
+                                switch(comp){
+                                    case "español":
+                                        if(dicCampaign["dispEspCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                    case "english":
+                                        if(dicCampaign["dispEngCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                    case "français":
+                                        if(dicCampaign["dispFrCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                }
+                            }
+                        })
 
-        switch(comp){
-            case "español":
-                BannerCampañaDesk.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_esp.jpg"
-                BannerCampañaMob.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_esp.jpg"
-                break;
-            case "english":
-                BannerCampañaDesk.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_eng.jpg"
-                BannerCampañaMob.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_eng.jpg"
-                break;
-            case "français":
-                BannerCampañaDesk.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NW_fr.jpg"
-                BannerCampañaMob.src = "https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/NWmob_fr.jpg"
-                break;
+                        switch(comp){
+                            case "español":
+                                BannerCampañaDesk.src = dicCampaign["linkImgEspDeskCamp"][prio]
+                                BannerCampañaMob.src = dicCampaign["linkImgEspMobCamp"][prio]
+                                botonCampaña.href = dicCampaign["linkBotonLanding"][prio]
+                                break;
+                            case "english":
+                                BannerCampañaDesk.src = dicCampaign["linkImgEngDeskCamp"][prio]
+                                BannerCampañaMob.src = dicCampaign["linkImgEngMobCamp"][prio]
+                                botonCampaña.href = dicCampaign["linkBotonLanding"][prio]
+                                break;
+                            case "français":
+                                BannerCampañaDesk.src = dicCampaign["linkImgFrDeskCamp"][prio]
+                                BannerCampañaMob.src = dicCampaign["linkImgFrMobCamp"][prio]
+                                botonCampaña.href = dicCampaign["linkBotonLanding"][prio]
+                                break;
+                        }
+                    }
+                };
+                xhr.send();
+            });
         }
 
-        */
+        async function ejecutorCampHome(dicCampaign){
+            await cargarXMLCampHome(dicCampaign)
+        }
 
     </script>
 </body>
