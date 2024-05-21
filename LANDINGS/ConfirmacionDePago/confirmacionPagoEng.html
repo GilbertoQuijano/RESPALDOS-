@@ -1,0 +1,375 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <style>
+            .body-media{
+                width: 1160px;
+                margin: auto;
+                font-family: 'DM Sans', sans-serif;
+                padding-bottom: 50px;
+            }
+            @media (max-width: 1200px){
+                .body-media{
+                    width: 960px;
+                }
+            }
+            @media (max-width: 992px){
+                .body-media{
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            }
+
+            .containerUpgrade{
+                background-color: #FFF; 
+                border-radius: 25px; 
+                box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.08); 
+                padding: 40px 70px 61.5px; 
+                width: fit-content; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-top: -55px;
+                box-sizing: border-box;
+                position: relative;
+                margin-bottom: 100px;
+            }
+            @media (max-width: 992px){
+                .containerUpgrade{
+                    margin-top: -11vw;
+                    padding: 11vw 9vw 16vw;
+                    width: 90%;
+                }
+            }
+
+            .alignCenter{
+                text-align: center;
+            }
+
+            .marginBottom52{
+                margin-bottom: 52px;
+            }
+            @media (max-width: 992px){
+                .marginBottom52{
+                    margin-bottom: 6vw;
+                }
+            }
+
+            .bannerGradient{
+                width: 100%; 
+                height: 317px; 
+                background: linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%); 
+                padding-top: 44px;
+            }
+            @media (max-width: 992px){
+                .bannerGradient{
+                    height: auto; 
+                    padding-bottom: 22vw;
+                }
+            }
+
+            .containerTextBannerGradient{
+                display: flex; 
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center; 
+            }
+            @media (max-width: 992px){
+                .containerTextBannerGradient{
+                    flex-direction: column;
+                    align-items: center; 
+                    gap: 4vw;
+                }
+            }
+
+            .imgGradient{
+                display: block; 
+                width: 273px;
+            }
+            @media (max-width: 992px){
+                .imgGradient{
+                    width: 50vw;
+                }
+            }
+
+            .textConfirmation{
+                font-size: 25px; 
+                font-weight: 500; 
+                line-height: 142%; 
+                color: #333; 
+                margin: 0;
+            }
+            @media (max-width: 992px){
+                .textConfirmation{
+                    font-size: 5vw;
+                }
+            }
+
+            .titleReservation{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                color: white; 
+                font-weight: 700; 
+                font-size: 40px; 
+                line-height: 125%; 
+                letter-spacing: -1px;
+            }
+            @media (max-width: 992px){
+                .titleReservation{
+                    font-size: 8vw;
+                }
+            }
+
+            .orderIDTitle{
+                color: white; 
+                font-size: 35px; 
+                font-weight: 500; 
+                line-height: 125%;
+                letter-spacing: -1px;
+                margin-bottom: 0;
+            }
+            @media (max-width: 992px){
+                .orderIDTitle{
+                    font-size: 9vw;
+                }
+            }
+
+            .botonExplore,
+            .botonExplore:visited,
+            .botonExplore:focus,
+            .botonExplore:hover{
+                display: flex; 
+                position: absolute; 
+                left: 50%; 
+                bottom: -31.5px; 
+                transform: translate(-50%, 0%); 
+                border-radius: 31px; 
+                background: linear-gradient(266deg, #FD921E 3.66%, #FF621D 42.81%, #E73A4E 83.64%); 
+                color: white; 
+                font-size: 25px; 
+                line-height: 55%; 
+                align-items: center; 
+                justify-content: center; 
+                height: 63px; 
+                padding: 0px 40px; 
+                font-weight: 700;
+                text-decoration: none;
+            }
+            @media (max-width: 992px){
+                .botonExplore,
+                .botonExplore:visited,
+                .botonExplore:focus,
+                .botonExplore:hover{
+                    bottom: -6vw; 
+                    font-size: 5vw; 
+                    line-height: 100%;
+                    height: auto; 
+                    padding: 4vw 10vw;
+                    width: 76vw;
+                }
+            }
+
+            .containerRedesConfirmation{
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 15px;
+            }
+            @media (max-width: 992px){
+                .containerRedesConfirmation{
+                    gap: 5vw;
+                }
+            }
+
+            .outContainerRedesIcons{
+                display: flex; 
+                gap: 23px;
+            }
+            @media (max-width: 992px){
+                .outContainerRedesIcons{
+                    flex-direction: column;
+                    gap: 6vw;
+                }
+            }
+
+            .innerContainerRedesIcons{
+                display: flex; 
+                gap: 23px;
+            }
+            @media (max-width: 992px){
+                .innerContainerRedesIcons{
+                    gap: 6vw;
+                }
+            }
+
+            .botonRedesIcon{
+                display: block;
+            }
+
+            .redesIcon{
+                display: block; 
+                width: 44.5px;
+            }
+            @media (max-width: 992px){
+                .redesIcon{
+                    width: 12vw;
+                }
+            }
+
+            .tagDesk{
+                display: block;
+            }
+            @media (max-width: 992px){
+                .tagDesk{
+                    display: none;
+                }
+            }
+
+            .tagMob{
+                display: none;
+            }
+            @media (max-width: 992px){
+                .tagMob{
+                    display: block;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <body>
+            <div class="bannerGradient">
+                <div class="containerTextBannerGradient">
+                    <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#FFD8C7" fill-opacity="0.42"/>
+                        <g clip-path="url(#clip0_3632_2)">
+                            <path d="M52.5 83C69.3447 83 83 69.3447 83 52.5C83 35.6553 69.3447 22 52.5 22C35.6553 22 22 35.6553 22 52.5C22 69.3447 35.6553 83 52.5 83Z" fill="#00AC5D"/>
+                            <path d="M44.707 66.2592L60.39 81.9421C73.379 78.4784 83.0004 66.644 83.0004 52.5005C83.0004 52.2119 83.0004 51.9232 83.0004 51.6346L70.6849 40.2812L44.707 66.2592Z" fill="#049553"/>
+                            <path d="M53.2699 59.3296C54.6169 60.6766 54.6169 62.9858 53.2699 64.3328L50.4797 67.123C49.1327 68.47 46.8236 68.47 45.4766 67.123L33.2573 54.8075C31.9103 53.4605 31.9103 51.1514 33.2573 49.8044L36.0475 47.0142C37.3945 45.6672 39.7037 45.6672 41.0507 47.0142L53.2699 59.3296Z" fill="white"/>
+                            <path d="M63.9499 38.0669C65.2969 36.7199 67.6061 36.7199 68.9531 38.0669L71.7433 40.8571C73.0903 42.2041 73.0903 44.5133 71.7433 45.8603L50.5761 66.9312C49.2291 68.2782 46.9199 68.2782 45.5729 66.9312L42.7827 64.141C41.4357 62.794 41.4357 60.4849 42.7827 59.1379L63.9499 38.0669Z" fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3632_2">
+                                <rect width="61" height="61" fill="white" transform="translate(22 22)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="titleReservation">
+                        Reservation confirmed
+                    </h1>
+                    <p name="order_id" class="orderIDTitle">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="body-media">
+                <div class="containerUpgrade">
+                    <p class="textConfirmation alignCenter tagDesk">
+                        <span name="first_name"></span> <span name="last_name"></span>, your reservation  <span name="order_id"></span> <br> with a cost of <span name="costo"></span> has been successfully completed.
+                    </p>
+                    <p class="textConfirmation alignCenter tagMob">
+                        <span name="first_name"></span> <span name="last_name"></span>, your reservation  <span name="order_id"></span> with a cost of <span name="costo"></span> has been successfully completed.
+                    </p>
+                    <a class="botonExplore" href="https://www.nexustours.com/discounts" target="_blank">
+                        Keep exploring
+                    </a>
+                </div>
+                <div class="containerRedesConfirmation">
+                    <p class="textConfirmation">
+                        Follow us on our social media.
+                    </p>
+                    <div class="outContainerRedesIcons">
+                        <div class="innerContainerRedesIcons">
+                            <a class="botonRedesIcon" href="https://www.facebook.com/nexus.tours.activities" target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeFacebook.png">
+                            </a>
+                            <a class="botonRedesIcon" href="https://x.com/NexusTours" target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeX.png">
+                            </a>
+                            <a class="botonRedesIcon" href="https://www.linkedin.com/company/nexustours/" target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeLinkedin.png">
+                            </a>
+                        </div>
+                        <div class="innerContainerRedesIcons">
+                            <a class="botonRedesIcon" href="https://www.instagram.com/nexustours/" target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeInstagram.png">
+                            </a>
+                            <a class="botonRedesIcon" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeTripAdvisor.png">
+                            </a>
+                            <a class="botonRedesIcon" href="https://wa.me/5219981805405?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                <img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeWA.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </body>
+    <script>
+        // Obtener la URL actual
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // Leer parámetros específicos
+        var order_id = urlParams.get('order_id');
+        var value = urlParams.get('value');
+        var conversion_rate = urlParams.get('conversion_rate');
+        var decimals = urlParams.get('decimals');
+        var alpha3code = urlParams.get('alpha3code');
+        var first_name = urlParams.get('first_name');
+        var last_name = urlParams.get('last_name');
+
+        console.log(order_id)
+
+        let spanFirstName = document.querySelectorAll('[name=first_name]')
+        let spanLastName = document.querySelectorAll('[name=last_name]')
+        let spanOrderId = document.querySelectorAll('[name=order_id]')
+        let spanCosto = document.querySelectorAll("[name=costo]")
+
+        for(var i = 0; i < spanFirstName.length; i++){
+            spanFirstName[i].textContent = first_name
+        }
+        for(var i = 0; i < spanLastName.length; i++){
+            spanLastName[i].textContent = last_name
+        }
+        for(var i = 0; i < spanOrderId.length; i++){
+            spanOrderId[i].textContent = order_id
+        }
+
+        const precio = []
+        var costoConvertido = parseInt(value) * parseInt(conversion_rate)
+        costoConvertido = costoConvertido.toString()
+        for(var i = 0; i < (costoConvertido.length - parseInt(decimals)); i++){
+            precio.push(costoConvertido[i])
+        }
+        
+        var precioFinal = ""
+        for(var i = 0; i < precio.length; i++){
+            precioFinal = precioFinal + precio[i]
+        }
+
+        precioFinal = precioFinal + "."
+
+        for(var i = (precioFinal.length - 1); i < costoConvertido.length; i++){
+            precioFinal = precioFinal + costoConvertido[i]
+        }
+
+        precioFinal = precioFinal + " " + alpha3code
+
+        for(var i = 0; i < spanCosto.length; i++){
+            spanCosto[i].textContent = precioFinal
+        }
+
+    </script>
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+    </script>
+</html>
