@@ -1851,13 +1851,13 @@
         <div class="tag-desk">
             <div class="container-ofertas-row margin-bottom-46">
                 <a href="#banner-traslados" class="oferta oferta-2">
-                    <img name="imgOferta1" class="imagen-oferta" src=""  alt="" />
+                    <img name="imgOferta1" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
                 </a>
                 <div class="oferta oferta-2">
-                    <img name="imgOferta2" class="imagen-oferta" src=""  alt="" />
+                    <img name="imgOferta2" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
                 </div>
                 <a href="#banner-top-destinations" class="oferta oferta-2">
-                    <img name="imgOferta3" class="imagen-oferta" src="" alt="" />
+                    <img name="imgOferta3" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
                 </a>
             </div>
         </div>
@@ -1865,17 +1865,17 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-card">
                     <div class="oferta">
-                        <img name="imgOferta2" class="imagen-oferta" src="" alt="" />
+                        <img name="imgOferta2" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
                     </div>
                 </div>
                 <div class="swiper-slide swiper-card">
                     <a href="#banner-traslados" class="oferta">
-                        <img name="imgOferta1" class="imagen-oferta" src=""  alt="" />
+                        <img name="imgOferta1" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
                     </a>
                 </div>
                 <div class="swiper-slide swiper-card">
                     <a href="#banner-top-destinations-mob" class="oferta">
-                        <img name="imgOferta3" class="imagen-oferta" src="" alt="" />
+                        <img name="imgOferta3" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
                     </a>
                 </div>
             </div>
@@ -3846,6 +3846,210 @@
                 slidesPerView: 1.4,
             });
 
+        </script>
+        <script>
+            var idiomaLanding = document.querySelector('.text-capitalize.hidden-xs')
+            var imgOferta1 = document.querySelectorAll("[name=imgOferta1]")
+            var imgOferta2 = document.querySelectorAll("[name=imgOferta2]")
+            var imgOferta3 = document.querySelectorAll("[name=imgOferta3]")
+
+            var comp = idiomaLanding.textContent
+            comp = comp.replace(/\s/g, "")
+
+            var dicCampaign={
+                nombreCamp : [],
+                mesCamp : [],
+                yearCamp : [],
+                fechaInicioCamp : [],
+                fechaFinCamp : [],
+                linkEspImg1DiscountCampana:[],
+                linkEspImg2DiscountCampana:[],
+                linkEspImg3DiscountCampana:[],
+                linkEngImg1DiscountCampana:[],
+                linkEngImg2DiscountCampana:[],
+                linkEngImg3DiscountCampana:[],
+                linkFrImg1DiscountCampana:[],
+                linkFrImg2DiscountCampana:[],
+                linkFrImg3DiscountCampana:[],
+                linkBotonLanding : [],
+                prioridadCamp : [],
+                dispEspCamp : [],
+                dispEngCamp : [],
+                dispFrCamp : [],
+            }
+
+            // Realizar una solicitud GET al JSON
+            var urlCamp = 'https://davidgrhub.github.io/JsonRepositoryNexus/banners_campanas.json';
+
+            ejecutorCampDiscount(dicCampaign)
+
+            function cargarXMLCampDiscount(dicCampaign){
+                return new Promise ((resolve, reject) =>{
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', urlCamp, true);
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4 && xhr.status === 200) {
+                            var data = JSON.parse(xhr.responseText);
+                            for (var i = 0; i < data.length; i++) {
+                                dicCampaign.nombreCamp.push(data[i].Nombre_de_la_Campana);
+                                dicCampaign.mesCamp.push(data[i].Mes_Campana);
+                                dicCampaign.yearCamp.push(data[i].Year);
+                                dicCampaign.fechaInicioCamp.push(data[i].Fecha_Inicio_Campana);
+                                dicCampaign.fechaFinCamp.push(data[i].Fecha_Fin_Campana);
+                                dicCampaign.linkEspImg1DiscountCampana.push(data[i].Link_Esp_Img_1_Discount_Campana)
+                                dicCampaign.linkEspImg2DiscountCampana.push(data[i].Link_Esp_Img_2_Discount_Campana)
+                                dicCampaign.linkEspImg3DiscountCampana.push(data[i].Link_Esp_Img_3_Discount_Campana)
+                                dicCampaign.linkEngImg1DiscountCampana.push(data[i].Link_Eng_Img_1_Discount_Campana)
+                                dicCampaign.linkEngImg2DiscountCampana.push(data[i].Link_Eng_Img_2_Discount_Campana)
+                                dicCampaign.linkEngImg3DiscountCampana.push(data[i].Link_Eng_Img_3_Discount_Campana)
+                                dicCampaign.linkFrImg1DiscountCampana.push(data[i].Link_Fr_Img_1_Discount_Campana)
+                                dicCampaign.linkFrImg2DiscountCampana.push(data[i].Link_Fr_Img_2_Discount_Campana)
+                                dicCampaign.linkFrImg3DiscountCampana.push(data[i].Link_Fr_Img_3_Discount_Campana)
+                                dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana)
+                                dicCampaign.dispEspCamp.push(data[i].Disponible_MX)
+                                dicCampaign.dispEngCamp.push(data[i].Disponible_USA)
+                                dicCampaign.dispFrCamp.push(data[i].Disponible_CA)
+                            }
+
+                            /*Obtener la fecha del dia*/
+                            const dateToday = new Date()
+                            const desfaseUTC = (new Date()).getTimezoneOffset() * 60000;
+
+                            /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
+                            var arrayMonth = []
+                            var campActiva = []
+
+
+                            /*Obtener el mes de la fecha actual*/
+                            switch((dateToday.getMonth() + 1)){
+                                case 1:
+                                    var monthToday = "Enero"
+                                    break;
+                                case 2:
+                                    var monthToday = "Febrero"
+                                    break;
+                                case 3:
+                                    var monthToday = "Marzo"
+                                    break;
+                                case 4:
+                                    var monthToday = "Abril"
+                                    break;
+                                case 5:
+                                    var monthToday = "Mayo"
+                                    break;
+                                case 6:
+                                    var monthToday = "Junio"
+                                    break;
+                                case 7:
+                                    var monthToday = "Julio"
+                                    break;
+                                case 8:
+                                    var monthToday = "Agosto"
+                                    break;
+                                case 9:
+                                    var monthToday = "Septiembre"
+                                    break;
+                                case 10:
+                                    var monthToday = "Octubre"
+                                    break;
+                                case 11:
+                                    var monthToday = "Noviembre"
+                                    break;
+                                case 12:
+                                    var monthToday = "Diciembre"
+                                    break;
+                            }
+
+
+                            /*Obtener las campañas del mes*/
+                            for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
+                                if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
+                                    arrayMonth.push(i)
+                                }
+                            }
+
+                            /*Obtener las campañas que se encuentran activas*/
+                            arrayMonth.forEach(function(indice){
+                                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice] + "T00:00:00Z")
+                                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice] + "T23:59:59.999Z")
+
+                                fechaIni = new Date(fechaIni.getTime() + desfaseUTC)
+                                fechaFin = new Date(fechaFin.getTime() + desfaseUTC)
+                                
+                                if((dateToday >= fechaIni) && (dateToday <= fechaFin)){
+                                    campActiva.push(indice)
+                                }
+                            })
+
+                            var prio = campActiva[0]
+
+                            /*Obtener la campaña con mayor prioridad y que debe estar disponible*/
+                            campActiva.forEach(function(indice){
+                                if(dicCampaign["prioridadCamp"][indice] > dicCampaign["prioridadCamp"][prio]){
+                                    switch(comp){
+                                        case "español":
+                                            if(dicCampaign["dispEspCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                        case "english":
+                                            if(dicCampaign["dispEngCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                        case "français":
+                                            if(dicCampaign["dispFrCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                    }
+                                }
+                            })
+
+                            switch(comp){
+                                case "español":
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkEspImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkEspImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkEspImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                                case "english":
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkEngImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkEngImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkEngImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                                case "français":
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkFrImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkFrImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkFrImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                            }
+                        }
+                    };
+                    xhr.send();
+                });
+            }
+
+            async function ejecutorCampDiscount(dicCampaign){
+                await cargarXMLCampDiscount(dicCampaign)
+            }
         </script>
     </div>
 </body>

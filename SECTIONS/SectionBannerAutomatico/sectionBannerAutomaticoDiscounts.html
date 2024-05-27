@@ -249,6 +249,7 @@
 
                             /*Obtener la fecha del dia*/
                             const dateToday = new Date()
+                            const desfaseUTC = (new Date()).getTimezoneOffset() * 60000;
 
                             /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
                             var arrayMonth = []
@@ -305,9 +306,13 @@
 
                             /*Obtener las campañas que se encuentran activas*/
                             arrayMonth.forEach(function(indice){
-                                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice])
-                                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice])
-                                if((dateToday > fechaIni) && (dateToday < fechaFin)){
+                                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice] + "T00:00:00Z")
+                                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice] + "T23:59:59.999Z")
+
+                                fechaIni = new Date(fechaIni.getTime() + desfaseUTC)
+                                fechaFin = new Date(fechaFin.getTime() + desfaseUTC)
+                                
+                                if((dateToday >= fechaIni) && (dateToday <= fechaFin)){
                                     campActiva.push(indice)
                                 }
                             })

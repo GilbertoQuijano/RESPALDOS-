@@ -1,0 +1,84 @@
+<style>
+    .botonThemePark,
+    .botonThemePark:hover,
+    .botonThemePark:visited,
+    .botonThemePark:hover{
+        display: block; 
+        border-radius: 6px; 
+        overflow: hidden; 
+        width: fit-content;
+        text-decoration: none !important;
+    }
+    @media (max-width:991px){
+        .botonThemePark,
+        .botonThemePark:hover,
+        .botonThemePark:visited,
+        .botonThemePark:hover{
+            margin-right: 5px;
+        }
+    }
+
+    .containerFlexBotonThemePark{
+        display: flex; 
+        background-color: #FF621D; 
+        gap: 8px; 
+        padding: 8px 14px 8px 10px; 
+        align-items: center;
+    }
+    @media (max-width:991px){
+        .containerFlexBotonThemePark{
+            padding: 8px 10px;
+        }
+    }
+
+    .textBotonThemePark{
+        margin-top: 0; 
+        margin-bottom: 0; 
+        font-size: 14px; 
+        font-weight: 600; 
+        color: #FFF; 
+        line-height: normal;
+    }
+
+    .tagDeskTheme{
+        display: block;
+    }
+    @media (max-width:991px){
+        .tagDeskTheme{
+            display: none;
+        }
+    }
+
+    .tagMobTheme{
+        display: none;
+    }
+    @media (max-width:991px){
+        .tagMobTheme{
+            display: block;
+        }
+    }
+
+    .imgDisney{
+        width: 25px;
+    }
+
+    .imgUniversal{
+        width: 14px;
+    }
+
+    .imgThemePark{
+        width: 28px;
+    }
+
+</style>
+<script>
+    var upperMenu = document.querySelector('#upper-menu')
+    var botonXhub = document.querySelector('.upper-menu_quicklinks.btn-toolbar')
+    var botonThemePark = '<a class="botonThemePark" href="https://www.nexustours.com/theme-park" target="_blank"><div class="containerFlexBotonThemePark"><img class="imgDisney tagDeskTheme" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/logoDisneyTheme.png"><p class="textBotonThemePark tagDeskTheme">Theme parks</p><img class="imgUniversal tagDeskTheme" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/logoUniversalTheme.png"><img class="imgThemePark tagMobTheme" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/logoThemeParks.png"></div></a>'
+
+    upperMenu.insertAdjacentHTML('afterbegin', botonThemePark)
+    botonXhub.insertAdjacentHTML('afterbegin', botonThemePark)
+
+    upperMenu.style.display = "flex"
+    upperMenu.style.alignItems = "center"
+</script>

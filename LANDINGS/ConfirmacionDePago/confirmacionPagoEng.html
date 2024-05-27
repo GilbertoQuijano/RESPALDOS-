@@ -235,6 +235,81 @@
                     display: block;
                 }
             }
+
+            .containerRejected{
+                background-color: #FFF; 
+                border-radius: 25px; 
+                box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.08); 
+                padding: 40px 70px; 
+                width: fit-content; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-top: -55px;
+                box-sizing: border-box;
+                position: relative;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 992px){
+                .containerRejected{
+                    margin-top: -11vw;
+                    padding: 8vw 9vw;
+                    width: 90%;
+                }
+            }
+
+            .containerBotonContactoConfirmation{
+                display: flex; 
+                justify-content: center; 
+                gap:20px;
+            }
+            @media (max-width: 992px){
+                .containerBotonContactoConfirmation{
+                    flex-direction: column;
+                    width: 90%;
+                }
+            }
+
+            .botonContactoConfirmation,
+            .botonContactoConfirmation:visited,
+            .botonContactoConfirmation:focus,
+            .botonContactoConfirmation:hover{
+                display: block; 
+                border-radius: 30px; 
+                background: linear-gradient(266deg, #FD921E 3.66%, #FF621D 42.81%, #E73A4E 83.64%); 
+                text-decoration: none; 
+                overflow: hidden;
+            }
+
+            .containerTextBotonContactoConfirmaction{
+                display: flex; 
+                padding: 15px 40px; 
+                align-items: center; 
+                justify-content: center; 
+                gap: 10px;
+            }
+            @media (max-width: 992px){
+                .containerTextBotonContactoConfirmaction{
+                    padding: 4vw 10vw; 
+                }
+            }
+
+            .textBotonContactoConfirmation{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 25px; 
+                line-height: 100%; 
+                font-weight: 700; 
+                color: white;
+            }
+            @media (max-width: 992px){
+                .textBotonContactoConfirmation{
+                    font-size: 5vw; 
+                }
+            }
+
+            .imgBotonContactoConfirmation{
+                width: 30px;
+            }
             
         </style>
     </head>
@@ -242,43 +317,14 @@
         <body>
             <div class="bannerGradient">
                 <div class="containerTextBannerGradient">
-                    <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#FFD8C7" fill-opacity="0.42"/>
-                        <g clip-path="url(#clip0_3632_2)">
-                            <path d="M52.5 83C69.3447 83 83 69.3447 83 52.5C83 35.6553 69.3447 22 52.5 22C35.6553 22 22 35.6553 22 52.5C22 69.3447 35.6553 83 52.5 83Z" fill="#00AC5D"/>
-                            <path d="M44.707 66.2592L60.39 81.9421C73.379 78.4784 83.0004 66.644 83.0004 52.5005C83.0004 52.2119 83.0004 51.9232 83.0004 51.6346L70.6849 40.2812L44.707 66.2592Z" fill="#049553"/>
-                            <path d="M53.2699 59.3296C54.6169 60.6766 54.6169 62.9858 53.2699 64.3328L50.4797 67.123C49.1327 68.47 46.8236 68.47 45.4766 67.123L33.2573 54.8075C31.9103 53.4605 31.9103 51.1514 33.2573 49.8044L36.0475 47.0142C37.3945 45.6672 39.7037 45.6672 41.0507 47.0142L53.2699 59.3296Z" fill="white"/>
-                            <path d="M63.9499 38.0669C65.2969 36.7199 67.6061 36.7199 68.9531 38.0669L71.7433 40.8571C73.0903 42.2041 73.0903 44.5133 71.7433 45.8603L50.5761 66.9312C49.2291 68.2782 46.9199 68.2782 45.5729 66.9312L42.7827 64.141C41.4357 62.794 41.4357 60.4849 42.7827 59.1379L63.9499 38.0669Z" fill="white"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_3632_2">
-                                <rect width="61" height="61" fill="white" transform="translate(22 22)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <h1 class="titleReservation">
-                        Reservation confirmed
-                    </h1>
-                    <p name="order_id" class="orderIDTitle">
-                        
-                    </p>
                 </div>
             </div>
             <div class="body-media">
-                <div class="containerUpgrade">
-                    <p class="textConfirmation alignCenter tagDesk">
-                        <span name="first_name"></span> <span name="last_name"></span>, your reservation  <span name="order_id"></span> <br> with a cost of <span name="costo"></span> has been successfully completed.
-                    </p>
-                    <p class="textConfirmation alignCenter tagMob">
-                        <span name="first_name"></span> <span name="last_name"></span>, your reservation  <span name="order_id"></span> with a cost of <span name="costo"></span> has been successfully completed.
-                    </p>
-                    <a class="botonExplore" href="https://www.nexustours.com/discounts" target="_blank">
-                        Keep exploring
-                    </a>
+                <div name="containerTextConfirmation">
                 </div>
                 <div class="containerRedesConfirmation">
                     <p class="textConfirmation">
-                        Follow us on our social media.
+                        Follow us on our social media
                     </p>
                     <div class="outContainerRedesIcons">
                         <div class="innerContainerRedesIcons">
@@ -309,8 +355,10 @@
         </body>
     </body>
     <script>
+
         // Obtener la URL actual
         var urlParams = new URLSearchParams(window.location.search);
+        var anchoPantalla = window.innerWidth;
 
         // Leer parámetros específicos
         var order_id = urlParams.get('order_id');
@@ -320,13 +368,23 @@
         var alpha3code = urlParams.get('alpha3code');
         var first_name = urlParams.get('first_name');
         var last_name = urlParams.get('last_name');
+        var codigo = urlParams.get('codigo');
 
-        console.log(order_id)
+
+        var accepted = document.querySelectorAll('[name=accepted]')
+        var rejected = document.querySelectorAll('[name=rejected]')
+        var containerTextConfirmation = document.querySelector('[name=containerTextConfirmation]')
+        var containerRedesConfirmation = document.querySelector('.containerRedesConfirmation')
+        var containerTextBannerGradient = document.querySelector('.containerTextBannerGradient')
+        var bannerGradient = document.querySelector('.bannerGradient')
 
         let spanFirstName = document.querySelectorAll('[name=first_name]')
         let spanLastName = document.querySelectorAll('[name=last_name]')
         let spanOrderId = document.querySelectorAll('[name=order_id]')
         let spanCosto = document.querySelectorAll("[name=costo]")
+
+        const acceptedSVG = '<svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#FFD8C7" fill-opacity="0.42"/><g clip-path="url(#clip0_3632_2)"><path d="M52.5 83C69.3447 83 83 69.3447 83 52.5C83 35.6553 69.3447 22 52.5 22C35.6553 22 22 35.6553 22 52.5C22 69.3447 35.6553 83 52.5 83Z" fill="#00AC5D"/><path d="M44.707 66.2592L60.39 81.9421C73.379 78.4784 83.0004 66.644 83.0004 52.5005C83.0004 52.2119 83.0004 51.9232 83.0004 51.6346L70.6849 40.2812L44.707 66.2592Z" fill="#049553"/><path d="M53.2699 59.3296C54.6169 60.6766 54.6169 62.9858 53.2699 64.3328L50.4797 67.123C49.1327 68.47 46.8236 68.47 45.4766 67.123L33.2573 54.8075C31.9103 53.4605 31.9103 51.1514 33.2573 49.8044L36.0475 47.0142C37.3945 45.6672 39.7037 45.6672 41.0507 47.0142L53.2699 59.3296Z" fill="white"/><path d="M63.9499 38.0669C65.2969 36.7199 67.6061 36.7199 68.9531 38.0669L71.7433 40.8571C73.0903 42.2041 73.0903 44.5133 71.7433 45.8603L50.5761 66.9312C49.2291 68.2782 46.9199 68.2782 45.5729 66.9312L42.7827 64.141C41.4357 62.794 41.4357 60.4849 42.7827 59.1379L63.9499 38.0669Z" fill="white"/></g><defs><clipPath id="clip0_3632_2"><rect width="61" height="61" fill="white" transform="translate(22 22)"/></clipPath></defs></svg>'
+        const rejectedSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none"><path d="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#FFD8C7" fill-opacity="0.42"/><path d="M51.5 83C68.3447 83 82 69.3447 82 52.5C82 35.6553 68.3447 22 51.5 22C34.6553 22 21 35.6553 21 52.5C21 69.3447 34.6553 83 51.5 83Z" fill="#FF2C3D"/><path d="M38.7035 66.2587L55.1562 82.7114C69.011 81.0757 79.9795 70.2035 81.7114 56.3486L65.1625 39.7997L38.7035 66.2587Z" fill="#AD0E0E"/><path d="M65.9322 59.235C67.2792 60.582 67.2792 62.8912 65.9322 64.2382L63.2382 66.9322C61.8912 68.2792 59.582 68.2792 58.235 66.9322L37.0678 45.765C35.7208 44.418 35.7208 42.1088 37.0678 40.7618L39.858 37.9716C41.205 36.6246 43.5142 36.6246 44.8612 37.9716L65.9322 59.235Z" fill="white"/><path d="M54.7713 47.9779L46.9779 55.7713L58.235 66.9322C59.582 68.2792 61.8912 68.2792 63.2382 66.9322L66.0284 64.142C67.3754 62.7949 67.3754 60.4858 66.0284 59.1388L54.7713 47.9779Z" fill="#D6D6D6"/><path d="M58.235 38.0678C59.582 36.7208 61.8912 36.7208 63.2382 38.0678L66.0284 40.858C67.3754 42.205 67.3754 44.5142 66.0284 45.8612L44.765 66.9322C43.418 68.2792 41.1088 68.2792 39.7618 66.9322L37.0678 64.2382C35.7208 62.8912 35.7208 60.582 37.0678 59.235L58.235 38.0678Z" fill="white"/></svg>'
 
         for(var i = 0; i < spanFirstName.length; i++){
             spanFirstName[i].textContent = first_name
@@ -362,6 +420,105 @@
             spanCosto[i].textContent = precioFinal
         }
 
+        textConfirmationRejectedInnerDesk = '<div class="containerRejected"><p name="rejected" class="textConfirmation alignCenter tagDesk"> Hi <span name="first_name">'+ first_name +'</span> <span name="last_name">'+ last_name +'</span>, something happened <br> with the payment of your reservation <span name="order_id">'+ order_id +'</span>.</p></div>'
+        textConfirmationRejectedInnerMob = '<div class="containerRejected"><p name="rejected" class="textConfirmation alignCenter tagMob"> Hi <span name="first_name">'+ first_name +'</span> <span name="last_name">'+ last_name +'</span>, something happened with the payment of your reservation <span name="order_id">'+ order_id +'</span>.</p></div>'
+        textConfirmationAcceptedInnerDesk = '<div class="containerUpgrade"><p name="accepted" class="textConfirmation alignCenter tagDesk"> Hi <span name="first_name">'+ first_name +'</span> <span name="last_name">'+ last_name +'</span>, the payment of <span name="costo">'+ precioFinal +'</span> <br> for the reservation <span name="order_id">'+ order_id +'</span> has been succesfully completed.</p><a class="botonExplore" href="https://www.nexustours.com/discounts" target="_blank">Keep exploring</a></div>'
+        textConfirmationAcceptedInnerMob = '<div class="containerUpgrade"><p name="accepted" class="textConfirmation alignCenter tagMob"> Hi <span name="first_name">'+ first_name +'</span> <span name="last_name">'+ last_name +'</span>, the payment of <span name="costo">'+ precioFinal +'</span> for the reservation <span name="order_id">'+ order_id +'</span> has been succesfully completed. </p> <a class="botonExplore" href="https://www.nexustours.com/discounts" target="_blank">Keep exploring</a></div>'
+        
+        redesConfirmationRejectedInnerDesk = '<p class="textConfirmation">¿Need help? </p><div class="containerBotonContactoConfirmation"><a href="tel:+529982516559" class="botonContactoConfirmation" target="_blank"><div class="containerTextBotonContactoConfirmaction"><img class="imgBotonContactoConfirmation" src="https://www.nexustours.com/images/upload//Email-content/toll-email_black.png"><p class="textBotonContactoConfirmation">Call us</p></div></a><a href="https://api.whatsapp.com/send?phone=529981472600" class="botonContactoConfirmation" target="_blank"><div class="containerTextBotonContactoConfirmaction"><img class="imgBotonContactoConfirmation" src="https://www.nexustours.com/images/upload//Email-content/wa-black.png"><p class="textBotonContactoConfirmation">Whatsapp</p></div></a></div>'
+        redesConfirmationRejectedInnerMob = '<p class="textConfirmation">¿Need help? </p><div class="containerBotonContactoConfirmation"><a href="tel:+529982516559" class="botonContactoConfirmation" target="_blank"><div class="containerTextBotonContactoConfirmaction"><img class="imgBotonContactoConfirmation" src="https://www.nexustours.com/images/upload//Email-content/toll-email_black.png"><p class="textBotonContactoConfirmation">Call us</p></div></a><a href="https://api.whatsapp.com/send?phone=529981472600" class="botonContactoConfirmation" target="_blank"><div class="containerTextBotonContactoConfirmaction"><img class="imgBotonContactoConfirmation" src="https://www.nexustours.com/images/upload//Email-content/wa-black.png"><p class="textBotonContactoConfirmation">Whatsapp</p></div></a></div>'
+        redesConfirmationAcceptedInnerDesk = '<p class="textConfirmation">Follow us on our social media.</p><div class="outContainerRedesIcons"><div class="innerContainerRedesIcons"><a class="botonRedesIcon" href="https://www.facebook.com/nexus.tours.activities" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeFacebook.png"></a><a class="botonRedesIcon" href="https://x.com/NexusTours" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeX.png"></a><a class="botonRedesIcon" href="https://www.linkedin.com/company/nexustours/" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeLinkedin.png"></a></div><div class="innerContainerRedesIcons"><a class="botonRedesIcon" href="https://www.instagram.com/nexustours/" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeInstagram.png"></a><a class="botonRedesIcon" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeTripAdvisor.png"></a><a class="botonRedesIcon" href="https://wa.me/5219981805405?text=Got%20it.%20Let\'s%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeWA.png"></a></div></div>'
+        redesConfirmationAcceptedInnerMob = '<p class="textConfirmation">Follow us on our social media.</p><div class="outContainerRedesIcons"><div class="innerContainerRedesIcons"><a class="botonRedesIcon" href="https://www.facebook.com/nexus.tours.activities" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeFacebook.png"></a><a class="botonRedesIcon" href="https://x.com/NexusTours" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeX.png"></a><a class="botonRedesIcon" href="https://www.linkedin.com/company/nexustours/" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeLinkedin.png"></a></div><div class="innerContainerRedesIcons"><a class="botonRedesIcon" href="https://www.instagram.com/nexustours/" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeInstagram.png"></a><a class="botonRedesIcon" href="https://www.nexustours.com/tripadvisor-reviews" target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeTripAdvisor.png"></a><a class="botonRedesIcon" href="https://wa.me/5219981805405?text=Got%20it.%20Let\'s%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank"><img class="redesIcon" src="https://www.nexustours.com/images/upload//Landing%20Pages/LandingConfirmacionPago/iconOrangeWA.png"></a></div></div>'
+
+        textBannerGradientRejectedInner = rejectedSVG + '<h1 class="titleReservation">Something went wrong</h1><p name="order_id" class="orderIDTitle">'+ order_id+'</p>'
+        textBannerGradientAcceptedInner = acceptedSVG + '<h1 class="titleReservation">Reservation confirmed</h1><p name="order_id" class="orderIDTitle">'+ order_id+'</p>'
+        switch(codigo){
+            case "2000":
+                if(anchoPantalla > 992){
+                    containerTextConfirmation.innerHTML = ''
+                    containerRedesConfirmation.innerHTML = ''
+                    containerTextBannerGradient.innerHTML = ''
+                    containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerDesk
+                    containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerDesk
+                    containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                    bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+                }
+                else{
+                    containerTextConfirmation.innerHTML = ''
+                    containerRedesConfirmation.innerHTML = ''
+                    containerTextBannerGradient.innerHTML = ''
+                    containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerMob
+                    containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerMob
+                    containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                    bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+                }
+                break
+            default:
+                if(anchoPantalla > 992){
+                    containerTextConfirmation.innerHTML = ''
+                    containerRedesConfirmation.innerHTML = ''
+                    containerTextBannerGradient.innerHTML = ''
+                    containerTextConfirmation.innerHTML = textConfirmationRejectedInnerDesk
+                    containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerDesk
+                    containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                    bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+                }
+                else{
+                    containerTextConfirmation.innerHTML = ''
+                    containerRedesConfirmation.innerHTML = ''
+                    containerTextBannerGradient.innerHTML = ''
+                    containerTextConfirmation.innerHTML = textConfirmationRejectedInnerMob
+                    containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerMob
+                    containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                    bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+                }
+                break;
+        }
+        window.addEventListener('resize',function(){
+            anchoPantalla = window.innerWidth;
+            switch(codigo){
+                case "2000":
+                    if(anchoPantalla > 992){
+                        containerTextConfirmation.innerHTML = ''
+                        containerRedesConfirmation.innerHTML = ''
+                        containerTextBannerGradient.innerHTML = ''
+                        containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerDesk
+                        containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerDesk
+                        containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                        bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+                    }
+                    else{
+                        containerTextConfirmation.innerHTML = ''
+                        containerRedesConfirmation.innerHTML = ''
+                        containerTextBannerGradient.innerHTML = ''
+                        containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerMob
+                        containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerMob
+                        containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                        bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+                    }
+                    break
+                default:
+                    if(anchoPantalla > 992){
+                        containerTextConfirmation.innerHTML = ''
+                        containerRedesConfirmation.innerHTML = ''
+                        containerTextBannerGradient.innerHTML = ''
+                        containerTextConfirmation.innerHTML = textConfirmationRejectedInnerDesk
+                        containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerDesk
+                        containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                        bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+                    }
+                    else{
+                        containerTextConfirmation.innerHTML = ''
+                        containerRedesConfirmation.innerHTML = ''
+                        containerTextBannerGradient.innerHTML = ''
+                        containerTextConfirmation.innerHTML = textConfirmationRejectedInnerMob
+                        containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerMob
+                        containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                        bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+                    }
+                    break;
+            }
+        })
     </script>
     <script>
         var container = document.getElementsByClassName("container")

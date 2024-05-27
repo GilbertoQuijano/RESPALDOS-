@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            /*Clases*/
+
+            *{
+                font-family: 'DM Sans', sans-serif;
+                color: #646464;
+                box-sizing: border-box;
+            }
+
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .container-email{
+                width: 100%;
+            }
+
+            .body-email{
+                width: 600px;
+                margin: auto;
+                background-color: #F4F4F4;
+            }
+            @media(max-width:800px){
+                .body-email{
+                    width: 100% !important;
+                }
+            }
+
+            .margin-bottom-22{
+                margin-bottom: 22px;
+            }
+
+            .container-logo-nexus{
+                background-color: #0A3254;
+                width: 100%;
+                border-radius: 0px;
+            }
+            @media(max-width:800px){
+                .container-logo-nexus{
+                    border-radius: 0px;
+                }
+            }
+
+            .logo-nexus{
+                width: fit-content; 
+                margin: auto;
+                padding: 30px 0px 0px 0px;
+            }
+            @media(max-width:800px){
+                .logo-nexus{
+                    width: fit-content !important; 
+                    margin: auto !important;
+                    padding: 5vw 0vw 0vw 0vw !important;
+                }
+            }
+
+            .imgLogoNexus{
+                width: 200px;
+            }
+            @media(max-width:800px){
+                .imgLogoNexus{
+                    width: 47vw !important;
+                }
+            }
+
+            .container90{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .container75{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .background-redes-table{
+                background-color: #0A3254;
+                height: 80px;
+            }
+
+            .container-text{
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 2.5%;
+            }
+
+            .dominio{
+                font-size: 24px;
+                color: #FFF;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .tag-desk{
+                display: block;
+            }
+            @media(max-width:800px){
+                .tag-desk{
+                    display: none !important;
+                }
+            }
+
+            .tag-mob{
+                display: none;
+            }
+            @media(max-width:800px){
+                .tag-mob{
+                    display: block !important;
+                }
+            }
+
+            .margin-bottom-15{
+                margin-bottom: 15px;
+            }
+
+            .linkTerminos{
+                text-decoration: underline; 
+                color: white;
+                font-size: 14px;
+            }
+            @media(max-width:800px){
+                .linkTerminos{
+                    font-size: 3vw !important;
+                }
+            }
+
+            .textTerminos{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                color: white; 
+                font-size: 10.5px;
+            }
+            @media(max-width:800px){
+                .textTerminos{
+                    font-size: 2.5vw !important;
+                }
+            }
+
+            .container90{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bannerNY{
+                border-radius: 10px; 
+                overflow: hidden;
+            }
+
+            .blueGoNexus{
+                color: #0A3254;
+            }
+
+            .bold-text{
+                font-weight: 700;
+            }
+
+            .subtextNY{
+                font-size: 17px; 
+                font-weight: 500; 
+                margin-top: 0; 
+                margin-bottom: 0; 
+                color: #333; 
+                line-height: 130%; 
+                letter-spacing: -0.2px;
+            }
+
+            .width50{
+                width: 50%;
+            }
+
+            @media(max-width:800px){
+                .textInnerBotonCorreo{
+                    margin-top: 0 !important; 
+                    margin-bottom: 0 !important; 
+                    font-size: 3.5vw !important; 
+                    color:#333 !important;
+                }
+            }
+
+            .marginLeft{
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            .tag-desk-table{
+                display: table;
+            }
+            @media(max-width:800px){
+                .tag-desk-table{
+                    display: none !important;
+                }
+            }
+
+            .parrafoCard{
+                width: 100%; 
+                background-color: white; 
+                padding: 20px 24px;
+                border-radius: 16px;
+            }
+            @media(max-width:800px){
+                .parrafoCard{
+                    padding: 28px 8% !important;
+                }
+            }
+
+            .textParrafoCard{
+                margin-top: 0;
+                margin-bottom: 0; 
+                font-weight: 500; 
+                font-size: 15.5px;
+                text-align: justify;
+            }
+
+            .supportTitle{
+                text-align: center; 
+                font-size: 16px; 
+                font-weight: 500; 
+                line-height: 143%; 
+                color: #979797; 
+                margin-bottom: 28px;
+                margin-top: 5px;
+            }
+            @media(max-width:800px){
+                .supportTitle{
+                    font-size: 4vw !important;
+                }
+            }
+
+            .titleSection{
+                font-size: 21px; 
+                line-height: 120%; 
+                text-align: center; 
+                margin-top: 0; 
+                font-weight: 700;
+            }
+            @media(max-width:800px){
+                .titleSection{
+                    font-size: 7vw !important;
+                }
+            }
+
+            .textSupport{
+                text-align: center; 
+                color: #4A4A4A; 
+                font-size: 22px; 
+                margin-top: 0; 
+                margin-bottom: 10px;
+                line-height: 104%;
+            }
+            @media(max-width:800px){
+                .textSupport{
+                    font-size: 5vw !important;
+                }
+            }
+
+            .textRightToll{
+                text-align: right; 
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                line-height: 143%;
+                padding-right: 20px;
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .textRightToll{
+                    text-align: center !important;
+                    padding-right: 0 !important;
+                    margin-bottom: 2vw !important;
+                }
+            }
+
+            .margin-bottom-10{
+                margin-bottom: 10px;
+            }
+
+            .containerGreenContactUs{
+                width: 100%; 
+                border-radius: 16px; 
+                padding: 23px 0px;
+            }
+
+            .titleContactUs{
+                font-size: 34px; 
+                text-align: center; 
+                line-height: 106%; 
+                margin-top: 0; 
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .titleContactUs{
+                    font-size: 5.5vw !important;
+                }
+            }
+
+            .titleParticipation{
+                font-size: 28px; 
+                text-align: center; 
+                line-height: 106%; 
+                margin-top: 0; 
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .titleParticipation{
+                    font-size: 6vw !important;
+                }
+            }
+
+            .containerRowContactUs{
+                width: 80%; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            
+            .botonContactUs{
+                width: 95%; 
+                border-radius: 35px; 
+                padding: 10px;  
+                background-color: white;
+            }
+
+            .iconBotonContactUs{
+                width: 30px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: 10px;
+            }
+
+            .textBotonContactUs{
+                color: #004A63; 
+                font-size: 20px; 
+                line-height: 110%; 
+                margin-top: 0; 
+                margin-bottom: 0;
+            }
+
+            .containerGrisBottom{
+                width: 100%; 
+                padding: 5px 0px 20px 0px; 
+                background-color: #F4F4F4; 
+                border-radius: 0px 0px 60px 0px;
+            }
+
+            .linkSurvey{
+                display: block; 
+            }
+
+            .buttonSurvey{
+                background-color: #0A3254;  
+                border-radius: 26px; 
+                padding: 8px 0px;
+            }
+
+            .textButtonSurvey{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                text-align: center; 
+                color: white; 
+                font-size: 18px; 
+                line-height: 122%;
+                font-weight: 700;
+            }
+
+            .paddingImgTickRomance{
+                padding-top: 2px;
+            }
+
+            .titleJoinTPP{
+                font-size: 27px; 
+                text-align: center; 
+                line-height: 106%; 
+                margin-top: 0; 
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .titleJoinTPP{
+                    font-size: 5.5vw !important;
+                }
+            }
+
+            .tdWA{
+                width: 62px;
+            }
+
+            .imgTick{
+                width: 5vw;
+            }
+
+            .marginBottom15Mob{
+                margin-bottom: 3vw;
+            }
+
+            .bannerBottom{
+                width: 100%; 
+                background-color: #0A3254; 
+                height: 30px; 
+                padding-top: 20px; 
+                border-radius: 0px 0px 30px 30px; 
+                overflow: hidden;
+            }
+
+            .imgColoresBannerBottom{
+                display: block; 
+                width: 90%; 
+                height: 10px; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+
+            .lineaColores{
+                background-image: url('https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/bgColoresGoNexus.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                width: 90%; 
+                height: 4px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .containerBlueTitleDetails{
+                width: 100%; 
+                background-color: #0A3254; 
+                padding: 18px 24px; 
+                border-radius: 15px;
+            }
+            @media(max-width:800px){
+                .containerBlueTitleDetails{
+                    padding: 18px 0px !important; 
+                }
+            }
+
+            .titleDetails{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                text-align: center; 
+                font-size: 32px; 
+                color: white; 
+                font-weight: 700; 
+                line-height: 100%;
+            }
+            @media(max-width:800px){
+                .titleDetails{
+                    font-size: 5vw !important; 
+                }
+            }
+
+            .containerWhiteNoPadding{
+                width: 100%; 
+                background-color: white; 
+                border-radius: 15px; 
+                overflow: hidden; 
+                padding: 0px 24px;
+            }
+
+            .titleTableDetails{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 18px; 
+                line-height: 130%;
+            }
+            @media(max-width:800px){
+                .titleTableDetails{
+                    text-align: center !important;
+                }
+            }
+
+            .textTableDetails{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                font-weight: 500; 
+                line-height: 130%;
+            }
+            @media(max-width:800px){
+                .textTableDetails{
+                    text-align: center !important;
+                }
+            }
+
+            .imgIconDetails1{
+                width: 50px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgIconDetails1{
+                    width: 61px !important; 
+                    margin-bottom: 20px !important;
+                }
+            }
+            
+            .imgIconDetails2{
+                width: 64px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgIconDetails2{
+                    width: 61px !important; 
+                    margin-bottom: 20px !important;
+                }
+            }
+
+            .containerTableDetails{
+                padding: 24px 0px;
+            }
+
+            .tableLeftDetails{
+                width: 20%;
+            }
+
+            .tableRightDetails{
+                width: 80%; 
+                padding-left: 10px;
+            }
+
+            .lineGrayDetails{
+                width: 100%; 
+                height: 1px; 
+                background-color: #C9C9C9;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-email">
+            <div id="email" class="body-email">
+                <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container-logo-nexus">
+                                <div class="logo-nexus">
+                                    <img class="imgLogoNexus" alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/logoGoNexusGroup.png">
+                                </div>
+                            </div>
+                            <div class="bannerBottom">
+                                <img class="imgColoresBannerBottom" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/lineaColoresGoNexusGroup.png">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="parrafoCard">
+                                    <p class="textParrafoCard">
+                                        <span class="bold-text">Dear Supplier,</span>
+                                        <br><br>
+                                        We're excited to announce a <span class="bold-text blueGoNexus">collaborative effort with Arival</span>,
+                                        the global research and conference firm for tours, activities,
+                                        and attractions, to conduct a comprehensive survey for our
+                                        industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <h4 class="titleParticipation margin-bottom-22">
+                                    Your <span class="bold-text blueGoNexus">Participation Matters</span>
+                                </h4>
+                                <div class="container90">
+                                    <p class="textParrafoCard">
+                                        Your insights will play a crucial role in shaping the future of our 
+                                        industry by helping us track outlook, identify trends, and 
+                                        establish benchmarks for business planning.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="margin-bottom-22 containerBlueTitleDetails">
+                                    <h4 class="titleDetails">
+                                        Key Details About the Survey:
+                                    </h4>
+                                </div>
+                                <div class="containerWhiteNoPadding">
+                                    <div class="tag-desk">
+                                        <div class="containerTableDetails">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td class="tableLeftDetails">
+                                                        <img class="imgIconDetails1" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconShortGoSurvey.png">
+                                                    </td>
+                                                    <td class="tableRightDetails">
+                                                        <h4 class="bold-text titleTableDetails">
+                                                            Short and Informative: 
+                                                        </h4>
+                                                        <p class="textTableDetails">
+                                                            The survey should only take about 10 minutes of your time.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td class="tableLeftDetails">
+                                                        <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconConfidentialitySurvey.png">
+                                                    </td>
+                                                    <td class="tableRightDetails">
+                                                        <h4 class="bold-text titleTableDetails">
+                                                            Confidentiality Guaranteed:
+                                                        </h4>
+                                                        <p class="textTableDetails">    
+                                                            Your individual responses will remain confidential; Arival will not share them with any third parties.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td class="tableLeftDetails">
+                                                        <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconReceiveSurvey.png">
+                                                    </td>
+                                                    <td class="tableRightDetails">
+                                                        <h4 class="bold-text titleTableDetails">
+                                                            Receive Results:
+                                                        </h4>
+                                                        <p class="textTableDetails">
+                                                            Provide your contact information, and you'll receive a summary report of the survey results directly from Arival.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td class="tableLeftDetails">
+                                                        <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconBenefitsSurvey.png">
+                                                    </td>
+                                                    <td class="tableRightDetails">
+                                                        <h4 class="bold-text titleTableDetails">
+                                                            Exclusive Benefits:
+                                                        </h4>
+                                                        <p class="textTableDetails">
+                                                            By participating, you'll be entered into a drawing to win two free tickets to Arival 360 San Diego or Arival Europe 2025. Additionally, you'll receive a 10% discount for any Arival conference in 2024 or 2025.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td class="tableLeftDetails">
+                                                        <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconResponseSurvey.png">
+                                                    </td>
+                                                    <td class="tableRightDetails">
+                                                        <h4 class="bold-text titleTableDetails">
+                                                            One Survey, One Response: 
+                                                        </h4>
+                                                        <p class="textTableDetails">
+                                                            You may receive multiple invitations, but we kindly request that you complete the survey only once.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tag-mob">
+                                        <div class="containerTableDetails">
+                                            <img class="imgIconDetails1" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconShortGoSurvey.png">
+                                            <h4 class="bold-text titleTableDetails">
+                                                Short and Informative: 
+                                            </h4>
+                                            <p class="textTableDetails">
+                                                The survey should only take about 10 minutes of your time.
+                                            </p>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconConfidentialitySurvey.png">
+                                            <h4 class="bold-text titleTableDetails">
+                                                Confidentiality Guaranteed:
+                                            </h4>
+                                            <p class="textTableDetails">    
+                                                Your individual responses will remain confidential; Arival will not share them with any third parties.
+                                            </p>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconReceiveSurvey.png">
+                                            <h4 class="bold-text titleTableDetails">
+                                                Receive Results:
+                                            </h4>
+                                            <p class="textTableDetails">
+                                                Provide your contact information, and you'll receive a summary report of the survey results directly from Arival.
+                                            </p>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconBenefitsSurvey.png">
+                                            <h4 class="bold-text titleTableDetails">
+                                                Exclusive Benefits:
+                                            </h4>
+                                            <p class="textTableDetails">
+                                                By participating, you'll be entered into a drawing to win two free tickets to Arival 360 San Diego or Arival Europe 2025. Additionally, you'll receive a 10% discount for any Arival conference in 2024 or 2025.
+                                            </p>
+                                        </div>
+                                        <div class="lineGrayDetails">
+                                        </div>
+                                        <div class="containerTableDetails">
+                                            <img class="imgIconDetails2" src="https://www.nexustours.com/images/upload//Email-content/TPP/GoNexusGroup/iconResponseSurvey.png">
+                                            <h4 class="bold-text titleTableDetails">
+                                                One Survey, One Response: 
+                                            </h4>
+                                            <p class="textTableDetails">
+                                                You may receive multiple invitations, but we kindly request that you complete the survey only once.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <h4 class="titleJoinTPP margin-bottom-22">
+                                    <span class="bold-text blueGoNexus">Begin</span> the Survey
+                                </h4>
+                                <a class="linkSurvey margin-bottom-22" href="https://survey.alchemer.com/s3/7773039/ARIVALJUNIPER" target="_blank">
+                                    <div class="buttonSurvey">
+                                        <p class="textButtonSurvey">
+                                            Access the survey
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="container90">
+                                    <p class="textParrafoCard">
+                                        Your contribution to this survey is greatly appreciated, and it 
+                                        will help us drive positive change within our industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="RedesSociales" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="lineaColores">
+
+                            </div>
+                            <div class="background-redes-table">
+                                <div class="lineaColores">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
