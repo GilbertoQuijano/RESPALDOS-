@@ -1,0 +1,258 @@
+<div id="contentCintillo" style="width: 100%;">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $( document ).ready(function(){
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var mycount ="";
+        var litext=["Hotels","Packages"];
+        var cintillo=["","", "Book Now"];
+        var imgtop="a1a77f12-7b1a-95e8-6593-99c87e2b4a12.jpg";
+        var bg = "background:url(https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/discounts/MD_eng2.jpg); background-size: cover; ";
+        var idiomaLanding = document.querySelector('.text-capitalize.hidden-xs')
+        var comp = idiomaLanding.textContent
+        comp = comp.replace(/\s/g, "")
+
+        var dicCampaign={
+            nombreCamp : [],
+            mesCamp : [],
+            yearCamp : [],
+            fechaInicioCamp : [],
+            fechaFinCamp : [],
+            linkImgEspDeskCamp : [],
+            linkImgEngDeskCamp : [],
+            linkImgFrDeskCamp : [],
+            linkImgEspMobCamp : [],
+            linkImgEngMobCamp : [],
+            linkImgFrMobCamp : [],
+            linkBotonLanding : [],
+            prioridadCamp : [],
+            dispEspCamp : [],
+            dispEngCamp : [],
+            dispFrCamp : [],
+        }
+
+        var urlCamp = 'https://davidgrhub.github.io/JsonRepositoryNexus/banners_campanas.json';
+
+        ejecutorCampHome(dicCampaign)
+
+        function cargarXMLCampHome(dicCampaign){
+            return new Promise ((resolve, reject) =>{
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', urlCamp, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        for (var i = 0; i < data.length; i++) {
+                            dicCampaign.nombreCamp.push(data[i].Nombre_de_la_Campana);
+                            dicCampaign.mesCamp.push(data[i].Mes_Campana);
+                            dicCampaign.yearCamp.push(data[i].Year);
+                            dicCampaign.fechaInicioCamp.push(data[i].Fecha_Inicio_Campana);
+                            dicCampaign.fechaFinCamp.push(data[i].Fecha_Fin_Campana);
+                            dicCampaign.linkImgEspDeskCamp.push(data[i].Link_Esp_Img_Desk_Campana);
+                            dicCampaign.linkImgEngDeskCamp.push(data[i].Link_Eng_Img_Desk_Campana);
+                            dicCampaign.linkImgFrDeskCamp.push(data[i].Link_Fr_Img_Desk_Campana);
+                            dicCampaign.linkBotonLanding.push(data[i].Link_Boton_Landing);
+                            dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana);
+                            dicCampaign.dispEspCamp.push(data[i].Disponible_MX);
+                            dicCampaign.dispEngCamp.push(data[i].Disponible_USA);
+                            dicCampaign.dispFrCamp.push(data[i].Disponible_CA);
+                        }
+
+                        /*Obtener la fecha del dia*/
+                        const dateToday = new Date()
+                        const desfaseUTC = (new Date()).getTimezoneOffset() * 60000;
+
+                        /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
+                        var arrayMonth = []
+                        var campActiva = []
+
+
+                        /*Obtener el mes de la fecha actual*/
+                        switch((dateToday.getMonth() + 1)){
+                            case 1:
+                                var monthToday = "Enero"
+                                break;
+                            case 2:
+                                var monthToday = "Febrero"
+                                break;
+                            case 3:
+                                var monthToday = "Marzo"
+                                break;
+                            case 4:
+                                var monthToday = "Abril"
+                                break;
+                            case 5:
+                                var monthToday = "Mayo"
+                                break;
+                            case 6:
+                                var monthToday = "Junio"
+                                break;
+                            case 7:
+                                var monthToday = "Julio"
+                                break;
+                            case 8:
+                                var monthToday = "Agosto"
+                                break;
+                            case 9:
+                                var monthToday = "Septiembre"
+                                break;
+                            case 10:
+                                var monthToday = "Octubre"
+                                break;
+                            case 11:
+                                var monthToday = "Noviembre"
+                                break;
+                            case 12:
+                                var monthToday = "Diciembre"
+                                break;
+                        }
+
+
+                        /*Obtener las campañas del mes*/
+                        for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
+                            if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
+                                arrayMonth.push(i)
+                            }
+                        }
+
+                        /*Obtener las campañas que se encuentran activas*/
+                        arrayMonth.forEach(function(indice){
+                                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice] + "T00:00:00Z")
+                                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice] + "T23:59:59.999Z")
+
+                                fechaIni = new Date(fechaIni.getTime() + desfaseUTC)
+                                fechaFin = new Date(fechaFin.getTime() + desfaseUTC)
+                                
+                                if((dateToday >= fechaIni) && (dateToday <= fechaFin)){
+                                    campActiva.push(indice)
+                                }
+                            })
+
+                        var prio = campActiva[0]
+
+                        /*Obtener la campaña con mayor prioridad y que debe estar disponible*/
+                        campActiva.forEach(function(indice){
+                            if(dicCampaign["prioridadCamp"][indice] > dicCampaign["prioridadCamp"][prio]){
+                                switch(comp){
+                                    case "español":
+                                        if(dicCampaign["dispEspCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                    case "english":
+                                        if(dicCampaign["dispEngCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                    case "français":
+                                        if(dicCampaign["dispFrCamp"][indice] == 1){
+                                            prio = indice
+                                        }
+                                    break;
+                                }
+                            }
+                        })
+
+                        switch(comp){
+                            case "english":
+                                    litext[0]="Hotels"; 
+                                    litext[1]="Packages"; 
+                                    cintillo[0]=""; 
+                                    cintillo[1]= dicCampaign["nombreCamp"][prio] + " Up to 50% discount"; 
+                                    cintillo[2]="Book Now";
+                                break;
+                            case "français":
+                                    litext[0]="Hôtel"; 
+                                    litext[1]="Forfaits"; 
+                                    cintillo[0]=""; 
+                                    cintillo[1]= dicCampaign["nombreCamp"][prio] + " jusqu'à 50% de réduction"; 
+                                    cintillo[2]="Réserver";
+                                break;
+                            case "español":
+                                    litext[0]="Hoteles"; 
+                                    litext[1]="Paquetes";
+                                    cintillo[0]=""; 
+                                    cintillo[1]= dicCampaign["nombreCamp"][prio] + " hasta 59% de desc.";  
+                                    cintillo[2]="Reserva Ahora";  
+                                    imgtop="d908b934-5019-0019-c52e-45b3eb2cd4a3.jpg";
+                                break;
+                        }
+
+                        //bg = "background:linear-gradient(to left, #8CE972 30%,  #00AFDD 70% );"; //Celeste
+                        //bg = "background:url(); background:linear-gradient(to left, #1D146D 0%,  #05030E 150% );"; //Azul
+                        //bg = "background:url(); background:linear-gradient(to left, #EB4600 0%,  #EB4600 150% );"  //Naranja
+                        bg = "background:url(https://www.nexustours.com/images/upload//Landing%20Pages/abril_2024/discounts/FS_eng2.jpg);"; // Flash
+                        //bg = "background:url(https://www.nexustours.com/images/upload//Tramado-night-sale.jpg); background-position-y: center;"; //Night sale
+                        //bg = "background:url(https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/discounts/CM_eng2.jpg);"; //fiesta
+                        // bg = "background:url(https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/discounts/MD_eng2.jpg);"; //memorial 
+                        
+                        if (!/android|iPad|iPhone|iPod/i.test(userAgent)){
+                            $(".upper-menu__xhub-button").prop("href", "https://nexusapp.nexustours.com/my-trips");   
+                        }
+
+                        $('#contentCintillo').append('<a href="https://www.nexustours.com/discounts?cintillo=bottom" title="Discounts"><div id="mycount2" class="multi-searcher__tabs" style="position: block;  bottom: 0; left: 0; width: 100%; height: auto; z-index: 9998; '+ bg +'"> <div class="container"><div class="container-title-center"><h2 style="color:#FFFFFF; text-align: center;"><span class="white-text cinta-mob" style="font-size: 25px; position: relative; top: -10px;" class=" white-color;">'+ cintillo[1] +' </span>   <ul class="li-count"><li><span id="days2"></span>days</li><li><span id="hours2"></span>Hours</li><li><span id="minutes2"></span>Minutes</li><li><span id="seconds2"></span>Seconds</li></ul> <span class="boton-tarifas gradient-color-nexus white-text tag-mob1" style=" padding: 2px 18px; border: solid #FFFFFF 0.5px; position: relative;top: -13px; display: inline-block;"><span style="font-size: 20px; border-radius: 100px;" class="learn-more-collections white-color"> '+ cintillo[2] +' </span> </h2> </div></div></div></a>');
+                        
+                        (function () {
+                            var second = 1000,
+                            minute = second * 60,
+                            hour = minute * 60,
+                            day = hour * 24;
+                    
+                            //I'm adding this section so I don't have to keep updating this pen every year :-)
+                            //remove this if you don't need it
+                            var today = new Date(),
+                            fechaFinDate = new Date(dicCampaign["fechaFinCamp"][prio] + "T23:59:59.999Z")
+                            fechaFinDate = new Date(fechaFinDate.getTime() + desfaseUTC )
+                            fechaFinDate.setDate(fechaFinDate.getDate() + 1)
+                            dd = String(today.getDate()).padStart(2, "0"),
+                            mm = String(today.getMonth() + 1).padStart(2, "0"),
+                            yyyy = today.getFullYear(),
+                            nextYear = yyyy,
+                            dayMonth = String(fechaFinDate.getMonth() + 1).padStart(2, "0") + "/" + String(fechaFinDate.getDate()).padStart(2, "0") + "/",
+                            contFinCamp = dayMonth + String(fechaFinDate.getFullYear());
+                    
+                            today = mm + "/" + dd + "/" + yyyy;
+                            if (today > contFinCamp) {
+                                contFinCamp = dayMonth + String(fechaFinDate.getFullYear());
+                            }
+                    
+                            var countDown = new Date(contFinCamp).getTime(), 
+                            x = setInterval(function() {    
+                                var now = new Date().getTime(),
+                                distance = countDown - now;
+                        
+                                $("#days2").text(Math.floor(distance / (day))),
+                                $("#hours2").text(Math.floor(Math.floor((distance % (day)) / (hour))),
+                                $("#minutes2").text(Math.floor((distance % (hour)) / (minute))),
+                                $("#seconds2").text(Math.floor((distance % (minute)) / second)));
+                        
+                                //do something later when date is reached
+                                if (distance < 0 && dicCampaign["nombreCamp"][prio] == "Early Book") {
+                                    clearInterval(x);
+                                    document.getElementById("mycount2").style.display = "none";
+                                    if (!/android|iPad|iPhone|iPod/i.test(userAgent) )  {
+                                        $('#contentCintillo').append('<a href="https://www.nexustours.com/book-early?cintillo=top" title="Book Early"><div id="" class="multi-searcher__tabs" style="position: fixed;  top: 0; left: 0; width: 100%; z-index: 9999; text-align: center; background-color: #FFFFFF;"><img src="https://mcusercontent.com/9c9fbd92459893ccd14b4c862/images/'+ imgtop +'" alt="Book Early"></div></a>'); 
+                                        
+                                        
+                                        $("#main-header").prop("margin-top", "55px"); 
+                                        document.getElementsByClassName('main-header')[0].style.marginTop = '55px';
+                                        
+                                    }
+                                }
+                            //seconds
+                            }, 0)
+                        }());
+                    }
+                };
+                xhr.send();
+            });
+        }
+
+        async function ejecutorCampHome(dicCampaign){
+            await cargarXMLCampHome(dicCampaign)
+        }
+    })
+</script>
