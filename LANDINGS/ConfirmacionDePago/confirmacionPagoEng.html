@@ -432,8 +432,50 @@
 
         textBannerGradientRejectedInner = rejectedSVG + '<h1 class="titleReservation">Something went wrong</h1><p name="order_id" class="orderIDTitle">'+ order_id+'</p>'
         textBannerGradientAcceptedInner = acceptedSVG + '<h1 class="titleReservation">Reservation confirmed</h1><p name="order_id" class="orderIDTitle">'+ order_id+'</p>'
-        switch(codigo){
-            case "2000":
+        
+        if(codigo == "2000"){
+            if(anchoPantalla > 992){
+                containerTextConfirmation.innerHTML = ''
+                containerRedesConfirmation.innerHTML = ''
+                containerTextBannerGradient.innerHTML = ''
+                containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerDesk
+                containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerDesk
+                containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+            }
+            else{
+                containerTextConfirmation.innerHTML = ''
+                containerRedesConfirmation.innerHTML = ''
+                containerTextBannerGradient.innerHTML = ''
+                containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerMob
+                containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerMob
+                containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
+                bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
+            }
+        }
+        else if(codigo == "2002" || codigo == "2010" || codigo == "2011" || codigo == "2016" || codigo == "2017" || codigo == "5000"){
+            if(anchoPantalla > 992){
+                containerTextConfirmation.innerHTML = ''
+                containerRedesConfirmation.innerHTML = ''
+                containerTextBannerGradient.innerHTML = ''
+                containerTextConfirmation.innerHTML = textConfirmationRejectedInnerDesk
+                containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerDesk
+                containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+            }
+            else{
+                containerTextConfirmation.innerHTML = ''
+                containerRedesConfirmation.innerHTML = ''
+                containerTextBannerGradient.innerHTML = ''
+                containerTextConfirmation.innerHTML = textConfirmationRejectedInnerMob
+                containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerMob
+                containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
+                bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
+            }
+        }
+        window.addEventListener('resize',function(){
+            anchoPantalla = window.innerWidth;
+            if(codigo == "2000"){
                 if(anchoPantalla > 992){
                     containerTextConfirmation.innerHTML = ''
                     containerRedesConfirmation.innerHTML = ''
@@ -452,8 +494,8 @@
                     containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
                     bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
                 }
-                break
-            default:
+            }
+            else if(codigo == "2002" || codigo == "2010" || codigo == "2011" || codigo == "2016" || codigo == "2017" || codigo == "5000"){
                 if(anchoPantalla > 992){
                     containerTextConfirmation.innerHTML = ''
                     containerRedesConfirmation.innerHTML = ''
@@ -472,51 +514,6 @@
                     containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
                     bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
                 }
-                break;
-        }
-        window.addEventListener('resize',function(){
-            anchoPantalla = window.innerWidth;
-            switch(codigo){
-                case "2000":
-                    if(anchoPantalla > 992){
-                        containerTextConfirmation.innerHTML = ''
-                        containerRedesConfirmation.innerHTML = ''
-                        containerTextBannerGradient.innerHTML = ''
-                        containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerDesk
-                        containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerDesk
-                        containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
-                        bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
-                    }
-                    else{
-                        containerTextConfirmation.innerHTML = ''
-                        containerRedesConfirmation.innerHTML = ''
-                        containerTextBannerGradient.innerHTML = ''
-                        containerTextConfirmation.innerHTML = textConfirmationAcceptedInnerMob
-                        containerRedesConfirmation.innerHTML = redesConfirmationAcceptedInnerMob
-                        containerTextBannerGradient.innerHTML = textBannerGradientAcceptedInner
-                        bannerGradient.style.backgroundImage = 'linear-gradient(115deg, #00AFDD 21.99%, #8CE972 118.15%)'
-                    }
-                    break
-                default:
-                    if(anchoPantalla > 992){
-                        containerTextConfirmation.innerHTML = ''
-                        containerRedesConfirmation.innerHTML = ''
-                        containerTextBannerGradient.innerHTML = ''
-                        containerTextConfirmation.innerHTML = textConfirmationRejectedInnerDesk
-                        containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerDesk
-                        containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
-                        bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
-                    }
-                    else{
-                        containerTextConfirmation.innerHTML = ''
-                        containerRedesConfirmation.innerHTML = ''
-                        containerTextBannerGradient.innerHTML = ''
-                        containerTextConfirmation.innerHTML = textConfirmationRejectedInnerMob
-                        containerRedesConfirmation.innerHTML = redesConfirmationRejectedInnerMob
-                        containerTextBannerGradient.innerHTML = textBannerGradientRejectedInner
-                        bannerGradient.style.backgroundImage = 'linear-gradient(91deg, #FF4957 -0.85%, #FFB6BC 134.18%)'
-                    }
-                    break;
             }
         })
     </script>
