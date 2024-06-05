@@ -5043,8 +5043,8 @@ var swiperColMob = new Swiper(".swiperCollectionsMob", {
     var BannerCampañaMob = document.querySelector('#BannerCampañaMob')
     var botonCampaña = document.querySelector('#botonCampaña')
 
+    /*Obtener el lenguaje de la landing*/
     var comp = idiomaLanding.textContent
-
     comp = comp.replace(/\s/g, "")
 
     /*
@@ -5108,6 +5108,9 @@ var swiperColMob = new Swiper(".swiperCollectionsMob", {
                         dicCampaign.linkImgEspDeskCamp.push(data[i].Link_Esp_Img_Desk_Campana);
                         dicCampaign.linkImgEngDeskCamp.push(data[i].Link_Eng_Img_Desk_Campana);
                         dicCampaign.linkImgFrDeskCamp.push(data[i].Link_Fr_Img_Desk_Campana);
+                        dicCampaign.linkImgEspMobCamp.push(data[i].Link_Esp_Img_Mob_Campana);
+                        dicCampaign.linkImgEngMobCamp.push(data[i].Link_Eng_Img_Mob_Campana);
+                        dicCampaign.linkImgFrMobCamp.push(data[i].Link_Fr_Img_Mob_Campana);
                         dicCampaign.linkBotonLanding.push(data[i].Link_Boton_Landing);
                         dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana);
                         dicCampaign.dispEspCamp.push(data[i].Disponible_MX);
@@ -5164,7 +5167,6 @@ var swiperColMob = new Swiper(".swiperCollectionsMob", {
                             break;
                     }
 
-
                     /*Obtener las campañas del mes*/
                     for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
                         if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
@@ -5209,7 +5211,6 @@ var swiperColMob = new Swiper(".swiperCollectionsMob", {
                             }
                         }
                     })
-
                     switch(comp){
                         case "español":
                             BannerCampañaDesk.src = dicCampaign["linkImgEspDeskCamp"][prio]

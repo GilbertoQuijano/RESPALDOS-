@@ -2474,12 +2474,6 @@
         </div>
         <br /><br />
         <div class="container-text-footer" id="terminos">
-            <p class="text-footer">
-                *Promoción válida para reservaciones del 13 de Mayo al 23 de Mayo, 2024 y viaja del 13 de Mayo 2024 al 31 de Diciembre 2024. Obtén hasta 32% de descuento en tours y hasta 59% en traslados seleccionados.
-                <br />
-                <strong>**Para acceder al descuento debes iniciar sesión</strong>
-                <strong>**Precios v&#225;lidos en productos seleccionados y sujetos a disponibilidad al momento de la compra.</strong>
-            </p>
         </div>
         <div class="containerPriceCard">
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -3802,19 +3796,19 @@
             });
 
             var swiper7 = new Swiper(".mySwiperTours1", {
-            slidesPerView: 3,
-            navigation: {
-                nextEl: ".swiper4-button-next",
-                prevEl: ".swiper4-button-prev",
-            },
-        });
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper4-button-next",
+                    prevEl: ".swiper4-button-prev",
+                },
+            });
 
-        var swiper8 = new Swiper(".swiperTours-Mob1", {
-            slidesPerView: 1.1,
-            pagination: {
-                el: ".swiper4-pagination",
-            },
-        });
+            var swiper8 = new Swiper(".swiperTours-Mob1", {
+                slidesPerView: 1.1,
+                pagination: {
+                    el: ".swiper4-pagination",
+                },
+            });
 
             var swiper4 = new Swiper(".swiperDestinations-Mob", {
                 slidesPerView: 1.5,
@@ -3852,6 +3846,7 @@
             var imgOferta1 = document.querySelectorAll("[name=imgOferta1]")
             var imgOferta2 = document.querySelectorAll("[name=imgOferta2]")
             var imgOferta3 = document.querySelectorAll("[name=imgOferta3]")
+            var textFooter = document.querySelector('#terminos')
 
             var comp = idiomaLanding.textContent
             comp = comp.replace(/\s/g, "")
@@ -3876,6 +3871,30 @@
                 dispEspCamp : [],
                 dispEngCamp : [],
                 dispFrCamp : [],
+
+                discToursEspCamp: [],
+                discToursEngCamp: [],
+                discToursFrCamp: [],
+
+                discTransEspCamp: [],
+                discTransEngCamp: [],
+                discTransFrCamp: [],
+
+                diaInicioEspCamp: [],
+                diaInicioEngCamp: [],
+                diaInicioFrCamp: [],
+
+                diaFinEspCamp: [],
+                diaFinEngCamp: [],
+                diaFinFrCamp: [],
+
+                mesInicioEspCamp: [],
+                mesInicioEngCamp: [],
+                mesInicioFrCamp: [],
+
+                mesFinEspCamp: [],
+                mesFinEngCamp: [],
+                mesFinFrCamp: []
             }
 
             // Realizar una solicitud GET al JSON
@@ -3892,23 +3911,55 @@
                             var data = JSON.parse(xhr.responseText);
                             for (var i = 0; i < data.length; i++) {
                                 dicCampaign.nombreCamp.push(data[i].Nombre_de_la_Campana);
+
                                 dicCampaign.mesCamp.push(data[i].Mes_Campana);
+
                                 dicCampaign.yearCamp.push(data[i].Year);
+
                                 dicCampaign.fechaInicioCamp.push(data[i].Fecha_Inicio_Campana);
                                 dicCampaign.fechaFinCamp.push(data[i].Fecha_Fin_Campana);
+
                                 dicCampaign.linkEspImg1DiscountCampana.push(data[i].Link_Esp_Img_1_Discount_Campana)
                                 dicCampaign.linkEspImg2DiscountCampana.push(data[i].Link_Esp_Img_2_Discount_Campana)
                                 dicCampaign.linkEspImg3DiscountCampana.push(data[i].Link_Esp_Img_3_Discount_Campana)
+
                                 dicCampaign.linkEngImg1DiscountCampana.push(data[i].Link_Eng_Img_1_Discount_Campana)
                                 dicCampaign.linkEngImg2DiscountCampana.push(data[i].Link_Eng_Img_2_Discount_Campana)
                                 dicCampaign.linkEngImg3DiscountCampana.push(data[i].Link_Eng_Img_3_Discount_Campana)
+
                                 dicCampaign.linkFrImg1DiscountCampana.push(data[i].Link_Fr_Img_1_Discount_Campana)
                                 dicCampaign.linkFrImg2DiscountCampana.push(data[i].Link_Fr_Img_2_Discount_Campana)
                                 dicCampaign.linkFrImg3DiscountCampana.push(data[i].Link_Fr_Img_3_Discount_Campana)
+
                                 dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana)
+
                                 dicCampaign.dispEspCamp.push(data[i].Disponible_MX)
                                 dicCampaign.dispEngCamp.push(data[i].Disponible_USA)
                                 dicCampaign.dispFrCamp.push(data[i].Disponible_CA)
+
+                                dicCampaign.discToursEspCamp.push(data[i].Prc_Tours_Esp);
+                                dicCampaign.discToursEngCamp.push(data[i].Prc_Tours_Eng);
+                                dicCampaign.discToursFrCamp.push(data[i].Prc_Tours_Fr);
+
+                                dicCampaign.discTransEspCamp.push(data[i].Prc_Traslados_Esp);
+                                dicCampaign.discTransEngCamp.push(data[i].Prc_Traslados_Eng);
+                                dicCampaign.discTransFrCamp.push(data[i].Prc_Traslados_Fr);
+
+                                dicCampaign.diaInicioEspCamp.push(data[i].Dia_Inicio_Campana_Esp);
+                                dicCampaign.diaInicioEngCamp.push(data[i].Dia_Inicio_Campana_Eng);
+                                dicCampaign.diaInicioFrCamp.push(data[i].Dia_Inicio_Campana_Fr);
+
+                                dicCampaign.diaFinEspCamp.push(data[i].Dia_Fin_Campana_Esp);
+                                dicCampaign.diaFinEngCamp.push(data[i].Dia_Fin_Campana_Eng);
+                                dicCampaign.diaFinFrCamp.push(data[i].Dia_Fin_Campana_Fr);
+
+                                dicCampaign.mesInicioEspCamp.push(data[i].Mes_Inicio_Campana_Esp);
+                                dicCampaign.mesInicioEngCamp.push(data[i].Mes_Inicio_Campana_Eng);
+                                dicCampaign.mesInicioFrCamp.push(data[i].Mes_Inicio_Campana_Fr);
+
+                                dicCampaign.mesFinEspCamp.push(data[i].Mes_Fin_Campana_Esp);
+                                dicCampaign.mesFinEngCamp.push(data[i].Mes_Fin_Campana_Eng);
+                                dicCampaign.mesFinFrCamp.push(data[i].Mes_Fin_Campana_Fr);
                             }
 
                             /*Obtener la fecha del dia*/
@@ -3918,7 +3969,6 @@
                             /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
                             var arrayMonth = []
                             var campActiva = []
-
 
                             /*Obtener el mes de la fecha actual*/
                             switch((dateToday.getMonth() + 1)){
@@ -4006,8 +4056,63 @@
                                 }
                             })
 
+                            var dateInicioCamp = new Date(dicCampaign['fechaInicioCamp'][prio])
+
+                            var newMonth = (dateInicioCamp.getMonth() + 1) + 7
+
+                            var newYear = dateInicioCamp.getFullYear()
+
+                            if (newMonth >= 12){
+                                newMonth -= 12
+                                newYear++
+                            }
+
+                            var maxCompra = new Date(newYear, newMonth, 0)
+
                             switch(comp){
                                 case "español":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "Enero"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "Febrero"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "Marzo"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "Abril"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "Mayo"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "Junio"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "Julio"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "Agosto"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "Septiembre"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "Octubre"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "Noviembre"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "Diciembre"
+                                            break;
+                                    }
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Promoción válida para reservaciones del '+ dicCampaign["diaInicioEspCamp"][prio] +' de '+ dicCampaign["mesInicioEspCamp"][prio]  +' al '+ dicCampaign["diaFinEspCamp"][prio]  +' de '+ dicCampaign["mesFinEspCamp"][prio] +', '+ dicCampaign["yearCamp"][prio] +' y viaja del '+ dicCampaign["diaInicioEspCamp"][prio] +' de '+ dicCampaign["mesInicioEspCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' al '+ maxCompra.getDate() +' de '+ monthMaxCompra +' '+ maxCompra.getFullYear() +'. Obtén hasta '+ dicCampaign["discToursEspCamp"][prio] +'% de descuento en tours y hasta '+ dicCampaign["discTransEspCamp"][prio] +'% en traslados seleccionados.<br>**Para acceder al descuento debes iniciar sesión. Precios válidos en productos seleccionados y sujetos a disponibilidad al momento de la compra.</p>'
+
                                     for(var i = 0; i < imgOferta1.length; i++){
                                         imgOferta1[i].src = dicCampaign["linkEspImg1DiscountCampana"][prio]
                                     }
@@ -4019,6 +4124,54 @@
                                     }
                                     break;
                                 case "english":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "January"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "February"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "March"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "April"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "May"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "June"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "July"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "August"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "September"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "October"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "November"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "December"
+                                            break;
+                                    }
+
+                                    var diaInicioCampText = fechaTexto(dicCampaign["diaInicioEngCamp"][prio])
+
+                                    var diaFinCampText = fechaTexto(dicCampaign["diaFinEngCamp"][prio])
+
+                                    var diaMaxCampText = fechaTexto(maxCompra.getDate())
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Book from '+ dicCampaign["mesInicioEngCamp"][prio] +' '+ diaInicioCampText +' to '+ dicCampaign["mesFinEngCamp"][prio] +' '+ diaFinCampText +', '+ dicCampaign["yearCamp"][prio] +' and travel from '+ dicCampaign["mesInicioEngCamp"][prio] +' '+ diaInicioCampText +', '+ dicCampaign["yearCamp"][prio] +' to '+ monthMaxCompra +' '+ diaMaxCampText +', '+ maxCompra.getFullYear() +'. Get up to '+ dicCampaign["discToursEngCamp"][prio] +'% discount on tours and up to '+ dicCampaign["discTransEngCamp"][prio] +'% discount on transfers.<br>**Price per person for single shared transfer. Prices and discounts valid on selected products and subject to availability at the time of purchase.<br><strong>Log in to access the discounts.</strong></p>'
+                                    
                                     for(var i = 0; i < imgOferta1.length; i++){
                                         imgOferta1[i].src = dicCampaign["linkEngImg1DiscountCampana"][prio]
                                     }
@@ -4030,6 +4183,48 @@
                                     }
                                     break;
                                 case "français":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "Janvier"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "Février"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "Mars"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "Avril"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "Mai"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "Juin"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "Juillet"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "Août"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "Septembre"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "Octobre"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "Novembre"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "Décembre"
+                                            break;
+                                    }
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Réservez du '+ dicCampaign["diaInicioFrCamp"][prio] +' '+ dicCampaign["mesInicioFrCamp"][prio] +' au '+ dicCampaign["diaFinFrCamp"][prio] +' '+ dicCampaign["mesFinFrCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' et voyagez du '+ dicCampaign["diaInicioFrCamp"][prio] +' '+ dicCampaign["mesInicioFrCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' au '+ maxCompra.getDate() +' '+ monthMaxCompra +' '+ maxCompra.getFullYear() +'. Bénéficiez jusqu\'à '+ dicCampaign["discToursFrCamp"][prio] +' % de réduction sur les visites et jusqu\'à '+ dicCampaign["discTransFrCamp"][prio] +' % de réduction sur les transferts.<br>**Prix par personne pour un transfert partagé individuel. Les prix et les remises sont valables sur les produits sélectionnés et sont soumis à la disponibilité au moment de l\'achat.<br><strong>Connectez-vous pour accéder aux remises</strong></p>'
+
                                     for(var i = 0; i < imgOferta1.length; i++){
                                         imgOferta1[i].src = dicCampaign["linkFrImg1DiscountCampana"][prio]
                                     }
@@ -4049,6 +4244,37 @@
 
             async function ejecutorCampDiscount(dicCampaign){
                 await cargarXMLCampDiscount(dicCampaign)
+            }
+
+
+            function fechaTexto(fecha){
+                if(parseInt(fecha) < 10){
+                    if(parseInt(fecha) === 1){
+                        var fechaText = fecha + "st"
+                    }else if(parseInt(fecha) === 2){
+                        var fechaText = fecha + "nd"
+                    }else if(parseInt(fecha) === 3){
+                        var fechaText = fecha + "rd"
+                    }else{
+                        var fechaText = fecha + "th"
+                    }
+                }else{
+                    var valor = parseInt(fecha)
+                    while(valor > 10){
+                        valor -= 10
+                    }
+                    if(valor === 1){
+                        var fechaText = fecha + "st"
+                    }else if(valor === 2){
+                        var fechaText = fecha + "nd"
+                    }else if(valor === 3){
+                        var fechaText = fecha + "rd"
+                    }else{
+                        var fechaText = fecha + "th"
+                    }
+                }
+
+                return fechaText
             }
         </script>
     </div>
