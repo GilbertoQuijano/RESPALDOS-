@@ -1,0 +1,2927 @@
+<!-- Hype Travel Fr -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+
+            a,
+            a:hover,
+            a:visited{
+                text-decoration: none;
+            }
+
+            h1{
+                margin: 0;
+                font-family: 'Urbanist', sans-serif;
+            }
+            
+            h2, h3, h4, p{
+                margin: 0;
+            }
+
+            .imagen-header{
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            @media (max-width:992px){
+                .imagen-header{
+                    height: 60vw;
+                }
+            }
+
+            .gradient-header{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @media (max-width:332px){
+                .gradient-header{
+                    padding: 0vw 4vw;
+                }
+            }
+
+            .white-text{
+                color: white;
+            }
+
+            .gradient-color-nexus{
+                background: #0097A1;
+            }
+
+            .container-things-header{
+                padding: 5px 26px 4px 25px;
+                border-radius: 10px;
+                overflow: hidden;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+            @media (max-width:992px){
+                .container-things-header{
+                    padding: 1vw 5vw 1vw 5vw;
+                    font-size: 4.2vw;
+                    margin-bottom: 1vw;
+                }
+            }
+
+            .text-h1-style{
+                font-size: 58px;
+                font-weight: 900;
+                letter-spacing: -1.45px;
+                text-shadow: rgba(0, 0, 0, 0.23) 2px 5px;
+            }
+            @media (max-width:992px){
+                .text-h1-style{
+                    font-size: 7vw;
+                    letter-spacing: -.2vw;
+                }
+            }
+
+            .margin-bottom-46{
+                margin-bottom: 46px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-46{
+                    margin-bottom: 6vw;
+                }
+            }
+
+            .style-titles{
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 8px;
+                margin-left: 0px;
+            }
+            @media (max-width:992px){
+                .style-titles{
+                    margin-bottom: 2vw;
+                }
+            }
+
+            .title{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 240%;
+                text-align: left;
+            }
+            @media (max-width:992px){
+                .title{
+                    font-size: 6vw;
+                    line-height: 121%;
+                    font-weight: 700;
+                    text-align: center ;
+                }
+            }
+
+            .subtitle{
+                font-size: 26px;
+                font-weight: 700;
+            }
+            @media (max-width:992px){
+                .subtitle{
+                    font-size: 5vw;
+                    font-weight: 700;
+                    line-height: 121%;
+                    text-align: center;
+                }
+            }
+
+            .margin-bottom-24{
+                margin-bottom: 24px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-24{
+                    margin-bottom: 5vw;
+                }
+            }
+
+            .line-divider-1{
+                width: 232px;
+                height: 3px;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media (max-width:992px){
+                .line-divider-1{
+                    width: 232px;
+                    height: 3px;
+                }
+            }
+
+            .container-text-80{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media (max-width:992px){
+                .container-text-80{
+                    width: 100%;
+                    text-align: justify;
+                }
+            }
+
+            .gray-text{
+                color: #707070;
+            }
+
+            .text-parrafo{
+                font-size: 16px;
+                line-height: 150%;
+                text-align: left;
+            }
+            @media (max-width:992px){
+                .text-parrafo{
+                    font-size: 4vw;
+                }
+            }
+
+            .card-slider-tour{
+                height: auto;
+                width: 345px;
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+                border-radius: 12px;
+                overflow: hidden;
+                background-color: white;
+                border: 1px solid #EDEEEF;
+            }
+            @media (max-width:1200px){
+                .card-slider-tour{
+                    width: 285px;
+                }
+            }
+            @media (max-width:992px){
+                .card-slider-tour{
+                    width: 80vw;
+                }
+            }
+
+            .card-slider-tour:hover{
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, .2);
+            }
+
+            .container-img-card{
+                width: 100%;
+                height: 240px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                overflow: hidden;
+            }
+            @media (max-width:992px){
+                .container-img-card{
+                    height: 52vw;
+                }
+            }
+
+            .etiqueta-card{
+                position: absolute;
+                padding: 7px 16px 7px 15px;
+                bottom: 0;
+                left: auto;
+                right: 10%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                display: flex;
+                gap: 6px;
+                align-items: center;
+            }
+            @media (max-width:992px){
+                .etiqueta-card{
+                    padding: 7px 16px 7px 15px;
+                    gap: 6px;
+                }
+            }
+
+            .icon-maps{
+                width: 12px;
+                height: 16px;
+            }
+
+            .text-gradient{
+                font-size: 12px;
+                font-weight: 900;
+                color: #0097A1;
+                text-align: left;
+            }
+            @media (max-width:992px){
+                .text-gradient{
+                    font-size: 3vw;
+                    margin-bottom: 1vw;
+                }
+            }
+
+            .text-gradient-2{
+                font-size: 12px;
+                font-weight: 900;
+                color:#0097A1;
+            }
+            @media (max-width:992px){
+                .text-gradient-2{
+                    font-size: 3vw;
+                }
+            }
+
+            .container-text-card-upper{
+                padding: 17px 32px 0px 29px;
+                height: 155px;
+            }
+
+            @media(max-width:1200px){
+                .container-text-card-upper{
+                    height: 180px;
+                }
+            }
+            @media (max-width:992px){
+                .container-text-card-upper{
+                    padding: 4vw 5vw 0vw 5vw;
+                    height: 39vw;
+                }
+            }
+
+            .container-text-card-bottom{
+                height: 74px;
+                border-top: 1px solid #DDE1E8;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 0 0 29px;
+                box-sizing: border-box;
+            }
+            @media (max-width:1200px){
+                .container-text-card-bottom{
+                    padding: 0px 0px 0px 26px;
+                }
+            }
+            @media (max-width:992px){
+                .container-text-card-bottom{
+                    height: 18vw;
+                }
+            }
+
+            .title-tour{
+                font-size: 21px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                line-height: 120%;
+                text-align: left;
+            }
+            @media (max-width:1200px){
+                .title-tour{
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width:992px){
+                .title-tour{
+                    font-size: 4.5vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .text-parrafo-card{
+                font-size: 14px;
+                margin-bottom: 10px;
+                text-align: left;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            @media (max-width:992px){
+                .text-parrafo-card{
+                    font-size: 3.8vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .black-nexus{
+                color: #333;
+            }
+
+            .gray-text-card{
+                color: #A1A1A1;
+            }
+
+            .container-text-card{
+                height: Auto;
+                width: 100%;
+            }
+
+            .icon-cards{
+                height: 20px;
+                width: 20px;
+            }
+            .container-icon-text-card{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .text-cards-icon{
+                color: #8F8F8F;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 120%;
+                text-align: left;
+            }
+            @media (max-width:992px){
+                .text-cards-icon{
+                    font-size: 2.8vw;
+                }
+            }
+
+            .container-all-icon-text-card{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .content-bottom-price{
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                width: fit-content;
+                margin: auto 7% auto auto;
+                align-items: flex-end;
+                gap: 5px;
+            }
+            @media (max-width:992px){
+                .content-bottom-price{
+                    gap: 5px;
+                }
+            }
+
+            .cross-text{
+                text-decoration: line-through;
+            }
+
+            .precio{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 100%;
+            }
+            @media (max-width:992px){
+                .precio{
+                    font-size: 7vw;
+                }
+            }
+
+            .container-precio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .swiper-product {
+                width: 95%;
+                height: 570px;
+            }
+
+            @media (max-width:1200px){
+                .swiper-product {
+                    width: 95%;
+                    height: 578px;
+                }
+            }
+
+            @media (max-width:992px){
+                .swiper-product {
+                    width: 97.5vw;
+                    height: 120vw;
+                }
+            }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background-color: rgba(243, 111, 33, 1);
+                width: 20px;
+                height: 6px;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet {
+                background-color: rgba(204, 204, 204, 1);
+                width: 10px;
+                height: 6px;
+                opacity: 1;
+            }
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 577px;
+                margin: 0;
+            }
+            
+
+            .container-slider-botones{
+                position: relative;
+                overflow-x: hidden;
+            }
+
+            .container-slider-botones-2{
+                position: relative;
+                overflow-x: hidden;
+                width: fit-content;
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            .button-swiper{
+                width: 40px; 
+                height: 40px; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                overflow: hidden; 
+                border-radius: 50px;
+            }
+
+            .imagen-button-swiper{
+                width: 40px; 
+                height: 40px;
+            }
+
+            .swiper-button-prev:after,
+            .swiper-button-next:after {
+                display: none;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #FFFFFF !important;
+                padding-top: 22px !important;
+                width: 40px !important;
+                height: 20px !important;
+            }
+            
+
+            .orange-nexus{
+                color: #0097A1;
+            }
+
+            @media (max-width:992px){
+                .swiper-wrap-auto{
+                    height: auto;
+                }
+            }
+
+            .swiper-card{
+                margin: auto;
+            }
+            @media (max-width:992px){
+                .swiper-card{
+                    margin-top: 0vw;
+                    height: auto;
+                }
+            }
+
+            .container-imagen-slider{
+                border-radius: 10px; 
+                overflow: hidden; 
+                width: 273px; 
+                height: 380px; 
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            }
+
+            @media (max-width: 1200px){
+                .container-imagen-slider{
+                    overflow: hidden; 
+                    width: 207px; 
+                }
+            }
+            @media (max-width: 992px){
+                .container-imagen-slider{
+                    overflow: hidden; 
+                    width: 60vw; 
+                    height: 95vw;
+                }
+            }
+
+            .imagen-slider{
+                width: 205px; 
+                min-width: 205px;
+                height: 294px; 
+                position: relative; z-index: 1;
+            }
+
+            .gradient-imagen{
+                width: 100%; 
+                height: 100%; 
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%); 
+                z-index: 2; 
+                top: 0; 
+                left: 0; 
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .span-destination{
+                margin: auto; 
+                font-size: 26px; 
+                line-height: 120%; 
+                color: #FFFFFF; 
+                font-weight: 700;
+            }
+            @media (max-width:992px){
+                .span-destination{
+                    font-size: 7vw; 
+                    line-height: 150%; 
+                }
+            }
+
+            .activador{
+                width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                z-index: 3;
+            }
+
+            .container-video-texto-section{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+            }
+            @media (max-width:992px){
+                .container-video-texto-section{
+                    flex-direction: column;
+                    gap: 4vw;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+
+            .container-texto-parrafo-video{
+                padding: 30px 40px 40px 25px;
+                box-sizing: content-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            @media (max-width:992px){
+                .container-texto-parrafo-video{
+                    padding: 0vw 1vw 1vw 5vw;
+                }
+            }
+
+            .container-video{
+                width: 50%;
+            }
+            @media (max-width:992px){
+                .container-video{
+                    width: 100%;
+                    height: 54vw;
+                }
+            }
+
+            .title-gradient{
+                color:#0097A1;
+            }
+
+            .title-video{
+                font-size: 43px;
+                font-weight: 900;
+                line-height: 117%;
+                letter-spacing: -.8px;
+                text-align: left;
+            }
+            @media (max-width: 1200px){
+                .title-video{
+                    font-size: 37px;
+                    font-weight: 900;
+                    line-height: 117%;
+                    letter-spacing: -.8px;
+                }
+            }
+            @media (max-width:992px){
+                .title-video{
+                    font-size: 6.5vw;
+                    line-height: 117%;
+                    letter-spacing: -.1vw;
+                }
+            }
+
+            .line-divider-2{
+                width: 50px;
+                height: 5px;
+                border-radius: 10px;
+                margin-right: auto;
+            }
+
+            .margin-bottom-13{
+                margin-bottom: 13px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-13{
+                    margin-bottom: 2vw;
+                }
+            }
+
+            .container-pollo-video{
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
+            @media (max-width:992px){
+                .container-pollo-video{
+                    width: 100%;
+                }
+            }
+            
+            .container-pollo{
+                width: 34px;
+                min-width: 34px;
+                background-color: #0097A1;
+                background: #0097A1;
+                border-radius: 25px;
+            }
+            @media (max-width:992px){
+                .container-pollo{
+                    width: 4vw;
+                    min-width: 4vw;
+                }
+            }
+
+            .imagen-pollo{
+                height: 100%;
+            }
+
+            .margin-bottom-68{
+                margin-bottom: 68px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-68{
+                    margin-bottom: 10vw;
+                }
+            }
+
+            .card-transfer{
+                width: 367px;
+                height: 350px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+                position: relative;
+                overflow: hidden;
+                padding: 23px 18px 0px 18px;
+                border: 1px solid #EDEEEF;
+                background-color: white;
+            }
+            @media (max-width: 1200px){
+                .card-transfer{
+                    width: 312px;
+                    height: 305px;
+                    border-radius: 10px;
+                    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+                    position: relative;
+                    overflow: hidden;
+                    padding: 23px 18px 0px 18px;
+                }
+            }
+            @media (max-width:992px){
+                .card-transfer{
+                    width: 100%;
+                    height: 85vw;
+                    padding: 5vw 5vw 0vw 5vw;
+                }
+            }
+            
+            .card-transfer:hover{
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            .border-color-gradient{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 13px;
+                background: linear-gradient(260deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+            }
+
+            .img-cars{
+                width: 100%;
+                height: 205px;
+            }
+            @media (max-width:1200px){
+                .img-cars{
+                    width: 100%;
+                    height: 160px;
+                }
+            }
+            @media (max-width:992px){
+                .img-cars{
+                    height: 48vw;
+                }
+            }
+
+            .container-card-trans{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .title-trans{
+                font-size: 27px;
+                font-weight: 700;
+                color: #333;
+                line-height: 100%;
+                margin-bottom: 13px;
+            }
+            @media (max-width:992px){
+                .title-trans{
+                    font-size: 6vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .from-style{
+                color: #535353;
+                font-size: 14px;
+                font-weight: 900;
+            }
+            @media (max-width:992px){
+                .from-style{
+                    font-size: 3.1vw;
+                }
+            }
+
+            .container-maps-texto{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                align-items: center;
+            }
+            @media (max-width:992px){
+                .container-maps-texto{
+                    gap: 1.5vw;
+                }
+            }
+
+            .destination-trans{
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: -.5px;
+                line-height: 138.5%;
+            }
+            @media (max-width:1200px){
+                .destination-trans{
+                    letter-spacing: -.8px;
+                }
+            }
+            @media (max-width:992px){
+                .destination-trans{
+                    font-size: 3.4vw;
+                    letter-spacing: -.1vw;
+                }
+            }
+
+            .icon-maps-trans{
+                height: 16px;
+            }
+            @media (max-width:992px){
+                .icon-maps-trans{
+                    height: 3vw;
+                }
+            }
+
+            .container-left-card-trans{
+                height: 100%;
+                width: 100%;
+            }
+
+            .container-right-card-trans{
+                display: flex;
+                justify-content: right;
+                align-items: end;
+                height: 93px;
+            }
+            @media (max-width:992px){
+                .container-right-card-trans{
+                    height: 22vw;
+                }
+            }
+
+            .boton-transfer{
+                text-decoration: none;
+                color: #FF621D;
+                border: 0.949px solid #FF621D;
+                border-radius: 29.412px;
+                padding: 8px 25px;
+                font-size: 16px;
+                font-weight: 900;
+                width: 132px;
+                text-align: center;
+            }
+            @media (max-width: 1200px){
+                .boton-transfer{
+                    padding: 8px 20px;
+                    font-size: 13px;
+                    font-weight: 900;
+                    width: 107px;
+                }
+            }
+            @media (max-width:992px){
+                .boton-transfer{
+                    padding: 2vw 3vw;
+                    font-size: 3.5vw;
+                    width: 28vw;
+                }
+            }
+
+            .boton-transfer:hover{
+                background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+                color: white;
+                border: 0.949px solid transparent;
+                text-decoration: none;
+            }
+
+            .container-row-transfer{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            @media (max-width:992px){
+                .container-row-transfer{
+                    gap: 7vw;
+                    flex-direction: column;
+                    margin: auto;
+                    width: 95%;
+                }
+            }
+
+            .swiper-destinations-style{
+                height: fit-content;
+                width: 915px;
+                margin-right: 0;
+            }
+            @media (max-width: 1200px){
+                .swiper-destinations-style{
+                    height: fit-content;
+                    width: 717px;
+                    margin-right: 0;
+                }
+            }
+            @media (max-width: 992px){
+                .swiper-destinations-style{
+                    height: fit-content;
+                    width: 97.7vw;
+                    margin-right: 0;
+                    height: 108vw;
+                }
+            }
+
+            .swiper-slider-destinations{
+                height: fit-content;
+            }
+
+            .swiper-button-block{
+                position: static;
+            }
+
+            .container-botones-flex{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                margin-left: 18px;
+                margin-right: 11px;
+            }
+            .container-bottom-slider-destination{
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .line-divider-3{
+                width: 100%;
+                height: 2px;
+                border-radius: 10px;
+                margin-right: auto;
+                background-color: rgba(51, 51, 51, 0.14);
+                margin-left: 22px;
+            }
+
+            .text-card-swiper-destinations{
+                width: 228px;
+                border-radius: 10px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 29px;
+                background-position: center;
+                overflow: hidden;
+                background-size: cover;
+                gap: 15px;
+                background-color: #0097A1;
+            }
+            @media (max-width:992px){
+                .text-card-swiper-destinations{
+                    width: 100%;
+                    margin: auto;
+                    padding: 5vw 5vw;
+                    text-align: center;
+                }
+            }
+
+            .container-swiper-destinations{
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+            }
+            @media (max-width:992px){
+                .container-swiper-destinations{
+                    flex-direction: column;
+                    gap:4vw;
+                }
+            }
+
+            .imagen-gradient-texto{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            .text-gradient-destinations{
+                color: white;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 117.2%;
+                letter-spacing: -.5px;
+                text-align: left !important;
+            }
+            @media (max-width:992px){
+                .text-gradient-destinations{
+                    font-size: 6vw;
+                    letter-spacing: -.15vw;
+                    text-align: center !important;
+                }
+            }
+
+            .margin-bottom-100{
+                margin-bottom: 100px;
+            }
+            @media (max-width:992px){
+                .margin-bottom-100{
+                    margin-bottom: 15vw;
+                }
+            }
+
+            .body-media{
+                width: 1160px;
+                margin: auto;
+                background-color: #F8F9FA;
+            }
+            @media (max-width: 1200px){
+                .body-media{
+                    width: 960px;
+                }
+            }
+            @media (max-width: 992px){
+                .body-media{
+                    width: 95%;
+                    margin: auto;
+                }
+            }
+
+            .video{
+                align-items:center; 
+                margin-bottom: 30px; 
+                border-radius: 10px; 
+                overflow: hidden;
+                height: 100%;
+            }
+            @media (max-width: 992px){
+                .video{
+                    align-items:center; 
+                    border-radius: 10px; 
+                    overflow: hidden;
+                    height: 100%;
+                }
+            }
+
+            .text-etiqueta-imagen{
+                font-size: 12px;
+            }
+            @media (max-width: 992px){
+                .text-etiqueta-imagen{
+                    font-size: 3.5vw;
+                }
+            }
+
+            .tag-desk{
+                display: block;
+            }
+            @media (max-width: 992px){
+                .tag-desk{
+                    display: none;
+                }
+            }
+            .tag-mob{
+                display: none;
+            }
+            @media (max-width: 992px){
+                .tag-mob{
+                    display: block;
+                }
+            }
+
+            .container-ofertas-row{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .oferta{
+                height: 273px;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            @media (max-width: 1200px){
+                .oferta{
+                    height: 225px;
+                }
+            }
+            @media (max-width: 992px){
+                .oferta{
+                    height: 65vw;
+                    width: 65vw;
+                    display: block;
+                }
+            }
+
+            .oferta-1{
+                width: 49%;
+            }
+
+            .oferta-2{
+                width: 24%;
+            }
+            
+            .imagen-oferta{
+                width: 100%;
+                height: 100%;
+            }
+
+            .container-transfer-home{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .card-slider-transfer-home{
+                height: fit-content;
+                width: 24%;
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+                border-radius: 12px;
+                overflow: hidden;
+                background-color: white;
+                border: 1px solid #EDEEEF;
+                text-decoration: none;
+            }
+            
+            @media (max-width:1200px){
+                .card-slider-transfer-home{
+                    width: 228px;
+                }
+            }
+            @media (max-width:992px){
+                .card-slider-transfer-home{
+                    width: 65vw;
+                }
+            }
+
+            .container-text-card-upper-transfer-home{
+                padding: 17px 20px 0px 20px;
+                height: 130px;
+            }
+
+            @media(max-width:1200px){
+                .container-text-card-upper-transfer-home{
+                    padding: 8px 7px 0px 13px;
+                    height: 140px;
+                }
+            }
+            @media (max-width:992px){
+                .container-text-card-upper-transfer-home{
+                    padding: 4vw 5vw 0vw 5vw;
+                    height: 38vw;
+                }
+            }
+
+            .container-text-card-bottom-transfer-home{
+                height: 65px;
+                border-top: 1px solid #DDE1E8;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-sizing: border-box;
+            }
+            @media (max-width:992px){
+                .container-text-card-bottom-transfer-home{
+                    height: 13vw;
+                }
+            }
+
+            .container-img-card-transfer-home{
+                width: 100%;
+                height: 180px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                overflow: hidden;
+            }
+            @media (max-width:1200px){
+                .container-img-card-transfer-home{
+                    height: 149px;
+                }
+            }
+            @media (max-width:992px){
+                .container-img-card-transfer-home{
+                    height: 42.5vw;
+                }
+            }
+
+            .gray-text-card-transfer-home{
+                color: #575756;
+            }
+
+            .text-parrafo-card-transfer-home{
+                font-size: 11px;
+                text-align: left;
+            }
+            @media (max-width:992px){
+                .text-parrafo-card-transfer-home{
+                    font-size: 2.8vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .swiperOfertas-width{
+                width: 97.5vw;
+                height: 67vw;
+                margin-left: -7.15vw;
+            }
+
+            .swiperTransferHome-width{
+                width: 97.5vw;
+                height: 105vw;
+                margin-left: -7.15vw;
+            }
+
+            .text-booking{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+                color: #494949;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            @media (max-width:992px){
+                .text-booking{
+                    font-size: 4.5vw;
+                    gap: 3vw;
+                }
+            }
+
+            .container-booking{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 60px;
+            }
+            @media (max-width:992px){
+                .container-booking{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10vw;
+                }
+            }
+
+            .img-booking-1{
+                height: 144px;
+                width: 144px;
+                margin: auto;
+                margin-top: 0px;
+                display: block;
+            }
+            @media (max-width:992px){
+                .img-booking-1{
+                    height: 42vw;
+                    width: 42vw;
+                }
+            }
+
+            .img-booking-2{
+                height: 130px;
+                width: 176px;
+                margin: auto;
+                margin-top: 0px;
+                display: block;
+            }
+            @media (max-width:992px){
+                .img-booking-2{
+                    height: 40vw;
+                    width: 52vw;
+                }
+            }
+
+            .img-booking-3{
+                height: 145px;
+                width: 154px;
+                margin: auto;
+                margin-top: 0px;
+                display: block;
+            }
+            @media (max-width:992px){
+                .img-booking-3{
+                    height: 44vw;
+                    width: 47vw;
+                }
+            }
+
+            .img-booking-4{
+                height: 104px;
+                width: 136px;
+                margin: auto;
+                margin-top: 0px;
+                display: block;
+            }
+            @media (max-width:992px){
+                .img-booking-4{
+                    height: 33vw;
+                    width: 44vw;
+                }
+            }
+
+            .container-img-booking{
+                height: 145px;
+                width: 176px;
+                box-sizing: border-box;
+            }
+            @media (max-width:992px){
+                .container-img-booking{
+                    height: 44vw;
+                    width: 52vw;
+                }
+            }
+            .padding-top{
+                padding-top: 22px;
+            }
+            @media (max-width:992px){
+                .padding-top{
+                    padding-top: 5vw;
+                }
+            }
+
+            .container-title-center{
+                text-align: center;
+            }
+
+            .subtext-gradient-destinations{
+                font-size: 16px;
+                text-align: left;
+                color: white;
+                line-height: normal;
+            }
+            @media (max-width:992px){
+                .subtext-gradient-destinations{
+                    font-size: 4vw;
+                    text-align: center;
+                }
+            }
+
+            .title-2{
+                font-size: 40px ;
+                font-weight: 700;
+                line-height: 120%;
+                text-align: center ;
+            }
+            @media (max-width:992px){
+                .title-2{
+                    font-size: 6vw;
+                }
+            }
+
+            .bannerlogin {
+                width: 100%;
+                height: 104px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            @media (max-width:1200px){
+                .bannerlogin {
+                    height: 85px;
+                }
+            }
+            @media (max-width:992px){
+                .bannerlogin {
+                    height: 24vw;
+                }
+            }
+
+            .img-banner-login{
+                width: 100%;
+                height: 100%;
+            }
+
+            .boton-booking{
+                background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
+                padding: 5px 17px;
+                border-radius: 100px;
+                font-size: 14px;
+            }
+            @media (max-width:992px){
+                .boton-booking{
+                    padding: 2vw 4vw;
+                    font-size: 4vw;
+                }
+            }
+
+
+            .terminoscondiciones {
+                align-items: center;
+                margin-top: -25px;
+                align-content: center;
+            }
+            
+            .politics2 {
+                color: #9F9F9F;
+            }
+
+            .boton-tarifas{
+                width: fit-content;
+                border-radius: 100px;
+                padding: 10px 18px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            @media (max-width:1200px){
+                .boton-tarifas{
+                    padding: 8px 16px;
+                    font-size: 13px;
+                }
+            }
+            @media (max-width:992px){
+                .boton-tarifas{
+                    padding: 2vw 4vw;
+                    font-size: 3vw;
+                }
+            }
+
+            .containerTagSlideCarrousel{
+                background: linear-gradient(125deg, #0097A1 11.72%, #8CE972 122.8%); 
+                width: fit-content; 
+                box-sizing: border-box; 
+                padding: 7px 15px 7px 15px; 
+                display: flex; 
+                align-items: center; 
+                gap: 7px; 
+                border-radius: 27px; 
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .containerTagSlideCarrousel{
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .textTagSlideCarrousel{
+                font-size: 16px; 
+                font-weight: 500; 
+                color: #FFFFFF; 
+                line-height: 87%;
+            }
+
+            .titleSliderCarrousel{
+                margin-top: 0; 
+                margin-bottom: 5px; 
+                font-size: 40px; 
+                color: #FFFFFF; 
+                line-height: 120%; 
+                font-weight: 600; 
+                letter-spacing: -0.4px;
+                width: fit-content;
+                text-align: left;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .titleSliderCarrousel{
+                    font-size: 35px;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 550px){
+                .titleSliderCarrousel{
+                    font-size: 5vw;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .titleSliderCarrousel{
+                    font-size: 6.5vw;
+                    margin-bottom: 1vw;
+                }
+            }
+
+            .subtitleSliderCarrousel{
+                color: #FFFFFF; 
+                font-size: 24px; 
+                font-weight: 400; 
+                line-height: 114%; 
+                letter-spacing: -0.24px; 
+                margin-top: 0;
+                margin-bottom: 26px;
+                width: fit-content;
+                text-align: left;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .subtitleSliderCarrousel{
+                    font-size: 19px; 
+                    margin-bottom: 21px;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 550px){
+                .subtitleSliderCarrousel{
+                    font-size: 3vw;
+                    margin-bottom: 2vw;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .subtitleSliderCarrousel{
+                    font-size: 5vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .containerBotonCTACarrousel{
+                width: fit-content;
+                background-color: white; 
+                border-radius: 50px; 
+                overflow: hidden;
+            }
+
+            .botonCTACarrousel,
+            .botonCTACarrousel:hover,
+            .botonCTACarrousel:focus{
+                display: flex; 
+                gap: 15px; 
+                box-sizing: border-box; 
+                padding: 8px 18px 8px 20px; 
+                align-items: center; 
+                text-decoration: none; 
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .botonCTACarrouselMob,
+            .botonCTACarrouselMob:hover,
+            .botonCTACarrouselMob:focus{
+                display: flex; 
+                gap: 15px; 
+                box-sizing: border-box; 
+                padding: 8px 29px 8px 31px; 
+                align-items: center; 
+                text-decoration: none; 
+                cursor: pointer;
+                text-decoration: none;
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .botonCTACarrouselMob,
+                .botonCTACarrouselMob:hover,
+                .botonCTACarrouselMob:focus{
+                    padding: 2vw 4vw;
+                }
+            }
+
+            .textBotonCTACarrousel{
+                font-size: 21px; 
+                font-weight: 700; 
+                line-height: normal; 
+                color: #0097A1; 
+                user-select: none;
+            }
+            @media (max-width: 768px) and (min-width: 551px){
+                .textBotonCTACarrousel{
+                    font-size: 15px;
+                }
+            }
+            @media (max-width: 550px) and (min-width: 0px){
+                .textBotonCTACarrousel{
+                    font-size: 4vw;
+                }
+            }
+
+            .containerTextoBannerSlider{
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                z-index: 2; 
+                top: 0; 
+                padding-left: 80px;
+                box-sizing: border-box;
+            }
+            @media (max-width: 1200px) and (min-width: 992px){
+                .containerTextoBannerSlider{
+                    padding-left: 50px;
+                }
+            }
+            @media (max-width: 991px) and (min-width: 0px){
+                .containerTextoBannerSlider{
+                    padding-left: 6vw;
+                    justify-content: end;
+                    padding-bottom: 4vw;
+                }
+            }
+
+            .imgBannerSlider{
+                width: 100%; 
+                position: relative; 
+                z-index: 1;
+            }
+
+            .colorWHL{
+                background-color: #0097A1;
+            }
+
+            .colorBotonWHL{
+                background: #0097A1;
+            }
+        </style>
+    </head>
+    <body style="background-color: #F8F9FA;">
+        <div class="body-media">
+            <div class="container-swiper-destinations">
+                <div class="text-card-swiper-destinations">
+                    <p class="text-gradient-destinations">
+                        Les meilleures destinations
+                    </p>
+                    <p class="subtext-gradient-destinations">
+                        Visitez les meileures destinations de vacances, comme la beauté naturelle fantastique d’Aruba, détendez-vous sur les plages dorées de Punta Cana et profitez du paysage impressionant de Cancún !
+                    </p>
+                </div>
+                <div class="container-slider-botones-2 tag-desk">
+                    <div class="swiper swiperDestinations swiper-destinations-style">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Riviera Maya
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Punta Cana
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Jamaïque
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Cabos
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=125355&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Aruba
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108876&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Costa Rica
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108888&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            République <br>
+                                            Dominicaine
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Sainte-Lucie
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Saint Martin
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=123407&paxs=10" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-bottom-slider-destination">
+                        <div class="line-divider-3">
+                        </div>
+                        <div class="container-botones-flex">
+                            <div class="swiper-button-prev swiper2-button-prev swiper-button-block">
+                                <div class="button-swiper" style="transform: rotate(180deg);">
+                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Btn_WJ.png">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper2-button-next swiper-button-block">
+                                <div class="button-swiper">
+                                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Btn_WJ.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
+                    <div class="swiper-wrapper swiper-wrap-auto">
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Riviera Maya
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=109303&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Punta Cana
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Jamaïque
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108913&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Cabos
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=125355&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Aruba
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108876&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Costa Rica
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108888&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        République <br>
+                                        Dominicaine
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110282&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Sainte-Lucie
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=108939&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Saint Martin
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://www.cancuntransfersandtours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=123407&paxs=10" target="_blank">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper4-pagination"></div>
+                </div>
+            </div>
+            <h2 class="style-titles title">
+                Solutions de transport terrestre efficaces et pratiques.
+            </h2>
+            <div class="container-text-80 margin-bottom-24 tag-desk">
+                <p class="gray-text text-parrafo">
+                    Arrivez à votre destination à temps et profitez pleinement de vos vacances. Voici le service de transfert dont vous avez besoin. Réservez aux meilleurs prix dans les destinations préférées du monde entier.
+                    </p>
+            </div>
+            <div class="container-text-80 margin-bottom-46 tag-mob">
+                <p class="gray-text text-parrafo">
+                    Arrivez à votre destination à temps et profitez pleinement de vos vacances. Voici le service de transfert dont vous avez besoin. Réservez aux meilleurs prix dans les destinations préférées du monde entier.
+                    </p>
+            </div>
+            <div class="tag-desk">
+                <div class="container-transfer-home margin-bottom-46">  
+                    <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                        <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-1.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancun
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper-transfer-home">
+                                <p class="text-gradient">
+                                    Dans un sens
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Transfert partagé
+                                </p>
+                                <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                    De l'aéroport de Cancún à votre hôtel.
+                                <br>
+                                    Trouvez le service de transfert dont vos vacances ont besoin.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom-transfer-home">
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110282&originID=118004&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                        <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-2.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper-transfer-home">
+                                <p class="text-gradient">
+                                    Dans un sens
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Transfert privé
+                                </p>
+                                <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                    De l'aéroport de Punta Cana à votre hôtel.
+                                    <br>
+                                    Options de transfert qui répondent à vos besoins.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom-transfer-home">
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                        <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-3.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaïque
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper-transfer-home">
+                                <p class="text-gradient">
+                                    Dans un sens
+                                </p>
+                                <p class="title-tour black-nexus">
+                                Transfert partagé
+                                </p>
+                                <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                    De l'aéroport de Jamaïque à votre hôtel.
+                                    <br>
+                                    Rendez-vous à votre destination préférée confortablement, heureux et en sécurité.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom-transfer-home">
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                        <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-5.png);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaïque
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper-transfer-home">
+                                <p class="text-gradient">
+                                    Dans un sens
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Transfert privé
+                                </p>
+                                <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                    De l'aéroport de Jamaïque à votre hôtel.
+                                    <br>
+                                    Rendez-vous à votre destination préférée confortablement, heureux et en sécurité.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom-transfer-home">
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper swiperTransferHome swiperTransferHome-width tag-mob margin-bottom-46">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110282&originID=118004&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                            <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-1.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper-transfer-home">
+                                    <p class="text-gradient">
+                                        Dans un sens
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Transfert partagé
+                                    </p>
+                                    <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                            De l'aéroport de Cancún à votre hôtel.
+                                        <br>
+                                            Trouvez le service de transfert dont vos vacances ont besoin.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom-transfer-home">
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                            <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-1.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper-transfer-home">
+                                    <p class="text-gradient">
+                                        Dans un sens
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Transfert privé
+                                    </p>
+                                    <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                        De l'aéroport de Punta Cana à votre hôtel.
+                                    <br>
+                                        Options de transfert qui répondent à vos besoins.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom-transfer-home">
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                            <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-3.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper-transfer-home">
+                                    <p class="text-gradient">
+                                        Dans un sens
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Transfert partagé
+                                    </p>
+                                    <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                        De l'aéroport de Jamaïque à votre hôtel.
+                                    <br> 
+                                        Rendez-vous à votre destination préférée confortablement, heureux et en sécurité.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom-transfer-home">
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-transfer-home" href="https://www.cancuntransfersandtours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=false&customInfo=serviceType%23-1" target="_blank">
+                            <div class="container-img-card-transfer-home" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer-NB-5.png);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper-transfer-home">
+                                    <p class="text-gradient">
+                                        Dans un sens
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Transfert privé
+                                    </p>
+                                    <p class="gray-text-card-transfer-home text-parrafo-card-transfer-home">
+                                        De l'aéroport de Jamaïque à votre hôtel.
+                                        <br> 
+                                        Rendez-vous à votre destination préférée confortablement, heureux et en sécurité.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom-transfer-home">
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHLwhite-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper5-pagination"></div>
+            </div>
+            <h2 class="style-titles title">
+                Partez à l'aventure dans les Caraïbes avec <span class="orange-nexus">Hype Travel! </span>
+            </h2>
+            <div class="container-text-80 margin-bottom-24 tag-desk">
+                <p class="gray-text text-parrafo">
+                    Voyagez à Cancún, Punta Cana, Aruba, Jamaïque et au Costa Rica pour vous immerger dans leurs cultures captivantes et leurs magnifiques paysages. Que vous recherchiez une escapade tranquille à la plage ou que vous souhaitiez vous immerger dans une culture vibrante, Hype Travel propose les meilleures destinations des Caraïbes.
+                </p>
+            </div>
+            <div class="container-text-80 margin-bottom-46 tag-mob">
+                <p class="gray-text text-parrafo">
+                    Voyagez à Cancún, Punta Cana, Aruba, Jamaïque et au Costa Rica pour vous immerger dans leurs cultures captivantes et leurs magnifiques paysages. Que vous recherchiez une escapade tranquille à la plage ou que vous souhaitiez vous immerger dans une culture vibrante, Hype Travel propose les meilleures destinations des Caraïbes.
+                </p>
+            </div>
+            <div class="container-slider-botones margin-bottom-46 tag-desk">
+                <div class="swiper-button-next swiper1-button-next">
+                    <div class="button-swiper">
+                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Btn_WJ.png">
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper1-button-prev">
+                    <div class="button-swiper" style="transform: rotate(180deg);">
+                        <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Btn_WJ.png">
+                    </div>
+                </div>
+                <div class="swiper mySwiper swiper-product">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Riviera Maya
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                          AVENTURE AQUATIQUE
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Isla Mujeres Full Experience
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                          Contemplez les vues panoramiques sur la mer des Caraïbes et explorez la magnifique Isla Mujeres à bord d’une croisière en catamaran
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">  
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                          AVENTURE AQUATIQUE
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Platinum VIP Catamaran
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                          Avec l'excursion en catamaran Saona, vous vous évaderez dans un monde de détente, d'amusement et de paradis tropical. Découvrez la culture dominicaine en prenant des leçons de merengue, en jouant au volley-ball sur la plage et bien plus encore.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                 
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                          Jamaïque
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                          AVENTURE AQUATIQUE
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Lagon bioluminescent
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Naviguez sur les eaux brillantes du Luminous Lagoon, le plus grand des 4 lagons bioluminescents au monde, lors de cette excursion unique en soirée. Au cœur des mangroves, ce site inhabituel abrite des millions d’organismes microscopiques qui émettent de la lumière quand l’eau est agitée, créant un effet magique.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Riviera maya
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            EXCURSION
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Tour Xcaret Plus
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Punta Cana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            VTT
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                                Motodunes deux places à Punta Cana
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Traversez la magnifique campagne de Punta Cana lors d’une aventure hors route en motodune! Parcourez des sentiers étroits à travers des paysages exotiques et passez devant des petits villages jusqu’à votre premier arrêt, la grotte El Hoyo. 
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Jamaica
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                          AVENTURE AQUATIQUE
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Cool Running Cruise
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                        La plus belle expérience à Ocho Rios, en Jamaïque, vous attend : la croisière Cool Running! 
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Riviera Maya
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            EXCURSION
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Chichen Itza Tour
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                            Laissez Chichén Itzá vous impressionner par tous les attraits incroyables qu’elle a à offrir! Découvrez la magie de Chichén Itzá et son histoire fascinante. L’ancienne cité maya, abandonnée au 15e siècle, est aujourd’hui un parc archéologique classé au patrimoine mondial de l’UNESCO.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                      
+                        <div class="swiper-slide swiper-card">
+                            <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                                <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
+                                    <div class="etiqueta-card gradient-color-nexus">
+                                        <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                        <p class="white-text text-etiqueta-imagen">
+                                            Jamaïque
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-text-card">
+                                    <div class="container-text-card-upper">
+                                        <p class="text-gradient">
+                                            VTT
+                                        </p>
+                                        <p class="title-tour black-nexus">
+                                            Jamwest Offre spéciale
+                                        </p>
+                                        <p class="gray-text-card text-parrafo-card">
+                                              Rendez votre séjour en Jamaïque encore plus excitant en conduisant un VTT! Traversez des hectares de forêt tropicale, observez la flore luxuriante et parcourez un magnifique sentier de plage, le long du sable blanc et des merveilleuses eaux turquoise de la mer des Caraïbes.
+                                        </p>
+                                    </div>
+                                    <div class="container-text-card-bottom">
+                                        <div class="container-all-icon-text-card">
+                                            <div class="container-icon-text-card">
+                                                <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                                <p class="text-cards-icon">
+                                                    Annulation   <br>
+                                                    flexible
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom-price">
+                                            <div class="boton-tarifas gradient-color-nexus white-text">
+                                                  Voir Les Tarifs
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+                <div class="swiper-wrapper swiper-wrap-auto">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥8463¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Isla_Mujeres_Plus_Experience_2.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                      AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Isla Mujeres Plus
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                      Contemplez les vues panoramiques sur la mer des Caraïbes et explorez la magnifique Isla Mujeres à bord d’une croisière en catamaran
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/9669_Saona-en-Catamar%C3%A1n.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                      AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Platinum VIP Catamaran
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                      Avec l'excursion en catamaran Saona, vous vous évaderez dans un monde de détente, d'amusement et de paradis tropical. Découvrez la culture dominicaine en prenant des leçons de merengue, en jouant au volley-ball sur la plage et bien plus encore.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>                 
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥7301¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7301_Falmouth-Laguna-Luminosa.jpg)">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                      AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Lagon bioluminescent
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Naviguez sur les eaux brillantes du Luminous Lagoon, le plus grand des 4 lagons bioluminescents au monde, lors de cette excursion unique en soirée. Au cœur des mangroves, ce site inhabituel abrite des millions d’organismes microscopiques qui émettent de la lumière quand l’eau est agitée, créant un effet magique.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4179¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/4179_Tour-Xcaret-Plus.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Riviera maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSION
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Tour Xcaret Plus
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Xcaret te robará el corazón. El parque arqueológico y ecológico de la Riviera Maya es una aventura para los valientes. ¡Cuenta con más de 40 atracciones divertidas para toda tu familia!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥6821¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Punta-Cana/6821_Punta-Cana-Buggies-Doble.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ATV
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                            Motodunes deux places à Punta Cana
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Traversez la magnifique campagne de Punta Cana lors d’une aventure hors route en motodune! Parcourez des sentiers étroits à travers des paysages exotiques et passez devant des petits villages jusqu’à votre premier arrêt, la grotte El Hoyo. 
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Jamaica/CoolRunningCruise1090.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                    AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Cool Running Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        La plus belle expérience à Ocho Rios, en Jamaïque, vous attend : la croisière Cool Running! 
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                                Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥2259¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Riviera-Maya/2259_Chichen-Itza.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSION
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Chichen Itza Tour
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Laissez Chichén Itzá vous impressionner par tous les attraits incroyables qu’elle a à offrir! Découvrez la magie de Chichén Itzá et son histoire fascinante. L’ancienne cité maya, abandonnée au 15e siècle, est aujourd’hui un parc archéologique classé au patrimoine mondial de l’UNESCO.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                              Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.cancuntransfersandtours.com/services/jamaica/SGN¥TKT¥7272¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Cards-Landings/Jamaica/7265-_Jamwest-ATV.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        VTT
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Jamwest Offre spéciale
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                            Rendez votre séjour en Jamaïque encore plus excitant en conduisant un VTT! Traversez des hectares de forêt tropicale, observez la flore luxuriante et parcourez un magnifique sentier de plage, le long du sable blanc et des merveilleuses eaux turquoise de la mer des Caraïbes.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation   <br>
+                                                flexible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                                Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+            </div>
+            <div class="container-video-texto-section margin-bottom-68">
+                <div class="container-pollo-video">
+                    <div class="container-pollo">
+                    </div>
+                    <div class="container-texto-parrafo-video">
+                        <h3 class="title-video margin-bottom-13">
+                            Explorez les Caraïbes comme jamais auparavant avec <span class="title-gradient">Hype Travel</span>!
+                        </h3>
+                        <div class="line-divider-2 gradient-color-nexus margin-bottom-13 tag-desk"></div>
+                        <p class="gray-text text-parrafo">
+                            Plongez-vous dans des paysages naturels à couper le souffle, rencontrez une faune exotique et découvrez des traditions anciennes. Réservez votre voyage dès aujourd'hui pour créer des souvenirs durables, que vous recherchiez une expérience palpitante ou une escapade tranquille.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OPyVHZ_g9rgu3xEOiZG3ro3&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var offer = document.getElementsByClassName("offer-title")
+        offer[0].style.width = "100%"
+        offer[0].style.margin = "0"
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper1-button-next",
+                prevEl: ".swiper1-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".swiperDestinations", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
+            },
+        });
+
+        var swiper3 = new Swiper(".swiperTours-Mob", {
+            slidesPerView: 1.1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var swiper4 = new Swiper(".swiperDestinations-Mob", {
+            slidesPerView: 1.5,
+            navigation: {
+                nextEl: ".swiper4-button-next",
+                prevEl: ".swiper4-button-prev",
+            },
+            pagination: {
+                el: ".swiper4-pagination",
+            },
+        });
+
+        var swiper5 = new Swiper(".swiperOfertas", {
+            slidesPerView: 1.4,
+        });
+
+        var swiper6 = new Swiper(".swiperTransferHome", {
+            slidesPerView: 1.4,
+            pagination: {
+                el: ".swiper5-pagination",
+            },
+        });
+    </script>
+</html>

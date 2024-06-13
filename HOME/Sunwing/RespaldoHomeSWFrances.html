@@ -1468,28 +1468,34 @@
             .titleSliderCarrousel{
                 margin-top: 0; 
                 margin-bottom: 5px; 
-                font-size: 40px; 
+                font-size: 32px; 
                 color: #FFFFFF; 
-                line-height: 120%; 
+                line-height: 100%; 
                 font-weight: 600; 
                 letter-spacing: -0.4px;
                 width: fit-content;
                 text-align: left;
             }
-            @media (max-width: 1200px) and (min-width: 992px){
+            @media (max-width: 1200px) and (min-width: 993px){
                 .titleSliderCarrousel{
-                    font-size: 35px;
+                    font-size: 26px;
+                    line-height: 110%;
+                }
+            }
+            @media (max-width: 992px) and (min-width: 769px){
+                .titleSliderCarrousel{
+                    font-size: 25px;
+                    line-height: 110%;
                 }
             }
             @media (max-width: 768px) and (min-width: 550px){
                 .titleSliderCarrousel{
-                    font-size: 5vw;
+                    font-size: 3.5vw;
                 }
             }
             @media (max-width: 550px) and (min-width: 0px){
                 .titleSliderCarrousel{
-                    font-size: 6.5vw;
-                    margin-bottom: 1vw;
+                    font-size: 6vw;
                 }
             }
 
@@ -1500,34 +1506,33 @@
                 line-height: 114%; 
                 letter-spacing: -0.24px; 
                 margin-top: 0;
-                margin-bottom: 26px;
+                margin-bottom: 15px;
                 width: fit-content;
                 text-align: left;
             }
-            @media (max-width: 1200px) and (min-width: 992px){
+            @media (max-width: 1200px) and (min-width: 993px){
                 .subtitleSliderCarrousel{
-                    font-size: 19px; 
-                    margin-bottom: 21px;
+                    font-size: 17px; 
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width: 993px) and (min-width: 769px){
+                .subtitleSliderCarrousel{
+                    font-size: 17px; 
+                    margin-bottom: 10px;
                 }
             }
             @media (max-width: 768px) and (min-width: 550px){
                 .subtitleSliderCarrousel{
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     margin-bottom: 2vw;
                 }
             }
             @media (max-width: 550px) and (min-width: 0px){
                 .subtitleSliderCarrousel{
-                    font-size: 5vw;
-                    margin-bottom: 3vw;
+                    font-size: 4vw;
+                    margin-bottom: 4vw;
                 }
-            }
-
-            .containerBotonCTACarrousel{
-                width: fit-content;
-                background-color: white; 
-                border-radius: 50px; 
-                overflow: hidden;
             }
 
             .botonCTACarrousel,
@@ -1564,20 +1569,25 @@
             }
 
             .textBotonCTACarrousel{
-                font-size: 21px; 
+                font-size: 17px; 
                 font-weight: 700; 
                 line-height: normal; 
                 color: #FF621D; 
                 user-select: none;
             }
-            @media (max-width: 768px) and (min-width: 551px){
+            @media (max-width: 1200px) and (min-width: 993px){
                 .textBotonCTACarrousel{
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
-            @media (max-width: 550px) and (min-width: 0px){
+            @media (max-width: 993px) and (min-width: 769px){
                 .textBotonCTACarrousel{
-                    font-size: 4vw;
+                    font-size: 13px;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 551px){
+                .textBotonCTACarrousel{
+                    font-size: 2vw;
                 }
             }
 
@@ -1612,7 +1622,6 @@
                 z-index: 1;
             }
 
-            /*Clases section Carrousel*/
             .margin-bottom-13{
                 margin-bottom: 13px;
             }
@@ -1681,7 +1690,7 @@
             }
             @media (max-width: 992px) and (min-width: 769px){
                 .imgCarrouselOverflow{
-                    width: 98vw;
+                    width: 720px;
                 }
             }
             @media (max-width: 768px) and (min-width: 551px){
@@ -1697,7 +1706,6 @@
             @media (max-width: 450px) and (min-width: 0px){
                 .imgCarrouselOverflow{
                     width: 95vw;
-                    height: 100%;
                 }
             }
 
@@ -1866,26 +1874,6 @@
                 background-color: white; 
                 border-radius: 50px; 
                 overflow: hidden;
-            }
-
-            .botonCTACarrouselMob,
-            .botonCTACarrouselMob:hover,
-            .botonCTACarrouselMob:focus{
-                display: flex; 
-                gap: 15px; 
-                box-sizing: border-box; 
-                padding: 8px 29px 8px 31px; 
-                align-items: center; 
-                text-decoration: none; 
-                cursor: pointer;
-                text-decoration: none;
-            }
-            @media (max-width: 550px) and (min-width: 0px){
-                .botonCTACarrouselMob,
-                .botonCTACarrouselMob:hover,
-                .botonCTACarrouselMob:focus{
-                    padding: 2vw 7vw;
-                }
             }
 
             .textBotonCTACarrousel{
@@ -2200,14 +2188,12 @@
                             <img id="backgroundChangeSlider" class="imgCarrouselOverflow">
                         </div>
     
-    
                         <div name="imgCarrousel" class="containerImgCarrouselOverflow tagDesk" style="z-index: 2;">
-                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LM_fr.jpg" alt="Slider_Home_Carrousel_Promo">
+                            <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeDesk.png" alt="Slider_Home_Carrousel_Promo">
                         </div>
-                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow  tagMob" style="z-index: 2;">
-                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/LMmob_fr.jpg" alt="Slider_Home_Carrousel_Promo_Mob">
+                        <div name="imgCarrouselMob" class="containerImgCarrouselOverflow tagMob" style="z-index: 2;">
+                            <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/NexusAppHomeMob.png" alt="Slider_Home_Carrousel_Promo_Mob">
                         </div>
-    
     
                         <div name="imgCarrousel" class="imgCarrousel absoluteImgCarrousel tagDesk" style="z-index: 1;">
                             <img name="imgCarrouselOverflowDesk" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Slider_Home_Carrousel_Telefono.png" alt="Slider_Home_Carrousel_Telefono">
@@ -2216,30 +2202,32 @@
                             <img name="imgCarrouselOverflowMob" class="imgCarrouselOverflow" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Slider_Home_Carrousel_Telefono_Mob.png" alt="Slider_Home_Carrousel_Telefono_Mob">
                         </div>
     
-    
                         <div class="containerAbsoluteSliderCarrousel" style="z-index: 3;">
-                            <div name="containerSliderCarrousel" class="containerSliderCarrousel sliderPromoCarrousel" style="z-index: 2;">
-                                <div class="textTerms tagDesk">
-                                    *Consultez les conditions générales sur : <br>
-                                    www.nexustours.com/discounts
-                                </div>
-                                <div class="textTerms tagMob">
-                                    *Consultez les conditions générales sur : www.nexustours.com/discounts
-                                </div>
-                                <div class="containerBotonCTACarrousel">
-                                    <a class="botonCTACarrouselMob" href="https://www.nexustours.com/discounts" target="_blank">
-                                        <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
-                                            Réservez maintenant
-                                        </div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
-                                            <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
-                                            </mask>
-                                            <g mask="url(#mask0_6_4543)">
-                                            </g>
-                                        </svg>
-                                    </a>
+                            <div name="containerSliderCarrousel" class="containerSliderCarrousel containerSliderCarrouselNexusApp" style="z-index: 2;">
+                                <div class="containerCenterCarrouselNexusApp">
+                                    <img loading="lazy" class="imgNexusApp" src="https://www.nexustours.com/images/upload//Landing%20Pages/enero_2024/logoNexusApp.png">
+                                    <h2 class="titleSliderCarrouselNexusApp">
+                                        Prêt pour un
+                                        <br>
+                                        <span style="font-weight: 700;">
+                                            voyage sans souci?
+                                        </span>
+                                    </h2>
+                                    <div class="containerBotonCTACarrousel">
+                                        <a class="botonCTACarrouselMob" href="https://uqr.to/XHUB.NT" target="_blank">
+                                            <div class="textBotonCTACarrousel textBotonCTACarrouselMob">
+                                                Telecharge l'application Nexus
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="#FF621D"/>
+                                                <mask id="mask0_6_4543" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="16">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58987 2.46951C9.21206 2.0551 9.20657 1.38923 9.58343 0.975859C9.95768 0.56535 10.5598 0.560189 10.9427 0.980215L16.9655 7.58644C17.3419 7.99935 17.3484 8.66171 16.9655 9.08174L10.9427 15.688C10.5662 16.1009 9.96029 16.1057 9.58343 15.6923C9.20917 15.2818 9.20789 14.6176 9.58987 14.1987L13.9782 9.38526L0.96082 9.38526C0.430199 9.38526 4.63954e-05 8.91868 4.64465e-05 8.33408C4.64973e-05 7.75354 0.433713 7.28291 0.96082 7.28291L13.9782 7.28291L9.58987 2.46951Z" fill="white"/>
+                                                </mask>
+                                                <g mask="url(#mask0_6_4543)">
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div name="containerSliderCarrousel" class="containerSliderCarrousel" style="z-index: 1; opacity: 0;">
@@ -2256,7 +2244,8 @@
                                     </span>
                                 </div>
                                 <h2 class="titleSliderCarrousel">
-                                    Restez connecté <br> en déplacement !
+                                    Restez connecté <br>
+                                    en déplacement ! <br>
                                 </h2>
                                 <h3 class="subtitleSliderCarrousel">
                                     Obtenez votre carte SIM <br> dès aujourd'hui
@@ -2301,7 +2290,7 @@
                                                     <path d="M6.99757 0.00485942C3.13918 0.00485942 0 3.14405 0 7.00243C0 8.66435 0.583129 10.1902 1.55501 11.3905V16.2451C1.55501 17.421 2.39083 18.4464 3.50364 18.631C3.63485 18.6505 3.76119 18.6602 3.88754 18.6602C4.58244 18.6602 5.23846 18.3589 5.68552 17.8195C5.9042 17.5522 6.36584 17.1052 7.00729 17.1052C7.64873 17.1052 8.09094 17.5522 8.31448 17.8195C8.84415 18.461 9.66054 18.7622 10.5012 18.6262C11.6092 18.4464 12.445 17.421 12.445 16.2402V11.3856C13.4169 10.1854 14 8.65949 14 6.99757C14 3.13919 10.8608 0 7.00243 0L6.99757 0.00485942ZM10.8851 16.2451C10.8851 16.663 10.6033 17.0371 10.2485 17.0955C9.95696 17.144 9.68483 17.0469 9.50503 16.833C8.82471 16.0118 7.93544 15.555 6.98785 15.555C6.04027 15.555 5.16557 16.0069 4.48525 16.833C4.30545 17.0469 4.03332 17.144 3.74661 17.1003C3.38701 17.042 3.11003 16.6678 3.11003 16.2499V12.8192C4.22284 13.5675 5.55918 14.0049 6.99757 14.0049C8.43596 14.0049 9.7723 13.5675 10.8851 12.8192V16.2499V16.2451ZM6.99757 12.445C3.99444 12.445 1.55501 10.0056 1.55501 7.00243C1.55501 3.99931 3.99444 1.55988 6.99757 1.55988C10.0007 1.55988 12.4401 3.99931 12.4401 7.00243C12.4401 10.0056 10.0007 12.445 6.99757 12.445Z" fill="white"/>
                                                 </svg>
                                                 <span class="textBotonesCarrouselHover">
-                                                    Réductions
+                                                    Nexus App
                                                 </span>
                                             </div>
                                         </div>
@@ -2332,7 +2321,7 @@
                         <img class="imgCarrousel" src="https://www.nexustours.com/images/upload//Landing%20Pages/diciembre2023/Login_Home_Carrousel_Opaco_Desk.png" alt="Login_Home_Carrousel">
                         <div class="containerAbsoluteLogin"> 
                             <h3 class="titleLoginOpaco"> 
-                                <span>Inclus laide en voyage et profite sans soucis</span>
+                                <span>Ajoutez une assistance voyage,</span> nous avons ce qu'il vous faut.
                             </h3>
                         </div>
                     </div>
@@ -2360,7 +2349,7 @@
                 <div class="swiper-button-prev swiper1-button-prev">
                     <div class="button-swiper" style="transform: rotate(180deg);">
                         <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
-                    </div>
+                    </div>   SBDQCM
                 </div>
                 <div class="swiper mySwiper swiper-product">
                     <div class="swiper-wrapper">
@@ -3068,6 +3057,30 @@
                     <div class="swiper swiperDestinations swiper-destinations-style">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-mexico.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Mexique
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/Mexico" target="_blank">
+                                                            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cuba.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Cuba
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://sunwingexperiences.nexustours.com/cuba" target="_blank">
+                                                            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
                                 <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
                                     <div class="gradient-imagen">
                                         <span class="span-destination">
@@ -3188,6 +3201,30 @@
                 </div>
                 <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
                     <div class="swiper-wrapper swiper-wrap-auto">
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-mexico.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Mexique
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://sunwingexperiences.nexustours.com/Mexico" target="_blank">
+                                                        
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slider-destinations">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cuba.jpg);">
+                                <div class="gradient-imagen">
+                                    <span class="span-destination">
+                                        Cuba
+                                    </span>
+                                </div>
+                                <a class="activador" href="https://sunwingexperiences.nexustours.com/cuba" target="_blank">
+                                                        
+                                </a>
+                            </div>
+                        </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
                                 <div class="gradient-imagen">
@@ -3358,18 +3395,18 @@
         var imgCarrouselOverflowDesk = document.getElementsByName("imgCarrouselOverflowDesk")
         var imgCarrouselOverflowMob = document.getElementsByName("imgCarrouselOverflowMob")
         var anchoDocumento = window.innerWidth - (window.scrollBarWidth || window.innerWidth - document.documentElement.clientWidth);
-
+    
         var carrouselRight = document.getElementById("carrouselRight")
-
+    
         let contSlide = 0
-
+    
         for(var i = 1; i < backgroundBotonesCarrouselHoverHome.length; i++){
             backgroundBotonesCarrouselHoverHome[i].style.top = "85%"
         }
-
+    
         for(var i = 0; i < botonCarrouselHoverHome.length; i++){
             let cont = i
-
+    
             botonCarrouselHoverHome[cont].addEventListener("click", function(){
                 if(anchoDocumento > 550){
                     backgroundChangeSlider.setAttribute("src", imgCarrouselOverflowDesk[contSlide].src)
@@ -3402,11 +3439,11 @@
                 containerSliderCarrousel[cont].style.opacity = "1"
                 contSlide = cont
             })
-
+    
             botonCarrouselHoverHome[cont].addEventListener("mouseover", function(){
                 backgroundBotonesCarrouselHoverHome[cont].style.top = "0%"
             })
-
+    
             botonCarrouselHoverHome[cont].addEventListener("mouseout", function(){
                 var activo = botonCarrouselHoverHome[cont].getAttribute("activo")
                 if(activo == 0){
@@ -3414,7 +3451,7 @@
                 }
             })
         }
-
+    
         botonArrowSliderCarrouselRight.addEventListener("click", function(){
             contSlide++
             if(contSlide > botonCarrouselHoverHome.length-1){
@@ -3443,7 +3480,7 @@
             containerSliderCarrousel[contSlide].style.zIndex = "2"
             containerSliderCarrousel[contSlide].style.opacity = "1"
         })
-
+    
         botonArrowSliderCarrouselLeft.addEventListener("click", function(){
             contSlide--
             if(contSlide < 0){
@@ -3472,7 +3509,6 @@
             containerSliderCarrousel[contSlide].style.zIndex = "2"
             containerSliderCarrousel[contSlide].style.opacity = "1"
         })
-
     </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
