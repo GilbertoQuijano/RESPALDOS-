@@ -224,14 +224,18 @@
 
             .img-banner-transfer-carro {
                 height: auto;
-                width: 163px;
+                width: 150px;
                 vertical-align: bottom;
             }
 
             @media(max-width:800px) {
                 .img-banner-transfer-carro {
                     height: auto !important;
-                    width: 27vw !important;
+                    width: 35vw !important;
+                    display: block !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    margin-bottom: 2vw !important;
                 }
             }
 
@@ -252,6 +256,9 @@
             .cta-banner {
                 width: 45px;
                 height: 45px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             @media(max-width:800px) {
@@ -289,8 +296,9 @@
 
             @media(max-width:800px) {
                 .bold-texto-banner-transfer {
-                    font-size: 4.8vw !important;
-                    line-height: 100% !important;
+                    font-size: 6.5vw !important;
+                    line-height: 150% !important;
+                    text-align: center !important;
                 }
             }
 
@@ -320,7 +328,9 @@
 
             @media(max-width:800px) {
                 .unbold-texto-banner-transfer {
-                    font-size: 3vw !important;
+                    font-size: 4vw !important;
+                    text-align: center !important;
+                    margin-bottom: 2vw !important;
                 }
             }
 
@@ -415,22 +425,18 @@
 
             .container-car-width {
                 padding-left: 10px;
+                width: 30%;
             }
 
             @media(max-width:800px) {
                 .container-car-width {
-                    width: 7% !important;
-                    max-width: 7% !important;
                     padding-left: 3vw !important;
+                    width: 25% !important;
                 }
             }
 
-            @media(max-width:800px) {
-                .container-text-car-width {
-                    width: 45% !important;
-                    max-width: 45% !important;
-                    min-width: 45% !important;
-                }
+            .container-text-car-width {
+                width: 55%;
             }
 
             @media(max-width:800px) {
@@ -770,12 +776,109 @@
                                 <p class="parrafo-card">
                                     <span class="bold-text">Hi <span class="orange-nexus">{{contact.firstname}}</span>,</span>
                                     <br><br>
-                                    We're counting down the days until your trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>! With only 10 days to go, we want to ensure everything is perfect for your visit.
+                                    We're excited for your upcoming trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>! With just 10 days to go, let's ensure everything is perfect.
                                     <br><br>
-                                    <span class="bold-text orange-nexus">Customize Your Journey:</span>&nbsp;We believe every traveler should have the chance to make their adventure unique.
+                                    <span class="bold-text orange-nexus">Customize Your Journey:</span>&nbsp;Visit our website <a class="bold-text orange-nexus" href="{{contact.deeplink_email}}&contact_id={{contact.id}}">here</a> or contact our travel experts.
+                                    We're here to help create your ideal <span class="bold-text orange-nexus">{{contact.Destination}}</span> experience.
                                     <br><br>
-                                    Start planning your incredible journey by visiting our website <a class="bold-text orange-nexus" href="{{contact.deeplink_email}}&contact_id={{contact.id}}">here</a>&nbsp;or contacting our team of travel experts. 
-                                    We're ready to help you craft a personalized <span class="bold-text orange-nexus">{{contact.Destination}}</span>&nbsp;experience that meets all your desires.
+                                    Best regards,
+                                    <br><br>
+                                    Your <span class="bold-text orange-nexus">NexusTours</span> Team
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="TextBlock2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="card-email">
+                                <p class="parrafo-card margin-bottom-15">
+                                    Our team is available 24/7 for personalized recommendations. Need assistance without leaving your room? <a href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank" class="bold-text orange-nexus"> Click here</a> or contact us:
+                                </p>
+                                <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td class="width-tollWA">
+                                            <div style="width: fit-content; margin: auto;">
+                                                <a href="tel:1-888-644-8594" target="_blank">
+                                                    <div class="background-nexus container-toll">
+                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email_black.png">
+                                                                </td>
+                                                                <td>
+                                                                    <h4 class="text-tollWA">
+                                                                        Call us
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="width-tollWA">
+                                            <div style="width: fit-content; margin: auto;">
+                                                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                                    <div class="background-nexus container-wa">
+                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                                </td>
+                                                                <td>
+                                                                    <h4 class="text-tollWA">
+                                                                        Whatsapp
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="tag-mob">
+                                    <div class="margin-bottom-10">
+                                        <a href="tel:1-888-644-8594" target="_blank">
+                                            <div class="background-nexus container-toll">
+                                                <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email_black.png">
+                                                        </td>
+                                                        <td>
+                                                            <h4 class="text-tollWA">
+                                                                Call us
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="https://wa.me/529981805404?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                        <div class="background-nexus container-wa">
+                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                    </td>
+                                                    <td>
+                                                        <h4 class="text-tollWA">
+                                                            Whatsapp
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </div>
+                                <br>
+                                <p class="parrafo-card">
+                                    We're eagerly looking forward to enhancing your experience!
                                 </p>
                             </div>
                         </td>
@@ -895,117 +998,37 @@
                             <div class="container-img-banner-transfer">
                                 <a class="activador-img-banner-transfer" href="https://www.nexustours.com/transfers/?utm_source=vacation_express&utm_medium=mail&utm_campaign=PreArrival_10Dias&contact_id={{contact.id}}" target="_blank">
                                     <div class="img-banner-transfer">
-                                        <table role="presentation" border="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td class="container-car-width">
-                                                    <img class="img-banner-transfer-carro" src="https://www.nexustours.com/images/upload//Email-content/Img-Transfer-Email.png">
-                                                </td>
-                                                <td class="texto-banner-transfer container-text-car-width">
-                                                    <h4 class="bold-texto-banner-transfer">Book now for a quick</h4>
-                                                    <h4 class="unbold-texto-banner-transfer">and smooth hotel transfer,from only ${{contact.precio}} USD per person.</h4>
-                                                </td>
-                                                <td class="container-plus-width">
-                                                    <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner.png">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table id="TextBlock2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                    <tr>
-                        <td>
-                            <div class="card-email">
-                                <p class="parrafo-card margin-bottom-15">
-                                    Our team is available 24/7 for personalized recommendations. Need assistance without leaving your room? <a href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank" class="bold-text orange-nexus"> Click here</a> or contact us:
-                                </p>
-                                <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td class="width-tollWA">
-                                            <div style="width: fit-content; margin: auto;">
-                                                <a href="tel:1-888-644-8594" target="_blank">
-                                                    <div class="background-nexus container-toll">
-                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                            <tr>
-                                                                <td>
-                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
-                                                                </td>
-                                                                <td>
-                                                                    <h4 class="text-tollWA">
-                                                                        Call us
-                                                                    </h4>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="width-tollWA">
-                                            <div style="width: fit-content; margin: auto;">
-                                                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                                    <div class="background-nexus container-wa">
-                                                        <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                            <tr>
-                                                                <td>
-                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
-                                                                </td>
-                                                                <td>
-                                                                    <h4 class="text-tollWA">
-                                                                        Whatsapp
-                                                                    </h4>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div class="tag-mob">
-                                    <div class="margin-bottom-10">
-                                        <a href="tel:1-888-644-8594" target="_blank">
-                                            <div class="background-nexus container-toll">
-                                                <table role="presentation" border="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td>
-                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
-                                                        </td>
-                                                        <td>
-                                                            <h4 class="text-tollWA">
-                                                                Call us
-                                                            </h4>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="https://wa.me/529981805404?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                        <div class="background-nexus container-wa">
-                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                        <div class="tag-desk">
+                                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" width="100%">
                                                 <tr>
-                                                    <td>
-                                                        <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                    <td class="container-car-width">
+                                                        <img class="img-banner-transfer-carro" src="https://www.nexustours.com/images/upload//Email-content/Img-Transfer-Email.png">
                                                     </td>
-                                                    <td>
-                                                        <h4 class="text-tollWA">
-                                                            Whatsapp
-                                                        </h4>
+                                                    <td class="texto-banner-transfer container-text-car-width">
+                                                        <h4 class="bold-texto-banner-transfer">Upgrade your stay with a smooth,
+                                                            <br>
+                                                            swift transfer to your hotel!</h4>
+                                                        <h4 class="unbold-texto-banner-transfer">Reserve yours today!</h4>
+                                                    </td>
+                                                    <td class="container-plus-width">
+                                                        <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner.png">
                                                     </td>
                                                 </tr>
                                             </table>
                                         </div>
-                                    </a>
-                                </div>
-                                <br>
-                                <p class="parrafo-card">
-                                    We're eagerly looking forward to enhancing your experience!
-                                </p>
+                                        <div class="tag-mob">
+                                            <h4 class="bold-texto-banner-transfer">
+                                                Upgrade your stay
+                                            </h4>
+                                            <h4 class="unbold-texto-banner-transfer">
+                                                with a smooth, swift transfer to your hotel! <br>
+                                                Reserve yours today!
+                                            </h4>
+                                            <img class="img-banner-transfer-carro" src="https://www.nexustours.com/images/upload//Email-content/Img-Transfer-Email.png">
+                                            <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner.png">
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </td>
                     </tr>
@@ -1073,7 +1096,7 @@
                     <tr>
                         <td>
                             <div class="container-text">
-                                <a href="https://www.nexustours.com/?utm_source=vacation_express&utm_medium=mail&utm_campaign=TBAPreArrival_7Dias&contact_id={{contact.id}}" target="_blank">
+                                <a href="https://www.nexustours.com/?utm_source=vacation_express&utm_medium=mail&utm_campaign=PreArrival_10Dias&contact_id={{contact.id}}" target="_blank">
                                     <h3 class="dominio">
                                         www.nexustours.com
                                     </h3>

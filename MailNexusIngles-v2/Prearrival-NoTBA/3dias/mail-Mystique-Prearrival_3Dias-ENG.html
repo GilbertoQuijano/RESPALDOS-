@@ -54,7 +54,9 @@
                 margin: auto;
                 width: 80%;
                 height: 5px;
-                background-color: white;
+                background-position: center;
+                background-size: cover;
+                background-image: url('https://www.nexustours.com/images/upload//Email-content/Background-RR-Header-Line.png');
             }
 
             .border-bottom-line {
@@ -94,7 +96,7 @@
             }
 
             .orange-nexus {
-                color: #48174A;
+                color: #F17121;
             }
 
             .bold-text {
@@ -122,7 +124,7 @@
             .img-banner-transfer {
                 width: 100%;
                 border-radius: 16px;
-                background-color: #48174A;
+                background-color: #00425C;
                 padding: 10px 10px 10px 5px;
             }
 
@@ -168,7 +170,7 @@
             }
 
             .background-redes-table {
-                background-color: #48174A;
+                background-color: #00425C;
             }
 
             .container-redes {
@@ -393,12 +395,12 @@
             }
 
             .container-logo-nexus {
-                background-color: #48174A;
+                background-color: #00425C;
                 width: 100%;
             }
 
             .background-nexus {
-                background-color: #48174A;
+                background-color: #00425C;
             }
 
             .tag-desk {
@@ -505,7 +507,7 @@
             .titleSekura {
                 margin-top: 0;
                 margin-bottom: 0;
-                color: #48174A;
+                color: #F17121;
                 font-size: 20px;
                 line-height: 107.7%;
                 font-weight: 700;
@@ -628,6 +630,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 font-size: 25px;
+                color: #004A63;
             }
 
             @media(max-width:800px) {
@@ -660,7 +663,7 @@
             }
 
             .containerBotonBookNow {
-                background-color: #48174A;
+                background-color: #00425C;
                 width: 107px;
                 border-radius: 30px;
                 padding: 5px 10px;
@@ -761,7 +764,7 @@
                         <td>
                             <div class="container-logo-nexus">
                                 <div class="logo-nexus">
-                                    <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-PH-Rebrand.png">
+                                    <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-Mystique-Rebrand.png">
                                 </div>
                                 <div class="line-gradient-image border-top-line">
                                 </div>
@@ -775,13 +778,15 @@
                     <tr>
                         <td>
                             <div class="card-email">
-                                <p class="parrafo-card">
-                                    <span class="bold-text">Hi <span class="orange-nexus">{{contact.firstname}}</span>,</span>
+                                <p class="parrafo-card color-whl">
+                                    <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
                                     <br><br>
-                                    We're excited for your upcoming trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>! With just 10 days to go, let's ensure everything is perfect.
+                                    We're thrilled to have you joining us for your upcoming trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>. Get ready for an unforgettable experience!
                                     <br><br>
-                                    <span class="bold-text orange-nexus">Customize Your Journey:</span>&nbsp;Visit our website <a class="bold-text orange-nexus" href="{{contact.deeplink_email}}&contact_id={{contact.id}}">here</a> or contact our travel experts.
-                                    We're here to help create your ideal <span class="bold-text orange-nexus">{{contact.Destination}}</span> experience.
+                                    <span class="bold-text orange-nexus">Your Journey, Your Way:</span>&nbsp; Customize your adventure to your preferences.
+                                    <br><br>
+                                    Visit our website <a class="bold-text orange-nexus" href="{{contact.deeplink_email}}&contact_id={{contact.id}}">here</a> or contact our travel experts 
+                                    to start planning your personalized <span class="bold-text orange-nexus">{{contact.Destination}}</span> experience.
                                     <br><br>
                                     Best regards,
                                     <br><br>
@@ -795,7 +800,7 @@
                     <tr>
                         <td>
                             <div class="card-email">
-                                <p class="parrafo-card margin-bottom-15">
+                                <p class="parrafo-card margin-bottom-15 color-whl">
                                     Our team is available 24/7 for personalized recommendations. Need assistance without leaving your room? <a href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank" class="bold-text orange-nexus"> Click here</a> or contact us:
                                 </p>
                                 <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
@@ -807,7 +812,7 @@
                                                         <table role="presentation" border="0" cellspacing="0" width="100%">
                                                             <tr>
                                                                 <td>
-                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email-yellow.png">
+                                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
                                                                 </td>
                                                                 <td>
                                                                     <h4 class="text-tollWA">
@@ -849,7 +854,7 @@
                                                 <table role="presentation" border="0" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td>
-                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email-yellow.png">
+                                                            <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
                                                         </td>
                                                         <td>
                                                             <h4 class="text-tollWA">
@@ -879,7 +884,7 @@
                                     </a>
                                 </div>
                                 <br>
-                                <p class="parrafo-card">
+                                <p class="parrafo-card color-whl">
                                     We're eagerly looking forward to enhancing your experience!
                                 </p>
                             </div>
@@ -998,7 +1003,7 @@
                     <tr>
                         <td>
                             <div class="container-img-banner-transfer">
-                                <a class="activador-img-banner-transfer" href="https://www.nexustours.com/transfers/?utm_source=PH&utm_medium=mail&utm_campaign=PreArrival_10Dias&contact_id={{contact.id}}" target="_blank">
+                                <a class="activador-img-banner-transfer" href="https://mystique.nexustours.com/transfers/?utm_source=mystique&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
                                     <div class="img-banner-transfer">
                                         <div class="tag-desk">
                                             <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" width="100%">
@@ -1013,7 +1018,7 @@
                                                         <h4 class="unbold-texto-banner-transfer">Reserve yours today!</h4>
                                                     </td>
                                                     <td class="container-plus-width">
-                                                        <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner-PH.png">
+                                                        <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner-RY.png">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1027,7 +1032,7 @@
                                                 Reserve yours today!
                                             </h4>
                                             <img class="img-banner-transfer-carro" src="https://www.nexustours.com/images/upload//Email-content/Img-Transfer-Email.png">
-                                            <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner-PH.png">
+                                            <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner-RY.png">
                                         </div>
                                     </div>
                                 </a>
@@ -1098,9 +1103,9 @@
                     <tr>
                         <td>
                             <div class="container-text">
-                                <a href="https://planet.nexustours.com/?utm_source=PH&utm_medium=mail&utm_campaign=PreArrival_10Dias&contact_id={{contact.id}}" target="_blank">
+                                <a href="https://mystique.nexustours.com/?utm_source=mystique&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
                                     <h3 class="dominio">
-                                        planet.nexustours.com
+                                        mystique.nexustours.com
                                     </h3>
                                 </a>
                             </div>
@@ -1109,7 +1114,7 @@
                                     <tr>
                                         <td>
                                             <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/waEmailYellow.png">
+                                                <img src="https://www.nexustours.com/images/upload//Email-content/waEmailBDR.png">
                                             </a>
                                         </td>
                                     </tr>
