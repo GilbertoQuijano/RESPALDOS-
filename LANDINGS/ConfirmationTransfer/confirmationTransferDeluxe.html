@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <style>
+
+            .orangeNexus{
+                color: #FF621D;
+            }
+
+            .bannerGradient{
+                width: 100%; 
+                height: 362px; 
+                background: linear-gradient(150deg, #00AFDD 0%, #8CE972 100%); 
+                display: flex;
+                justify-content: center;
+            }
+            @media (max-width: 992px){
+                .bannerGradient{
+                    height: 55vw; 
+                }
+            }
+
+            .imgGradient{
+                display: block; 
+                width: 273px;
+            }
+            @media (max-width: 992px){
+                .imgGradient{
+                    width: 50vw;
+                }
+            }
+
+            .body-media{
+                width: 1160px;
+                margin: auto;
+                font-family: 'DM Sans', sans-serif;
+                padding-bottom: 50px;
+                margin-top: 50px;
+            }
+            @media (max-width: 1200px){
+                .body-media{
+                    width: 960px;
+                }
+            }
+            @media (max-width: 992px){
+                .body-media{
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            }
+
+            .titleUpgrade{
+                text-align: center;
+                font-size: 40px;
+                line-height: 125%;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 992px){
+                .titleUpgrade{
+                    font-size: 7vw;
+                }
+            }
+
+            .spanTitleUpgrade{
+                font-size: 44px;
+                line-height: 125%;
+                font-weight: 700;
+            }
+            @media (max-width: 992px){
+                .spanTitleUpgrade{
+                    font-size: 8vw;
+                }
+            }
+
+            .orangeNexus{
+                color: #FF621D;
+            }
+
+            .containerTextBannerGradient{
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+            }
+            @media (max-width: 992px){
+                .containerTextBannerGradient{
+                    flex-direction: column;
+                    align-items: center; 
+                }
+            }
+
+            .textTrusting{
+                font-size: 32px; 
+                line-height: 127%; 
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            @media (max-width: 992px){
+                .textTrusting{
+                    font-size: 5vw;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bannerGradient">
+            <div class="containerTextBannerGradient">
+                <img class="imgGradient" src="https://www.nexustours.com/images/upload//Landing%20Pages/ConfirmationLanding/iconConfirmationLanding.png">
+            </div>
+        </div>
+        <div class="body-media">
+            <p class="titleUpgrade">
+                We appreciate your confirmation for the <br>
+                <span class="orangeNexus spanTitleUpgrade"> Deluxe Transfer</span>
+            </p>
+            <p class="textTrusting">
+                Thank you for trusting in our service.
+            </p>
+        </div>
+    </body>
+    <!--Script para eliminar el contenedor pequeño de la plantilla-->
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+    </script>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 600px;
+            margin: auto;
+            background-color: white;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+            }
+        }
+
+        .banner-header{
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/BD/imgBannerPHApp.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 188px;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                height: 33vw !important;
+            }
+        }
+
+        .line-gradient-image{
+            margin: auto; 
+            width: 80%; 
+            height: 5px; 
+            background-color: white;
+        }
+
+        .border-bottom-line{
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+
+        .border-top-line{
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        
+        .orange-nexus{
+            color: #48174A;
+        }
+
+        .bold-text{
+            font-weight: 700;
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-10{
+                margin-bottom: 2vw !important;
+            }
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .background-redes-table{
+            background-color: #48174A;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .redes{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #FF621D;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .container-table-productos{
+            width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+
+        .product-title{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FF621D;
+            color: #FFF;
+            line-height: 190%;
+        }
+
+        .product-content{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FFF;
+            line-height: 190%;
+        }
+        @media(max-width:800px){
+            .product-content{
+                padding: 0 2vw;
+            }
+        }
+
+        .cta-banner{
+            width: 45px;
+            height: 45px;
+        }
+        @media(max-width:800px){
+            .cta-banner{
+                width: auto !important;
+                height: 9vw !important;
+            }
+        }
+
+        .text-titles{
+            font-size: 24px;
+            line-height: 130%;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .subtext-title-email{
+            margin: 0;
+            font-size: 16px;
+            line-height: 134%;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
+
+        .toll{
+            color: #FFF;
+            font-weight: 900;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        @media(max-width:800px){
+            .toll{
+                font-size: 3vw !important;
+                margin-bottom: 1vw !important;
+            }
+        }
+
+        .telephone{
+            background-color: #FFF;
+            color: #F17121;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            margin: 0;
+            border-radius: 7px;
+            width: 113px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width:800px){
+            .telephone{
+                font-size: 3.5vw !important;
+                padding: 1vw !important;
+                width: 22vw !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-logo-nexus{
+            background-color: #48174A;
+            width: 100%;
+        }
+
+        .background-nexus{
+            background-color: #48174A;
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media(max-width:800px){
+            .tag-desk{
+                display: none !important;
+            }
+        }
+
+        .tag-mob{
+            display: none;
+        }
+        @media(max-width:800px){
+            .tag-mob{
+                display: block !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-car-width{
+                width: 35% !important;
+                max-width: 35% !important;
+                min-width: 35% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-text-car-width{
+                width: 45% !important;
+                max-width: 45% !important;
+                min-width: 45% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-plus-width{
+                width: 10% !important;
+            }
+        }
+        .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+            }
+
+        @media(max-width:800px){
+            .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+                min-width: 40% !important;
+            }
+        }
+
+        .vermas{
+            margin: 0; 
+            text-decoration: underline; 
+            font-size: 15px; 
+            color: #333;
+            text-align: center;
+        }
+
+        .color-whl{
+            color: #48174A;
+        }
+
+        .tag-desk-table{
+            display: table;
+        }
+        @media(max-width:800px){
+            .tag-desk-table{
+                display: none !important;
+            }
+        }
+
+        .img-redes{
+            width: 35px;
+            height: 35px;
+        }
+
+        .banner-app{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: fit-content;
+        }
+
+        .img-banner-app{
+            width: 100%;
+        }
+
+        .text-ver-mas{
+            width: 95%; 
+            margin: auto; 
+            text-align: center;
+        }
+
+        .container90{
+            width: 90%; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .text20PH{
+            margin-top: 0; 
+            font-size: 20px; 
+            font-weight: 600; 
+            line-height: 130%; 
+            text-align: center;
+        }
+
+        .text16PH{
+            margin-top: 0; 
+            font-size: 16px; 
+            font-weight: 600; 
+            line-height: 130%; 
+            text-align: center;
+        }
+
+        .text14PH{
+            margin-top: 0; 
+            font-size: 14px; 
+            font-weight: 600; 
+            line-height: 130%; 
+            text-align: center;
+        }
+
+        .imgAppStore{
+            display: block; 
+            width: 63px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-bottom: 15px;
+        }
+
+        .imgPlayStore{
+            display: block; 
+            width: 75px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-bottom: 15px;
+        }
+
+        .containerLinkPH{
+            display: block; 
+            width: 100%; 
+            border-radius: 25px; 
+            overflow: hidden;
+        }
+
+        .containerLinkPH2{
+            display: block; 
+            width: 50%; 
+            border-radius: 25px; 
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .containerBGLinkPH{
+            width: 100%; 
+            background-color: #48174A; 
+            padding: 8px 0px;
+        }
+
+        .textLinkPH{
+            text-align: center; 
+            font-size: 17px; 
+            line-height: 144%; 
+            color: white; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+
+        .container50{
+            width: 50%;
+        }
+
+        .paddingLeftTable{
+            padding-left: 7.5px;
+        }
+
+        .paddingRightTable{
+            padding-right: 7.5px;
+        }
+
+        .imgNPI{
+            display: block; 
+            width: 100%; 
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-logo-nexus">
+                            <div class="logo-nexus">
+                                <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-PH-Rebrand.png">
+                            </div>
+                        </div>
+                        <div class="container-logo-nexus">
+                            <div class="line-gradient-image border-top-line">
+                            </div>
+                        </div>
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="line-gradient-image border-bottom-line">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container90">
+                            <h4 class="margin-bottom-15 text20PH">
+                                Get ready for your Stay and download Planet Hollywood App before your arrival
+                            </h4>
+                            <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td class="container50 paddingRightTable">
+                                        <img class="imgAppStore" src="https://www.nexustours.com/images/upload//Email-content/BD/imgAppStore.png">
+                                        <a class="containerLinkPH" href="https://apps.apple.com/es/app/ph-cancun/id6472479216" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Download
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td class="container50 paddingLeftTable">
+                                        <img class="imgPlayStore" src="https://www.nexustours.com/images/upload//Email-content/BD/imgPlayStore.png">
+                                        <a class="containerLinkPH" href="https://play.google.com/store/apps/details?id=com.mobail.planethollywood&hl=en_US" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Download
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container90">
+                            <h4 class="margin-bottom-10 text16PH">
+                                Find out a wide range of options and book thru Planet Hollywood App
+                            </h4>
+                            <div class="margin-bottom-15">
+                                <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgSpaPH.jpg">
+                                <h4 class="margin-bottom-10 text20PH color-whl">
+                                    SPA
+                                </h4>
+                                <p class="margin-bottom-15 text14PH tag-desk">
+                                    Choose from a wide menu of wellness treatments, including a pink <br> 
+                                    Himalayan salt room, Ayurveda massage, quartz sand beds. <br>
+                                    Or indulge in a seaside couple's massage. 
+                                </p>
+                                <p class="margin-bottom-15 text14PH tag-mob">
+                                    Choose from a wide menu of wellness treatments, including a pink
+                                    Himalayan salt room, Ayurveda massage, quartz sand beds.
+                                    Or indulge in a seaside couple's massage. 
+                                </p>
+                                <a class="containerLinkPH2" href="https://planet.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationHotel=JP06433L&paxs=10#?serviceClassification=13&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                    <div class="containerBGLinkPH">
+                                        <h4 class="textLinkPH">
+                                            Book Now
+                                        </h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <table class="tag-desk-table margin-bottom-22" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td class="container50" style="padding-right: 5px;">
+                                        <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgPBDPH.jpg">
+                                        <h4 class="margin-bottom-10 text20PH color-whl">
+                                            Private Beach Dinners
+                                        </h4>
+                                        <p class="margin-bottom-15 text14PH">
+                                            Be the star of your own beachside <br>
+                                            dinner experience. Choose from our  <br>
+                                            three different options.
+                                        </p>
+                                        <a class="containerLinkPH" href="https://planet.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationHotel=JP06433L&paxs=10#?name=romant&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Book Now
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td class="container50" style="padding-left: 5px;">
+                                        <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgCabanasPH.jpg">
+                                        <h4 class="margin-bottom-10 text20PH color-whl">
+                                            Cabanas
+                                        </h4>
+                                        <p class="margin-bottom-15 text14PH">
+                                            VIP service, a butler service, cuisine, <br>
+                                            and a complimentary liquor bottle. <br>
+                                            For 6 people 
+                                        </p>
+                                        <a class="containerLinkPH" href="https://planet.nexustours.com/services/details.aspx?productType=TKT&destinationID=132393&addDays=2&nights=6&paxs=10&accion=searchservices&prov=SGN&destinationHotel=JP06433L&productID=9208#?utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Book Now
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob">
+                                <div class="margin-bottom-15">
+                                    <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgPBDPHMob.jpg">
+                                    <h4 class="margin-bottom-10 text20PH color-whl">
+                                        Private Beach Dinners
+                                    </h4>
+                                    <p class="margin-bottom-15 text14PH">
+                                        Be the star of your own beachside <br>
+                                        dinner experience. Choose from our  <br>
+                                        three different options.
+                                    </p>
+                                    <a class="containerLinkPH2" href="https://planet.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationHotel=JP06433L&paxs=10#?name=romant&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                        <div class="containerBGLinkPH">
+                                            <h4 class="textLinkPH">
+                                                Book Now
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="margin-bottom-22">
+                                    <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgCabanasPHMob.jpg">
+                                    <h4 class="margin-bottom-10 text20PH color-whl">
+                                        Cabanas
+                                    </h4>
+                                    <p class="margin-bottom-15 text14PH">
+                                        VIP service, a butler service, cuisine, <br>
+                                        and a complimentary liquor bottle. <br>
+                                        For 6 people 
+                                    </p>
+                                    <a class="containerLinkPH2" href="https://planet.nexustours.com/services/details.aspx?productType=TKT&destinationID=132393&addDays=2&nights=6&paxs=10&accion=searchservices&prov=SGN&destinationHotel=JP06433L&productID=9208#?utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                        <div class="containerBGLinkPH">
+                                            <h4 class="textLinkPH">
+                                                Book Now
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="margin-bottom-15 text20PH">
+                                Activities and Attractions for all
+                            </h4>
+                            <div class="margin-bottom-22">
+                                <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgFlowRiderPHMob.jpg">
+                                <h4 class="margin-bottom-10 text20PH color-whl">
+                                    Flow Rider
+                                </h4>
+                                <p class="margin-bottom-15 text14PH">
+                                    Shred the endless Flow Rider it's the ultimate simulated surf experience. <br>
+                                    Try boogie boarding and have fun.
+                                </p>
+                                <a class="containerLinkPH2" href="https://planet.nexustours.com/services/details.aspx?productType=TKT&destinationID=132393&addDays=2&nights=6&paxs=10&accion=searchservices&prov=SGN&destinationHotel=JP06433L&productID=12074#?utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                    <div class="containerBGLinkPH">
+                                        <h4 class="textLinkPH">
+                                            Book Now
+                                        </h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <table class="tag-desk-table margin-bottom-15" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td class="container50" style="padding-right: 5px;">
+                                        <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgSplatterPHSquare.jpg">
+                                        <h4 class="margin-bottom-10 text20PH color-whl">
+                                            Splatter Experience
+                                        </h4>
+                                        <p class="margin-bottom-15 text14PH">
+                                            Splatter Experience is an activity where you can develop
+                                            your creativity during your vacation in Cancun.
+                                        </p>
+                                        <a class="containerLinkPH" href="https://planet.nexustours.com/services/details.aspx?productID=12066&paxs=10&productType=TKT&destinationID=132393&addDays=2&nights=6&prov=SGN&accion=searchservices&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Book Now
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td class="container50" style="padding-left: 5px;">
+                                        <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgBattingCagePH.jpg">
+                                        <h4 class="margin-bottom-10 text20PH color-whl">
+                                            Batting Cage
+                                        </h4>
+                                        <p class="margin-bottom-15 text14PH">
+                                            Enjoy the excitement of baseball in the batting cage
+                                            and experience the adrenaline of hitting the ball.
+                                        </p>
+                                        <a class="containerLinkPH" href="https://planet.nexustours.com/services/details.aspx?productID=12071&paxs=10&productType=TKT&destinationID=132393&addDays=2&nights=6&prov=SGN&accion=searchservices&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                            <div class="containerBGLinkPH">
+                                                <h4 class="textLinkPH">
+                                                    Book Now
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob">
+                                <div class="margin-bottom-15">
+                                    <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgSplatterPH.jpg">
+                                    <h4 class="margin-bottom-10 text20PH color-whl">
+                                        Splatter Experience
+                                    </h4>
+                                    <p class="margin-bottom-15 text14PH">
+                                        Splatter Experience is an activity where you can develop
+                                        your creativity during your vacation in Cancun.
+                                    </p>
+                                    <a class="containerLinkPH2" href="https://planet.nexustours.com/services/details.aspx?productID=12066&paxs=10&productType=TKT&destinationID=132393&addDays=2&nights=6&prov=SGN&accion=searchservices&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                        <div class="containerBGLinkPH">
+                                            <h4 class="textLinkPH">
+                                                Book Now
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="margin-bottom-15">
+                                    <img class="margin-bottom-10 imgNPI" src="https://www.nexustours.com/images/upload//Email-content/BD/imgBattingCagePHMob.jpg">
+                                    <h4 class="margin-bottom-10 text20PH color-whl">
+                                        Batting Cage
+                                    </h4>
+                                    <p class="margin-bottom-15 text14PH">
+                                        Enjoy the excitement of baseball in the <br>
+                                        batting cage and experience the <br>
+                                        adrenaline of hitting the ball.
+                                    </p>
+                                    <a class="containerLinkPH2" href="https://planet.nexustours.com/services/details.aspx?productID=12071&paxs=10&productType=TKT&destinationID=132393&addDays=2&nights=6&prov=SGN&accion=searchservices&utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                        <div class="containerBGLinkPH">
+                                            <h4 class="textLinkPH">
+                                                Book Now
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="vermas" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-redes">
+                            <a class="vermas" href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank">
+                                <div class="text-ver-mas">
+                                    Find our top {{contact.year}} best-selling experiences with the best available rates by clicking here.
+                                </div>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://planet.nexustours.com/?utm_source=planet_h_rooming_list&utm_medium=mail&utm_campaign=NPI_PH_Cun&contact_id={{contact.id}}" target="_blank">
+                                <h3 class="dominio">
+                                    planet.nexustours.com
+                                </h3>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

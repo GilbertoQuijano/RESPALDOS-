@@ -1,0 +1,126 @@
+/*Obtener la fecha del dia*/
+            const dateToday = new Date()
+
+            /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
+            var arrayMonth = []
+            var campActiva = []
+
+
+            /*Obtener el mes de la fecha actual*/
+            switch((dateToday.getMonth() + 1)){
+                case 1:
+                    var monthToday = "Enero"
+                    break;
+                case 2:
+                    var monthToday = "Febrero"
+                    break;
+                case 3:
+                    var monthToday = "Marzo"
+                    break;
+                case 4:
+                    var monthToday = "Abril"
+                    break;
+                case 5:
+                    var monthToday = "Mayo"
+                    break;
+                case 6:
+                    var monthToday = "Junio"
+                    break;
+                case 7:
+                    var monthToday = "Julio"
+                    break;
+                case 8:
+                    var monthToday = "Agosto"
+                    break;
+                case 9:
+                    var monthToday = "Septiembre"
+                    break;
+                case 10:
+                    var monthToday = "Octubre"
+                    break;
+                case 11:
+                    var monthToday = "Noviembre"
+                    break;
+                case 12:
+                    var monthToday = "Diciembre"
+                    break;
+            }
+
+
+            /*Obtener las campañas del mes*/
+            for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
+                if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
+                    arrayMonth.push(i)
+                }
+            }
+
+            /*Obtener las campañas que se encuentran activas*/
+            arrayMonth.forEach(function(indice){
+                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice])
+                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice])
+                if((dateToday > fechaIni) && (dateToday < fechaFin)){
+                    campActiva.push(indice)
+                }
+            })
+
+            var prio = campActiva[0]
+
+            /*Obtener la campaña con mayor prioridad y que debe estar disponible*/
+            campActiva.forEach(function(indice){
+                if(dicCampaign["prioridadCamp"][indice] > dicCampaign["prioridadCamp"][prio]){
+                    switch(comp){
+                        case "español":
+                            if(dicCampaign["dispEspCamp"][indice] == 1){
+                                prio = indice
+                            }
+                        break;
+                        case "english":
+                            if(dicCampaign["dispEngCamp"][indice] == 1){
+                                prio = indice
+                            }
+                        break;
+                        case "français":
+                            if(dicCampaign["dispFrCamp"][indice] == 1){
+                                prio = indice
+                            }
+                        break;
+                    }
+                }
+            })
+
+            switch(comp){
+                case "español":
+                    for(var i = 0; i < imgOferta1.length; i++){
+                        imgOferta1[i].src = dicCampaign["LinkEspImg1DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta2.length; i++){
+                        imgOferta2[i].src = dicCampaign["LinkEspImg2DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta3.length; i++){
+                        imgOferta3[i].src = dicCampaign["LinkEspImg3DiscountCampana"][prio]
+                    }
+                    break;
+                case "english":
+                    for(var i = 0; i < imgOferta1.length; i++){
+                        imgOferta1[i].src = dicCampaign["LinkEngImg1DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta2.length; i++){
+                        imgOferta2[i].src = dicCampaign["LinkEngImg2DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta3.length; i++){
+                        imgOferta3[i].src = dicCampaign["LinkEngImg3DiscountCampana"][prio]
+                    }
+                    break;
+                case "français":
+                    for(var i = 0; i < imgOferta1.length; i++){
+                        imgOferta1[i].src = dicCampaign["LinkFrImg1DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta2.length; i++){
+                        imgOferta2[i].src = dicCampaign["LinkFrImg2DiscountCampana"][prio]
+                    }
+                    for(var i = 0; i < imgOferta3.length; i++){
+                        imgOferta3[i].src = dicCampaign["LinkFrImg3DiscountCampana"][prio]
+                    }
+                    break;
+            }
+

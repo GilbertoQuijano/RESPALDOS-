@@ -1,0 +1,62 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var botonNatureSlideRight = document.querySelector('.botonnatureslideright')
+        var botonNatureSlideLeft = document.querySelector('.botonnatureslideleft')
+        var containerNatureExperiencesSlide = document.querySelectorAll('.containernatureexperiencesslide')
+        var textContNext = document.querySelectorAll('#TextContNextMob')
+        var textContActual = document.querySelectorAll('#TextContActualMob')
+
+        let contadorSlide = 0
+
+        botonNatureSlideLeft.addEventListener('click', function(){
+            contadorSlide -= 1
+            if(contadorSlide < 0){
+                contadorSlide = (containerNatureExperiencesSlide.length) - 1
+            }
+            for(var i = 0; i < containerNatureExperiencesSlide.length; i++){
+                if(contadorSlide == i){
+                    containerNatureExperiencesSlide[i].style.opacity = "100%"
+                    containerNatureExperiencesSlide[i].style.zIndex = "2"
+                }
+                else{
+                    containerNatureExperiencesSlide[i].style.opacity = "0%"
+                    containerNatureExperiencesSlide[i].style.zIndex = "1"
+                }
+            }
+            textContActual[0].textContent = "0" + (contadorSlide + 1)
+
+            if((contadorSlide+1) == 4){
+                textContNext[0].textContent = "01"
+            }
+            else{
+                textContNext[0].textContent = "0" + (contadorSlide + 2)
+            }
+        })
+
+        botonNatureSlideRight.addEventListener('click', function(){
+            contadorSlide += 1
+            if(contadorSlide > ((containerNatureExperiencesSlide.length) - 1)){
+                contadorSlide = 1
+            }
+            for(var i = 0; i < containerNatureExperiencesSlide.length; i++){
+                if(contadorSlide == i){
+                    containerNatureExperiencesSlide[i].style.opacity = "100%"
+                    containerNatureExperiencesSlide[i].style.zIndex = "2"
+                }
+                else{
+                    containerNatureExperiencesSlide[i].style.opacity = "0%"
+                    containerNatureExperiencesSlide[i].style.zIndex = "1"
+                }
+            }
+            textContActual[0].textContent = "0" + (contadorSlide + 1)
+
+            if((contadorSlide+1) == 4){
+                textContNext[0].textContent = "01"
+            }
+            else{
+                textContNext[0].textContent = "0" + (contadorSlide + 2)
+            }
+        })
+    });
+</script>

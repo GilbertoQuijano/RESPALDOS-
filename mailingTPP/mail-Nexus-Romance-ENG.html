@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            /*Clases*/
+
+            *{
+                font-family: 'DM Sans', sans-serif;
+                color: #4A4A4A;
+                box-sizing: border-box;
+            }
+
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .container-email{
+                width: 100%;
+            }
+
+            .body-email{
+                width: 600px;
+                margin: auto;
+                background-color: #F4F4F4;
+            }
+            @media(max-width:800px){
+                .body-email{
+                    width: 100% !important;
+                }
+            }
+
+            .margin-bottom-22{
+                margin-bottom: 22px;
+            }
+
+            .container-logo-nexus{
+                background-image: url('https://www.nexustours.com/images/upload//Email-content/Background_orange_midstay.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                border-radius: 0px 0px 30px 30px;
+            }
+            @media(max-width:800px){
+                .container-logo-nexus{
+                    border-radius: 0px 0px 20px 20px;
+                }
+            }
+
+            .logo-nexus{
+                width: fit-content; 
+                margin: auto;
+                padding: 30px 0px;
+            }
+            @media(max-width:800px){
+                .logo-nexus{
+                    width: fit-content !important; 
+                    margin: auto !important;
+                    padding: 5vw 0px !important;
+                }
+            }
+
+            .imgLogoNexus{
+                width: 270px;
+            }
+            @media(max-width:800px){
+                .imgLogoNexus{
+                    width: 47vw !important;
+                }
+            }
+
+            .container90{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .container75{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .background-redes-table{
+                background-color: #333;
+            }
+
+            .container-text{
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 2.5%;
+            }
+
+            .dominio{
+                font-size: 24px;
+                color: #FFF;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .tag-desk{
+                display: block;
+            }
+            @media(max-width:800px){
+                .tag-desk{
+                    display: none !important;
+                }
+            }
+
+            .tag-mob{
+                display: none;
+            }
+            @media(max-width:800px){
+                .tag-mob{
+                    display: block !important;
+                }
+            }
+
+            .margin-bottom-15{
+                margin-bottom: 15px;
+            }
+
+            .linkTerminos{
+                text-decoration: underline; 
+                color: white;
+                font-size: 14px;
+            }
+            @media(max-width:800px){
+                .linkTerminos{
+                    font-size: 3vw !important;
+                }
+            }
+
+            .textTerminos{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                color: white; 
+                font-size: 10.5px;
+            }
+            @media(max-width:800px){
+                .textTerminos{
+                    font-size: 2.5vw !important;
+                }
+            }
+
+            .container90{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bannerNY{
+                border-radius: 10px; 
+                overflow: hidden;
+            }
+
+            .orange-nexus{
+                color: #FF621D;
+            }
+
+            .orange-red-nexus{
+                color: #FF432E;
+            }
+
+            .blue-nexus{
+                color: #00589E;
+            }
+
+            .bold-text{
+                font-weight: 700;
+            }
+
+            .subtextNY{
+                font-size: 17px; 
+                font-weight: 500; 
+                margin-top: 0; 
+                margin-bottom: 0; 
+                color: #333; 
+                line-height: 130%; 
+                letter-spacing: -0.2px;
+            }
+
+            .width50{
+                width: 50%;
+            }
+
+            .containerWhiteContact{
+                width: 98%; 
+                background-color: white; 
+                border-radius: 35px; 
+                border: 1px solid #DEDEDE; 
+                padding: 9px 0;
+                display: block;
+            }
+
+            .containerWhiteContact100{
+                width: 100%; 
+                background-color: white; 
+                border-radius: 35px; 
+                border: 1px solid #DEDEDE; 
+                padding: 12px 0;
+            }
+
+            .tableInnerBoton{
+                margin-left: auto; 
+                margin-right: auto; 
+                width: fit-content;
+            }
+
+            .containerImagenInnerBoton{
+                width: 45px;
+            }
+
+            .imagenInnerBoton{
+                display: block; 
+                width: 31px;
+            }
+
+            .textInnerBoton{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                color:#333;
+            }
+
+            @media(max-width:800px){
+                .textInnerBoton{
+                    font-size: 4vw !important;
+                }
+            }
+
+            @media(max-width:800px){
+                .textInnerBotonCorreo{
+                    margin-top: 0 !important; 
+                    margin-bottom: 0 !important; 
+                    font-size: 3.5vw !important; 
+                    color:#333 !important;
+                }
+            }
+
+            .marginLeft{
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            .tag-desk-table{
+                display: table;
+            }
+            @media(max-width:800px){
+                .tag-desk-table{
+                    display: none !important;
+                }
+            }
+
+            .parrafoCard{
+                width: 100%; 
+                background-color: white; 
+                padding: 28px 37px;
+                border-radius: 16px;
+            }
+            @media(max-width:800px){
+                .parrafoCard{
+                    padding: 28px 8% !important;
+                }
+            }
+
+            .textParrafoCard{
+                margin-top: 0;
+                margin-bottom: 0; 
+                font-weight: 500; 
+                font-size: 15.5px;
+                text-align: justify;
+            }
+
+            .textContactUsRomance{
+                margin-top: 0;
+                margin-bottom: 0; 
+                font-weight: 500; 
+                font-size: 14px;
+                text-align: center;
+            }
+            @media(max-width:800px){
+                .textContactUsRomance{
+                    font-size: 5.5vw !important;
+                }
+            }
+
+            .supportTitle{
+                text-align: center; 
+                font-size: 16px; 
+                font-weight: 500; 
+                line-height: 143%; 
+                color: #979797; 
+                margin-bottom: 28px;
+                margin-top: 5px;
+            }
+            @media(max-width:800px){
+                .supportTitle{
+                    font-size: 4vw !important;
+                }
+            }
+
+            .titleSection{
+                font-size: 21px; 
+                line-height: 120%; 
+                text-align: center; 
+                margin-top: 0; 
+                font-weight: 700;
+            }
+            @media(max-width:800px){
+                .titleSection{
+                    font-size: 7vw !important;
+                }
+            }
+
+            .textSupport{
+                text-align: center; 
+                color: #4A4A4A; 
+                font-size: 22px; 
+                margin-top: 0; 
+                margin-bottom: 10px;
+                line-height: 104%;
+            }
+            @media(max-width:800px){
+                .textSupport{
+                    font-size: 5vw !important;
+                }
+            }
+
+            .textRightToll{
+                text-align: right; 
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                line-height: 143%;
+                padding-right: 20px;
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .textRightToll{
+                    text-align: center !important;
+                    padding-right: 0 !important;
+                    margin-bottom: 2vw !important;
+                }
+            }
+
+            .margin-bottom-10{
+                margin-bottom: 10px;
+            }
+
+            .containerGreenContactUs{
+                width: 100%; 
+                border-radius: 16px; 
+                padding: 23px 0px;
+            }
+
+            .titleContactUs{
+                font-size: 34px; 
+                text-align: center; 
+                line-height: 106%; 
+                margin-top: 0; 
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .titleContactUs{
+                    font-size: 5.5vw !important;
+                }
+            }
+
+            .containerRowContactUs{
+                width: 80%; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            
+            .botonContactUs{
+                width: 95%; 
+                border-radius: 35px; 
+                padding: 10px;  
+                background-color: white;
+            }
+
+            .iconBotonContactUs{
+                width: 30px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: 10px;
+            }
+
+            .textBotonContactUs{
+                color: #004A63; 
+                font-size: 20px; 
+                line-height: 110%; 
+                margin-top: 0; 
+                margin-bottom: 0;
+            }
+
+            .headerSupportCenter{
+                text-align: center; 
+                margin-top: 0; 
+                color: #FF621D; 
+                font-size: 18px;
+            }
+
+            .containerGrisBottom{
+                width: 100%; 
+                padding: 5px 0px 20px 0px; 
+                background-color: #F4F4F4; 
+                border-radius: 0px 0px 60px 0px;
+            }
+
+            .linkSurvey{
+                display: block; 
+            }
+
+            .buttonSurvey{
+                background-color: #FF621D; 
+                border: 1px solid #DEDEDE; 
+                border-radius: 26px; 
+                padding: 8px 0px;
+            }
+
+            .textButtonSurvey{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                text-align: center; 
+                color: white; 
+                font-size: 18px; 
+                line-height: 122%;
+            }
+
+            .countryButtonTitle{
+                text-align: left; 
+                margin-top: 0; 
+                color: #FF621D; 
+                font-size: 18px;
+                margin-bottom: 0;
+                line-height: 100%;
+            }
+            @media(max-width:800px){
+                .countryButtonTitle {
+                    font-size: 4.5vw !important;
+                }
+                .textInnerBoton {
+                    font-size: 4.1vw !important;
+                }
+            }
+
+            .textRomanceCard{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 18px; 
+                font-weight: 500; 
+                line-height: 127%;
+            }
+            @media(max-width:800px){
+                .textRomanceCard{
+                    font-size: 4.5vw !important; 
+                }
+            }
+
+            .textJoinTPPCard{
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 16px; 
+                font-weight: 500; 
+                line-height: 127%;
+            }
+            @media(max-width:800px){
+                .textJoinTPPCard{
+                    font-size: 4vw !important;
+                }
+            }
+
+            .paddingTextRomance{
+                padding-left: 15px;
+            }
+
+
+            .paddingImgTickRomance{
+                padding-top: 2px;
+            }
+
+            .titleJoinTPP{
+                font-size: 27px; 
+                text-align: center; 
+                line-height: 106%; 
+                margin-top: 0; 
+                font-weight: 500;
+            }
+            @media(max-width:800px){
+                .titleJoinTPP{
+                    font-size: 5.5vw !important;
+                }
+            }
+
+            .containerWhiteNoPadding{
+                width: 100%; 
+                background-color: white; 
+                border-radius: 15px; 
+                overflow: hidden;
+            }
+
+            .containerBBJoinTPP{
+                padding: 25px 0px 25px 19px; 
+                border-bottom: 1px solid #B2B2B2;
+            }
+            @media(max-width:800px){
+                .containerBBJoinTPP{
+                    padding: 6vw 0vw 6vw 4vw !important;
+                }
+            }
+
+            .containerTDTextJoinTPP{
+                width: 80%; 
+                padding: 0px 14px;
+            }
+            @media(max-width:800px){
+                .containerTDTextJoinTPP{
+                    padding: 0vw 4vw 0vw 1vw !important;
+                }
+            }
+
+            .containerButtonContact{
+                display: block; 
+                padding: 10px; 
+                border-radius: 50px; 
+                border: 1px solid #DEDEDE;
+            }
+
+            .marginLeft10{
+                margin-left: 10px;
+            }
+
+            .tdMail{
+                width: 51px;
+            }
+
+            .tdWA{
+                width: 62px;
+            }
+
+            .titleContactUsRight{
+                text-align: right; 
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: 27px; 
+                line-height: 130%; 
+                width: fit-content; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .titleContactUsRight{
+                    font-size: 8vw !important; 
+                    margin-left: auto !important;
+                    margin-bottom: 5vw !important;
+                }
+            }
+
+            .paddingWhiteContactUs{
+                padding: 27px 18px;
+            }
+            @media(max-width:800px){
+                .paddingWhiteContactUs{
+                    padding: 8vw 5vw !important;
+                }
+            }
+
+            .containerTextRomanceTicks{
+                width: 55%; 
+                padding: 0px 21px 0px 30px;
+            }
+
+            @media(max-width:800px){
+                .containerTextRomanceTicks{
+                    width: 80% !important; 
+                    margin: auto !important;
+                    padding: 6vw 0vw !important;
+                }
+            }
+
+            .imgRomanceTicks{
+                display: block; 
+                width: 100%; 
+                border-radius: 15px;
+            }
+
+            .tdOrangeJoinTPP{
+                width: 20%; 
+                background-color: #FF621D;
+            }
+            @media(max-width:800px){
+                .tdOrangeJoinTPP{
+                    width: 30% !important;
+                }
+            }
+
+            .tdOrangeJoinTPP.first{
+                border-radius: 15px 15px 0px 0px;
+            }
+
+            .tdOrangeJoinTPP.last{
+                border-radius: 0px 0px 15px 15px;
+            }
+
+            .imgJoinTPP1{
+                width: 60px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgJoinTPP1{
+                    width: 16vw !important;
+                }
+            }
+
+            .imgJoinTPP2{
+                width: 46px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgJoinTPP2{
+                    width: 12vw !important;
+                }
+            }
+
+            .imgJoinTPP3{
+                width: 53px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgJoinTPP3{
+                    width: 16vw !important;
+                }
+            }
+
+            .imgJoinTPP4{
+                width: 52px; 
+                padding: 20px 0px; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            @media(max-width:800px){
+                .imgJoinTPP4{
+                    width: 14vw !important;
+                    padding: 5vw 0vw !important; 
+                }
+            }
+
+            .widthTDTextContactUs{
+                width: 25%;
+            }
+
+            .widthTDTableContactUs{
+                width: 75%;
+            }
+
+            .buttonContactUsTable{
+                width: 30px; 
+                display: block; 
+                max-width: none;
+            }
+
+            .imgTick{
+                width: 5vw;
+            }
+
+            .marginBottom15Mob{
+                margin-bottom: 3vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-email">
+            <div id="email" class="body-email">
+                <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="banner-header" alt="banner-header" width="100%">
+                                <div class="container-logo-nexus">
+                                    <div class="logo-nexus">
+                                        <img class="imgLogoNexus" alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/Logo-Nexus-White.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="parrafoCard">
+                                    <p class="textParrafoCard">
+                                        <span class="bold-text">Greetings from <span class="orange-nexus">NexusTours!</span></span> It was fantastic connecting with 
+                                        you at the Romance Travel Forum. We cherish the opportunity 
+                                        to collaborate and continue crafting unforgettable romance 
+                                        travel experiences together.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <h4 class="titleContactUs margin-bottom-22">
+                                    Why choose <span class="bold-text orange-nexus">Nexustours</span> for <br>
+                                    <span class="bold-text">Romance Travel</span> and <span class="bold-text">Groups</span>?
+                                </h4>
+                                <div class="containerWhiteNoPadding tag-desk">
+                                    <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td class="containerTextRomanceTicks">
+                                                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Tailor-Made <br>
+                                                                Experiences
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Exclusive Group Offers
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Dedicated Support
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Romance Concierge
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Special Discounts
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="paddingImgTickRomance">
+                                                            <img src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                        </td>
+                                                        <td class="paddingTextRomance">
+                                                            <h4 class="textRomanceCard">
+                                                                Free Upgrades
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="width: 45%;">
+                                                <img class="imgRomanceTicks" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgRomanticMailTPP.jpg">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="containerWhiteNoPadding tag-mob">
+                                    <div class="containerTextRomanceTicks">
+                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td valign="top" class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Tailor-Made Experiences
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Exclusive Group Offers
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Dedicated Support
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Romance Concierge
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Special Discounts
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paddingImgTickRomance">
+                                                    <img class="imgTick" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgTickTPP.png">
+                                                </td>
+                                                <td class="paddingTextRomance">
+                                                    <h4 class="textRomanceCard">
+                                                        Free Upgrades
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <img class="imgRomanceTicks" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgRomanticMailTPPMob.jpg">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="container90 margin-bottom-22">
+                                    <p class="textParrafoCard">
+                                        We're excited to continue working together to create 
+                                        unforgettable experiences. If you have any questions or need 
+                                        further information, please feel free to reach out to us or just 
+                                        click <a class="orange-nexus" href="https://www.gonexusgroup.com/groups-weddings" target="_blank">HERE</a>
+                                    </p>
+                                </div>
+                                <a class="linkSurvey" href="https://gxsurvey.questionpro.com/a/TakeSurvey?tt=oVDt0bXb6sEECHrPeIW9eQ%3D%3D" target="_blank">
+                                    <div class="buttonSurvey">
+                                        <p class="textButtonSurvey">
+                                            Contact us
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="parrafoCard margin-bottom-22">
+                                    <p class="textParrafoCard">
+                                        We invite you to continue the magic by partnering with 
+                                        NexusTours. Whether we just met at the Romance Travel Forum 
+                                        or have been on this journey together, we're committed to 
+                                        delivering exceptional service and creating unforgettable 
+                                        experiences.
+                                    </p>
+                                </div>
+                                <h4 class="titleJoinTPP margin-bottom-22">
+                                    Join our <span class="bold-text orange-nexus">Travel Partner Portal</span> to access:
+                                </h4>
+                                <div class="containerWhiteNoPadding">
+                                    <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td class="tdOrangeJoinTPP first">
+                                                <img class="imgJoinTPP1" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgJoinTPP1.png">
+                                            </td>
+                                            <td class="containerTDTextJoinTPP">
+                                                <div class="containerBBJoinTPP">
+                                                    <h4 class="textJoinTPPCard tag-desk">
+                                                        Commissionable bookings for <span class="bold-text">+150k <br> Experiences</span>, Mobility services and hotels in <br> more than <span class="bold-text">150 countries</span>
+                                                    </h4>
+                                                    <h4 class="textJoinTPPCard tag-mob">
+                                                        Commissionable bookings for <span class="bold-text">+150k Experiences</span>, Mobility services and hotels in more than <span class="bold-text">150 countries</span>
+                                                    </h4>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tdOrangeJoinTPP">
+                                                <img class="imgJoinTPP2" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgJoinTPP2.png">
+                                            </td>
+                                            <td class="containerTDTextJoinTPP">
+                                                <div class="containerBBJoinTPP">
+                                                    <h4 class="textJoinTPPCard tag-desk">
+                                                        Personalized assistance from our dedicated <br>team <span class="bold-text">Agent Support Center.</span>
+                                                    </h4>
+                                                    <h4 class="textJoinTPPCard tag-mob">
+                                                        Personalized assistance from our dedicated team <span class="bold-text">Agent Support Center.</span>
+                                                    </h4>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tdOrangeJoinTPP">
+                                                <img class="imgJoinTPP3" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgJoinTPP3.png">
+                                            </td>
+                                            <td class="containerTDTextJoinTPP">
+                                                <div class="containerBBJoinTPP">
+                                                    <h4 class="textJoinTPPCard tag-desk">
+                                                        Travel agent rates and incremental <br>commission program
+                                                    </h4>
+                                                    <h4 class="textJoinTPPCard tag-mob">
+                                                        Travel agent rates and incremental commission program
+                                                    </h4>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tdOrangeJoinTPP last">
+                                                <img class="imgJoinTPP4" src="https://www.nexustours.com/images/upload//Email-content/TPP/imgJoinTPP4.png">
+                                            </td>
+                                            <td class="containerTDTextJoinTPP">
+                                                <div class="containerBBJoinTPP" style="border-bottom: none;">
+                                                    <h4 class="textJoinTPPCard tag-desk">
+                                                        Convenient wired commissions
+                                                    </h4>
+                                                    <h4 class="textJoinTPPCard tag-mob">
+                                                        Convenient wired commissions
+                                                    </h4>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <a class="linkSurvey margin-bottom-22" href="https://gxsurvey.questionpro.com/a/TakeSurvey?tt=oVDt0bXb6sEECHrPeIW9eQ%3D%3D" target="_blank">
+                                    <div class="buttonSurvey">
+                                        <p class="textButtonSurvey">
+                                            Join here
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="container90">
+                                    <p class="textParrafoCard">
+                                        Let's keep the magic alive and elevate your romance travel 
+                                        offerings with NexusTours. Our impeccable service, vast 
+                                        network, and commitment to excellence make us the perfect 
+                                        DMC to fulfill your clients' romantic dreams.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <div class="tag-desk">
+                                    <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td class="widthTDTextContactUs">
+                                                <h4 class="titleContactUsRight">
+                                                    <span class="bold-text orange-nexus">Contact</span><br>
+                                                    us:
+                                                </h4>
+                                            </td>
+                                            <td class="widthTDTableContactUs">
+                                                <div class="containerWhiteNoPadding paddingWhiteContactUs">
+                                                    <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                            <td style="width: 50%;">
+                                                                <div class="margin-bottom-15">
+                                                                    <p class="textContactUsRomance">
+                                                                        <span class="bold-text"><span class="orange-nexus">Joaquin</span> Alvarado <br>BDM Global Sales Retail</span>
+                                                                    </p>
+                                                                </div>
+                                                                <table style="table-layout: fixed; width: fit-content; margin-left: auto; margin-right: auto;" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td class="tdMail">
+                                                                            <a class="containerButtonContact" href="mailto:joalvarado@nexustours.com" target="_blank">
+                                                                                <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td class="tdWA">
+                                                                            <a class="containerButtonContact marginLeft10" href="tel:+529981688466" target="_blank">
+                                                                                <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 50%;">
+                                                                <div class="margin-bottom-15">
+                                                                    <p class="textContactUsRomance">
+                                                                        <span class="bold-text"><span class="orange-nexus">Diego</span> Higareda <br>BDM Global Sales Retail</span>
+                                                                    </p>
+                                                                </div>
+                                                                <table style="table-layout: fixed; width: fit-content; margin-left: auto; margin-right: auto;" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td class="tdMail">
+                                                                            <a class="containerButtonContact" href="mailto:dihigareda@nexustours.com" target="_blank">
+                                                                                <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td class="tdWA">
+                                                                            <a class="containerButtonContact marginLeft10" href="tel:+529981266059" target="_blank">
+                                                                                <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="tag-mob">
+                                    <h4 class="titleContactUsRight">
+                                        <span class="bold-text orange-nexus">Contact</span> us:
+                                    </h4>
+                                    <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td class="widthTDTableContactUs">
+                                                <div class="containerWhiteNoPadding paddingWhiteContactUs tag-mob">
+                                                    <div class="marginBottom15Mob">
+                                                        <p class="textContactUsRomance">
+                                                            <span class="bold-text"><span class="orange-nexus">Joaquin</span> Alvarado <br>BDM Global Sales Retail</span>
+                                                        </p>
+                                                    </div>
+                                                    <table class="marginBottom15Mob" style="table-layout: fixed; width: fit-content; margin-left: auto; margin-right: auto;" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="tdMail">
+                                                                <a class="containerButtonContact" href="mailto:joalvarado@nexustours.com" target="_blank">
+                                                                    <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                                </a>
+                                                            </td>
+                                                            <td class="tdWA">
+                                                                <a class="containerButtonContact marginLeft10" href="tel:+529981688466" target="_blank">
+                                                                    <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="marginBottom15Mob">
+                                                        <p class="textContactUsRomance">
+                                                            <span class="bold-text"><span class="orange-nexus">Diego</span> Higareda <br>BDM Global Sales Retail</span>
+                                                        </p>
+                                                    </div>
+                                                    <table style="table-layout: fixed; width: fit-content; margin-left: auto; margin-right: auto;" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="tdMail">
+                                                                <a class="containerButtonContact" href="mailto:dihigareda@nexustours.com" target="_blank">
+                                                                    <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                                </a>
+                                                            </td>
+                                                            <td class="tdWA">
+                                                                <a class="containerButtonContact marginLeft10" href="tel:+529981266059" target="_blank">
+                                                                    <img class="buttonContactUsTable" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container90">
+                                <h4 class="headerSupportCenter margin-bottom-15">
+                                    Agent Support Center
+                                </h4>
+                                <a class="containerWhiteContact100 margin-bottom-15" style="display: block;" href="https://wa.me/529981831689?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                    <div>
+                                        <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="containerImagenInnerBoton">
+                                                    <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="textInnerBoton">
+                                                        +52 998 183 1689
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                                <table class="margin-bottom-15 tag-desk-table" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td class="width50">
+                                            <a href="tel:+529982516562" class="containerWhiteContact" target="_blank">
+                                                <div>
+                                                    <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="containerImagenInnerBoton">
+                                                                <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="countryButtonTitle">
+                                                                    Mexico
+                                                                </h4>
+                                                                <h4 class="textInnerBoton">
+                                                                    +52 998 251 6562
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="width50">
+                                            <a href="tel:+18882031279" class="containerWhiteContact" target="_blank">
+                                                <div>
+                                                    <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="containerImagenInnerBoton">
+                                                                <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="countryButtonTitle">
+                                                                    USA & Canada
+                                                                </h4>
+                                                                <h4 class="textInnerBoton">
+                                                                    +1 888 203 12 79
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <a href="mailto:agentsupport@nexustours.com" class="containerWhiteContact100 tag-desk" target="_blank">
+                                    <div>
+                                        <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="containerImagenInnerBoton">
+                                                    <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="textInnerBoton">
+                                                        agentsupport@nexustours.com
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                                <a href="tel:+529982516562" class="containerWhiteContact100 tag-mob margin-bottom-15" target="_blank">
+                                    <div>
+                                        <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="containerImagenInnerBoton">
+                                                    <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="textInnerBoton">
+                                                        <span class="orange-nexus bold-text">Mexico</span> +52 998 251 6562
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                                <a href="tel:+18882031279" class="containerWhiteContact100 tag-mob margin-bottom-15" target="_blank">
+                                    <div>
+                                        <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="containerImagenInnerBoton">
+                                                    <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/toll-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="textInnerBoton">
+                                                        <span class="orange-nexus bold-text">USA & Canada</span> +1 888 203 12 79
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                                <a href="mailto:agentsupport@nexustours.com" class="containerWhiteContact100 tag-mob margin-bottom-15" target="_blank">
+                                    <div>
+                                        <table class="tableInnerBoton" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="containerImagenInnerBoton">
+                                                    <img class="imagenInnerBoton" src="https://www.nexustours.com/images/upload//Email-content/correoEmailOrange.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="textInnerBotonCorreo">
+                                                        agentsupport@nexustours.com
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div class="container-text">
+                                <a href="https://tpp.nexustours.com/" target="_blank">
+                                    <h3 class="dominio">
+                                        tpp.nexustours.com
+                                    </h3>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

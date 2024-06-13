@@ -1,0 +1,3230 @@
+<!-- Descuentos cambiados FR -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    
+    *{
+        transition: all ease .5s;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus{
+        text-decoration: none;
+    }
+
+    h1{
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    
+    h2, h3, h4, p{
+        margin: 0;
+    }
+
+    .imagen-header{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media (max-width:1200px){
+        .imagen-header{
+            height: 250px;
+        }
+    }
+
+    @media (max-width:992px){
+        .imagen-header{
+            height: 113vw;
+        }
+    }
+
+    .white-text{
+        color: white;
+    }
+
+    .gradient-color-nexus{
+        background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
+    }
+
+
+    .text-h1-style{
+        font-size: 58px;
+        font-weight: 900;
+        letter-spacing: -1.45px;
+        text-shadow: rgba(0, 0, 0, 0.23) 2px 5px;
+    }
+    @media (max-width:992px){
+        .text-h1-style{
+            font-size: 7vw;
+            letter-spacing: -.2vw;
+        }
+    }
+
+    .margin-bottom-46{
+        margin-bottom: 46px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-46{
+            margin-bottom: 6vw;
+        }
+    }
+
+    .style-titles{
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 0px;
+    }
+    @media (max-width:992px){
+        .style-titles{
+            margin-bottom: 2vw;
+        }
+    }
+
+    .title{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: center;
+    }
+    @media (max-width:992px){
+        .title{
+            font-size: 7vw;
+            line-height: 121%;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .subtitle{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    @media (max-width:992px){
+        .subtitle{
+            font-size: 5vw;
+            font-weight: 700;
+            line-height: 121%;
+            text-align: center;
+        }
+    }
+
+    .margin-bottom-24{
+        margin-bottom: 24px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-24{
+            margin-bottom: 5vw;
+        }
+    }
+
+    .line-divider-1{
+        width: 232px;
+        height: 3px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width:992px){
+        .line-divider-1{
+            width: 232px;
+            height: 3px;
+        }
+    }
+
+    .container-text-80{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width:992px){
+        .container-text-80{
+            width: 90%;
+            text-align: justify;
+        }
+    }
+
+    .gray-text{
+        color: #707070;
+    }
+
+    .text-parrafo{
+        font-size: 16px;
+        line-height: 150%;
+    }
+    @media (max-width:992px){
+        .text-parrafo{
+            font-size: 4vw;
+        }
+    }
+
+    .card-slider-tour{
+        height: auto;
+        width: 345px;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: white;
+        border: 1px solid #EDEEEF;
+        text-decoration: none;
+    }
+    .card-slider-tour:hover,
+    .card-slider-tour:visited{
+        text-decoration: none;
+        
+    }
+    @media (max-width:1200px){
+        .card-slider-tour{
+            width: 285px;
+        }
+    }
+    @media (max-width:992px){
+        .card-slider-tour{
+            width: 80vw;
+        }
+    }
+
+    .card-slider-tour:hover{
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, .2);
+    }
+
+    .container-img-card{
+        width: 100%;
+        height: 240px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+    @media (max-width:992px){
+        .container-img-card{
+            height: 52vw;
+        }
+    }
+
+    .etiqueta-card{
+        position: absolute;
+        padding: 7px 16px 7px 15px;
+        bottom: 0;
+        left: auto;
+        right: 10%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    @media (max-width:992px){
+        .etiqueta-card{
+            padding: 7px 16px 7px 15px;
+            gap: 6px;
+        }
+    }
+
+    .icon-maps{
+        width: 12px;
+        height: 16px;
+    }
+
+    .text-gradient{
+        font-size: 12px;
+        font-weight: 900;
+        color:rgba(255, 98, 29, 1);
+    }
+    @media (max-width:992px){
+        .text-gradient{
+            font-size: 3vw;
+            margin-bottom: 1vw;
+        }
+    }
+
+    .text-gradient-2{
+        font-size: 12px;
+        font-weight: 900;
+        color:rgba(255, 98, 29, 1);
+    }
+    @media (max-width:992px){
+        .text-gradient-2{
+            font-size: 3vw;
+        }
+    }
+
+    .container-text-card-upper{
+        padding: 17px 32px 0px 29px;
+        height: 180px;
+    }
+
+    @media(max-width:1200px){
+        .container-text-card-upper{
+            height: 180px;
+        }
+    }
+    @media (max-width:992px){
+        .container-text-card-upper{
+            padding: 4vw 5vw 0vw 5vw;
+            height: 40vw;
+        }
+    }
+
+    .container-text-card-bottom{
+        height: 74px;
+        border-top: 1px solid #DDE1E8;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 29px;
+        box-sizing: border-box;
+    }
+    @media (max-width:1200px){
+        .container-text-card-bottom{
+            padding: 0px 0px 0px 26px;
+        }
+    }
+    @media (max-width:992px){
+        .container-text-card-bottom{
+            height: 18vw;
+        }
+    }
+
+    .title-tour{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        line-height: 120%;
+        color: rgba(51, 51, 51, 1);
+    }
+    @media (max-width:1200px){
+        .title-tour{
+            font-size: 21px;
+            margin-bottom: 10px;
+            letter-spacing: -.8px;
+        }
+    }
+    @media (max-width:992px){
+        .title-tour{
+            font-size: 4.5vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .text-parrafo-card{
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    @media (max-width:992px){
+        .text-parrafo-card{
+            font-size: 3.8vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .gray-text-card{
+        color: #A1A1A1;
+    }
+
+    .container-text-card{
+        height: Auto;
+        width: 100%;
+    }
+
+    .icon-cards{
+        height: 20px;
+        width: 20px;
+    }
+    .container-icon-text-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-cards-icon{
+        color: #8F8F8F;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    @media (max-width:992px){
+        .text-cards-icon{
+            font-size: 2.8vw;
+        }
+    }
+
+    .container-all-icon-text-card{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content-bottom-price{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: fit-content;
+        margin: auto 7% auto auto;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    @media (max-width:992px){
+        .content-bottom-price{
+            gap: 5px;
+        }
+    }
+
+    .cross-text{
+        text-decoration: line-through;
+    }
+
+    .precio{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 100%;
+        color: rgba(51, 51, 51, 1);
+    }
+    @media (max-width:992px){
+        .precio{
+            font-size: 7vw;
+        }
+    }
+
+    .container-precio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper-product {
+        width: 95%;
+        height: 555px;
+    }
+
+    @media (max-width:1200px){
+        .swiper-product {
+            width: 95%;
+            height: 545px;
+        }
+    }
+
+    @media (max-width:992px){
+        .swiper-product {
+            width: 97.5vw;
+            height: 122vw;
+        }
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: rgba(243, 111, 33, 1);
+        width: 20px;
+        height: 6px;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: rgba(204, 204, 204, 1);
+        width: 10px;
+        height: 6px;
+        opacity: 1;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 577px;
+        margin: 0;
+    }
+    
+
+    .container-slider-botones{
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .container-slider-botones-2{
+        position: relative;
+        overflow-x: hidden;
+        width: fit-content;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .button-swiper{
+        width: 40px; 
+        height: 40px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden; 
+        border-radius: 50px;
+    }
+
+    .imagen-button-swiper{
+        width: 40px; 
+        height: 40px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #FFFFFF !important;
+        padding-top: 22px !important;
+        width: 40px !important;
+        height: 20px !important;
+    }
+
+    .boton-ver-mas{
+        text-decoration: none;
+        border: 2px solid #F37021;
+        padding: 8px 25px;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 100px;
+    }
+    @media (max-width:992px){
+        .boton-ver-mas{
+            padding: 2vw 7vw;
+            font-size: 4.5vw;
+        }
+    }
+    .boton-ver-mas:hover{
+        background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+        color: white;
+        border: 0.949px solid transparent;
+        text-decoration: none;
+    }
+    
+
+    .container-ver-mas{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .orange-nexus{
+        color: #FF621D;
+    }
+
+    @media (max-width:992px){
+        .swiper-wrap-auto{
+            height: auto;
+        }
+    }
+
+    .swiper-card{
+        margin: auto;
+    }
+    @media (max-width:992px){
+        .swiper-card{
+            margin-top: 0vw;
+            height: auto;
+        }
+    }
+
+    .container-imagen-slider{
+        border-radius: 10px; 
+        overflow: hidden; 
+        width: 273px; 
+        height: 380px; 
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    @media (max-width: 1200px){
+        .container-imagen-slider{
+            overflow: hidden; 
+            width: 207px; 
+        }
+    }
+    @media (max-width: 992px){
+        .container-imagen-slider{
+            overflow: hidden; 
+            width: 60vw; 
+            height: 95vw;
+        }
+    }
+
+    .imagen-slider{
+        width: 205px; 
+        min-width: 205px;
+        height: 294px; 
+        position: relative; z-index: 1;
+    }
+
+    .gradient-imagen{
+        width: 100%; 
+        height: 100%; 
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%); 
+        z-index: 2; 
+        top: 0; 
+        left: 0; 
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .span-destination{
+        margin: auto; 
+        font-size: 26px; 
+        line-height: 120%; 
+        color: #FFFFFF; 
+        font-weight: 700;
+    }
+    @media (max-width:992px){
+        .span-destination{
+            font-size: 7vw; 
+            line-height: 150%; 
+        }
+    }
+
+    .activador{
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: 3;
+    }
+
+    .title-gradient{
+        color:rgba(255, 98, 29, 1);
+    }
+
+    .margin-bottom-13{
+        margin-bottom: 13px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-13{
+            margin-bottom: 2vw;
+        }
+    }
+
+    .imagen-pollo{
+        height: 100%;
+    }
+
+    .margin-bottom-68{
+        margin-bottom: 68px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-68{
+            margin-bottom: 10vw;
+        }
+    }
+
+    .card-transfer{
+        width: 367px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+        padding: 23px 18px 0px 18px;
+        border: 1px solid #EDEEEF;
+        background-color: white;
+    }
+    @media (max-width: 1200px){
+        .card-transfer{
+            width: 312px;
+            height: 305px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            padding: 23px 18px 0px 18px;
+        }
+    }
+    @media (max-width:992px){
+        .card-transfer{
+            width: 100%;
+            height: 85vw;
+            padding: 5vw 5vw 0vw 5vw;
+        }
+    }
+    
+    .card-transfer:hover{
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .border-color-gradient{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 13px;
+        background: linear-gradient(260deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+    }
+
+    .img-cars{
+        width: 100%;
+        height: 205px;
+    }
+    @media (max-width:1200px){
+        .img-cars{
+            width: 100%;
+            height: 160px;
+        }
+    }
+    @media (max-width:992px){
+        .img-cars{
+            height: 48vw;
+        }
+    }
+
+    .container-card-trans{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title-trans{
+        font-size: 27px;
+        font-weight: 700;
+        color: #333;
+        line-height: 100%;
+        margin-bottom: 13px;
+    }
+    @media (max-width:992px){
+        .title-trans{
+            font-size: 6vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .from-style{
+        color: #535353;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    @media (max-width:992px){
+        .from-style{
+            font-size: 3.1vw;
+        }
+    }
+
+    .container-maps-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+    @media (max-width:992px){
+        .container-maps-texto{
+            gap: 1.5vw;
+        }
+    }
+
+    .destination-trans{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -.5px;
+        line-height: 138.5%;
+    }
+    @media (max-width:1200px){
+        .destination-trans{
+            letter-spacing: -.8px;
+        }
+    }
+    @media (max-width:992px){
+        .destination-trans{
+            font-size: 3.4vw;
+            letter-spacing: -.1vw;
+        }
+    }
+
+    .icon-maps-trans{
+        height: 16px;
+    }
+    @media (max-width:992px){
+        .icon-maps-trans{
+            height: 3vw;
+        }
+    }
+
+    .container-left-card-trans{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-right-card-trans{
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        height: 93px;
+    }
+    @media (max-width:992px){
+        .container-right-card-trans{
+            height: 22vw;
+        }
+    }
+
+    .boton-transfer{
+        text-decoration: none;
+        color: #FF621D;
+        border: 0.949px solid #FF621D;
+        border-radius: 29.412px;
+        padding: 8px 25px;
+        font-size: 16px;
+        font-weight: 900;
+        width: 132px;
+        text-align: center;
+    }
+    @media (max-width: 1200px){
+        .boton-transfer{
+            padding: 8px 20px;
+            font-size: 13px;
+            font-weight: 900;
+            width: 107px;
+        }
+    }
+    @media (max-width:992px){
+        .boton-transfer{
+            padding: 2vw 3vw;
+            font-size: 3.5vw;
+            width: 28vw;
+        }
+    }
+
+    .boton-transfer:hover{
+        background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+        color: white;
+        border: 0.949px solid transparent;
+        text-decoration: none;
+    }
+
+    .container-row-transfer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (max-width:992px){
+        .container-row-transfer{
+            gap: 7vw;
+            flex-direction: column;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .swiper-destinations-style{
+        height: fit-content;
+        width: 915px;
+        margin-right: 0;
+    }
+    @media (max-width: 1200px){
+        .swiper-destinations-style{
+            height: fit-content;
+            width: 717px;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 992px){
+        .swiper-destinations-style{
+            height: fit-content;
+            width: 97.7vw;
+            margin-right: 0;
+            height: 108vw;
+        }
+    }
+
+    .swiper-slider-destinations{
+        height: fit-content;
+    }
+
+    .swiper-button-block{
+        position: static;
+    }
+
+    .container-botones-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 18px;
+        margin-right: 11px;
+    }
+    .container-bottom-slider-destination{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .line-divider-3{
+        min-width: 154px;
+        height: 2px;
+        border-radius: 10px;
+        margin-right: auto;
+        background-color: rgba(51, 51, 51, 0.14);
+        margin-left: 22px;
+    }
+
+    .text-card-swiper-destinations{
+        width: 230px;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 29px;
+        background-position: center;
+        overflow: hidden;
+        background-size: cover;
+        background-image: url("https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/background-gradient-destinations.png");
+        height: 380px;
+    }
+    @media (max-width:1200px){
+        .text-card-swiper-destinations{
+            width: 226px;
+        }
+    }
+    @media (max-width:992px){
+        .text-card-swiper-destinations{
+            width: 95%;
+            margin: auto;
+            padding: 5vw 7vw;
+            text-align: center;
+            height: auto;
+        }
+    }
+
+    .container-swiper-destinations{
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width:992px){
+        .container-swiper-destinations{
+            flex-direction: column;
+            gap:6vw;
+        }
+    }
+
+    .imagen-gradient-texto{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .text-gradient-destinations{
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 117.2%;
+        letter-spacing: -.5px;
+    }
+    @media (max-width:992px){
+        .text-gradient-destinations{
+            font-size: 6vw;
+            letter-spacing: -.15vw;
+        }
+    }
+
+    .margin-bottom-100{
+        margin-bottom: 100px;
+    }
+    @media (max-width:992px){
+        .margin-bottom-100{
+            margin-bottom: 15vw;
+        }
+    }
+
+    .body-media{
+        width: 1160px;
+        margin: auto;
+        background-color: #F8F9FA;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 1200px){
+        .body-media{
+            width: 960px;
+        }
+    }
+    @media (max-width: 992px){
+        .body-media{
+            width: 100%;
+        }
+    }
+
+    .video{
+        align-items:center; 
+        margin-bottom: 30px; 
+        border-radius: 10px; 
+        overflow: hidden;
+        height: 100%;
+    }
+    @media (max-width: 992px){
+        .video{
+            align-items:center; 
+            border-radius: 10px; 
+            overflow: hidden;
+            height: 100%;
+        }
+    }
+
+    .text-etiqueta-imagen{
+        font-size: 12px;
+    }
+    @media (max-width: 992px){
+        .text-etiqueta-imagen{
+            font-size: 3.5vw;
+        }
+    }
+
+    .tag-desk{
+        display: block;
+    }
+    @media (max-width: 992px){
+        .tag-desk{
+            display: none;
+        }
+    }
+    .tag-mob{
+        display: none;
+    }
+    @media (max-width: 992px){
+        .tag-mob{
+            display: block;
+        }
+    }
+
+    .imagen-header-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-rental-row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (max-width: 992px){
+        .container-rental-row{
+            flex-direction: column;
+            gap: 10vw;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    .rental-gradient{
+        width: 32%;
+        height: 352px;
+        position: relative;
+    }
+    @media (max-width: 1200px){
+        .rental-gradient{
+            height: 340px;
+        }
+    }
+    @media (max-width: 992px){
+        .rental-gradient{
+            width: 100%;
+            height: 80vw;
+        }
+    }
+
+    .bg-gradient-rental{
+        background-image: linear-gradient(259deg, #E73A4E 0%, #FF621D 48.44%, #FD921E 97.92%);
+        width: 100%;
+        height: 267px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 992px){
+        .bg-gradient-rental{
+            height: 60vw;
+        }
+    }
+
+    .bg-gradient-rental-3{
+        background-image: linear-gradient(259deg, #E73A4E 0%, #FC3AC1 70%, #FD921E 99.92%);
+        width: 100%;
+        height: 267px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 992px){
+        .bg-gradient-rental-3{
+            height: 60vw;
+        }
+    }
+
+    .bg-gradient-rental-4{
+        background-image: linear-gradient(259deg, #F7CD1C 0%, #FF921E 48.44%, #Ff621D 97.92%);
+        width: 100%;
+        height: 267px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 992px){
+        .bg-gradient-rental-4{
+            height: 60vw;
+        }
+    }
+
+    .bg-gradient-rental-2{
+        background-image: linear-gradient(330deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .container-text-rental{
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 18px;
+        gap: 15px;
+    }
+    @media (max-width: 992px){
+        .container-text-rental{
+            padding-top: 3vw;
+            gap: 3vw;
+        }
+    }
+
+    .title-rental{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 117.2%;
+        letter-spacing: -0.8px;
+    }
+    @media (max-width: 992px){
+        .title-rental{
+            font-size: 10vw;
+            letter-spacing: -0.1vw;
+        }
+    }
+
+    .boton-rental{
+        background-color: transparent;
+        padding: 8px 25px;
+        border-radius: 50px;
+        font-size: 15.18px;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        border: 1px solid white;
+    }
+    @media (max-width: 992px){
+        .boton-rental{
+            padding: 2vw 6vw;
+            font-size: 3.8vw;
+        }
+    }
+
+    .boton-rental:hover{
+        background-color: white;
+        color: #FF621D;
+        text-decoration: none;
+    }
+
+    .container-img-rental{
+        position: absolute;
+        bottom: 0;
+        z-index: 4;
+    }
+
+    .img-rental{
+        width: 354px;
+        height: 236px;
+    }
+    @media (max-width: 1200px){
+        .img-rental{
+            width: 324px;
+            height: 216px;
+        }
+    }
+    @media (max-width: 992px){
+        .img-rental{
+            width: 96vw;
+            height: 53vw;
+        }
+    }
+
+    .text-left{
+        text-align: left;
+    }
+    @media (max-width: 992px){
+        .text-left{
+            text-align: center;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .container-row-block-destinations{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .text-parrafo-destinations{
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -.4px;
+        text-align: justify;
+    }
+    @media (max-width:1200px){
+        .text-parrafo-destinations{
+            font-size: 13.5px;
+            letter-spacing: -.4px;
+        }
+    }
+    @media (max-width:992px){
+        .text-parrafo-destinations{
+            font-size: 4vw;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
+    }
+
+    .container-text-100{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width:992px){
+        .container-text-100{
+            width: 90%;
+            text-align: justify;
+        }
+    }
+    .container-ofertas-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .oferta{
+        height: 336px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    @media (max-width: 1200px){
+        .oferta{
+            height: 285px;
+        }
+    }
+    @media (max-width: 992px){
+        .oferta{
+            height: 65vw;
+            width: 65vw;
+            display: block;
+        }
+    }
+
+    .oferta-1{
+        width: 49%;
+    }
+
+    .oferta-2{
+        width: 32%;
+    }
+    
+    .imagen-oferta{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiperOfertas-width{
+        width: 97.5vw;
+        height: 67vw;
+    }
+    
+    .container-text-footer{
+        width: 100%; 
+        margin: auto;
+        margin-bottom: 42px;
+    }
+    
+    .text-footer{
+        font-size: 16px; 
+        line-height: 24px; 
+        font-weight: 400; 
+        color: #9F9F9F;
+        padding: 0 20px;
+    }
+
+    .boton-tarifas{
+        width: fit-content;
+        border-radius: 100px;
+        padding: 10px 18px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    @media (max-width:1200px){
+        .boton-tarifas{
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width:992px){
+        .boton-tarifas{
+            padding: 2vw 4vw;
+            font-size: 3vw;
+        }
+    }
+
+    .terminoscondiciones {
+            align-items: center;
+            margin-top: -25px;
+            align-content: center;
+        }
+        .bannerlogin {
+            width: 100%;
+            height: 104px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+        .bannerlogin2 {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+</style>
+<body style="background-color: #F8F9FA;">
+    <div class="body-media">
+        <div class="tag-desk">
+            <div class="container-ofertas-row margin-bottom-46">
+                <a href="#banner-traslados" class="oferta oferta-2">
+                    <img name="imgOferta1" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
+                </a>
+                <div class="oferta oferta-2">
+                    <img name="imgOferta2" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
+                </div>
+                <a href="#banner-top-destinations" class="oferta oferta-2">
+                    <img name="imgOferta3" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="swiper swiperOfertas swiperOfertas-width tag-mob margin-bottom-46">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-card">
+                    <div class="oferta">
+                        <img name="imgOferta2" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a href="#banner-traslados" class="oferta">
+                        <img name="imgOferta1" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif"  alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a href="#banner-top-destinations-mob" class="oferta">
+                        <img name="imgOferta3" class="imagen-oferta" src="https://www.nexustours.com/images/upload//Landing%20Pages/Home/loadingFacade.gif" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-ver-mas margin-bottom-36">
+            <p class="politics2 tag-mob">
+            <strong>Connectez-vous pour accéder aux remises</strong><br>
+            <a style="color:#9F9F9F;" href="#terminos">Consultez les termes et conditions en cliquant<strong> ici</strong></a> </p>
+            <p class="politics tag-desk">
+            <strong>Connectez-vous pour accéder aux remises</strong><br>
+            <a style="color:#9F9F9F;" href="#terminos">Consultez les termes et conditions en cliquant<strong> ici</strong></a> </p>
+        </div>
+        <br><br>
+        <div class="bannerlogin2 margin-bottom-46 js-login-box-modal">
+            <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/BH3.jpg" loading="lazy">
+            <img class="img-banner-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/grismobfra.jpg">
+        </div>
+        <h2 class="style-titles title margin-bottom-13 tag-desk">
+            Explorez la magie des Caraïbes lors de vos <br>
+            prochaines vacances <span class="orange-nexus">au Meilleur Prix.</span>
+        </h2>
+        <h2 class="style-titles title margin-bottom-13 tag-mob">
+            Explorez la magie des Caraïbes lors de vos
+            prochaines vacances <span class="orange-nexus">au Meilleur Prix.</span>
+        </h2>
+        <div class="container-text-80 margin-bottom-24">
+            <p class="gray-text text-parrafo">
+                Profitez de vos vacances dans les destinations les plus étonnantes des Caraïbes et trouvez les meilleures options avec des réductions imbattables sur les circuits, les transferts et les locations de voitures chez nexustours. Si vous êtes à la recherche d'activités et de plans pour vos prochaines vacances, nexustours a ce qu'il vous faut.
+            </p>
+        </div>
+        <div class="container-slider-botones margin-bottom-46 tag-desk">
+            <div class="swiper-button-next swiper1-button-next">
+                <div class="button-swiper">
+                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper1-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                </div>
+            </div>
+            <div class="swiper mySwiper swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1275&paxs=10&productType=TKT&destinationID=110898&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/junio2023/Chichen_Itza_Tour_1_11.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Isla Mujeres Plus
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Faites une croisière en catamaran jusqu’à Isla Mujeres pour explorer cette magnifique île. Sirotez votre boisson préférée au bar ouvert à bord et admirez la superbe côte alors que vous naviguez de Cancún à Isla Mujeres.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1542&paxs=10&productType=TKT&destinationID=109303&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Tulum_Express_3.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancún
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSION
+                                    </p>
+                                    <p class="title-tour">
+                                        Tulum Express
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Découvrez des structures anciennes fascinantes. Tulum était l'une des principales cités mayas des 13e et 14e siècles, et c'est l'une des rares qui était encore peuplée à l'arrivée des explorateurs espagnols.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=5042&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Monkeyland_1.jpg');">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSION
+                                    </p>
+                                    <p class="title-tour">
+                                        Monkeyland
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Interagissez avec l’une des plus sympathiques espèces sur cette île caribéenne : les adorables singes-écureuils de Monkeyland! Apprenez à connaître ces créatures espiègles au cœur des spectaculaires paysages montagneux où ils vivent.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Saona-By-Catamaran.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Saona en Catamaran
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Avec l'excursion en catamaran Saona, vous vous évaderez dans un monde de détente, d'amusement et de paradis tropical. Découvrez la culture dominicaine en prenant des leçons de merengue, en jouant au volley-ball sur la plage et bien plus encore.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7301&paxs=10&productType=TKT&destinationID=108913&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Falmouth_Mystic_Lagoon_2.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AVENTURE AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Lagon bioluminescent
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Naviguez sur les eaux brillantes du Luminous Lagoon, le plus grand des 4 lagons bioluminescents au monde, lors de cette excursion unique en soirée. Au cœur des mangroves, ce site inhabituel abrite des millions d’organismes microscopiques qui émettent de la lumière quand l’eau est agitée, créant un effet magique. 
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7378&paxs=10&productType=TKT&destinationID=108913&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Crucero_Atardecer.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaïque
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ACTIVITÉ AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Croisière en catamaran au coucher du soleil
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Les paroles « Don’t worry about a thing ’cause every little thing, gonna be all right! » ne pourraient pas mieux refléter cette croisière! Mettez les voiles à bord d’un magnifique catamaran, sirotez votre boisson favorite du bar ouvert à bord, écoutez de la musique reggae et sentez la douce brise caribéenne pendant que l’équipage dynamique vous mettra dans l’ambiance.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=5572&paxs=10&productType=TKT&destinationID=108876&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Cena_Vino.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ACTIVITÉ AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Croisière avec du Vin et un Souper
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Profitez de la meilleure expérience de repas à Aruba! Débutez la soirée du bon pied en montant à bord d’un luxueux catamaran afin d’admirer le coucher de soleil alors que vous voyez le soleil qui se couche et la lune qui se lève.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1153&paxs=10&productType=TKT&destinationID=109101&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Eco_Tour_Antigua_1.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Antigua
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        ACTIVITÉ AQUATIQUE
+                                    </p>
+                                    <p class="title-tour">
+                                        Visite écologique à Antigua
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Vous voulez échapper à la réalité ? Explorez les trois îles désertes de North Sound Antigua lors d'une excursion en catamaran à couper le souffle. Admirez les paysages à couper le souffle tandis que vous naviguez sur la mer des Caraïbes.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=8208&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Sensoria_Land_Of_Senses_1.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        EXCURSIONS ÉCOLOGIQUES
+                                    </p>
+                                    <p class="title-tour">
+                                        Sensoria: terre des sens
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Éveillez vos sens en vous plongeant au cœur d’une magnifique et riche forêt tropicale du Costa Rica dans l’excursion Sensoria Land of Senses, une expérience unique! Explorez les paysages remplis de faune, de flore et de merveilles naturelles qui semblent sortis d’un autre monde au parc national du volcan Rincón de la Vieja. 
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7849&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Mega_Combo_Buena_Vista_2.jpg);">
+                                <div class="etiqueta-card gradient-color-nexus">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AVENTURA
+                                    </p>
+                                    <p class="title-tour">
+                                        Mega Combo Buena Vista
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Tour idéal pour les voyageurs actifs et en quête d’aventure. Une aventure passionnante dans les profondeurs de la forêt tropicale du Costa Rica ! Admirez les superbes vues aériennes de la jungle sur un circuit de tyrolienne jusqu’à 100 mètres (328 pieds) dans les airs.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Annulation <br>
+                                                souple
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas gradient-color-nexus white-text">
+                                            Voir Les Tarifs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1275&paxs=10&productType=TKT&destinationID=110898&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/junio2023/Chichen_Itza_Tour_1_11.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AVENTURE AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Isla Mujeres Plus
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Faites une croisière en catamaran jusqu’à Isla Mujeres pour explorer cette magnifique île. Sirotez votre boisson préférée au bar ouvert à bord et admirez la superbe côte alors que vous naviguez de Cancún à Isla Mujeres.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1542&paxs=10&productType=TKT&destinationID=109303&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Imagenes-Landing-Cancun/Tulum_Express_3.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancún
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    EXCURSION
+                                </p>
+                                <p class="title-tour">
+                                    Tulum Express
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Découvrez des structures anciennes fascinantes. Tulum était l'une des principales cités mayas des 13e et 14e siècles, et c'est l'une des rares qui était encore peuplée à l'arrivée des explorateurs espagnols.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=5042&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url('https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Monkeyland_1.jpg');">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    EXCURSION
+                                </p>
+                                <p class="title-tour">
+                                    Monkeyland
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Interagissez avec l’une des plus sympathiques espèces sur cette île caribéenne : les adorables singes-écureuils de Monkeyland! Apprenez à connaître ces créatures espiègles au cœur des spectaculaires paysages montagneux où ils vivent.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=9669&paxs=10&productType=TKT&destinationID=110282&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Saona-By-Catamaran.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AVENTURE AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Saona en Catamaran
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Avec l'excursion en catamaran Saona, vous vous évaderez dans un monde de détente, d'amusement et de paradis tropical. Découvrez la culture dominicaine en prenant des leçons de merengue, en jouant au volley-ball sur la plage et bien plus encore.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7301&paxs=10&productType=TKT&destinationID=108913&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Falmouth_Mystic_Lagoon_2.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaïque
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AVENTURE AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Lagon bioluminescent
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Naviguez sur les eaux brillantes du Luminous Lagoon, le plus grand des 4 lagons bioluminescents au monde, lors de cette excursion unique en soirée. Au cœur des mangroves, ce site inhabituel abrite des millions d’organismes microscopiques qui émettent de la lumière quand l’eau est agitée, créant un effet magique. 
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7378&paxs=10&productType=TKT&destinationID=108913&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Crucero_Atardecer.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaïque
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ACTIVITÉ AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Croisière en catamaran au coucher du soleil
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Les paroles « Don’t worry about a thing ’cause every little thing, gonna be all right! » ne pourraient pas mieux refléter cette croisière! Mettez les voiles à bord d’un magnifique catamaran, sirotez votre boisson favorite du bar ouvert à bord, écoutez de la musique reggae et sentez la douce brise caribéenne pendant que l’équipage dynamique vous mettra dans l’ambiance.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=5572&paxs=10&productType=TKT&destinationID=108876&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/Cena_Vino.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ACTIVITÉ AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Croisière avec du Vin et un Souper
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Profitez de la meilleure expérience de repas à Aruba! Débutez la soirée du bon pied en montant à bord d’un luxueux catamaran afin d’admirer le coucher de soleil alors que vous voyez le soleil qui se couche et la lune qui se lève.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=1153&paxs=10&productType=TKT&destinationID=109101&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Eco_Tour_Antigua_1.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Antigua
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    ACTIVITÉ AQUATIQUE
+                                </p>
+                                <p class="title-tour">
+                                    Visite écologique à Antigua
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Vous voulez échapper à la réalité ? Explorez les trois îles désertes de North Sound Antigua lors d'une excursion en catamaran à couper le souffle. Admirez les paysages à couper le souffle tandis que vous naviguez sur la mer des Caraïbes.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=8208&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Sensoria_Land_Of_Senses_1.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    EXCURSIONS ÉCOLOGIQUES
+                                </p>
+                                <p class="title-tour">
+                                    Sensoria: terre des sens
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Éveillez vos sens en vous plongeant au cœur d’une magnifique et riche forêt tropicale du Costa Rica dans l’excursion Sensoria Land of Senses, une expérience unique! Explorez les paysages remplis de faune, de flore et de merveilles naturelles qui semblent sortis d’un autre monde au parc national du volcan Rincón de la Vieja. 
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/details.aspx?productID=7849&paxs=10&productType=TKT&destinationID=108888&addDays=2&nights=6&prov=SGN&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Home/v2_Mega_Combo_Buena_Vista_2.jpg);">
+                            <div class="etiqueta-card gradient-color-nexus">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AVENTURA
+                                </p>
+                                <p class="title-tour">
+                                    Mega Combo Buena Vista
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Tour idéal pour les voyageurs actifs et en quête d’aventure. Une aventure passionnante dans les profondeurs de la forêt tropicale du Costa Rica ! Admirez les superbes vues aériennes de la jungle sur un circuit de tyrolienne jusqu’à 100 mètres (328 pieds) dans les airs.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Annulation <br>
+                                            souple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas gradient-color-nexus white-text">
+                                        Voir Les Tarifs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container-ver-mas margin-bottom-68">
+            <a class="boton-ver-mas orange-nexus" href="https://www.nexustours.com/services/" target="_blank">
+                Voir plus d'excursions
+            </a>
+        </div>
+        <div class="container-swiper-destinations margin-bottom-46">
+            <div class="text-card-swiper-destinations tag-mob">
+                <p class="text-gradient-destinations">
+                    Les meilleures destinations avec des offres exclusives de NexusTours.
+                </p>
+            </div>
+            <p class="text-parrafo-destinations gray-text tag-mob">
+                Visitez les destinations les plus paradisiaques des Caraïbes : Jamaïque, Punta Cana, Cancun, Riviera Maya, République dominicaine, Costa Rica, Varadero, Los Cabos, Sainte-Lucie et Saint-Martin. 20 pays et 58 destinations dans les Caraïbes, en Amérique centrale et en Amérique du Nord. Avec NexusTours, vous trouverez tout ce que vous attendez de vos vacances de rêve.
+            </p>
+            <div class="container-slider-botones-2 tag-desk">
+                <div class="container-row-block-destinations">
+                    <div class="text-card-swiper-destinations">
+                        <p class="text-gradient-destinations">
+                            Les meilleures destinations avec des offres exclusives de NexusTours. 
+                        </p>
+                    </div>
+                    <div class="swiper swiperDestinations swiper-destinations-style">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Riviera Maya
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/cancun-riviera-maya" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Punta Cana
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/punta-cana" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Jamaïque
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Los Cabos
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/cabos" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Aruba
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/aruba" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Costa Rica
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            République <br>
+                                            dominicaine
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Sainte-Lucie
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slider-destinations">
+                                <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
+                                    <div class="gradient-imagen">
+                                        <span class="span-destination">
+                                            Saint-Martin
+                                        </span>
+                                    </div>
+                                    <a class="activador" href="https://www.nexustours.com/saint-maarten" target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bottom-slider-destination">
+                    <p class="text-parrafo-destinations gray-text">
+                        Visitez les destinations les plus paradisiaques des Caraïbes : Jamaïque, Punta Cana, Cancun, Riviera Maya, République dominicaine, Costa Rica, Varadero, Los Cabos, Sainte-Lucie et Saint-Martin. 20 pays et 58 destinations dans les Caraïbes, en Amérique centrale et en Amérique du Nord. Avec NexusTours, vous trouverez tout ce que vous attendez de vos vacances de rêve.
+                    </p>
+                    <div class="line-divider-3">
+                    </div>
+                    <div class="container-botones-flex">
+                        <div class="swiper-button-prev swiper2-button-prev swiper-button-block">
+                            <div class="button-swiper" style="transform: rotate(180deg);">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper2-button-next swiper-button-block">
+                            <div class="button-swiper">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
+                <div class="swiper-wrapper swiper-wrap-auto">
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Riviera Maya
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Punta Cana
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/punta-cana" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Jamaïque
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/Jamaïque-EXCURSIONs" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-cabos.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Los Cabos
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/cabos" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Aruba
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/aruba" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Costa Rica
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    République <br>
+                                    dominicaine
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/dominican-republic" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Sainte-Lucie
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slider-destinations">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-martin.jpg);">
+                            <div class="gradient-imagen">
+                                <span class="span-destination">
+                                    Saint-Martin
+                                </span>
+                            </div>
+                            <a class="activador" href="https://www.nexustours.com/saint-maarten" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper4-pagination"></div>
+            </div>
+        </div>
+        <h2 class="title margin-bottom-24 text-left">
+            Transferts
+        </h2>
+        <div class="container-row-transfer margin-bottom-68">
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer_Nexus_deluxe.png">
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRANSFERTS
+                        </p>
+                        <h4 class="title-trans">
+                            De luxe
+                        </h4>
+                        <p class="from-style">
+                            De
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png">
+                            <p class="destination-trans">
+                                Cancun et Riviera Maya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" target="_blank" href="https://www.nexustours.com/transfers/results.aspx?destinationID=109303&originID=116182&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1">
+                            Réserver
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer_Neuxs_private.png">
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRANSFERTS
+                        </p>
+                        <h4 class="title-trans">
+                            Privé
+                        </h4>
+                        <p class="from-style">
+                            De
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png">
+                            <p class="destination-trans">
+                                Jamaïque
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" target="_blank" href="https://www.nexustours.com/transfers/results.aspx?destinationID=110034&originID=117360&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1">
+                            Réserver
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Transfer_Nexus_shared.png">
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRANSFERTS
+                        </p>
+                        <h4 class="title-trans">
+                            Partagé
+                        </h4>
+                        <p class="from-style">
+                            De
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png">
+                            <p class="destination-trans">
+                                Punta Cana
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" target="_blank" href="https://www.nexustours.com/transfers/results.aspx?destinationID=110282&originID=118004&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%23-1">
+                            Réserver
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
+        </div>
+        <h2 class="title margin-bottom-24 text-left">
+            Louer une voiture
+        </h2>
+        <div class="container-text-100">
+            <p class="gray-text text-parrafo margin-bottom-24">
+                Le moyen le plus simple d'économiser sur vos voyages. Louez la voiture qui convient le mieux à vos vacances.
+            </p>
+        </div>
+        <div class="container-rental-row">
+            <div class="rental-gradient" id="rental-1">
+                <div class="bg-gradient-rental">
+                    <div class="bg-gradient-rental-2" id="gradient-rental-1">
+                    </div>
+                    <div class="container-text-rental">
+                        <p class="title-rental white-text">
+                            Riviera Maya
+                        </p>
+                        <a name="linkAuto" target="_blank" href="https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=109303&endDate=2023-11-05&driverAge=21&accion=searchcars&endHour=600&startDate=2023-11-04">
+                            <div class="boton-rental">
+                                Réserver
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-img-rental">
+                    <img class="img-rental" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/auto1-branding.png">
+                </div>
+            </div>
+            <div class="rental-gradient" id="rental-2">
+                <div class="bg-gradient-rental-3">
+                    <div class="bg-gradient-rental-2" id="gradient-rental-2">
+                    </div>
+                    <div class="container-text-rental">
+                        <p class="title-rental white-text">
+                            Jamaïque
+                        </p>
+                        <a name="linkAuto" target="_blank" href="https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=108913&endDate=2023-11-05&driverAge=21&accion=searchcars&endHour=600&startDate=2023-11-04">
+                            <div class="boton-rental">
+                                Réserver
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-img-rental">
+                    <img class="img-rental" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/auto2-branding.png">
+                </div>
+            </div>
+            <div class="rental-gradient" id="rental-3">
+                <div class="bg-gradient-rental-4">
+                    <div class="bg-gradient-rental-2" id="gradient-rental-3">
+                    </div>
+                    <div class="container-text-rental">
+                        <p class="title-rental white-text">
+                            Punta Cana
+                        </p>
+                        <a name="linkAuto" target="_blank" href="https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=110282&endDate=2023-11-05&driverAge=21&accion=searchcars&endHour=600&startDate=2023-11-04">
+                            <div class="boton-rental">
+                                Réserver
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-img-rental">
+                    <img class="img-rental" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/auto3-branding.png">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-text-footer" id="terminos">
+        </div>
+        <script>
+            let linkAuto = document.getElementsByName("linkAuto")
+            fechasAutos()
+
+            function fechasAutos(){
+                var tomorrowDate = new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1)
+                var endDate = new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 4)
+                var originID = ["109303", "108913", "110282"]
+                console.log(tomorrowDate)
+                console.log(endDate)
+                for(var i = 0; i < linkAuto.length; i++){
+                    if(endDate.getMonth() < 9){
+                        if(endDate.getDate() < 10){
+                            if(tomorrowDate.getMonth() < 9){
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }else{
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }
+                        }else{
+                            if(tomorrowDate.getMonth() < 9){
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }else{
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-0" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }
+                        }
+                    }else{
+                        if(endDate.getDate() < 10){
+                            if(tomorrowDate.getMonth() < 9){
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }else{
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-0" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }
+                        }else{
+                            if(tomorrowDate.getMonth() < 9){
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-0" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }else{
+                                if(tomorrowDate.getDate() <10){
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-0" + tomorrowDate.getDate()
+                                }else{
+                                    linkAuto[i].href = "https://www.nexustours.com/cars/results.aspx?startHour=600&nationality=ES&originID=" + originID[i] + "&endDate=" + endDate.getFullYear() + "-" + (endDate.getMonth() + 1) + "-" + endDate.getDate() + "&driverAge=21&accion=searchcars&endHour=600&startDate=" + tomorrowDate.getFullYear() + "-" + (tomorrowDate.getMonth() + 1) + "-" + tomorrowDate.getDate()
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper1-button-next",
+                    prevEl: ".swiper1-button-prev",
+                },
+            });
+    
+            var swiper2 = new Swiper(".swiperDestinations", {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper2-button-next",
+                    prevEl: ".swiper2-button-prev",
+                },
+            });
+
+            var swiper3 = new Swiper(".swiperTours-Mob", {
+                slidesPerView: 1.1,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+            var swiper4 = new Swiper(".swiperDestinations-Mob", {
+                slidesPerView: 1.5,
+                navigation: {
+                    nextEl: ".swiper4-button-next",
+                    prevEl: ".swiper4-button-prev",
+                },
+                pagination: {
+                    el: ".swiper4-pagination",
+                },
+            });
+
+            var swiper5 = new Swiper(".mySwiper2", {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".swiper5-button-next",
+                    prevEl: ".swiper5-button-prev",
+                },
+            });
+
+            var swiper6 = new Swiper(".swiperTours-Mob2", {
+                slidesPerView: 1.1,
+                pagination: {
+                    el: ".swiper6-pagination",
+                },
+            });
+            var swiper7 = new Swiper(".swiperOfertas", {
+                slidesPerView: 1.4,
+            });
+        </script>
+        <script>
+            var idiomaLanding = document.querySelector('.text-capitalize.hidden-xs')
+            var imgOferta1 = document.querySelectorAll("[name=imgOferta1]")
+            var imgOferta2 = document.querySelectorAll("[name=imgOferta2]")
+            var imgOferta3 = document.querySelectorAll("[name=imgOferta3]")
+            var textFooter = document.querySelector('#terminos')
+
+            var comp = idiomaLanding.textContent
+            comp = comp.replace(/\s/g, "")
+
+            var dicCampaign={
+                nombreCamp : [],
+                mesCamp : [],
+                yearCamp : [],
+                fechaInicioCamp : [],
+                fechaFinCamp : [],
+                linkEspImg1DiscountCampana:[],
+                linkEspImg2DiscountCampana:[],
+                linkEspImg3DiscountCampana:[],
+                linkEngImg1DiscountCampana:[],
+                linkEngImg2DiscountCampana:[],
+                linkEngImg3DiscountCampana:[],
+                linkFrImg1DiscountCampana:[],
+                linkFrImg2DiscountCampana:[],
+                linkFrImg3DiscountCampana:[],
+                linkBotonLanding : [],
+                prioridadCamp : [],
+                dispEspCamp : [],
+                dispEngCamp : [],
+                dispFrCamp : [],
+
+                discToursEspCamp: [],
+                discToursEngCamp: [],
+                discToursFrCamp: [],
+
+                discTransEspCamp: [],
+                discTransEngCamp: [],
+                discTransFrCamp: [],
+
+                diaInicioEspCamp: [],
+                diaInicioEngCamp: [],
+                diaInicioFrCamp: [],
+
+                diaFinEspCamp: [],
+                diaFinEngCamp: [],
+                diaFinFrCamp: [],
+
+                mesInicioEspCamp: [],
+                mesInicioEngCamp: [],
+                mesInicioFrCamp: [],
+
+                mesFinEspCamp: [],
+                mesFinEngCamp: [],
+                mesFinFrCamp: []
+            }
+
+            // Realizar una solicitud GET al JSON
+            var urlCamp = 'https://davidgrhub.github.io/JsonRepositoryNexus/banners_campanas.json';
+
+            ejecutorCampDiscount(dicCampaign)
+
+            function cargarXMLCampDiscount(dicCampaign){
+                return new Promise ((resolve, reject) =>{
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', urlCamp, true);
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4 && xhr.status === 200) {
+                            var data = JSON.parse(xhr.responseText);
+                            for (var i = 0; i < data.length; i++) {
+                                dicCampaign.nombreCamp.push(data[i].Nombre_de_la_Campana);
+
+                                dicCampaign.mesCamp.push(data[i].Mes_Campana);
+
+                                dicCampaign.yearCamp.push(data[i].Year);
+
+                                dicCampaign.fechaInicioCamp.push(data[i].Fecha_Inicio_Campana);
+                                dicCampaign.fechaFinCamp.push(data[i].Fecha_Fin_Campana);
+
+                                dicCampaign.linkEspImg1DiscountCampana.push(data[i].Link_Esp_Img_1_Discount_Campana)
+                                dicCampaign.linkEspImg2DiscountCampana.push(data[i].Link_Esp_Img_2_Discount_Campana)
+                                dicCampaign.linkEspImg3DiscountCampana.push(data[i].Link_Esp_Img_3_Discount_Campana)
+
+                                dicCampaign.linkEngImg1DiscountCampana.push(data[i].Link_Eng_Img_1_Discount_Campana)
+                                dicCampaign.linkEngImg2DiscountCampana.push(data[i].Link_Eng_Img_2_Discount_Campana)
+                                dicCampaign.linkEngImg3DiscountCampana.push(data[i].Link_Eng_Img_3_Discount_Campana)
+
+                                dicCampaign.linkFrImg1DiscountCampana.push(data[i].Link_Fr_Img_1_Discount_Campana)
+                                dicCampaign.linkFrImg2DiscountCampana.push(data[i].Link_Fr_Img_2_Discount_Campana)
+                                dicCampaign.linkFrImg3DiscountCampana.push(data[i].Link_Fr_Img_3_Discount_Campana)
+
+                                dicCampaign.prioridadCamp.push(data[i].Prioridad_Campana)
+
+                                dicCampaign.dispEspCamp.push(data[i].Disponible_MX)
+                                dicCampaign.dispEngCamp.push(data[i].Disponible_USA)
+                                dicCampaign.dispFrCamp.push(data[i].Disponible_CA)
+
+                                dicCampaign.discToursEspCamp.push(data[i].Prc_Tours_Esp);
+                                dicCampaign.discToursEngCamp.push(data[i].Prc_Tours_Eng);
+                                dicCampaign.discToursFrCamp.push(data[i].Prc_Tours_Fr);
+
+                                dicCampaign.discTransEspCamp.push(data[i].Prc_Traslados_Esp);
+                                dicCampaign.discTransEngCamp.push(data[i].Prc_Traslados_Eng);
+                                dicCampaign.discTransFrCamp.push(data[i].Prc_Traslados_Fr);
+
+                                dicCampaign.diaInicioEspCamp.push(data[i].Dia_Inicio_Campana_Esp);
+                                dicCampaign.diaInicioEngCamp.push(data[i].Dia_Inicio_Campana_Eng);
+                                dicCampaign.diaInicioFrCamp.push(data[i].Dia_Inicio_Campana_Fr);
+
+                                dicCampaign.diaFinEspCamp.push(data[i].Dia_Fin_Campana_Esp);
+                                dicCampaign.diaFinEngCamp.push(data[i].Dia_Fin_Campana_Eng);
+                                dicCampaign.diaFinFrCamp.push(data[i].Dia_Fin_Campana_Fr);
+
+                                dicCampaign.mesInicioEspCamp.push(data[i].Mes_Inicio_Campana_Esp);
+                                dicCampaign.mesInicioEngCamp.push(data[i].Mes_Inicio_Campana_Eng);
+                                dicCampaign.mesInicioFrCamp.push(data[i].Mes_Inicio_Campana_Fr);
+
+                                dicCampaign.mesFinEspCamp.push(data[i].Mes_Fin_Campana_Esp);
+                                dicCampaign.mesFinEngCamp.push(data[i].Mes_Fin_Campana_Eng);
+                                dicCampaign.mesFinFrCamp.push(data[i].Mes_Fin_Campana_Fr);
+                            }
+
+                            /*Obtener la fecha del dia*/
+                            const dateToday = new Date()
+                            const desfaseUTC = (new Date()).getTimezoneOffset() * 60000;
+
+                            /*Crear arreglos para guardar las campañas del mes y si la campaña esta activa*/
+                            var arrayMonth = []
+                            var campActiva = []
+
+                            /*Obtener el mes de la fecha actual*/
+                            switch((dateToday.getMonth() + 1)){
+                                case 1:
+                                    var monthToday = "Enero"
+                                    break;
+                                case 2:
+                                    var monthToday = "Febrero"
+                                    break;
+                                case 3:
+                                    var monthToday = "Marzo"
+                                    break;
+                                case 4:
+                                    var monthToday = "Abril"
+                                    break;
+                                case 5:
+                                    var monthToday = "Mayo"
+                                    break;
+                                case 6:
+                                    var monthToday = "Junio"
+                                    break;
+                                case 7:
+                                    var monthToday = "Julio"
+                                    break;
+                                case 8:
+                                    var monthToday = "Agosto"
+                                    break;
+                                case 9:
+                                    var monthToday = "Septiembre"
+                                    break;
+                                case 10:
+                                    var monthToday = "Octubre"
+                                    break;
+                                case 11:
+                                    var monthToday = "Noviembre"
+                                    break;
+                                case 12:
+                                    var monthToday = "Diciembre"
+                                    break;
+                            }
+
+
+                            /*Obtener las campañas del mes*/
+                            for(var i = 0; i < dicCampaign["mesCamp"].length; i++){
+                                if((monthToday == dicCampaign["mesCamp"][i]) && (dateToday.getFullYear() == dicCampaign["yearCamp"][i])){
+                                    arrayMonth.push(i)
+                                }
+                            }
+
+                            /*Obtener las campañas que se encuentran activas*/
+                            arrayMonth.forEach(function(indice){
+                                var fechaIni = new Date(dicCampaign["fechaInicioCamp"][indice] + "T00:00:00Z")
+                                var fechaFin = new Date(dicCampaign["fechaFinCamp"][indice] + "T23:59:59.999Z")
+
+                                fechaIni = new Date(fechaIni.getTime() + desfaseUTC)
+                                fechaFin = new Date(fechaFin.getTime() + desfaseUTC)
+                                
+                                if((dateToday >= fechaIni) && (dateToday <= fechaFin)){
+                                    campActiva.push(indice)
+                                }
+                            })
+
+                            var prio = campActiva[0]
+
+                            /*Obtener la campaña con mayor prioridad y que debe estar disponible*/
+                            campActiva.forEach(function(indice){
+                                if(dicCampaign["prioridadCamp"][indice] > dicCampaign["prioridadCamp"][prio]){
+                                    switch(comp){
+                                        case "español":
+                                            if(dicCampaign["dispEspCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                        case "english":
+                                            if(dicCampaign["dispEngCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                        case "français":
+                                            if(dicCampaign["dispFrCamp"][indice] == 1){
+                                                prio = indice
+                                            }
+                                        break;
+                                    }
+                                }
+                            })
+
+                            var dateInicioCamp = new Date(dicCampaign['fechaInicioCamp'][prio])
+
+                            var newMonth = (dateInicioCamp.getMonth() + 1) + 7
+
+                            var newYear = dateInicioCamp.getFullYear()
+
+                            if (newMonth >= 12){
+                                newMonth -= 12
+                                newYear++
+                            }
+
+                            var maxCompra = new Date(newYear, newMonth, 0)
+
+                            switch(comp){
+                                case "español":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "Enero"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "Febrero"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "Marzo"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "Abril"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "Mayo"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "Junio"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "Julio"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "Agosto"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "Septiembre"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "Octubre"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "Noviembre"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "Diciembre"
+                                            break;
+                                    }
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Promoción válida para reservaciones del '+ dicCampaign["diaInicioEspCamp"][prio] +' de '+ dicCampaign["mesInicioEspCamp"][prio]  +' al '+ dicCampaign["diaFinEspCamp"][prio]  +' de '+ dicCampaign["mesFinEspCamp"][prio] +', '+ dicCampaign["yearCamp"][prio] +' y viaja del '+ dicCampaign["diaInicioEspCamp"][prio] +' de '+ dicCampaign["mesInicioEspCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' al '+ maxCompra.getDate() +' de '+ monthMaxCompra +' '+ maxCompra.getFullYear() +'. Obtén hasta '+ dicCampaign["discToursEspCamp"][prio] +'% de descuento en tours y hasta '+ dicCampaign["discTransEspCamp"][prio] +'% en traslados seleccionados.<br>**Para acceder al descuento debes iniciar sesión. Precios válidos en productos seleccionados y sujetos a disponibilidad al momento de la compra.</p>'
+
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkEspImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkEspImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkEspImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                                case "english":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "January"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "February"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "March"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "April"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "May"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "June"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "July"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "August"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "September"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "October"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "November"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "December"
+                                            break;
+                                    }
+
+                                    var diaInicioCampText = fechaTexto(dicCampaign["diaInicioEngCamp"][prio])
+
+                                    var diaFinCampText = fechaTexto(dicCampaign["diaFinEngCamp"][prio])
+
+                                    var diaMaxCampText = fechaTexto(maxCompra.getDate())
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Book from '+ dicCampaign["mesInicioEngCamp"][prio] +' '+ diaInicioCampText +' to '+ dicCampaign["mesFinEngCamp"][prio] +' '+ diaFinCampText +', '+ dicCampaign["yearCamp"][prio] +' and travel from '+ dicCampaign["mesInicioEngCamp"][prio] +' '+ diaInicioCampText +', '+ dicCampaign["yearCamp"][prio] +' to '+ monthMaxCompra +' '+ diaMaxCampText +', '+ maxCompra.getFullYear() +'. Get up to '+ dicCampaign["discToursEngCamp"][prio] +'% discount on tours and up to '+ dicCampaign["discTransEngCamp"][prio] +'% discount on transfers.<br>**Price per person for single shared transfer. Prices and discounts valid on selected products and subject to availability at the time of purchase.<br><strong>Log in to access the discounts.</strong></p>'
+                                    
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkEngImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkEngImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkEngImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                                case "français":
+
+                                    switch((maxCompra.getMonth() + 1)){
+                                        case 1:
+                                            var monthMaxCompra = "Janvier"
+                                            break;
+                                        case 2:
+                                            var monthMaxCompra = "Février"
+                                            break;
+                                        case 3:
+                                            var monthMaxCompra = "Mars"
+                                            break;
+                                        case 4:
+                                            var monthMaxCompra = "Avril"
+                                            break;
+                                        case 5:
+                                            var monthMaxCompra = "Mai"
+                                            break;
+                                        case 6:
+                                            var monthMaxCompra = "Juin"
+                                            break;
+                                        case 7:
+                                            var monthMaxCompra = "Juillet"
+                                            break;
+                                        case 8:
+                                            var monthMaxCompra = "Août"
+                                            break;
+                                        case 9:
+                                            var monthMaxCompra = "Septembre"
+                                            break;
+                                        case 10:
+                                            var monthMaxCompra = "Octobre"
+                                            break;
+                                        case 11:
+                                            var monthMaxCompra = "Novembre"
+                                            break;
+                                        case 12:
+                                            var monthMaxCompra = "Décembre"
+                                            break;
+                                    }
+
+                                    textFooter.innerHTML = '<p class="text-footer">*Réservez du '+ dicCampaign["diaInicioFrCamp"][prio] +' '+ dicCampaign["mesInicioFrCamp"][prio] +' au '+ dicCampaign["diaFinFrCamp"][prio] +' '+ dicCampaign["mesFinFrCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' et voyagez du '+ dicCampaign["diaInicioFrCamp"][prio] +' '+ dicCampaign["mesInicioFrCamp"][prio] +' '+ dicCampaign["yearCamp"][prio] +' au '+ maxCompra.getDate() +' '+ monthMaxCompra +' '+ maxCompra.getFullYear() +'. Bénéficiez jusqu\'à '+ dicCampaign["discToursFrCamp"][prio] +' % de réduction sur les visites et jusqu\'à '+ dicCampaign["discTransFrCamp"][prio] +' % de réduction sur les transferts.<br>**Prix par personne pour un transfert partagé individuel. Les prix et les remises sont valables sur les produits sélectionnés et sont soumis à la disponibilité au moment de l\'achat.<br><strong>Connectez-vous pour accéder aux remises</strong></p>'
+
+                                    for(var i = 0; i < imgOferta1.length; i++){
+                                        imgOferta1[i].src = dicCampaign["linkFrImg1DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta2.length; i++){
+                                        imgOferta2[i].src = dicCampaign["linkFrImg2DiscountCampana"][prio]
+                                    }
+                                    for(var i = 0; i < imgOferta3.length; i++){
+                                        imgOferta3[i].src = dicCampaign["linkFrImg3DiscountCampana"][prio]
+                                    }
+                                    break;
+                            }
+                        }
+                    };
+                    xhr.send();
+                });
+            }
+
+            async function ejecutorCampDiscount(dicCampaign){
+                await cargarXMLCampDiscount(dicCampaign)
+            }
+
+
+            function fechaTexto(fecha){
+                if(parseInt(fecha) < 10){
+                    if(parseInt(fecha) === 1){
+                        var fechaText = fecha + "st"
+                    }else if(parseInt(fecha) === 2){
+                        var fechaText = fecha + "nd"
+                    }else if(parseInt(fecha) === 3){
+                        var fechaText = fecha + "rd"
+                    }else{
+                        var fechaText = fecha + "th"
+                    }
+                }else{
+                    var valor = parseInt(fecha)
+                    while(valor > 10){
+                        valor -= 10
+                    }
+                    if(valor === 1){
+                        var fechaText = fecha + "st"
+                    }else if(valor === 2){
+                        var fechaText = fecha + "nd"
+                    }else if(valor === 3){
+                        var fechaText = fecha + "rd"
+                    }else{
+                        var fechaText = fecha + "th"
+                    }
+                }
+
+                return fechaText
+            }
+        </script>
+    </div>
+</body>

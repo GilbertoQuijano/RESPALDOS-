@@ -1,0 +1,355 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <style>
+            .body-media{
+                width: 1160px;
+                margin: auto;
+                font-family: 'DM Sans', sans-serif;
+                padding-bottom: 50px;
+            }
+            @media (max-width: 1200px){
+                .body-media{
+                    width: 960px;
+                }
+            }
+            @media (max-width: 992px){
+                .body-media{
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            }
+
+            .orangeNexus{
+                color: #FF621D;
+            }
+
+            .containerUpgrade{
+                background-color: #FFF; 
+                border-radius: 25px; 
+                box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.08); 
+                padding: 55px 100px 60px; 
+                width: fit-content; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-top: -55px;
+                box-sizing: border-box;
+            }
+            @media (max-width: 992px){
+                .containerUpgrade{
+                    margin-top: -11vw;
+                    padding: 11vw 9vw 16vw;
+                    width: 90%;
+                }
+            }
+
+            .titleUpgrade{
+                margin-top: 0; 
+                font-size: 35px; 
+                line-height: 100%; 
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 992px){
+                .titleUpgrade{
+                    font-size: 6vw; 
+                    text-align: center;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            .alignCenter{
+                text-align: center;
+            }
+
+            .marginBottom52{
+                margin-bottom: 52px;
+            }
+            @media (max-width: 992px){
+                .marginBottom52{
+                    margin-bottom: 6vw;
+                }
+            }
+
+            .ul-transfer-content{
+                padding: 0 0 0 20px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .bullets-description{
+                color: #333;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 25px;
+            }
+            @media (max-width: 992px){
+                .bullets-description{
+                    font-size: 5vw;
+                }
+            }
+
+            li{
+                list-style-type: disc !important; /* Tipo de viñeta: disco */
+                list-style-position: outside !important; /* Posición de la viñeta */
+                list-style-image: none !important; /* Eliminar imagen de viñeta */
+            }
+            li::marker{
+                display: flex !important;
+                align-items: center !important;
+            }
+
+            .containerUpgradeCard{
+                display: flex; 
+                align-items: center; 
+                gap: 52px;
+                margin-bottom: 50px;
+            }
+            @media (max-width: 992px){
+                .containerUpgradeCard{
+                    flex-direction: column;
+                    gap: 6vw;
+                }
+            }
+
+            .containerUpgradeCardAlone{
+                display: flex; 
+                align-items: center; 
+                gap: 52px;
+                margin-bottom: 0px;
+            }
+            @media (max-width: 992px){
+                .containerUpgradeCardAlone{
+                    flex-direction: column;
+                    gap: 6vw;
+                }
+            }
+
+            .containerTextUpgradeCard{
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center;
+            }
+            @media (max-width: 992px){
+                .containerTextUpgradeCard{
+                    width: 100%;
+                }
+            }
+            
+            .bannerGradient{
+                width: 100%; 
+                height: 362px; 
+                background: linear-gradient(150deg, #00AFDD 0%, #8CE972 100%); 
+                padding-top: 44px;
+            }
+            @media (max-width: 992px){
+                .bannerGradient{
+                    height: auto; 
+                    padding-bottom: 22vw;
+                }
+            }
+
+            .containerTextBannerGradient{
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                gap: 38px;
+            }
+            @media (max-width: 992px){
+                .containerTextBannerGradient{
+                    flex-direction: column;
+                    align-items: center; 
+                    gap: 4vw;
+                }
+            }
+
+            .imgGradient{
+                display: block; 
+                width: 273px;
+            }
+            @media (max-width: 992px){
+                .imgGradient{
+                    width: 50vw;
+                }
+            }
+
+            .titleGradient{
+                color: #FFF; 
+                font-family: 'DM Sans', sans-serif; 
+                font-size: 35px; 
+                font-weight: 400; 
+                line-height: 125%; 
+                margin-bottom: 13px;
+            }
+            @media (max-width: 992px){
+                .titleGradient{
+                    text-align: center;
+                    font-size: 6vw;
+                    margin-top: 0px;
+                }
+            }
+
+            .subtitleGradient{
+                color: #FFF; 
+                font-family: 'DM Sans', sans-serif; 
+                font-size: 28px; 
+                line-height: 125%; 
+                font-weight: 500
+            }
+            @media (max-width: 992px){
+                .subtitleGradient{
+                    text-align: center;
+                    font-size: 5vw;
+                    margin: 0;
+                }
+            }
+
+            .botonUpgrade{
+                display: block; 
+                background: linear-gradient(279deg, #FD921E 0%, #FF621D 50%, #E73A4E 100%); 
+                color: white; 
+                font-weight: 700; 
+                line-height: 100%; 
+                font-size: 30px; 
+                border-radius: 31px; 
+                text-align: center; 
+                width: fit-content; 
+                margin-left: auto; 
+                margin-right: auto; 
+                padding: 15px 82px; 
+                margin-top: -30px;
+                text-decoration: none;
+            }
+            @media (max-width: 992px){
+                .botonUpgrade{
+                    font-size: 6vw; 
+                    padding: 4vw 17vw; 
+                    margin-top: -7vw;
+                }
+            }
+
+            @media (max-width: 992px){
+                .reverse{
+                    flex-direction: column-reverse;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bannerGradient">
+            <div class="containerTextBannerGradient">
+                <img class="imgGradient" src="https://www.nexustours.com/images/upload//Landing%20Pages/ConfirmationLanding/iconConfirmationLanding.png">
+                <div>
+                    <p class="titleGradient">
+                        We appreciate your <br>
+                        confirmation for the <br>
+                        <span style="font-weight: 700;"><span id="serviceType"></span> Transfer</span>
+                    </p>
+                    <h1 class="subtitleGradient">
+                        Thank you for trusting in <br>
+                        our service.
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="body-media">
+            <div class="containerUpgrade">
+                <p class="titleUpgrade alignCenter marginBottom52">
+                    Do you want to <span class="orangeNexus" style="font-weight: 800;">upgrade</span> your transfer?
+                </p>
+                <div id="containerDeluxe" class="containerUpgradeCard">
+                    <div class="containerTextUpgradeCard" style="padding-top: 0;">
+                        <p class="titleUpgrade">
+                            <span class="orangeNexus" style="font-weight: 800;">Transfer</span> Deluxe
+                        </p>
+                        <ul class="ul-transfer-content">
+                            <li>
+                                <h4 class="bullets-description">
+                                    More comfort and style
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 class="bullets-description">
+                                    High-end vehicles
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 class="bullets-description">
+                                    Direct transfer
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 class="bullets-description">
+                                    Additional amenities
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <img style="max-width: 100%;" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusDeluxe2024.png">
+                </div>
+                <div id="containerPrivate" class="containerUpgradeCard reverse" style="margin-bottom: 0;">
+                    <img style="max-width: 100%;" src="https://www.nexustours.com/images/upload//Email-content/BD/TransferCardNexusPrivate2024.png">
+                    <div class="containerTextUpgradeCard">
+                        <p class="titleUpgrade">
+                            <span class="orangeNexus" style="font-weight: 800;">Transfer</span> Private
+                        </p>
+                        <ul class="ul-transfer-content">
+                            <li>
+                                <h4 class="bullets-description">
+                                    Comfort & style
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 class="bullets-description">
+                                    Non-stop transfer
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 class="bullets-description">
+                                    Personalized assistance
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a id="callCenter" class="botonUpgrade" href="" target="_blank">
+                Upgrade
+            </a>
+        </div>
+    </body>
+    <script>
+        // Obtener la URL actual
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // Leer parámetros específicos
+        var parametroServiceType = urlParams.get('servicetype');
+        var parametroICCTel= urlParams.get('ICC_Tel');
+        let serviceType = document.querySelector('#serviceType')
+        let containerPrivate = document.querySelector('#containerPrivate')
+        let containerDeluxe = document.querySelector('#containerDeluxe')
+        let callCenter = document.querySelector('#callCenter')
+
+        serviceType.textContent = parametroServiceType
+        callCenter.href = "tel:+" + parametroICCTel
+
+        if(parametroServiceType == "Private"){
+            containerPrivate.style.display = "none"
+            containerDeluxe.className = containerDeluxe.className.replace('containerUpgradeCard', 'containerUpgradeCardAlone')
+        }
+    </script>
+    <!--Script para eliminar el contenedor pequeño de la plantilla-->
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+    </script>
+</html>
