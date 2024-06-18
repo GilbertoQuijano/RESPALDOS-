@@ -55,7 +55,7 @@
         }
     
         .gradient-color-nexus{
-            background: linear-gradient(254deg, #FD921E 0%, #FF691D 41.73%, #FF621D 48.44%, #E73A4E 97.92%);
+            background: #252525;
         }
     
         .container-things-header{
@@ -75,7 +75,7 @@
         }
     
         .text-h1-style{
-            font-size: 45px;
+            font-size: 58px;
             font-weight: 900;
             letter-spacing: -1.45px;
             text-shadow: rgba(0, 0, 0, 0.23) 2px 5px;
@@ -117,7 +117,7 @@
                 font-size: 7vw;
                 line-height: 121%;
                 font-weight: 700;
-                text-align: left;
+                text-align: center;
             }
         }
     
@@ -182,7 +182,7 @@
                 font-size: 4vw;
             }
         }
-    
+
         .card-slider-tour{
             height: auto;
             width: 345px;
@@ -277,7 +277,7 @@
     
         .container-text-card-upper{
             padding: 17px 32px 0px 29px;
-            height: 230px;
+            height: 175px;
         }
     
         @media(max-width:1200px){
@@ -500,7 +500,7 @@
     
         .boton-ver-mas{
             text-decoration: none;
-            border: 2px solid #F37021;
+            border: 2px solid #252525;
             padding: 8px 16px;
             font-size: 24px;
             font-weight: 700;
@@ -513,7 +513,7 @@
             }
         }
         .boton-ver-mas:hover{
-            background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+            background: #252525;
             color: white;
             border: 0.949px solid transparent;
             text-decoration: none;
@@ -527,7 +527,7 @@
         }
     
         .orange-nexus{
-            color: #FF621D;
+            color: #252525;
         }
     
         @media (max-width:992px){
@@ -580,7 +580,7 @@
     
         .gradient-imagen{
             width: 100%; 
-            height: 100%; 
+            height: 100%;  
             z-index: 2; 
             top: 0; 
             left: 0; 
@@ -720,8 +720,7 @@
         .container-pollo{
             width: 34px;
             min-width: 34px;
-            background-color: #F37021;
-            background: linear-gradient(180deg, #FD921E 0%, #FF621D 48.96%, #E73A4E 100%);
+            background-color: #BECAC7;
             border-radius: 25px;
         }
         @media (max-width:992px){
@@ -784,7 +783,7 @@
             left: 0;
             width: 100%;
             height: 13px;
-            background: linear-gradient(260deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+            background: #252525;
         }
     
         .img-cars{
@@ -892,8 +891,8 @@
     
         .boton-transfer{
             text-decoration: none;
-            color: #FF621D;
-            border: 0.949px solid #FF621D;
+            color: #252525;
+            border: 0.949px solid #252525;
             border-radius: 29.412px;
             padding: 8px 25px;
             font-size: 16px;
@@ -918,7 +917,7 @@
         }
     
         .boton-transfer:hover{
-            background: linear-gradient(262deg, #FD921E 0%, #FF621D 48.44%, #E73A4E 97.92%);
+            background: #252525;
             color: white;
             border: 0.949px solid transparent;
             text-decoration: none;
@@ -1003,13 +1002,14 @@
             background-position: center;
             overflow: hidden;
             background-size: cover;
-            background-image: url("https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/background-gradient-destinations.png");
+            gap: 15px;
+            background-color: #BECAC7;
         }
         @media (max-width:992px){
             .text-card-swiper-destinations{
-                width: 95%;
+                width: 92vw;
                 margin: auto;
-                padding: 5vw 7vw;
+                padding: 5vw 5vw;
                 text-align: center;
             }
         }
@@ -1094,12 +1094,6 @@
             .text-etiqueta-imagen{
                 font-size: 3.5vw;
             }
-        }
-
-        .container-text-footer{
-        width: 100%; 
-        margin: auto;
-        margin-bottom: 42px;
         }
     
         .tag-desk{
@@ -1302,7 +1296,7 @@
     
             .swiper-tours {
                 width: 100%;
-                height: 400px;
+                height: 360px;
                 overflow: hidden;
             }
         
@@ -1320,6 +1314,20 @@
                     /*
                     margin-left: -7.15vw;
                     */
+                }
+            }
+            .title{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 110%;
+                text-align: center;
+            }
+            @media (max-width:992px){
+                .title{
+                    font-size: 7vw;
+                    line-height: 121%;
+                    font-weight: 700;
+                    text-align: center;
                 }
             }
     
@@ -1356,98 +1364,541 @@
                 gap: 5px; 
                 align-items: flex-end;
             }
+
+            .container-text-footer{
+            width: 100%; 
+            margin: auto;
+            margin-bottom: 42px;
+            }
             /*Espacio para nuevas Cards Home*/
 
-            .bannertrf {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                border-radius: 10px;
-            }
-            
-            @media (max-width:1200px){
-                .bannertrf {
-                    width: 100%;
-                    height: 100%;
-                }
+            .colorWHL{
+                background: #252525;
             }
 
-            .img-banner-login{
-                width: 100%;
-                height: 100%;
+            .black-nexus{
+                color: #333;
+            }
+
+            .colorBotonWHL{
+                background: #252525;
             }
         
     </style>
 </head>
 <body>
     <div class="body-media">
-        <div class="imagen-header margin-bottom-24" style="background-image: url(https://www.nexustours.com/images/upload/Landing%20Pages/Mayo_2024/banner/LasVegas.jpg);">
+        <div class="imagen-header margin-bottom-24" style="background-image: url(https://www.nexustours.com/images/upload/Landing%20Pages/Mayo/3aruba.jpg);">
             <div class="gradient-header">
                 <div class="white-text container-things-header gradient-color-nexus">
                     <span>
-                    Experimenta la Magia de Las Vegas
+                        Cosas para hacer en
                     </span>
                 </div>
                 <h1 class="white-text text-h1-style">
-                    ¡Diversión, entretenimiento y momentos inolvidables!
+                    Aruba
                 </h1>
             </div>
         </div>
-        <div class="bannerlogin2 margin-bottom-46 js-login-box-modal">
-            <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/BH2.jpg" loading="lazy">
-            <img class="img-banner-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/julio2023/grismobesp.jpg">
-        </div>
-        <h2 class="style-titles title margin-bottom-24">
-            Embárcate en una aventura en Las Vegas
+        <h2 class="style-titles title">
+            Descubre la hipnotizante Aruba
         </h2>
-        <!--h2 class="style-titles subtitle margin-bottom-24">
-            Pasa unas vacaciones inolvidables en un entorno espectacular.
-        </h2-->
-
+        <h2 class="style-titles subtitle margin-bottom-24">
+            El paraíso en la tierra sí existe, solo tienes que ir a la pequeña isla del Caribe holandés.
+        </h2>
         <div class="line-divider-1 gradient-color-nexus margin-bottom-24">
         </div>
         <div class="container-text-80 margin-bottom-24 tag-desk">
             <p class="gray-text text-parrafo">
-                Vive emociones infinitas de Las Vegas, desde espectáculos de clase mundial hasta casinos vibrantes y restaurantes de gran renombre. Planifica tu visita ahora y vive la magia de visitar esta famosa ciudad.
+                Las playas de arena blanca y el increíble azul de las aguas de Aruba son un escenario idílico para nadar, bucear, practicar deportes acuáticos o simplemente relajarte.
+            </p>
         </div>
         <div class="container-text-80 margin-bottom-46 tag-mob">
             <p class="gray-text text-parrafo">
-                Vive emociones infinitas de Las Vegas, desde espectáculos de clase mundial hasta casinos vibrantes y restaurantes de gran renombre. Planifica tu visita ahora y vive la magia de visitar esta famosa ciudad.
+                Las playas de arena blanca y el increíble azul de las aguas de Aruba son un escenario idílico para nadar, bucear, practicar deportes acuáticos o simplemente relajarte.
             </p>
         </div>
-        <h2 class="title margin-bottom-24">
-            Traslados
-        </h2>
-        <div class="bannertrf margin-bottom-46 tag-desk">
-            <a href="https://www.nexustours.com/transfers/results.aspx?destinationID=109860&originID=117155&paxs=10&accion=searchtransfers&roundtrip=false&addDays=2&nights=6" target="_blank">
-                <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/junio_2024/banners/LVtrf_esp.jpg" loading="lazy">
-            </a>
-        </div>
-        <div class="container-slider-botones margin-bottom-24">
-            <div class="container-title-swiper-tours margin-bottom-24">
-                <h2 class="title">
+
+        <div class="container-slider-botones margin-bottom-46 tag-desk">
+            <div class="swiper-button-next swiper1-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#252525"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper1-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#252525"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper mySwiper swiper-product">
+                <h2 class="title margin-bottom-24">
                     Top Excursiones
                 </h2>
-                <div class="container-botones-tours">
-                    <div class="swiper-button-prev swiperProductsAuto-button-prev swiper-button-block">
-                        <div class="button-swiper" style="transform: rotate(180deg);">
-                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next swiperProductsAuto-button-next swiper-button-block">
-                        <div class="button-swiper">
-                            <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper swiperProductsAuto swiper-tours">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=388&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/Excursions/388_Aruba_Beach_Hopping_Tour/Images/v2_MAIN_aruba-beach-hopping-008-web_tnybzn.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Tour Aruba Beach Hopping
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Disfruta de un día en el paraíso y vive lo mejor del Caribe! Nada con los lugareños y descubre dos de las playas más populares de Aruba.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=5428&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_ATV_Individual/MAIN_atv-tour-aruba-01-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Tour Privado en ATV Individual
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Descubre Aruba desde otra perspectiva. ¡Maravíllate con acantilados, playas y la famosa piscina natural en este tour!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>  
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=3469&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload/services/Hecho_en_Aruba/made-in-aruba-01-web.JPEG)">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Hecho en Aruba
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Visita la fábrica de cigarros Aruhiba! Conoce desde el cultivo hasta la producción.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=410&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aruba_Highlights_Tour/v2-aruba-highlights-004-zetkqk.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Aruba Highlights Tour
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Una fascinante travesía que te llevará por la bella Aruba. Descubre algunos de sus más singulares tesoros naturales e históricos.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=380&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Caminata_por_Arikok/MAIN_arikok-hiking-tour-aruba-002-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Tour Caminata por Arikok
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Un tour de senderismo por el Parque Nacional de Arikok será la mejor manera para que conozcas el 18% de Aruba y su ecosistema.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=3471&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_UTV_por_la_Tarde/v2-UTV-afternoon-013-bamjyo.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Aventura Aruba UTV por la Tarde
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Un fabuloso tour que te lleva a disfrutar de una tarde emocionante conduciendo un vehículo todoterreno.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=5564&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Paseo_al_Atardecer/MAIN_sunsetsail-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        AW Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="title-tour black-nexus">
+                                        Paseo al Atardecer
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Un paseo nocturno, lleno de buena música y ambiente caribeño. Disfruta de la vista, el ambiente de fiesta y bebidas ilimitadas.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            Ver tarifas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=388&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/Excursions/388_Aruba_Beach_Hopping_Tour/Images/v2_MAIN_aruba-beach-hopping-008-web_tnybzn.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Tour Aruba Beach Hopping
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Disfruta de un día en el paraíso y vive lo mejor del Caribe! Nada con los lugareños y descubre dos de las playas más populares de Aruba.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=5428&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Privado_en_ATV_Individual/MAIN_atv-tour-aruba-01-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Tour Privado en ATV Individual
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Descubre Aruba desde otra perspectiva. ¡Maravíllate con acantilados, playas y la famosa piscina natural en este tour!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>  
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=3469&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image:url(https://www.nexustours.com/images/upload/services/Hecho_en_Aruba/made-in-aruba-01-web.JPEG)">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Hecho en Aruba
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Visita la fábrica de cigarros Aruhiba! Conoce desde el cultivo hasta la producción.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=410&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aruba_Highlights_Tour/v2-aruba-highlights-004-zetkqk.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Aruba Highlights Tour
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Una fascinante travesía que te llevará por la bella Aruba. Descubre algunos de sus más singulares tesoros naturales e históricos.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=380&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tour_Caminata_por_Arikok/MAIN_arikok-hiking-tour-aruba-002-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Tour Caminata por Arikok
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Un tour de senderismo por el Parque Nacional de Arikok será la mejor manera para que conozcas el 18% de Aruba y su ecosistema.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=3471&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aventura_Aruba_UTV_por_la_Tarde/v2-UTV-afternoon-013-bamjyo.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Aventura Aruba UTV por la Tarde
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Un fabuloso tour que te lleva a disfrutar de una tarde emocionante conduciendo un vehículo todoterreno.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://luxe.nexustours.com/services/details.aspx?productID=5564&paxs=10&productType=TKT&destinationID=108876&addDays=02&prov=SGN&nights=08&accion=searchservices" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Paseo_al_Atardecer/MAIN_sunsetsail-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    AW Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="title-tour black-nexus">
+                                    Paseo al Atardecer
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Un paseo nocturno, lleno de buena música y ambiente caribeño. Disfruta de la vista, el ambiente de fiesta y bebidas ilimitadas.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        Ver tarifas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
         <div class="container-ver-mas margin-bottom-68">
-            <a class="boton-ver-mas orange-nexus" href="https://www.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110967&paxs=10" target="_blank">
+            <a class="boton-ver-mas orange-nexus" href="https://www.nexustours.com/services/results.aspx?accion=searchservices&addDays=2&nights=6&destinationID=110898&paxs=10" target="_blank">
                 Ver más excursiones
             </a>
         </div>
@@ -1457,68 +1908,120 @@
                 </div>
                 <div class="container-texto-parrafo-video">
                     <h3 class="title-video margin-bottom-13">
-                        Descubre cosas para hacer con NexusTours en<span class="title-gradient"> Las Vegas</span>
+                        ¡Descubre cosas para hacer con LUXE Aruba!
                     </h3>
                     <div class="line-divider-2 gradient-color-nexus margin-bottom-13 tag-desk"></div>
                     <p class="gray-text text-parrafo">
-                        Unas vacaciones en Las Vegas son una emocionante oportunidad para explorar el corazón de esta ciudad electrizante.
-                        Descubre una escena gastronómica diferente, desde buffets impresionantes con platillos de los cinco continentes hasta restaurantes galardonados con estrellas Michelin.
-                        Recorre lugares emblemáticos como el Strip de Las Vegas y la Fuente del Bellagio, o adéntrate en la vibrante vida nocturna de Fremont Street.
-                        Ya sea apostando en los casinos más famosos del mundo o asistiendo a un espectáculo del Cirque du Soleil,
-                        siempre hay algo nuevo por descubrir en la “Capital del Entretenimiento Mundial”.
+                        Conecta con la naturaleza de este paraíso caribeño o conoce la capital Oranjestad, que alberga la mayoría de edificios
+                        históricos construidos en el siglo XIX. ¡Aruba y NexusTours tienen todo lo que necesitas para unas vacaciones inolvidables!
                     </p>
                 </div>
             </div>
             <div class="container-video">
-                <iframe width="100%" class="video" src="https://www.youtube.com/embed/LMpD10sSLXw?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <iframe width="100%" class="video" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL-jkxtLMY7OOjFxzlo4ymEEUzOKOgRyeO&autoplay=1&mute=1&loop=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
             </div>
         </div>
-        <div class="bannerlogin2 margin-bottom-46">
-            <img class="img-banner-login tag-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/banner/BE20_esp.jpg" loading="lazy">
-            <img class="img-banner-login tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/febrero_2024/banner/BE20mob_esp.jpg">
+        <h2 class="title margin-bottom-46">
+            Traslados
+        </h2>
+        <div class="container-row-transfer margin-bottom-100">
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/F2rbdl.png"  alt="" />  
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRASLADO
+                        </p>
+                        <h4 class="title-trans">
+                            De Lujo
+                        </h4>
+                        <p class="from-style">
+                            DESDE
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png"  alt="" />
+                            <p class="destination-trans">
+                                Aruba
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" href="https://luxe.nexustours.com/transfers/results.aspx?destinationID=108876&originID=115692&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%21-1" target="_blank">
+                            Reservar
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/F3rbpro.png"  alt="" />
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRASLADO
+                        </p>
+                        <h4 class="title-trans">
+                            Privado
+                        </h4>
+                        <p class="from-style">
+                            DESDE
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://luxe.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png"  alt="" />
+                            <p class="destination-trans">
+                                Aruba
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" href="https://www.nexustours.com/transfers/results.aspx?destinationID=108876&originID=115692&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%21-1" target="_blank">
+                            Reservar
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
+            <div class="card-transfer">
+                <img class="img-cars" src="https://www.nexustours.com/images/upload//Landing%20Pages/Febrero23/Miscelaneos/F1rbcomp.png"  alt="" />
+                <div class="container-card-trans">
+                    <div class="container-left-card-trans">
+                        <p class="text-gradient-2">
+                            TRASLADO
+                        </p>
+                        <h4 class="title-trans">
+                            Compartido
+                        </h4>
+                        <p class="from-style">
+                            DESDE
+                        </p>
+                        <div class="container-maps-texto">
+                            <img class="icon-maps-trans" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/icon-maps-3.png"  alt="" />
+                            <p class="destination-trans">
+                                Aruba
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-right-card-trans">
+                        <a class="boton-transfer" href="https://luxe.nexustours.com/transfers/results.aspx?destinationID=108876&originID=115692&addDays=2&paxs=10&accion=searchtransfers&roundtrip=true&customInfo=serviceType%21-1" target="_blank">
+                            Reservar
+                        </a>
+                    </div>
+                </div>
+                <div class="border-color-gradient">
+                </div>
+            </div>
         </div>
         <div class="container-swiper-destinations">
             <div class="text-card-swiper-destinations">
                 <p class="text-gradient-destinations">
-                    Los mejores destinos para visitar con NexusTours
+                    Los mejores destinos para visitar con LUXE
                 </p>
             </div>
             <div class="container-slider-botones-2 tag-desk">
                 <div class="swiper swiperDestinations swiper-destinations-style">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Theme_Park/card.jpg);">
-                                <div class="gradient-imagen-2">
-                                    <span class="span-destination">
-                                        Parques Temáticos
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/theme-park" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-york-esp.jpg);">
-                                <div class="gradient-imagen ">
-                                    <span class="span-destination">
-                                        
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/new-york" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-orlando.jpg);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/Orlando" target="_blank">
-                                </a>
-                            </div>
-                        </div>
                         <div class="swiper-slide swiper-slider-destinations">
                             <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
                                 <div class="gradient-imagen-2">
@@ -1526,29 +2029,29 @@
                                         Riviera Maya
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=110898&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta-esp.png);">
-                                <div class="gradient-imagen">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
-                                        
+                                        Punta Cana
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/punta-cana" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=110282&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica-esp.png);">
-                                <div class="gradient-imagen">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
-                                        
+                                        Jamaica
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108913&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
@@ -1559,62 +2062,30 @@
                                         Los Cabos
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/cabos" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=125355&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba-esp.png);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Aruba
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/aruba" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-nassau-esp.png);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        Nassau
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/nassau" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
                                 <div class="gradient-imagen-2">
                                     <span class="span-destination">
-                                        Costa Rica
+                                        República <br>
+                                        Dominicana
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108934&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep-esp.png);">
-                                <div class="gradient-imagen">
+                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                                <div class="gradient-imagen-2">
                                     <span class="span-destination">
-                                        
+                                        Santa Lucía
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/dominican-republic" target="_blank">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slider-destinations">
-                            <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia-esp.png);">
-                                <div class="gradient-imagen">
-                                    <span class="span-destination">
-                                        
-                                    </span>
-                                </div>
-                                <a class="activador" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108939&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
@@ -1625,7 +2096,7 @@
                                         San Martín
                                     </span>
                                 </div>
-                                <a class="activador" href="https://www.nexustours.com/saint-maarten" target="_blank">
+                                <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=195436&paxs=10" target="_blank">
                                 </a>
                             </div>
                         </div>
@@ -1633,17 +2104,16 @@
                 </div>
                 <div class="container-bottom-slider-destination">
                     <div class="line-divider-3">
-        
                     </div>
                     <div class="container-botones-flex">
                         <div class="swiper-button-prev swiper2-button-prev swiper-button-block">
                             <div class="button-swiper" style="transform: rotate(180deg);">
-                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png"  alt="" />
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/circle.png">
                             </div>
                         </div>
                         <div class="swiper-button-next swiper2-button-next swiper-button-block">
                             <div class="button-swiper">
-                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/gradient-button.png"  alt="" />
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/circle.png">
                             </div>
                         </div>
                     </div>
@@ -1652,68 +2122,35 @@
             <div class="swiper swiperDestinations-Mob swiper-destinations-style tag-mob">
                 <div class="swiper-wrapper swiper-wrap-auto">
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Theme_Park/card.jpg);">
-                            <div class="gradient-imagen-2">
-                                <span class="span-destination">
-                                    Parques Temáticos
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/theme-park" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-york-esp.jpg);">
-                            <div class="gradient-imagen ">
-                                <span class="span-destination">
-                                    
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/new-york" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-orlando.jpg);">
-                            <div class="gradient-imagen">
-                                <span class="span-destination">
-                                    
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/Orlando" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
                         <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-riviera.jpg);">
                             <div class="gradient-imagen-2">
                                 <span class="span-destination">
                                     Riviera Maya
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/Cancun-riviera-maya" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=110898&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta-esp.png);">
-                            <div class="gradient-imagen">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-punta.jpg);">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
-                                    
+                                    Punta Cana
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/punta-cana" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=110282&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica-esp.png);">
-                            <div class="gradient-imagen">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-jamaica.jpg);">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
-                                    
+                                    Jamaica
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/jamaica-excursions" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108913&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
@@ -1724,62 +2161,30 @@
                                     Los Cabos
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/cabos" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=125355&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-aruba-esp.png);">
-                            <div class="gradient-imagen">
-                                <span class="span-destination">
-                                    Aruba
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/aruba" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-nassau-esp.png);">
-                            <div class="gradient-imagen">
-                                <span class="span-destination">
-                                    Nassau
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/nassau" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-costa.jpg);">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep.jpg);">
                             <div class="gradient-imagen-2">
                                 <span class="span-destination">
-                                    Costa Rica
+                                    República <br>
+                                    Dominicana
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/costa-rica-" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108934&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-rep-esp.png);">
-                            <div class="gradient-imagen">
+                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia.jpg);">
+                            <div class="gradient-imagen-2">
                                 <span class="span-destination">
-                                    
+                                    Santa Lucía
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/dominican-republic" target="_blank">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slider-destinations">
-                        <div class="container-imagen-slider" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/Collections/new-slider-lucia-esp.png);">
-                            <div class="gradient-imagen">
-                                <span class="span-destination">
-                                    
-                                </span>
-                            </div>
-                            <a class="activador" href="https://www.nexustours.com/santa-lucia" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=108939&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
@@ -1790,7 +2195,7 @@
                                     San Martín
                                 </span>
                             </div>
-                            <a class="activador" href="https://www.nexustours.com/saint-maarten" target="_blank">
+                            <a class="activador" href="https://luxe.nexustours.com/services/results.aspx?accion=searchservices&addDays=02&nights=08&destinationID=195436&paxs=10" target="_blank">
                             </a>
                         </div>
                     </div>
@@ -1798,15 +2203,11 @@
                 <div class="swiper-pagination swiper4-pagination"></div>
             </div>
         </div>
-        <div class="container-text-footer" id="terminos">
-            <p class="text-footer">
-                *El descuento solo aplica en tours y se verá aplicado automáticamente en la tarifa final. No aplica con otras promociones o cupones de descuento. Valido para reservas con un mínimo de 30 días de anticipación de compra en tours de Punta Cana, con un descuento máximo de hasta 20%. <br>
-            </p>
-        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             let login = document.getElementById('user-bar-navbar');
-            let delegacion = "Las Vegas";
+            let delegacion = "MX Cancun & Aruba";
             var moneda = document.querySelector('#upper-menu-v3-currency-selector-btn-btn > .hidden-xs')
             var dicProductos = {
                 tour_id_delegation: [],
@@ -1918,7 +2319,6 @@
                                     indices.push(indice)
                                 }
                             });
-                            
                             if(indices.length === 0){
                                 if(login === null){
                                     switch(moneda.innerText){

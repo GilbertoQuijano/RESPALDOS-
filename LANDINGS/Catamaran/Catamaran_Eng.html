@@ -1,0 +1,3076 @@
+<!--Ingles-->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        a,
+        a:hover,
+        a:visited{
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, p{
+            margin: 0;
+        }
+
+        .body-media{
+            width: 1160px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+        @media (max-width: 1200px){
+            .body-media{
+                width: 960px;
+            }
+        }
+        @media (max-width: 992px){
+            .body-media{
+                width: 100%;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media (max-width: 992px){
+            .tag-desk{
+                display: none;
+            }
+        }
+        .tag-mob{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tag-mob{
+                display: block;
+            }
+        }
+
+        .arrayFiltros{
+            position: absolute; 
+            right: 0; 
+            top: 58px; 
+            width: 25%; 
+            height: 360px; 
+            z-index: 10; 
+            background-color: white; 
+            border-radius: 19px; 
+            overflow: hidden; 
+            padding: 35px 39px 42px 49px; 
+            box-sizing: border-box;
+            display: none;
+        }
+        @media (min-width:993px) and (max-width:1200px){
+            .arrayFiltros{
+                width: 30%; 
+            }
+        }
+
+        @media (max-width:993px){
+            .arrayFiltros{
+                width: 260px; 
+                height: 660px;
+            }
+        }
+
+        .content-arrayFiltros{
+            width: 100%; 
+            height: 100%;
+        }
+
+        .styleTitleFiltros{
+            color: #57A958; 
+            font-weight: 700; 
+            font-size: 24px; 
+            line-height: 137%; 
+            margin-bottom: 7px;
+            text-align: left;
+        }
+
+        .container-textDestination{
+            height: 85%; 
+            max-height: 85%; 
+            overflow-y: auto;
+        }
+        @media (max-width:993px){
+            .container-textDestination{
+                height: fit-content; 
+                max-height: none; 
+                overflow-y: none;
+            }
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 4px;
+            opacity: 0;
+        }
+
+        /* Track */
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            transition: all 3s ease;
+        }
+        
+        /* Handle */
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+
+        /* Handle on hover */
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+
+        .textDestination{
+            color: #7E7E7E;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 137%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            user-select: none;
+            display: block;
+            text-align: left;
+        }
+
+        .container-slider-botones{
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .margin-bottom-24{
+            margin-bottom: 24px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-24{
+                margin-bottom: 5vw;
+            }
+        }
+
+        .margin-bottom-48{
+            margin-bottom: 48px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-48{
+                margin-bottom: 7vw;
+            }
+        }
+
+        .title{
+            font-size: 40px !important;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: left !important;
+        }
+        @media (max-width:992px){
+            .title{
+                font-size: 8vw !important;
+                line-height: 121%;
+                font-weight: 700;
+            }
+        }
+
+        .container-botones-tours{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            position: relative;
+            height: 45px;
+            align-items: center;
+        }
+
+        .swiper-button-block{
+            position: static;
+        }
+
+        .button-swiper{
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden; 
+            border-radius: 50px;
+        }
+
+        .imagen-button-swiper{
+            width: 40px; 
+            height: 40px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .imagen-button-swiper{
+                width: 12vw; 
+                height: 12vw;
+            }
+        }
+
+        .container-cards-width{
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width:0px) and (max-width:1200px){
+            .container-cards-width{
+                width: 100%;
+                align-items: flex-start;
+            }
+        }
+
+        .container-link-card{
+            background-color: transparent; 
+            width: 270px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px; 
+            border-radius: 15px 15px 0px 0px; 
+            overflow: hidden; 
+            margin-bottom: 6px;
+            text-align: left;
+        }
+        @media (min-width:0px) and (max-width:1200px){
+            .container-link-card{
+                width: 94%;
+            }
+        }
+
+        .container-slider-card{
+            width: 100%; 
+            height: 177px; 
+            border-radius: 15px; 
+            overflow: hidden;
+        }
+        @media (min-width:992px) and (max-width:1200px){
+            .container-slider-card{
+                height: 206px;
+            }
+        }
+
+        .name-tour-card{
+            font-size: 20px; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #333; 
+            margin: 0; 
+            line-height: normal;
+        }
+
+        .container-destination-card{
+            display: flex; 
+            align-items: center; 
+            gap: 3px;
+        }
+
+        .destination-card{
+            font-size: 12px; 
+            color: #555; 
+            font-weight: 500; 
+            line-height: normal; 
+            letter-spacing: -.5px;
+        }
+
+        .text-card{
+            font-size: 12px; 
+            line-height: normal; 
+            font-weight: 500; 
+            letter-spacing: -.48px; 
+            color: #9D9D9D;
+        }
+
+        .containerPriceCard{
+            display: flex; 
+            flex-direction: row; 
+            gap: 5px; 
+            align-items: flex-end;
+        }
+
+        .precio-card{
+            font-size: 20px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555; 
+            text-transform: uppercase;
+        }
+
+        .precio-card-through{
+            font-size: 16px; 
+            line-height: normal; 
+            font-weight: 700; 
+            letter-spacing: -.4px; 
+            color: #555555ab; 
+            text-transform: uppercase;
+            text-decoration: line-through;
+        }
+
+        .container-discount-card{
+            background-color: #FF621D; 
+            width: fit-content; 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            box-sizing: border-box; 
+            padding: 4px 12px; 
+            border-radius: 10px; 
+            gap: 7px;
+            cursor: pointer;
+        }
+
+        .text-discount-card{
+            font-size: 12px; 
+            color: #FFF; 
+            line-height: normal; 
+            letter-spacing: -.36px; 
+            font-weight: 700;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+    
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #FFFFFF !important;
+            padding-top: 22px !important;
+            width: auto !important;
+            height: 20px !important;
+        }
+
+        .container-title-swiper-tours{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /*Card Bottom*/
+
+        .cardDestinoBottom{
+            height: 110px; 
+            border-radius: 12px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+
+        @media (min-width:0px) and (max-width:992px){
+            .cardDestinoBottom{
+                width: 60vw;
+                height: 160px;
+            }
+        }
+
+        .textCardDestinoBottom{
+            text-align: center; 
+            color: white; 
+            font-weight: 500; 
+            line-height: 120%; 
+            font-size: 21px;
+        }
+
+        .containerRowDestinosBottom{
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .containerRowDestinosBottom{
+                flex-direction: row;
+                gap: 2vw;
+            }
+        }
+
+        .containerDestinosBottom{
+            display: flex; 
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .containerDestinosBottom{
+                width: 100%;
+                gap: 2vw;
+            }
+        }
+
+        /*Header Selector*/
+        .grid-slider-header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom: 85px;
+        }
+        @media (max-width: 767px) {
+            .grid-slider-header{
+                display: block;
+                margin-bottom: 12vw;
+            }
+        }
+
+        .slider-left-header { 
+            grid-area: 1 / 1 / 3 / 2; 
+        }
+
+        .container-slider-header{
+            position: relative; 
+            display: flex;
+            width: 50%;
+        }
+        @media (max-width: 992px) {
+            .container-slider-header{
+                height: fit-content; 
+                position: relative; 
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        .container-blogs-header{
+            border-radius: 10px; 
+            overflow: hidden; 
+            width: fit-content; 
+            height: fit-content; 
+            position: relative;
+            margin-left: auto;
+        }
+        @media (max-width: 992px) {
+            .container-blogs-header{
+                margin-left: 0;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .imagen-slider-header{
+            width: 561px; 
+            height: 590px;
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 767px) {
+            .imagen-slider-header{
+                width: 100%; 
+                height: 147vw;
+            }
+        }
+
+        .gradient-blogs-header{
+            position: absolute; 
+            z-index: 2; 
+            width: 100%; 
+            height: 100%; 
+            top: 0; 
+            background:  linear-gradient(0deg, rgba(0, 0, 0, 0.73) 0.08%, rgba(0, 0, 0, 0.00) 55.42%);
+        }
+
+        .container-etiqueta-header{
+            position: absolute;
+            bottom: 36px; 
+            left: 36px;
+        }
+        @media (max-width: 767px) {
+            .container-etiqueta-header{
+                position: absolute;
+                bottom: 8vw; 
+                left: 8vw;
+            }
+        }
+
+        .etiqueta-arriba{
+            font-size: 40px; 
+            line-height: 130%; 
+            font-weight: 700; 
+        }
+        @media (max-width: 767px) {
+            .etiqueta-arriba{
+                font-size: 7vw; 
+                font-weight: 700; 
+            }
+        }
+
+        .white-text{
+            color: #FFFFFF;
+        }
+        
+        .etiqueta-abajo{
+            font-size: 16px; 
+            line-height: 16px; 
+            font-weight: 400; 
+        }
+        @media (max-width: 767px) {
+            .etiqueta-abajo{
+                font-size: 4vw; 
+                line-height: 4vw; 
+                font-weight: 400; 
+            }
+        }
+
+        .orange-nexus-bg{
+            background-color: #F37021;
+        }
+
+        .etiqueta-abajo-mob{
+            padding: 8px 17px; 
+            width: fit-content; 
+            margin-left: 0; 
+            font-size: 16px; 
+            border-radius: 50px;
+        }
+        @media (min-width:0px) and (max-width:992px){
+            .etiqueta-abajo-mob{
+                padding: 2vw 5vw; 
+                font-size: 4vw; 
+            }
+        }
+
+        .activador{
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            z-index: 3;
+        }
+
+        .imagen-right-header{
+            width: 565px; 
+            height: 290px; 
+        }
+
+        .container-bottom-slider{
+            display: flex; 
+            flex-direction: row;
+            margin-bottom: 69px;
+        }
+
+        .container-botones-2{
+            position: absolute; 
+            display: flex;  
+            gap: 10px;
+            bottom: 35px;
+            height: 40px;
+            right: 41px;
+            width: 122px;
+        }
+        @media (max-width: 767px) {
+            .container-botones-2{
+                position: absolute; 
+                display: flex;  
+                gap: 2vw;
+                bottom: 8vw;
+                right: 8vw;
+                width: 32vw;
+            }
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        @media (max-width: 992px){
+            .margin-bottom-5{
+                margin-bottom: 15px;
+            }
+        }
+
+        .containerRecomendado{
+            padding: 5px 5px; 
+            background-color: #333; 
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .containerLeftRectangle{
+            height: 287px; 
+            border-radius: 10px;
+        }
+
+        .backgroundGradientLeft{
+            background: linear-gradient(95deg, #FD921E -3.06%, #FF621D 47.11%, #E73A4E 98.35%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .backgroundImgLeft{
+            background-image: url('https://www.nexustours.com/images/upload/services/9148_PH_Isla-Mujeres_Queen/albplatino009.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 0 25px 21px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .containerLeft{
+            width: 50%; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+        }
+
+        .containerTextRectangle{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: end; 
+            gap: 20px;
+        }
+
+        .containerTitleRectangle{
+            width: 370px;
+        }
+
+        .titleRectangle{
+            font-size: 25px; 
+            font-weight: 500; 
+            line-height: 130%;
+        }
+
+        .subtitleGradientLeft{
+            font-size: 18px; 
+            line-height: 130%;
+        }
+
+        .titleGradientLeft{
+            font-size: 60px; 
+            font-weight: 700; 
+            line-height: 100%;
+        }
+
+        .terminos {
+            margin-top: 20px;
+            & p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 144.9%;
+            }
+        }
+
+
+        .tag-deskFlex{
+            display: flex;
+        }
+        @media (max-width: 992px){
+            .tag-deskFlex{
+                display: none;
+            }
+        }
+
+        .tag-mobFlex{
+            display: none;
+        }
+        @media (max-width: 992px){
+            .tag-mobFlex{
+                display: flex;
+            }
+        }
+
+        @media (max-width: 992px){
+            .container5{
+                width: 308vw;
+            }
+        }
+
+        @media (max-width: 992px){
+            .container4{
+                width: 248vw;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .banner-mob {
+                display: block;
+            }
+            .banner-desk {
+                display: none !important;
+            }
+        }
+
+        .margin-bottom-46{
+            margin-bottom: 46px;
+        }
+        @media (max-width:992px){
+            .margin-bottom-46{
+                margin-bottom: 6vw;
+            }
+        }
+        
+        .swiper-product {
+            width: 95%;
+            height: 570px;
+        }
+
+        @media (max-width:1200px){
+            .swiper-product {
+                width: 95%;
+                height: 578px;
+            }
+        }
+
+        @media (max-width:992px){
+            .swiper-product {
+                width: 97.5vw;
+                height: 120vw;
+            }
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 577px;
+            margin: 0;
+        }
+
+        .swiper-card{
+            margin: auto;
+        }
+        @media (max-width:992px){
+            .swiper-card{
+                margin-top: 0vw;
+                height: auto;
+            }
+        }
+
+        .card-slider-tour{
+            height: auto;
+            width: 345px;
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid #EDEEEF;
+        }
+        @media (max-width:1200px){
+            .card-slider-tour{
+                width: 285px;
+            }
+        }
+        @media (max-width:992px){
+            .card-slider-tour{
+                width: 80vw;
+            }
+        }
+
+        .card-slider-tour:hover{
+            box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, .2);
+        }
+
+        .container-img-card{
+            width: 100%;
+            height: 240px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        @media (max-width:992px){
+            .container-img-card{
+                height: 52vw;
+            }
+        }
+
+        .etiqueta-card{
+            position: absolute;
+            padding: 7px 16px 7px 15px;
+            bottom: 0;
+            left: auto;
+            right: 10%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        @media (max-width:992px){
+            .etiqueta-card{
+                padding: 7px 16px 7px 15px;
+                gap: 6px;
+            }
+        }
+
+        .icon-maps{
+            width: 12px;
+            height: 16px;
+        }
+
+        .icon-maps-trans{
+            height: 16px;
+        }
+        @media (max-width:992px){
+            .icon-maps-trans{
+                height: 3vw;
+            }
+        }
+
+        .text-etiqueta-imagen{
+            font-size: 12px;
+        }
+        @media (max-width: 992px){
+            .text-etiqueta-imagen{
+                font-size: 3.5vw;
+            }
+        }
+
+        .container-text-card{
+            height: Auto;
+            width: 100%;
+        }
+
+        .container-text-card-upper-transfer-home{
+                padding: 17px 20px 0px 20px;
+                height: 130px;
+            }
+
+        @media(max-width:1200px){
+            .container-text-card-upper-transfer-home{
+                padding: 8px 7px 0px 13px;
+                height: 140px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-upper-transfer-home{
+                padding: 4vw 5vw 0vw 5vw;
+                height: 38vw;
+            }
+        }
+
+        .container-text-card-upper{
+            padding: 17px 32px 0px 29px;
+            height: 155px;
+        }
+
+        @media(max-width:1200px){
+            .container-text-card-upper{
+                height: 180px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-upper{
+                padding: 4vw 5vw 0vw 5vw;
+                height: 39vw;
+            }
+        }
+
+        .container-text-card-bottom-transfer-home{
+            height: 65px;
+            border-top: 1px solid #DDE1E8;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        @media (max-width:992px){
+            .container-text-card-bottom-transfer-home{
+                height: 13vw;
+            }
+        }
+
+        .container-text-card-bottom{
+            height: 74px;
+            border-top: 1px solid #DDE1E8;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 0 29px;
+            box-sizing: border-box;
+        }
+        @media (max-width:1200px){
+            .container-text-card-bottom{
+                padding: 0px 0px 0px 26px;
+            }
+        }
+        @media (max-width:992px){
+            .container-text-card-bottom{
+                height: 18vw;
+            }
+        }
+
+        .text-gradient{
+            font-size: 12px;
+            font-weight: 900;
+            color: #272b4e;
+            text-align: left;
+        }
+        @media (max-width:992px){
+            .text-gradient{
+                font-size: 3vw;
+                margin-bottom: 1vw;
+            }
+        }
+
+        .text-gradient-2{
+            font-size: 12px;
+            font-weight: 900;
+            color:rgba(255, 98, 29, 1);
+        }
+        @media (max-width:992px){
+            .text-gradient-2{
+                font-size: 3vw;
+            }
+        }
+
+        .title-tour{
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            line-height: 120%;
+            text-align: left;
+        }
+        @media (max-width:1200px){
+            .title-tour{
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width:992px){
+            .title-tour{
+                font-size: 4.5vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .text-parrafo-card{
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: left;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        @media (max-width:992px){
+            .text-parrafo-card{
+                font-size: 3.8vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .container-all-icon-text-card{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .container-icon-text-card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .text-cards-icon{
+            color: #8F8F8F;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 120%;
+            text-align: left;
+        }
+        @media (max-width:992px){
+            .text-cards-icon{
+                font-size: 2.8vw;
+            }
+        }
+
+        .content-bottom-price{
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            width: fit-content;
+            margin: auto 7% auto auto;
+            align-items: flex-end;
+            gap: 5px;
+        }
+        @media (max-width:992px){
+            .content-bottom-price{
+                gap: 5px;
+            }
+        }
+
+        .boton-tarifas{
+            width: fit-content;
+            border-radius: 100px;
+            padding: 10px 18px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        @media (max-width:1200px){
+            .boton-tarifas{
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width:992px){
+            .boton-tarifas{
+                padding: 2vw 4vw;
+                font-size: 3vw;
+            }
+        }
+
+        .icon-cards{
+            height: 20px;
+            width: 20px;
+        }
+
+        .black-nexus{
+            color: #333;
+        }
+
+        .gray-text-card{
+            color: #473d35;
+        }
+
+        .colorWHL{
+            background-color: #F37021;
+        }
+
+        .colorBotonWHL{
+            background: #F37021;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin-bottom-24">
+        <img style="display: block; width: 100%;" class="banner-desk" src="https://www.nexustours.com/images/upload//Landing%20Pages/junio_2024/banners/Catamaran_eng.jpg">
+        <img style="width: 100%;" class="tag-mob" src="https://www.nexustours.com/images/upload//Landing%20Pages/junio_2024/banners/Catamaranmob_eng.jpg">
+    </div>
+    <div class="body-media">
+        <div class="margin-bottom-48" style="display: flex; justify-content: space-between;">
+            <div class="containerLeft tag-deskFlex">
+                <div class="containerLeftRectangle backgroundGradientLeft">
+                    <div>
+                        <span class="white-text subtitleGradientLeft">
+                            Reserve Now
+                        </span>
+                        <h1 class="white-text titleGradientLeft">
+                            Top Excursions
+                        </h1>
+                    </div>
+                </div>
+                <a href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥9148¥109303?addDays=2&nights=6&paxs=10" class="containerLeftRectangle backgroundImgLeft" target="_blank">
+                    <div class="containerTextRectangle">
+                        <div class="containerTitleRectangle">
+                            <div class="margin-bottom-5 containerRecomendado">
+                                <p class="white-text">
+                                    Our Selection in Cancun
+                                </p>
+                            </div>
+                            <p class="white-text titleRectangle">
+                                PH Isla Mujeres Queen
+                            </p>
+                        </div>
+                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                            Book Now
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container-slider-header">
+                <div class="swiper swiperBlogsHeader" style="width: 100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/Saona_en_Catamar_n/MAIN-Saona-by-catamaran--1--web.JPG">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/Saona_en_Catamar_n/MAIN-Saona-by-catamaran--1--web.JPG');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Recommended Tour in Punta Cana:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5">
+                                            Saona by Catamaran
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Book Now
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥9669¥110282?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/Tropical_Dreamer_Cruise/MAIN_tropical-dreamer-cruise-montego-06-web.JPEG">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/Tropical_Dreamer_Cruise/MAIN_tropical-dreamer-cruise-montego-06-web.JPEG');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Recommended Tour in Jamaica:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5">
+                                            Tropical Dreamer Cruise
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Book Now
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/jamaica/SGN¥TKT¥7303¥108913?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-blogs-header">
+                                <img class="imagen-slider-header tag-desk" src="https://www.nexustours.com/images/upload/services/Ocean_Excelsior_Trimaran/Ocean_Excelsior_Catamaran_web_(1)_ijxjxs.jpg">
+                                <div class="imagen-slider-header tag-mob" style="background-image: url('https://www.nexustours.com/images/upload/services/Ocean_Excelsior_Trimaran/Ocean_Excelsior_Catamaran_web_%281%29_ijxjxs.jpg');"></div>
+                                <div class="gradient-blogs-header">
+                                    <div class="container-etiqueta-header">
+                                        <div class="margin-bottom-5 containerRecomendado tag-desk">
+                                            <p class="white-text">
+                                                Recommended Tour in Costa Rica:
+                                            </p>
+                                        </div>
+                                        <p class="etiqueta-arriba white-text margin-bottom-5">
+                                            Trimaran Ocean Excelsior
+                                        </p>
+                                        <div class="white-text orange-nexus-bg etiqueta-abajo-mob">
+                                            Book Now
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="activador" href="https://www.nexustours.com/services/costa-rica/SGN¥TKT¥10126¥108888?addDays=2&nights=6&paxs=10" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bottom-slider">
+                    <div class="container-botones-2">
+                        <div class="swiper-button-next swiper-header-button-next">
+                            <div class="button-swiper">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/botonGris.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-header-button-prev">
+                            <div class="button-swiper" style="transform: rotate(180deg);">
+                                <img class="imagen-button-swiper" src="https://www.nexustours.com/images/upload//Landing%20Pages/BookEarly/botonGris.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Cancun">
+            <h2 class="title">
+                Cancun & Riviera Maya
+            </h2>
+            <div class="swiper-button-next swiper1-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper1-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥9981¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Isla_Mujeres_Privilege/IslaImg.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancun & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Isla Mujeres Privilege
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        The Isla Mujeres Privilege Tour offers guests a state-of-the-art catamaran in the Mexican Caribbean.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥1275¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/1275_Isla-Mujeres_Plus/Isla-Mujeres-Plus_01.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancun & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Isla Mujeres Plus
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Board the catamaran for the Caribbean and Isla Mujeres adventure with an open bar, fun activities, and a lively Caribbean party.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4549¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Isla_Mujeres_Platinum/MAIN-4549-Isla-Mujeres-Platinum-eenzvx.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancun & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Isla Mujeres Platinum
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Luxurious catamaran. The limited space makes your journey a comfortable one with exclusive services.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥9905¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Island_Conquest/Island_Conquest_web_%289%29.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Cancun & Riviera Maya
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Island Conquest
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Isla Mujeres is the ideal destination that will envelop your senses from beginning to end.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥9981¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Isla_Mujeres_Privilege/IslaImg.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancun & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Isla Mujeres Privilege
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    The Isla Mujeres Privilege Tour offers guests a state-of-the-art catamaran in the Mexican Caribbean.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥1275¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/1275_Isla-Mujeres_Plus/Isla-Mujeres-Plus_01.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancun & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Isla Mujeres Plus
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Board the catamaran for the Caribbean and Isla Mujeres adventure with an open bar, fun activities, and a lively Caribbean party.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥4549¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Isla_Mujeres_Platinum/MAIN-4549-Isla-Mujeres-Platinum-eenzvx.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancun & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Isla Mujeres Platinum
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Luxurious catamaran. The limited space makes your journey a comfortable one with exclusive services.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/mexico/quintana-roo/cancun/SGN¥TKT¥9905¥109303?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Island_Conquest/Island_Conquest_web_%289%29.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Cancun & Riviera Maya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Island Conquest
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Isla Mujeres is the ideal destination that will envelop your senses from beginning to end.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Punta-Cana">
+            <h2 class="title">
+                Punta Cana
+            </h2>
+            <div class="swiper-button-next swiper2-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper2-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper2 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5246¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Happy_Hour_Sailing_Cruise/MAIN-5246-Happy-Hour-by-Marinarium-zszr9i.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Happy Hour Sailing Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Set sail along the coast of Bavaro in a catamaran party, Punta Cana style. Our entertainment activities will keep you busy dancing to the rhythm of merengue and bachata as you enjoy delicious Mamajuana drinks.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Platinum_VIP_Catamaran/v2-17052022--WEF8849-Editar-zvt4dd-e30lv8.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Platinum VIP Catamaran
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Under the sun's warm rays, the VIP Platino catamaran will guide you along the stunning Bavaro coast for an unforgettable all-inclusive adventure.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥10247¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Royalton_Vibes_Cruise/V2DSC-0090-rppztx-3-xkczbb.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Royalton Vibes Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        The best way to party in Punta Cana is to take a catamaran excursion and sail to palm-fringed beaches and turquoise waters.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥9669¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Saona_en_Catamar_n/MAIN-Saona-by-catamaran--1--web.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Punta Cana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Saona en Catamarán
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Book the ultimate tropical getaway in Saona. Dive into Dominican culture while relaxing on a comfortable catamaran.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥5246¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Happy_Hour_Sailing_Cruise/MAIN-5246-Happy-Hour-by-Marinarium-zszr9i.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Happy Hour Sailing Cruise
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Set sail along the coast of Bavaro in a catamaran party, Punta Cana style. Our entertainment activities will keep you busy dancing to the rhythm of merengue and bachata as you enjoy delicious Mamajuana drinks.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥559¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Platinum_VIP_Catamaran/v2-17052022--WEF8849-Editar-zvt4dd-e30lv8.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Platinum VIP Catamaran
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Under the sun's warm rays, the VIP Platino catamaran will guide you along the stunning Bavaro coast for an unforgettable all-inclusive adventure.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥10247¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Royalton_Vibes_Cruise/V2DSC-0090-rppztx-3-xkczbb.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Royalton Vibes Cruise
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    The best way to party in Punta Cana is to take a catamaran excursion and sail to palm-fringed beaches and turquoise waters.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="https://www.nexustours.com/services/dominican-republic/la-altagracia/punta-cana/SGN¥TKT¥9669¥110282?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Saona_en_Catamar_n/MAIN-Saona-by-catamaran--1--web.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Punta Cana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Saona en Catamarán
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Book the ultimate tropical getaway in Saona. Dive into Dominican culture while relaxing on a comfortable catamaran.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Jamaica">
+            <h2 class="title">
+                Jamaica
+            </h2>
+            <div class="swiper-button-next swiper3-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper3-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper3 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥7303¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tropical_Dreamer_Cruise/MAIN_tropical-dreamer-cruise-montego-06-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Tropical Dreamer Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Descubre las costas de Jamaica en un divertido catamarán! Visita los arrecifes de corales y peces en una asombrosa práctica de snorkel.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Cool_Running_Cruise/v2-cool-runnings-catamaran-cruise-trelawny-07-adijou.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Cool Runnings Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Disfruta un maravilloso día por las costas de Jamaica y visitando las cascadas de Dunn, ¡una experiencia única!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥10861¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/10861_Island_Cruise_Reggae_Jammin_Sail/10861_Island_Cruise_Reggae02.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Jamaica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Island Cruise Reggae Jammin' Sail
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Deslízate por las aguas cristalinas y disfruta de las fascinantes vistas de Negril.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥7303¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Tropical_Dreamer_Cruise/MAIN_tropical-dreamer-cruise-montego-06-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Tropical Dreamer Cruise
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Descubre las costas de Jamaica en un divertido catamarán! Visita los arrecifes de corales y peces en una asombrosa práctica de snorkel.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥1090¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Cool_Running_Cruise/v2-cool-runnings-catamaran-cruise-trelawny-07-adijou.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Cool Runnings Cruise
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Disfruta un maravilloso día por las costas de Jamaica y visitando las cascadas de Dunn, ¡una experiencia única!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/jamaica/SGN¥TKT¥10861¥108913?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/10861_Island_Cruise_Reggae_Jammin_Sail/10861_Island_Cruise_Reggae02.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Jamaica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Island Cruise Reggae Jammin' Sail
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Deslízate por las aguas cristalinas y disfruta de las fascinantes vistas de Negril.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Aruba">
+            <h2 class="title">
+                Aruba
+            </h2>
+            <div class="swiper-button-next swiper4-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper4-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper4 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥391¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aruba_al_atardecer/MAIN_havanas-sunset-cruise-002-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Aruba al atardecer
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Ve el atardecer desde un catamarán. ¡Los paisajes de Aruba te enamorarán!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥397¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/397/MAIN_pelican-sunset-cruise-aruba.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Aruba
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Pelican Sunset Cruise
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Vive un día inolvidable, rodeado de la belleza marina de Aruba, mientras navegas en un catamarán.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥5564¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Paseo_al_Atardecer/MAIN_sunsetsail-web.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Santa Lucía
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Paseo al Atardecer
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Un paseo nocturno, lleno de buena música y ambiente caribeño. Disfruta de la vista, el ambiente de fiesta y bebidas ilimitadas.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥391¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Aruba_al_atardecer/MAIN_havanas-sunset-cruise-002-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Aruba al atardecer
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Ve el atardecer desde un catamarán. ¡Los paisajes de Aruba te enamorarán!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥397¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/397/MAIN_pelican-sunset-cruise-aruba.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Aruba
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Pelican Sunset Cruise
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Vive un día inolvidable, rodeado de la belleza marina de Aruba, mientras navegas en un catamarán.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/aruba/SGN¥TKT¥5564¥108876?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Paseo_al_Atardecer/MAIN_sunsetsail-web.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Santa Lucía
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Paseo al Atardecer
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Un paseo nocturno, lleno de buena música y ambiente caribeño. Disfruta de la vista, el ambiente de fiesta y bebidas ilimitadas.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="Costa-Rica">
+            <h2 class="title">
+                Costa Rica
+            </h2>
+            <div class="swiper-button-next swiper5-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper5-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper5 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/costa-rica/SGN¥TKT¥10126¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Ocean_Excelsior_Trimaran/Ocean_Excelsior_Catamaran_web_%281%29_ijxjxs.jpg);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Trimarán Ocean Excelsior
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Haz de tus vacaciones una experiencia con todo incluido que recordarás para siempre!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/costa-rica/SGN¥TKT¥1107¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Pura_Vida___Paseo_por_la_Costa_/MAIN-1107-Pura-Vida-Sailing-pprpvt.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        Costa Rica
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Pura Vida - Paseo por la Costa
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Experimenta la combinación perfecta de emoción y relajación mientras navegas en un catamarán.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/costa-rica/SGN¥TKT¥10126¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Ocean_Excelsior_Trimaran/Ocean_Excelsior_Catamaran_web_%281%29_ijxjxs.jpg);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Trimarán Ocean Excelsior
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Haz de tus vacaciones una experiencia con todo incluido que recordarás para siempre!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/costa-rica/SGN¥TKT¥1107¥108888?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Pura_Vida___Paseo_por_la_Costa_/MAIN-1107-Pura-Vida-Sailing-pprpvt.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    Costa Rica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Pura Vida - Paseo por la Costa
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Experimenta la combinación perfecta de emoción y relajación mientras navegas en un catamarán.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container-slider-botones margin-bottom-48 tag-desk" id="San-Martin">
+            <h2 class="title">
+                San Martín
+            </h2>
+            <div class="swiper-button-next swiper6-button-next">
+                <div class="button-swiper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper6-button-prev">
+                <div class="button-swiper" style="transform: rotate(180deg);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <g clip-path="url(#clip0_73_2)">
+                            <path d="M26 0C11.6588 0 4.12839e-07 11.6588 0 26C-4.12842e-07 40.3412 11.6588 52 26 52C40.3412 52 52 40.3412 52 26C52 11.6588 40.34 0 26 0ZM33.4163 27.9423L25.2059 36.1527C24.127 37.211 22.399 37.211 21.3201 36.1527C20.2527 35.0776 20.2527 33.3419 21.3201 32.2668L27.6151 26L21.3201 19.7332C20.2476 18.6594 20.2476 16.9198 21.3201 15.8473C22.3926 14.7749 24.1334 14.7749 25.2059 15.8473L33.4163 24.0577C34.4836 25.1328 34.4836 26.8685 33.4163 27.9436V27.9423Z" fill="#F1711F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_73_2">
+                                <rect width="52" height="52" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper6 swiper-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/saint-martin-island/SGN¥TKT¥3154¥195436?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Catamar_n_Tropical_Beach_y_Snorkel/v2-Tropical--Catamaran--Snorkeling--sailing---and--Beach--Time-7-web-j6pqp6.JPG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        San Martin
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Catamarán Tropical Beach y Snorkel
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        ¡Un catamarán en San Martín es lo que necesitarás para divertirte en tus próximas vacaciones, donde navegarás con la comodidad y las atenciones que mereces!
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-card">
+                        <a class="card-slider-tour" href="www.nexustours.com/services/saint-martin-island/SGN¥TKT¥3778¥195436?addDays=2&nights=6&paxs=10" target="_blank">
+                            <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Catamar_n_Tropical_Playa___Snorkel___Excursi_n_para_Cruceros/Tropical_Catamaran_Beach_and_Snorkeling_Web_13.JPEG);">
+                                <div class="etiqueta-card colorWHL">
+                                    <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                    <p class="white-text text-etiqueta-imagen">
+                                        San Martín
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-text-card">
+                                <div class="container-text-card-upper">
+                                    <p class="text-gradient">
+                                        AQUATIC ADVENTURE
+                                    </p>
+                                    <p class="title-tour black-nexus">
+                                        Catamarán Tropical Playa & Snorkel
+                                    </p>
+                                    <p class="gray-text-card text-parrafo-card">
+                                        Un viaje que te llevará por increíbles playas con maravillosas vistas mientras disfrutas de un servicio como ningún otro.
+                                    </p>
+                                </div>
+                                <div class="container-text-card-bottom">
+                                    <div class="container-all-icon-text-card">
+                                        <div class="container-icon-text-card">
+                                            <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                            <p class="text-cards-icon">
+                                                Flexible <br>
+                                                Cancelation
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-bottom-price">
+                                        <div class="boton-tarifas colorBotonWHL white-text">
+                                            See prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiperTours-Mob swiper-product margin-bottom-46 tag-mob">
+            <div class="swiper-wrapper swiper-wrap-auto">
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/saint-martin-island/SGN¥TKT¥3154¥195436?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Catamar_n_Tropical_Beach_y_Snorkel/v2-Tropical--Catamaran--Snorkeling--sailing---and--Beach--Time-7-web-j6pqp6.JPG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    San Martin
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Catamarán Tropical Beach y Snorkel
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    ¡Un catamarán en San Martín es lo que necesitarás para divertirte en tus próximas vacaciones, donde navegarás con la comodidad y las atenciones que mereces!
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                    <a class="card-slider-tour" href="www.nexustours.com/services/saint-martin-island/SGN¥TKT¥3778¥195436?addDays=2&nights=6&paxs=10" target="_blank">
+                        <div class="container-img-card" style="background-image: url(https://www.nexustours.com/images/upload/services/Catamar_n_Tropical_Playa___Snorkel___Excursi_n_para_Cruceros/Tropical_Catamaran_Beach_and_Snorkeling_Web_13.JPEG);">
+                            <div class="etiqueta-card colorWHL">
+                                <img class="icon-maps" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Icon-Maps.png">
+                                <p class="white-text text-etiqueta-imagen">
+                                    San Martín
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-text-card">
+                            <div class="container-text-card-upper">
+                                <p class="text-gradient">
+                                    AQUATIC ADVENTURE
+                                </p>
+                                <p class="title-tour black-nexus">
+                                    Catamarán Tropical Playa & Snorkel
+                                </p>
+                                <p class="gray-text-card text-parrafo-card">
+                                    Un viaje que te llevará por increíbles playas con maravillosas vistas mientras disfrutas de un servicio como ningún otro.
+                                </p>
+                            </div>
+                            <div class="container-text-card-bottom">
+                                <div class="container-all-icon-text-card">
+                                    <div class="container-icon-text-card">
+                                        <img class="icon-cards" src="https://www.nexustours.com/images/upload//Landing%20Pages/Nuevo-Branding-Landing-Destino/Calendario.png">
+                                        <p class="text-cards-icon">
+                                            Flexible <br>
+                                            Cancelation
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="content-bottom-price">
+                                    <div class="boton-tarifas colorBotonWHL white-text">
+                                        See prices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <h2 class="title margin-bottom-24">
+            Destinos seleccionados
+        </h2>
+        <div style="width: 100%; overflow-x: auto;">
+            <div class="containerRowDestinosBottom">
+                <div class="containerDestinosBottom container5">
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/dominican-republic" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/DominicanaEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Punta Cana
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/santa-lucia" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/SantaLuciaEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            St. Lucia
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/aruba" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/ArubaEB.jpg);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Aruba
+                        </h3>
+                    </a>
+                    <a class="cardDestinoBottom" href="https://www.nexustours.com/cancun" style="background-image: url(https://www.nexustours.com/images/upload//Landing%20Pages/marzo_2024/landings/CancunEB.png);" target="_blank">
+                        <h3 class="textCardDestinoBottom">
+                            Cancún
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="terminos">
+            <p>
+                *The discount only applies on excursions and will automatically applied to the final rate. Does not apply with other promotions or discount coupons.
+                **Price per person for single shared transfer. Prices and discounts valid on selected products and subject to availability at the time of purchase.<br>
+                *To access the discount, you must log in. The discount will be applied automatically at the end of the purchase.<br>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var container = document.getElementsByClassName("container")
+        var pageHeaderBar = document.getElementsByClassName("page-header-bar")
+        var contentBody = document.getElementsByClassName("content-body")
+        container[1].style.width = "100%"
+        container[1].style.padding = "0"
+        pageHeaderBar[0].style.padding = "0"
+        contentBody[0].style.margin = "0"
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper1-button-next",
+                prevEl: ".swiper1-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
+            },
+        });
+
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper3-button-next",
+                prevEl: ".swiper3-button-prev",
+            },
+        });
+
+        var swiper4 = new Swiper(".mySwiper4", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper4-button-next",
+                prevEl: ".swiper4-button-prev",
+            },
+        });
+
+        var swiper5 = new Swiper(".mySwiper5", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper5-button-next",
+                prevEl: ".swiper5-button-prev",
+            },
+        });
+
+        var swiper6 = new Swiper(".mySwiper6", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper6-button-next",
+                prevEl: ".swiper6-button-prev",
+            },
+        });
+
+        var swiper5 = new Swiper(".swiperTours-Mob", {
+            slidesPerView: 1.1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var swiper = new Swiper(".swiperBlogsHeader", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-header-pagination",
+                clickable: true,
+            },
+            /*
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            */
+            navigation: {
+                nextEl: ".swiper-header-button-next",
+                prevEl: ".swiper-header-button-prev",
+            },
+            allowTouchMove: false
+        });
+    </script>
+</body>
