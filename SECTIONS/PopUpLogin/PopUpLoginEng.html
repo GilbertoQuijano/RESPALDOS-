@@ -15,15 +15,37 @@
             z-index: 1;
         }
 
+        @media (max-width:600px){
+            .containerPopUpLogin{
+                width: 100%;
+                padding: 44px 1vw 10px 1vw; 
+            }
+        }
+
         .containerCompletePopUp{
             position: absolute;
-            right: 0;
+            right: 140px;
             left: auto;
+            top: 100%;
+        }
+        @media (max-width:600px){
+            .containerCompletePopUp{
+                right: auto;
+                left: 75%;
+                transform: translate(-50%, 0);
+                width: 40%;
+                z-index: 2;
+            }
         }
 
         .imgPopUpLogin{
             display: block; 
             width: 237px;
+        }
+        @media (max-width:600px){
+            .imgPopUpLogin{
+                width: 25vw;
+            }
         }
 
         .textPopUpLogin{
@@ -34,6 +56,12 @@
             letter-spacing: -0.2px; 
             margin-top: 0; 
             margin-bottom: 0;
+        }
+        @media (max-width:600px){
+            .textPopUpLogin{
+                font-size: 4vw;
+                font-weight: 500;
+            }
         }
 
         .buttonPopUpLogin,
@@ -47,12 +75,24 @@
             text-decoration: none;
             cursor: pointer;
         }
+        @media (max-width:600px){
+            .buttonPopUpLogin{
+                justify-content: center;
+                padding: 2vw 3vw;
+                border-radius: 20px;
+            }
+        }
 
         .textButtonPopUpLogin{
             color: #FFF; 
             font-size: 12px; 
             line-height: 100%; 
             font-weight: 700;
+        }
+        @media (max-width:600px){
+            .textButtonPopUpLogin{
+                font-size: 2.5vw;
+            }
         }
 
         .botonCerrar{
@@ -64,65 +104,84 @@
             right: 27px;
             top: 10px
         }
+        @media (max-width:600px){
+            .botonCerrar{
+                right: 50%;
+                transform: translate(50%, 0);
+            }
+        }
 
         .imgBotonCerrar{
             width: 24px;
             cursor: pointer;
         }
+        @media (max-width:600px){
+            .imgBotonCerrar{
+                width: 6vw;
+            }
+        }
 
-        .tagDesk{
+        .tagDesk-Pop{
             display: block;
         }
-        @media (max-width:992px){
-            .tagDesk{
+        @media (max-width:600px){
+            .tagDesk-Pop{
                 display: none;
             }
         }
 
-        .tagMob{
+        .tagMob-Pop{
             display: none;
         }
-        @media (max-width:992px){
-            .tagMob{
+        @media (max-width:600px){
+            .tagMob-Pop{
                 display: block;
             }
+        }
+
+        .tagMob-Pop-Flex{
+            display: none;
+        }
+        @media (max-width:600px){
+            .tagMob-Pop-Flex{
+                display: Flex;
+            }
+        }
+
+        .boldTextPopUpLogin{
+            font-weight: 900;
+            font-size: 5vw;
         }
         
     </style>
 </head>
-<body>
-    <!--
-    <div class="containerCompletePopUp">
-        <div class="botonCerrar">
-            <img id="imgBotonCerrar" class="imgBotonCerrar" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/botonCerrar.png">
-        </div>
-        <div id="containerPopUpLogin" class="containerPopUpLogin js-login-box-modal">
-            <img class="tagDesk imgPopUpLogin" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/imgPopUpLogin.png">
-            <p class="tagDesk textPopUpLogin">
-                Regístrate para <br>
-                desbloquear descuentos
-            </p>
-            <a id="buttonPopUpLogin" class="tagDesk buttonPopUpLogin">
-                <span class="textButtonPopUpLogin">
-                    Regístrate / Iniciar sesión
-                </span>
-            </a>
-        </div>
-    </div>
-    -->
-</body>
 <script>
-    var imgBotonCerrar = document.querySelector("#imgBotonCerrar")
-    let containerPopUpLogin = document.querySelector("#containerPopUpLogin")
+    var toolbar = document.querySelector('.main-header__inner')
+    var idiomaLanding = document.querySelector('.text-capitalize.hidden-xs')
+    var comp = idiomaLanding.textContent
+    comp = comp.replace(/\s/g, "")
 
-    var loginTitle = document.querySelector('.loginTitle')
-    var toolbar = loginTitle.parentNode.parentNode
+    switch(comp){
+        case "english":
+                var textLogin = 'Register to <br> unlock discounts';
+                var textLoginMob = 'Register to <br><span class="boldTextPopUpLogin">unlock <br>discounts</span>';
+                var buttonLogin = 'Sign up / log in';
+            break;
+        case "français":
+                var textLogin = 'S\'inscrire pour <br> bénéficier de réductions';
+                var textLoginMob = 'S\'inscrire pour <br><span class="boldTextPopUpLogin">bénéficier <br>de réductions</span>';
+                var buttonLogin = 'S\'inscrire / Se connecter';
+            break;
+        case "español":
+                var textLogin = 'Regístrate para <br> desbloquear descuentos';
+                var textLoginMob = 'Regístrate para <br><span class="boldTextPopUpLogin">desbloquear <br> descuentos</span>';
+                var buttonLogin = 'Regístrate / Iniciar sesión';
+            break;
+    }
 
-    var stringHTML = '<div class="containerCompletePopUp"><div class="botonCerrar"><img id="imgBotonCerrar" class="imgBotonCerrar" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/botonCerrar.png"></div><div id="containerPopUpLogin" class="containerPopUpLogin js-login-box-modal"><img class="tagDesk imgPopUpLogin" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/imgPopUpLogin.png"><p class="tagDesk textPopUpLogin">Regístrate para <br>desbloquear descuentos</p><a id="buttonPopUpLogin" class="tagDesk buttonPopUpLogin"><span class="textButtonPopUpLogin">Regístrate / Iniciar sesión</span></a></div></div>'
-    
-    var imgBotonCerrar = document.querySelector("#imgBotonCerrar")
+    var stringHTML = '<div class="containerCompletePopUp"><div class="botonCerrar"><img id="imgBotonCerrar" class="imgBotonCerrar" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/botonCerrar.png"></div><div id="containerPopUpLogin" class="containerPopUpLogin js-login-box-modal"><img class="tagDesk-Pop imgPopUpLogin" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/imgPopUpLogin.png"><p class="tagDesk-Pop textPopUpLogin">'+textLogin+'</p><a id="buttonPopUpLogin" class="tagDesk-Pop buttonPopUpLogin"><span class="textButtonPopUpLogin">'+ buttonLogin +'</span></a><p class="tagMob-Pop textPopUpLogin">'+ textLoginMob +'</p><img class="tagMob-Pop imgPopUpLogin" src="https://www.nexustours.com/images/upload//Landing%20Pages/mayo_2024/imgPopUpLoginMob.png"><a id="buttonPopUpLogin" class="tagMob-Pop-Flex buttonPopUpLogin"><span class="textButtonPopUpLogin">'+ buttonLogin +'</span></a></div></div>'
+
     toolbar.style.position = "relative"
-    console.log(toolbar.offsetHeight)
 
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
@@ -137,8 +196,8 @@
     observer.observe(toolbar, { childList: true });
 
     function handleClickClose() {
-        var containerPopUpLogin = document.querySelector("#containerPopUpLogin")
-        containerPopUpLogin.style.display = "none"
+        var containerCompletePopUp = document.querySelector(".containerCompletePopUp")
+        containerCompletePopUp.style.display = "none"
     }
 
     toolbar.insertAdjacentHTML("beforeend", stringHTML)

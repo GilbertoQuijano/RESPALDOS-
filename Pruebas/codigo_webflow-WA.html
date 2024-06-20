@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	var Webflow = Webflow || [];
+    Webflow.push(function() {
+        var crossWA = document.querySelector(".crosswa")
+
+        var containerMessageWA = document.querySelector(".containermessagewa")
+        var botonWA = document.querySelector(".botonwa")
+        
+        crossWA.addEventListener("click", function(){
+            console.log("Hola")
+        })
+
+        botonWA.addEventListener("click", function(){
+            containerMessageWA.style.maxHeight = "999px"
+        })
+
+    });
+</script>
