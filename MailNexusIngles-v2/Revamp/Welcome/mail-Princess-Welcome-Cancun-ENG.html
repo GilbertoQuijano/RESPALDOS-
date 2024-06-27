@@ -96,7 +96,7 @@
             }
 
             .orange-nexus {
-                color: #FF621D;
+                color: #F0A42B;
             }
 
             .bold-text {
@@ -124,7 +124,9 @@
             .img-banner-transfer {
                 width: 100%;
                 border-radius: 16px;
-                background-color: #FF621D;
+                background-image: url("https://www.nexustours.com/images/upload//Email-content/princess_transfer.png");
+                background-size: cover;
+                background-position: center;
                 padding: 10px 10px 10px 5px;
             }
 
@@ -400,7 +402,7 @@
             }
 
             .background-nexus {
-                background-color: #FF621D;
+                background-color: #F0A42B;
             }
 
             .tag-desk {
@@ -507,7 +509,7 @@
             .titleSekura {
                 margin-top: 0;
                 margin-bottom: 0;
-                color: #FF621D;
+                color: #F0A42B;
                 font-size: 20px;
                 line-height: 107.7%;
                 font-weight: 700;
@@ -522,7 +524,7 @@
             .textSekura {
                 line-height: 107.7%;
                 font-size: 14px;
-                color: #004A63;
+                color: #646464;
                 font-weight: 500;
                 margin-bottom: 0;
             }
@@ -662,7 +664,7 @@
             }
 
             .containerBotonBookNow {
-                background-color: #FF621D;
+                background-color: #F0A42B;
                 width: 107px;
                 border-radius: 30px;
                 padding: 5px 10px;
@@ -740,53 +742,36 @@
             .img-logo-nexus {
                 max-width: 100%;
             }
-
         </style>
     </head>
 
     <body>
         <div class="container-email">
             <div id="email" class="body-email">
-                <table id="LogoHeader" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <table id="LogoHeader" role="presentation" border="0" cellspacing="0" width="100%">
                     <tr>
                         <td>
                             <a class="banner-header" alt="banner-header" href="https://uqr.to/XHUB.NT" target="_blank" width="100%"></a>
                         </td>
                     </tr>
                 </table>
-                <table id="LogoHeader" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
                     <tr>
                         <td>
                             <div class="container-logo-nexus">
                                 <div class="logo-nexus">
-                                    <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/logo-nexus-revamp.png">
+                                    <img class="img-logo-nexus" alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/Banner_logo_Princess.png">
                                 </div>
-                                <div class="line-gradient-image border-top-line">
+                                <div class="card-email">
+                                    <p class="parrafo-card color-whl">
+                                        <span class="bold-text color-whl">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
+                                        <br>
+                                        <br>
+                                        We're so excited that you've chosen <span class="orange-nexus bold-text">{{contact.hotel_name}}</span> for your upcoming visit. You've made a fantastic choice! <br> <br>
+                                        We are looking forward to welcoming you in <span class="bold-text orange-nexus">{{contact.Destination}}</span> and make your stay as memorable as possible.<br> <br>
+                                        <span class="bold-text color-whl">Are you ready for your dream vacations?</span>
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="line-gradient-image border-bottom-line">
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
-                    <tr>
-                        <td>
-                            <div class="card-email">
-                                <p class="parrafo-card">
-                                    <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}</span>,</span>
-                                    <br><br>
-                                    We're thrilled to have you joining us for your upcoming trip to <span class="bold-text orange-nexus">{{contact.Destination}}</span>. Get ready for an unforgettable experience!
-                                    <br><br>
-                                    <span class="bold-text orange-nexus">Your Journey, Your Way:</span>&nbsp; Customize your adventure to your preferences.
-                                    <br><br>
-                                    Visit our website <a class="bold-text orange-nexus" href="{{contact.deeplink_email}}&contact_id={{contact.id}}">here</a> or contact our travel experts 
-                                    to start planning your personalized <span class="bold-text orange-nexus">{{contact.Destination}}</span> experience.
-                                    <br><br>
-                                    Best regards,
-                                    <br><br>
-                                    Your <span class="bold-text orange-nexus">NexusTours</span> Team
-                                </p>
                             </div>
                         </td>
                     </tr>
@@ -794,15 +779,21 @@
                 <table id="TextBlock2" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
                     <tr>
                         <td>
+                            <h4 class="title-section color-whl">
+                                Our <span class="orange-nexus">"Meet & Greet"</span> 
+                            </h4>
+                            <h4 class="subtitle-section margin-bottom-22 color-whl">
+                                Make the most out of your stay
+                            </h4>
                             <div class="card-email">
-                                <p class="parrafo-card margin-bottom-15">
-                                    Our team is available 24/7 for personalized recommendations. Need assistance without leaving your room? <a href="{{contact.deeplink_email}}&contact_id={{contact.id}}" target="_blank" class="bold-text orange-nexus"> Click here</a> or contact us:
+                                <p class="parrafo-card margin-bottom-15 color-whl">
+                                    Be sure to attend your meet and greet briefing at your Hotel to get the lowdown of <span class="bold-text color-whl">{{contact.Destination}}</span>. Ask your representative and feel free to approach them for personalized recommendations. <span class="bold-text color-whl">If already in your room and don't want to leave it, click here to contact us:</span>
                                 </p>
                                 <table class="tag-desk-table" role="presentation" border="0" cellspacing="0" width="100%">
                                     <tr>
                                         <td class="width-tollWA">
                                             <div style="width: fit-content; margin: auto;">
-                                                <a href="tel:1-888-644-8594" target="_blank">
+                                                <a href="tel:{{contact.ICC_Tel}}" target="_blank">
                                                     <div class="background-nexus container-toll">
                                                         <table role="presentation" border="0" cellspacing="0" width="100%">
                                                             <tr>
@@ -822,7 +813,7 @@
                                         </td>
                                         <td class="width-tollWA">
                                             <div style="width: fit-content; margin: auto;">
-                                                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                                <a href="https://wa.me/529982423584?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
                                                     <div class="background-nexus container-wa">
                                                         <table role="presentation" border="0" cellspacing="0" width="100%">
                                                             <tr>
@@ -844,7 +835,7 @@
                                 </table>
                                 <div class="tag-mob">
                                     <div class="margin-bottom-10">
-                                        <a href="tel:1-888-644-8594" target="_blank">
+                                        <a href="tel:{{contact.ICC_Tel}}" target="_blank">
                                             <div class="background-nexus container-toll">
                                                 <table role="presentation" border="0" cellspacing="0" width="100%">
                                                     <tr>
@@ -861,7 +852,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <a href="https://wa.me/529981805404?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                    <a href="https://wa.me/529982423584?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
                                         <div class="background-nexus container-wa">
                                             <table role="presentation" border="0" cellspacing="0" width="100%">
                                                 <tr>
@@ -878,10 +869,6 @@
                                         </div>
                                     </a>
                                 </div>
-                                <br>
-                                <p class="parrafo-card">
-                                    We're eagerly looking forward to enhancing your experience!
-                                </p>
                             </div>
                         </td>
                     </tr>
@@ -998,7 +985,7 @@
                     <tr>
                         <td>
                             <div class="container-img-banner-transfer">
-                                <a class="activador-img-banner-transfer" href="https://www.nexustours.com/transfers/?utm_source=vacation_express&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                                <a class="activador-img-banner-transfer" href="https://princess.nexustours.com/transfers/?utm_source=princess&utm_medium=mail&utm_campaign=Welcome&contact_id={{contact.id}}" target="_blank">
                                     <div class="img-banner-transfer">
                                         <div class="tag-desk">
                                             <table style="table-layout: fixed;" role="presentation" border="0" cellspacing="0" width="100%">
@@ -1013,7 +1000,7 @@
                                                         <h4 class="unbold-texto-banner-transfer">Reserve yours today!</h4>
                                                     </td>
                                                     <td class="container-plus-width">
-                                                        <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner.png">
+                                                        <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/Botton-Cross-Princess.png">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1027,7 +1014,7 @@
                                                 Reserve yours today!
                                             </h4>
                                             <img class="img-banner-transfer-carro" src="https://www.nexustours.com/images/upload//Email-content/Img-Transfer-Email.png">
-                                            <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/CTA-banner.png">
+                                            <img class="cta-banner" src="https://www.nexustours.com/images/upload//Email-content/Botton-Cross-Princess.png">
                                         </div>
                                     </div>
                                 </a>
@@ -1098,9 +1085,9 @@
                     <tr>
                         <td>
                             <div class="container-text">
-                                <a href="https://www.nexustours.com/?utm_source=vacation_express&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                                <a href="https://princess.nexustours.com/?utm_source=princess&utm_medium=mail&utm_campaign=Welcome&contact_id={{contact.id}}" target="_blank">
                                     <h3 class="dominio">
-                                        www.nexustours.com
+                                        princess.nexustours.com
                                     </h3>
                                 </a>
                             </div>
@@ -1108,33 +1095,8 @@
                                 <table class="table-redes" role="presentation" border="0" width="100%">
                                     <tr>
                                         <td>
-                                            <a href="https://www.facebook.com/nexus.tours.activities" target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/facebook-email-orange.png">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://twitter.com/nexustours" target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/x-email.png">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://www.instagram.com/nexustours/" target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/instagram-email-orange.png">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://www.linkedin.com/company/nexustours" target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/linkedin-email-orange.png">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://www.nexustours.com/tripadvisor-reviews" target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/trip-email-orange.png">
-                                            </a>
-                                        </td>
-                                        <td>
                                             <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
-                                                <img src="https://www.nexustours.com/images/upload//Email-content/wa-email-orange.png">
+                                                <img src="https://www.nexustours.com/images/upload//Email-content/waEmailYellow.png">
                                             </a>
                                         </td>
                                     </tr>
